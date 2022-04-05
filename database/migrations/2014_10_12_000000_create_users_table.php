@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('password');
             $table->enum('gender', ['male', 'female'])->nullable();
             $table->date('dob')->nullable();
-            $table->enum('user_type',['supplier','customer','admin']);
+            $table->enum('user_type',['supplier','customer','dashboard']);
             $table->string('address')->nullable();
             $table->string('postal_code')->nullable();
             $table->string('state_province')->nullable();
