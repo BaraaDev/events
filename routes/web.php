@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +14,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::middleware('auth','dashboard','verified')
-    ->prefix(LaravelLocalization::setLocale())
-    ->group(function () {
-        Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
-});
 
+
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => ['auth','dashboard']],function (){
+    Route::prefix('dashboard')->group(function (){
+        Route::get('/', [HomeController::class, 'index'])->name('dashboard');
+        Route::resource('/tags', TagController::class);
+    });
+});
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,15 +34,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-{
-    /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-    Route::get('/welcome', function()
-    {
-        return __('admin/home.home');
-    });
 
-    Route::get('test',function(){
-        return 'welcome';
-    });
-});

@@ -1,22 +1,22 @@
 <?php
 
 if(! function_exists('prefixActive')){
-	function prefixActive($prefixName)
-	{ 
+	function prefixActive($prefixName): string
+    {
 		return	request()->route()->getPrefix() == $prefixName ? 'active' : '';
 	}
 }
 
 if(! function_exists('prefixBlock')){
-	function prefixBlock($prefixName)
-	{ 
-		return	request()->route()->getPrefix() == $prefixName ? 'block' : 'none';
+	function prefixBlock($prefixName): string
+    {
+		return	request()->route()->getPrefix() == $prefixName ? 'none' : 'block';
 	}
 }
 
 if(! function_exists('routeActive')){
-	function routeActive($routeName)
-	{ 
+	function routeActive($routeName): string
+    {
 		return	request()->routeIs($routeName) ? 'active' : '';
 	}
 }
