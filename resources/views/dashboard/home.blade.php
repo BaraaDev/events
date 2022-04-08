@@ -4,10 +4,7 @@
 
 @push('css')
     <link rel="stylesheet" type="text/css" href="{{asset('admin/css/animate.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin/css/chartist.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin/css/date-picker.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin/css/prism.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('admin/css/vector-map.css')}}">
+
 @endpush
 @section('content')
     @yield('breadcrumb-list')
@@ -106,13 +103,9 @@
     </div>
     <!-- Container-fluid Ends-->
     @push('scripts')
-        <script src="{{asset('admin/js/clipboard/clipboard.min.js')}}"></script>
         <script src="{{asset('admin/js/counter/jquery.waypoints.min.js')}}"></script>
         <script src="{{asset('admin/js/counter/jquery.counterup.min.js')}}"></script>
         <script src="{{asset('admin/js/counter/counter-custom.js')}}"></script>
-        <script src="{{asset('admin/js/custom-card/custom-card.js')}}"></script>
-        <script src="{{asset('admin/js/notify/bootstrap-notify.min.js')}}"></script>
-        <script src="{{asset('admin/js/dashboard/default.js')}}"></script>
-        <script src="{{asset('admin/js/notify/index.js')}}"></script>
+
     @endpush
 @endsection
