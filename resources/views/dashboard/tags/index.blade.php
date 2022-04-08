@@ -38,7 +38,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
 
-                                        <td class="text-center">{{$tag->getTranslation('name',str_replace('_', '-', app()->getLocale()) )}}</td>
+                                        <td class="text-center">{{$tag->getTranslation('name','ar' )}}</td>
 
                                         <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">

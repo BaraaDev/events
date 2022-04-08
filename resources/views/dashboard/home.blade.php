@@ -1,6 +1,6 @@
 @extends('layouts.admin.master')
 
-@section('title', __('admin/home.home') .' - '. __('admin/home.dashboard'))
+@section('title', __('admin/home.dashboard'))
 
 @push('css')
     <link rel="stylesheet" type="text/css" href="{{asset('admin/css/animate.css')}}">
