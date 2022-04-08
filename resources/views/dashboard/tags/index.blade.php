@@ -47,14 +47,13 @@
                                                 'method' => 'delete'
                                             ])!!}
                                             <button class="btn btn-danger btn-xs" onclick="return confirm('هل أنت متأكد من الحذف ؟');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}}</button>
-                                            {!! Form::close() !!}
+
                                             <a href="{{route('tags.edit',$tag->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($tag->name)"}}">{{__('admin/home.edit')}}</a>
+                                            {!! Form::close() !!}
                                         </td>
                                     </tr>
                                     @empty
-                                        <div class="alert alert-primary">
-                                            {{__('admin/home.alert_no_data')}}
-                                        </div>
+                                        <div class="alert alert-danger">{{__('admin/home.alert_no_data')}}</div>
                                     @endforelse
                                     </tbody>
                                 </table>
