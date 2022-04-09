@@ -10,7 +10,9 @@ if(! function_exists('prefixActive')){
 if(! function_exists('prefixBlock')){
 	function prefixBlock($prefixName): string
     {
-		return	request()->route()->getPrefix() == $prefixName ? 'none' : 'block';
+
+		return	request()->routeIs($prefixName) ? 'block' : 'none';
+
 	}
 }
 

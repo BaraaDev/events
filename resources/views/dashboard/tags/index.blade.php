@@ -37,20 +37,24 @@
                                     @forelse($tags as $tag)
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
-
-                                        <td class="text-center">{{$tag->getTranslation('name','ar' )}}</td>
-
+                                        <td class="text-center">{{$tag->name}}</td>
                                         <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                                 'action' => ['App\Http\Controllers\Admin\TagController@destroy',$tag->id],
                                                 'method' => 'delete'
                                             ])!!}
+<<<<<<< HEAD
+                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}} </button>
+=======
                                             <button class="btn btn-danger btn-xs" onclick="return confirm('هل أنت متأكد من الحذف ؟');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}}</button>
+>>>>>>> eff319a7c34982a0f33e4449059bf78cf5498f03
+
+                                            <a href="{{route('tags.edit',$tag->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($tag->name)"}}"><li class="icon-pencil"></li> {{__('admin/home.edit')}}</a>
                                             {!! Form::close() !!}
-                                            <a href="{{route('tags.edit',$tag->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($tag->name)"}}">{{__('admin/home.edit')}}</a>
                                         </td>
                                     </tr>
+
                                     @empty
                                         <div class="alert alert-primary">
                                             {{__('admin/home.alert_no_data')}}
