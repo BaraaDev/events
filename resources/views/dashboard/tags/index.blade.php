@@ -44,7 +44,11 @@
                                                 'action' => ['App\Http\Controllers\Admin\TagController@destroy',$tag->id],
                                                 'method' => 'delete'
                                             ])!!}
+<<<<<<< HEAD
                                             <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}} </button>
+=======
+                                            <button class="btn btn-danger btn-xs" onclick="return confirm('هل أنت متأكد من الحذف ؟');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}}</button>
+>>>>>>> eff319a7c34982a0f33e4449059bf78cf5498f03
 
                                             <a href="{{route('tags.edit',$tag->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($tag->name)"}}"><li class="icon-pencil"></li> {{__('admin/home.edit')}}</a>
                                             {!! Form::close() !!}
