@@ -31,7 +31,7 @@ class TagController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $tags->save();
 
-        return redirect()->route('tags.index')->with(['message' => __('admin/home.success')]);
+        return redirect()->route('tags.index')->with(['message' => __('admin/home.added_successfully')]);
     }
 
 
@@ -42,7 +42,7 @@ class TagController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(TagRequest $request, $id)
     {
         $tags = Tag::findOrFail($id);
         $tags->setTranslation('name', 'en', $request->name_en)
@@ -50,7 +50,7 @@ class TagController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $tags->save();
 
-        return redirect()->route('tags.index')->with(['message' => __('admin/home.update')]);
+        return redirect()->route('tags.index')->with(['message' => __('admin/home.edited_successfully')]);
     }
 
 
@@ -59,6 +59,6 @@ class TagController extends Controller
         $tags = Tag::findOrFail($id);
         $tags->delete();
         return redirect()->route('tags.index')
-            ->with(['delete' => __('admin/home.del')]);
+            ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
 }

@@ -25,14 +25,9 @@
                     </li>
 
                     <li class="dropdown">
-<<<<<<< HEAD
-                        <a class="nav-link menu-title @if(routeActive('tags.index') or routeActive('tags.create')) active @endif" href="javascript:void(0)"><i data-feather="edit-3"></i><span>{{__('admin/tag.tags')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('tags.index') or routeActive('tags.create')) block @else none @endif;">
-=======
 
                         <a class="nav-link menu-title @if(routeActive('tags.index') or routeActive('tags.create')) active @endif" href="javascript:void(0)"><i data-feather="edit-3"></i><span>{{__('admin/tag.tags')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('tags.index')}};">
->>>>>>> b9ec36ef2acc1a67fdaa1cd270bcd7f985f30afe
+                        <ul class="nav-submenu menu-content" style="display: @if(prefixBlock('tags.index') || routeActive('tags.create')) block @else none @endif ;">
                             <li><a href="{{ route('tags.index') }}" class="{{routeActive('tags.index')}}">{{__('admin/tag.all_tags')}}</a></li>
                             <li><a href="{{ route('tags.create') }}" class="{{routeActive('tags.create')}}">{{__('admin/tag.create')}}</a></li>
                         </ul>

@@ -1,15 +1,15 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/tag.edit')}} ({{$model->getTranslation('name','ar')}}) @endsection
+@section('title') {{__('admin/tag.edit')}} ({{$model->name}}) @endsection
 
 @section('content')
 
     @component('components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>{{__('admin/tag.create')}}</h3>
+            <h3>{{__('admin/tag.edit')}} ({{$model->name}})</h3>
         @endslot
         <li class="breadcrumb-item"><a href="{{route('tags.index')}}">{{__('admin/tag.tags')}}</a> </li>
-        <li class="breadcrumb-item active">{{__('admin/tag.create')}}</li>
+        <li class="breadcrumb-item active">{{__('admin/tag.edit')}} ({{$model->name}})</li>
         @slot('bookmark')
             <a href="{{route('tags.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/tag.addTag')}}">{{__('admin/tag.addTag')}}</a>
         @endslot
@@ -18,7 +18,7 @@
     <div class="col-sm-12 col-xl-6 xl-100">
         <div class="card">
             <div class="card-header pb-0">
-                <h5>{{__('admin/tag.addTag')}}</h5>
+                <h5>{{__('admin/home.check_changes')}}</h5>
             </div>
             <div class="card-body">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -31,7 +31,7 @@
                         @csrf
                         {{ method_field('put') }}
                         @include('dashboard.tags.form')
-                        <button class="btn btn-success mt-4 d-block me-auto" type="submit">{{__('admin/tag.add_new')}}</button>
+                        <button class="btn btn-success mt-4 d-block me-auto" type="submit">{{__('admin/tag.update')}}</button>
                     </form>
                 </div>
             </div>
