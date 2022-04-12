@@ -18,7 +18,8 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>{{__('admin/tag.showTag')}}</h5>
+
+                        <h5>{{__('admin/tag.showTag')}} - <span class="b-b-success badge-dark">{{App\Models\Tag::count()}}</span></h5>
                         <span>{{__('admin/tag.DescriptionTag')}}</span>
                     </div>
                     <div class="card-block row">
@@ -41,12 +42,10 @@
                                         <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
-                                                'action' => ['App\Http\Controllers\Admin\TagController@destroy',$tag->id],
+                                                'route' => ['tags.destroy',$tag->id],
                                                 'method' => 'delete'
                                             ])!!}
-
                                             <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}} </button>
-
 
                                             <a href="{{route('tags.edit',$tag->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($tag->name)"}}"><li class="icon-pencil"></li> {{__('admin/home.edit')}}</a>
                                             {!! Form::close() !!}
@@ -64,6 +63,11 @@
                         </div>
                     </div>
                 </div>
+                <nav class="m-b-30" aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center pagination-primary">
+                        {!! $tags->links('pagination::bootstrap-4') !!}
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>

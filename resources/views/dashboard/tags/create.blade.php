@@ -11,8 +11,11 @@
         @endslot
         <li class="breadcrumb-item"><a href="{{route('tags.index')}}">{{__('admin/tag.tags')}}</a> </li>
         <li class="breadcrumb-item active">{{__('admin/tag.create')}}</li>
+
     @endcomponent
+
     @include('layouts.admin.partials.validation-errors')
+
     <div class="col-sm-12 col-xl-6 xl-100">
         <div class="card">
             <div class="card-header pb-0">
@@ -20,11 +23,11 @@
             </div>
             <div class="card-body">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item"><a class="nav-link active" id="ar-tab" data-bs-toggle="pill" href="#ar" role="tab" aria-controls="ar" aria-selected="true">{{__('admin/home.arabic')}}<div class="media"></div></a></li>
-                    <li class="nav-item"><a class="nav-link" id="en-tab" data-bs-toggle="pill" href="#en" role="tab" aria-controls="en" aria-selected="false">{{__('admin/home.english')}}</a></li>
-                    <li class="nav-item"><a class="nav-link" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="false">{{__('admin/home.french')}}</a></li>
+                    <li class="nav-item"><a class="nav-link @if(LaravelLocalization::getCurrentLocale() == 'ar') active  @endif" id="ar-tab" data-bs-toggle="pill" href="#ar" role="tab" aria-controls="ar" aria-selected="@if(LaravelLocalization::getCurrentLocale() == 'ar') true @else false @endif">{{__('admin/home.arabic')}}<div class="media"></div></a></li>
+                    <li class="nav-item"><a class="nav-link @if(LaravelLocalization::getCurrentLocale() == 'en') active  @endif" id="en-tab" data-bs-toggle="pill" href="#en" role="tab" aria-controls="en" aria-selected="@if(LaravelLocalization::getCurrentLocale() == 'ar') true @else false @endif">{{__('admin/home.english')}}</a></li>
+                    <li class="nav-item"><a class="nav-link @if(LaravelLocalization::getCurrentLocale() == 'fr') active  @endif" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="@if(LaravelLocalization::getCurrentLocale() == 'ar') true @else false @endif">{{__('admin/home.french')}}</a></li>
                 </ul>
-                <div class="tab-content " id="pills-tabContent">
+                <div class="tab-content" id="pills-tabContent">
                     <form action="{{route('tags.store')}}" method="post">
                         @csrf
                         @include('dashboard.tags.form')

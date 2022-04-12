@@ -39,6 +39,7 @@ class TagRequest extends FormRequest
             'name_ar.min'      => __('admin/request.name_ar_min'),
             'name_ar.max'      => __('admin/request.name_ar_max'),
 
+
             // Validation name en
             'name_en.required' => __('admin/request.name_en_required'),
             'name_en.min'      => __('admin/request.name_en_min'),
