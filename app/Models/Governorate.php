@@ -4,10 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Translatable\HasTranslations;
 
 class Governorate extends Model
 {
-    use HasFactory;
+    use HasFactory, HasTranslations, SoftDeletes;
+
+    public $translatable = ['name'];
 
     public function country(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
