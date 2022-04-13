@@ -29,7 +29,7 @@
             </ul>
 
             <div class="tab-content " id="pills-tabContent">
-                <form action="{{route('countries.store')}}" method="post">
+                <form action="{{route('countries.store')}}" method="post" id="alert-form">
                     @csrf
                     @include('dashboard.countries.form')
                     <button class="btn btn-success mt-4 d-block me-auto" type="submit">{{__('admin/country.add_new')}}</button>

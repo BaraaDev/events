@@ -52,11 +52,25 @@
                     </div>
                 </div>
             </div>
-
         </footer>
     </div>
 </div>
 <!-- latest jquery-->
 @includeIf('layouts.admin.partials.js')
+<script>
+    $(document).ready(function(){
+        var form = $('#alert-form'),
+            original = form.serialize()
+
+        form.submit(function(){
+            window.onbeforeunload = null
+        })
+
+        window.onbeforeunload = function(){
+            if (form.serialize() != original)
+                return 'Are you sure you want to leave?'
+        }
+    })
+</script>
 </body>
 </html>

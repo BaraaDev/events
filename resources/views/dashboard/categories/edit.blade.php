@@ -27,7 +27,7 @@
                     <li class="nav-item"><a class="nav-link @if(LaravelLocalization::getCurrentLocale() == 'fr') active  @endif" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="@if(LaravelLocalization::getCurrentLocale() == 'ar') true @else false @endif">{{__('admin/home.french')}}</a></li>
                 </ul>
                 <div class="tab-content " id="pills-tabContent">
-                    <form action="{{route('categories.update',$model->id)}}" method="post">
+                    <form action="{{route('categories.update',$model->id)}}" method="post" id="alert-form">
                         @csrf
                         {{ method_field('put') }}
                         @include('dashboard.categories.form')

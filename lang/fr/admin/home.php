@@ -21,4 +21,5 @@ return [
     'Enter_name_fr'             => 'Entrez le nom en français',
     'create_history'            => 'Date ajoutée',
     'logout'                    => 'Se déconnecter',
+    'alert_form'                => 'Êtes-vous sûr de vouloir quitter?',
 ];
