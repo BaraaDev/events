@@ -1,16 +1,16 @@
 <?php
 
 return [
-    'country'                           => 'دولة',
-    'countries'                         => 'الدول',
-    'all_countries'                     => 'جميع الدول',
-    'create'                            => 'إنشاء دولة',
-    'edit'                              => 'تعديل الدولة',
-    'NameCountry'                       => 'أسماء الدول',
-    'addCountry'                        => 'اضافة الدولة جديد',
-    'showCountry'                       => 'عرض الدولة ',
-    'name'                              => ' الاسم',
-    'add_new'                           => 'اضافة جديد',
-    'update'                            => 'التعديل',
-    'DescriptionCountry'                => 'جميع الدول ان كنت ترغب في إنشاء وأضافه دولة جديده ف عليك بالضغط علي زر (أصافة بدل جديد) في أعلي الصفحة',
+    'country'                           => 'Pays',
+    'countries'                         => 'Des pays',
+    'all_countries'                     => 'Tous les pays',
+    'create'                            => 'créer',
+    'edit'                              => 'Éditer',
+    'NameCountry'                       => 'Nom du pays',
+    'addCountry'                        => 'Ajouter un pays',
+    'showCountry'                       => 'Afficher le pays',
+    'name'                              => 'Nom',
+    'add_new'                           => 'Ajouter nouveau',
+    'update'                            => 'Mettre à jour',
+    'DescriptionCountry'                => 'Tous les pays Si vous souhaitez créer et ajouter un nouveau pays, vous devez cliquer sur le bouton (Ajouter un nouveau remplacement) en haut de la page',
 ];

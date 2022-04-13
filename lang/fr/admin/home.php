@@ -16,8 +16,8 @@ return [
     'french'                    => 'français',
     'errors'                    => 'Les erreurs',
     'Well_done'                 => 'Bon travail!',
-    'Enter_name_ar'             => 'أدخل الاسم بالعربي',
-    'Enter_name_en'             => 'أدخل الاسم بالانجليزي',
-    'Enter_name_fr'             => 'أدخل الاسم بالفرنساوي',
-    'create_history'            => 'تاريخ الإضافة',
+    'Enter_name_ar'             => 'Entrez le nom en arabe',
+    'Enter_name_en'             => 'Entrez le nom en anglais',
+    'Enter_name_fr'             => 'Entrez le nom en français',
+    'create_history'            => 'Date ajoutée',
 ];
