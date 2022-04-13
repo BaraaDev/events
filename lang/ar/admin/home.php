@@ -18,8 +18,8 @@ return [
     'Well_done'                 => 'أحسنت ! ',
     'check_changes'             => 'تحقق من التغيرات',
     'confirm'                   => 'هل أنت متأكد من الحذف ؟',
-    'Enter_Country_name_ar'             => 'أدخل الاسم بالعربي',
-    'Enter_Country_name_en'             => 'أدخل الاسم بالانجليزي',
-    'Enter_Country_name_fr'             => 'أدخل الاسم بالفرنساوي',
-    'create_history'                    => 'تاريخ الإضافة',
+    'Enter_name_ar'             => 'أدخل الاسم بالعربي',
+    'Enter_name_en'             => 'أدخل الاسم بالانجليزي',
+    'Enter_name_fr'             => 'أدخل الاسم بالفرنساوي',
+    'create_history'            => 'تاريخ الإضافة',
 ];

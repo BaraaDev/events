@@ -19,7 +19,7 @@ return [
     'check_changes'             => 'Check Changes',
     'confirm'                   => 'Are you sure to delete ?',
     'create_history'            => 'Create History',
-    'Enter_Country_name_ar'     => 'Enter Country name arabic',
-    'Enter_Country_name_en'     => 'Enter Country name english',
-    'Enter_Country_name_fr'     => 'Enter Country name french',
+    'Enter_name_ar'             => 'Enter name arabic',
+    'Enter_name_en'             => 'Enter name english',
+    'Enter_name_fr'             => 'Enter name french',
 ];

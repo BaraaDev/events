@@ -26,8 +26,10 @@
 
                     <li class="dropdown">
 
-                        <a class="nav-link menu-title @if(routeActive('tags.index') or routeActive('tags.create')) active @endif" href="javascript:void(0)"><i data-feather="edit-3"></i><span>{{__('admin/tag.tags')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(prefixBlock('tags.index') || routeActive('tags.create')) block @else none @endif ;">
+                        <a class="nav-link menu-title @if(routeActive('tags.index') or routeActive('tags.create')) active @endif" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hash"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>
+                            <span>{{__('admin/tag.tags')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('tags.index') || routeActive('tags.create')) block @else none @endif ;">
                             <li><a href="{{ route('tags.index') }}" class="{{routeActive('tags.index')}}">{{__('admin/tag.all_tags')}}</a></li>
                             <li><a href="{{ route('tags.create') }}" class="{{routeActive('tags.create')}}">{{__('admin/tag.create')}}</a></li>
                         </ul>
@@ -35,10 +37,23 @@
 
                     <li class="dropdown">
 
-                        <a class="nav-link menu-title @if(routeActive('countries.index') or routeActive('countries.create')) active @endif" href="javascript:void(0)"><i data-feather="edit-3"></i><span>{{__('admin/country.countries')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(prefixBlock('countries.index') || routeActive('countries.create')) block @else none @endif ;">
+                        <a class="nav-link menu-title @if(routeActive('countries.index') or routeActive('countries.create')) active @endif" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg>
+                            <span>{{__('admin/country.countries')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('countries.index') || routeActive('countries.create')) block @else none @endif ;">
                             <li><a href="{{ route('countries.index') }}" class="{{routeActive('countries.index')}}">{{__('admin/country.all_countries')}}</a></li>
                             <li><a href="{{ route('countries.create') }}" class="{{routeActive('countries.create')}}">{{__('admin/tag.create')}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+
+                        <a class="nav-link menu-title @if(routeActive('categories.index') or routeActive('categories.create')) active @endif" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg>
+                            <span>{{__('admin/category.categories')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('categories.index') || routeActive('categories.create')) block @else none @endif ;">
+                            <li><a href="{{ route('categories.index') }}" class="{{routeActive('categories.index')}}">{{__('admin/category.all_categories')}}</a></li>
+                            <li><a href="{{ route('categories.create') }}" class="{{routeActive('categories.create')}}">{{__('admin/category.create')}}</a></li>
                         </ul>
                     </li>
 

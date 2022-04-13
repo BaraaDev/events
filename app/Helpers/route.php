@@ -11,7 +11,7 @@ if(! function_exists('prefixBlock')){
 	function prefixBlock($prefixName): string
     {
 
-		return	request()->routeIs($prefixName) ? 'block' : 'none';
+		return request()->routeIs($prefixName) ? 'block' : 'none';
 
 	}
 }
