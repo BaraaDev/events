@@ -22,7 +22,6 @@ Route::group([
         Route::prefix('dashboard')->group(function (){
         Route::get('/', [HomeController::class, 'index'])->name('dashboard');
         Route::resource('/tags', TagController::class);
-        Route::resource('/governorate', GovernorateController::class);
     });
 });
 
