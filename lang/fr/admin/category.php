@@ -4,6 +4,8 @@ return [
     'category'                      => 'Catégorie',
     'categories'                    => 'Catégories',
     'all_categories'                => 'Toutes catégories',
+    'content_categories'            => 'Catégories de contenu',
+    'content'                       => 'Le contenu',
     'create'                        => 'Créer',
     'edit'                          => 'Éditer',
     'NameCategory'                  => 'Nom de catégorie',
