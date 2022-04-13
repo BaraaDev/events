@@ -22,4 +22,6 @@ return [
     'Enter_name_ar'             => 'Enter name arabic',
     'Enter_name_en'             => 'Enter name english',
     'Enter_name_fr'             => 'Enter name french',
+    'logout'                    => 'Logout',
+
 ];

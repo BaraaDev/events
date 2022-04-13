@@ -71,7 +71,7 @@
                     <div class="mode"><i class="fa fa-lightbulb-o"></i></div>
                 </li>
                 <li class="onhover-dropdown p-0">
-                    <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>{{__('auth.logout')}}</button>
+                    <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>{{__('admin/home.logout')}}</button>
                 </li>
             </ul>
         </div>

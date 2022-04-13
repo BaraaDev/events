@@ -7,7 +7,7 @@
     @slot('breadcrumb_title')
     <h3>{{__('admin/country.countries')}}</h3>
     @endslot
-    <li class="breadcrumb-item active">{{__('admin/tag.tags')}}</li>
+    <li class="breadcrumb-item active">{{__('admin/country.countries')}}</li>
     @slot('bookmark')
     <a href="{{route('countries.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/country.addCountry')}}">{{__('admin/country.addCountry')}}</a>
     @endslot

@@ -20,4 +20,5 @@ return [
     'Enter_name_en'             => 'Entrez le nom en anglais',
     'Enter_name_fr'             => 'Entrez le nom en français',
     'create_history'            => 'Date ajoutée',
+    'logout'                    => 'Se déconnecter',
 ];

@@ -42,7 +42,7 @@
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'fr') show active @endif" id="fr" role="tabpanel" aria-labelledby="fr-tab">
     <div class="col-md-12">
         <label class="form-label">{{__('admin/category.category')}}: </label>
-        <input class="form-control @error('name_fr') is-invalid @enderror" value="{{Request::old('name_fr') ? Request::old('name_fr') : $model->getTranslation('name','fr')}}" type="text" name="name_fr" placeholder="{{__('admin/category.Enter_name_fr')}}" autocomplete="off">
+        <input class="form-control @error('name_fr') is-invalid @enderror" value="{{Request::old('name_fr') ? Request::old('name_fr') : $model->getTranslation('name','fr')}}" type="text" name="name_fr" placeholder="{{__('admin/home.Enter_name_fr')}}" autocomplete="off">
         @error('name_fr')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
