@@ -40,7 +40,7 @@
                             <span>{{__('admin/country.countries')}}</span></a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('countries.index') || routeActive('countries.create')) block @else none @endif ;">
                             <li><a href="{{ route('countries.index') }}" class="{{routeActive('countries.index')}}">{{__('admin/country.all_countries')}}</a></li>
-                            <li><a href="{{ route('countries.create') }}" class="{{routeActive('countries.create')}}">{{__('admin/tag.create')}}</a></li>
+                            <li><a href="{{ route('countries.create') }}" class="{{routeActive('countries.create')}}">{{__('admin/country.create')}}</a></li>
                         </ul>
                     </li>
 
