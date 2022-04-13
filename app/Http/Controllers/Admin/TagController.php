@@ -5,14 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TagRequest;
 use App\Models\Tag;
-use Illuminate\Http\Request;
 
 class TagController extends Controller
 {
 
     public function index()
     {
-        $tags = Tag::orderBy('created_at','asc')->paginate(25);
+        $tags = Tag::orderBy('created_at','asc')->paginate(30);
         return view('dashboard.tags.index',compact('tags'));
     }
 
@@ -31,7 +30,8 @@ class TagController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $tags->save();
 
-        return redirect()->route('tags.index')->with(['message' => __('admin/home.success')]);
+        return redirect()->route('tags.index')
+            ->with(['message' => __('admin/home.added_successfully')]);
     }
 
 
@@ -42,7 +42,7 @@ class TagController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(TagRequest $request, $id)
     {
         $tags = Tag::findOrFail($id);
         $tags->setTranslation('name', 'en', $request->name_en)
@@ -50,15 +50,18 @@ class TagController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $tags->save();
 
-        return redirect()->route('tags.index')->with(['message' => __('admin/home.update')]);
+        return redirect()->route('tags.index')
+            ->with(['message' => __('admin/home.edited_successfully')]);
     }
 
 
     public function destroy($id)
     {
         $tags = Tag::findOrFail($id);
+
         $tags->delete();
+
         return redirect()->route('tags.index')
-            ->with(['delete' => __('admin/home.del')]);
+            ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
 }

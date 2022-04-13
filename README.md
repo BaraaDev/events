@@ -6,6 +6,7 @@ GDP is a website build especially to help our customers all over Egypt set-up an
 
 >>>>>>> 0e7bb40 (update README.md)
 
+
 - Run `git clone https://github.com/BaraaDev/events.git`
 - Run `composer install` or `composer update`
 - Run `cp .env.example .env` and `php artisan key:generate`
