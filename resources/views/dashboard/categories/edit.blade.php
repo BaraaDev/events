@@ -1,17 +1,17 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/tag.edit')}} ({{$model->name}}) @endsection
+@section('title') {{__('admin/category.edit')}} ({{$model->name}}) @endsection
 
 @section('content')
 
     @component('components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>{{__('admin/tag.edit')}} ({{$model->name}})</h3>
+            <h3>{{__('admin/category.edit')}} ({{$model->name}})</h3>
         @endslot
-        <li class="breadcrumb-item"><a href="{{route('tags.index')}}">{{__('admin/tag.tags')}}</a> </li>
-        <li class="breadcrumb-item active">{{__('admin/tag.edit')}} ({{$model->name}})</li>
+        <li class="breadcrumb-item"><a href="{{route('categories.index')}}">{{__('admin/category.categories')}}</a> </li>
+        <li class="breadcrumb-item active">{{__('admin/category.edit')}} ({{$model->name}})</li>
         @slot('bookmark')
-            <a href="{{route('tags.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/tag.addTag')}}">{{__('admin/tag.addTag')}}</a>
+            <a href="{{route('categories.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/category.addCategory')}}">{{__('admin/category.addCategory')}}</a>
         @endslot
     @endcomponent
     @include('layouts.admin.partials.validation-errors')
@@ -27,11 +27,11 @@
                     <li class="nav-item"><a class="nav-link @if(LaravelLocalization::getCurrentLocale() == 'fr') active  @endif" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="@if(LaravelLocalization::getCurrentLocale() == 'ar') true @else false @endif">{{__('admin/home.french')}}</a></li>
                 </ul>
                 <div class="tab-content " id="pills-tabContent">
-                    <form action="{{route('tags.update',$model->id)}}" method="post" id="alert-form">
+                    <form action="{{route('categories.update',$model->id)}}" method="post" id="alert-form">
                         @csrf
                         {{ method_field('put') }}
-                        @include('dashboard.tags.form')
-                        <button class="btn btn-success mt-4 d-block me-auto" type="submit">{{__('admin/tag.update')}}</button>
+                        @include('dashboard.categories.form')
+                        <button class="btn btn-success mt-4 d-block me-auto" type="submit">{{__('admin/category.update')}}</button>
                     </form>
                 </div>
             </div>

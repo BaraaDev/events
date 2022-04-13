@@ -43,20 +43,32 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 footer-copyright">
-                        <p class="mb-0">Copyright {{date('Y')}}-{{date('y', strtotime('+1 year'))}} © viho All rights
-                            reserved.</p>
+                        <p class="mb-0">Copyright {{date('Y')}}-{{date('y', strtotime('+1 year'))}} © viho All rights reserved.</p>
                     </div>
                     <div class="col-md-6">
-                        <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i>
-                        </p>
+                        <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i></p>
                     </div>
                 </div>
             </div>
-
         </footer>
     </div>
 </div>
 <!-- latest jquery-->
 @includeIf('layouts.admin.partials.js')
+<script>
+    $(document).ready(function(){
+        var form = $('#alert-form'),
+            original = form.serialize()
+
+        form.submit(function(){
+            window.onbeforeunload = null
+        })
+
+        window.onbeforeunload = function(){
+            if (form.serialize() != original)
+                return '{{__('admin/home.alert_form')}}'
+        }
+    })
+</script>
 </body>
 </html>

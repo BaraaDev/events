@@ -18,4 +18,10 @@ return [
     'Well_done'                 => 'Well Done ! ',
     'check_changes'             => 'Check Changes',
     'confirm'                   => 'Are you sure to delete ?',
+    'create_history'            => 'Create History',
+    'Enter_name_ar'             => 'Enter name arabic',
+    'Enter_name_en'             => 'Enter name english',
+    'Enter_name_fr'             => 'Enter name french',
+    'logout'                    => 'Logout',
+    'alert_form'                => 'Are you sure you want to leave?',
 ];
