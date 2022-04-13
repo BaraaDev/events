@@ -33,6 +33,15 @@
                         </ul>
                     </li>
 
+                    <li class="dropdown">
+
+                        <a class="nav-link menu-title @if(routeActive('countries.index') or routeActive('countries.create')) active @endif" href="javascript:void(0)"><i data-feather="edit-3"></i><span>{{__('admin/country.countries')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(prefixBlock('countries.index') || routeActive('countries.create')) block @else none @endif ;">
+                            <li><a href="{{ route('countries.index') }}" class="{{routeActive('countries.index')}}">{{__('admin/country.all_countries')}}</a></li>
+                            <li><a href="{{ route('countries.create') }}" class="{{routeActive('countries.create')}}">{{__('admin/tag.create')}}</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

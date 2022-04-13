@@ -30,7 +30,7 @@
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/tag.NameTag')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/tag.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                     </thead>

@@ -31,7 +31,7 @@
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/category.NameCategory')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/category.content_categories')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/category.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                     </thead>
