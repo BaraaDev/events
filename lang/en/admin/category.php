@@ -14,5 +14,5 @@ return [
     'name'                          => 'Name',
     'add_new'                       => 'Add New',
     'update'                        => 'Update',
-    'DescriptionCategory'           => 'All Sections If you want to create and add new sections, you must click on the (Add New Sections) button at the top of the page',
+    'DescriptionCategory'           => 'All Sections If you want to create and add new sections, you must click on the (Add New Sections) button at the top of the page.',
 ];

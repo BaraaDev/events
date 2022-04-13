@@ -12,5 +12,5 @@ return [
     'name'                              => 'Nom',
     'add_new'                           => 'Ajouter nouveau',
     'update'                            => 'Mettre à jour',
-    'DescriptionCountry'                => 'Tous les pays Si vous souhaitez créer et ajouter un nouveau pays, vous devez cliquer sur le bouton (Ajouter un nouveau remplacement) en haut de la page',
+    'DescriptionCountry'                => 'Tous les pays Si vous souhaitez créer et ajouter un nouveau pays, vous devez cliquer sur le bouton (Ajouter un nouveau remplacement) en haut de la page.',
 ];

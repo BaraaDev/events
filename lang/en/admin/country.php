@@ -12,5 +12,5 @@ return [
     'name'                              => 'Name',
     'add_new'                           => 'Add New',
     'update'                            => 'Update',
-    'DescriptionCountry'                => 'جميع البلاد ان كنت ترغب في إنشاء وأضافه بلد جديد ف عليك بالضغط علي زر (أصافة بدل جديد) في أعلي الصفحة',
+    'DescriptionCountry'                => 'All countries If you want to create and add a new country, you must click on the (Add a new country) button at the top of the page.',
 ];

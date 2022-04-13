@@ -14,5 +14,5 @@ return [
     'name'                          => 'Name',
     'add_new'                       => 'Add New',
     'update'                        => 'Update',
-    'cityDescription'           => 'جميع المدن ان كنت ترغب في إنشاء وأضافه مدن جديده ف عليك بالضغط علي زر (أصافة أقسام جديده) في أعلي الصفحة',
+    'cityDescription'               => 'All cities If you want to create and add new cities, you must click on the (Add new sections) button at the top of the page.',
 ];

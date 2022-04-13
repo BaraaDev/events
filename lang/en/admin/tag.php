@@ -12,5 +12,5 @@ return [
     'name'                          => ' Name',
     'add_new'                       => 'Add new',
     'update'                        => 'Update',
-    'DescriptionTag'                => 'All tags If you want to create and add new tags, you have to click on the (Add new tags) button at the top of the page from the left',
+    'DescriptionTag'                => 'All tags If you want to create and add new tags, you have to click on the (Add new tags) button at the top of the page from the left.',
 ];

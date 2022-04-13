@@ -17,5 +17,5 @@ return [
     'add_new'                       => 'Ajouter nouveau',
     'update'                        => 'Mettre à jour',
     'check_changes'                 => 'Vérifier les modifications',
-    'DescriptionTag'                => 'Tous les tags Si vous souhaitez créer et ajouter de nouveaux tags, vous devez cliquer sur le bouton (Ajouter de nouveaux tags) en haut de la page à partir de la gauche',
+    'DescriptionTag'                => 'Tous les tags Si vous souhaitez créer et ajouter de nouveaux tags, vous devez cliquer sur le bouton (Ajouter de nouveaux tags) en haut de la page à partir de la gauche.',
 ];

@@ -14,7 +14,7 @@ return [
     'Enter_category_name_en'        => 'Entrez le nom de la catégorie en arnglais',
     'Enter_category_name_fr'        => 'Entrez le nom de la catégorie en français',
     'name'                          => 'Nom',
-    'add_new'                       => 'ajouter nouveau',
+    'add_new'                       => 'Ajouter nouveau',
     'update'                        => 'Mettre à jour',
-    'DescriptionCategory'           => 'Toutes les sections Si vous souhaitez créer et ajouter de nouvelles sections, vous devez cliquer sur le bouton (Ajouter de nouvelles sections) en haut de la page',
+    'DescriptionCategory'           => 'Toutes les sections Si vous souhaitez créer et ajouter de nouvelles sections, vous devez cliquer sur le bouton (Ajouter de nouvelles sections) en haut de la page.',
 ];

@@ -14,5 +14,5 @@ return [
     'name'                          => 'Nom',
     'add_new'                       => 'Ajouter nouveau',
     'update'                        => 'Mettre à jour',
-    'cityDescription'           => 'Toutes les villes Si vous souhaitez créer et ajouter de nouvelles villes, vous devez cliquer sur le bouton (Ajouter de nouvelles sections) en haut de la page',
+    'cityDescription'           => 'Toutes les villes Si vous souhaitez créer et ajouter de nouvelles villes, vous devez cliquer sur le bouton (Ajouter de nouvelles sections) en haut de la page.',
 ];
