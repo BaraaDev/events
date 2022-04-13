@@ -5,9 +5,9 @@
 @section('content')
     @component('components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>{{__('admin/governorate.governorates')}}</h3>
+            <h3>{{__('admin/governorate.Governorates')}}</h3>
         @endslot
-        <li class="breadcrumb-item active">{{__('admin/governorate.governorates')}}</li>
+        <li class="breadcrumb-item active">{{__('admin/governorate.Governorates')}}</li>
         @slot('bookmark')
             <a href="{{route('governorates.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/governorate.addGovernorate')}}">{{__('admin/governorate.addGovernorate')}}</a>
         @endslot

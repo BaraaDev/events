@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'governorate'                       => 'Governorate',
-    'governorates'                      => 'Governorates',
+    'Governorate'                       => 'Governorate',
+    'Governorates'                      => 'Governorates',
     'all_Governorates'                  => 'All Governorates',
     'create'                            => 'Create Governorate',
     'edit'                              => 'Update Governorate',

@@ -8,7 +8,7 @@
         @slot('breadcrumb_title')
             <h3>{{__('admin/governorate.edit')}} ({{$model->name}})</h3>
         @endslot
-        <li class="breadcrumb-item"><a href="{{route('governorates.index')}}">{{__('admin/governorate.governorates')}}</a> </li>
+        <li class="breadcrumb-item"><a href="{{route('governorates.index')}}">{{__('admin/governorate.Governorates')}}</a> </li>
         <li class="breadcrumb-item active">{{__('admin/governorate.edit')}} ({{$model->name}})</li>
         @slot('bookmark')
             <a href="{{route('governorates.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/governorate.addGovernorate')}}">{{__('admin/governorate.addGovernorate')}}</a>

@@ -9,7 +9,7 @@
         @slot('breadcrumb_title')
             <h3>{{__('admin/governorate.create')}}</h3>
         @endslot
-        <li class="breadcrumb-item"><a href="{{route('governorates.index')}}">{{__('admin/governorate.governorates')}}</a> </li>
+        <li class="breadcrumb-item"><a href="{{route('governorates.index')}}">{{__('admin/governorate.Governorates')}}</a> </li>
         <li class="breadcrumb-item active">{{__('admin/governorate.create')}}</li>
 
     @endcomponent
