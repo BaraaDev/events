@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'city'                          => 'city',
-    'cities'                        => 'cities',
+    'city'                          => 'City',
+    'cities'                        => 'Cities',
     'all_cities'                    => 'All Cities',
     'city_content'                  => 'About City',
     'content'                       => 'Content',

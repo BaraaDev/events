@@ -45,6 +45,16 @@
                     </li>
 
                     <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('cities.index') or routeActive('cities.create')) active @endif" href="javascript:void(0)">
+                            &pound; &nbsp; &nbsp; &nbsp; 
+                            <span>{{__('admin/city.cities')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('cities.index') || routeActive('cities.create')) block @else none @endif ;">
+                            <li><a href="{{ route('cities.index') }}" class="{{routeActive('cities.index')}}">{{__('admin/city.all_cities')}}</a></li>
+                            <li><a href="{{ route('cities.create') }}" class="{{routeActive('cities.create')}}">{{__('admin/city.create')}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('governorates.index') or routeActive('governorates.create')) active @endif" href="javascript:void(0)">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
                             <span>{{__('admin/governorate.Governorates')}}</span></a>

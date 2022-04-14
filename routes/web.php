@@ -29,6 +29,7 @@ Route::group([
         Route::resource('/categories', CategoryController::class);
         Route::resource('/countries', CountryController::class);
         Route::resource('/governorates', GovernorateController::class);
+        Route::resource('/cities', GovernorateController::class);
     });
 });
 
