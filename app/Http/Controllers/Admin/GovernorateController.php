@@ -26,7 +26,7 @@ class GovernorateController extends Controller
     }
 
   
-    public function store(Request $request)
+    public function store(GovernorateRequest $request)
     {
         $governorates = new Governorate();
         $governorates->setTranslation('name', 'en', $request->name_en)

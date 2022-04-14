@@ -12,6 +12,7 @@ class Governorate extends Model
     use HasFactory, HasTranslations, SoftDeletes;
 
     public $translatable = ['name'];
+    
 
     public function country(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
