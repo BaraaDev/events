@@ -9,11 +9,15 @@ use Spatie\Translatable\HasTranslations;
 
 class City extends Model
 {
+    protected $fillable = ['governorate_id'];
+
     use HasFactory, HasTranslations, SoftDeletes;
     public $translatable = ['name', 'content'];
 
     public function City(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
+
+
         return $this->hasMany(Governorate::class, 'city_id');
     }
 }
