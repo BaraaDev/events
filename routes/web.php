@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\TagController;
@@ -31,6 +32,7 @@ Route::group([
         Route::resource('/categories', CategoryController::class);
         Route::resource('/countries', CountryController::class);
         Route::resource('/governorates', GovernorateController::class);
+        Route::resource('/events', EventController::class);
         Route::resource('/cities', CityController::class);
     });
 });
