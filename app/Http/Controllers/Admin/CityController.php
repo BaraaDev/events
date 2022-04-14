@@ -32,6 +32,8 @@ class CityController extends Controller
         $cities->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
+        $cities->governorate_id = $request->governorate_id;
+        $cities->country_id = $request->country_id;
         $cities->save();
 
         return redirect()->route('cities.index')
@@ -53,6 +55,9 @@ class CityController extends Controller
         $cities->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
+
+        $cities->governorate_id = $request->governorate_id;
+        $cities->country_id = $request->country_id;
         $cities->save();
 
         return redirect()->route('cities.index')

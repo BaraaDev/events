@@ -18,7 +18,7 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <h5>{{__('admin/city.showCity')}}</h5>
+                    <h5>{{__('admin/city.showCities')}}</h5>
                     <span>{{__('admin/city.cityDescription')}}</span>
                 </div>
                 <div class="card-block row">

@@ -9,15 +9,22 @@ use Spatie\Translatable\HasTranslations;
 
 class City extends Model
 {
-    protected $fillable = ['governorate_id'];
+    protected $fillable = ['country_id', 'governorate_id'];
 
     use HasFactory, HasTranslations, SoftDeletes;
     public $translatable = ['name', 'content'];
 
-    public function City(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function governorate()
     {
 
 
-        return $this->hasMany(Governorate::class, 'city_id');
+        return $this->belongsTo(Governorate::class);
+    }
+
+    public function country()
+    {
+
+
+        return $this->belongsTo(Country::class);
     }
 }
