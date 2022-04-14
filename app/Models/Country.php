@@ -13,7 +13,7 @@ class Country extends Model
 
     public $translatable = ['name'];
 
-    public function governorate(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function Country(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Governorate::class, 'country_id');
     }
