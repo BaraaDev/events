@@ -29,56 +29,56 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message title
     ///////////////////////////////////////////////////////////////////////////////////////
-    'title_ar_required'         => 'The Arabic title field is required.',
-    'title_ar_max'              => 'The text length of the Arabic title field must not exceed 199 characters/characters!',
+    'title_ar_required'         => 'Le champ du titre arabe est obligatoire!',
+    'title_ar_max'              => 'La longueur du texte du champ de titre arabe ne doit pas dépasser 199 caractères/caractères!',
 
-    'title_en_required'         => 'The English title field is required.',
-    'title_en_max'              => 'The text length of the English title field must not exceed 199 characters/characters!',
+    'title_en_required'         => 'Le champ du titre en anglais est requis!',
+    'title_en_max'              => 'La longueur du texte du champ de titre anglais ne doit pas dépasser 199 caractères/caractères!',
 
-    'title_fr_required'         => 'The French title field is required.',
-    'title_fr_max'              => 'The text length of the French title field must not exceed 199 characters/characters!',
+    'title_fr_required'         => 'Le champ du titre français est requis!',
+    'title_fr_max'              => 'La longueur du texte du champ titre français ne doit pas dépasser 199 caractères/caractères!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message location
     ///////////////////////////////////////////////////////////////////////////////////////
-    'location_ar_required'      => 'The Arabic location field is required!',
-    'location_ar_max'           => 'The text length of the Arabic location field must not exceed 199 characters/characters!',
+    'location_ar_required'      => 'Le champ de localisation en arabe est obligatoire!',
+    'location_ar_max'           => 'La longueur du texte du champ de localisation arabe ne doit pas dépasser 199 caractères/caractères!',
 
-    'location_en_required'      => 'The English location field is required!',
-    'location_en_max'           => 'The text length of the English location field must not exceed 199 characters/characters!',
+    'location_en_required'      => 'Le champ de localisation en anglais est obligatoire!',
+    'location_en_max'           => 'La longueur du texte du champ de localisation en anglais ne doit pas dépasser 199 caractères/caractères!',
 
-    'location_fr_required'      => 'The French location field is required.',
-    'location_fr_max'           => 'The text length of the French location field must not exceed 199 characters/characters!',
+    'location_fr_required'      => 'Le champ de localisation en français est obligatoire!',
+    'location_fr_max'           => 'La longueur du texte du champ de localisation en français ne doit pas dépasser 199 caractères/caractères!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message time
     ///////////////////////////////////////////////////////////////////////////////////////
-    'time_required'             => 'The time field is required.',
+    'time_required'             => 'Le champ horaire est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message Date
     ///////////////////////////////////////////////////////////////////////////////////////
-    'date_required'             => 'The date field is required.',
+    'date_required'             => 'Le champ date est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message country id
     ///////////////////////////////////////////////////////////////////////////////////////
-    'country_id_required'       => 'The country field is required.',
+    'country_id_required'       => 'Le champ pays est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message governorate id
     ///////////////////////////////////////////////////////////////////////////////////////
-    'governorate_id_required'   => 'The governorate field is required.',
+    'governorate_id_required'   => 'Le champ gouvernorat est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message city id
     ///////////////////////////////////////////////////////////////////////////////////////
-    'city_id_required'          => 'The city field is required.',
+    'city_id_required'          => 'Le champ ville est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message user id
     ///////////////////////////////////////////////////////////////////////////////////////
-    'user_id_required'          => 'The user field is required.',
+    'user_id_required'          => 'Le champ utilisateur est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message category id
     ///////////////////////////////////////////////////////////////////////////////////////
-    'category_id_required'      => 'The category field is required.',
+    'category_id_required'      => 'Le champ catégorie est obligatoire!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message budget
     ///////////////////////////////////////////////////////////////////////////////////////
-    'budget_required'           => 'The budget field is required.',
-    'budget_integer'            => 'Budget field must be an integer!',
+    'budget_required'           => 'Le champ budget est obligatoire!',
+    'budget_integer'            => 'Le champ Budget doit être un entier!',
 ];
