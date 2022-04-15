@@ -8,20 +8,20 @@ use App\Models\Governorate;
 
 class GovernorateController extends Controller
 {
-    
+
     public function index()
     {
         $governorates = Governorate::orderBy('created_at','asc')->paginate(30);
         return view('dashboard.governorates.index',compact('governorates'));
     }
 
-    
+
     public function create()
     {
         return view('dashboard.governorates.create');
     }
 
-  
+
     public function store(GovernorateRequest $request)
     {
         $governorates = new Governorate();
@@ -35,7 +35,7 @@ class GovernorateController extends Controller
     }
 
 
-   
+
     public function edit($id)
     {
         $model = Governorate::findOrFail($id);

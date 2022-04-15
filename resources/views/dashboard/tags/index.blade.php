@@ -12,6 +12,7 @@
             <a href="{{route('tags.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/tag.addTag')}}">{{__('admin/tag.addTag')}}</a>
         @endslot
     @endcomponent
+
     @include('layouts.admin.partials.messages.message')
     <div class="container-fluid">
         <div class="row">

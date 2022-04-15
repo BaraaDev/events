@@ -21,12 +21,12 @@
         <div class="nav-right col pull-right right-menu p-0">
             <ul class="nav-menus">
                 <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
+
                 <li class="onhover-dropdown">
                     <div class="notification-box"><i data-feather="bell"></i><span class="dot-animated"></span></div>
                     <ul class="notification-dropdown onhover-show-div">
                         <li>
-                            <p class="f-w-700 mb-0">You have 3 Notifications<span
-                                    class="pull-right badge badge-primary badge-pill">4</span></p>
+                            <p class="f-w-700 mb-0">You have 3 Notifications<span class="pull-right badge badge-primary badge-pill">4</span></p>
                         </li>
                         <li class="noti-primary">
                             <div class="media">
@@ -39,8 +39,7 @@
                         </li>
                         <li class="noti-secondary">
                             <div class="media">
-                                <span class="notification-bg bg-light-secondary"><i
-                                        data-feather="check-circle"> </i></span>
+                                <span class="notification-bg bg-light-secondary"><i data-feather="check-circle"> </i></span>
                                 <div class="media-body">
                                     <p>Order Complete</p>
                                     <span>1 hour ago</span>
@@ -75,6 +74,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
     </div>
 </div>
