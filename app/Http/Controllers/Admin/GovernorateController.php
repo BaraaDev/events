@@ -28,6 +28,8 @@ class GovernorateController extends Controller
         $governorates->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
+        $events->country_id = $request->country_id;
+
         $governorates->save();
 
         return redirect()->route('governorates.index')
