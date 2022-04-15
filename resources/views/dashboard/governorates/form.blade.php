@@ -29,7 +29,7 @@
         @enderror
     </div>
 </div>
-<div class="form-group row">
+<div class="form-group row mt-4">
     <label class="form-label col-lg-3">{{__('admin/home.country')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         @inject('country','App\Models\Country')
