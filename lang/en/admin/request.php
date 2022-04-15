@@ -1,6 +1,9 @@
 <?php
 
 return [
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message name
+    ///////////////////////////////////////////////////////////////////////////////////////
     'name_ar_required'          => 'The Arabic name field is required.',
     'name_ar_min'               => 'The text length of the Arabic name field must be at least 3 characters/character!',
     'name_ar_max'               => 'The text length of the Arabic name field must not exceed 199 characters/characters!',
@@ -12,8 +15,9 @@ return [
     'name_fr_required'          => 'The French name field is required.',
     'name_fr_min'               => 'The text length of the French name field must be at least 3 characters/character!',
     'name_fr_max'               => 'The text length of the French name field must not exceed 199 characters/characters!',
-
-
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message content
+    ///////////////////////////////////////////////////////////////////////////////////////
     'content_ar_required'       => 'The Arabic content field is required.',
     'content_ar_max'            => 'The text length of the Arabic content field must not exceed 500 characters/characters!',
 
@@ -74,9 +78,8 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     'category_id_required'      => 'The category field is required.',
     ///////////////////////////////////////////////////////////////////////////////////////
-    /// Check the message user id
+    /// Check the message budget
     ///////////////////////////////////////////////////////////////////////////////////////
     'budget_required'           => 'The budget field is required.',
     'budget_integer'            => 'Budget field must be an integer!',
-
 ];

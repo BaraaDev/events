@@ -18,11 +18,12 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-
                         <h5>{{__('admin/event.showEvent')}} - <span class="b-b-success badge-dark">{{App\Models\Event::count()}}</span></h5>
                         <span>{{__('admin/event.DescriptionEvent')}}</span>
                     </div>
+
                     <div class="card-block row">
+
                         <div class="col-sm-12 col-lg-12 col-xl-12">
                             <div class="table-responsive">
                                 <table class="table table-striped">
