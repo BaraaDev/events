@@ -8,11 +8,7 @@ use App\Models\City;
 
 class CityController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $cities = City::orderBy('created_at', 'asc')->paginate(30);
@@ -33,7 +29,8 @@ class CityController extends Controller
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
         $cities->governorate_id = $request->governorate_id;
-        $cities->country_id = $request->country_id;
+        $cities->country_id     = $request->country_id;
+
         $cities->save();
 
         return redirect()->route('cities.index')

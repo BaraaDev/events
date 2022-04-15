@@ -9,10 +9,10 @@ use Spatie\Translatable\HasTranslations;
 
 class City extends Model
 {
+    use HasFactory, HasTranslations, SoftDeletes;
     protected $fillable = ['country_id', 'governorate_id'];
 
-    use HasFactory, HasTranslations, SoftDeletes;
-    public $translatable = ['name', 'content'];
+    public $translatable = ['name'];
 
     public function governorate()
     {

@@ -44,15 +44,6 @@
                         </ul>
                     </li>
 
-                    <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('cities.index') or routeActive('cities.create')) active @endif" href="javascript:void(0)">
-                            &pound; &nbsp; &nbsp; &nbsp; 
-                            <span>{{__('admin/city.cities')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('cities.index') || routeActive('cities.create')) block @else none @endif ;">
-                            <li><a href="{{ route('cities.index') }}" class="{{routeActive('cities.index')}}">{{__('admin/city.all_cities')}}</a></li>
-                            <li><a href="{{ route('cities.create') }}" class="{{routeActive('cities.create')}}">{{__('admin/city.create')}}</a></li>
-                        </ul>
-                    </li>
 
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('governorates.index') or routeActive('governorates.create')) active @endif" href="javascript:void(0)">
@@ -61,6 +52,16 @@
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('governorates.index') || routeActive('governorates.create')) block @else none @endif ;">
                             <li><a href="{{ route('governorates.index') }}" class="{{routeActive('governorates.index')}}">{{__('admin/governorate.all_Governorates')}}</a></li>
                             <li><a href="{{ route('governorates.create') }}" class="{{routeActive('governorates.create')}}">{{__('admin/governorate.create')}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('cities.index') or routeActive('cities.create')) active @endif" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>{{__('admin/city.cities')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('cities.index') || routeActive('cities.create')) block @else none @endif ;">
+                            <li><a href="{{ route('cities.index') }}" class="{{routeActive('cities.index')}}">{{__('admin/city.all_cities')}}</a></li>
+                            <li><a href="{{ route('cities.create') }}" class="{{routeActive('cities.create')}}">{{__('admin/city.create')}}</a></li>
                         </ul>
                     </li>
 
@@ -75,6 +76,15 @@
                     </li>
 
 
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('events.index') or routeActive('events.create')) active @endif" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>{{__('admin/event.events')}}</span></a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('events.index') || routeActive('events.create')) block @else none @endif ;">
+                            <li><a href="{{ route('events.index') }}" class="{{routeActive('events.index')}}">{{__('admin/event.all_events')}}</a></li>
+                            <li><a href="{{ route('events.create') }}" class="{{routeActive('events.create')}}">{{__('admin/event.create')}}</a></li>
+                        </ul>
+                    </li>
 
                 </ul>
             </div>

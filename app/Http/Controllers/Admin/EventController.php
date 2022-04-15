@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\EventRequest;
 use App\Models\Event;
 use Illuminate\Http\Request;
 
@@ -22,7 +23,7 @@ class EventController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(EventRequest $request)
     {
         $events = new Event();
         $events->setTranslation('title', 'en', $request->title_en)
@@ -51,7 +52,7 @@ class EventController extends Controller
         return view('dashboard.events.edit', compact('model'));
     }
 
-    public function update(Request $request, $id)
+    public function update(EventRequest $request, $id)
     {
         $event = Event::findOrFail($id);
         $event->setTranslation('title', 'en', $request->title_en)

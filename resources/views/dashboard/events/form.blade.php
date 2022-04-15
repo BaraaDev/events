@@ -113,8 +113,13 @@
 
         {!! Form::select('category_id',$category->pluck('name','id'),Request::old('category_id') ? Request::old('category_id') : $model->category_id,[
             'placeholder' => __('admin/home.select'),
-            'class'       => 'form-control select'
+            'class'       => 'form-control select'. ( $errors->has('category_id') ? ' is-invalid' : '' )
         ]) !!}
+        @error('category_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
     </div>
 </div>
 
@@ -125,19 +130,60 @@
 
         {!! Form::select('user_id',$user->pluck('name','id'),Request::old('user_id') ? Request::old('user_id') : $model->user_id,[
             'placeholder' => __('admin/home.select'),
-            'class'       => 'form-control select'
+            'class'       => 'form-control select'. ( $errors->has('user_id') ? ' is-invalid' : '' )
         ]) !!}
+        @error('user_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
     </div>
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/home.country')}} <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">{{__('admin/country.country')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
-        @inject('country','App\Models\Country')
-
-        {!! Form::select('country_id',$country->pluck('name','id'),Request::old('country_id') ? Request::old('country_id') : $model->country_id,[
+        @inject('countries','App\Models\Country')
+        {!! Form::select('country_id',$countries->pluck('name','id'),Request::old('country_id') ? Request::old('country_id') : $model->country_id,[
             'placeholder' => __('admin/home.select'),
-            'class'       => 'form-control select'
+            'class'       => 'form-control select'. ( $errors->has('user_id') ? ' is-invalid' : '' )
         ]) !!}
+        @error('country_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/governorate.Governorate')}} <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        @inject('governorate','App\Models\Governorate')
+        {!! Form::select('governorate_id',$governorate->pluck('name','id'),Request::old('governorate_id') ? Request::old('governorate_id') : $model->governorate_id,[
+            'placeholder' => __('admin/home.select'),
+            'class'       => 'form-control select'. ( $errors->has('governorate_id') ? ' is-invalid' : '' )
+        ]) !!}
+        @error('governorate_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/city.city')}} <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        @inject('cities','App\Models\City')
+        {!! Form::select('city_id',$cities->pluck('name','id'),Request::old('city_id') ? Request::old('city_id') : $model->city_id,[
+            'placeholder' => __('admin/home.select'),
+            'class'       => 'form-control select'.( $errors->has('city_id') ? ' is-invalid' : '' )
+        ]) !!}
+        @error('city_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
     </div>
 </div>

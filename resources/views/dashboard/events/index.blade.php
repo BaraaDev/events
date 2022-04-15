@@ -33,8 +33,8 @@
                                         <th scope="col" class="text-center">{{__('admin/event.time')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.date')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.budget')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/event.location')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.category')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/event.invitation_address')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
@@ -48,8 +48,8 @@
                                         <td class="text-center">{{$event->time}}</td>
                                         <td class="text-center">{{$event->date}}</td>
                                         <td class="text-center">{{$event->budget}}</td>
-                                        <td class="text-center">{{$event->location}}</td>
-                                        <td class="text-center">{{optional($event->category)->name}}</td>
+                                        <td class="text-center"><a href="{{route('categories.edit',$event->category->id ?? '')}}">{{$event->category->name ?? ''}}</a></td>
+                                        <td class="text-center"><a href="{{route('countries.edit',$event->country->id ?? '')}}">{{$event->country->name ?? ''}}</a> - <a href="{{route('governorates.edit',$event->governorate->id ?? '')}}">{{$event->governorate->name ?? ''}}</a> - <a href="{{route('cities.edit',$event->city->id ?? '')}}">{{$event->city->name ?? ''}}</a></td>
 
                                         <td class="text-center">{{$event->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
