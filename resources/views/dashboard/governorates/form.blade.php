@@ -1,3 +1,4 @@
+
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'ar') show active @endif" id="ar" role="tabpanel" aria-labelledby="ar-tab">
     <div class="col-md-12">
         <input class="form-control @error('name_ar') is-invalid @enderror" value="{{Request::old('name_ar') ? Request::old('name_ar') : $model->getTranslation('name','ar')}}" type="text" name="name_ar" placeholder="{{__('admin/home.Enter_name_ar')}}" autocomplete="off">
@@ -28,3 +29,16 @@
         @enderror
     </div>
 </div>
+<div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/home.country')}} <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        @inject('country','App\Models\Country')
+
+        {!! Form::select('country_id',$country->pluck('name','id'),Request::old('country_id') ? Request::old('country_id') : $model->country_id,[
+            'placeholder' => __('admin/home.select'),
+            'class'       => 'form-control select'
+        ]) !!}
+    </div>
+</div>
+
+
