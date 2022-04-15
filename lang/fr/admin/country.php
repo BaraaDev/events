@@ -4,7 +4,7 @@ return [
     'country'                           => 'Pays',
     'countries'                         => 'Des pays',
     'all_countries'                     => 'Tous les pays',
-    'create'                            => 'créer',
+    'create'                            => 'Créer un pays',
     'edit'                              => 'Éditer',
     'NameCountry'                       => 'Nom du pays',
     'addCountry'                        => 'Ajouter un pays',

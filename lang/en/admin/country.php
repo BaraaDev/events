@@ -4,7 +4,7 @@ return [
     'country'                           => 'Country',
     'countries'                         => 'Countries',
     'all_countries'                     => 'All Countries',
-    'create'                            => 'Create',
+    'create'                            => 'Create Country',
     'edit'                              => 'Edit',
     'NameCountry'                       => 'Name Countries',
     'addCountry'                        => 'Add Countries',
