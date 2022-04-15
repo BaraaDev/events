@@ -8,11 +8,7 @@ use App\Models\Governorate;
 
 class GovernorateController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $governorates = Governorate::orderBy('created_at','asc')->paginate(30);
