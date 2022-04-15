@@ -21,6 +21,5 @@ return [
     'country'                     => 'Countries',
     'date'                        => 'Date',
     'enter_budget'                => 'Enter Budget',
-
     'DescriptionEvent'            => 'All events. If you want to create and add new events, you must click on the (Add New Events) button at the top of the page.',
 ];
