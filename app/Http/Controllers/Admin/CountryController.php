@@ -28,6 +28,7 @@ class CountryController extends Controller
         $countries->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
+        $countries->create_user = auth()->user()->id;
         $countries->save();
 
         return redirect()->route('countries.index')->with(['message' => __('admin/home.added_successfully')]);
@@ -47,6 +48,7 @@ class CountryController extends Controller
         $countries->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
+        $countries->update_user = auth()->user()->id;
         $countries->save();
 
         return redirect()->route('countries.index')->with(['message' => __('admin/home.edited_successfully')]);

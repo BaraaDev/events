@@ -32,6 +32,7 @@ class CategoryController extends Controller
             ->setTranslation('content', 'en', $request->content_en)
             ->setTranslation('content', 'ar', $request->content_ar)
             ->setTranslation('content', 'fr', $request->content_fr);
+        $categories->create_user = auth()->user()->id;
         $categories->save();
 
         return redirect()->route('categories.index')
@@ -54,6 +55,7 @@ class CategoryController extends Controller
             ->setTranslation('content', 'en', $request->content_en)
             ->setTranslation('content', 'ar', $request->content_ar)
             ->setTranslation('content', 'fr', $request->content_fr);
+        $categories->update_user = auth()->user()->id;
         $categories->save();
 
         return redirect()->route('categories.index')
