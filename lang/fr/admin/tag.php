@@ -9,7 +9,7 @@ return [
     'NameTag'                       => "l' étiquette de nom",
     'addTag'                        => 'Ajouter une étiquette',
     'showTag'                       => 'Afficher la balise',
-    'create_history'                => "Créer l'histoire",
+    'create_history'                => "Histoire de la création",
     'Enter_tag_name_ar'             => 'Entrez le nom de la balise en arabe',
     'Enter_tag_name_en'             => 'Entrez le nom de la balise en anglais',
     'Enter_tag_name_fr'             => 'Entrez le nom du tag en français',

@@ -26,8 +26,10 @@ Route::group([
     'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
 ], function () {
     Route::prefix('dashboard')->group(function () {
-        Route::get('/', [HomeController::class, 'index'])->name('dashboard');
-        //Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
+        Route::group([], function() {
+            Route::get('/', [HomeController::class, 'index'])->name('dashboard');
+            Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
+        });
         Route::resource('/tags', TagController::class);
         Route::resource('/categories', CategoryController::class);
         Route::resource('/countries', CountryController::class);
