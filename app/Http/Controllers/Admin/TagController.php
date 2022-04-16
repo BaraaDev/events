@@ -28,7 +28,7 @@ class TagController extends Controller
         $tags->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
-        $tags->create_user = auth()->user()->id;
+        $tags->create_user_id = auth()->user()->id;
         $tags->save();
 
         return redirect()->route('tags.index')
@@ -49,7 +49,7 @@ class TagController extends Controller
         $tags->setTranslation('name', 'en', $request->name_en)
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
-        $tags->update_user = auth()->user()->id;
+        $tags->update_user_id = auth()->user()->id;
         $tags->save();
 
         return redirect()->route('tags.index')
