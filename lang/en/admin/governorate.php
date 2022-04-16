@@ -2,15 +2,15 @@
 
 return [
     'Governorate'                       => 'Governorate',
-    'Governorates'                      => 'Governorates',
-    'all_Governorates'                  => 'All Governorates',
+    'Governorates'                      => 'Governorate',
+    'all_Governorates'                  => 'All Governorate',
     'create'                            => 'Create Governorate',
     'edit'                              => 'Update Governorate',
-    'NameGovernorate'                   => 'Governorates Names',
+    'NameGovernorate'                   => 'Governorate Names',
     'addGovernorate'                    => 'Add New Governorate',
-    'showGovernorate'                   => 'Show Governorates',
+    'showGovernorate'                   => 'Show Governorate',
     'name'                              => 'Name',
     'add_new'                           => 'Add New',
     'update'                            => 'Update',
-    'DescriptionGovernorate'            => 'All governorates. If you want to create and add new governorates, you must click on the (Add a New Replacement) button at the top of the page.',
+    'DescriptionGovernorate'            => 'All governorate. If you want to create and add new governorate, you must click on the (Add a New Replacement) button at the top of the page.',
 ];

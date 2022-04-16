@@ -6,7 +6,7 @@ return [
     'all_countries'                     => 'All Countries',
     'create'                            => 'Create Country',
     'edit'                              => 'Edit',
-    'NameCountry'                       => 'Name Countries',
+    'NameCountry'                       => 'Country Names',
     'addCountry'                        => 'Add Countries',
     'showCountry'                       => 'Show Countries',
     'name'                              => 'Name',
