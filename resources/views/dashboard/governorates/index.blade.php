@@ -19,7 +19,7 @@
             <div class="card">
                 <div class="card-header">
 
-                    <h5>{{__('admin/governorate.showGovernorate')}} - <span class="b-b-success badge-dark">{{App\Models\Governorate::count()}}</span></h5>
+                    <h5>{{__('admin/governorate.showGovernorate')}} - <span class="b-b-success">{{App\Models\Governorate::count()}}</span></h5>
                     <span>{{__('admin/governorate.DescriptionGovernorate')}}</span>
                 </div>
                 <div class="card-block row">

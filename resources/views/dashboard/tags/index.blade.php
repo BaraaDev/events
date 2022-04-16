@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-header">
 
-                        <h5>{{__('admin/tag.showTag')}} - <span class="b-b-success badge-dark">{{App\Models\Tag::count()}}</span></h5>
+                        <h5>{{__('admin/tag.showTag')}} - <span class="b-b-success">{{App\Models\Tag::count()}}</span></h5>
                         <span>{{__('admin/tag.DescriptionTag')}}</span>
                     </div>
                     <div class="card-block row">
@@ -39,7 +39,7 @@
                                     @forelse($tags as $tag)
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
-                                        <td class="text-center">{{$tag->name}}</td>
+                                        <td class="text-center">{{$tag->name ?? 'not found'}}</td>
                                         <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([

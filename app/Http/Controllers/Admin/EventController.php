@@ -44,7 +44,8 @@ class EventController extends Controller
         $events->status = $request->status;
 
         $events->save();
-        return redirect()->route('events.index')->with(['message' => __('admin/home.added_successfully')]);
+        return redirect()->route('events.index')
+            ->with(['message' => __('admin/home.added_successfully')]);
     }
 
 
@@ -75,7 +76,8 @@ class EventController extends Controller
         $event->status         = $request->status;
 
         $event->save();
-        return redirect()->route('events.index')->with(['message' => __('admin/home.edited_successfully')]);
+        return redirect()->route('events.index')
+            ->with(['message' => __('admin/home.edited_successfully')]);
 
     }
 

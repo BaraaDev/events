@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name','500');
             $table->longText('content');
-            $table->integer('create_user');
-            $table->integer('update_user')->nullable();
+            $table->integer('create_user_id');
+            $table->integer('update_user_id')->nullable();
             $table->string('status')->default(1);
             $table->timestamps();
             $table->softDeletes();

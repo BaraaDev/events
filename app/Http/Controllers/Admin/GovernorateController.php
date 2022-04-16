@@ -29,7 +29,7 @@ class GovernorateController extends Controller
             ->setTranslation('name', 'ar', $request->name_ar)
             ->setTranslation('name', 'fr', $request->name_fr);
         $governorates->country_id = $request->country_id;
-        $governorates->create_user = auth()->user()->id;
+        $governorates->create_user_id = auth()->user()->id;
         $governorates->save();
 
         return redirect()->route('governorates.index')
@@ -64,9 +64,7 @@ class GovernorateController extends Controller
     public function destroy($id)
     {
         $governorates = Governorate::findOrFail($id);
-
         $governorates->delete();
-
         return redirect()->route('governorates.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }

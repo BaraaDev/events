@@ -18,7 +18,7 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <h5>{{__('admin/country.showCountry')}}</h5>
+                    <h5>{{__('admin/country.showCountry')}} - <span class="b-b-success">{{App\Models\Country::count()}}</span></h5>
                     <span>{{__('admin/country.DescriptionCountry')}}</span>
                 </div>
                 <div class="card-block row">

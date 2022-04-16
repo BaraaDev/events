@@ -14,15 +14,23 @@ class City extends Model
 
     public $translatable = ['name'];
 
-    public function governorate()
+    public function governorate(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-
-
         return $this->belongsTo(Governorate::class);
     }
 
-    public function country()
+    public function country(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Country::class);
+    }
+
+    public function events(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Event::class,'city_id');
+    }
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

@@ -17,4 +17,14 @@ class Country extends Model
     {
         return $this->hasMany(Governorate::class, 'country_id');
     }
+
+    public function events(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Event::class,'country_id');
+    }
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

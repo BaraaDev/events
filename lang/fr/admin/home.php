@@ -38,8 +38,8 @@ return [
     'create_history'            => 'Créé à',
     'logout'                    => 'Se déconnecter',
     'alert_form'                => 'Êtes-vous sûr de vouloir quitter?',
-    'expired'                   => 'Expired',
-    'available'                 => 'Available',
-    'stopped'                   => 'Stopped',
-    'status'                    => 'Status',
+    'expired'                   => 'Expiré',
+    'available'                 => 'Disponible',
+    'stopped'                   => 'Arrêté',
+    'status'                    => 'Statut',
 ];

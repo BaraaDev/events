@@ -25,8 +25,8 @@ return new class extends Migration
             $table->integer('city_id')->nullable();
             $table->string('category_id');
             $table->string('user_id');
-            $table->integer('create_user');
-            $table->integer('update_user')->nullable();
+            $table->integer('create_user_id');
+            $table->integer('update_user_id')->nullable();
             $table->enum('status',['Expired','Available','Stopped'])->nullable();
             $table->timestamps();
             $table->softDeletes();

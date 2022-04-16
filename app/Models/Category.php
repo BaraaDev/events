@@ -10,10 +10,17 @@ use Spatie\Translatable\HasTranslations;
 class Category extends Model
 {
     use HasFactory, HasTranslations, SoftDeletes;
+    protected $fillable = ['status'];
+
     public $translatable = ['name','content'];
 
     public function event(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Event::class,'category_id');
+    }
+
+    public function scopeStatus($query,$arg)
+    {
+        return $query->where('status',$arg);
     }
 }
