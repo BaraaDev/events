@@ -32,6 +32,8 @@
                                         <th scope="col" class="text-center">{{__('admin/governorate.NameGovernorate')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                 </thead>
@@ -40,9 +42,11 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$city->name}}</td>
-                                        <td class="text-center">{{$city->governorate->name??''}}</td>
-                                        <td class="text-center">{{$city->country->name??''}}</td>
+                                        <td class="text-center">{{$city->governorate->name ?? 'Error - contact Dev'}}</td>
+                                        <td class="text-center">{{$city->country->name ?? 'Error - contact Dev'}}</td>
                                         <td class="text-center">{{$city->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$city->create_user->name ?? 'Error - contact Dev'}}</td>
+                                        <td class="text-center">{{$city->update_user->name ?? 'Error - contact Dev'}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                             'route' => ['cities.destroy',$city->id],
