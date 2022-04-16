@@ -38,6 +38,7 @@ class EventRequest extends FormRequest
             'city_id'         => 'required',
             'category_id'     => 'required',
             'user_id'         => 'required',
+            'status'          => 'required|in:Stopped,Available,Expired',
         ];
     }
 
@@ -102,6 +103,10 @@ class EventRequest extends FormRequest
             // Validation budget
             'budget.required'                  => __('admin/request.budget_required'),
             'budget.integer'                   => __('admin/request.budget_integer'),
+
+            // Validation budget
+            'status.required'                  => __('admin/request.status_required'),
+            'status.in'                        => __('admin/request.status_selected'),
 
         ];
     }

@@ -187,3 +187,20 @@
         @enderror
     </div>
 </div>
+
+<div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        <select name="status" class="form-control select @error('status') is-invalid @enderror">
+            <option>{{__('admin/home.select')}}</option>
+            <option value="Expired" {{ isset($model) && $model->status == 'Expired' ? 'selected'  : '' }}>{{__('admin/home.expired')}}</option>
+            <option value="Available" {{ isset($model) && $model->status == 'Available' ? 'selected'  : '' }}>{{__('admin/home.available')}}</option>
+            <option value="Stopped" {{ isset($model) && $model->status == 'Stopped' ? 'selected'  : '' }}>{{__('admin/home.stopped')}}</option>
+        </select>
+        @error('status')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>

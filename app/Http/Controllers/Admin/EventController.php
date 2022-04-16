@@ -40,6 +40,8 @@ class EventController extends Controller
         $events->category_id = $request->category_id;
         $events->budget = $request->budget;
         $events->user_id = $request->user_id;
+        $events->create_user_id = auth()->user()->id;
+        $events->status = $request->status;
 
         $events->save();
         return redirect()->route('events.index')->with(['message' => __('admin/home.added_successfully')]);
@@ -69,6 +71,8 @@ class EventController extends Controller
         $event->category_id    = $request->category_id;
         $event->budget         = $request->budget;
         $event->user_id        = $request->user_id;
+        $event->update_user_id = auth()->user()->id;
+        $event->status         = $request->status;
 
         $event->save();
         return redirect()->route('events.index')->with(['message' => __('admin/home.edited_successfully')]);

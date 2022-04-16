@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title','500');
             $table->time('time')->nullable();
             $table->dateTime('date_time');
             $table->string('budget');
@@ -25,6 +25,9 @@ return new class extends Migration
             $table->integer('city_id')->nullable();
             $table->string('category_id');
             $table->string('user_id');
+            $table->integer('create_user');
+            $table->integer('update_user')->nullable();
+            $table->enum('status',['Expired','Available','Stopped'])->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

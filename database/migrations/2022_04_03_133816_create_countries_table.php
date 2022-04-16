@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('countries', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name','500');
+            $table->integer('create_user');
+            $table->integer('update_user')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

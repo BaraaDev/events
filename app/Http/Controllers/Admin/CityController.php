@@ -30,7 +30,7 @@ class CityController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $cities->governorate_id = $request->governorate_id;
         $cities->country_id     = $request->country_id;
-
+        $cities->create_user = auth()->user()->id;
         $cities->save();
 
         return redirect()->route('cities.index')
@@ -55,6 +55,7 @@ class CityController extends Controller
 
         $cities->governorate_id = $request->governorate_id;
         $cities->country_id = $request->country_id;
+        $cities->update_user = auth()->user()->id;
         $cities->save();
 
         return redirect()->route('cities.index')

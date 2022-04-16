@@ -15,8 +15,11 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('content');
+            $table->string('name','500');
+            $table->longText('content');
+            $table->integer('create_user');
+            $table->integer('update_user')->nullable();
+            $table->string('status')->default(1);
             $table->timestamps();
             $table->softDeletes();
         });
