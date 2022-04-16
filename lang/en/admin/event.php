@@ -15,6 +15,7 @@ return [
     'time'                        => 'Times',
     'budget'                      => 'Budgets',
     'location'                    => 'Locations',
+    'invitation_address'          => 'invitation Address',
     'category'                    => 'Categories',
     'city'                        => 'Cities',
     'governorate'                 => 'Governorates',

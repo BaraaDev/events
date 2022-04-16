@@ -21,5 +21,6 @@ return [
     'country'                     => 'Des pays',
     'date'                        => 'Date',
     'enter_budget'                => 'Saisir le budget',
+    'invitation_address'          => 'invitation Address',
     'DescriptionEvent'            => 'Tous les évènements. Si vous souhaitez créer et ajouter de nouveaux événements, vous devez cliquer sur le bouton (Ajouter de nouveaux événements) en haut de la page.',
 ];

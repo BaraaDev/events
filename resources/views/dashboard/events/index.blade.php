@@ -18,7 +18,7 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>{{__('admin/event.showEvent')}} - <span class="b-b-success badge-dark">{{App\Models\Event::count()}}</span></h5>
+                        <h5>{{__('admin/event.showEvent')}} - <span class="b-b-success">{{App\Models\Event::count()}}</span></h5>
                         <span>{{__('admin/event.DescriptionEvent')}}</span>
                     </div>
 
@@ -31,36 +31,50 @@
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/event.TitleEvent')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/event.time')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/event.date')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.budget')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.category')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.invitation_address')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.status')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @forelse($events as $event)
                                     <tr>
-
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$event->title}}</td>
-                                        <td class="text-center">{{$event->time}}</td>
-                                        <td class="text-center">{{$event->date}}</td>
                                         <td class="text-center">{{$event->budget}}</td>
                                         <td class="text-center"><a href="{{route('categories.edit',$event->category->id ?? '')}}">{{$event->category->name ?? ''}}</a></td>
-                                        <td class="text-center"><a href="{{route('countries.edit',$event->country->id ?? '')}}">{{$event->country->name ?? ''}}</a> - <a href="{{route('governorates.edit',$event->governorate->id ?? '')}}">{{$event->governorate->name ?? ''}}</a> - <a href="{{route('cities.edit',$event->city->id ?? '')}}">{{$event->city->name ?? ''}}</a></td>
-
+                                        <td class="text-center">
+                                            <a href="{{route('countries.edit',$event->country->id ?? '')}}">{{$event->country->name ?? ''}}</a> -
+                                            <a href="{{route('governorates.edit',$event->governorate->id ?? '')}}">{{$event->governorate->name ?? ''}}</a> -
+                                            <a href="{{route('cities.edit',$event->city->id ?? '')}}">{{$event->city->name ?? ''}}</a>
+                                        </td>
+                                        <td class="text-center">{{$event->create_user->name ?? __('admin/home.alert_no_data')}}</td>
                                         <td class="text-center">{{$event->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">
+                                            @if($event->status == 'Expired')
+                                                <div class="badge badge-dark label-square">
+                                                    <span class="f-14">{{__('admin/home.expired')}}</span>
+                                                </div>
+                                            @elseif($event->status == 'Stopped')
+                                                <div class="badge badge-danger label-square">
+                                                    <span class="f-14">{{__('admin/home.stopped')}}</span>
+                                                </div>
+                                            @elseif($event->status == 'Available')
+                                                <div class="badge badge-success label-square">
+                                                    <span class="f-14">{{__('admin/home.available')}}</span>
+                                                </div>
+                                            @endif
+                                        </td>
                                         <td class="text-center">
                                             {!! Form::open([
                                                 'route' => ['events.destroy',$event->id],
                                                 'method' => 'delete'
                                             ])!!}
-
                                             <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($event->name)"}}">{{__('admin/home.delete')}} </button>
-
                                             <a href="{{route('events.edit',$event->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($event->name)"}}"><li class="icon-pencil"></li> {{__('admin/home.edit')}}</a>
                                             {!! Form::close() !!}
                                         </td>
