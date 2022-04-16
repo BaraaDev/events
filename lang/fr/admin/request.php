@@ -84,6 +84,6 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message status
     ///////////////////////////////////////////////////////////////////////////////////////
-    'status_required'           => 'حقل الحالة مطلوب.',
-    'status_selected'           => 'الحالة المحتارة غير صالحة!',
+    'status_required'           => "Le champ d'état est obligatoire.",
+    'status_selected'           => "Le statut sélectionné n'est pas valide",
 ];
