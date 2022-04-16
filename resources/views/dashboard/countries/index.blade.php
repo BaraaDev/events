@@ -30,6 +30,8 @@
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                 </thead>
@@ -39,6 +41,8 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$country->name}}</td>
                                         <td class="text-center">{{$country->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$country->create_user->name ?? ''}}</td>
+                                        <td class="text-center">{{$country->update_user->name ?? ''}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                             'route' => ['countries.destroy',$country->id],

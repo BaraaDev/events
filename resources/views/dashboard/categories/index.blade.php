@@ -31,26 +31,30 @@
                                         <th scope="col" class="text-center">{{__('admin/category.NameCategory')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/category.content_categories')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @forelse($categories as $tag)
+                                    @forelse($categories as $category)
                                     <tr>
 
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
-                                        <td class="text-center">{{$tag->name}}</td>
-                                        <td class="text-center">{{Str::limit($tag->content,'75','......')}}</td>
-                                        <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$category->name}}</td>
+                                        <td class="text-center">{{Str::limit($category->content,'75','......')}}</td>
+                                        <td class="text-center">{{$category->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$category->create_user->name ?? ''}}</td>
+                                        <td class="text-center">{{$category->update_user->name ?? ''}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
-                                                'route' => ['categories.destroy',$tag->id],
+                                                'route' => ['categories.destroy',$category->id],
                                                 'method' => 'delete'
                                             ])!!}
 
-                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($tag->name)"}}">{{__('admin/home.delete')}} </button>
+                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($category->name)"}}">{{__('admin/home.delete')}} </button>
 
-                                            <a href="{{route('categories.edit',$tag->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($tag->name)"}}"><li class="icon-pencil"></li> {{__('admin/home.edit')}}</a>
+                                            <a href="{{route('categories.edit',$category->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($category->name)"}}"><li class="icon-pencil"></li> {{__('admin/home.edit')}}</a>
                                             {!! Form::close() !!}
                                         </td>
                                     </tr>

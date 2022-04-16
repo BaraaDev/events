@@ -32,6 +32,8 @@
                                         <th scope="col" class="text-center">{{__('admin/governorate.NameGovernorate')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                 </thead>
@@ -42,6 +44,8 @@
                                         <td class="text-center">{{$governorate->name}}</td>
                                         <td class="text-center">{{$governorate->country->name??''}}</td>
                                         <td class="text-center">{{$governorate->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$governorate->create_user->name ?? ''}}</td>
+                                        <td class="text-center">{{$governorate->update_user->name ?? ''}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                             'route' => ['governorates.destroy',$governorate->id],

@@ -32,6 +32,8 @@
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/tag.NameTag')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                     </thead>
@@ -41,6 +43,8 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$tag->name ?? 'not found'}}</td>
                                         <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$tag->create_user->name ?? ''}}</td>
+                                        <td class="text-center">{{$tag->update_user->name ?? ''}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                                 'route' => ['tags.destroy',$tag->id],
