@@ -12,7 +12,7 @@ class Governorate extends Model
     use HasFactory, HasTranslations, SoftDeletes;
 
     public $translatable = ['name'];
-    
+
 
     public function country(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -22,5 +22,15 @@ class Governorate extends Model
     public function city(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(City::class,'governorate_id');
+    }
+
+    public function events(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Event::class,'governorate_id');
+    }
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

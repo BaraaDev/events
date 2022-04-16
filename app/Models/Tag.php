@@ -11,4 +11,9 @@ class Tag extends Model
 {
     use HasFactory, HasTranslations, SoftDeletes;
     public $translatable = ['name'];
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }

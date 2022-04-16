@@ -64,9 +64,7 @@ class GovernorateController extends Controller
     public function destroy($id)
     {
         $governorates = Governorate::findOrFail($id);
-
         $governorates->delete();
-
         return redirect()->route('governorates.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
