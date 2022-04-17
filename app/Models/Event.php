@@ -38,6 +38,10 @@ class Event extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function scopeStatus($query,$arg)
     {

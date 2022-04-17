@@ -52,7 +52,7 @@
                                             <a href="{{route('governorates.edit',$event->governorate->id ?? '')}}">{{$event->governorate->name ?? ''}}</a> -
                                             <a href="{{route('cities.edit',$event->city->id ?? '')}}">{{$event->city->name ?? ''}}</a>
                                         </td>
-                                        <td class="text-center">{{$event->create_user->name ?? __('admin/home.alert_no_data')}}</td>
+                                        <td class="text-center">{{$event->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$event->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             @if($event->status == 'Expired')

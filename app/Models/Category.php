@@ -14,7 +14,7 @@ class Category extends Model
 
     public $translatable = ['name','content'];
 
-    public function event(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function events(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Event::class,'category_id');
     }

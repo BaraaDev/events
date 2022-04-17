@@ -9,19 +9,16 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-
     public function index()
     {
         $categories = Category::orderBy('created_at','asc')->paginate(30);
         return view('dashboard.categories.index',compact('categories'));
     }
 
-
     public function create()
     {
         return view('dashboard.categories.create');
     }
-
 
     public function store(CategoryRequest $request)
     {
@@ -39,12 +36,16 @@ class CategoryController extends Controller
             ->with(['message' => __('admin/home.added_successfully')]);
     }
 
+    public function show()
+    {
+        return abort('404');
+    }
+
     public function edit($id)
     {
         $model = Category::findOrFail($id);
         return view('dashboard.categories.edit',compact('model'));
     }
-
 
     public function update(CategoryRequest $request, $id)
     {
@@ -62,12 +63,31 @@ class CategoryController extends Controller
             ->with(['message' => __('admin/home.edited_successfully')]);
     }
 
-
     public function destroy($id)
     {
         $categories = Category::findOrFail($id);
         $categories->delete();
         return redirect()->route('categories.index')
             ->with(['message' => __('admin/home.deleted_successfully')]);
+    }
+
+    public function delete()
+    {
+        $categories = Category::orderBy('created_at','asc')->onlyTrashed()->paginate(30);
+        return view('dashboard.categories.delete',compact('categories'));
+    }
+
+    public function restore($id)
+    {
+        Category::withTrashed()->find($id)->restore();
+        return redirect()->route('categories.index')
+            ->with(['message' => __('admin/home.restored_successfully')]);
+    }
+
+    public function forceDelete($id)
+    {
+        Category::where('id', $id)->forceDelete();
+        return redirect()->route('categories.index')
+            ->with(['message' => __('admin/home.delete_forever_successfully')]);
     }
 }
