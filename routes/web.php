@@ -26,7 +26,7 @@ Route::group([
     'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
 ], function () {
     Route::prefix('dashboard')->group(function () {
-        Route::group([], function() {
+        Route::group([], function() {   //group function for "Home" route.
             Route::get('/', [HomeController::class, 'index'])->name('dashboard');
             Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
         });

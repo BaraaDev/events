@@ -64,4 +64,19 @@ class CountryController extends Controller
         return redirect()->route('countries.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
+
+
+    public function restore($id)
+    {
+        Country::withTrashed()->find($id)->restore();
+        return back();
+    }
+    
+
+    public function restoreAll()
+    {
+        Country::onlyTrashed()->restore();
+        return back();
+    }
+
 }
