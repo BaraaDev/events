@@ -34,7 +34,7 @@ Route::group([
         Route::resource('/categories', CategoryController::class);
         Route::get('/category/delete', [CategoryController::class,'delete'])->name('categories.delete');
         Route::get('/category/restore/{id}/', [CategoryController::class,'restore'])->name('categories.restore');
-        Route::DELETE('/category/forceDelete/{id}/', [CategoryController::class,'forceDelete'])->name('categories.forceDelete');
+        Route::delete('/category/forceDelete/{id}/', [CategoryController::class,'forceDelete'])->name('categories.forceDelete');
         Route::resource('/countries', CountryController::class);
         Route::resource('/governorates', GovernorateController::class);
         Route::resource('/events', EventController::class);

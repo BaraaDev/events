@@ -43,11 +43,11 @@ return [
     'stopped'                                => 'Arrêté',
     'status'                                 => 'Statut',
     'restore'                                => 'Restaurer',
-    'delete_forever'                         => 'Delete Forever',
-    'confirmRestore'                         => 'Are you sure you want to restore?',
-    'confirmDelete'                          => 'Êtes-vous sûr de vouloir revenir ?',
-    'create_delete'                          => 'Delete Date',
-    'restored_successfully'                  => 'Restored successfully',
-    'delete_forever_successfully'            => 'Delete Forever successfully',
+    'delete_forever'                         => 'Suppression permanente',
+    'confirmRestore'                         => 'Voulez-vous vraiment restaurer ?',
+    'confirmDelete'                          => 'Êtes-vous sûr de supprimer définitivement?',
+    'create_delete'                          => 'Date de suppression',
+    'restored_successfully'                  => 'Restauré avec succès',
+    'delete_forever_successfully'            => 'Supprimer définitivement avec succès',
 
 ];

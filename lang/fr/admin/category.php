@@ -17,8 +17,8 @@ return [
     'name'                          => 'Nom',
     'add_new'                       => 'Ajouter nouveau',
     'update'                        => 'Mettre à jour',
-    'restore'                       => ' استرجاع',
-    'delete_forever'                => 'حذف نهائي',
+    'restore'                       => 'Restaurer',
+    'delete_forever'                => 'Permanent Delete',
     'DescriptionCategory'           => 'Toutes les sections Si vous souhaitez créer et ajouter de nouvelles sections, vous devez cliquer sur le bouton (Ajouter de nouvelles sections) en haut de la page.',
     'DescriptionCategory_delete'    => 'Toutes les partitions supprimées Si vous souhaitez créer et ajouter de nouvelles partitions, vous devez cliquer sur le bouton (Ajouter de nouvelles partitions) en haut de la page, et si vous souhaitez restaurer une partition, appuyez sur (Restaurer) à côté de chaque partition.'
 ];

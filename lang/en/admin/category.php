@@ -18,7 +18,7 @@ return [
     'add_new'                       => 'Add New',
     'update'                        => 'Update',
     'restore'                       => 'Restore',
-    'delete_forever'                => 'Delete Forever',
+    'delete_forever'                => 'Permenant Delete',
     'DescriptionCategory'           => 'All Sections If you want to create and add new sections, you must click on the (Create New Category) button at the top of the page.',
     'DescriptionCategory_delete'    => 'All deleted categories If you want to create and add new sections, you must click the (Create New Category) button at the top of the page, and if you want to restore any section, press (Restore) next to each category',
 ];
