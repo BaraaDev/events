@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CountryRequest;
 use App\Models\Country;
+use Clockwork\Request\Request;
 
 class CountryController extends Controller
 {
@@ -35,6 +36,10 @@ class CountryController extends Controller
             ->with(['message' => __('admin/home.added_successfully')]);
     }
 
+    public function show()
+    {
+        return abort(401);
+    }
 
     public function edit($id)
     {
@@ -59,29 +64,40 @@ class CountryController extends Controller
 
     public function destroy($id)
     {
-        $countries = Country::findOrFail($id);
+        $countries = Country::find($id);
+        $countries->governorate()->delete();
+        $countries->city()->delete();
+
         $countries->delete();
         return redirect()->route('countries.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
-
+//////////////////////////////////
 
     public function delete()
     {
         $countries = Country::orderBy('created_at','asc')->onlyTrashed()->paginate(30);
+
         return view('dashboard.countries.delete',compact('countries'));
     }
 
-    public function restore($id)
+    public function restore(Request $request,$id)
     {
-        Country::withTrashed()->find($id)->restore();
+        $countries = Country::withTrashed()->find($id);
+        $countries->governorate()->restore();
+        $countries->city()->restore();
+        $countries->restore();
         return redirect()->route('countries.index')
             ->with(['message' => __('admin/home.restored_successfully')]);
     }
 
     public function forceDelete($id)
     {
-        Country::where('id', $id)->forceDelete();
+        $countries = Country::withTrashed()->find($id);
+
+        $countries->governorate()->forceDelete();
+        $countries->city()->forceDelete();
+        $countries->forceDelete();
         return redirect()->route('countries.index')
             ->with(['message' => __('admin/home.delete_forever_successfully')]);
     }

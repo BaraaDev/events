@@ -31,6 +31,7 @@
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/category.NameCategory')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/category.content_categories')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.status')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
@@ -44,6 +45,17 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$category->name}}</td>
                                         <td class="text-center">{{Str::limit($category->content,'75','......')}}</td>
+                                        <td class="text-center">
+                                            @if($category->status == 0)
+                                                <div class="badge badge-danger">
+                                                    <span>{{__('admin/home.stopped')}}</span>
+                                                </div>
+                                            @elseif($category->status == 1)
+                                                <div class="badge badge-success">
+                                                    <span>{{__('admin/home.available')}}</span>
+                                                </div>
+                                            @endif
+                                        </td>
                                         <td class="text-center">{{$category->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$category->update_user->name ?? ''}}</td>
                                         <td class="text-center">{{$category->created_at->format('Y-D-M')}}</td>

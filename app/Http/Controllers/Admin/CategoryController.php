@@ -56,6 +56,7 @@ class CategoryController extends Controller
             ->setTranslation('content', 'en', $request->content_en)
             ->setTranslation('content', 'ar', $request->content_ar)
             ->setTranslation('content', 'fr', $request->content_fr);
+        $categories->status         = $request->status;
         $categories->update_user_id = auth()->user()->id;
         $categories->save();
 

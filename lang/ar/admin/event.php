@@ -15,7 +15,6 @@ return [
     'time'                        => 'الوقت',
     'budget'                      => 'الميزانية',
     'location'                    => 'الموقع',
-    'category'                    => 'الأقسام',
     'invitation_address'          => 'مكان الأحداث',
     'city'                        => 'المدن',
     'governorate'                 => 'المحافظات',

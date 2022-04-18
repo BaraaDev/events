@@ -10,7 +10,7 @@
 <li class="breadcrumb-item"><a href="{{route('countries.index')}}">{{__('admin/country.countries')}}</a> </li>
 <li class="breadcrumb-item active">{{__('admin/country.deleted_countries')}}</li>
 @slot('bookmark')
-<a href="{{route('countries.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/country.addCountry')}}">{{__('admin/country.addcountry')}}</a>
+<a href="{{route('countries.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/country.addCountry')}}">{{__('admin/country.addCountry')}}</a>
 @endslot
 @endcomponent
 @include('layouts.admin.partials.messages.message')
@@ -30,7 +30,6 @@
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/country.content_countries')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_delete')}}</th>
@@ -42,8 +41,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$country->name}}</td>
-                                        <td class="text-center">{{Str::limit($country->content,'75','......')}}</td>
-                                        <td class="text-center">{{$country->create_user->name ?? ''}}</td>
+                                         <td class="text-center">{{$country->create_user->name ?? ''}}</td>
                                         <td class="text-center" title="{{$country->created_at->format('Y-D-M h:m')}}">{{$country->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center" title="{{$country->deleted_at->format('Y-D-M h:m')}}">{{$country->deleted_at->format('Y-D-M')}}</td>
                                         <td class="text-center">

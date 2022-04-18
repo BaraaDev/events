@@ -32,7 +32,7 @@
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/event.TitleEvent')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.budget')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/event.category')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/category.category')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.invitation_address')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
@@ -57,15 +57,15 @@
                                         <td class="text-center">
                                             @if($event->status == 'Expired')
                                                 <div class="badge badge-dark label-square">
-                                                    <span class="f-14">{{__('admin/home.expired')}}</span>
+                                                    <span>{{__('admin/home.expired')}}</span>
                                                 </div>
                                             @elseif($event->status == 'Stopped')
                                                 <div class="badge badge-danger label-square">
-                                                    <span class="f-14">{{__('admin/home.stopped')}}</span>
+                                                    <span>{{__('admin/home.stopped')}}</span>
                                                 </div>
                                             @elseif($event->status == 'Available')
                                                 <div class="badge badge-success label-square">
-                                                    <span class="f-14">{{__('admin/home.available')}}</span>
+                                                    <span>{{__('admin/home.available')}}</span>
                                                 </div>
                                             @endif
                                         </td>
