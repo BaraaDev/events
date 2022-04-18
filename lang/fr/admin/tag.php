@@ -6,7 +6,7 @@ return [
     'all_tags'                      => 'Toutes les balises',
     'create'                        => 'Créer',
     'edit'                          => 'Éditer',
-    'NameTag'                       => "l' étiquette de nom",
+    'NameTag'                       => 'Nom de la balise',
     'addTag'                        => 'Ajouter une étiquette',
     'showTag'                       => 'Afficher la balise',
     'create_history'                => "Histoire de la création",
