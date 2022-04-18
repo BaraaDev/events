@@ -6,7 +6,7 @@ return [
     'all_tags'                      => 'All Tags',
     'create'                        => 'Create Tags',
     'edit'                          => 'Edit',
-    'NameTag'                       => 'Name Tag',
+    'NameTag'                       => 'Tag Name',
     'addTag'                        => 'Add new tags',
     'showTag'                       => 'Show tags',
     'create_history'                => "Create History",
