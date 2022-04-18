@@ -30,7 +30,7 @@ return [
     'select'                            => 'من فضلك اختر',
     'user'                              => 'المستخدم',
     'create_user'                       => 'أضيفت بواسطة',
-    'update_user'                       => 'التعديل الأخير بواسطة',
+    'update_user'                       => 'تعديل بواسطة',
     'expired'                           => 'انتهت',
     'available'                         => 'متوفرة',
     'stopped'                           => 'توقف',
