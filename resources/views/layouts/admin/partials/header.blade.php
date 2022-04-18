@@ -1,3 +1,8 @@
+<style>
+    .lang-icon{font-size: 160%;};
+    .notification-body p a:hover{color: snow;};
+</style>
+
 <div class="page-main-header">
 
     <div class="main-header-right row m-0">
@@ -17,8 +22,10 @@
                     <span class="d-sm-none mobile-search search-bg"><i class="fa fa-search"></i></span>
                 </li>
             </ul>
+
         </div>
         <div class="nav-right col pull-right right-menu p-0">
+
             <ul class="nav-menus">
                 <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
 
@@ -37,6 +44,9 @@
                                 </div>
                             </div>
                         </li>
+                        
+
+
                         <li class="noti-secondary">
                             <div class="media">
                                 <span class="notification-bg bg-light-secondary"><i data-feather="check-circle"> </i></span>
@@ -66,14 +76,39 @@
                         </li>
                     </ul>
                 </li>
+
+                
+
                 <li>
-                    <div class="mode"><i class="fa fa-lightbulb-o"></i></div>
+            <div class="mode"><i class="fa fa-lightbulb-o"></i></div>
                 </li>
+
+                <!-------------------- start translation dropdown -------------------->
+                <li class="onhover-dropdown">
+                        <div class="notification-box mt-2"><i class="fas fa-language lang-icon"></i></div>
+                    <ul class="notification-dropdown onhover-show-div">
+                                <li>
+                                    <p class="f-w-700 mb-0">Languages:</p>
+                                </li>
+                            <div class="notification-body mx-3">
+                                <p><span class="flag-icon flag-icon-us"></span><a href="http://events.test/en/dashboard" class="mx-3">{{__('admin/home.english')}}</a></p>
+                                <p><span class="flag-icon flag-icon-eg"></span><a href="http://events.test/ar/dashboard" class="mx-3">{{__('admin/home.arabic')}}</a></p>
+                                <p><span class="flag-icon flag-icon-fr"></span><a href="http://events.test/fr/dashboard" class="mx-3">{{__('admin/home.french')}}</a></p>
+                            </div>
+                     </li>
+                    </ul>
+                </li>   
+                <!-------------------- end translation dropdown -------------------->
+
                 <li class="onhover-dropdown p-0">
                     <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>{{__('admin/home.logout')}}</button>
                 </li>
-            </ul>
-        </div>
+
+                
+
+            </div>
+
+        
 
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
     </div>

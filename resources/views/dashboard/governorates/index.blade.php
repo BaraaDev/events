@@ -42,7 +42,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$governorate->name}}</td>
-                                        <td class="text-center">{{$governorate->country->name??''}}</td>
+                                        <td class="text-center">{{$governorate->country->name ?? ''}}</td>
                                         <td class="text-center">{{$governorate->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center">{{$governorate->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$governorate->update_user->name ?? ''}}</td>
