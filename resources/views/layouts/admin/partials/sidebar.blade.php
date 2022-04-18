@@ -1,9 +1,13 @@
 <style>
+<<<<<<< HEAD
     .sidebar-user .name:hover {
         color: snow;
     }
 
     ;
+=======
+    .sidebar-user .name:hover{color: snow; transition: 0.55s ease-in-out;};
+>>>>>>> e32802777d5d2b4903c082ac78bc1ab4856618d2
 </style>
 
 <header class="main-nav">
