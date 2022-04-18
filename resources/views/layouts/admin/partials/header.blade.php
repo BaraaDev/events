@@ -80,7 +80,7 @@
                 
 
                 <li>
-            <div class="mode"><i class="fa fa-lightbulb-o"></i></div>
+                    <div class="mode"><a href="#"><i class="fa fa-lightbulb-o"></i></a></div>
                 </li>
 
                 <!-------------------- start translation dropdown -------------------->
