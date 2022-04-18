@@ -51,15 +51,15 @@
                             </svg>
                             <span>{{__('admin/country.countries')}}</span></a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('countries.index') || routeActive('countries.create') || routeActive('countries.delete'))  block @else none @endif; ">
-                            <li><a href="{{ route('countries.index') }}" class="{{routeActive('countries.index')}}">{{__('admin/country.all_countries')}}</a></li>
                             <li><a href="{{ route('countries.create') }}" class="{{routeActive('countries.create')}}">{{__('admin/country.create')}}</a></li>
+                            <li><a href="{{ route('countries.index') }}" class="{{routeActive('countries.index')}}">{{__('admin/country.all_countries')}}</a></li>
                             <li><a href="{{ route('countries.delete') }}" class="{{routeActive('countries.delete')}}">{{__('admin/country.deleted_countries')}}</a></li>
                         </ul>
                     </li>
 
 
                     <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('governorates.index') || routeActive('governorates.create')) active @endif" href="javascript:void(0)">
+                        <a class="nav-link menu-title @if(routeActive('governorates.index') || routeActive('governorates.create') || routeActive('governorates.delete')) active @endif" href="javascript:void(0)">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map">
                                 <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
                                 <line x1="8" y1="2" x2="8" y2="18"></line>
@@ -67,8 +67,8 @@
                             </svg>
                             <span>{{__('admin/governorate.Governorates')}}</span></a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('governorates.index') || routeActive('governorates.create')) block @else none @endif ;">
-                            <li><a href="{{ route('governorates.index') }}" class="{{routeActive('governorates.index')}}">{{__('admin/governorate.all_Governorates')}}</a></li>
                             <li><a href="{{ route('governorates.create') }}" class="{{routeActive('governorates.create')}}">{{__('admin/governorate.create')}}</a></li>
+                            <li><a href="{{ route('governorates.index') }}" class="{{routeActive('governorates.index')}}">{{__('admin/governorate.all_Governorates')}}</a></li>
                             <li><a href="{{ route('governorates.delete') }}" class="{{routeActive('governorates.delete')}}">{{__('admin/governorate.deleted_governorates')}}</a></li>
                         </ul>
                     </li>
@@ -100,8 +100,8 @@
                             </svg>
                             <span>{{__('admin/category.categories')}}</span></a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('categories.index') || routeActive('categories.create') || routeActive('categories.delete')) block @else none @endif ;">
-                            <li><a href="{{ route('categories.index') }}" class="{{routeActive('categories.index')}}">{{__('admin/category.all_categories')}}</a></li>
                             <li><a href="{{ route('categories.create') }}" class="{{routeActive('categories.create')}}">{{__('admin/category.create')}}</a></li>
+                            <li><a href="{{ route('categories.index') }}" class="{{routeActive('categories.index')}}">{{__('admin/category.all_categories')}}</a></li>
                             <li><a href="{{ route('categories.delete') }}" class="{{routeActive('categories.delete')}}">{{__('admin/category.deleted_categories')}}</a></li>
                         </ul>
                     </li>
