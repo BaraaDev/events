@@ -30,6 +30,7 @@
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/governorate.NameGovernorate')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_delete')}}</th>
@@ -41,6 +42,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$governorate->name}}</td>
+                                        <td class="text-center">{{$governorate->country->name ?? ''}}</td>
                                         <td class="text-center">{{$governorate->create_user->name ?? ''}}</td>
                                         <td class="text-center" title="{{$governorate->created_at->format('Y-D-M h:m')}}">{{$governorate->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center" title="{{$governorate->deleted_at->format('Y-D-M h:m')}}">{{$governorate->deleted_at->format('Y-D-M')}}</td>
