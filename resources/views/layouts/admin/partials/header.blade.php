@@ -90,11 +90,13 @@
                                 <li>
                                     <p class="f-w-700 mb-0">Languages:</p>
                                 </li>
-                            <div class="notification-body mx-3 mt-3">
-                                <p><span class="flag-icon flag-icon-us"></span><a href="http://events.test/en/dashboard" class="mx-3">{{__('admin/home.english')}}</a></p>
-                                <p><span class="flag-icon flag-icon-eg"></span><a href="http://events.test/ar/dashboard" class="mx-3">{{__('admin/home.arabic')}}</a></p>
-                                <p><span class="flag-icon flag-icon-fr"></span><a href="http://events.test/fr/dashboard" class="mx-3">{{__('admin/home.french')}}</a></p>
+                                <li>
+                            <div class="notification-body">
+                                <p><span class="flag-icon flag-icon-us mt-3"></span><a href="http://events.test/en/dashboard" class="mx-3">{{__('admin/home.english')}}</a></p>
+                                <p><span class="flag-icon flag-icon-eg mt-3"></span><a href="http://events.test/ar/dashboard" class="mx-3">{{__('admin/home.arabic')}}</a></p>
+                                <p><span class="flag-icon flag-icon-fr mt-3"></span><a href="http://events.test/fr/dashboard" class="mx-3">{{__('admin/home.french')}}</a></p>
                             </div>
+                                </li>
                      </li>
                     </ul>
                 </li>   
