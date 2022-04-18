@@ -26,7 +26,7 @@ Route::group([
     'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
 ], function () {
     Route::prefix('dashboard')->group(function () {
-        Route::group([], function() {   //group function for "Home" route.
+        Route::group([], function () {   //group function for "Home" route.
             Route::get('/', [HomeController::class, 'index'])->name('dashboard');
             Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
         });
@@ -37,13 +37,21 @@ Route::group([
         Route::get('/category/restore/{id}/', [CategoryController::class,'restore'])->name('categories.restore');
         Route::delete('/category/forceDelete/{id}/', [CategoryController::class,'forceDelete'])->name('categories.forceDelete');
         //-------------------- end categories --------------------//
+
+        //-------------------- start countries --------------------//
         Route::resource('/countries', CountryController::class);
+        Route::get('/country/delete', [CountryController::class, 'delete'])->name('countries.delete');
+        Route::get('/country/restore/{id}/', [CountryController::class, 'restore'])->name('countries.restore');
+        Route::delete('/country/forceDelete/{id}/', [CountryController::class, 'forceDelete'])->name('countries.forceDelete');
+        //-------------------- end countries --------------------//
+
         //-------------------- start governorates --------------------//
         Route::resource('/governorates', GovernorateController::class);
         Route::get('/governorate/delete', [GovernorateController::class,'delete'])->name('governorates.delete');
         Route::get('/governorate/restore/{id}/', [GovernorateController::class,'restore'])->name('governorates.restore');
         Route::delete('/governorate/forceDelete/{id}/', [GovernorateController::class,'forceDelete'])->name('governorates.forceDelete');
         //-------------------- end governorates --------------------//
+        
         Route::resource('/events', EventController::class);
         Route::resource('/cities', CityController::class);
     });
