@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title','500');
             $table->time('time')->nullable();
-            $table->dateTime('date_time');
+            $table->dateTime('date');
             $table->string('budget');
             $table->string('location')->nullable();
             $table->integer('country_id')->nullable();
