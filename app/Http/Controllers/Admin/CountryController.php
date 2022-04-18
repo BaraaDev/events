@@ -66,17 +66,24 @@ class CountryController extends Controller
     }
 
 
+    public function delete()
+    {
+        $countries = Country::orderBy('created_at','asc')->onlyTrashed()->paginate(30);
+        return view('dashboard.countries.delete',compact('countries'));
+    }
+
     public function restore($id)
     {
         Country::withTrashed()->find($id)->restore();
-        return back();
+        return redirect()->route('countries.index')
+            ->with(['message' => __('admin/home.restored_successfully')]);
     }
-    
 
-    public function restoreAll()
+    public function forceDelete($id)
     {
-        Country::onlyTrashed()->restore();
-        return back();
+        Country::where('id', $id)->forceDelete();
+        return redirect()->route('countries.index')
+            ->with(['message' => __('admin/home.delete_forever_successfully')]);
     }
 
 }
