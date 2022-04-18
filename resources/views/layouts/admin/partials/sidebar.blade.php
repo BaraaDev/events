@@ -1,5 +1,5 @@
 <style>
-    .sidebar-user .name:hover{color: snow;};
+    .sidebar-user .name:hover{color: snow; transition: 0.55s ease-in-out;};
 </style>
 
 <header class="main-nav">
