@@ -72,4 +72,28 @@ class CityController extends Controller
         return redirect()->route('cities.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
+
+    public function delete()
+    {
+        $cities = City::orderBy('created_at', 'asc')->onlyTrashed()->paginate(30);
+        return view('dashboard.cities.delete', compact('cities'));
+    }
+
+
+    public function restore($id)
+    {
+        $cities = City::withTrashed()->find($id);
+        $cities->restore();
+        return redirect()->route('cities.index')
+            ->with(['message' => __('admin/home.restored_successfully')]);
+    }
+
+
+    public function forceDelete($id)
+    {
+        $cities = City::withTrashed()->find($id);
+        $cities->forceDelete();
+        return redirect()->route('cities.index')
+            ->with(['message' => __('admin/home.delete_forever_successfully')]);
+    }
 }

@@ -46,13 +46,16 @@ Route::group([
 
         //-------------------- start governorates route. --------------------//
         Route::resource('/governorates', GovernorateController::class);
-        Route::get('/governorate/delete', [GovernorateController::class,'delete'])->name('governorates.delete');
-        Route::get('/governorate/restore/{id}/', [GovernorateController::class,'restore'])->name('governorates.restore');
-        Route::delete('/governorate/forceDelete/{id}/', [GovernorateController::class,'forceDelete'])->name('governorates.forceDelete');
+        Route::get('/governorate/delete', [GovernorateController::class, 'delete'])->name('governorates.delete');
+        Route::get('/governorate/restore/{id}/', [GovernorateController::class, 'restore'])->name('governorates.restore');
+        Route::delete('/governorate/forceDelete/{id}/', [GovernorateController::class, 'forceDelete'])->name('governorates.forceDelete');
         //-------------------- end governorates route. --------------------//
 
         //-------------------- end cities route. --------------------//
         Route::resource('/cities', CityController::class);
+        Route::get('/city/delete', [CityController::class, 'delete'])->name('cities.delete');
+        Route::get('/city/restore/{id}/', [CityController::class, 'restore'])->name('cities.restore');
+        Route::delete('/city/forceDelete/{id}/', [CityController::class, 'forceDelete'])->name('cities.forceDelete');
         //-------------------- end cities route. --------------------//
 
         //-------------------- start categories route. --------------------//
@@ -61,7 +64,7 @@ Route::group([
         Route::get('/category/restore/{id}/', [CategoryController::class, 'restore'])->name('categories.restore');
         Route::delete('/category/forceDelete/{id}/', [CategoryController::class, 'forceDelete'])->name('categories.forceDelete');
         //-------------------- start categories route. --------------------//
-        
+
         //-------------------- start events route. --------------------//
         Route::resource('/events', EventController::class);
         //-------------------- end events route. --------------------//
