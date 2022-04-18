@@ -33,11 +33,11 @@ Route::group([
         Route::resource('/tags', TagController::class);
         //-------------------- start categories --------------------//
         Route::resource('/categories', CategoryController::class);
-        Route::get('/category/delete', [CategoryController::class,'delete'])->name('categories.delete');
-        Route::get('/category/restore/{id}/', [CategoryController::class,'restore'])->name('categories.restore');
-        Route::delete('/category/forceDelete/{id}/', [CategoryController::class,'forceDelete'])->name('categories.forceDelete');
-        //-------------------- end categories --------------------//
-
+        Route::get('/category/delete', [CategoryController::class, 'delete'])->name('categories.delete');
+        Route::get('/category/restore/{id}/', [CategoryController::class, 'restore'])->name('categories.restore');
+        Route::delete('/category/forceDelete/{id}/', [CategoryController::class, 'forceDelete'])->name('categories.forceDelete');
+        //-------------------- start categories --------------------//
+        
         //-------------------- start countries --------------------//
         Route::resource('/countries', CountryController::class);
         Route::get('/country/delete', [CountryController::class, 'delete'])->name('countries.delete');
