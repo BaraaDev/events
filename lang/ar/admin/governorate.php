@@ -4,7 +4,7 @@ return [
     'Governorate'                       => 'محافظات',
     'Governorates'                      => 'المحافظات',
     'all_Governorates'                  => 'جميع المحافظات',
-    'create'                            => 'إنشاء محافظات',
+    'create'                            => 'إنشاء محافظة',
     'edit'                              => 'تعديل المحافظات',
     'NameGovernorate'                   => 'أسماء المحافظات',
     'addGovernorate'                    => 'اضافة محافظات جديده',
