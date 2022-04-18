@@ -12,7 +12,7 @@ return [
     'NameCategory'                  => 'Titre de la catégorie',
     'addCategory'                   => 'Ajouter une catégorie',
     'showCategory'                  => 'Afficher la catégorie',
-    'deleted_categories'            => 'Supprimer les catégories',
+    'deleted_categories'            => 'Catégories supprimées',
     'Show_deleted_categories'       => 'Afficher les catégories supprimées',
     'name'                          => 'Nom',
     'add_new'                       => 'Ajouter nouveau',
