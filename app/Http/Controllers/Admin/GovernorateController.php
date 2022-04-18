@@ -36,11 +36,13 @@ class GovernorateController extends Controller
             ->with(['message' => __('admin/home.added_successfully')]);
     }
 
+
     public function edit($id)
     {
         $model = Governorate::findOrFail($id);
         return view('dashboard.governorates.edit',compact('model'));
     }
+
 
     public function update(GovernorateRequest $request, $id)
     {
@@ -57,13 +59,16 @@ class GovernorateController extends Controller
             ->with(['message' => __('admin/home.edited_successfully')]);
     }
 
+
     public function destroy($id)
     {
         $governorates = Governorate::findOrFail($id);
+        $governorates->city()->delete();
         $governorates->delete();
         return redirect()->route('governorates.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
+
 
     public function delete()
     {
@@ -71,17 +76,24 @@ class GovernorateController extends Controller
         return view('dashboard.governorates.delete',compact('governorates'));
     }
 
+
     public function restore($id)
     {
-        Governorate::withTrashed()->find($id)->restore();
+        $governorates = Governorate::withTrashed()->find($id);
+        $governorates->city()->restore();
+        $governorates->restore();
         return redirect()->route('governorates.index')
             ->with(['message' => __('admin/home.restored_successfully')]);
     }
 
+
     public function forceDelete($id)
     {
-        Governorate::where('id', $id)->forceDelete();
+        $governorates = Governorate::withTrashed()->find($id);
+        $governorates->city()->forceDelete();
+        $governorates->forceDelete();
         return redirect()->route('governorates.index')
             ->with(['message' => __('admin/home.delete_forever_successfully')]);
     }
+
 }

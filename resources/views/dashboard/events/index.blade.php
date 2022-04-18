@@ -37,6 +37,7 @@
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.status')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                     </thead>
@@ -69,6 +70,7 @@
                                                 </div>
                                             @endif
                                         </td>
+                                        <td class="text-center">{{$event->update_user->name ?? ''}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                                 'route' => ['events.destroy',$event->id],
