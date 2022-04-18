@@ -12,7 +12,7 @@ return [
     'deleted_governorates'              => 'Gouvernorats supprimés',
     'Show_deleted_governorates'         => 'Afficher les gouvernorats supprimés',
     'name'                              => 'Nom',
-    'add_new'                           => 'Ajouter nouveau',
+    'add_new'                           => 'Ajouter',
     'update'                            => 'Mettre à jour',
     'restore'                           => 'Restaurer',
     'delete_forever'                    => 'Suppression permanente',

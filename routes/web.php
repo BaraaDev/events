@@ -26,34 +26,45 @@ Route::group([
     'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
 ], function () {
     Route::prefix('dashboard')->group(function () {
-        Route::group([], function () {   //group function for "Home" route.
+        Route::group([], function () {   //group function for "home" route.
             Route::get('/', [HomeController::class, 'index'])->name('dashboard');
             Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
         });
+        //-------------------- start tags route. --------------------//
         Route::resource('/tags', TagController::class);
-        //-------------------- start categories --------------------//
-        Route::resource('/categories', CategoryController::class);
-        Route::get('/category/delete', [CategoryController::class, 'delete'])->name('categories.delete');
-        Route::get('/category/restore/{id}/', [CategoryController::class, 'restore'])->name('categories.restore');
-        Route::delete('/category/forceDelete/{id}/', [CategoryController::class, 'forceDelete'])->name('categories.forceDelete');
-        //-------------------- start categories --------------------//
-        
-        //-------------------- start countries --------------------//
+        Route::get('/tag/delete', [TagController::class, 'delete'])->name('tags.delete');
+        Route::get('/tag/restore/{id}/', [TagController::class, 'restore'])->name('tags.restore');
+        Route::delete('/tag/forceDelete/{id}/', [TagController::class, 'forceDelete'])->name('tags.forceDelete');
+        //-------------------- end tags route. --------------------//
+
+        //-------------------- start countries route. --------------------//
         Route::resource('/countries', CountryController::class);
         Route::get('/country/delete', [CountryController::class, 'delete'])->name('countries.delete');
         Route::get('/country/restore/{id}/', [CountryController::class, 'restore'])->name('countries.restore');
         Route::delete('/country/forceDelete/{id}/', [CountryController::class, 'forceDelete'])->name('countries.forceDelete');
-        //-------------------- end countries --------------------//
+        //-------------------- end countries route. --------------------//
 
-        //-------------------- start governorates --------------------//
+        //-------------------- start governorates route. --------------------//
         Route::resource('/governorates', GovernorateController::class);
         Route::get('/governorate/delete', [GovernorateController::class,'delete'])->name('governorates.delete');
         Route::get('/governorate/restore/{id}/', [GovernorateController::class,'restore'])->name('governorates.restore');
         Route::delete('/governorate/forceDelete/{id}/', [GovernorateController::class,'forceDelete'])->name('governorates.forceDelete');
-        //-------------------- end governorates --------------------//
-        
-        Route::resource('/events', EventController::class);
+        //-------------------- end governorates route. --------------------//
+
+        //-------------------- end cities route. --------------------//
         Route::resource('/cities', CityController::class);
+        //-------------------- end cities route. --------------------//
+
+        //-------------------- start categories route. --------------------//
+        Route::resource('/categories', CategoryController::class);
+        Route::get('/category/delete', [CategoryController::class, 'delete'])->name('categories.delete');
+        Route::get('/category/restore/{id}/', [CategoryController::class, 'restore'])->name('categories.restore');
+        Route::delete('/category/forceDelete/{id}/', [CategoryController::class, 'forceDelete'])->name('categories.forceDelete');
+        //-------------------- start categories route. --------------------//
+        
+        //-------------------- start events route. --------------------//
+        Route::resource('/events', EventController::class);
+        //-------------------- end events route. --------------------//
     });
 });
 

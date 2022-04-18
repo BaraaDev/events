@@ -9,10 +9,10 @@ return [
     'create'                        => 'Create City',
     'edit'                          => 'Edit',
     'cityNames'                     => 'City Names',
-    'addCity'                       => 'Add new city',
+    'addCity'                       => 'Add New City',
     'showCities'                    => 'Show Cities',
     'name'                          => 'Name',
-    'add_new'                       => 'Add New',
+    'add_new'                       => 'Add',
     'update'                        => 'Update',
     'cityDescription'               => 'All cities If you want to create and add new cities, you must click on the (Add new city) button at the top of the page.',
 ];

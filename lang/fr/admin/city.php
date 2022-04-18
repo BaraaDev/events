@@ -9,10 +9,10 @@ return [
     'create'                        => 'Créer une ville',
     'edit'                          => 'Éditer',
     'cityNames'                     => 'Noms de ville',
-    'addCity'                       => 'Ajouter une ville',
+    'addCity'                       => 'Ajouter une nouvelle ville',
     'showCities'                    => 'Afficher les villes',
     'name'                          => 'Nom',
-    'add_new'                       => 'Ajouter nouveau',
+    'add_new'                       => 'Ajouter',
     'update'                        => 'Mettre à jour',
     'cityDescription'           => 'Toutes les villes Si vous souhaitez créer et ajouter de nouvelles villes, vous devez cliquer sur le bouton (Ajouter de nouvelles sections) en haut de la page.',
 ];

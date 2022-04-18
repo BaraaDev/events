@@ -3,7 +3,7 @@
 return [
     'dashboard'                         => 'لوحة التحكم',
     'home'                              => 'الصفحة الرئيسية',
-    'sidebar_main_title'                => 'الشريط الجانبي الرئيسي',
+    'sidebar_main_title'                => 'الشريط الجانبي الرئيسي (مسؤول)',
     'action'                            => 'أجراءات',
     'alert_no_data'                     => 'لا يوجد بيانات',
     'delete'                            => 'حذف',
@@ -43,7 +43,7 @@ return [
     'delete_forever_successfully'       => 'تم الحذف بشكل نهائي',
     'create_delete'                     => 'تاريخ الحذف',
     'restore'                           => 'استرجاع',
-    'delete_forever'                    => 'الحذف نهائي',
+    'delete_forever'                    => 'حذف نهائي',
     'confirmDelete'                     => 'هل أنت متأكد من الحذف نهائيا؟',
     'confirmRestore'                    => 'هل أنت متأكد أنك تريد الاستعادة؟',
 ];
