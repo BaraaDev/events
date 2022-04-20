@@ -2,7 +2,7 @@
 
 return [
     'Governorate'                       => 'Governorate',
-    'Governorates'                      => 'Governorate',
+    'Governorates'                      => 'Governorates',
     'all_Governorates'                  => 'All Governorate',
     'create'                            => 'Create Governorate',
     'edit'                              => 'Update Governorate',
