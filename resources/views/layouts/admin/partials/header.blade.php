@@ -67,7 +67,7 @@
                     </ul>
                 </li>
                 <li>
-                    <div class="mode"><i class="fa fa-lightbulb-o"></i></div>
+                    <div class="mode"><i id="dark-only" class="fa @if($theme == 'dark-only') fa-lightbulb-o @else fa-moon-o @endif"></i></div>
                 </li>
                 <li class="onhover-dropdown p-0">
                     <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>{{__('admin/home.logout')}}</button>

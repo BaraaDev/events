@@ -18,3 +18,4 @@
 
 <!-- Plugin used-->
 @livewireScripts
+
