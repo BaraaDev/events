@@ -1,3 +1,8 @@
+<style>
+    .lang-icon{font-size: 160%;};
+    .notification-body p a:hover{color: snow;};
+</style>
+
 <div class="page-main-header">
 
     <div class="main-header-right row m-0">
@@ -17,8 +22,10 @@
                     <span class="d-sm-none mobile-search search-bg"><i class="fa fa-search"></i></span>
                 </li>
             </ul>
+
         </div>
         <div class="nav-right col pull-right right-menu p-0">
+
             <ul class="nav-menus">
                 <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
 
@@ -37,6 +44,9 @@
                                 </div>
                             </div>
                         </li>
+                        
+
+
                         <li class="noti-secondary">
                             <div class="media">
                                 <span class="notification-bg bg-light-secondary"><i data-feather="check-circle"> </i></span>
@@ -66,14 +76,45 @@
                         </li>
                     </ul>
                 </li>
+
+                
+
                 <li>
+<<<<<<< HEAD
                     <div class="mode"><i id="dark-only" class="fa @if($theme == 'dark-only') fa-lightbulb-o @else fa-moon-o @endif"></i></div>
+=======
+                    <a href="#"><div class="mode"><i class="fa fa-lightbulb-o"></i></div></a>
+>>>>>>> dee3ae012a4963dd82e7ed48163e099741bd7321
                 </li>
+
+                <!-------------------- start translation dropdown -------------------->
+                <li class="onhover-dropdown">
+                        <div class="notification-box mt-2"><i class="fas fa-language lang-icon"></i></div>
+                    <ul class="notification-dropdown onhover-show-div">
+                                <li>
+                                    <p class="f-w-700 mb-0">Languages:</p>
+                                </li>
+                                <li>
+                                    <div class="notification-body">
+                                        <p><span class="flag-icon flag-icon-us mt-3"></span><a href="http://events.dev/en/dashboard" class="mx-3">{{__('admin/home.english')}}</a></p>
+                                        <p><span class="flag-icon flag-icon-eg mt-3"></span><a href="http://events.dev/ar/dashboard" class="mx-3">{{__('admin/home.arabic')}}</a></p>
+                                        <p><span class="flag-icon flag-icon-fr mt-3"></span><a href="http://events.dev/fr/dashboard" class="mx-3">{{__('admin/home.french')}}</a></p>
+                                    </div>
+                                </li>
+                     </li>
+                    </ul>
+                </li>   
+                <!-------------------- end translation dropdown -------------------->
+
                 <li class="onhover-dropdown p-0">
                     <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>{{__('admin/home.logout')}}</button>
                 </li>
-            </ul>
-        </div>
+
+                
+
+            </div>
+
+        
 
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
     </div>

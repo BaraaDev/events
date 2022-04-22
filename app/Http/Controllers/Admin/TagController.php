@@ -64,4 +64,24 @@ class TagController extends Controller
         return redirect()->route('tags.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
+
+    public function delete()
+    {
+        $tags = Tag::orderBy('created_at','asc')->onlyTrashed()->paginate(30);
+        return view('dashboard.tags.delete',compact('tags'));
+    }
+
+    public function restore($id)
+    {
+        Tag::withTrashed()->find($id)->restore();
+        return redirect()->route('tags.index')
+            ->with(['message' => __('admin/home.restored_successfully')]);
+    }
+
+    public function forceDelete($id)
+    {
+        Tag::where('id', $id)->forceDelete();
+        return redirect()->route('tags.index')
+            ->with(['message' => __('admin/home.delete_forever_successfully')]);
+    }
 }

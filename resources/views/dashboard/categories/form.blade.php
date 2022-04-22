@@ -29,7 +29,7 @@
         </span>
         @enderror
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12 mt-4">
         <label class="form-label">{{__('admin/category.content')}}: </label>
         <textarea class="form-control @error('content_en') is-invalid @enderror" type="text" name="content_en">{{Request::old('content_en') ? Request::old('content_en') : $model->getTranslation('content','en')}}</textarea>
         @error('content_en')
@@ -59,7 +59,7 @@
         @enderror
     </div>
 </div>
-<div class="form-group row">
+<div class="form-group row mt-4">
     <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <select name="status" class="form-control select @error('status') is-invalid @enderror">

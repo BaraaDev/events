@@ -1,16 +1,16 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/governorate.deleted_governorates')}} @endsection
+@section('title') {{__('admin/tag.deleted_tags')}} @endsection
 
 @section('content')
     @component('components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>{{__('admin/governorate.deleted_governorates')}}</h3>
+            <h3>{{__('admin/tag.deleted_tags')}}</h3>
         @endslot
-        <li class="breadcrumb-item"><a href="{{route('governorates.index')}}">{{__('admin/governorate.Governorates')}}</a> </li>
-        <li class="breadcrumb-item active">{{__('admin/governorate.deleted_governorates')}}</li>
+        <li class="breadcrumb-item"><a href="{{route('tags.index')}}">{{__('admin/tag.tags')}}</a> </li>
+        <li class="breadcrumb-item active">{{__('admin/tag.deleted_tags')}}</li>
         @slot('bookmark')
-            <a href="{{route('governorates.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/governorate.addGovernorate')}}">{{__('admin/governorate.addGovernorate')}}</a>
+            <a href="{{route('tags.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/tag.addTag')}}">{{__('admin/tag.addTag')}}</a>
         @endslot
     @endcomponent
     @include('layouts.admin.partials.messages.message')
@@ -19,8 +19,8 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>{{__('admin/governorate.Show_deleted_governorates')}} - <span class="b-b-success">{{App\Models\Governorate::onlyTrashed()->count()}}</span></h5>
-                        <span>{{__('admin/governorate.DescriptionGovernorate_delete')}}</span>
+                        <h5>{{__('admin/tag.Show_deleted_tags')}} - <span class="b-b-success">{{App\Models\Tag::onlyTrashed()->count()}}</span></h5>
+                        <span>{{__('admin/tag.DescriptionTag_delete')}}</span>
                     </div>
                     <div class="card-block row">
                         <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -29,8 +29,7 @@
                                     <thead>
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
-                                        <th scope="col" class="text-center">{{__('admin/governorate.NameGovernorate')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/tag.NameTag')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_delete')}}</th>
@@ -38,21 +37,20 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @forelse($governorates as $governorate)
+                                    @forelse($tags as $tag)
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
-                                        <td class="text-center">{{$governorate->name}}</td>
-                                        <td class="text-center">{{$governorate->country->name ?? ''}}</td>
-                                        <td class="text-center">{{$governorate->create_user->name ?? ''}}</td>
-                                        <td class="text-center" title="{{$governorate->created_at->format('Y-D-M h:m')}}">{{$governorate->created_at->format('Y-D-M')}}</td>
-                                        <td class="text-center" title="{{$governorate->deleted_at->format('Y-D-M h:m')}}">{{$governorate->deleted_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$tag->name}}</td>
+                                        <td class="text-center">{{$tag->create_user->name ?? ''}}</td>
+                                        <td class="text-center" title="{{$tag->created_at->format('Y-D-M h:m')}}">{{$tag->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center" title="{{$tag->deleted_at->format('Y-D-M h:m')}}">{{$tag->deleted_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
-                                                'route' => ['governorates.forceDelete',$governorate->id],
+                                                'route' => ['tags.forceDelete',$tag->id],
                                                 'method' => 'delete'
                                             ])!!}
-                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirmDelete')}}');" type="submit" title="{{__('admin/home.delete_forever')." ($governorate->name)"}}">{{__('admin/home.delete_forever')}} </button>
-                                            <a href="{{route('governorates.restore',$governorate->id)}}" onclick="return confirm('{{__('admin/home.confirmRestore')}}');" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.restore')." ($governorate->name)"}}">{{__('admin/home.restore')}}</a>
+                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirmDelete')}}');" type="submit" title="{{__('admin/home.delete_forever')." ($tag->name)"}}">{{__('admin/home.delete_forever')}} </button>
+                                            <a href="{{route('tags.restore',$tag->id)}}" onclick="return confirm('{{__('admin/home.confirmRestore')}}');" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.restore')." ($tag->name)"}}">{{__('admin/home.restore')}}</a>
                                             {!! Form::close() !!}
                                         </td>
                                     </tr>
@@ -70,7 +68,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        {!! $governorates->links('pagination::bootstrap-4') !!}
+                        {!! $tags->links('pagination::bootstrap-4') !!}
                     </ul>
                 </nav>
             </div>

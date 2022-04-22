@@ -36,10 +36,12 @@ class CountryController extends Controller
             ->with(['message' => __('admin/home.added_successfully')]);
     }
 
+
     public function show()
     {
         return abort(401);
     }
+
 
     public function edit($id)
     {
@@ -72,7 +74,7 @@ class CountryController extends Controller
         return redirect()->route('countries.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
-//////////////////////////////////
+
 
     public function delete()
     {
@@ -80,6 +82,7 @@ class CountryController extends Controller
 
         return view('dashboard.countries.delete',compact('countries'));
     }
+
 
     public function restore(Request $request,$id)
     {
@@ -91,10 +94,10 @@ class CountryController extends Controller
             ->with(['message' => __('admin/home.restored_successfully')]);
     }
 
+
     public function forceDelete($id)
     {
         $countries = Country::withTrashed()->find($id);
-
         $countries->governorate()->forceDelete();
         $countries->city()->forceDelete();
         $countries->forceDelete();

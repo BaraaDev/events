@@ -1,3 +1,7 @@
+<style>
+    .sidebar-user .name:hover{color: snow; transition: 0.55s ease-in-out;};
+</style>
+
 <header class="main-nav">
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="javascript:void(0)"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="{{asset('admin/images/dashboard/1.png')}}" alt="" />
@@ -5,7 +9,7 @@
         <div class="badge-bottom"><span class="badge badge-primary">@if($data <= 7) New @endif</span>
         </div>
         <a href="javascript:void(0)">
-            <h6 class="mt-3 f-14 f-w-600">{{auth()->user()->name}}</h6>
+            <h6 class="mt-3 f-14 f-w-600 name">{{auth()->user()->name}}</h6>
         </a>
         <p class="mb-0 font-roboto">{{auth()->user()->email}}</p>
 
@@ -27,20 +31,26 @@
                         <a class="nav-link menu-title {{ routeActive('dashboard')}}" href="javascript:void(0)"><i data-feather="home"></i><span>{{__('admin/home.dashboard')}}</span></a>
                     </li>
 
+                    <!------------- Tags List ------------->
+
                     <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('tags.index') || routeActive('tags.create')) active @endif" href="javascript:void(0)">
+                        <a class="nav-link menu-title @if(routeActive('tags.index') || routeActive('tags.create')  || routeActive('tags.delete')) active @endif" href="javascript:void(0)">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hash">
                                 <line x1="4" y1="9" x2="20" y2="9"></line>
                                 <line x1="4" y1="15" x2="20" y2="15"></line>
                                 <line x1="10" y1="3" x2="8" y2="21"></line>
                                 <line x1="16" y1="3" x2="14" y2="21"></line>
                             </svg>
+
                             <span>{{__('admin/tag.tags')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('tags.index') || routeActive('tags.create')) block @else none @endif ;">
-                            <li><a href="{{ route('tags.index') }}" class="{{routeActive('tags.index')}}">{{__('admin/tag.all_tags')}}</a></li>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('tags.index') || routeActive('tags.create')  || routeActive('tags.delete')) block @else none @endif ;">
                             <li><a href="{{ route('tags.create') }}" class="{{routeActive('tags.create')}}">{{__('admin/tag.create')}}</a></li>
+                            <li><a href="{{ route('tags.index') }}" class="{{routeActive('tags.index')}}">{{__('admin/tag.all_tags')}}</a></li>
+                            <li><a href="{{ route('tags.delete') }}" class="{{routeActive('tags.delete')}}">{{__('admin/tag.deleted_tags')}}</a></li>
                         </ul>
                     </li>
+
+                    <!------------- Countries List ------------->
 
 
                     <li class="dropdown">
@@ -57,7 +67,7 @@
                         </ul>
                     </li>
 
-
+                    <!------------- Governorate List ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('governorates.index') || routeActive('governorates.create') || routeActive('governorates.delete')) active @endif" href="javascript:void(0)">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map">
@@ -66,27 +76,27 @@
                                 <line x1="16" y1="6" x2="16" y2="22"></line>
                             </svg>
                             <span>{{__('admin/governorate.Governorates')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('governorates.index') || routeActive('governorates.create')) block @else none @endif ;">
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('governorates.index') || routeActive('governorates.create') || routeActive('governorates.delete')) block @else none @endif ;">
                             <li><a href="{{ route('governorates.create') }}" class="{{routeActive('governorates.create')}}">{{__('admin/governorate.create')}}</a></li>
                             <li><a href="{{ route('governorates.index') }}" class="{{routeActive('governorates.index')}}">{{__('admin/governorate.all_Governorates')}}</a></li>
                             <li><a href="{{ route('governorates.delete') }}" class="{{routeActive('governorates.delete')}}">{{__('admin/governorate.deleted_governorates')}}</a></li>
                         </ul>
                     </li>
 
+                    <!------------- Cities List ------------->
 
                     <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('cities.index') || routeActive('cities.create')) active @endif" href="javascript:void(0)">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                        <a class="nav-link menu-title @if(routeActive('cities.index') || routeActive('cities.create') || routeActive('cities.delete')) active @endif" href="javascript:void(0)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             <span>{{__('admin/city.cities')}}</span></a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('cities.index') || routeActive('cities.create')) block @else none @endif ;">
-                            <li><a href="{{ route('cities.index') }}" class="{{routeActive('cities.index')}}">{{__('admin/city.all_cities')}}</a></li>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('cities.index') || routeActive('cities.create') || routeActive('cities.delete')) block @else none @endif ;">
                             <li><a href="{{ route('cities.create') }}" class="{{routeActive('cities.create')}}">{{__('admin/city.create')}}</a></li>
+                            <li><a href="{{ route('cities.index') }}" class="{{routeActive('cities.index')}}">{{__('admin/city.all_cities')}}</a></li>
+                            <li><a href="{{ route('cities.delete') }}" class="{{routeActive('cities.delete')}}">{{__('admin/city.deleted_cities')}}</a></li>
                         </ul>
                     </li>
 
+                    <!------------- Categories List ------------->
 
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('categories.index') || routeActive('categories.create') || routeActive('categories.delete')) active @endif" href="javascript:void(0)">
@@ -106,6 +116,7 @@
                         </ul>
                     </li>
 
+                    <!------------- Events List ------------->
 
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('events.index') || routeActive('events.create')) active @endif" href="javascript:void(0)">
@@ -117,8 +128,9 @@
                             </svg>
                             <span>{{__('admin/event.events')}}</span></a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('events.index') || routeActive('events.create')) block @else none @endif ;">
-                            <li><a href="{{ route('events.index') }}" class="{{routeActive('events.index')}}">{{__('admin/event.all_events')}}</a></li>
                             <li><a href="{{ route('events.create') }}" class="{{routeActive('events.create')}}">{{__('admin/event.create')}}</a></li>
+                            <li><a href="{{ route('events.index') }}" class="{{routeActive('events.index')}}">{{__('admin/event.all_events')}}</a></li>
+                            <li><a href="#" class="#">{{__('admin/event.deleted_events')}}</a></li>
                         </ul>
                     </li>
 

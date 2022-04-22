@@ -1,15 +1,16 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/governorate.all_Governorates')}} @endsection
+@section('title') {{__('admin/city.deleted_cities')}} @endsection
 
 @section('content')
 @component('components.breadcrumb')
 @slot('breadcrumb_title')
-<h3>{{__('admin/governorate.Governorates')}}</h3>
+<h3>{{__('admin/city.deleted_cities')}}</h3>
 @endslot
-<li class="breadcrumb-item active">{{__('admin/governorate.Governorates')}}</li>
+<li class="breadcrumb-item"><a href="{{route('cities.index')}}">{{__('admin/city.Cities')}}</a> </li>
+<li class="breadcrumb-item active">{{__('admin/city.deleted_cities')}}</li>
 @slot('bookmark')
-<a href="{{route('governorates.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/governorate.addGovernorate')}}">{{__('admin/governorate.addGovernorate')}}</a>
+<a href="{{route('cities.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/city.addcity')}}">{{__('admin/city.addCity')}}</a>
 @endslot
 @endcomponent
 @include('layouts.admin.partials.messages.message')
@@ -18,9 +19,8 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
-
-                    <h5>{{__('admin/governorate.showGovernorate')}} - <span class="b-b-success">{{App\Models\Governorate::count()}}</span></h5>
-                    <span>{{__('admin/governorate.DescriptionGovernorate')}}</span>
+                    <h5>{{__('admin/city.Show_deleted_cities')}} - <span class="b-b-success">{{App\Models\City::onlyTrashed()->count()}}</span></h5>
+                    <span>{{__('admin/city.DescriptionCity_delete')}}</span>
                 </div>
                 <div class="card-block row">
                     <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -29,33 +29,31 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
+                                        <th scope="col" class="text-center">{{__('admin/city.city')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/governorate.NameGovernorate')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/country.NameCountry')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/home.create_delete')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.action')}}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @forelse($governorates as $governorate)
+                                    @forelse($cities as $city)
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
-                                        <td class="text-center">{{$governorate->name}}</td>
-                                        <td class="text-center">{{$governorate->country->name ?? ''}}</td>
-                                        <td class="text-center">{{$governorate->created_at->format('Y-D-M')}}</td>
-                                        <td class="text-center">{{$governorate->create_user->name ?? ''}}</td>
-                                        <td class="text-center">{{$governorate->update_user->name ?? ''}}</td>
+                                        <td class="text-center">{{$city->name}}</td>
+                                        <td class="text-center">{{$city->country->name ?? ''}}</td>
+                                        <td class="text-center">{{$city->create_user->name ?? ''}}</td>
+                                        <td class="text-center" title="{{$city->created_at->format('Y-D-M h:m')}}">{{$city->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center" title="{{$city->deleted_at->format('Y-D-M h:m')}}">{{$city->deleted_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
-                                            'route' => ['governorates.destroy',$governorate->id],
+                                            'route' => ['cities.forceDelete',$city->id],
                                             'method' => 'delete'
                                             ])!!}
-                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirm')}}');" type="submit" title="{{__('admin/home.delete')." ($governorate->name)"}}">{{__('admin/home.delete')}} </button>
-
-                                            <a href="{{route('governorates.edit',$governorate->id)}}" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.edit')." ($governorate->name)"}}">
-                                                <li class="icon-pencil"></li> {{__('admin/home.edit')}}
-                                            </a>
+                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirmDelete')}}');" type="submit" title="{{__('admin/home.delete_forever')." ($city->name)"}}">{{__('admin/home.delete_forever')}} </button>
+                                            <a href="{{route('cities.restore',$city->id)}}" onclick="return confirm('{{__('admin/home.confirmRestore')}}');" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.restore')." ($city->name)"}}">{{__('admin/home.restore')}}</a>
                                             {!! Form::close() !!}
                                         </td>
                                     </tr>
@@ -73,7 +71,7 @@
             </div>
             <nav class="m-b-30" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center pagination-primary">
-                    {!! $governorates->links('pagination::bootstrap-4') !!}
+                    {!! $cities->links('pagination::bootstrap-4') !!}
                 </ul>
             </nav>
         </div>
