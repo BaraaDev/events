@@ -3,8 +3,8 @@
 return [
     'Governorate'                       => 'Governorate',
     'Governorates'                      => 'Governorates',
-    'all_Governorates'                  => 'All Governorate',
-    'create'                            => 'Create Governorate',
+    'all_Governorates'                  => 'All Governorates',
+    'create'                            => 'Create Governorates',
     'edit'                              => 'Update Governorate',
     'NameGovernorate'                   => 'Governorate Names',
     'addGovernorate'                    => 'Add New Governorate',
