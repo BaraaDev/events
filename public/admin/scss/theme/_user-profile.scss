@@ -1,8 +1,8 @@
 /**=====================
-     22. User profile css start
+     22. User users css start
 ==========================**/
-.user-profile{  
-  .follow {   
+.user-profile{
+  .follow {
     .follow-num {
       font-size: 18px;
       color: $theme-font-color;
@@ -26,9 +26,9 @@
     }
   }
   .profile-img-style {
-    padding:30px; 
+    padding:30px;
     .img-container{
-      margin-top:30px;     
+      margin-top:30px;
     }
     .user-name {
       font-size:18px;
@@ -59,14 +59,14 @@
       font-family: $font-rubik, $font-serif;
     }
   }
-  .social-media {    
+  .social-media {
     ul.user-list-social{
       display: flex;
       justify-content: center;
       align-items: center;
       width: fit-content;
       margin-right: auto;
-      margin-left:auto ;     
+      margin-left:auto ;
       padding-bottom:20px;
       li{
         &:nth-child(n+2){
@@ -97,7 +97,7 @@
       }
     }
   }
-  .profile-header{   
+  .profile-header{
     height:420px;
     padding:30px;
     display:flex !important;
@@ -115,7 +115,7 @@
       .img-wrraper{
         position:relative;
         width:fit-content;
-        margin:auto;       
+        margin:auto;
       }
       .avatar{
         width:100px;
@@ -127,7 +127,7 @@
         margin-left:auto;
         margin-right:auto;
         border:7px solid rgba($primary-color,0.08);
-        margin-bottom:15px; 
+        margin-bottom:15px;
         img{
           width:100%;
           height:100%;
@@ -136,7 +136,7 @@
       .icon-wrapper{
         position: absolute;
         right: 0;
-        bottom:0;       
+        bottom:0;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -180,7 +180,7 @@
         }
         h5{
           color:$theme-font-color;
-          font-size:18px;              
+          font-size:18px;
           font-weight:600;
           margin-bottom:3px;
         }
@@ -229,8 +229,8 @@
           display: inline-block;
           color: $light-font;
           label{
-            margin-bottom:0;           
-            font-weight:500;           
+            margin-bottom:0;
+            font-weight:500;
             a{
               color:$light-font;
               display:flex;
@@ -240,7 +240,7 @@
                 width:14px;
                 height:14px;
               }
-              span{               
+              span{
                 margin-left:10px;
               }
             }
@@ -249,8 +249,8 @@
             margin-left:15px;
           }
         }
-      }      
-    } 
+      }
+    }
   }
   .post-about{
     ul{
@@ -287,17 +287,17 @@
         }
       }
     }
-  }  
+  }
 }
 
-//Edit profile //
+//Edit users //
 .edit-profile{
   .profile-title{
     border-bottom: 1px solid $light-gray;
     margin-bottom: 15px;
     padding-bottom: 20px;
     .media{
-      align-items:center;      
+      align-items:center;
       .media-body{
         margin-left:25px;
       }
@@ -327,5 +327,5 @@
 }
 
 /**============================
-     22. User profile css Ends
+     22. User users css Ends
 ==============================**/

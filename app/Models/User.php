@@ -8,10 +8,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class User extends Authenticatable
+class User extends Authenticatable implements HasMedia
 {
-    use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
+    use HasApiTokens, HasFactory, Notifiable, SoftDeletes, InteractsWithMedia;
 
     /**
      * The attributes that are mass assignable.
@@ -19,9 +21,8 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'name', 'username', 'email', 'phone', 'bio', 'password', 'gender', 'dob', 'address', 'postal_code', 'state_province',
+        'country_id', 'governorate_id', 'city_id', 'facebook', 'twitter', 'instagram', 'whatsApp', 'telegram'
     ];
 
     /**
@@ -46,5 +47,24 @@ class User extends Authenticatable
     public function event(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Event::class,'create_user_id');
+    }
+
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
+    public function governorate()
+    {
+        return $this->belongsTo(Governorate::class);
+    }
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+    public function getPhotoAttribute()
+    {
+        return $this->getFirstMediaUrl('avatar')
+            ?  $this->getFirstMediaUrl('avatar')
+            : asset('admin/images/dashboard/1.png');
     }
 }

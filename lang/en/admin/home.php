@@ -46,4 +46,11 @@ return [
     'delete_forever'                     => 'Permanent Delete',
     'confirmRestore'                     => 'Are you sure you want to restore?',
     'confirmDelete'                      => 'Are you sure to delete Permanently?',
+    'currency'                           => 'EGP',
+    'alertUsername'                      => 'Not Found UserName',
+    'alertEmail'                         => 'Not Found Email Address',
+    'alertGender'                        => 'Not Found Gender',
+    'alertLocation'                      => 'Not Found Address',
+    'save'                               => 'Save',
+
 ];

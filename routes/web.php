@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\CountryController;
 use App\Http\Controllers\Admin\CityController;
@@ -68,6 +69,13 @@ Route::group([
         //-------------------- start events route. --------------------//
         Route::resource('/events', EventController::class);
         //-------------------- end events route. --------------------//
+
+        //-------------------- start users route. --------------------//
+        Route::get('/profile', [ProfileController::class,'profile'])->name('profile');
+        Route::get('/edit-profile', [ProfileController::class,'edit'])->name('edit-profile');
+        Route::post('/edit-profile-post', [ProfileController::class,'profileUpdatePassword'])->name('edit-profile-post');
+        Route::post('/edit-myProfile', [ProfileController::class,'edit_my_Profile'])->name('edit-myProfile');
+        //-------------------- end users route. --------------------//
     });
 });
 

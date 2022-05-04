@@ -49,5 +49,6 @@ return [
     'create_delete'                          => 'Date de suppression',
     'restored_successfully'                  => 'Restauré avec succès',
     'delete_forever_successfully'            => 'Supprimer définitivement avec succès',
-
+    'currency'                               => 'EGP',
+    'alertUsername'                          => 'Not Found UserName',
 ];
