@@ -46,4 +46,7 @@ return [
     'delete_forever'                    => 'حذف نهائي',
     'confirmDelete'                     => 'هل أنت متأكد من الحذف نهائيا؟',
     'confirmRestore'                    => 'هل أنت متأكد أنك تريد الاستعادة؟',
+    'currency'                          => 'جنيهاً',
+    'save'                              => 'حفظ',
+    'settings'                          => 'الإعدادات',
 ];

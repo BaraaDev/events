@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name','500');
             $table->string('username')->nullable();
             $table->string('phone')->nullable();
+            $table->string('bio')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -30,6 +31,11 @@ return new class extends Migration
             $table->integer('country_id')->nullable();
             $table->integer('governorate_id')->nullable();
             $table->integer('city_id')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('whatsApp')->nullable();
+            $table->string('telegram')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

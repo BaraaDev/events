@@ -16,6 +16,31 @@ class CategoryRequest extends FormRequest
         return true;
     }
 
+    protected function onCreate()
+    {
+        return [
+            'name_ar'    => 'required|min:3|max:199',
+            'name_en'    => 'required|min:3|max:199',
+            'name_fr'    => 'required|min:3|max:199',
+            'content_ar' => 'required|max:500',
+            'content_en' => 'required|max:500',
+            'content_fr' => 'required|max:500',
+        ];
+    }
+
+
+    protected function onUpdate()
+    {
+        return [
+            'name_ar'    => 'required|min:3|max:199|unique:categories,name',
+            'name_en'    => 'required|min:3|max:199',
+            'name_fr'    => 'required|min:3|max:199',
+            'content_ar' => 'required|max:500',
+            'content_en' => 'required|max:500',
+            'content_fr' => 'required|max:500',
+        ];
+    }
+
     /**
      * Get the validation rules that apply to the request.
      *
@@ -23,15 +48,8 @@ class CategoryRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'name_ar'    => 'required|min:3|max:199',
-            'name_en'    => 'required|min:3|max:199',
-            'name_fr'    => 'required|min:3|max:199',
-
-            'content_ar' => 'required|max:500',
-            'content_en' => 'required|max:500',
-            'content_fr' => 'required|max:500',
-        ];
+         return  request()->isMethod('put') || request()->isMethod('patch') ?
+             $this->onUpdate() : $this->onCreate();
     }
 
     public function messages()

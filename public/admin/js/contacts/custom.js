@@ -18,7 +18,7 @@ function submitContact() {
 			                </div>\
 			            </a>';
 		      var tabcontent =  '<div class="tab-pane contact-tab-'+index_var+' tab-content-child fade show active" id="v-pills-user" role="tabpanel" aria-labelledby="v-pills-user-tab">\
-		                <div class="profile-mail">\
+		                <div class="users-mail">\
 		                  <div class="media">\
 		                  <img class="img-100 img-fluid m-r-20 rounded-circle update_img_0" src="../assets/images/user/user.png" alt="" data-original-title="" title="">\
 		                    <input class="updateimg" type="file" name="img" onchange="readURL(this,0)" data-original-title="" title="">\
@@ -59,7 +59,7 @@ function submitContact() {
 		    timer: 300
 		});
 	}
-} 
+}
 
 (function($) {
 	$(".contact-editform").hide();
@@ -143,7 +143,7 @@ $('.edit-information').on('click', function(e) {
 	$(".edit-information").hide();
 });
 
-// history 
+// history
 
 function history(index) {
     $("#right-history").toggleClass("show");

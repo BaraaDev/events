@@ -1,10 +1,4 @@
-<style>
-    .lang-icon{font-size: 160%;};
-    .notification-body p a:hover{color: snow;};
-</style>
-
 <div class="page-main-header">
-
     <div class="main-header-right row m-0">
         <div class="main-header-left">
             <div class="logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="{{asset('admin/images/logo/logo.png')}}" alt=""></a></div>
@@ -23,7 +17,6 @@
                     <span class="d-sm-none mobile-search search-bg"><i class="fa fa-search"></i></span>
                 </li>
             </ul>
-
         </div>
         <div class="nav-right col pull-right right-menu p-0">
 
@@ -45,8 +38,6 @@
                                 </div>
                             </div>
                         </li>
-                        
-
 
                         <li class="noti-secondary">
                             <div class="media">
@@ -78,40 +69,15 @@
                     </ul>
                 </li>
 
-                
-
                 <li>
-                    <a href="#"><div class="mode"><i class="fa fa-lightbulb-o"></i></div></a>
-                </li>
-
-                <!-------------------- start translation dropdown -------------------->
-                <li class="onhover-dropdown">
-                        <div class="notification-box mt-2"><i class="fas fa-language lang-icon"></i></div>
-                    <ul class="notification-dropdown onhover-show-div">
-                                <li>
-                                    <p class="f-w-700 mb-0">Languages:</p>
-                                </li>
-                                <li>
-                                    <div class="notification-body">
-                                        <p><span class="flag-icon flag-icon-us mt-3"></span><a href="http://events.dev/en/dashboard" class="mx-3">{{__('admin/home.english')}}</a></p>
-                                        <p><span class="flag-icon flag-icon-eg mt-3"></span><a href="http://events.dev/ar/dashboard" class="mx-3">{{__('admin/home.arabic')}}</a></p>
-                                        <p><span class="flag-icon flag-icon-fr mt-3"></span><a href="http://events.dev/fr/dashboard" class="mx-3">{{__('admin/home.french')}}</a></p>
-                                    </div>
-                                </li>
-                     </li>
-                    </ul>
-                </li>   
-                <!-------------------- end translation dropdown -------------------->
+                     <div class="mode"><i id="dark-only" class="@if($theme == 'dark-only') fa fa-lightbulb-o @else fa fa-moon-o @endif"></i></div>
+                 </li>
 
                 <li class="onhover-dropdown p-0">
                     <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>{{__('admin/home.logout')}}</button>
                 </li>
-
-                
-
-            </div>
-
-        
+            </ul>
+        </div>
 
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
     </div>

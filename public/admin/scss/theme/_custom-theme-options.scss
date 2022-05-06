@@ -281,13 +281,13 @@ body {
 		background-color: $dark-body-background;
 		// display:none;
 		.blog-box {
-			h6 {		
+			h6 {
 				color: $white;
 			}
 			.blog-details-second {
-				.detail-footer {			
+				.detail-footer {
 					border-top: 1px solid $dark-body-background;
-					ul.sociyal-list li:nth-child(n+2) {					
+					ul.sociyal-list li:nth-child(n+2) {
 						border-left: 1px solid $dark-body-background;
 					}
 				}
@@ -299,8 +299,8 @@ body {
 		.cke_combo_text{
 			color: $white;
 		}
-		.job-search .job-description {		
-			border-top: 1px solid $dark-body-background;			
+		.job-search .job-description {
+			border-top: 1px solid $dark-body-background;
 		}
 		.job-sidebar{
 			.job-left-aside{
@@ -309,12 +309,12 @@ body {
 			}
 		}
 		.job-search .job-description .theme-form{
-			border-bottom: 1px solid $dark-body-background;	
+			border-bottom: 1px solid $dark-body-background;
 		}
 		.categories ul li:hover {
 			background-color: $dark-body-background;
 		}
-		.blog-list .blog-details h6 {		
+		.blog-list .blog-details h6 {
 			color: $white;
 		}
 		.default-according{
@@ -323,14 +323,14 @@ body {
 			}
 		}
 		.login-form {
-			background-color: $dark-body-background;		
+			background-color: $dark-body-background;
 			.login-social-title h5 {
 				background-color: $dark-body-background;
 			}
 		}
 		.calendar-basic{
 			.tui-full-calendar-month-dayname{
-				span {				
+				span {
 					color: $white !important;
 				}
 			}
@@ -339,34 +339,34 @@ body {
 		.tui-full-calendar-weekday-grid-line .tui-full-calendar-weekday-grid-date{
 			color: rgba($white, 0.8) !important;
 		}
-		.tui-full-calendar-dropdown-menu-item .tui-full-calendar-content {			
+		.tui-full-calendar-dropdown-menu-item .tui-full-calendar-content {
 			color: $black;
 		}
 		.tui-full-calendar-weekday-border{
 			border-top: 1px solid $dark-small-font-color !important;
 		}
-		.tui-full-calendar-month-dayname {		
+		.tui-full-calendar-month-dayname {
 			border-top-color: $dark-small-font-color !important;
 		}
 		.tui-full-calendar-layout{
 			background-color: $dark-body-background !important;
-		}	
-		.calendar-basic #menu-navi {			
-			border-bottom: 1px solid $dark-body-background;
-		}	
-		.social-app-profile .card .socialprofile span .badge {			
-			background-color: $dark-body-background;
-			color: $white;			
 		}
-		.social-list .media .media-body span {		
+		.calendar-basic #menu-navi {
+			border-bottom: 1px solid $dark-body-background;
+		}
+		.social-app-profile .card .socialprofile span .badge {
+			background-color: $dark-body-background;
+			color: $white;
+		}
+		.social-list .media .media-body span {
 			color: inherit;
 		}
 		.edit-profile .profile-title {
-			border-bottom: 1px solid $dark-body-background;			
+			border-bottom: 1px solid $dark-body-background;
 		}
 		.search-list{
 			.nav-item{
-				.nav-link {			
+				.nav-link {
 					color: $white;
 					opacity: 1;
 					&.active{
@@ -375,11 +375,11 @@ body {
 				}
 			}
 		}
-		
-		.datepicker--pointer {			
+
+		.datepicker--pointer {
 			background: $dark-card-background;
 			border-top: 1px solid $dark-body-background;
-			border-right: 1px solid $dark-body-background;			
+			border-right: 1px solid $dark-body-background;
 		}
 		.form-label {
 			color: inherit;
@@ -411,12 +411,12 @@ body {
 		.order-history table .qty-box{
 			background-color: $dark-card-background;
 		}
-		.product-box {		
+		.product-box {
 			background-color: $dark-card-background;
 			.product-details h4 {
 				color: $light-semi-gray;
 			}
-		}		
+		}
 		.flot-chart-placeholder .legend table{
 			color: $white !important;
 		}
@@ -437,19 +437,19 @@ body {
 							border-color: $dark-card-border;
 							}
 						}
-					}		
+					}
 				}
 				&.income-card {
 					.card-body {
 						.knob-block {
 							input {
-								color: $dark-all-font-color  !important;							
+								color: $dark-all-font-color  !important;
 							}
 						}
 					}
-				}			
+				}
 			}
-			
+
 			.latest-update-sec{
 				table{
 					tbody{
@@ -462,9 +462,9 @@ body {
 						}
 					}
 				}
-				
+
 			}
-						 
+
 			span,p,h5,h4,h5,h6,th,h3,a{
 				color: $dark-all-font-color;
 			}
@@ -480,8 +480,8 @@ body {
 				}
 			}
 
-			
-			
+
+
 		}
 		.setting-list{
 			background-color:$dark-card-background;
@@ -509,7 +509,7 @@ body {
 				.top-dealerbox{
 					&:hover{
 						background-color: $dark-body-background;
-					}				
+					}
 				}
 			}
 		}
@@ -533,24 +533,24 @@ body {
 						.media-body {
 							.tomorrow-sec {
 								p{
-								color:$dark-all-font-color;		
+								color:$dark-all-font-color;
 								background-color: $dark-card-background;
 								}
 								&:before{
-									background-color: $dark-card-border;								
+									background-color: $dark-card-border;
 								}
-							}						
+							}
 						}
 					}
 				}
 			}
-			
+
 		}
 		.activity-dot-primary{
 			background-color: $dark-card-background;
 		}
 
-		//user profile
+		//user users
 		.user-profile {
 			.profile-header {
 				.userpro-box{
@@ -575,7 +575,7 @@ body {
 						}
 					}
 				}
-			}		
+			}
 			.post-about {
 				ul {
 					li {
@@ -604,7 +604,7 @@ body {
 					}
 				}
 			}
-			
+
 		}
 		.social-tab {
 			.input-group {
@@ -613,8 +613,8 @@ body {
 				}
 			}
 		}
-			
-		
+
+
 		// widget //
 		.cal-date-widget {
 			.datepicker{
@@ -644,9 +644,9 @@ body {
 						}
 					}
 				}
-			}		
+			}
 			&.compact-wrapper {
-				.page-body-wrapper{				
+				.page-body-wrapper{
 						header{
 							&.main-nav {
 								.sidebar-main-title {
@@ -669,25 +669,25 @@ body {
 									}
 								}
 							}
-						}				
+						}
 				}
-			} 
+			}
 			.product-page-main{
 				thead,tbody,  tfoot,tr, td, th{
 					border-color: transparent;
 					background-color: transparent;
-				}	
+				}
 				p{
 					color: $dark-small-font-color;
 				}
 			}
 			thead,tbody,  tfoot,tr, td, th{
 				border-color: $dark-card-border;
-			}			  			 
-		}	
+			}
+		}
 		.testimonial{
 			i{
-				color:$primary-color !important; 
+				color:$primary-color !important;
 			}
 		}
 		.blockquote{
@@ -695,7 +695,7 @@ body {
 		}
 		.datepicker,.daterangepicker{
 			background-color:$dark-card-background;
-			border-color: $dark-card-border;			
+			border-color: $dark-card-border;
 		}
 		.daterangepicker{
 			&:after{
@@ -751,7 +751,7 @@ body {
 					}
 				}
 			}
-		} 		 	
+		}
 		.ranges {
 			li{
 				background-color: $dark-card-background;
@@ -782,8 +782,8 @@ body {
 			border-color:$dark-card-border !important;
 		}
 
-	
-		// sidebar 
+
+		// sidebar
 		.main-navbar {
 			ul.nav-pills{
 				border-color:$dark-card-border;
@@ -792,7 +792,7 @@ body {
 						border-color:$dark-card-border;
 					}
 					.nav-link{
-						color:$dark-all-font-color;					
+						color:$dark-all-font-color;
 					}
 				}
 			}
@@ -805,12 +805,12 @@ body {
 					}
 				}
 			}
-		}	
+		}
 
 		// project list
 		.project-list {
 			.border-tab{
-				border:none !important;			
+				border:none !important;
 				&.nav-tabs {
 					.nav-item {
 						.nav-link{
@@ -847,7 +847,7 @@ body {
 				.folder-box{
 					border-color:$dark-card-border;
 				}
-			}	
+			}
 		}
 		.file-manager{
 			> h6{
@@ -865,7 +865,7 @@ body {
 					color: $dark-small-font-color;
 				}
 			}
-			
+
 		}
 
 		// kanban board//
@@ -884,7 +884,7 @@ body {
 				border:none !important;
 			}
 		}
-		
+
 
 
 
@@ -931,8 +931,8 @@ body {
 					.dark-logo-wrapper{
 						display: block;
 					}
-				}		
-				
+				}
+
 				.left-menu-header {
 					ul {
 						li {
@@ -945,26 +945,26 @@ body {
 							}
 						}
 					}
-				}	
+				}
 			}
 
-			
+
 		}
 
-		
-		 
+
+
 		.page-wrapper {
 			.page-body-wrapper{
 				background-color: $dark-card-background
-			}							
+			}
 			&.horizontal-wrapper {
 				.page-body-wrapper{
 					&.horizontal-menu {
 						header{
 							&.main-nav {
 								background-color: $dark-card-background;
-								border-color:$dark-card-border ;							
-								.main-navbar {								
+								border-color:$dark-card-border ;
+								.main-navbar {
 									.nav-menu{
 										>li{
 											+li{
@@ -987,7 +987,7 @@ body {
 			}
 		}
 		.page-wrapper.horizontal-wrapper {
-			.page-body-wrapper {				
+			.page-body-wrapper {
 				.sidebar {
     				box-shadow: 0 0 11px $dark-card-background;
 				}
@@ -1204,7 +1204,7 @@ body {
 			background-color: $dark-body-background;
 		}
 		.ecommerce-widget {
-			border: 1px solid $dark-card-border  !important; 
+			border: 1px solid $dark-card-border  !important;
 		}
 		.contact-form {
 			.theme-form{
@@ -1255,7 +1255,7 @@ body {
 				}
 			}
 		}
-		
+
 		.order-box {
 			.title-box{
 				color: #bfc2c6;
@@ -1270,7 +1270,7 @@ body {
 				}
 				border-bottom: 1px solid $dark-card-border;
 			}
-			
+
 			.sub-total {
 				li{
 					color: #bfc2c6;
@@ -1403,13 +1403,13 @@ body {
 		}
 		.page-wrapper{
 			&.compact-wrapper{
-				.page-body-wrapper{				
+				.page-body-wrapper{
 					header{
 						&.main-nav{
 							background-color:$dark-card-background;
 							border-right:1px solid $dark-card-border;
 							border-color:$dark-card-border;
-							.nav-menu{								
+							.nav-menu{
 								> li{
 									> a{
 										color: $dark-all-font-color;
@@ -1483,7 +1483,7 @@ body {
 						i{
 							color: $dark-all-font-color;
 						}
-					}				
+					}
 				}
 				.page-main-header{
 					border-bottom: 1px solid $dark-card-border;
@@ -1518,7 +1518,7 @@ body {
 		}
 		.btn-primary-light{
 			color: $dark-all-font-color;
-		}	
+		}
 
 		// popover //
 		.popover{
@@ -1535,7 +1535,7 @@ body {
 		.bs-popover-end,.bs-popover-auto[data-popper-placement^="right"] {
 			> .popover-arrow{
 				&:after{
-					border-right-color:$dark-body-background;	
+					border-right-color:$dark-body-background;
 				}
 			}
 		}
@@ -1545,24 +1545,24 @@ body {
 					border-right-color:$dark-body-background;
 				}
 			}
-		}	
+		}
 		.bs-popover-top,.bs-popover-auto[data-popper-placement^="top"] {
 			> .popover-arrow{
 				&:after{
 					border-top-color:$dark-body-background;
 				}
 			}
-		}	
-		
+		}
+
 		.bs-popover-start,.bs-popover-auto[data-popper-placement^="left"] {
 			> .popover-arrow{
 				&:after{
 					border-left-color:$dark-body-background;
 				}
 			}
-		}	
+		}
 
-		// according 
+		// according
 		.default-according {
 			.card {
 				.card-header{
@@ -1581,7 +1581,7 @@ body {
 						}
 					}
 				}
-			}		
+			}
 			&.nav-left{
 				&.nav-success {
 					.nav-link{
@@ -1605,11 +1605,11 @@ body {
 						}
 					}
 				}
-			}		
-		}	
+			}
+		}
 
-	
-		
+
+
 		// form //
 		.form-control, .form-select{
 			background-color: $dark-card-border;
@@ -1622,12 +1622,12 @@ body {
 				&:invalid{
 					background-color:$dark-card-background;
 				}
-			} 
+			}
 			.is-invalid{
 				background-color:$dark-card-background;
 			}
 		}
-		
+
 
 		// step //
 		.u-pearl{
@@ -1654,7 +1654,7 @@ body {
 			background-color:$dark-border-color;
 		}
 
-		// datatable //	
+		// datatable //
 		.dataTables_wrapper {
 			table.dataTable {
 				tbody {
@@ -1670,7 +1670,7 @@ body {
 					border-color:$dark-card-border;
 				}
 			}
-		}	
+		}
 		.cd-timeline-content{
 			background-color:$dark-card-background;
 		}
@@ -1688,7 +1688,7 @@ body {
 					}
 				}
 			}
-		}	
+		}
 
 
 		// pagintaion //
@@ -1722,7 +1722,7 @@ body {
 					}
 				}
 			}
-			
+
 		}
 		.bookmark-wrap {
 			.left-bookmark {
@@ -1755,7 +1755,7 @@ body {
 						}
 					}
 				}
-			}		
+			}
 			.chat-menu{
 				background-color: $dark-card-background;
 				border-color: $dark-card-border;
@@ -1776,9 +1776,9 @@ body {
 						border-color: $dark-border-color ;
 					}
 				}
-			}	
-			
-			
+			}
+
+
 		}
 		.social-status {
 			form {
@@ -1849,13 +1849,13 @@ body {
 		}
 
 
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 
 		@media only screen and (max-width: 1199px){
 			.sm{
@@ -1923,14 +1923,14 @@ body {
 				.main-header-right {
 					background-color: $dark-card-background;
 					box-shadow: 0 0 18px 3px rgba(42, 50, 61, 1);
-					
-					
+
+
 					li {
 						i {
 							color: $light-gray;
 						}
 					}
-				
+
 					.nav-right {
 						> ul{
 							&.click-menu{
@@ -2133,11 +2133,11 @@ body {
 							}
 						}
 					}
-					
+
 				}
-				
+
 			}
-			
+
 			/* Main Header ends */
 			.page-body-wrapper {
 				/* body start*/
@@ -2221,7 +2221,7 @@ body {
 							tbody{
 								tr{
 									td {
-										border-top: none !important;										
+										border-top: none !important;
 									}
 									&:last-child{
 										td{
@@ -2293,9 +2293,9 @@ body {
 						.card-header{
 							border-bottom : none !important;
 						}
-						
+
 					}
-				}				
+				}
 				.custom-card {
 					.card-header {
 						img{
@@ -2527,7 +2527,7 @@ body {
 						.ct-label {
 							color: $dark-small-font-color;
 						}
-						hr {						
+						hr {
 							background-color:$dark-card-border;
 						}
 						.text-muted {
@@ -2959,7 +2959,7 @@ body {
 						}
 						.cd-timeline-content{
 							background-color:$dark-card-background;
-							border-color:$dark-card-border;						
+							border-color:$dark-card-border;
 							&::before{
 								border-left: 7px solid $dark-card-border;
 							}
@@ -3217,7 +3217,7 @@ body {
 							background-color: $dark-card-background !important;
 							.btn-link {
 								color:$dark-all-font-color;
-								border:none;							
+								border:none;
 							}
 							.card-body {
 								color: $dark-small-font-color;
@@ -3226,7 +3226,7 @@ body {
 						}
 					}
 					.border {
-						border: 1px solid $dark-card-border !important;					
+						border: 1px solid $dark-card-border !important;
 					}
 					.blog-box {
 						.blog-date {
@@ -3266,7 +3266,7 @@ body {
 					.cke_wysiwyg_frame, .cke_wysiwyg_div{
 						background-color: $dark-card-background;
 					}
-				
+
 					.add-post {
 						form {
 							.form-group {
@@ -3555,9 +3555,9 @@ body {
 								&:nth-child(n+2){
 									border-color:$dark-card-border;
 								}
-							}							
+							}
 						}
-						
+
 					}
 					.dropdown-menu {
 						background-color: $dark-body-background;
@@ -3766,7 +3766,7 @@ body {
 								}
 							}
 						}
-					}				
+					}
 				}
 				.status {
 					color: $dark-small-font-color;
@@ -3866,7 +3866,7 @@ body {
 				background-color: $white;
 			}
 			.list-group-item {
-				background-color: $dark-card-background;			
+				background-color: $dark-card-background;
 				border:1px solid $dark-card-border;
 				color: $dark-all-font-color;
 				&.active {
@@ -4022,8 +4022,8 @@ body {
 					border-color: $dark-card-border;
 				}
 			}
-			
-			
+
+
 			.btn-close{
 				filter:invert(1);
 			}
@@ -4157,7 +4157,7 @@ body {
 				background-color: $dark-body-background;
 			}
 			.table-bordered{
-				border: 1px solid $dark-card-border;			
+				border: 1px solid $dark-card-border;
 			}
 			.table-border-horizontal{
 				tr,th,td{
@@ -4175,8 +4175,8 @@ body {
 			.profile-greeting{
 				.btn-light{
 					background-color: $light-gray !important;
-					border-color:$light-gray !important;		
-					color: $primary-color !important;	
+					border-color:$light-gray !important;
+					color: $primary-color !important;
 				}
 			}
 			.note-editor{
@@ -4354,7 +4354,7 @@ body {
 					}
 				}
 			}
-			
+
 			.pixelstrap{
 				ul{
 					background: $dark-card-background;
@@ -4362,11 +4362,11 @@ body {
 
 
 
-			
+
 
 
 			}
-			@media only screen and (max-width: 575px){			
+			@media only screen and (max-width: 575px){
 				.widget-joins {
 					.border-after-xs {
 						&:after {
@@ -4662,7 +4662,7 @@ body {
 		.nav-tabs{
 			border-bottom: 1px solid $dark-card-border;
 			.nav-link{
-				&.active{				
+				&.active{
 					color: $dark-all-font-color;
 					border-color: $dark-card-border;
 				}
@@ -4678,7 +4678,7 @@ body {
 					border-color: $dark-card-border;
 				}
 			}
-		}	
+		}
 		.nav-tabs.nav-bottom {
 			.nav-item {
 				.nav-link{
@@ -4850,7 +4850,7 @@ body {
 							}
 						}
 
-						
+
 					}
 					&:not(.inactive):not(.active){
 						.timeliny-dot{
@@ -4874,9 +4874,9 @@ body {
 				}
 			}
 
-			
 
-			
+
+
 		}
 		.todo{
 			.todo-list-wrapper{
@@ -4927,7 +4927,7 @@ body {
 				}
 
 			}
-		}	
+		}
 		.introjs-helperLayer{
 			background-color: rgba(54,64,74,0.9);
 			border: rgba(255,255,255,0.5);
@@ -5003,7 +5003,7 @@ body {
 				border-bottom: 1px solid $dark-card-border;
 			}
 		}
-		
+
 		#keytable_wrapper, #column-selector_wrapper, #auto-fill_wrapper, #custom-button_wrapper, #class-button_wrapper, #keyboard-btn_wrapper, #multilevel-btn_wrapper, #pagelength-btn_wrapper, #basic-colreorder_wrapper, #state-saving_wrapper, #real-time_wrapper, #basic-fixed-header_wrapper, #fixed-header-footer_wrapper, #export-button_wrapper, #excel-cust-bolder_wrapper, #cust-json_wrapper, #basic-key-table_wrapper, #focus-cell_wrapper, #responsive_wrapper, #new-cons_wrapper, #show-hidden-row_wrapper, #basic-row-reorder_wrapper, #full-row_wrapper, #rest-column_wrapper{
 			.dataTables_paginate{
 				border: none;
@@ -5458,7 +5458,7 @@ body {
 				li{
 					a {
 						color: $dark-small-font-color;
-					}					
+					}
 				}
 			}
 		}
@@ -5591,16 +5591,16 @@ body {
 			}
 		}
 
-		
+
 		.page-wrapper{
 			&.compact-wrapper{
-				.page-body-wrapper{				
+				.page-body-wrapper{
 						header{
 							&.main-nav{
 								background-color: $dark-card-background;
 								border-right: 1px solid $dark-card-border;
-								
-								
+
+
 								.nav-menu{
 									h6{
 										color: $dark-all-font-color;
@@ -5612,7 +5612,7 @@ body {
 											}
 										}
 										.nav-submenu{
-											li{											
+											li{
 												&:first-child{
 													border-top: 1px solid $dark-card-border;
 												}
@@ -5620,7 +5620,7 @@ body {
 										}
 										&:last-child{
 											border-bottom: 1px solid $dark-card-border;
-										}										
+										}
 										> a{
 											color: $dark-all-font-color;
 										}
@@ -5663,9 +5663,9 @@ body {
 									}
 									p{
 										color: $dark-all-font-color;
-									}								
+									}
 								}
-								.main-navbar{								
+								.main-navbar{
 									.nav-menu{
 										>li{
 											.mega-menu-container {
@@ -5689,7 +5689,7 @@ body {
 														}
 													}
 												}
-											}											
+											}
 										}
 									}
 								}
@@ -5707,20 +5707,20 @@ body {
 							i{
 								color: $dark-all-font-color;
 							}
-						}					
+						}
 				}
 				.page-main-header{
 					border-bottom: 1px solid $dark-card-border;
 		 			.main-header-left	{
 						 background-color: $dark-card-background;
-					 }				 
-				}				 
+					 }
+				}
 			}
 		}
 
 
 
-		// sidebar 
+		// sidebar
 		.main-navbar {
 			ul.nav-pills{
 				border-color:$dark-card-border;
@@ -5733,7 +5733,7 @@ body {
 					}
 				}
 			}
-		}	
+		}
 	}
 }
 
@@ -5752,7 +5752,7 @@ body {
 			}
 		}
 	}
-	
+
 }
 /**=====================
    55. theme layout CSS ends

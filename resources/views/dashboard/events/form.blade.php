@@ -107,10 +107,9 @@
     </div>
 </div>
 <div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/event.category')}} <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">{{__('admin/category.category')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         @inject('category','App\Models\Category')
-
         {!! Form::select('category_id',$category->pluck('name','id'),Request::old('category_id') ? Request::old('category_id') : $model->category_id,[
             'placeholder' => __('admin/home.select'),
             'class'       => 'form-control select'. ( $errors->has('category_id') ? ' is-invalid' : '' )
@@ -146,7 +145,7 @@
         @inject('countries','App\Models\Country')
         {!! Form::select('country_id',$countries->pluck('name','id'),Request::old('country_id') ? Request::old('country_id') : $model->country_id,[
             'placeholder' => __('admin/home.select'),
-            'class'       => 'form-control select'. ( $errors->has('user_id') ? ' is-invalid' : '' )
+            'class'       => 'form-control select'. ( $errors->has('country_id') ? ' is-invalid' : '' )
         ]) !!}
         @error('country_id')
         <span class="invalid-feedback" role="alert">
