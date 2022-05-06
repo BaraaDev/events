@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\SettingRequest;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,7 @@ class SettingController extends Controller
         return view('dashboard.setting',compact('settings'));
     }
 
-    public function update(Request $request)
+    public function update(SettingRequest $request)
     {
         $settings = Setting::first();
         $settings->setTranslation('title', 'en', $request->title_en)

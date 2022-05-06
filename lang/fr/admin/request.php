@@ -21,13 +21,19 @@ return [
     'phone_numeric'                   => 'The phone must be a number.',
     'phone_digits'                    => 'The phone must be 11 digits.',
     ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message whatsApp
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'whatsApp_required'          => 'The whatsApp field is required.',
+    'whatsApp_numeric'           => 'The whatsApp must be a number.',
+    'whatsApp_digits'            => 'The whatsApp must be 14 digits.',
+    ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message email
     ///////////////////////////////////////////////////////////////////////////////////////
     'email_required'                  => 'The email field is required.',
     'email_min'                       => 'The text length of the email field must be at least 3 characters/character.',
     'email_max'                       => 'The text length of the email field must not exceed 255 characters/characters.',
     'email_unique'                    => 'The email value is already in use.',
-    'email_email'                     => 'The email must be from the email group.',
+    'email_email'                     => 'The email field must be a valid email address.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message bio
     ///////////////////////////////////////////////////////////////////////////////////////
