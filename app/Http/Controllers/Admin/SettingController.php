@@ -17,7 +17,27 @@ class SettingController extends Controller
     public function update(Request $request)
     {
         $settings = Setting::first();
-        $settings->update($request->all());
+        $settings->setTranslation('title', 'en', $request->title_en)
+            ->setTranslation('title', 'ar', $request->title_ar)
+            ->setTranslation('title', 'fr', $request->title_fr);
+
+        $settings->setTranslation('content', 'en', $request->content_en)
+            ->setTranslation('content', 'ar', $request->content_ar)
+            ->setTranslation('content', 'fr', $request->content_fr);
+        $settings->email = $request->email;
+        $settings->phone = $request->phone;
+        $settings->facebook = $request->facebook;
+        $settings->twitter = $request->twitter;
+        $settings->youtube = $request->youtube;
+        $settings->instagram = $request->instagram;
+        $settings->telegram = $request->telegram;
+        $settings->whatsApp = $request->whatsApp;
+        $settings->linkedin = $request->linkedin;
+        $settings->location = $request->location;
+
+        $settings->save();
+
+
 
         return redirect()->route('setting');
     }
