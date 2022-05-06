@@ -48,7 +48,7 @@ return [
     'enter_address'                  => 'أدخل عنوان المنزل',
     'enter_postal_code'              => 'أدخل الرمز البريدي',
     'enter_state_province'           => 'أدخل مقاطعة / المنطقة',
-    'enter_bio'                      => 'أدخل حول الوصف الخاص بك',
+    'enter_bio'                      => 'أدخل سيرتك الذاتية',
     'enter_facebook'                 => 'اسم مستخدم الفيسبوك',
     'enter_twitter'                  => 'اسم مستخدم التويتر',
     'enter_instagram'                => 'اسم مستخدم الانستجرام',
