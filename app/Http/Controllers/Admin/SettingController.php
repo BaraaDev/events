@@ -10,10 +10,11 @@ class SettingController extends Controller
 {
     public function setting()
     {
-        return view('dashboard.setting');
+        $settings = Setting::first();
+        return view('dashboard.setting',compact('settings'));
     }
 
-    public function store(Request $request)
+    public function update(Request $request)
     {
         $settings = Setting::first();
         $settings->update($request->all());

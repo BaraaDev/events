@@ -79,9 +79,10 @@ Route::group([
         Route::post('/edit-myProfile', [ProfileController::class,'edit_my_Profile'])->name('edit-myProfile');
         //-------------------- end users route. --------------------//
 
-        //-------------------- end setting route. --------------------//
+        //-------------------- Start setting route. --------------------//
         Route::get('/setting', [SettingController::class,'setting'])->name('setting');
-        Route::post('/setting-post', [SettingController::class,'setting'])->name('setting.post');
+        Route::post('/setting-post', [SettingController::class,'update'])->name('setting.update');
+        //-------------------- End setting route. --------------------//
     });
 });
 
