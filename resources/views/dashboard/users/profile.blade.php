@@ -91,7 +91,9 @@
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <div class="icon"><i data-feather="mail"></i></div>
+                                                    <div class="icon">
+                                                        <i data-feather="mail"></i>
+                                                    </div>
                                                     <div>
                                                         <h5>{{$user->email ?? __('admin/home.alertEmail')}}</h5>
                                                     </div>

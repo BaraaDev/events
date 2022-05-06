@@ -155,4 +155,5 @@ return [
     'password_confirmed'            => 'يجب أن تتطابق كلمة المرور.',
     'password_min'                  => 'يجب أن تكون كلمة المرور أكثر من 8 أحرف.',
     'avatar_image'                  => 'يجب ان تكون الصورة من فئة (jpg, jpeg, png, bmp, gif, svg,webp).',
+    'cover_image'                   => 'يجب ان تكون الصورة من فئة (jpg, jpeg, png, bmp, gif, svg,webp).',
 ];

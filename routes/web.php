@@ -5,9 +5,11 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\CountryController;
 use App\Http\Controllers\Admin\CityController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,7 +31,6 @@ Route::group([
     Route::prefix('dashboard')->group(function () {
         Route::group([], function () {   //group function for "home" route.
             Route::get('/', [HomeController::class, 'index'])->name('dashboard');
-            Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
         });
         //-------------------- start tags route. --------------------//
         Route::resource('/tags', TagController::class);
@@ -71,11 +72,16 @@ Route::group([
         //-------------------- end events route. --------------------//
 
         //-------------------- start users route. --------------------//
+        Route::resource('users',UserController::class);
         Route::get('/profile', [ProfileController::class,'profile'])->name('profile');
         Route::get('/edit-profile', [ProfileController::class,'edit'])->name('edit-profile');
         Route::post('/edit-profile-post', [ProfileController::class,'profileUpdatePassword'])->name('edit-profile-post');
         Route::post('/edit-myProfile', [ProfileController::class,'edit_my_Profile'])->name('edit-myProfile');
         //-------------------- end users route. --------------------//
+
+        //-------------------- end setting route. --------------------//
+        Route::get('/setting', [SettingController::class,'setting'])->name('setting');
+        Route::post('/setting-post', [SettingController::class,'setting'])->name('setting.post');
     });
 });
 

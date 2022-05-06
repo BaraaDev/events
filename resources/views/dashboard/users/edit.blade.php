@@ -7,6 +7,7 @@
             <h3>{{__('admin/user.edit_profile')}}</h3>
         @endslot
         <li class="breadcrumb-item">{{__('admin/user.users')}}</li>
+        <li class="breadcrumb-item"><a href="{{route('profile')}}">{{$model->name}}</a> </li>
         <li class="breadcrumb-item active">{{__('admin/user.edit_profile')}}</li>
     @endcomponent
     @include('layouts.admin.partials.validation-errors')

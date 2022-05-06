@@ -52,5 +52,7 @@ return [
     'alertGender'                        => 'Not Found Gender',
     'alertLocation'                      => 'Not Found Address',
     'save'                               => 'Save',
+    'settings'                           => 'Settings',
+    'setting'                            => 'Setting',
 
 ];

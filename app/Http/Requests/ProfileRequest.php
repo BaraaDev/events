@@ -87,7 +87,8 @@ class ProfileRequest extends FormRequest
             // Validation city id
             'city_id.required'          => __('admin/request.city_id_required'),
             'city_id.exists'            => __('admin/request.city_exists'),
-            'avatar.image'              => __('admin/request.avatar_image')
+            'avatar.image'              => __('admin/request.avatar_image'),
+            'cover.image'               => __('admin/request.cover_image')
         ];
     }
 }

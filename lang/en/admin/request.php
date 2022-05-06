@@ -155,4 +155,5 @@ return [
     'password_confirmed'            => 'The password must match.',
     'password_min'                  => 'Password must be more than 8 characters.',
     'avatar_image'                  => 'The image must be in a category (jpg, jpeg, png, bmp, gif, svg, webp).',
+    'cover_image'                   => 'The image must be in a category (jpg, jpeg, png, bmp, gif, svg, webp).',
 ];

@@ -48,4 +48,5 @@ return [
     'confirmRestore'                    => 'هل أنت متأكد أنك تريد الاستعادة؟',
     'currency'                          => 'جنيهاً',
     'save'                              => 'حفظ',
+    'settings'                          => 'الإعدادات',
 ];
