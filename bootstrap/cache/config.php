@@ -4,13 +4,13 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'https://event.dev',
     'asset_url' => NULL,
     'timezone' => 'Africa/Cairo',
     'locale' => 'ar',
     'fallback_locale' => 'ar',
     'faker_locale' => 'ar_AG',
-    'key' => 'base64:GgWptLN75/jj1cf0x+dClYuSSXHyI0mTNNYrZz4Le/A=',
+    'key' => 'base64:q62+yDJbVONHGIrUTkny/on9JTwsIgOaVJ8nypKquCQ=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -188,7 +188,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'E:\\laragon\\www\\events\\storage\\framework/cache/data',
+        'path' => 'E:\\laragon\\www\\event\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -271,7 +271,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'events',
+        'database' => 'event',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -281,7 +281,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'events',
+        'database' => 'event',
         'username' => 'root',
         'password' => '',
         'unix_socket' => '',
@@ -301,7 +301,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'events',
+        'database' => 'event',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -316,7 +316,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'events',
+        'database' => 'event',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -361,20 +361,20 @@
       'media' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\laragon\\www\\events\\public\\media',
-        'url' => 'http://localhost/media',
+        'root' => 'E:\\laragon\\www\\event\\public\\media',
+        'url' => 'https://event.dev/media',
       ),
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\laragon\\www\\events\\storage\\app',
+        'root' => 'E:\\laragon\\www\\event\\storage\\app',
         'throw' => false,
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\laragon\\www\\events\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'root' => 'E:\\laragon\\www\\event\\storage\\app/public',
+        'url' => 'https://event.dev/storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -393,7 +393,7 @@
     ),
     'links' => 
     array (
-      'E:\\laragon\\www\\events\\public\\storage' => 'E:\\laragon\\www\\events\\storage\\app/public',
+      'E:\\laragon\\www\\event\\public\\storage' => 'E:\\laragon\\www\\event\\storage\\app/public',
     ),
   ),
   'flare' => 
@@ -481,7 +481,7 @@
     array (
     ),
     'enable_runnable_solutions' => true,
-    'remote_sites_path' => 'E:\\laragon\\www\\events',
+    'remote_sites_path' => 'E:\\laragon\\www\\event',
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
     'settings_file_path' => '',
@@ -536,7 +536,7 @@
   'livewire' => 
   array (
     'class_namespace' => 'App\\Http\\Livewire',
-    'view_path' => 'E:\\laragon\\www\\events\\resources\\views/livewire',
+    'view_path' => 'E:\\laragon\\www\\event\\resources\\views/livewire',
     'layout' => 'layouts.app',
     'asset_url' => NULL,
     'app_url' => NULL,
@@ -590,13 +590,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'E:\\laragon\\www\\events\\storage\\logs/laravel.log',
+        'path' => 'E:\\laragon\\www\\event\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'E:\\laragon\\www\\events\\storage\\logs/laravel.log',
+        'path' => 'E:\\laragon\\www\\event\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -648,7 +648,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'E:\\laragon\\www\\events\\storage\\logs/laravel.log',
+        'path' => 'E:\\laragon\\www\\event\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -713,7 +713,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'E:\\laragon\\www\\events\\resources\\views/vendor/mail',
+        0 => 'E:\\laragon\\www\\event\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -921,7 +921,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => 'event.dev',
     ),
     'guard' => 
     array (
@@ -960,7 +960,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'E:\\laragon\\www\\events\\storage\\framework/sessions',
+    'files' => 'E:\\laragon\\www\\event\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -980,9 +980,9 @@
   array (
     'paths' => 
     array (
-      0 => 'E:\\laragon\\www\\events\\resources\\views',
+      0 => 'E:\\laragon\\www\\event\\resources\\views',
     ),
-    'compiled' => 'E:\\laragon\\www\\events\\storage\\framework\\views',
+    'compiled' => 'E:\\laragon\\www\\event\\storage\\framework\\views',
   ),
   'image' => 
   array (
@@ -1102,9 +1102,9 @@
     ),
     'collect_data_always' => false,
     'storage' => 'files',
-    'storage_files_path' => 'E:\\laragon\\www\\events\\storage\\clockwork',
+    'storage_files_path' => 'E:\\laragon\\www\\event\\storage\\clockwork',
     'storage_files_compress' => false,
-    'storage_sql_database' => 'E:\\laragon\\www\\events\\storage\\clockwork.sqlite',
+    'storage_sql_database' => 'E:\\laragon\\www\\event\\storage\\clockwork.sqlite',
     'storage_sql_table' => 'clockwork',
     'storage_expiration' => 10080,
     'authentication' => false,

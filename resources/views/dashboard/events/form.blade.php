@@ -193,6 +193,18 @@
 </div>
 
 <div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/tag.tags')}} <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        @inject('tag','App\Models\Tag')
+        {!! Form::select('tag_id[]',$tag->pluck('name','id'),$model->tags->pluck('id')->all(),[
+            'placeholder' => __('admin/home.select'),
+            'class'       => 'form-control select',
+            'multiple'
+        ]) !!}
+    </div>
+</div>
+
+<div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/home.image')}}</label>
     <div class="col-lg-9">
         <input class="form-control @error('avatar') is-invalid @enderror" type="file" name="images"/>
