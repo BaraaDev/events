@@ -74,4 +74,5 @@ return [
     'enter_telegram'                     => 'Enter your Telegram username',
     'enter_linkedin'                     => 'Enter your LinkedIn username',
     'enter_location'                     => 'Enter the Location',
+    'image'                              => 'Image',
 ];

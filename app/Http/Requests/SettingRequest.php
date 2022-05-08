@@ -88,7 +88,8 @@ class SettingRequest extends FormRequest
             'phone.numeric'             => __('admin/request.phone_numeric'),
             'phone.digits'              => __('admin/request.phone_digits'),
 
-            // Validation phone
+
+            // Validation whatsApp
             'whatsApp.required'            => __('admin/request.whatsApp_required'),
             'whatsApp.numeric'             => __('admin/request.whatsApp_numeric'),
             'whatsApp.digits'              => __('admin/request.whatsApp_digits'),

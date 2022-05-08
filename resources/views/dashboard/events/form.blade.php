@@ -127,7 +127,7 @@
     <div class="col-lg-9">
         @inject('user','App\Models\User')
 
-        {!! Form::select('user_id',$user->pluck('name','id'),Request::old('user_id') ? Request::old('user_id') : $model->user_id,[
+        {!! Form::select('user_id',$user->type('customer')->pluck('name','id'),Request::old('user_id') ? Request::old('user_id') : $model->user_id,[
             'placeholder' => __('admin/home.select'),
             'class'       => 'form-control select'. ( $errors->has('user_id') ? ' is-invalid' : '' )
         ]) !!}
@@ -180,6 +180,18 @@
             'class'       => 'form-control select'.( $errors->has('city_id') ? ' is-invalid' : '' )
         ]) !!}
         @error('city_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/home.image')}}</label>
+    <div class="col-lg-9">
+        <input class="form-control @error('avatar') is-invalid @enderror" type="file" name="images"/>
+        @error('avatar')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>

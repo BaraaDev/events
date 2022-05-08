@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Setting;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\ServiceProvider;
 
@@ -29,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
          //   dd($theme);
             $view->with('theme', $theme);
         });
+        view()->share('setting',Setting::first());
     }
 }

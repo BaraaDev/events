@@ -69,4 +69,5 @@ return [
     'enter_telegram'                    => 'أدخل اسم مستخدم تيلجرام',
     'enter_linkedin'                    => 'أدخل اسم مستخدم لينكيداين',
     'enter_location'                    => 'أدخل الموقع',
+    'image'                             => 'صورة',
 ];

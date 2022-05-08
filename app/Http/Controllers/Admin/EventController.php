@@ -42,7 +42,14 @@ class EventController extends Controller
         $events->user_id = $request->user_id;
         $events->create_user_id = auth()->user()->id;
         $events->status = $request->status;
-
+        if ($request->hasFile('images')) {
+            $events
+                ->addMediaFromRequest('image')
+                ->UsingName($events->title_en)
+                ->UsingFileName("$events->title_en")
+                ->toMediaCollection('images');
+        }
+    //    $events->update($request->all());
         $events->save();
         return redirect()->route('events.index')
             ->with(['message' => __('admin/home.added_successfully')]);
@@ -74,8 +81,17 @@ class EventController extends Controller
         $event->user_id        = $request->user_id;
         $event->update_user_id = auth()->user()->id;
         $event->status         = $request->status;
+        if ($request->hasFile('images')) {
+            $event
+                ->clearMediaCollection('images')
+                ->addMediaFromRequest('images')
+                ->UsingName($request->title_en)
+                ->UsingFileName("$request->title_en")
+                ->toMediaCollection('images');
+        }
 
         $event->save();
+
         return redirect()->route('events.index')
             ->with(['message' => __('admin/home.edited_successfully')]);
 

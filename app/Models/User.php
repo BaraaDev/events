@@ -67,4 +67,9 @@ class User extends Authenticatable implements HasMedia
             ?  $this->getFirstMediaUrl('avatar')
             : asset('admin/images/dashboard/1.png');
     }
+
+    public function scopeType($query,$arg)
+    {
+        return $query->where('user_type',$arg);
+    }
 }
