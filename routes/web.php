@@ -31,6 +31,7 @@ Route::group([
     Route::prefix('dashboard')->group(function () {
         Route::group([], function () {   //group function for "home" route.
             Route::get('/', [HomeController::class, 'index'])->name('dashboard');
+            Route::get('/home', [HomeController::class, 'index'])->name('dashboard');
         });
         //-------------------- start tags route. --------------------//
         Route::resource('/tags', TagController::class);
