@@ -56,6 +56,5 @@ return [
     'enter_telegram'                 => 'Telegram Username',
     'avatar'                         => 'Avatar Photo',
     'cover'                          => 'Cover Photo',
-    'customerName'                   => 'Customer Name',
     'DescriptionUser'                => 'All users. If you want to create and add new users, you must click on the (Add New Users) button at the top of the page.',
 ];

@@ -56,6 +56,5 @@ return [
     'enter_telegram'                 => "Nom d'utilisateur Telegram",
     'avatar'                         => "Photo d'avatar",
     'cover'                          => 'Photo de couverture',
-    'customerName'                   => 'Nom du client',
     'DescriptionUser'                => 'Tous les utilisateurs. Si vous souhaitez créer et ajouter de nouveaux utilisateurs, vous devez cliquer sur le bouton (Ajouter de nouveaux utilisateurs) en haut de la page.',
 ];
