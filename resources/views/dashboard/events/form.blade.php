@@ -23,6 +23,7 @@
         </div>
     </div>
 </div>
+
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'en') show active @endif" id="en" role="tabpanel" aria-labelledby="en-tab">
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.event')}} <span class="text-danger">*</span> </label>
@@ -35,6 +36,7 @@
             @enderror
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.location')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
@@ -47,6 +49,7 @@
         </div>
     </div>
 </div>
+
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'fr') show active @endif" id="fr" role="tabpanel" aria-labelledby="fr-tab">
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.event')}} <span class="text-danger">*</span> </label>
@@ -59,6 +62,7 @@
             @enderror
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.location')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
@@ -71,6 +75,7 @@
         </div>
     </div>
 </div>
+
 <div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/event.time')}} <span class="text-danger">*</span> </label>
     <div class="col-lg-9">
