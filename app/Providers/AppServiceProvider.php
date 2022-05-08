@@ -30,6 +30,6 @@ class AppServiceProvider extends ServiceProvider
          //   dd($theme);
             $view->with('theme', $theme);
         });
-        view()->share('setting',Setting::first());
+        // view()->share('setting',Setting::first());
     }
 }
