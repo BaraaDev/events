@@ -7,14 +7,15 @@ use Illuminate\Http\Request;
 
 class EventController extends Controller
 {
-    public function events()
+    public function index()
     {
-        $events = Event::status('Available')->all();
+        $events = Event::status('Available')->get();
         return view('website.events.index',compact('events'));
     }
 
     public function show($id)
     {
-        $event = Event::
+        $event = Event::status('Available')->findOrFail($id);
+        return view('website.events.show',compact('event'));
     }
 }

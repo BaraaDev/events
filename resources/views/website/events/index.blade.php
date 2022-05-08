@@ -69,7 +69,7 @@
                                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
                                         <div class="text">May 17-19, {{$event->country->name ?? ''}}</div>
                                     </div>
-                                    <a href="#" class="h5 title">{{$event->title}}</a>
+                                    <a href="{{route('event.show',$event->id)}}" class="h5 title">{{$event->title}}</a>
                                 </div>
                             </div>
                         </div>
@@ -96,9 +96,7 @@
                 </div>
             </div>
         </section>
-
         <!-- ... end Curriculum Events -->
-
     </div>
 @endsection
 

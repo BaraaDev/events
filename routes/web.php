@@ -88,9 +88,8 @@ Route::group([
 });
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
-Auth::routes();
-
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/events', [App\Http\Controllers\HomeController::class, 'events'])->name('allEvents');
+    Auth::routes();
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
+    Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
 });
