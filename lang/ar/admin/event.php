@@ -6,7 +6,7 @@ return [
     'all_events'                  => 'جميع الأحداث',
     'create'                      => 'إنشاء حداث',
     'edit'                        => 'تعديل',
-    'TitleEvent'                  => 'الأحداث',
+    'TitleEvent'                  => 'عنوان الحدث',
     'addEvent'                    => 'إضافة حدث جديد',
     'showEvent'                   => 'عرض الأحداث',
     'name'                        => 'الاسم',
