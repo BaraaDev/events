@@ -16,7 +16,7 @@ return [
     'budget'                      => 'Budgets',
     'location'                    => 'Locations',
     'deleted_events'              => 'Deleted Events',
-    'invitation_address'          => 'invitation Address',
+    'invitation_address'          => 'Invitation Address',
     'date'                        => 'Date',
     'enter_budget'                => 'Enter Budget',
     'DescriptionEvent'            => 'All events. If you want to create and add new events, you must click on the (Add New Events) button at the top of the page.',

@@ -31,6 +31,7 @@
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
                                         <th scope="col" class="text-center">{{__('admin/event.TitleEvent')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/user.customerName')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.budget')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/category.category')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/event.invitation_address')}}</th>
@@ -46,6 +47,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$event->title}}</td>
+                                        <th scope="col" class="text-center">______</th>
                                         <td class="text-center">{{$event->budget}}</td>
                                         <td class="text-center"><a href="{{route('categories.edit',$event->category->id ?? '')}}">{{$event->category->name ?? ''}}</a></td>
                                         <td class="text-center">
