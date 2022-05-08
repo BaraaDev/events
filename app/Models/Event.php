@@ -51,6 +51,11 @@ class Event extends Model implements HasMedia
         return $this->belongsTo(User::class);
     }
 
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class,'event_tag');
+    }
+
     public function getPhotoAttribute()
     {
         return $this->getFirstMediaUrl('images')

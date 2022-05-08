@@ -44,12 +44,14 @@ class EventController extends Controller
         $events->status = $request->status;
         if ($request->hasFile('images')) {
             $events
-                ->addMediaFromRequest('image')
+                ->addMediaFromRequest('images')
                 ->UsingName($events->title_en)
                 ->UsingFileName("$events->title_en")
                 ->toMediaCollection('images');
         }
-    //    $events->update($request->all());
+
+        $events->tags()->sync($request->tag_id);
+
         $events->save();
         return redirect()->route('events.index')
             ->with(['message' => __('admin/home.added_successfully')]);
@@ -89,6 +91,8 @@ class EventController extends Controller
                 ->UsingFileName("$request->title_en")
                 ->toMediaCollection('images');
         }
+
+        $event->tags()->sync($request->tag_id);
 
         $event->save();
 

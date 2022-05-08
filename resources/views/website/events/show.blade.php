@@ -3,7 +3,7 @@
 @section('content')
     <div class="content-wrapper">
         <!-- Start Header -->
-        <div class="crumina-stunning-header stunning-bg-2 stunning-header--bg-photo stunning-header--breadcrumbs-bottom-left stunning-header--content-padding100 custom-color c-white fill-white">
+        <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left custom-color c-white fill-white">
             <div class="container">
                 <div class="stunning-header-content">
                     <h6 class="category-link c-yellow-light">{{$event->category->name ?? ''}}</h6>
@@ -57,10 +57,109 @@
                             </p>
 
                         </div>
+                        <div class="comments">
+
+                            <form class="form-validate contact-form leave-reply" method="post">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h3>Add your offer now</h3>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <input name="name" placeholder="Your Name" type="text">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <input name="email" placeholder="Email Adress" type="text">
+
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="with-icon">
+                                            <textarea name="message" class="" required="" placeholder="Offer details" style="min-height: 160px;"></textarea>
+                                            <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="submit-block">
+                                        <div class="col-lg-12">
+                                            <button class="btn btn--large btn--green btn--with-shadow full-width">
+                                                <span class="text">Submit</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="d-flex--content-inline">
+                                <h3>Provided Offers</h3>
+
+
+                            </div>
+
+                            <ol class="comments__list">
+                                <li class="comments__item">
+                                    <div class="comment-entry comment comments__article">
+                                        <div class="comments__avatar">
+                                            <img src="{{asset('admin/images/dashboard/1.png')}}" alt="avatar">
+                                        </div>
+
+
+                                        <div class="comments__body">
+                                            <div class="d-flex--content-inline">
+                                                <header class="comment-meta comments__header">
+                                                    <cite class="fn url comments__author">
+                                                        <a href="#" rel="external" class="h6">Susan Simpson</a>
+                                                    </cite>
+                                                    <div class="comments__time">
+                                                        <time class="published" datetime="2017-03-19 10:07:00">19th March 2017, 10:07 am</time>
+                                                    </div>
+                                                </header>
+                                            </div>
+
+                                            <div class="comment-content comment">
+                                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                                                    lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                                    anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
                     </div>
 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+
                         <aside aria-label="sidebar" class="sidebar sidebar-right">
+
+                            <aside class="widget w-category">
+                                <h5 class="widget-title">Event Card</h5>
+                                <ul class="category-list">
+                                    <li>
+                                        <a href="#">Status
+                                            <span class="cat-count c-yellow">{{$event->status}}</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>Date Publication
+                                            <span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>Budget
+                                            <span class="cat-count">{{$event->budget}}</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Number Of Applicants
+                                            <span class="cat-count">24</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </aside>
 
                             <aside class="widget w-author">
                                 <div class="testimonial-img-author">
@@ -82,19 +181,7 @@
                                 </div>
 
                                 <a href="#" class="h5 title">{{$event->user->name ?? ''}}</a>
-
-                                <p>{{$event->user->bio ?? ''}}</p>
-
-                                <a href="#" class="btn btn--large full-width btn--green btn--with-shadow js-message-popup cd-nav-trigger">
-                                    Send a Message
-                                </a>
-                            </aside>
-
-                            <aside class="widget w-contacts">
-                                <h5 class="widget-title">Our location</h5>
-
                                 <p class="contacts-text">{{$event->user->address ?? ''}}</p>
-
 
                                 <div class="contact-item display-flex">
                                     <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys"><use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use></svg>
@@ -105,13 +192,24 @@
                                     <svg class="utouch-icon utouch-icon-message-closed-envelope-1"><use xlink:href="#utouch-icon-message-closed-envelope-1"></use></svg>
                                     <span class="info"><a href="mailto://{{$event->user->email ?? ''}}">{{$event->user->email ?? ''}}</a> </span>
                                 </div>
+                            </aside>
 
+                            <aside class="widget w-tags">
+                                <h5 class="widget-title">Required skills</h5>
+                                <ul class="tags-list">
+                                    @forelse($event->tags as $tag)
+                                        <li>
+                                            <a href="#">{{$tag->name}}</a>
+                                        </li>
+                                    @empty
+
+                                    @endforelse
+                                </ul>
                             </aside>
                         </aside>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end Event-->
+        </section><!-- end Event-->
     </div>
 @endsection
