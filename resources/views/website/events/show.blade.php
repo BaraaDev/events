@@ -6,7 +6,7 @@
         <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left custom-color c-white fill-white">
             <div class="container">
                 <div class="stunning-header-content">
-                    <h6 class="category-link c-yellow-light">{{$event->category->name ?? ''}}</h6>
+                    <h6 class="category-link c-black">{{$event->category->name ?? ''}}</h6>
                     <h4 class="stunning-header-title">{{$event->title}}</h4>
                     <div class="icon-text-item display-flex">
                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>

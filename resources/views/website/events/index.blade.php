@@ -26,7 +26,7 @@
                                 <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
                             </li>
                             <li class="breadcrumbs-item active">
-                                <span class="breadcrumbs-custom">Presentation of the Utouch app</span>
+                                <span class="breadcrumbs-custom">Customer's Reserved Events</span>
                                 <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
                             </li>
                         </ul>
@@ -50,7 +50,7 @@
                             <div class="curriculum-event c-primary" data-mh="curriculum">
                                 <div class="curriculum-event-thumb">
                                     <img src="{{$event->photo}}" alt="{{$event->title}}">
-                                    <div class="category-link c-yellow">{{$event->category->name ?? ''}}</div>
+                                    <div class="category-link c-black">{{$event->category->name ?? ''}}</div>
                                     <div class="curriculum-event-content">
                                         <div class="author-block inline-items">
                                             <div class="author-avatar">

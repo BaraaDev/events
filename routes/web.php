@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
 
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
@@ -83,18 +84,19 @@ Route::group([
         Route::post('/edit-myProfile', [ProfileController::class,'edit_my_Profile'])->name('edit-myProfile');
         //-------------------- end users route. --------------------//
 
-        //-------------------- Start setting route. --------------------//
+        //-------------------- start setting route. --------------------//
         Route::get('/setting', [SettingController::class,'setting'])->name('setting');
         Route::post('/setting-post', [SettingController::class,'update'])->name('setting.update');
-        //-------------------- End setting route. --------------------//
+        //-------------------- end setting route. --------------------//
     });
 });
 
+
+//-------------------- start customer event route. --------------------//
 Route::group(['prefix' => LaravelLocalization::setLocale(), 
 'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
     Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
 });
-
-Auth::routes();
+//-------------------- end customer event route. --------------------//
