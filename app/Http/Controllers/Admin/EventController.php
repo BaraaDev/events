@@ -109,4 +109,31 @@ class EventController extends Controller
         return redirect()->route('events.index')
             ->with(['delete' => __('admin/home.deleted_successfully')]);
     }
+
+    public function delete()
+    {
+        $events = Event::orderBy('created_at','asc')->onlyTrashed()->paginate(30);
+        return view('dashboard.events.delete',compact('events'));
+    }
+
+
+    public function restore($id)
+    {
+        $events = Event::withTrashed()->find($id);
+        $events->city()->restore();
+        $events->restore();
+        return redirect()->route('events.index')
+            ->with(['message' => __('admin/home.restored_successfully')]);
+    }
+
+
+    public function forceDelete($id)
+    {
+        $events = Event::withTrashed()->find($id);
+        $events->city()->forceDelete();
+        $events->forceDelete();
+        return redirect()->route('events.index')
+            ->with(['message' => __('admin/home.delete_forever_successfully')]);
+    }
+
 }

@@ -70,6 +70,9 @@ Route::group([
 
         //-------------------- start events route. --------------------//
         Route::resource('/events', EventController::class);
+        Route::get('/event/delete', [EventController::class, 'delete'])->name('events.delete');
+        Route::get('/event/restore/{id}/', [EventController::class, 'restore'])->name('events.restore');
+        Route::delete('/event/forceDelete/{id}/', [EventController::class, 'forceDelete'])->name('events.forceDelete');
         //-------------------- end events route. --------------------//
 
         //-------------------- start users route. --------------------//
@@ -87,7 +90,8 @@ Route::group([
     });
 });
 
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
+Route::group(['prefix' => LaravelLocalization::setLocale(), 
+'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
     Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');

@@ -9,10 +9,10 @@
             <div class="container">
                 <div class="stunning-header-content">
                     <div class="inline-items">
-                        <h4 class="stunning-header-title">Our Latest Events</h4>
+                        <h4 class="stunning-header-title">Our Events</h4>
 
                         <a href="15_pricing_tables.html" class="btn btn--green btn--with-shadow f-right">
-                            Get trial version
+                            Create New Event
                         </a>
                     </div>
                     <div class="breadcrumbs-wrap inline-items">
