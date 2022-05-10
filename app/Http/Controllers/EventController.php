@@ -9,7 +9,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::status('Available')->get();
+        $events = Event::status('Available')->paginate(1);
         return view('website.events.index',compact('events'));
     }
 
@@ -19,3 +19,4 @@ class EventController extends Controller
         return view('website.events.show',compact('event'));
     }
 }
+

@@ -8,7 +8,7 @@
 </head>
 
 
-<body class="crumina-grid"  @if(LaravelLocalization::getCurrentLocale() == 'ar') style="font-family: Almarai" @endif>
+<body class="crumina-grid">
 <!-- Header -->
 
 @include('layouts.website.partials.header')

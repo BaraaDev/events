@@ -80,6 +80,17 @@ return [
     'content_fr_required'             => 'Le champ du contenu français est obligatoire!',
     'content_fr_max'                  => 'La longueur du texte du champ du contenu français ne doit pas dépasser 500 caractères/caractères!',
     ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message description
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'description_ar_required'         => 'Le champ du la description arabe est obligatoire!',
+    'description_ar_max'              => 'La longueur du texte du champ du la description arabe ne doit pas dépasser 500 caractères/caractères!',
+
+    'description_en_required'         => 'Le champ du la description anglais est obligatoire!',
+    'description_en_max'              => 'La longueur du texte du champ du la description anglais ne doit pas dépasser 500 caractères/caractères!',
+
+    'description_fr_required'         => 'Le champ du la description français est obligatoire!',
+    'description_fr_max'              => 'La longueur du texte du champ du la description français ne doit pas dépasser 500 caractères/caractères!',
+    ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message title
     ///////////////////////////////////////////////////////////////////////////////////////
     'title_ar_required'               => 'Le champ du titre arabe est obligatoire!',

@@ -70,4 +70,5 @@ return [
     'enter_linkedin'                    => 'أدخل اسم مستخدم لينكيداين',
     'enter_location'                    => 'أدخل الموقع',
     'image'                             => 'صورة',
+    'description'                       => 'الوصف',
 ];

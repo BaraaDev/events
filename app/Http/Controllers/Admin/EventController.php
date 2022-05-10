@@ -29,6 +29,9 @@ class EventController extends Controller
         $events->setTranslation('title', 'en', $request->title_en)
             ->setTranslation('title', 'ar', $request->title_ar)
             ->setTranslation('title', 'fr', $request->title_fr)
+            ->setTranslation('description', 'en', $request->description_en)
+            ->setTranslation('description', 'ar', $request->description_ar)
+            ->setTranslation('description', 'fr', $request->description_fr)
             ->setTranslation('location', 'en', $request->location_en)
             ->setTranslation('location', 'ar', $request->location_ar)
             ->setTranslation('location', 'fr', $request->location_fr);
@@ -50,7 +53,7 @@ class EventController extends Controller
                 ->toMediaCollection('images');
         }
 
-        $events->tags()->sync($request->tag_id);
+        $events->tags()->sync($request->event_id);
 
         $events->save();
         return redirect()->route('events.index')
@@ -70,6 +73,9 @@ class EventController extends Controller
         $event->setTranslation('title', 'en', $request->title_en)
               ->setTranslation('title', 'ar', $request->title_ar)
               ->setTranslation('title', 'fr', $request->title_fr)
+              ->setTranslation('description', 'en', $request->description_en)
+              ->setTranslation('description', 'ar', $request->description_ar)
+              ->setTranslation('description', 'fr', $request->description_fr)
               ->setTranslation('location', 'en', $request->location_en)
               ->setTranslation('location', 'ar', $request->location_ar)
               ->setTranslation('location', 'fr', $request->location_fr);

@@ -14,7 +14,7 @@ class Event extends Model implements HasMedia
     use HasFactory, HasTranslations, SoftDeletes, InteractsWithMedia;
 
     protected $fillable = ['status'];
-    public $translatable = ['title','location'];
+    public $translatable = ['title','description','location'];
 
     public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -54,6 +54,11 @@ class Event extends Model implements HasMedia
     public function tags()
     {
         return $this->belongsToMany(Tag::class,'event_tag');
+    }
+
+    public function comments()
+    {
+        return $this->morphMany(Comment::class, 'commentable')->whereNull('parent_id');
     }
 
     public function getPhotoAttribute()

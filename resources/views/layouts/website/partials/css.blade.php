@@ -3,10 +3,9 @@
 <link rel="stylesheet" type="text/css" href="{{asset('website/css/widgets.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('website/css/plugins/ion.rangeSlider.css')}}">
 <!--External fonts-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Almarai&family=Harmattan&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap" rel="stylesheet">
 <!-- Styles for Plugins -->
 <link rel="stylesheet" type="text/css" href="{{asset('website/css/plugins/swiper.min.css')}}">
 <!--Styles for RTL-->
