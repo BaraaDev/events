@@ -1,8 +1,7 @@
 @extends('layouts.website.master')
 
 @section('content')
-    <div class="content-wrapper" >
-
+    <div class="content-wrapper">
         <!-- Start Header -->
         <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left stunning-header--content-inline stunning-bg-clouds">
             <div class="container">
@@ -10,7 +9,7 @@
                     <div class="inline-items">
                         <h4 class="stunning-header-title">{{__('website/event.our_latest_events')}}</h4>
 
-                        <a href="15_pricing_tables.html" class="btn btn--green btn--with-shadow f-right">
+                        <a href="javascript:void(0)" class="btn btn--green btn--with-shadow f-right">
                             {{__('website/event.add_event')}}
                         </a>
                     </div>
@@ -28,8 +27,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- end Header -->
+        </div><!-- end Header -->
 
         <!-- Start Events -->
         <section class="medium-padding100">
@@ -70,9 +68,7 @@
                             </div>
                         @endforelse
                     </div>
-
                     {!! $events->links('pagination::simple-default') !!}
-
                 </div>
             </div>
         </section><!-- end Events -->

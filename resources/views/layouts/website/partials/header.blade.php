@@ -12,7 +12,7 @@
 
     <div class="container">
 
-        <a href="#" id="top-bar-js" class="top-bar-link">
+        <a href="javascript:void(0)" id="top-bar-js" class="top-bar-link">
             <svg class="utouch-icon utouch-icon-arrow-top">
                 <use xlink:href="#utouch-icon-arrow-top"></use>
             </svg>
@@ -20,8 +20,8 @@
         <div class="header-content-wrapper">
 
             <div class="site-logo">
-                <a href="index.html" class="full-block"></a>
-                <img src="{{asset('website/img/logo.png')}}" alt="Utouch">
+                <a href="{{route('home')}}" class="full-block"></a>
+                <img src="{{asset('website/img/logo.png')}}" alt="touch">
                 <div class="logo-text">
                     <div class="logo-title">{{$setting->title ?? ''}}</div>
                     <div class="logo-sub-title">{{$setting->content ?? ''}}</div>
@@ -44,97 +44,17 @@
                 </a>
 
                 <ul class="primary-menu-menu">
-                    <li class="menu-item-has-children">
-                        <a href="{{route('home')}}">{{__('website/home.home')}}</a>
-                    </li>
-
-                    <li class="">
-                        <a href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
-                    </li>
-
-                    <li class="">
-                        <a href="#">Company</a>
+                    <li class="menu-item-has-children"><a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
+                    <li><a href="{{route('allEvents')}}">{{__('website/home.events')}}</a></li>
+                    <li>
+                        <a href="javascript:void(0)">Categories</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="02_company.html">
-                                    About Us
-                                </a>
-                            </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">
-                                    Services
-                                </a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="08_events.html">Events</a>
-                                    </li>
-                                    <li>
-                                        <a href="05_case_details_ver_01.html">Case Details V1</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="06_case_details_ver_02.html">Case Details V2</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="07_case_details_ver_03.html">Case Details V3</a>
-                                    </li>
-                                    <li>
-                                        <a href="11_events_details_lesson.html">Events Lesson</a>
-                                    </li>
-                                    <li>
-                                        <a href="12_events_details_presentation.html">Events Presentation</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="13_events_details_training.html">Events Training</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="14_events_details_webinar.html">Events Webinar</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="03_products.html">
-                                    Products
-                                </a>
-                            </li>
-                            <li>
-                                <a href="09_events_details_conference_workshops.html">
-                                    Conference
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="10_events_details_course.html">
-                                    Course
-                                </a>
-                            </li>
-                            <li>
-                                <a href="04_works.html">
-                                    Cases
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="32_testimonials.html">
-                                    Testimonials
-                                </a>
-                            </li>
+                            <li><a href="javascript:void(0)">About Us</a></li>
                         </ul>
                     </li>
+                    <li><a href="javascript:void(0)">About Us</a></li>
 
-
-                    <li class="">
-                        <a href="15_pricing_tables.html">Pricing</a>
-                    </li>
-                    <li class="">
-                        <a href="16_news.html">News</a>
-                    </li>
-
-                    <li class="">
-                        <a href="18_contacts.html">Contact</a>
-                    </li>
+                    <li><a href="javascript:void(0)">Contact Us</a></li>
                 </ul>
                 <ul class="nav-add">
                     <li class="search search_main">
