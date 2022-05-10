@@ -94,7 +94,7 @@ Route::group([
 
 
 //-------------------- start customer event route. --------------------//
-Route::group(['prefix' => LaravelLocalization::setLocale(), 
+Route::group(['prefix' => LaravelLocalization::setLocale(),
 'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
@@ -102,9 +102,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
 
 });
-<<<<<<< HEAD
 
 Auth::routes();
-=======
+
 //-------------------- end customer event route. --------------------//
->>>>>>> ccdffe09f34adda4a8af7c87046d2be2860df662

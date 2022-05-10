@@ -6,16 +6,8 @@
         <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left stunning-header--content-inline stunning-bg-clouds">
             <div class="container">
                 <div class="stunning-header-content">
-
                     <div class="inline-items">
                         <h4 class="stunning-header-title">{{$event->title}}</h4>
-
-                    <h6 class="category-link c-black">{{$event->category->name ?? ''}}</h6>
-                    <h4 class="stunning-header-title">{{$event->title}}</h4>
-                    <div class="icon-text-item display-flex">
-                        <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
-                        <div class="text">June 25-27, {{$event->country->name ?? ''}} {{$event->governorate->name ?? ''}} {{$event->city->name ?? ''}}</div>
-
                     </div>
                     <div class="breadcrumbs-wrap inline-items">
                     @component('components.breadcrumbs-wrap')
