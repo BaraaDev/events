@@ -8,14 +8,22 @@
             <div class="container">
                 <div class="stunning-header-content">
                     <div class="inline-items">
+<<<<<<< HEAD
                         <h4 class="stunning-header-title">{{__('website/event.our_latest_events')}}</h4>
 
                         <a href="15_pricing_tables.html" class="btn btn--green btn--with-shadow f-right">
                             {{__('website/event.add_event')}}
+=======
+                        <h4 class="stunning-header-title">Our Events</h4>
+
+                        <a href="15_pricing_tables.html" class="btn btn--green btn--with-shadow f-right">
+                            Create New Event
+>>>>>>> ccdffe09f34adda4a8af7c87046d2be2860df662
                         </a>
                     </div>
                     <div class="breadcrumbs-wrap inline-items">
 
+<<<<<<< HEAD
                         @component('components.breadcrumbs-wrap')
 
                             @slot('breadcrumbs_item_active')
@@ -25,6 +33,18 @@
                                 </li>
                             @endslot
                         @endcomponent
+=======
+                        <ul class="breadcrumbs breadcrumbs--rounded">
+                            <li class="breadcrumbs-item">
+                                <a href="08_events.html" class="breadcrumbs-custom">Events</a>
+                                <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
+                            </li>
+                            <li class="breadcrumbs-item active">
+                                <span class="breadcrumbs-custom">Customer's Reserved Events</span>
+                                <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
+                            </li>
+                        </ul>
+>>>>>>> ccdffe09f34adda4a8af7c87046d2be2860df662
                     </div>
                 </div>
             </div>
@@ -41,7 +61,7 @@
                             <div class="curriculum-event c-primary" data-mh="curriculum">
                                 <div class="curriculum-event-thumb">
                                     <img src="{{$event->photo}}" alt="{{$event->title}}">
-                                    <div class="category-link c-yellow">{{$event->category->name ?? ''}}</div>
+                                    <div class="category-link c-black">{{$event->category->name ?? ''}}</div>
                                     <div class="curriculum-event-content">
                                         <div class="author-block inline-items">
                                             <div class="author-avatar">

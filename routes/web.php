@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
 
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
@@ -71,6 +72,9 @@ Route::group([
 
         //-------------------- start events route. --------------------//
         Route::resource('/events', EventController::class);
+        Route::get('/event/delete', [EventController::class, 'delete'])->name('events.delete');
+        Route::get('/event/restore/{id}/', [EventController::class, 'restore'])->name('events.restore');
+        Route::delete('/event/forceDelete/{id}/', [EventController::class, 'forceDelete'])->name('events.forceDelete');
         //-------------------- end events route. --------------------//
 
         //-------------------- start users route. --------------------//
@@ -81,19 +85,26 @@ Route::group([
         Route::post('/edit-myProfile', [ProfileController::class,'edit_my_Profile'])->name('edit-myProfile');
         //-------------------- end users route. --------------------//
 
-        //-------------------- Start setting route. --------------------//
+        //-------------------- start setting route. --------------------//
         Route::get('/setting', [SettingController::class,'setting'])->name('setting');
         Route::post('/setting-post', [SettingController::class,'update'])->name('setting.update');
-        //-------------------- End setting route. --------------------//
+        //-------------------- end setting route. --------------------//
     });
 });
 
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
+
+//-------------------- start customer event route. --------------------//
+Route::group(['prefix' => LaravelLocalization::setLocale(), 
+'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
     Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
     Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
 
 });
+<<<<<<< HEAD
 
 Auth::routes();
+=======
+//-------------------- end customer event route. --------------------//
+>>>>>>> ccdffe09f34adda4a8af7c87046d2be2860df662
