@@ -56,7 +56,7 @@
                                 <div class="curriculum-event-content">
                                     <div class="icon-text-item display-flex">
                                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
-                                        <div class="text">{{$event->created_at->format('D d-Y')}} , {{$event->country->name ?? ''}} , {{$event->governorate->name ?? ''}} , {{$event->city->name ?? ''}}</div>
+                                        <div class="text">{{$event->created_at->format('D d-Y')}} – {{$event->country->name ?? ''}} , {{$event->governorate->name ?? ''}} , {{$event->city->name ?? ''}}</div>
                                     </div>
                                     <a href="{{route('event.show',$event->id)}}" class="h5 title">{{$event->title}}</a>
                                 </div>
