@@ -46,8 +46,8 @@
                                                 <img src="{{$event->user->photo}}" alt="{{$event->user->name ?? ''}}">
                                             </div>
                                             <div class="author-info">
-                                                <div class="author-prof">Speaker</div>
                                                 <a href="#" class="h6 author-name">{{$event->user->name ?? ''}}</a>
+                                                <div class="author-prof">xyz</div>
                                             </div>
                                         </div>
                                     </div>
