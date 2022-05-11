@@ -14,5 +14,5 @@ return [
     'add_offer'                => 'تقديم العرض',
     'add_event'                => 'أضف حدث',
     'your_latest_events'       => 'أحدث الأحداث الخاصة بك',
-    'no_events'                => 'لا توجد أحداث',
+    'no_events'                => '.لا توجد أحداث',
 ];

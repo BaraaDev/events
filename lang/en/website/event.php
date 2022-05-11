@@ -14,5 +14,5 @@ return [
     'add_offer'                => 'Add your offer',
     'add_event'                => 'Add Event',
     'your_latest_events'       => 'Your Latest Events',
-    'no_events'                => 'No events yet',
+    'no_events'                => 'No events yet.',
 ];

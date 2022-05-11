@@ -14,5 +14,5 @@ return [
     'add_offer'                => 'Ajoutez votre offre',
     'add_event'                => 'Ajouter un évènement',
     'your_latest_events'       => 'Vos derniers événements',
-    'no_events'                => 'Aucun événement pour le moment',
+    'no_events'                => 'Aucun événement pour le moment.',
 ];
