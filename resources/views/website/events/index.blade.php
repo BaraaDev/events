@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="stunning-header-content">
                     <div class="inline-items">
-                        <h4 class="stunning-header-title">{{__('website/event.our_latest_events')}}</h4>
+                        <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
 
                         <a href="javascript:void(0)" class="btn btn--green btn--with-shadow f-right">
                             {{__('website/event.add_event')}}

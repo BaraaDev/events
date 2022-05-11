@@ -124,9 +124,9 @@
                                 <h5 class="widget-title">{{__('website/event.event_card')}}</h5>
                                 <ul class="category-list">
                                     <li><a>{{__('website/home.status')}}<span class="cat-count c-yellow">{{$event->status}}</span></a></li>
-                                    <li><a>{{__('website/home.date_publication')}}<span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span></a></li>
+                                    <li><a>{{__('website/home.publication_date')}}<span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span></a></li>
                                     <li><a>{{__('website/home.budget')}}<span class="cat-count">{{$event->budget}}</span></a></li>
-                                    <li><a>{{__('website/home.number_applicants')}}<span class="cat-count">24</span></a></li>
+                                    <li><a>{{__('website/home.applicants_numbers')}}<span class="cat-count">24</span></a></li>
                                 </ul>
                             </aside>
 

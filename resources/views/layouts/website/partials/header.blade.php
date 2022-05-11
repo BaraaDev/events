@@ -47,14 +47,14 @@
                     <li class="menu-item-has-children"><a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
                     <li><a href="{{route('allEvents')}}">{{__('website/home.events')}}</a></li>
                     <li>
-                        <a href="javascript:void(0)">Categories</a>
+                        <a href="javascript:void(0)">{{__('website/home.categories')}}</a>
                         <ul class="sub-menu">
-                            <li><a href="javascript:void(0)">About Us</a></li>
+                            <li><a href="javascript:void(0)">{{__('website/home.events')}}</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0)">About Us</a></li>
+                    <li><a href="javascript:void(0)">{{__('website/home.about_us')}}</a></li>
 
-                    <li><a href="javascript:void(0)">Contact Us</a></li>
+                    <li><a href="javascript:void(0)">{{__('website/home.contact_us')}}</a></li>
                 </ul>
                 <ul class="nav-add">
                     <li class="search search_main">
