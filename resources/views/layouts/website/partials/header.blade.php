@@ -49,7 +49,7 @@
                     <li>
                         <a href="javascript:void(0)">{{__('website/home.categories')}}</a>
                         <ul class="sub-menu">
-                            <li><a href="javascript:void(0)">{{__('website/home.events')}}</a></li>
+                            <li><a href="javascript:void(0)">{{__('website/home.services')}}</a></li>
                         </ul>
                     </li>
                     <li><a href="javascript:void(0)">{{__('website/home.about_us')}}</a></li>

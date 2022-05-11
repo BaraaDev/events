@@ -6,6 +6,7 @@ return [
     'added_successfully'           => 'Your offer has been successfully added!',
     'events'                       => 'Events',
     'event'                        => 'Event',
+    'services'                     => 'Services',
     'categories'                   => 'Categories',
     'about_us'                     => 'About Us',
     'contact_us'                   => 'Contact Us',

@@ -6,6 +6,7 @@ return [
     'added_successfully'           => 'Votre offre a été ajoutée avec succès!',
     'events'                       => 'Événements',
     'event'                        => 'Événement',
+    'services'                     => 'Les services',
     'categories'                   => 'Catégories',
     'about_us'                     => 'À propos de nous',
     'contact_us'                   => 'Nous contacter',

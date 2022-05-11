@@ -6,6 +6,7 @@ return [
     'added_successfully'           => '!تمت إضافة عرضك بنجاح',
     'events'                       => 'الأحداث',
     'event'                        => 'أحداث',
+    'services'                     => 'الخدمات',
     'categories'                   => 'التصنيفات',
     'about_us'                     => 'من نحن',
     'contact_us'                   => 'اتصل بنا',
