@@ -71,4 +71,7 @@ return [
     'enter_location'                    => 'أدخل الموقع',
     'image'                             => 'صورة',
     'description'                       => 'الوصف',
+    'title'                             => ' عنوان',
+    'content'                           => 'المحتوي',
+    'add_new'                           => 'اضافه جديده'
 ];

@@ -19,7 +19,7 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <h5>{{__('admin/slider.showSlider')}} - <span class="b-b-success">{{App\Models\Slider::count()}}</span></h5>
+                    <h5>{{__('admin/slider.ShowSlider')}} - <span class="b-b-success">{{App\Models\Slider::count()}}</span></h5>
                     <span>{{__('admin/slider.DescriptionSlider')}}</span>
                 </div>
                 <div class="card-block row">
@@ -33,6 +33,7 @@
                                         <th scope="col" class="text-center">{{__('admin/slider.content_sliders')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/slider.name_button_sliders')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/slider.link_button_sliders')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/slider.color')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
@@ -47,7 +48,8 @@
                                         <td class="text-center">{{$slider->title}}</td>
                                         <td class="text-center">{{Str::limit($slider->content,'75','......')}}</td>
                                         <td class="text-center">{{$slider->name_button}}</td>
-                                        <td class="text-center">{{$slider->link_button}}</td>
+                                        <td class="text-center">{{$slider->link_button}}</td> 
+                                        <td class="text-center">{{$slider->color}}</td>
                                         <td class="text-center">{{$slider->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$slider->update_user->name ?? ''}}</td>
                                         <td class="text-center">{{$slider->created_at->format('Y-D-M')}}</td>

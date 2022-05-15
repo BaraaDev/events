@@ -11,5 +11,17 @@ class Slider extends Model
 {
     use HasFactory, HasTranslations, SoftDeletes;
 
-    public $translatable = ['title', 'content', 'name_button', 'link_button'];
+    protected $table = 'sliders';
+    public $translatable = ['title', 'content', 'name_button'];
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class);
+        
+    }
 }

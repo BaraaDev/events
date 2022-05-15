@@ -13,13 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('slider', function (Blueprint $table) {
+        Schema::create('sliders', function (Blueprint $table) {
             $table->id();
-            $table->string('title','500');
+            $table->string('title', '500');
             $table->text('content');
-            $table->string('name_button','500');
+            $table->string('name_button', '500');
             $table->string('link_button');
+            $table->integer('create_user_id');
+            $table->integer('update_user_id')->nullable();
+            $table->string('color')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -30,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('slider');
+        Schema::dropIfExists('sliders');
     }
 };

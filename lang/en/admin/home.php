@@ -76,4 +76,8 @@ return [
     'enter_location'                     => 'Enter the Location',
     'image'                              => 'Image',
     'description'                        => 'Description',
+    'title'                              => 'Title',
+    'content'                            => 'Content',
+    'add_new'                            => 'create',
+
 ];

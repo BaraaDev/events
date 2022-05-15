@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
 use App\Http\Controllers\Admin\HomeController;
@@ -85,7 +86,6 @@ Route::group([
         Route::post('/edit-myProfile', [ProfileController::class, 'edit_my_Profile'])->name('edit-myProfile');
         //-------------------- end users route. --------------------//
 
-<<<<<<< HEAD
         //-------------------- Start setting route. --------------------//
         Route::get('/setting', [SettingController::class, 'setting'])->name('setting');
         Route::post('/setting-post', [SettingController::class, 'update'])->name('setting.update');
@@ -99,12 +99,10 @@ Route::group([
         //---------------------end Slider route. -------------------//
 
 
-=======
         //-------------------- start setting route. --------------------//
         Route::get('/setting', [SettingController::class,'setting'])->name('setting');
         Route::post('/setting-post', [SettingController::class,'update'])->name('setting.update');
         //-------------------- end setting route. --------------------//
->>>>>>> 90ae75afbfe3c05ab1ea77f58d7e98a8adfa5687
     });
 });
 

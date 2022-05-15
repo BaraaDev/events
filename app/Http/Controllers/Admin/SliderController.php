@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SliderRequest;
@@ -27,6 +27,7 @@ class SliderController extends Controller
     public function store(SliderRequest $request)
     {
         $sliders = new Slider();
+
         $sliders->setTranslation('title', 'en', $request->title_en)
             ->setTranslation('title', 'ar', $request->title_ar)
             ->setTranslation('title', 'fr', $request->title_fr)
@@ -41,6 +42,7 @@ class SliderController extends Controller
 
         $sliders->create_user_id = auth()->user()->id;
         $sliders->link_button = $request->link_button;
+        $sliders->color = $request->color;
         $sliders->save();
 
         return redirect()->route('sliders.index')
@@ -72,6 +74,7 @@ class SliderController extends Controller
 
         $sliders->update_user_id = auth()->user()->id;
         $sliders->link_button = $request->link_button;
+        $sliders->color = $request->color;
         $sliders->save();
 
         return redirect()->route('sliders.index')
