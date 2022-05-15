@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
 use App\Http\Controllers\Admin\HomeController;
@@ -78,12 +79,25 @@ Route::group([
         //-------------------- end events route. --------------------//
 
         //-------------------- start users route. --------------------//
-        Route::resource('users',UserController::class);
-        Route::get('/profile', [ProfileController::class,'profile'])->name('profile');
-        Route::get('/edit-profile', [ProfileController::class,'edit'])->name('edit-profile');
-        Route::post('/edit-profile-post', [ProfileController::class,'profileUpdatePassword'])->name('edit-profile-post');
-        Route::post('/edit-myProfile', [ProfileController::class,'edit_my_Profile'])->name('edit-myProfile');
+        Route::resource('users', UserController::class);
+        Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
+        Route::get('/edit-profile', [ProfileController::class, 'edit'])->name('edit-profile');
+        Route::post('/edit-profile-post', [ProfileController::class, 'profileUpdatePassword'])->name('edit-profile-post');
+        Route::post('/edit-myProfile', [ProfileController::class, 'edit_my_Profile'])->name('edit-myProfile');
         //-------------------- end users route. --------------------//
+
+        //-------------------- Start setting route. --------------------//
+        Route::get('/setting', [SettingController::class, 'setting'])->name('setting');
+        Route::post('/setting-post', [SettingController::class, 'update'])->name('setting.update');
+        //-------------------- End setting route. --------------------//
+
+        //---------------------Start Slider route. -------------------//
+        Route::resource('/sliders', SliderController::class);
+        Route::get('/slider/delete', [sliderController::class, 'delete'])->name('sliders.delete');
+        Route::get('/slider/restore/{id}/', [sliderController::class, 'restore'])->name('sliders.restore');
+        Route::delete('/slider/forceDelete/{id}/', [sliderController::class, 'forceDelete'])->name('sliders.forceDelete');
+        //---------------------end Slider route. -------------------//
+
 
         //-------------------- start setting route. --------------------//
         Route::get('/setting', [SettingController::class,'setting'])->name('setting');

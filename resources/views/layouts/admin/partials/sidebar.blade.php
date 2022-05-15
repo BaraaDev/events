@@ -2,15 +2,14 @@
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="{{ route('setting') }}"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="{{auth()->user()->photo ?? ''}}" alt="avatar {{auth()->user()->name ?? ''}}" />
         @php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); @endphp
-        @if($data <= 7)
-            <div class="badge-bottom">
-                <span class="badge badge-primary">New </span>
-            </div>
-        @endif
-        <a href="{{route('profile')}}">
-            <h6 class="mt-3 f-14 f-w-600 name">{{auth()->user()->name ?? ''}}</h6>
-        </a>
-        <p class="mb-0 font-roboto">{{auth()->user()->email ?? ''}}</p>
+        @if($data <= 7) <div class="badge-bottom">
+            <span class="badge badge-primary">New </span>
+    </div>
+    @endif
+    <a href="{{route('profile')}}">
+        <h6 class="mt-3 f-14 f-w-600 name">{{auth()->user()->name ?? ''}}</h6>
+    </a>
+    <p class="mb-0 font-roboto">{{auth()->user()->email ?? ''}}</p>
     </div>
     <nav>
         <div class="main-navbar">
