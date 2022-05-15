@@ -18,4 +18,5 @@ return [
     'DescriptionSlider'             => 'شرح',
     'Edit'                          => 'تعديل',
     'update'                        => 'تحديث',
+    'color'                         => 'لون الزر',
 ];

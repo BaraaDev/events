@@ -18,4 +18,5 @@ return [
     'DescriptionSlider'             => 'Slider Description',
     'Edit'                          => 'Edit',
     'update'                        => 'update',
+    'color'                         => 'color',
 ];
