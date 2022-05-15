@@ -19,4 +19,10 @@ return [
     'Edit'                          => 'Edit',
     'update'                        => 'update',
     'color'                         => 'color',
+    'yellow'                        => 'yellow',
+    'green'                         => 'green',
+    'black'                         => 'black',
+    'blue'                          => 'blue',
+    'red'                           => 'red',
+    'grey'                          => 'grey',
 ];

@@ -125,9 +125,17 @@
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/slider.color')}} <span class="text-danger">*</span> </label>
+    <label class="form-label col-lg-3">{{__('admin/slider.color')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
-        <input class="form-control @error('color') is-invalid @enderror" value="{{Request::old('color') ? Request::old('color') : $model->color}}" type="text" name="color" placeholder="{{__('admin/slider.enter_color')}}" autocomplete="off">
+        <select name="color" class="form-control select @error('color') is-invalid @enderror">
+            <option>{{__('admin/slider.select')}}</option>
+            <option value="btn--yellow" {{ isset($model) && $model->color == 'btn--yellow' ? 'selected'  : '' }}>{{__('admin/slider.yellow')}}</option>
+            <option value="btn--black" {{ isset($model) && $model->color == 'btn--black' ? 'selected'  : '' }}>{{__('admin/slider.black')}}</option>
+            <option value="btn--blue" {{ isset($model) && $model->color == 'btn--blue' ? 'selected'  : '' }}>{{__('admin/slider.blue')}}</option>
+            <option value="btn--red" {{ isset($model) && $model->color == 'btn--red' ? 'selected'  : '' }}>{{__('admin/slider.red')}}</option>
+            <option value="btn--green" {{ isset($model) && $model->color == 'btn--green' ? 'selected'  : '' }}>{{__('admin/slider.green')}}</option>
+            <option value="btn--grey" {{ isset($model) && $model->color == 'btn--grey' ? 'selected'  : '' }}>{{__('admin/slider.grey')}}</option>
+        </select>
         @error('color')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
