@@ -3,15 +3,17 @@
 
 return [
     'home'                         => 'Home',
-    'added_successfully'           => 'Your offer has been successfully added',
+    'added_successfully'           => 'Your offer has been successfully added!',
     'events'                       => 'Events',
     'event'                        => 'Event',
-    'about'                        => 'About US',
-    'contact'                      => 'Contact',
+    'services'                     => 'Services',
+    'categories'                   => 'Categories',
+    'about_us'                     => 'About Us',
+    'contact_us'                   => 'Contact Us',
     'status'                       => 'Status',
-    'date_publication'             => 'Date Publication',
+    'publication_date'             => 'Publication Date',
     'budget'                       => 'Budget',
-    'number_applicants'            => 'Number Applicants',
+    'applicants_numbers'           => 'Applicants Numbers',
     'Prev_Page'                    => 'Prev Page',
     'Next_Page'                    => 'Next Page',
 ];

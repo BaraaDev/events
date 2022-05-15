@@ -3,15 +3,16 @@
 
 return [
     'home'                         => 'الرئيسية',
-    'added_successfully'           => 'تمت إضافة عرضك بنجاح',
+    'added_successfully'           => '!تمت إضافة عرضك بنجاح',
     'events'                       => 'الأحداث',
     'event'                        => 'أحداث',
-    'about'                        => 'حول الموقع',
-    'contact'                      => 'اتصل بنا',
+    'services'                     => 'الخدمات',
+    'categories'                   => 'التصنيفات',
+    'about_us'                     => 'من نحن',
+    'contact_us'                   => 'اتصل بنا',
     'status'                       => 'الحالة',
-    'date_publication'             => 'تاريخ النشر',
-    'budget'                       => 'الميزانية',
-    'number_applicants'            => 'عدد المتقدمون',
+    'publication_date'             => 'تاريخ النشر',
+    'applicants_numbers'           => 'عدد المتقدمون',
     'Prev_Page'                    => 'الصفحة السابقة',
     'Next_Page'                    => 'الصفحة التالية',
 ];

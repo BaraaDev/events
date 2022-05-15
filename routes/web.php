@@ -118,7 +118,4 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
 
 });
-
-Auth::routes();
-
 //-------------------- end customer event route. --------------------//

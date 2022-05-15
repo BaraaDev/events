@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="stunning-header-content">
                     <div class="inline-items">
-                        <h4 class="stunning-header-title">{{__('website/event.our_latest_events')}}</h4>
+                        <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
 
                         <a href="javascript:void(0)" class="btn btn--green btn--with-shadow f-right">
                             {{__('website/event.add_event')}}
@@ -46,8 +46,8 @@
                                                 <img src="{{$event->user->photo}}" alt="{{$event->user->name ?? ''}}">
                                             </div>
                                             <div class="author-info">
-                                                <div class="author-prof">Speaker</div>
                                                 <a href="#" class="h6 author-name">{{$event->user->name ?? ''}}</a>
+                                                <div class="author-prof">({{$event->user->user_type ?? ''}})</div>
                                             </div>
                                         </div>
                                     </div>
@@ -56,7 +56,7 @@
                                 <div class="curriculum-event-content">
                                     <div class="icon-text-item display-flex">
                                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
-                                        <div class="text">{{$event->created_at->format('D d-Y')}} ، {{$event->country->name ?? ''}}</div>
+                                        <div class="text">{{$event->created_at->format('D d-Y')}} – {{$event->country->name ?? ''}} , {{$event->governorate->name ?? ''}} , {{$event->city->name ?? ''}}</div>
                                     </div>
                                     <a href="{{route('event.show',$event->id)}}" class="h5 title">{{$event->title}}</a>
                                 </div>
