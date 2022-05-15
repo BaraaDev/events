@@ -45,8 +45,8 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$slider->title}}</td>
                                         <td class="text-center">{{Str::limit($slider->content,'75','......')}}</td>
-                                        <td class="text-center">{{Str::limit($slider->name_button)}}</td>
-                                        <td class="text-center">{{Str::limit($slider->link_button)}}</td>
+                                        <td class="text-center">{{$slider->name_button}}</td>
+                                        <td class="text-center">{{$slider->link_button}}</td>
                                         <td class="text-center">{{$slider->create_user->name ?? ''}}</td>
                                         <td class="text-center" title="{{$slider->created_at->format('Y-D-M h:m')}}">{{$slider->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center" title="{{$slider->deleted_at->format('Y-D-M h:m')}}">{{$slider->deleted_at->format('Y-D-M')}}</td>

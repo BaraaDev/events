@@ -109,14 +109,14 @@
 
                     <!------------- Start route events ------------->
                     <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('events.index') || routeActive('events.create')) active @endif" href="javascript:void(0)">
+                        <a class="nav-link menu-title @if(routeActive('events.index') || routeActive('events.create') || routeActive('categories.delete')) active @endif" href="javascript:void(0)">
                             <i data-feather="calendar"></i>
                             <span>{{__('admin/event.events')}}</span>
                         </a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('events.index') || routeActive('events.create')) block @else none @endif ;">
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('events.index') || routeActive('events.create') || routeActive('categories.delete')) block @else none @endif ;">
                             <li><a href="{{ route('events.create') }}" class="{{routeActive('events.create')}}">{{__('admin/event.create')}}</a></li>
                             <li><a href="{{ route('events.index') }}" class="{{routeActive('events.index')}}">{{__('admin/event.all_events')}}</a></li>
-                            <li><a href="#" class="#">{{__('admin/event.deleted_events')}}</a></li>
+                            <li><a href="{{ route('events.delete') }}" class="{{routeActive('events.delete')}}">{{__('admin/event.deleted_events')}}</a></li>
                         </ul>
                     </li>
                     <!------------- End route events ------------->

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>GPA - HomePage</title>
+    <title>Customer - Events</title>
     @include('layouts.website.partials.css')
 </head>
 
 
-<body class="crumina-grid"  @if(LaravelLocalization::getCurrentLocale() == 'ar') style="font-family: Almarai" @endif>
+<body class="crumina-grid">
 <!-- Header -->
 
 @include('layouts.website.partials.header')

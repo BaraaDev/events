@@ -50,8 +50,8 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/slider.link_button')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <textarea class="form-control @error('link_button_ar') is-invalid @enderror" type="text" name="link_button_ar">{{Request::old('link_button_ar') ? Request::old('link_button_ar') : $model->getTranslation('link_button','ar')}}</textarea>
-            @error('link_button_ar')
+            <textarea class="form-control @error('link_button_ar') is-invalid @enderror" type="text" name="link_button_ar">{{Request::old('link_button') ? Request::old('link_button') : $model->getTranslation('link_button')}}</textarea>
+            @error('link_button')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
@@ -59,6 +59,7 @@
         </div>
     </div>
 </div>
+
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'en') show active @endif" id="en" role="tabpanel" aria-labelledby="en-tab">
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/slider.slider')}} <span class="text-danger">*</span></label>
@@ -112,15 +113,16 @@
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/slider.content')}} <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">{{__('admin/slider.link_button')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
-        <textarea class="form-control @error('content_en') is-invalid @enderror" type="text" name="content_en">{{Request::old('content_en') ? Request::old('content_en') : $model->getTranslation('content','en')}}</textarea>
-        @error('content_en')
+        <input class="form-control @error('link_button') is-invalid @enderror" type="text" name="link_button">{{Request::old('link_button') ? Request::old('link_button') : $model->getTranslation('link_button')}}</input>
+        @error('link_button')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
         </span>
         @enderror
     </div>
+</div>
 </div>
 </div>
 
@@ -136,31 +138,20 @@
             @enderror
         </div>
     </div>
+
+
     <div class="form-group row">
-        <label class="form-label col-lg-3">{{__('admin/slider.link_button')}} <span class="text-danger">*</span></label>
+        <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <textarea class="form-control @error('link_button_fr') is-invalid @enderror" type="text" name="link_button_fr">{{Request::old('link_button_fr') ? Request::old('link_button_fr') : $model->getTranslation('link_button','fr')}}</textarea>
-            @error('link_button_fr')
+            <select name="status" class="form-control select @error('status') is-invalid @enderror">
+                <option>{{__('admin/home.select')}}</option>
+                <option value="1" {{ isset($model) && $model->status == 1 ? 'selected'  : '' }}>{{__('admin/home.available')}}</option>
+                <option value="0" {{ isset($model) && $model->status == 0 ? 'selected'  : '' }}>{{__('admin/home.stopped')}}</option>
+            </select>
+            @error('status')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
         </div>
     </div>
-</div>
-
-<div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <select name="status" class="form-control select @error('status') is-invalid @enderror">
-            <option>{{__('admin/home.select')}}</option>
-            <option value="1" {{ isset($model) && $model->status == 1 ? 'selected'  : '' }}>{{__('admin/home.available')}}</option>
-            <option value="0" {{ isset($model) && $model->status == 0 ? 'selected'  : '' }}>{{__('admin/home.stopped')}}</option>
-        </select>
-        @error('status')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-        @enderror
-    </div>
-</div>

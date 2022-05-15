@@ -77,4 +77,5 @@ return [
     'enter_telegram'                         => "Entrez votre nom d'utilisateur Telegram",
     'enter_linkedin'                         => "Entrez votre nom d'utilisateur LinkedIn",
     'enter_location'                         => "Entrez l'emplacement",
+    'description'                        => 'Description',
 ];

@@ -2,44 +2,34 @@
 
 @section('content')
     <div class="content-wrapper">
-        <!-- Start Header -->
-        <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left custom-color c-white fill-white">
+        <!-- Stunning Header -->
+        <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left stunning-header--content-inline stunning-bg-clouds">
             <div class="container">
                 <div class="stunning-header-content">
-                    <h6 class="category-link c-yellow-light">{{$event->category->name ?? ''}}</h6>
-                    <h4 class="stunning-header-title">{{$event->title}}</h4>
-                    <div class="icon-text-item display-flex">
-                        <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
-                        <div class="text">June 25-27, {{$event->country->name ?? ''}} {{$event->governorate->name ?? ''}} {{$event->city->name ?? ''}}</div>
+                    <div class="inline-items">
+                        <h4 class="stunning-header-title">{{$event->title}}</h4>
                     </div>
-
                     <div class="breadcrumbs-wrap inline-items">
-                        <a href="{{route('home')}}" class="btn btn--black btn--round breadcrumbs-custom">
-                            <svg class="utouch-icon utouch-icon-home-icon-silhouette breadcrumbs-custom">
-                                <use xlink:href="#utouch-icon-home-icon-silhouette"></use>
-                            </svg>
-                        </a>
-
-                        <ul class="breadcrumbs breadcrumbs--rounded">
+                    @component('components.breadcrumbs-wrap')
+                        @slot('breadcrumbs_item')
                             <li class="breadcrumbs-item">
-                                <a href="{{route('allEvents')}}" class="breadcrumbs-custom">Events</a>
-                                <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom">
-                                    <use xlink:href="#utouch-icon-media-play-symbol"></use>
-                                </svg>
+                                <a href="{{route('allEvents')}}" class="breadcrumbs-custom">{{__('website/home.events')}}</a>
+                                <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
                             </li>
+                        @endslot
+
+                        @slot('breadcrumbs_item_active')
                             <li class="breadcrumbs-item active">
                                 <span class="breadcrumbs-custom">{{$event->title}}</span>
-                                <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom">
-                                    <use xlink:href="#utouch-icon-media-play-symbol"></use>
-                                </svg>
+                                <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
                             </li>
-                        </ul>
+                        @endslot
+                    @endcomponent
                     </div>
                 </div>
             </div>
-            <div class="overlay-standard overlay--yellow"></div>
         </div>
-        <!-- end Header -->
+        <!--end Header -->
 
 
         <!-- Start Event-->
@@ -49,84 +39,80 @@
                     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                         <div class="block-rounded-shadow">
                             <h3>{{$event->title}}</h3>
-                            <p>
-                                Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
-                                humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
-                                parum clari, fiant sollemnes in futurum. Claritas est etiam processus dynamicus, qui sequitur mutationem
-                                consuetudium.
-                            </p>
-
+                            <img src="{{$event->photo}}" alt="{{$event->title}}">
+                            <p>{!! $event->description !!}</p>
                         </div>
+
                         <div class="comments">
-
-                            <form class="form-validate contact-form leave-reply" method="post">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <h3>Add your offer now</h3>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <input name="name" placeholder="Your Name" type="text">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <input name="email" placeholder="Email Adress" type="text">
-
-                                    </div>
-
+{{--                            @if(!$event->comments->where('user_id',auth()->user()->id)->where('commentable_id',$event->id) != true)--}}
+                                <form class="contact-form" action="{{route('comment.add')}}" method="post">
+                                    @csrf
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="with-icon">
-                                            <textarea name="message" class="" required="" placeholder="Offer details" style="min-height: 160px;"></textarea>
-                                            <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-                                        </div>
+                                        <h3>{{__('website/event.add_offer_now')}}</h3>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <input name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <input disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
+                                        </div>
 
-                                    <div class="submit-block">
-                                        <div class="col-lg-12">
-                                            <button class="btn btn--large btn--green btn--with-shadow full-width">
-                                                <span class="text">Submit</span>
-                                            </button>
+                                        <input name="event_id" value="{{ $event->id }}" type="hidden" autocomplete="off">
+
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="with-icon">
+                                                <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
+                                                <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="submit-block">
+                                            <div class="col-lg-12">
+                                                <button type="submit" class="btn btn--large btn--green btn--with-shadow full-width">
+                                                    <span class="text">{{__('website/event.add_offer')}}</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+
 
                             <div class="d-flex--content-inline">
-                                <h3>Provided Offers</h3>
-
-
+                                <h3>{{__('website/event.provided_offers')}}</h3>
                             </div>
 
-                            <ol class="comments__list">
+                            @forelse($event->comments as $comment)
+                            <ol class="comments__list" id="comments{{$comment->id}}">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
                                         <div class="comments__avatar">
-                                            <img src="{{asset('admin/images/dashboard/1.png')}}" alt="avatar">
+                                            <img src="{{$comment->user->photo ?? ''}}" alt="{{$comment->user->name ?? ''}}">
                                         </div>
-
-
                                         <div class="comments__body">
                                             <div class="d-flex--content-inline">
                                                 <header class="comment-meta comments__header">
                                                     <cite class="fn url comments__author">
-                                                        <a href="#" rel="external" class="h6">Susan Simpson</a>
+                                                        <a href="javascript:void(0)" rel="external" class="h6">{{$comment->user->name ?? ''}}</a>
                                                     </cite>
                                                     <div class="comments__time">
-                                                        <time class="published" datetime="2017-03-19 10:07:00">19th March 2017, 10:07 am</time>
+                                                        <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('dD M Y, H:m a')}}</time>
                                                     </div>
                                                 </header>
                                             </div>
 
                                             <div class="comment-content comment">
-                                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-                                                    lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                                    anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
-                                                </p>
+                                                <p>{{$comment->body ?? ''}}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                             </ol>
+                            @empty
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>{{__('website/event.Oh_snap')}} </strong>{{__('website/event.no_offers')}}
+                                </div>
+                            @endforelse
                         </div>
                     </div>
 
@@ -135,29 +121,12 @@
                         <aside aria-label="sidebar" class="sidebar sidebar-right">
 
                             <aside class="widget w-category">
-                                <h5 class="widget-title">Event Card</h5>
+                                <h5 class="widget-title">{{__('website/event.event_card')}}</h5>
                                 <ul class="category-list">
-                                    <li>
-                                        <a href="#">Status
-                                            <span class="cat-count c-yellow">{{$event->status}}</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>Date Publication
-                                            <span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>Budget
-                                            <span class="cat-count">{{$event->budget}}</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Number Of Applicants
-                                            <span class="cat-count">24</span>
-                                        </a>
-                                    </li>
-
+                                    <li><a>{{__('website/home.status')}}<span class="cat-count c-yellow">{{$event->status}}</span></a></li>
+                                    <li><a>{{__('website/home.date_publication')}}<span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span></a></li>
+                                    <li><a>{{__('website/home.budget')}}<span class="cat-count">{{$event->budget}}</span></a></li>
+                                    <li><a>{{__('website/home.number_applicants')}}<span class="cat-count">24</span></a></li>
                                 </ul>
                             </aside>
 
@@ -195,14 +164,12 @@
                             </aside>
 
                             <aside class="widget w-tags">
-                                <h5 class="widget-title">Required skills</h5>
+                                <h5 class="widget-title">{{__('website/event.required_skills')}}</h5>
                                 <ul class="tags-list">
                                     @forelse($event->tags as $tag)
-                                        <li>
-                                            <a href="#">{{$tag->name}}</a>
-                                        </li>
+                                        <li><a href="#">{{$tag->name}}</a></li>
                                     @empty
-
+                                        <div class="alert alert-danger" role="alert">{{__('website/event.no_tag')}}</div>
                                     @endforelse
                                 </ul>
                             </aside>

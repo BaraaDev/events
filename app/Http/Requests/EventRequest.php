@@ -24,21 +24,24 @@ class EventRequest extends FormRequest
     public function rules()
     {
         return [
-            'title_ar'        => 'required|min:3|max:199',
-            'title_en'        => 'required|min:3|max:199',
-            'title_fr'        => 'required|min:3|max:199',
-            'location_ar'     => 'required|min:3|max:199',
-            'location_en'     => 'required|min:3|max:199',
-            'location_fr'     => 'required|min:3|max:199',
-            'time'            => 'required|sometimes',
-            'date'            => 'required|date',
-            'budget'          => 'required|integer',
-            'country_id'      => 'required',
-            'governorate_id'  => 'required',
-            'city_id'         => 'required',
-            'category_id'     => 'required',
-            'user_id'         => 'required',
-            'status'          => 'required|in:Stopped,Available,Expired',
+            'title_ar'           => 'required|min:3|max:199',
+            'title_en'           => 'required|min:3|max:199',
+            'title_fr'           => 'required|min:3|max:199',
+            'description_ar'     => 'required|max:600',
+            'description_en'     => 'required|max:600',
+            'description_fr'     => 'required|max:600',
+            'location_ar'        => 'required|min:3|max:199',
+            'location_en'        => 'required|min:3|max:199',
+            'location_fr'        => 'required|min:3|max:199',
+            'time'               => 'required|sometimes',
+            'date'               => 'required|date',
+            'budget'             => 'required|integer',
+            'country_id'         => 'required',
+            'governorate_id'     => 'required',
+            'city_id'            => 'required',
+            'category_id'        => 'required',
+            'user_id'            => 'required',
+            'status'             => 'required|in:Stopped,Available,Expired',
         ];
     }
 
@@ -48,22 +51,34 @@ class EventRequest extends FormRequest
         return [
 
             // Validation title ar
-            'title_ar.required'             => __('admin/request.title_ar_required'),
-            'title_ar.min'                  => __('admin/request.title_ar_min'),
-            'title_ar.max'                  => __('admin/request.title_ar_max'),
+            'title_ar.required'                => __('admin/request.title_ar_required'),
+            'title_ar.min'                     => __('admin/request.title_ar_min'),
+            'title_ar.max'                     => __('admin/request.title_ar_max'),
 
 
             // Validation title en
-            'title_en.required'             => __('admin/request.title_en_required'),
-            'title_en.min'                  => __('admin/request.title_en_min'),
-            'title_en.max'                  => __('admin/request.title_en_max'),
+            'title_en.required'                => __('admin/request.title_en_required'),
+            'title_en.min'                     => __('admin/request.title_en_min'),
+            'title_en.max'                     => __('admin/request.title_en_max'),
 
             // Validation title fr
-            'title_fr.required'             => __('admin/request.title_fr_required'),
-            'title_fr.min'                  => __('admin/request.title_fr_min'),
-            'title_fr.max'                  => __('admin/request.title_fr_max'),
+            'title_fr.required'                => __('admin/request.title_fr_required'),
+            'title_fr.min'                     => __('admin/request.title_fr_min'),
+            'title_fr.max'                     => __('admin/request.title_fr_max'),
 
-            // Validation title ar
+            // Validation description ar
+            'description_ar.required'          => __('admin/request.description_ar_required'),
+            'description_ar.max'               => __('admin/request.description_ar_max'),
+
+            // Validation description en
+            'description_en.required'          => __('admin/request.description_en_required'),
+            'description_en.max'               => __('admin/request.description_en_max'),
+
+            // Validation description fr
+            'description_fr.required'          => __('admin/request.description_fr_required'),
+            'description_fr.max'               => __('admin/request.description_fr_max'),
+
+            // Validation location ar
             'location_ar.required'             => __('admin/request.location_ar_required'),
             'location_ar.min'                  => __('admin/request.location_ar_min'),
             'location_ar.max'                  => __('admin/request.location_ar_max'),

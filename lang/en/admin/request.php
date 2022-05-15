@@ -79,7 +79,17 @@ return [
 
     'content_fr_required'       => 'The French content field is required!',
     'content_fr_max'            => 'The text length of the French content field must not exceed 500 characters/characters!',
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message description
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'description_ar_required'       => 'The Arabic description field is required!',
+    'description_ar_max'            => 'The text length of the Arabic description field must not exceed 500 characters/characters!',
 
+    'description_en_required'       => 'The English description field is required!',
+    'description_en_max'            => 'The text length of the English description field must not exceed 500 characters/characters!',
+
+    'description_fr_required'       => 'The French description field is required!',
+    'description_fr_max'            => 'The text length of the French description field must not exceed 500 characters/characters!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message title
     ///////////////////////////////////////////////////////////////////////////////////////

@@ -4,7 +4,6 @@
 
 <!-- jQuery-scripts for Template -->
 
-<script src="{{asset('website/js/js-plugins/ajax-pagination.js')}}"></script>
 <script src="{{asset('website/js/js-plugins/jquery.countdown.min.js')}}"></script>
 
 <script src="{{asset('website/js/js-plugins/crum-mega-menu.js')}}"></script>

@@ -27,23 +27,20 @@ class SliderController extends Controller
     public function store(SliderRequest $request)
     {
         $sliders = new Slider();
-        $sliders->setTranslation('title', 'en', $request->name_en)
-            ->setTranslation('title', 'ar', $request->name_ar)
-            ->setTranslation('title', 'fr', $request->name_fr)
+        $sliders->setTranslation('title', 'en', $request->title_en)
+            ->setTranslation('title', 'ar', $request->title_ar)
+            ->setTranslation('title', 'fr', $request->title_fr)
 
-            ->setTranslation('content', 'en', $request->name_en)
-            ->setTranslation('content', 'ar', $request->name_ar)
-            ->setTranslation('content', 'fr', $request->name_fr)
+            ->setTranslation('content', 'en', $request->content_en)
+            ->setTranslation('content', 'ar', $request->content_ar)
+            ->setTranslation('content', 'fr', $request->content_fr)
 
-            ->setTranslation('name_button', 'en', $request->name_en)
-            ->setTranslation('name_button', 'ar', $request->name_ar)
-            ->setTranslation('name_button', 'fr', $request->name_fr)
-
-            ->setTranslation('link_button', 'en', $request->name_en)
-            ->setTranslation('link_button', 'ar', $request->name_ar)
-            ->setTranslation('link_button', 'fr', $request->name_fr);
+            ->setTranslation('name_button', 'en', $request->name_button_en)
+            ->setTranslation('name_button', 'ar', $request->name_button_ar)
+            ->setTranslation('name_button', 'fr', $request->name_button_fr);
 
         $sliders->create_user_id = auth()->user()->id;
+        $sliders->link_button = $request->link_button;
         $sliders->save();
 
         return redirect()->route('sliders.index')
@@ -61,22 +58,20 @@ class SliderController extends Controller
     public function update(SliderRequest $request, $id)
     {
         $sliders = Slider::findOrFail($id);
-        $sliders->setTranslation('title', 'en', $request->name_en)
-            ->setTranslation('title', 'ar', $request->name_ar)
-            ->setTranslation('title', 'fr', $request->name_fr)
+        $sliders->setTranslation('title', 'en', $request->title_en)
+            ->setTranslation('title', 'ar', $request->title_ar)
+            ->setTranslation('title', 'fr', $request->title_fr)
 
-            ->setTranslation('content', 'en', $request->name_en)
-            ->setTranslation('content', 'ar', $request->name_ar)
-            ->setTranslation('content', 'fr', $request->name_fr)
+            ->setTranslation('content', 'en', $request->content_en)
+            ->setTranslation('content', 'ar', $request->content_ar)
+            ->setTranslation('content', 'fr', $request->content_fr)
 
-            ->setTranslation('name_button', 'en', $request->name_en)
-            ->setTranslation('name_button', 'ar', $request->name_ar)
-            ->setTranslation('name_button', 'fr', $request->name_fr)
+            ->setTranslation('name_button', 'en', $request->name_button_en)
+            ->setTranslation('name_button', 'ar', $request->name_button_ar)
+            ->setTranslation('name_button', 'fr', $request->name_button_fr);
 
-            ->setTranslation('link_button', 'en', $request->name_en)
-            ->setTranslation('link_button', 'ar', $request->name_ar)
-            ->setTranslation('link_button', 'fr', $request->name_fr);
         $sliders->update_user_id = auth()->user()->id;
+        $sliders->link_button = $request->link_button;
         $sliders->save();
 
         return redirect()->route('sliders.index')
