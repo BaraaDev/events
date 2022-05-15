@@ -20,4 +20,11 @@ class CommentController extends Controller
         return  redirect()->route('event.show',['id' => $event->id, "#comments$comment->id"])
             ->with(['message' => __('website/home.added_successfully')]);
     }
+
+    public function CommentDelete($id)
+    {
+        Comment::where('id', $id)->delete();
+        return redirect()->back()
+            ->with(['message' => __('website/home.deleted_successfully')]);
+    }
 }

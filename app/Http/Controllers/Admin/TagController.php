@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TagRequest;
 use App\Models\Tag;
+use Spatie\Activitylog\Models\Activity;
 
 class TagController extends Controller
 {
@@ -12,12 +13,16 @@ class TagController extends Controller
     public function index()
     {
         $tags = Tag::orderBy('created_at','asc')->paginate(30);
+        activity()->log('Tags page opened')->causer(auth()->user()->id);
+
+
         return view('dashboard.tags.index',compact('tags'));
     }
 
 
     public function create()
     {
+        activity()->log('The new tags creation page has been opened')->causer(auth()->user()->id);
         return view('dashboard.tags.create');
     }
 
@@ -30,6 +35,7 @@ class TagController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $tags->create_user_id = auth()->user()->id;
         $tags->save();
+        activity()->setEvent($tags->name)->log('Tags page opened')->causer(auth()->user()->id);
 
         return redirect()->route('tags.index')
             ->with(['message' => __('admin/home.added_successfully')]);
@@ -51,6 +57,7 @@ class TagController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr);
         $tags->update_user_id = auth()->user()->id;
         $tags->save();
+        activity()->log('Tags page opened')->subject($tags->id)->causer(auth()->user()->id);
 
         return redirect()->route('tags.index')
             ->with(['message' => __('admin/home.edited_successfully')]);

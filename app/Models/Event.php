@@ -5,8 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\DB;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Spatie\Translatable\HasTranslations;
 
 class Event extends Model implements HasMedia
@@ -61,11 +63,19 @@ class Event extends Model implements HasMedia
         return $this->morphMany(Comment::class, 'commentable')->whereNull('parent_id');
     }
 
+    public function registerMediaConversions(Media $media = null): void
+    {
+        $this->addMediaConversion('image')
+            ->width(810)
+            ->height(540)
+            ->nonOptimized();
+    }
+
     public function getPhotoAttribute()
     {
-        return $this->getFirstMediaUrl('images')
-            ?  $this->getFirstMediaUrl('images')
-            : asset('website/event.png');
+        return $this->getFirstMediaUrl('images','image')
+            ?  $this->getFirstMediaUrl('images','image')
+            : asset('website/event.jpg');
     }
 
     public function scopeStatus($query,$arg)

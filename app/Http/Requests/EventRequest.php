@@ -41,6 +41,7 @@ class EventRequest extends FormRequest
             'city_id'            => 'required',
             'category_id'        => 'required',
             'user_id'            => 'required',
+         //   'images'             => 'dimensions:width=360,height=220',
             'status'             => 'required|in:Stopped,Available,Expired',
         ];
     }

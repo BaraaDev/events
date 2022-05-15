@@ -49,7 +49,9 @@
                     <li>
                         <a href="javascript:void(0)">{{__('website/home.categories')}}</a>
                         <ul class="sub-menu">
-                            <li><a href="javascript:void(0)">{{__('website/home.services')}}</a></li>
+                            @foreach($categories as $category)
+                                <li><a href="{{route('event.category',$category->id)}}">{{$category->name}}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li><a href="javascript:void(0)">{{__('website/home.about_us')}}</a></li>

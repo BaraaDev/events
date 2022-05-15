@@ -44,45 +44,55 @@
                         </div>
 
                         <div class="comments">
-{{--                            @if(!$event->comments->where('user_id',auth()->user()->id)->where('commentable_id',$event->id) != true)--}}
-                                <form class="contact-form" action="{{route('comment.add')}}" method="post">
-                                    @csrf
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <h3>{{__('website/event.add_offer_now')}}</h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <input name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                            <input disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
-                                        </div>
-
-                                        <input name="event_id" value="{{ $event->id }}" type="hidden" autocomplete="off">
-
+                            @if(auth()->user())
+                                @if(count($event->comments->where('user_id',auth()->user()->id)) == 0)
+                                    <form class="contact-form" action="{{route('comment.add')}}" method="post">
+                                        @csrf
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="with-icon">
-                                                <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
-                                                <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-                                            </div>
+                                            <h3>{{__('website/event.add_offer_now')}}</h3>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <input name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <input disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
+                                            </div>
 
-                                        <div class="submit-block">
-                                            <div class="col-lg-12">
-                                                <button type="submit" class="btn btn--large btn--green btn--with-shadow full-width">
-                                                    <span class="text">{{__('website/event.add_offer')}}</span>
-                                                </button>
+                                            <input name="event_id" value="{{ $event->id }}" type="hidden" autocomplete="off">
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="with-icon">
+                                                    <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
+                                                    <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                                </div>
+                                            </div>
+
+                                            <div class="submit-block">
+                                                <div class="col-lg-12">
+                                                    <button type="submit" class="btn btn--large btn--green btn--with-shadow full-width">
+                                                        <span class="text">{{__('website/event.add_offer')}}</span>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
+                                    </form>
+                                @endif
+                            @else
+                                <div class="crumina-module crumina-heading align-center">
+                                    <div class="heading-text"> {{__('website/event.to_add')}}
+                                        <a href="{{route('register')}}">{{__('website/event.register')}}</a> {{__('website/event.or')}}
+                                        <a href="{{route('login')}}">{{__('website/event.log_in')}}</a>
                                     </div>
-                                </form>
-
+                                </div>
+                            @endif
 
                             <div class="d-flex--content-inline">
                                 <h3>{{__('website/event.provided_offers')}}</h3>
                             </div>
 
                             @forelse($event->comments as $comment)
+
                             <ol class="comments__list" id="comments{{$comment->id}}">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
@@ -90,17 +100,35 @@
                                             <img src="{{$comment->user->photo ?? ''}}" alt="{{$comment->user->name ?? ''}}">
                                         </div>
                                         <div class="comments__body">
-                                            <div class="d-flex--content-inline">
-                                                <header class="comment-meta comments__header">
-                                                    <cite class="fn url comments__author">
-                                                        <a href="javascript:void(0)" rel="external" class="h6">{{$comment->user->name ?? ''}}</a>
-                                                    </cite>
-                                                    <div class="comments__time">
-                                                        <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('dD M Y, H:m a')}}</time>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8">
+                                                    <div class="d-flex--content-inline">
+                                                        <header class="comment-meta comments__header">
+                                                            <cite class="fn url comments__author">
+                                                                <a href="javascript:void(0)" rel="external" class="h6">{{$comment->user->name ?? ''}}</a>
+                                                            </cite>
+                                                            <div class="comments__time">
+                                                                <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('dD M Y, H:m a')}}</time>
+                                                            </div>
+                                                        </header>
                                                     </div>
-                                                </header>
-                                            </div>
+                                                </div>
+                                                @if(auth()->user())
+                                                    @if($comment->user_id == auth()->user()->id)
+                                                        <div class="col-lg-4 col-md-4">
+                                                            {!! Form::open([
+                                                                'route' => ['comment.delete',$comment->id],
+                                                                'method' => 'delete'
+                                                            ])!!}
+                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">
+                                                                Delete
+                                                            </button>
+                                                            {!! Form::close() !!}
+                                                        </div>
+                                                    @endif
+                                                @endif
 
+                                            </div>
                                             <div class="comment-content comment">
                                                 <p>{{$comment->body ?? ''}}</p>
                                             </div>
@@ -108,6 +136,7 @@
                                     </div>
                                 </li>
                             </ol>
+
                             @empty
                                 <div class="alert alert-danger" role="alert">
                                     <strong>{{__('website/event.Oh_snap')}} </strong>{{__('website/event.no_offers')}}
@@ -123,10 +152,17 @@
                             <aside class="widget w-category">
                                 <h5 class="widget-title">{{__('website/event.event_card')}}</h5>
                                 <ul class="category-list">
-                                    <li><a>{{__('website/home.status')}}<span class="cat-count c-yellow">{{$event->status}}</span></a></li>
-                                    <li><a>{{__('website/home.publication_date')}}<span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span></a></li>
-                                    <li><a>{{__('website/home.budget')}}<span class="cat-count">{{$event->budget}}</span></a></li>
-                                    <li><a>{{__('website/home.applicants_numbers')}}<span class="cat-count">24</span></a></li>
+                                    <li><a>{{__('website/home.status')}}:<span class="cat-count c-yellow">{{$event->status}}</span></a></li>
+                                    <li><a>{{__('website/home.publication_date')}}:<span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span></a></li>
+                                    <li><a>{{__('website/home.budget')}}:<span class="cat-count">{{$event->budget}}</span></a></li>
+                                    <li><a>{{__('website/home.applicants_numbers')}}:<span class="cat-count">{{$event->comments->count()}}</span></a></li>
+
+                                    <li><a>{{__('website/home.average_offers')}}:<span class="cat-count">{{intval(61 / $event->comments->count())}}</span></a></li>
+
+                                    <li><a>{{__('website/home.country')}}:<span class="cat-count">{{$event->country->name ?? ''}}</span></a></li>
+                                    <li><a>{{__('website/home.governorate')}}:<span class="cat-count">{{$event->governorate->name ?? ''}}</span></a></li>
+                                    <li><a>{{__('website/home.city')}}:<span class="cat-count">{{$event->city->name ?? ''}}</span></a></li>
+                                    <li><a>{{__('website/home.category')}}:<span class="cat-count">{{$event->category->name ?? ''}}</span></a></li>
                                 </ul>
                             </aside>
 
@@ -167,7 +203,7 @@
                                 <h5 class="widget-title">{{__('website/event.required_skills')}}</h5>
                                 <ul class="tags-list">
                                     @forelse($event->tags as $tag)
-                                        <li><a href="#">{{$tag->name}}</a></li>
+                                        <li><a >{{$tag->name}}</a></li>
                                     @empty
                                         <div class="alert alert-danger" role="alert">{{__('website/event.no_tag')}}</div>
                                     @endforelse

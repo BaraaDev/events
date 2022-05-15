@@ -30,6 +30,11 @@
                         <a class="nav-link menu-title active" href="{{route('dashboard')}}"><i data-feather="home"></i><span>{{__('admin/home.dashboard')}}</span></a>
                     </li>
                     <!------------- End route dashboard ------------->
+                    <!------------- Start route site ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title" href="{{route('home')}}"><i data-feather="home"></i><span>{{__('website/home.home')}}</span></a>
+                    </li>
+                    <!------------- End route site ------------->
 
 
                     <!------------- Start route tags ------------->

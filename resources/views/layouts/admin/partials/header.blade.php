@@ -21,19 +21,12 @@
         <div class="nav-right col pull-right right-menu p-0">
 
             <ul class="nav-menus">
-
-                <!--start customer view link-->
-                 <li> 
-                     <a href="https://events.dev/en/events" class="text-white">Event View (Customer)</a>
-                 </li>
-                 <!--end customer view link-->
-
                 <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
 
                 <li class="onhover-dropdown">
                     <div class="notification-box"><i data-feather="bell"></i><span class="dot-animated"></span></div>
                     <ul class="notification-dropdown onhover-show-div">
-                        
+
                         <li>
                             <p class="f-w-700 mb-0">You have 3 Notifications<span class="pull-right badge badge-primary badge-pill">4</span></p>
                         </li>

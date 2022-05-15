@@ -95,10 +95,17 @@ Route::group([
 
 //-------------------- start customer event route. --------------------//
 Route::group(['prefix' => LaravelLocalization::setLocale(),
-'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
+'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
+    Route::get('/events/create', [App\Http\Controllers\EventController::class, 'create'])->name('event.create');
+    Route::get('/events/store', [App\Http\Controllers\EventController::class, 'store'])->name('event.store');
     Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
+    Route::delete('/comment/delete/{id}/', [App\Http\Controllers\CommentController::class, 'CommentDelete'])->name('comment.delete');
+    Route::get('/category/{id}', [App\Http\Controllers\EventController::class, 'category'])->name('event.category');
+    Route::get('/country/{id}', [App\Http\Controllers\EventController::class, 'country'])->name('event.country');
+    Route::get('/governorate/{id}', [App\Http\Controllers\EventController::class, 'governorate'])->name('event.governorate');
+    Route::get('/city/{id}', [App\Http\Controllers\EventController::class, 'city'])->name('event.city');
     Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
 
 });

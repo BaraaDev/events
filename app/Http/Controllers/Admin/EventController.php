@@ -133,7 +133,7 @@ class EventController extends Controller
     }
 
 
-    public function forceDelete($id)
+    public function CommentDelete($id)
     {
         $events = Event::withTrashed()->find($id);
         $events->city()->forceDelete();

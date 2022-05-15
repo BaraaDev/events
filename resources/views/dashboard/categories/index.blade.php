@@ -44,7 +44,7 @@
 
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$category->name}}</td>
-                                        <td class="text-center">{{Str::limit($category->content,'75','......')}}</td>
+                                        <td class="text-center">{{Str::limit($category->content,'45','......')}}</td>
                                         <td class="text-center">
                                             @if($category->status == 0)
                                                 <div class="badge badge-danger">

@@ -8,15 +8,12 @@
                 <div class="stunning-header-content">
                     <div class="inline-items">
                         <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
-
                         <a href="javascript:void(0)" class="btn btn--green btn--with-shadow f-right">
                             {{__('website/event.add_event')}}
                         </a>
                     </div>
                     <div class="breadcrumbs-wrap inline-items">
-
                         @component('components.breadcrumbs-wrap')
-
                             @slot('breadcrumbs_item_active')
                                 <li class="breadcrumbs-item active">
                                     <span class="breadcrumbs-custom">{{__('website/home.events')}}</span>
@@ -56,7 +53,12 @@
                                 <div class="curriculum-event-content">
                                     <div class="icon-text-item display-flex">
                                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
-                                        <div class="text">{{$event->created_at->format('D d-Y')}} – {{$event->country->name ?? ''}} , {{$event->governorate->name ?? ''}} , {{$event->city->name ?? ''}}</div>
+                                        <div class="text">
+                                            {{$event->created_at->format('D d-Y')}} –
+                                            <a href="{{route('event.country',$event->country_id)}}">{{$event->country->name ?? ''}}</a> ,
+                                            <a href="{{route('event.governorate',$event->governorate_id)}}">{{$event->governorate->name ?? ''}}</a> ,
+                                            <a href="{{route('event.city',$event->city_id)}}">{{$event->city->name ?? ''}}</a>
+                                        </div>
                                     </div>
                                     <a href="{{route('event.show',$event->id)}}" class="h5 title">{{$event->title}}</a>
                                 </div>

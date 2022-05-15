@@ -4,6 +4,7 @@
 return [
     'home'                         => 'Home',
     'added_successfully'           => 'Your offer has been successfully added!',
+    'deleted_successfully'         => 'Your offer has been successfully deleted!',
     'events'                       => 'Events',
     'event'                        => 'Event',
     'services'                     => 'Services',
@@ -16,4 +17,9 @@ return [
     'applicants_numbers'           => 'Applicants Numbers',
     'Prev_Page'                    => 'Prev Page',
     'Next_Page'                    => 'Next Page',
+    'average_offers'               => 'Average Offers',
+    'country'                      => 'Country',
+    'governorate'                  => 'Governorate',
+    'city'                         => 'City',
+    'category'                     => 'Category',
 ];
