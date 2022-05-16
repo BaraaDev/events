@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('event_id');
             $table->integer('tag_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -1,16 +1,16 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/category.deleted_categories')}} @endsection
+@section('title') {{__('admin/contribution.deleted_contributions')}} @endsection
 
 @section('content')
     @component('components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>{{__('admin/category.deleted_categories')}}</h3>
+            <h3>{{__('admin/contribution.deleted_contributions')}}</h3>
         @endslot
-        <li class="breadcrumb-item"><a href="{{route('categories.index')}}">{{__('admin/category.categories')}}</a> </li>
-        <li class="breadcrumb-item active">{{__('admin/category.deleted_categories')}}</li>
+        <li class="breadcrumb-item"><a href="{{route('contributions.index')}}">{{__('admin/contribution.contributions')}}</a> </li>
+        <li class="breadcrumb-item active">{{__('admin/contribution.deleted_contributions')}}</li>
         @slot('bookmark')
-            <a href="{{route('categories.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/category.addCategory')}}">{{__('admin/category.addCategory')}}</a>
+            <a href="{{route('contributions.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/contribution.addContribution')}}">{{__('admin/contribution.addContribution')}}</a>
         @endslot
     @endcomponent
     @include('layouts.admin.partials.messages.message')
@@ -19,8 +19,8 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>{{__('admin/category.Show_deleted_categories')}} - <span class="b-b-success">{{App\Models\Category::onlyTrashed()->count()}}</span></h5>
-                        <span>{{__('admin/category.DescriptionCategory_delete')}}</span>
+                        <h5>{{__('admin/contribution.Show_deleted_contributions')}} - <span class="b-b-success">{{App\Models\Contribution::onlyTrashed()->count()}}</span></h5>
+                        <span>{{__('admin/contribution.DescriptionContribution_delete')}}</span>
                     </div>
                     <div class="card-block row">
                         <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -29,8 +29,9 @@
                                     <thead>
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
+                                        <th scope="col" class="text-center">{{__('admin/contribution.title')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/contribution.content')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/category.NameCategory')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/category.content_categories')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_history')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_delete')}}</th>
@@ -38,21 +39,22 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @forelse($categories as $category)
+                                    @forelse($contributions as $contribution)
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
-                                        <td class="text-center">{{$category->name}}</td>
-                                        <td class="text-center">{{Str::limit($category->content,'75','......')}}</td>
-                                        <td class="text-center">{{$category->create_user->name ?? ''}}</td>
-                                        <td class="text-center" title="{{$category->created_at->format('Y-D-M h:m')}}">{{$category->created_at->format('Y-D-M')}}</td>
-                                        <td class="text-center" title="{{$category->deleted_at->format('Y-D-M h:m')}}">{{$category->deleted_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$contribution->title}}</td>
+                                        <td class="text-center">{{Str::limit($contribution->content,'75','......')}}</td>
+                                        <td class="text-center">{{$contribution->name}}</td>
+                                        <td class="text-center">{{$contribution->create_user->name ?? ''}}</td>
+                                        <td class="text-center" title="{{$contribution->created_at->format('Y-D-M h:m')}}">{{$contribution->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center" title="{{$contribution->deleted_at->format('Y-D-M h:m')}}">{{$contribution->deleted_at->format('Y-D-M')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
-                                                'route' => ['categories.forceDelete',$category->id],
+                                                'route' => ['contributions.forceDelete',$contribution->id],
                                                 'method' => 'delete'
                                             ])!!}
-                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirmDelete')}}');" type="submit" title="{{__('admin/home.delete_forever')." ($category->name)"}}">{{__('admin/home.delete_forever')}} </button>
-                                            <a href="{{route('categories.restore',$category->id)}}" onclick="return confirm('{{__('admin/home.confirmRestore')}}');" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.restore')." ($category->name)"}}">{{__('admin/home.restore')}}</a>
+                                            <button class="btn btn-danger btn-xs" onclick="return confirm('{{__('admin/home.confirmDelete')}}');" type="submit" title="{{__('admin/home.delete_forever')." ($contribution->name)"}}">{{__('admin/home.delete_forever')}} </button>
+                                            <a href="{{route('contributions.restore',$contribution->id)}}" onclick="return confirm('{{__('admin/home.confirmRestore')}}');" class="btn btn-primary btn-xs" type="button" title="{{__('admin/home.restore')." ($contribution->name)"}}">{{__('admin/home.restore')}}</a>
                                             {!! Form::close() !!}
                                         </td>
                                     </tr>
@@ -70,7 +72,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        {!! $categories->links('pagination::bootstrap-4') !!}
+                        {!! $contributions->links('pagination::bootstrap-4') !!}
                     </ul>
                 </nav>
             </div>

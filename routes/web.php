@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ContributionController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
@@ -27,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+//*****-------------------- start dashboard/admin route. --------------------*****//
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => ['auth', 'dashboard', 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
@@ -103,11 +105,19 @@ Route::group([
         Route::get('/setting', [SettingController::class,'setting'])->name('setting');
         Route::post('/setting-post', [SettingController::class,'update'])->name('setting.update');
         //-------------------- end setting route. --------------------//
+
+        //-------------------- start contributions route. --------------------//
+        Route::resource('/contributions', ContributionController::class);
+        Route::get('/contribution/delete', [ContributionController::class, 'delete'])->name('contributions.delete');
+        Route::get('/contribution/restore/{id}/', [ContributionController::class, 'restore'])->name('contributions.restore');
+        Route::delete('/contribution/forceDelete/{id}/', [ContributionController::class, 'forceDelete'])->name('contributions.forceDelete');
+        //-------------------- start contributions route. --------------------//
     });
 });
+//*****-------------------- end dashboard/admin route. --------------------*****//
 
 
-//-------------------- start customer event route. --------------------//
+//*****-------------------- start customer event route. --------------------*****//
 Route::group(['prefix' => LaravelLocalization::setLocale(),
 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -123,4 +133,4 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
 
 });
-//-------------------- end customer event route. --------------------//
+//*****-------------------- end customer event route. --------------------*****//

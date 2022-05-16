@@ -37,6 +37,21 @@
                     <!------------- End route site ------------->
 
 
+                    <!------------- Start route contributions ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('contributions.index') || routeActive('contributions.create') || routeActive('contributions.delete')) active @endif" href="javascript:void(0)">
+                            <i data-feather="edit"></i>
+                            <span>{{__('admin/contribution.contributions')}}</span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('contributions.index') || routeActive('contributions.create')  || routeActive('contributions.delete')) block @else none @endif ;">
+                            <li><a href="{{ route('contributions.create') }}" class="{{routeActive('contributions.create')}}">{{__('admin/contribution.create')}}</a></li>
+                            <li><a href="{{ route('contributions.index') }}" class="{{routeActive('contributions.index')}}">{{__('admin/contribution.all_contributions')}}</a></li>
+                            <li><a href="{{ route('contributions.delete') }}" class="{{routeActive('contributions.delete')}}">{{__('admin/contribution.deleted_contributions')}}</a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route contributions ------------->
+
+                    
                     <!------------- Start route tags ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('tags.index') || routeActive('tags.create') || routeActive('tags.delete')) active @endif" href="javascript:void(0)">

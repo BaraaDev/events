@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
