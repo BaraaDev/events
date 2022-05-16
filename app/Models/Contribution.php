@@ -12,7 +12,7 @@ class Contribution extends Model
     use HasFactory, HasTranslations, SoftDeletes;
 
     protected $table = 'contributions';
-    public $translatable = ['title', 'content', 'category_name'];
+    public $translatable = ['title', 'content', 'category_id'];
 
     public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
