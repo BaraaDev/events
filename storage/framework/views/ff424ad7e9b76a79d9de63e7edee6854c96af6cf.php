@@ -46,7 +46,7 @@
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($contribution->title); ?></td>
                                         <td class="text-center"><?php echo e(Str::limit($contribution->content,'45','......')); ?></td>
-                                        <td class="text-center"><?php echo e($contribution->category->name); ?></td>
+                                        <td class="text-center"><a href="<?php echo e(route('categories.edit',$event->category->id ?? '')); ?>"><?php echo e($contribution->category->name ?? ''); ?></a></td>
                                         <td class="text-center">
                                             <?php if($contribution->status == 0): ?>
                                                 <div class="badge badge-danger">
