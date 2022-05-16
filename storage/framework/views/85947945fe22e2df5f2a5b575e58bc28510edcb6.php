@@ -51,6 +51,21 @@
                     </li>
                     <!------------- End route contributions ------------->
 
+
+                    <!------------- Start route sliders ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php if(routeActive('sliders.index') || routeActive('sliders.create') || routeActive('sliders.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
+                            <i data-feather="sliders"></i>
+                            <span><?php echo e(__('admin/slider.sliders')); ?></span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('sliders.index') || routeActive('sliders.create')  || routeActive('sliders.delete')): ?> block <?php else: ?> none <?php endif; ?> ;">
+                            <li><a href="<?php echo e(route('sliders.create')); ?>" class="<?php echo e(routeActive('sliders.create')); ?>"><?php echo e(__('admin/slider.create')); ?></a></li>
+                            <li><a href="<?php echo e(route('sliders.index')); ?>" class="<?php echo e(routeActive('sliders.index')); ?>"><?php echo e(__('admin/slider.all_sliders')); ?></a></li>
+                            <li><a href="<?php echo e(route('sliders.delete')); ?>" class="<?php echo e(routeActive('sliders.delete')); ?>"><?php echo e(__('admin/slider.deleted_sliders')); ?></a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route sliders ------------->
+
                     
                     <!------------- Start route tags ------------->
                     <li class="dropdown">
