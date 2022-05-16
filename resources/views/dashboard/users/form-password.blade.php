@@ -4,7 +4,11 @@
             <img class="img-70 rounded-circle" alt="Avatar {{$model->name}}" src="{{$model->photo}}" />
             <div class="media-body">
                 <h3 class="mb-1 f-20 txt-primary">{{$model->name}}</h3>
-                <p class="f-12">{{$model->user_type}}</p>
+                @if($model->user_type =='dashboard')
+                    <p class="f-12">Admin</p>
+                @else
+                    <p class="f-2">{{$model->user_type}}</p>
+                @endif
             </div>
         </div>
     </div>

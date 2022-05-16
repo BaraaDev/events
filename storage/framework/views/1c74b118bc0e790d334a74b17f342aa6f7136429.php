@@ -4,7 +4,11 @@
             <img class="img-70 rounded-circle" alt="Avatar <?php echo e($model->name); ?>" src="<?php echo e($model->photo); ?>" />
             <div class="media-body">
                 <h3 class="mb-1 f-20 txt-primary"><?php echo e($model->name); ?></h3>
-                <p class="f-12"><?php echo e($model->user_type); ?></p>
+                <?php if($model->user_type =='dashboard'): ?>
+                    <p class="f-12">Admin</p>
+                <?php else: ?>
+                    <p class="f-2"><?php echo e($model->user_type); ?></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
