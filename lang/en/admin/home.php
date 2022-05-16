@@ -78,6 +78,6 @@ return [
     'description'                        => 'Description',
     'title'                              => 'Title',
     'content'                            => 'Content',
-    'add_new'                            => 'create',
+    'add_new'                            => 'Add New',
 
 ];
