@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
+            $table->string('category_name')->nullable();
             $table->enum('status',['Expired','Available','Stopped'])->nullable();
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();

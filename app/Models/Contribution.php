@@ -12,7 +12,13 @@ class Contribution extends Model
     use HasFactory, HasTranslations, SoftDeletes;
 
     protected $table = 'contributions';
-    public $translatable = ['name', 'content'];
+    public $translatable = ['title', 'content', 'category_name'];
+
+    public function categories(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(Category::class);
+        
+    }
 
     public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
@@ -25,9 +31,4 @@ class Contribution extends Model
         
     }
 
-    public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(Category::class);
-        
-    }
 }

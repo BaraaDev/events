@@ -2,8 +2,8 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/contribution.title')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <input class="form-control @error('name_ar') is-invalid @enderror" value="{{Request::old('name_ar') ? Request::old('name_ar') : $model->getTranslation('name','ar')}}" type="text" name="name_ar" placeholder="{{__('admin/home.Enter_name_ar')}}" autocomplete="off">
-            @error('name_ar')
+            <input class="form-control @error('title_ar') is-invalid @enderror" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" type="text" name="title_ar" placeholder="{{__('admin/home.Enter_name_ar')}}" autocomplete="off">
+            @error('title_ar')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
@@ -27,8 +27,8 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/contribution.title')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <input class="form-control @error('name_en') is-invalid @enderror" value="{{Request::old('name_en') ? Request::old('name_en') : $model->getTranslation('name','en')}}" type="text" name="name_en" placeholder="{{__('admin/home.Enter_name_en')}}" autocomplete="off">
-            @error('name_en')
+            <input class="form-control @error('title_en') is-invalid @enderror" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" type="text" name="title_en" placeholder="{{__('admin/home.Enter_name_en')}}" autocomplete="off">
+            @error('title_en')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
@@ -51,8 +51,8 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/contribution.title')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <input class="form-control @error('name_fr') is-invalid @enderror" value="{{Request::old('name_fr') ? Request::old('name_fr') : $model->getTranslation('name','fr')}}" type="text" name="name_fr" placeholder="{{__('admin/home.Enter_name_fr')}}" autocomplete="off">
-            @error('name_fr')
+            <input class="form-control @error('title_fr') is-invalid @enderror" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" type="text" name="title_fr" placeholder="{{__('admin/home.Enter_name_fr')}}" autocomplete="off">
+            @error('title_fr')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
@@ -71,6 +71,23 @@
         </div>
     </div>
 </div>
+
+<div class="form-group row">
+    <label class="form-label col-lg-3">{{__('admin/category.category')}} <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        @inject('category','App\Models\Category')
+        {!! Form::select('category_id',$category->pluck('name','id'),Request::old('category_id') ? Request::old('category_id') : $model->category_id,[
+            'placeholder' => __('admin/home.select'),
+            'class'       => 'form-control select'. ( $errors->has('category_id') ? ' is-invalid' : '' )
+        ]) !!}
+        @error('category_id')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>
+
 <div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
