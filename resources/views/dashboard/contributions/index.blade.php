@@ -46,7 +46,7 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$contribution->title}}</td>
                                         <td class="text-center">{{Str::limit($contribution->content,'45','......')}}</td>
-                                        <td class="text-center"><a href="{{route('categories.edit',$event->category->id ?? '')}}">{{$contribution->category->name ?? ''}}</a></td>
+                                        <td class="text-center"><a href="{{route('categories.edit',$contribution->category->id ?? '')}}">{{$contribution->category->name ?? ''}}</a></td>
                                         <td class="text-center">
                                             @if($contribution->status == 0)
                                                 <div class="badge badge-danger">
