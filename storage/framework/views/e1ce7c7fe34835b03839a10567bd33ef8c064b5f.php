@@ -28,7 +28,11 @@
                                 <div class="title">
                                     <a target="_blank" href="">
                                         <h4><?php echo e($user->name); ?></h4>
-                                        <h6><?php echo e($user->user_type); ?></h6>
+                                        <?php if($user->user_type =='dashboard'): ?>
+                                            <h6>Admin</h6>
+                                        <?php else: ?>
+                                            <h6><?php echo e($user->user_type); ?></h6>
+                                        <?php endif; ?>
                                     </a>
                                 </div>
                                 <div class="social-media">
