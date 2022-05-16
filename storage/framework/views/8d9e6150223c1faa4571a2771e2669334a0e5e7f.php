@@ -29,10 +29,13 @@
         </div>
         <!--end Header -->
 
-
         <!-- Start Event-->
         <section class="medium-padding100">
+
             <div class="container">
+                <?php if(session('delete') ?? '' ): ?>
+                    <?php echo $__env->make('layouts.website.partials.alert.danger', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                <?php endif; ?>
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                         <div class="block-rounded-shadow">
@@ -92,8 +95,10 @@
                             </div>
 
                             <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-
-                            <ol class="comments__list" id="comments<?php echo e($comment->id); ?>">
+                            <?php if(session('message') ?? '' ): ?>
+                                <?php echo $__env->make('layouts.website.partials.alert.success', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                            <?php endif; ?>
+                            <ol class="comments__list">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
                                         <div class="comments__avatar">

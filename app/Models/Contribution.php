@@ -14,10 +14,10 @@ class Contribution extends Model
     protected $table = 'contributions';
     public $translatable = ['title', 'content', 'category_name'];
 
-    public function categories(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Category::class);
-        
+
     }
 
     public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -28,7 +28,7 @@ class Contribution extends Model
     public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(User::class);
-        
+
     }
 
 }

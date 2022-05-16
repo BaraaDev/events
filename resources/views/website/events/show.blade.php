@@ -31,10 +31,13 @@
         </div>
         <!--end Header -->
 
-
         <!-- Start Event-->
         <section class="medium-padding100">
+
             <div class="container">
+                @if(session('delete') ?? '' )
+                    @include('layouts.website.partials.alert.danger')
+                @endif
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                         <div class="block-rounded-shadow">
@@ -92,8 +95,10 @@
                             </div>
 
                             @forelse($event->comments as $comment)
-
-                            <ol class="comments__list" id="comments{{$comment->id}}">
+                            @if(session('message') ?? '' )
+                                @include('layouts.website.partials.alert.success')
+                            @endif
+                            <ol class="comments__list">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
                                         <div class="comments__avatar">

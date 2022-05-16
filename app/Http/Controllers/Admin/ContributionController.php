@@ -30,6 +30,7 @@ class ContributionController extends Controller
             ->setTranslation('content', 'ar', $request->content_ar)
             ->setTranslation('content', 'fr', $request->content_fr);
         $contributions->create_user_id = auth()->user()->id;
+        $contributions->category_id = $request->category_id;
         $contributions->save();
 
         return redirect()->route('contributions.index')
@@ -58,6 +59,7 @@ class ContributionController extends Controller
             ->setTranslation('content', 'fr', $request->content_fr);
         $contributions->status         = $request->status;
         $contributions->update_user_id = auth()->user()->id;
+        $contributions->category_id = $request->category_id;
         $contributions->save();
 
         return redirect()->route('contributions.index')

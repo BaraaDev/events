@@ -22,4 +22,5 @@ return [
     'governorate'                  => 'المحافظة',
     'city'                         => 'المدينة',
     'category'                     => 'القسم',
+    'Well_done'                    => '!أحسنت',
 ];
