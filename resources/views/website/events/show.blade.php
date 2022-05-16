@@ -157,7 +157,7 @@
                                     <li><a>{{__('website/home.budget')}}:<span class="cat-count">{{$event->budget}}</span></a></li>
                                     <li><a>{{__('website/home.applicants_numbers')}}:<span class="cat-count">{{$event->comments->count()}}</span></a></li>
 
-                                    <li><a>{{__('website/home.average_offers')}}:<span class="cat-count">{{intval(61 / $event->comments->count())}}</span></a></li>
+                                    <li><a>{{__('website/home.average_offers')}}:<span class="cat-count">{{intval($event->comments->sum() ?? '' / $event->comments->count() ?? '')}}</span></a></li>
 
                                     <li><a>{{__('website/home.country')}}:<span class="cat-count">{{$event->country->name ?? ''}}</span></a></li>
                                     <li><a>{{__('website/home.governorate')}}:<span class="cat-count">{{$event->governorate->name ?? ''}}</span></a></li>
