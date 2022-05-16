@@ -128,7 +128,7 @@
     <label class="form-label col-lg-3">{{__('admin/slider.color')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <select name="color" class="form-control select @error('color') is-invalid @enderror">
-            <option>{{__('admin/slider.select')}}</option>
+            <option>{{__('admin/home.select')}}</option>
             <option value="btn--yellow" {{ isset($model) && $model->color == 'btn--yellow' ? 'selected'  : '' }}>{{__('admin/slider.yellow')}}</option>
             <option value="btn--black" {{ isset($model) && $model->color == 'btn--black' ? 'selected'  : '' }}>{{__('admin/slider.black')}}</option>
             <option value="btn--blue" {{ isset($model) && $model->color == 'btn--blue' ? 'selected'  : '' }}>{{__('admin/slider.blue')}}</option>
