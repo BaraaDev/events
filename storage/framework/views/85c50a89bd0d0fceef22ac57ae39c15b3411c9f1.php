@@ -2,14 +2,15 @@
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="<?php echo e(route('setting')); ?>"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(auth()->user()->photo ?? ''); ?>" alt="avatar <?php echo e(auth()->user()->name ?? ''); ?>" />
         <?php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); ?>
-        <?php if($data <= 7): ?> <div class="badge-bottom">
-            <span class="badge badge-primary">New </span>
-    </div>
-    <?php endif; ?>
-    <a href="<?php echo e(route('profile')); ?>">
-        <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>
-    </a>
-    <p class="mb-0 font-roboto"><?php echo e(auth()->user()->email ?? ''); ?></p>
+        <?php if($data <= 7): ?>
+            <div class="badge-bottom">
+                <span class="badge badge-primary">New </span>
+            </div>
+        <?php endif; ?>
+        <a href="<?php echo e(route('profile')); ?>">
+            <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>
+        </a>
+        <p class="mb-0 font-roboto"><?php echo e(auth()->user()->email ?? ''); ?></p>
     </div>
     <nav>
         <div class="main-navbar">
@@ -29,6 +30,11 @@
                         <a class="nav-link menu-title active" href="<?php echo e(route('dashboard')); ?>"><i data-feather="home"></i><span><?php echo e(__('admin/home.dashboard')); ?></span></a>
                     </li>
                     <!------------- End route dashboard ------------->
+                    <!------------- Start route site ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title" href="<?php echo e(route('home')); ?>"><i data-feather="home"></i><span><?php echo e(__('website/home.home')); ?></span></a>
+                    </li>
+                    <!------------- End route site ------------->
 
 
                     <!------------- Start route tags ------------->
@@ -137,4 +143,5 @@
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
         </div>
     </nav>
-</header><?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
+</header>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>

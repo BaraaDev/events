@@ -265,16 +265,24 @@ unset($__errorArgs, $__bag); ?>
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/slider.color')); ?> <span class="text-danger">*</span> </label>
+    <label class="form-label col-lg-3"><?php echo e(__('admin/slider.color')); ?> <span class="text-danger">*</span></label>
     <div class="col-lg-9">
-        <input class="form-control <?php $__errorArgs = ['color'];
+        <select name="color" class="form-control select <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('color') ? Request::old('color') : $model->color); ?>" type="text" name="color" placeholder="<?php echo e(__('admin/slider.enter_color')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>">
+            <option><?php echo e(__('admin/home.select')); ?></option>
+            <option value="btn--yellow" <?php echo e(isset($model) && $model->color == 'btn--yellow' ? 'selected'  : ''); ?>><?php echo e(__('admin/slider.yellow')); ?></option>
+            <option value="btn--black" <?php echo e(isset($model) && $model->color == 'btn--black' ? 'selected'  : ''); ?>><?php echo e(__('admin/slider.black')); ?></option>
+            <option value="btn--blue" <?php echo e(isset($model) && $model->color == 'btn--blue' ? 'selected'  : ''); ?>><?php echo e(__('admin/slider.blue')); ?></option>
+            <option value="btn--red" <?php echo e(isset($model) && $model->color == 'btn--red' ? 'selected'  : ''); ?>><?php echo e(__('admin/slider.red')); ?></option>
+            <option value="btn--green" <?php echo e(isset($model) && $model->color == 'btn--green' ? 'selected'  : ''); ?>><?php echo e(__('admin/slider.green')); ?></option>
+            <option value="btn--grey" <?php echo e(isset($model) && $model->color == 'btn--grey' ? 'selected'  : ''); ?>><?php echo e(__('admin/slider.grey')); ?></option>
+        </select>
         <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -288,4 +296,5 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
     </div>
-</div><?php /**PATH D:\laragon\www\events\resources\views/dashboard/sliders/form.blade.php ENDPATH**/ ?>
+</div>
+<?php /**PATH D:\laragon\www\events\resources\views/dashboard/sliders/form.blade.php ENDPATH**/ ?>
