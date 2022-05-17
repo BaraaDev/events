@@ -161,4 +161,20 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     'governorate_id'                  => 'Choose governorates from governorates, governorates are required',
     'governorate_exists'              => 'The selected governorate is invalid.',
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message category id
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'category_id'                    => 'Choose category from categories, categories are required',
+    'category_exists'                => 'The selected category is invalid.',
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message Users
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'current_password_required'     => 'Current password is required.',
+    'current_password_min'          => 'Password must be more than 8 characters.',
+    'current_password'              => 'The current password must be correct.',
+    'password_required'             => 'New password is required.',
+    'password_confirmed'            => 'The password must match.',
+    'password_min'                  => 'Password must be more than 8 characters.',
+    'avatar_image'                  => 'The image must be in a category (jpg, jpeg, png, bmp, gif, svg, webp).',
+    'cover_image'                   => 'The image must be in a category (jpg, jpeg, png, bmp, gif, svg, webp).',
 ];

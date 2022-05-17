@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('contributions', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->text('content');
-            $table->string('category_id')->nullable();
-            $table->enum('status',['1','0'])->nullable();
-            $table->integer('create_user_id');
-            $table->integer('update_user_id')->nullable();
+        Schema::create('orders', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('order_number');
+            $table->string('paypal_orderid');
+            $table->unsignedBigInteger('user_id');
+            $table->float('value');
+            $table->boolean('is_paid')->default(false);
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contributions');
+        Schema::dropIfExists('orders');
     }
 };

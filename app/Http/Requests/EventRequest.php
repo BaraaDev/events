@@ -120,7 +120,7 @@ class EventRequest extends FormRequest
             'budget.required'                  => __('admin/request.budget_required'),
             'budget.integer'                   => __('admin/request.budget_integer'),
 
-            // Validation budget
+            // Validation status
             'status.required'                  => __('admin/request.status_required'),
             'status.in'                        => __('admin/request.status_selected'),
 

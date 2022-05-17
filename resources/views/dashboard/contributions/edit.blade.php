@@ -1,15 +1,15 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/contribution.edit')}} ({{$model->name}}) @endsection
+@section('title') {{__('admin/contribution.edit')}} ({{$model->title}}) @endsection
 
 @section('content')
 
     @component('components.breadcrumb')
         @slot('breadcrumb_title')
-            <h3>{{__('admin/contribution.edit')}} ({{$model->name}})</h3>
+            <h3>{{__('admin/contribution.edit')}} ({{$model->title}})</h3>
         @endslot
         <li class="breadcrumb-item"><a href="{{route('contributions.index')}}">{{__('admin/contribution.contributions')}}</a> </li>
-        <li class="breadcrumb-item active">{{__('admin/contribution.edit')}} ({{$model->name}})</li>
+        <li class="breadcrumb-item active">{{__('admin/contribution.edit')}} ({{$model->title}})</li>
         @slot('bookmark')
             <a href="{{route('contributions.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/contribution.addContribution')}}">{{__('admin/contribution.addContribution')}}</a>
         @endslot

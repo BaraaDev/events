@@ -19,12 +19,14 @@ class ContributionRequest extends FormRequest
     protected function onCreate()
     {
         return [
-            'title_ar'   => 'required|min:3|max:199',
-            'title_en'   => 'required|min:3|max:199',
-            'title_fr'   => 'required|min:3|max:199',
-            'content_ar' => 'required|max:500',
-            'content_en' => 'required|max:500',
-            'content_fr' => 'required|max:500',
+            'title_ar'    => 'required|min:3|max:199',
+            'title_en'    => 'required|min:3|max:199',
+            'title_fr'    => 'required|min:3|max:199',
+            'content_ar'  => 'required|max:500',
+            'content_en'  => 'required|max:500',
+            'content_fr'  => 'required|max:500',
+            'category_id' => 'required|exists:categories,id',
+            'status'      => 'required|max:500',
         ];
     }
 
@@ -32,12 +34,14 @@ class ContributionRequest extends FormRequest
     protected function onUpdate()
     {
         return [
-            'title_ar'   => 'required|min:3|max:199|unique:contributions,title',
+            'title_ar'   => 'required|min:3|max:199',
             'title_en'   => 'required|min:3|max:199',
             'title_fr'   => 'required|min:3|max:199',
             'content_ar' => 'required|max:500',
             'content_en' => 'required|max:500',
             'content_fr' => 'required|max:500',
+            'category_id' => 'required|exists:categories,id',
+            'status'     => 'required|in:1,0',
         ];
     }
 
@@ -83,6 +87,14 @@ class ContributionRequest extends FormRequest
             // Validation content fr
             'content_fr.required' => __('admin/request.content_fr_required'),
             'content_fr.max'      => __('admin/request.content_fr_max'),
+
+            // Validation country id
+            'category_id.required'       => __('admin/request.category_id'),
+            'category_id.exists'         => __('admin/request.category_exists'),
+
+            // Validation status
+            'status.required'                  => __('admin/request.status_required'),
+            'status.in'                        => __('admin/request.status_selected'),
         ];
     }
 }
