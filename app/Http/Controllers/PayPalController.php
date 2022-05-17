@@ -33,10 +33,9 @@ class PayPalController extends Controller
     }
 
 
-
     public function cancelPage()
     {
-        dd('payment failed');
+        return redirect()->route('allEvents');
     }
 
 
@@ -46,15 +45,15 @@ class PayPalController extends Controller
         $order->is_paid = 1;
         $order->save();
         // Mail::to($order->user->email)->send(new OrderPaid($order));
-        return redirect()->route('home')->withMessage('Payment successful!');
+        return redirect()->route('allEvents')->withMessage('Payment successful!');
 
         $response = $this->paypalService->captureOrder($order->paypal_orderid);
         if ($response->result->status == 'COMPLETED') {
             $order->is_paid = 1;
             $order->save();
             // Mail::to($order->user->email)->send(new OrderPaid($order));
-            return redirect()->route('home')->withMessage('Payment successful!');
+            return redirect()->route('allEvents')->withMessage('Payment successful!');
         }
-        return redirect()->route('home')->withError('Payment UnSuccessful! Something went wrong!');
+        return redirect()->route('allEvents')->withError('Payment UnSuccessful! Something went wrong!');
     }
 }

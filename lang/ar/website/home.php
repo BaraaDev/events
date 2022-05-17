@@ -23,4 +23,6 @@ return [
     'city'                         => 'المدينة',
     'category'                     => 'القسم',
     'Well_done'                    => '!أحسنت',
+    'delete'                       => 'حذف',
+    'payNow'                       => 'ادفع الان',
 ];

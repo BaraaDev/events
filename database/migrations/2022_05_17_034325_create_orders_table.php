@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('order_number');
             $table->string('paypal_orderid');
             $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_to_id');
             $table->float('value');
             $table->boolean('is_paid')->default(false);
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

@@ -23,4 +23,6 @@ return [
     'city'                         => 'City',
     'category'                     => 'Category',
     'Well_done'                    => 'Well Done! ',
+    'delete'                       => 'Delete',
+    'payNow'                       => 'Pay Now',
 ];
