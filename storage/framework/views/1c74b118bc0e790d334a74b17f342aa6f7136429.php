@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<div class="mb-4">Change Your Password.</div>
+<div class="mb-5"><h5><?php echo e(__('admin/user.change_password')); ?></h5></div>
 
 <div class="mb-3">
     <label class="form-label"><?php echo e(__('admin/user.current_password')); ?></label>

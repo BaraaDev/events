@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<div class="mb-4">{{__('admin/user.change_password')}}</div>
+<div class="mb-5"><h5>{{__('admin/user.change_password')}}</h5></div>
 
 <div class="mb-3">
     <label class="form-label">{{__('admin/user.current_password')}}</label>
