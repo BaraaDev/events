@@ -32,6 +32,7 @@ return [
     'invitation_address'             => "Adresse d'invitation",
     'date'                           => 'Date',
     'about_me'                       => 'Sur moi',
+    'change_password'                => 'Changer le mot de passe',
     'current_password'               => 'Mot de passe actuel',
     'password'                       => 'Mot de passe',
     'new_password'                   => 'Nouveau mot de passe',

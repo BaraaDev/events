@@ -13,6 +13,9 @@
         </div>
     </div>
 </div>
+
+<div class="mb-4">Change Your Password.</div>
+
 <div class="mb-3">
     <label class="form-label"><?php echo e(__('admin/user.current_password')); ?></label>
     <input class="form-control <?php $__errorArgs = ['current_password'];

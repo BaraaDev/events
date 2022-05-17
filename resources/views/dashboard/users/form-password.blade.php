@@ -13,6 +13,9 @@
         </div>
     </div>
 </div>
+
+<div class="mb-4">{{__('admin/user.change_password')}}</div>
+
 <div class="mb-3">
     <label class="form-label">{{__('admin/user.current_password')}}</label>
     <input class="form-control @error('current_password') is-invalid @enderror" name="current_password" type="password" placeholder="{{__('admin/user.enter_current_password')}}"/>

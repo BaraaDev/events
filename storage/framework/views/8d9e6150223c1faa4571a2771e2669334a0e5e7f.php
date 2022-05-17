@@ -106,7 +106,7 @@
                                         </div>
                                         <div class="comments__body">
                                             <div class="row">
-                                                <div class="col-lg-8 col-md-8">
+                                                <div class="col-lg-4 col-md-4">
                                                     <div class="d-flex--content-inline">
                                                         <header class="comment-meta comments__header">
                                                             <cite class="fn url comments__author">
@@ -119,7 +119,19 @@
                                                     </div>
                                                 </div>
                                                 <?php if(auth()->user()): ?>
-                                                    <?php if($comment->user_id == auth()->user()->id): ?>
+                                                    <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id): ?>
+                                                        <div class="col-lg-4 col-md-4">
+                                                            <?php echo Form::open([
+                                                                'route' => ['payNow'],
+                                                                'method' => 'post'
+                                                            ]); ?>
+
+                                                            <input type="hidden" value="<?php echo e($event->id); ?>" name="event_id">
+                                                            <input type="hidden" value="<?php echo e($comment->value); ?>" name="value">
+                                                            <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="pay now"><?php echo e($comment->value); ?> (EGY)</button>
+                                                            <?php echo Form::close(); ?>
+
+                                                        </div>
                                                         <div class="col-lg-4 col-md-4">
                                                             <?php echo Form::open([
                                                                 'route' => ['comment.delete',$comment->id],
@@ -130,6 +142,7 @@
                                                                 Delete
                                                             </button>
                                                             <?php echo Form::close(); ?>
+
 
                                                         </div>
                                                     <?php endif; ?>

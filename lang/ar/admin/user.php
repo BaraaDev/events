@@ -32,6 +32,7 @@ return [
     'invitation_address'             => 'عنوان الدعوة',
     'date'                           => 'التاريخ',
     'about_me'                       => 'ْعَنِّي',
+    'change_password'                => 'غير كلمة السر',
     'current_password'               => 'كلمة المرور الحالية',
     'password'                       => 'كلمة المرور',
     'new_password'                   => 'كلمة المرور الجديدة',

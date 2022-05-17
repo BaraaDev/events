@@ -32,6 +32,7 @@ return [
     'invitation_address'             => 'invitation Address',
     'date'                           => 'Date',
     'about_me'                       => 'About Me',
+    'change_password'                => 'Change Password',
     'current_password'               => 'Current Password',
     'password'                       => 'Password',
     'new_password'                   => 'New Password',
