@@ -17,8 +17,6 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('order_id');
             $table->unsignedBigInteger('event_id')->nullable();
-            $table->integer('event_id');
-            $table->integer('order_id');
             $table->float('price');
             $table->timestamps();
             $table->softDeletes();

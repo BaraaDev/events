@@ -21,7 +21,6 @@ return new class extends Migration
             $table->unsignedBigInteger('user_to_id');
             $table->float('value');
             $table->boolean('is_paid')->default(false);
-            $table->integer('user_id');
             $table->timestamps();
             $table->softDeletes();
         });
