@@ -140,8 +140,6 @@
                                                             <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">{{__('website/home.delete')}}</button>
                                                             {!! Form::close() !!}
                                                         </div>
-
-
                                                     @endif
                                                 @endif
 

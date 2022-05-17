@@ -144,8 +144,6 @@
                                                             <?php echo Form::close(); ?>
 
                                                         </div>
-
-
                                                     <?php endif; ?>
                                                 <?php endif; ?>
 
