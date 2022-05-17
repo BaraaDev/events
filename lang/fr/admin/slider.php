@@ -25,4 +25,6 @@ return [
     'blue'                          => 'Bleu',
     'red'                           => 'Rouge',
     'grey'                          => 'Gris',
+    'deleted_sliders'               => 'Deleted Sliders',
+    'all_sliders'                   => 'All Sliders',
 ];
