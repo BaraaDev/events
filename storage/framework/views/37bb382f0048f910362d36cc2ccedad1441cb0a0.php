@@ -1,6 +1,6 @@
 <header class="main-nav">
     <div class="sidebar-user text-center">
-        <a class="setting-primary" href="<?php echo e(route('setting')); ?>"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(auth()->user()->photo ?? ''); ?>" alt="avatar <?php echo e(auth()->user()->name ?? ''); ?>" />
+        <a class="setting-primary" href="<?php echo e(route('edit-profile')); ?>"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(auth()->user()->photo ?? ''); ?>" alt="avatar <?php echo e(auth()->user()->name ?? ''); ?>" />
         <?php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); ?>
         <?php if($data <= 7): ?>
             <div class="badge-bottom">
@@ -31,7 +31,6 @@
                     </li>
                     <!------------- End route dashboard ------------->
 
-                    
                     <!------------- Start route site ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title" href="<?php echo e(route('home')); ?>"><i data-feather="home"></i><span><?php echo e(__('website/home.home')); ?></span></a>
