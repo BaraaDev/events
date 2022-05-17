@@ -30,26 +30,12 @@
                         <a class="nav-link menu-title active" href="{{route('dashboard')}}"><i data-feather="home"></i><span>{{__('admin/home.dashboard')}}</span></a>
                     </li>
                     <!------------- End route dashboard ------------->
+
                     <!------------- Start route site ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title" href="{{route('home')}}"><i data-feather="home"></i><span>{{__('website/home.home')}}</span></a>
                     </li>
                     <!------------- End route site ------------->
-
-
-                    <!------------- Start route contributions ------------->
-                    <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('contributions.index') || routeActive('contributions.create') || routeActive('contributions.delete')) active @endif" href="javascript:void(0)">
-                            <i data-feather="edit"></i>
-                            <span>{{__('admin/contribution.contributions')}}</span>
-                        </a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('contributions.index') || routeActive('contributions.create')  || routeActive('contributions.delete')) block @else none @endif ;">
-                            <li><a href="{{ route('contributions.create') }}" class="{{routeActive('contributions.create')}}">{{__('admin/contribution.create')}}</a></li>
-                            <li><a href="{{ route('contributions.index') }}" class="{{routeActive('contributions.index')}}">{{__('admin/contribution.all_contributions')}}</a></li>
-                            <li><a href="{{ route('contributions.delete') }}" class="{{routeActive('contributions.delete')}}">{{__('admin/contribution.deleted_contributions')}}</a></li>
-                        </ul>
-                    </li>
-                    <!------------- End route contributions ------------->
 
 
                     <!------------- Start route sliders ------------->
@@ -66,7 +52,7 @@
                     </li>
                     <!------------- End route sliders ------------->
 
-                    
+
                     <!------------- Start route tags ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('tags.index') || routeActive('tags.create') || routeActive('tags.delete')) active @endif" href="javascript:void(0)">
@@ -97,7 +83,7 @@
                     <!------------- End route countries ------------->
 
 
-                    <!------------- Start route governorate ------------->
+                    <!------------- Start route governorates ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('governorates.index') || routeActive('governorates.create') || routeActive('governorates.delete')) active @endif" href="javascript:void(0)">
                             <i data-feather="map"></i>
@@ -109,7 +95,7 @@
                             <li><a href="{{ route('governorates.delete') }}" class="{{routeActive('governorates.delete')}}">{{__('admin/governorate.deleted_governorates')}}</a></li>
                         </ul>
                     </li>
-                    <!------------- End route governorate ------------->
+                    <!------------- End route governorates ------------->
 
 
                     <!------------- Start route cities ------------->
@@ -155,6 +141,21 @@
                         </ul>
                     </li>
                     <!------------- End route events ------------->
+
+
+                    <!------------- Start route contributions ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('contributions.index') || routeActive('contributions.create') || routeActive('contributions.delete')) active @endif" href="javascript:void(0)">
+                            <i data-feather="edit"></i>
+                            <span>{{__('admin/contribution.contributions')}}</span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('contributions.index') || routeActive('contributions.create')  || routeActive('contributions.delete')) block @else none @endif ;">
+                            <li><a href="{{ route('contributions.create') }}" class="{{routeActive('contributions.create')}}">{{__('admin/contribution.create')}}</a></li>
+                            <li><a href="{{ route('contributions.index') }}" class="{{routeActive('contributions.index')}}">{{__('admin/contribution.all_contributions')}}</a></li>
+                            <li><a href="{{ route('contributions.delete') }}" class="{{routeActive('contributions.delete')}}">{{__('admin/contribution.deleted_contributions')}}</a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route contributions ------------->
 
 
                     <!------------- Start route setting ------------->

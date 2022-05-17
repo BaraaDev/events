@@ -30,26 +30,13 @@
                         <a class="nav-link menu-title active" href="<?php echo e(route('dashboard')); ?>"><i data-feather="home"></i><span><?php echo e(__('admin/home.dashboard')); ?></span></a>
                     </li>
                     <!------------- End route dashboard ------------->
+
+                    
                     <!------------- Start route site ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title" href="<?php echo e(route('home')); ?>"><i data-feather="home"></i><span><?php echo e(__('website/home.home')); ?></span></a>
                     </li>
                     <!------------- End route site ------------->
-
-
-                    <!------------- Start route contributions ------------->
-                    <li class="dropdown">
-                        <a class="nav-link menu-title <?php if(routeActive('contributions.index') || routeActive('contributions.create') || routeActive('contributions.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
-                            <i data-feather="edit"></i>
-                            <span><?php echo e(__('admin/contribution.contributions')); ?></span>
-                        </a>
-                        <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('contributions.index') || routeActive('contributions.create')  || routeActive('contributions.delete')): ?> block <?php else: ?> none <?php endif; ?> ;">
-                            <li><a href="<?php echo e(route('contributions.create')); ?>" class="<?php echo e(routeActive('contributions.create')); ?>"><?php echo e(__('admin/contribution.create')); ?></a></li>
-                            <li><a href="<?php echo e(route('contributions.index')); ?>" class="<?php echo e(routeActive('contributions.index')); ?>"><?php echo e(__('admin/contribution.all_contributions')); ?></a></li>
-                            <li><a href="<?php echo e(route('contributions.delete')); ?>" class="<?php echo e(routeActive('contributions.delete')); ?>"><?php echo e(__('admin/contribution.deleted_contributions')); ?></a></li>
-                        </ul>
-                    </li>
-                    <!------------- End route contributions ------------->
 
 
                     <!------------- Start route sliders ------------->
@@ -66,7 +53,7 @@
                     </li>
                     <!------------- End route sliders ------------->
 
-                    
+
                     <!------------- Start route tags ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title <?php if(routeActive('tags.index') || routeActive('tags.create') || routeActive('tags.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
@@ -97,7 +84,7 @@
                     <!------------- End route countries ------------->
 
 
-                    <!------------- Start route governorate ------------->
+                    <!------------- Start route governorates ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title <?php if(routeActive('governorates.index') || routeActive('governorates.create') || routeActive('governorates.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
                             <i data-feather="map"></i>
@@ -109,7 +96,7 @@
                             <li><a href="<?php echo e(route('governorates.delete')); ?>" class="<?php echo e(routeActive('governorates.delete')); ?>"><?php echo e(__('admin/governorate.deleted_governorates')); ?></a></li>
                         </ul>
                     </li>
-                    <!------------- End route governorate ------------->
+                    <!------------- End route governorates ------------->
 
 
                     <!------------- Start route cities ------------->
@@ -155,6 +142,21 @@
                         </ul>
                     </li>
                     <!------------- End route events ------------->
+
+
+                    <!------------- Start route contributions ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php if(routeActive('contributions.index') || routeActive('contributions.create') || routeActive('contributions.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
+                            <i data-feather="edit"></i>
+                            <span><?php echo e(__('admin/contribution.contributions')); ?></span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('contributions.index') || routeActive('contributions.create')  || routeActive('contributions.delete')): ?> block <?php else: ?> none <?php endif; ?> ;">
+                            <li><a href="<?php echo e(route('contributions.create')); ?>" class="<?php echo e(routeActive('contributions.create')); ?>"><?php echo e(__('admin/contribution.create')); ?></a></li>
+                            <li><a href="<?php echo e(route('contributions.index')); ?>" class="<?php echo e(routeActive('contributions.index')); ?>"><?php echo e(__('admin/contribution.all_contributions')); ?></a></li>
+                            <li><a href="<?php echo e(route('contributions.delete')); ?>" class="<?php echo e(routeActive('contributions.delete')); ?>"><?php echo e(__('admin/contribution.deleted_contributions')); ?></a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route contributions ------------->
 
 
                     <!------------- Start route setting ------------->

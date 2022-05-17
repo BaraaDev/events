@@ -1,15 +1,13 @@
-
-
-<?php $__env->startSection('title'); ?> <?php echo e(__('admin/contribution.edit')); ?> (<?php echo e($model->name); ?>) <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?> <?php echo e(__('admin/contribution.edit')); ?> (<?php echo e($model->title); ?>) <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 
     <?php $__env->startComponent('components.breadcrumb'); ?>
         <?php $__env->slot('breadcrumb_title'); ?>
-            <h3><?php echo e(__('admin/contribution.edit')); ?> (<?php echo e($model->name); ?>)</h3>
+            <h3><?php echo e(__('admin/contribution.edit')); ?> (<?php echo e($model->title); ?>)</h3>
         <?php $__env->endSlot(); ?>
         <li class="breadcrumb-item"><a href="<?php echo e(route('contributions.index')); ?>"><?php echo e(__('admin/contribution.contributions')); ?></a> </li>
-        <li class="breadcrumb-item active"><?php echo e(__('admin/contribution.edit')); ?> (<?php echo e($model->name); ?>)</li>
+        <li class="breadcrumb-item active"><?php echo e(__('admin/contribution.edit')); ?> (<?php echo e($model->title); ?>)</li>
         <?php $__env->slot('bookmark'); ?>
             <a href="<?php echo e(route('contributions.create')); ?>" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="<?php echo e(__('admin/contribution.addContribution')); ?>"><?php echo e(__('admin/contribution.addContribution')); ?></a>
         <?php $__env->endSlot(); ?>
