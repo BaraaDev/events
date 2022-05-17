@@ -19,6 +19,7 @@ class PaymentController extends Controller
         $order =  Order::create([
             'value'        => $request->value,
             'is_paid'      => 0,
+            'user_to_id'   => $request->user_to,
             'user_id'      => auth()->user()->id,
             'order_number' => auth()->user()->id,
 

@@ -106,7 +106,7 @@
                                         </div>
                                         <div class="comments__body">
                                             <div class="row">
-                                                <div class="col-lg-4 col-md-4">
+                                                <div class="col-lg-4 col-md-4" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
                                                     <div class="d-flex--content-inline">
                                                         <header class="comment-meta comments__header">
                                                             <cite class="fn url comments__author">
@@ -120,14 +120,16 @@
                                                 </div>
                                                 @if(auth()->user())
                                                     @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id)
+
                                                         <div class="col-lg-4 col-md-4">
                                                             {!! Form::open([
                                                                 'route' => ['payNow'],
                                                                 'method' => 'post'
                                                             ])!!}
                                                             <input type="hidden" value="{{ $event->id }}" name="event_id">
+                                                            <input type="hidden" value="{{ $comment->user_id }}" name="user_to">
                                                             <input type="hidden" value="{{ $comment->value }}" name="value">
-                                                            <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="pay now">{{$comment->value}} (EGY)</button>
+                                                            <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="{{__('website/home.payNow')}}">{{$comment->value}} (USD)</button>
                                                             {!! Form::close() !!}
                                                         </div>
                                                         <div class="col-lg-4 col-md-4">
@@ -135,12 +137,11 @@
                                                                 'route' => ['comment.delete',$comment->id],
                                                                 'method' => 'delete'
                                                             ])!!}
-                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">
-                                                                Delete
-                                                            </button>
+                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">{{__('website/home.delete')}}</button>
                                                             {!! Form::close() !!}
-
                                                         </div>
+
+
                                                     @endif
                                                 @endif
 
