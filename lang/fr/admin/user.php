@@ -34,6 +34,7 @@ return [
     'about_me'                       => 'Sur moi',
     'current_password'               => 'Mot de passe actuel',
     'password'                       => 'Mot de passe',
+    'new_password'                   => 'Nouveau mot de passe',
     'confirm_password'               => 'Confirmez le mot de passe',
     'enter_current_password'         => 'Saisissez le mot de passe actuel',
     'enter_password'                 => 'Entrer le mot de passe',

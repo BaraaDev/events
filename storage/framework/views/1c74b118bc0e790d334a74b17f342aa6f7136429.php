@@ -37,7 +37,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
 </div>
 <div class="mb-3">
-    <label class="form-label"><?php echo e(__('admin/user.password')); ?></label>
+    <label class="form-label"><?php echo e(__('admin/user.new_password')); ?></label>
     <input class="form-control <?php $__errorArgs = ['password'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :

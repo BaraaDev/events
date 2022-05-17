@@ -34,6 +34,7 @@ return [
     'about_me'                       => 'ْعَنِّي',
     'current_password'               => 'كلمة المرور الحالية',
     'password'                       => 'كلمة المرور',
+    'new_password'                   => 'كلمة المرور الجديدة',
     'confirm_password'               => 'تأكيد كلمة المرور',
     'enter_current_password'         => 'إدخل كلمة السر الحالية',
     'enter_password'                 => 'أدخل كلمة المرور',

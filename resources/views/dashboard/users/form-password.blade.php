@@ -23,7 +23,7 @@
     @enderror
 </div>
 <div class="mb-3">
-    <label class="form-label">{{__('admin/user.password')}}</label>
+    <label class="form-label">{{__('admin/user.new_password')}}</label>
     <input class="form-control @error('password') is-invalid @enderror" name="password" type="password" placeholder="{{__('admin/user.enter_password')}}"/>
     @error('password')
     <span class="invalid-feedback" role="alert">
