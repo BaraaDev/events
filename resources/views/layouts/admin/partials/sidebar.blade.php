@@ -1,6 +1,6 @@
 <header class="main-nav">
     <div class="sidebar-user text-center">
-        <a class="setting-primary" href="{{ route('setting') }}"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="{{auth()->user()->photo ?? ''}}" alt="avatar {{auth()->user()->name ?? ''}}" />
+        <a class="setting-primary" href="{{ route('edit-profile') }}"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="{{auth()->user()->photo ?? ''}}" alt="avatar {{auth()->user()->name ?? ''}}" />
         @php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); @endphp
         @if($data <= 7)
             <div class="badge-bottom">
@@ -37,6 +37,36 @@
                     <!------------- End route site ------------->
 
 
+                    <!------------- Start route contributions ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('contributions.index') || routeActive('contributions.create') || routeActive('contributions.delete')) active @endif" href="javascript:void(0)">
+                            <i data-feather="edit"></i>
+                            <span>{{__('admin/contribution.contributions')}}</span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('contributions.index') || routeActive('contributions.create')  || routeActive('contributions.delete')) block @else none @endif ;">
+                            <li><a href="{{ route('contributions.create') }}" class="{{routeActive('contributions.create')}}">{{__('admin/contribution.create')}}</a></li>
+                            <li><a href="{{ route('contributions.index') }}" class="{{routeActive('contributions.index')}}">{{__('admin/contribution.all_contributions')}}</a></li>
+                            <li><a href="{{ route('contributions.delete') }}" class="{{routeActive('contributions.delete')}}">{{__('admin/contribution.deleted_contributions')}}</a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route contributions ------------->
+
+
+                    <!------------- Start route sliders ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('sliders.index') || routeActive('sliders.create') || routeActive('sliders.delete')) active @endif" href="javascript:void(0)">
+                            <i data-feather="sliders"></i>
+                            <span>{{__('admin/slider.sliders')}}</span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('sliders.index') || routeActive('sliders.create')  || routeActive('sliders.delete')) block @else none @endif ;">
+                            <li><a href="{{ route('sliders.create') }}" class="{{routeActive('sliders.create')}}">{{__('admin/slider.create')}}</a></li>
+                            <li><a href="{{ route('sliders.index') }}" class="{{routeActive('sliders.index')}}">{{__('admin/slider.all_sliders')}}</a></li>
+                            <li><a href="{{ route('sliders.delete') }}" class="{{routeActive('sliders.delete')}}">{{__('admin/slider.deleted_sliders')}}</a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route sliders ------------->
+
+                    
                     <!------------- Start route tags ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('tags.index') || routeActive('tags.create') || routeActive('tags.delete')) active @endif" href="javascript:void(0)">

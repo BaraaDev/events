@@ -16,4 +16,5 @@ return [
     'applicants_numbers'           => 'Numéros de candidats',
     'Prev_Page'                    => 'Page précédente',
     'Next_Page'                    => 'Page suivante',
+    'Well_done'                    => 'Bon travail!',
 ];

@@ -22,4 +22,5 @@ return [
     'governorate'                  => 'Governorate',
     'city'                         => 'City',
     'category'                     => 'Category',
+    'Well_done'                    => 'Well Done! ',
 ];

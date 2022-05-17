@@ -19,6 +19,11 @@ class Category extends Model
         return $this->hasMany(Event::class,'category_id');
     }
 
+    public function contributions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Contribution::class);
+    }
+
     public function scopeStatus($query,$arg)
     {
         return $query->where('status',$arg);

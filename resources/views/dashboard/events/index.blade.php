@@ -47,7 +47,7 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$event->title}}</td>
                                         <td class="text-center">{{$event->budget}}</td>
-                                        <td class="text-center"><a href="{{route('categories.edit',$event->category->id ?? '')}}">{{$event->category->name ?? ''}}</a></td>
+                                        <td class="text-center"><a href="{{route('events.edit',$event->category->id ?? '')}}">{{$event->category->name ?? ''}}</a></td>
                                         <td class="text-center">
                                             <a href="{{route('countries.edit',$event->country->id ?? '')}}">{{$event->country->name ?? ''}}</a> -
                                             <a href="{{route('governorates.edit',$event->governorate->id ?? '')}}">{{$event->governorate->name ?? ''}}</a> -

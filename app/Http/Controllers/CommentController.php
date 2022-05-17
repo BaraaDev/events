@@ -25,6 +25,6 @@ class CommentController extends Controller
     {
         Comment::where('id', $id)->delete();
         return redirect()->back()
-            ->with(['message' => __('website/home.deleted_successfully')]);
+            ->with(['delete' => __('website/home.deleted_successfully')]);
     }
 }

@@ -28,7 +28,11 @@
                                 <div class="title">
                                     <a target="_blank" href="">
                                         <h4>{{$user->name}}</h4>
-                                        <h6>{{$user->user_type}}</h6>
+                                        @if($user->user_type =='dashboard')
+                                            <h6>Admin</h6>
+                                        @else
+                                            <h6>{{$user->user_type}}</h6>
+                                        @endif
                                     </a>
                                 </div>
                                 <div class="social-media">

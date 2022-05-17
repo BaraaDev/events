@@ -29,10 +29,13 @@
         </div>
         <!--end Header -->
 
-
         <!-- Start Event-->
         <section class="medium-padding100">
+
             <div class="container">
+                <?php if(session('delete') ?? '' ): ?>
+                    <?php echo $__env->make('layouts.website.partials.alert.danger', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                <?php endif; ?>
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                         <div class="block-rounded-shadow">
@@ -92,8 +95,10 @@
                             </div>
 
                             <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-
-                            <ol class="comments__list" id="comments<?php echo e($comment->id); ?>">
+                            <?php if(session('message') ?? '' ): ?>
+                                <?php echo $__env->make('layouts.website.partials.alert.success', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                            <?php endif; ?>
+                            <ol class="comments__list">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
                                         <div class="comments__avatar">
@@ -159,9 +164,7 @@
                                     <li><a><?php echo e(__('website/home.publication_date')); ?>:<span class="cat-count"><?php echo e($event->created_at->format('Y-d-h')); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.budget')); ?>:<span class="cat-count"><?php echo e($event->budget); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.applicants_numbers')); ?>:<span class="cat-count"><?php echo e($event->comments->count()); ?></span></a></li>
-
-                                    <li><a><?php echo e(__('website/home.average_offers')); ?>:<span class="cat-count"><?php echo e(intval($event->comments->sum() ?? '' / $event->comments->count() ?? '')); ?></span></a></li>
-
+                                    <li><a><?php echo e(__('website/home.average_offers')); ?>:<span class="cat-count"><?php echo e(intval($event->comments->sum('value') ?? '' / $event->comments->count() ?? '')); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.country')); ?>:<span class="cat-count"><?php echo e($event->country->name ?? ''); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.governorate')); ?>:<span class="cat-count"><?php echo e($event->governorate->name ?? ''); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.city')); ?>:<span class="cat-count"><?php echo e($event->city->name ?? ''); ?></span></a></li>
