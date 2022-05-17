@@ -35,7 +35,7 @@
     @enderror
 </div>
 <div class="mb-3">
-    <label class="form-label">{{__('admin/user.confirm_password')}}</label>
+    <label class="form-label">{{__('admin/user.confirm_new_password')}}</label>
     <input class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation" type="password" placeholder="{{__('admin/user.enter_password_confirmation')}}"/>
     @error('password_confirmation')
     <span class="invalid-feedback" role="alert">

@@ -36,7 +36,7 @@ return [
     'current_password'               => 'كلمة المرور الحالية',
     'password'                       => 'كلمة المرور',
     'new_password'                   => 'كلمة المرور الجديدة',
-    'confirm_password'               => 'تأكيد كلمة المرور',
+    'confirm_new_password'           => 'تأكيد كلمة المرور الجديدة',
     'enter_current_password'         => 'إدخل كلمة السر الحالية',
     'enter_password'                 => 'أدخل كلمة المرور',
     'enter_password_confirmation'    => 'أدخل تأكيد كلمة المرور',

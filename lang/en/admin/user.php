@@ -36,7 +36,7 @@ return [
     'current_password'               => 'Current Password',
     'password'                       => 'Password',
     'new_password'                   => 'New Password',
-    'confirm_password'               => 'Confirm Password',
+    'confirm_new_password'           => 'Confirm New Password',
     'enter_current_password'         => 'Enter Current Password',
     'enter_password'                 => 'Enter Password',
     'enter_password_confirmation'    => 'Enter Password Confirmation',
