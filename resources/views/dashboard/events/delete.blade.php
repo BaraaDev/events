@@ -42,7 +42,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$event->title}}</td>
-                                        <td class="text-center">{{$event->budget}}</td>
+                                        <td class="text-center">{{$event->budget}} USD</td>
                                         <td class="text-center">{{$event->create_user->name ?? ''}}</td>
                                         <td class="text-center" title="{{$event->created_at->format('Y-D-M h:m')}}">{{$event->created_at->format('Y-D-M')}}</td>
                                         <td class="text-center" title="{{$event->deleted_at->format('Y-D-M h:m')}}">{{$event->deleted_at->format('Y-D-M')}}</td>
