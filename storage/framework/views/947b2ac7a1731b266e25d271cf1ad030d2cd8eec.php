@@ -38,6 +38,7 @@
                                 <div class="curriculum-event-thumb">
                                     <img src="<?php echo e($event->photo); ?>" alt="<?php echo e($event->title); ?>">
                                     <div class="category-link c-yellow"><?php echo e($event->category->name ?? ''); ?></div>
+
                                     <div class="curriculum-event-content">
                                         <div class="author-block inline-items">
                                             <div class="author-avatar">
@@ -59,6 +60,15 @@
                                             <a href="<?php echo e(route('event.country',$event->country_id)); ?>"><?php echo e($event->country->name ?? ''); ?></a> ,
                                             <a href="<?php echo e(route('event.governorate',$event->governorate_id)); ?>"><?php echo e($event->governorate->name ?? ''); ?></a> ,
                                             <a href="<?php echo e(route('event.city',$event->city_id)); ?>"><?php echo e($event->city->name ?? ''); ?></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-sm-8 col-md-8">
+                                            <div class="c-green"><?php echo e($event->status ?? ''); ?></div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 col-md-4">
+                                            <div class="c-green" style="float: left; margin: 0 auto;"><?php echo e($event->budget); ?> USD</div>
                                         </div>
                                     </div>
                                     <a href="<?php echo e(route('event.show',$event->id)); ?>" class="h5 title"><?php echo e($event->title); ?></a>

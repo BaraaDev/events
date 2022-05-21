@@ -31,10 +31,13 @@
         </div>
         <!--end Header -->
 
-
         <!-- Start Event-->
         <section class="medium-padding100">
+
             <div class="container">
+                <?php if(session('delete') ?? '' ): ?>
+                    <?php echo $__env->make('layouts.website.partials.alert.danger', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                <?php endif; ?>
                 <div class="row">
                     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
                         <div class="block-rounded-shadow">
@@ -94,8 +97,10 @@
                             </div>
 
                             <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-
-                            <ol class="comments__list" id="comments<?php echo e($comment->id); ?>">
+                            <?php if(session('message') ?? '' ): ?>
+                                <?php echo $__env->make('layouts.website.partials.alert.success', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                            <?php endif; ?>
+                            <ol class="comments__list">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
                                         <div class="comments__avatar">
@@ -103,7 +108,7 @@
                                         </div>
                                         <div class="comments__body">
                                             <div class="row">
-                                                <div class="col-lg-8 col-md-8">
+                                                <div class="col-lg-4 col-md-4" <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> style="float: right; margin: 0 auto;" <?php endif; ?>>
                                                     <div class="d-flex--content-inline">
                                                         <header class="comment-meta comments__header">
                                                             <cite class="fn url comments__author">
@@ -116,16 +121,28 @@
                                                     </div>
                                                 </div>
                                                 <?php if(auth()->user()): ?>
-                                                    <?php if($comment->user_id == auth()->user()->id): ?>
+                                                    <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id): ?>
+
+                                                        <div class="col-lg-4 col-md-4">
+                                                            <?php echo Form::open([
+                                                                'route' => ['payNow'],
+                                                                'method' => 'post'
+                                                            ]); ?>
+
+                                                            <input type="hidden" value="<?php echo e($event->id); ?>" name="event_id">
+                                                            <input type="hidden" value="<?php echo e($comment->user_id); ?>" name="user_to">
+                                                            <input type="hidden" value="<?php echo e($comment->value); ?>" name="value">
+                                                            <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="<?php echo e(__('website/home.payNow')); ?>"><?php echo e($comment->value); ?> (USD)</button>
+                                                            <?php echo Form::close(); ?>
+
+                                                        </div>
                                                         <div class="col-lg-4 col-md-4">
                                                             <?php echo Form::open([
                                                                 'route' => ['comment.delete',$comment->id],
                                                                 'method' => 'delete'
                                                             ]); ?>
 
-                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">
-                                                                Delete
-                                                            </button>
+                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;"><?php echo e(__('website/home.delete')); ?></button>
                                                             <?php echo Form::close(); ?>
 
                                                         </div>
@@ -159,7 +176,7 @@
                                 <ul class="category-list">
                                     <li><a><?php echo e(__('website/home.status')); ?>:<span class="cat-count c-yellow"><?php echo e($event->status); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.publication_date')); ?>:<span class="cat-count"><?php echo e($event->created_at->format('Y-d-h')); ?></span></a></li>
-                                    <li><a><?php echo e(__('website/home.budget')); ?>:<span class="cat-count"><?php echo e($event->budget); ?></span></a></li>
+                                    <li><a><?php echo e(__('website/home.budget')); ?>:<span class="cat-count"><?php echo e($event->budget); ?> USD</span></a></li>
                                     <li><a><?php echo e(__('website/home.applicants_numbers')); ?>:<span class="cat-count"><?php echo e($event->comments->count()); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.average_offers')); ?>:<span class="cat-count"><?php echo e(intval($event->comments->sum('value') ?? '' / $event->comments->count() ?? '')); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.country')); ?>:<span class="cat-count"><?php echo e($event->country->name ?? ''); ?></span></a></li>
