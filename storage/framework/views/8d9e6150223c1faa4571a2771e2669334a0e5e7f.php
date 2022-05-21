@@ -5,7 +5,11 @@
             <div class="container">
                 <div class="stunning-header-content">
                     <div class="inline-items">
-                        <h4 class="stunning-header-title"><?php echo e($event->title); ?></h4>
+                        <h4 class="stunning-header-title"><?php echo e(__('website/event.your_latest_events')); ?></h4>
+                        <a href="<?php echo e(route('event.create')); ?>" class="btn btn--green btn--with-shadow f-right">
+                            <?php echo e(__('website/event.add_event')); ?>
+
+                        </a>
                     </div>
                     <div class="breadcrumbs-wrap inline-items">
                     <?php $__env->startComponent('components.breadcrumbs-wrap'); ?>
@@ -146,7 +150,6 @@
                                                         </div>
                                                     <?php endif; ?>
                                                 <?php endif; ?>
-
                                             </div>
                                             <div class="comment-content comment">
                                                 <p><?php echo e($comment->body ?? ''); ?></p>

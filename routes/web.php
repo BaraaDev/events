@@ -125,7 +125,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
     Route::get('/events/create', [App\Http\Controllers\EventController::class, 'create'])->name('event.create');
-    Route::get('/events/store', [App\Http\Controllers\EventController::class, 'store'])->name('event.store');
+    Route::post('/events/store', [App\Http\Controllers\EventController::class, 'store'])->name('event.store');
     Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
     Route::delete('/comment/delete/{id}/', [App\Http\Controllers\CommentController::class, 'CommentDelete'])->name('comment.delete');
     Route::get('/category/{id}', [App\Http\Controllers\EventController::class, 'category'])->name('event.category');

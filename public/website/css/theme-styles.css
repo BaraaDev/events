@@ -7478,3 +7478,8 @@ img.mfp-img {
     opacity: 1; } }
 
 /*# sourceMappingURL=maps/theme-styles.css.map */
+
+.fade:not(.show) {
+    opacity: 0 !important;
+    display: none !important;
+}

@@ -6,7 +6,7 @@
                 <div class="stunning-header-content">
                     <div class="inline-items">
                         <h4 class="stunning-header-title"><?php echo e(__('website/event.your_latest_events')); ?></h4>
-                        <a href="javascript:void(0)" class="btn btn--green btn--with-shadow f-right">
+                        <a href="<?php echo e(route('event.create')); ?>" class="btn btn--green btn--with-shadow f-right">
                             <?php echo e(__('website/event.add_event')); ?>
 
                         </a>

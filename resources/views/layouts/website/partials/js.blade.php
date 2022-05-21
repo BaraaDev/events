@@ -21,7 +21,7 @@
 <script src="{{asset('website/js/js-plugins/smooth-scroll.js')}}"></script>
 <script src="{{asset('website/js/js-plugins/segment.js')}}"></script>
 <script src="{{asset('website/js/js-plugins/bootstrap.js')}}"></script>
-
+<script src="{{asset('admin/js/bootstrap/bootstrap.min.js')}}"></script>
 
 <script src="{{asset('website/js/js-plugins/isotope.pkgd.min.js')}}"></script>
 <script src="{{asset('website/js/js-plugins/ion.rangeSlider.js')}}"></script>
