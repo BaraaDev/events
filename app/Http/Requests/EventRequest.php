@@ -40,9 +40,9 @@ class EventRequest extends FormRequest
             'governorate_id'     => 'required',
             'city_id'            => 'required',
             'category_id'        => 'required',
-            'user_id'            => 'required',
+            'user_id'            => 'nullable',
          //   'images'             => 'dimensions:width=360,height=220',
-            'status'             => 'required|in:Stopped,Available,Expired',
+            'status'             => 'nullable|in:Stopped,Available,Expired',
         ];
     }
 

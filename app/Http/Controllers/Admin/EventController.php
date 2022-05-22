@@ -79,27 +79,25 @@ class EventController extends Controller
               ->setTranslation('location', 'en', $request->location_en)
               ->setTranslation('location', 'ar', $request->location_ar)
               ->setTranslation('location', 'fr', $request->location_fr);
-        $event->time           = $request->time;
-        $event->date           = $request->date;
-        $event->country_id     = $request->country_id;
-        $event->governorate_id = $request->governorate_id;
-        $event->city_id        = $request->city_id;
-        $event->category_id    = $request->category_id;
-        $event->budget         = $request->budget;
-        $event->user_id        = $request->user_id;
-        $event->update_user_id = auth()->user()->id;
-        $event->status         = $request->status;
-        if ($request->hasFile('images')) {
+        $event->time                       = $request->time;
+        $event->date                       = $request->date;
+        $event->country_id                 = $request->country_id;
+        $event->governorate_id             = $request->governorate_id;
+        $event->city_id                    = $request->city_id;
+        $event->category_id                = $request->category_id;
+        $event->budget                     = $request->budget;
+        $event->user_id                    = $request->user_id;
+        $event->update_user_id             = auth()->user()->id;
+        $event->status                     = $request->status;
+        if($request->hasFile('images')) {
             $event
                 ->clearMediaCollection('images')
                 ->addMediaFromRequest('images')
                 ->UsingName($request->title_en)
-                ->UsingFileName("$request->title_en")
+                ->UsingFileName($request->title_en)
                 ->toMediaCollection('images');
         }
-
         $event->tags()->sync($request->tag_id);
-
         $event->save();
 
         return redirect()->route('events.index')

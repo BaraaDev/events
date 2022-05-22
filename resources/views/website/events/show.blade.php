@@ -7,7 +7,10 @@
             <div class="container">
                 <div class="stunning-header-content">
                     <div class="inline-items">
-                        <h4 class="stunning-header-title">{{$event->title}}</h4>
+                        <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
+                        <a href="{{route('event.create')}}" class="btn btn--green btn--with-shadow f-right">
+                            {{__('website/event.add_event')}}
+                        </a>
                     </div>
                     <div class="breadcrumbs-wrap inline-items">
                     @component('components.breadcrumbs-wrap')
@@ -142,7 +145,6 @@
                                                         </div>
                                                     @endif
                                                 @endif
-
                                             </div>
                                             <div class="comment-content comment">
                                                 <p>{{$comment->body ?? ''}}</p>
