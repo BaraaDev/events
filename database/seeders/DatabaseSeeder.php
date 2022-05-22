@@ -20,12 +20,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Tag::truncate();
-        User::truncate();
-        Country::truncate();
-        Governorate::truncate();
-        City::truncate();
-        Category::truncate();
+//        Tag::truncate();
+//        User::truncate();
+//        Country::truncate();
+//        Governorate::truncate();
+//        City::truncate();
+//        Category::truncate();
         $this->call(TagSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(CountrySeeder::class);

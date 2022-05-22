@@ -46,7 +46,7 @@
                                     <tr>
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($event->title); ?></td>
-                                        <td class="text-center"><?php echo e($event->budget); ?></td>
+                                        <td class="text-center"><?php echo e($event->budget); ?> USD</td>
                                         <td class="text-center"><a href="<?php echo e(route('events.edit',$event->category->id ?? '')); ?>"><?php echo e($event->category->name ?? ''); ?></a></td>
                                         <td class="text-center">
                                             <a href="<?php echo e(route('countries.edit',$event->country->id ?? '')); ?>"><?php echo e($event->country->name ?? ''); ?></a> -

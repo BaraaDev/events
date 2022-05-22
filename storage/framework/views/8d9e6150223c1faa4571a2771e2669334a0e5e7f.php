@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
         <!-- Stunning Header -->
@@ -177,7 +179,7 @@
                                 <ul class="category-list">
                                     <li><a><?php echo e(__('website/home.status')); ?>:<span class="cat-count c-yellow"><?php echo e($event->status); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.publication_date')); ?>:<span class="cat-count"><?php echo e($event->created_at->format('Y-d-h')); ?></span></a></li>
-                                    <li><a><?php echo e(__('website/home.budget')); ?>:<span class="cat-count"><?php echo e($event->budget); ?></span></a></li>
+                                    <li><a><?php echo e(__('website/home.budget')); ?>:<span class="cat-count"><?php echo e($event->budget); ?> USD</span></a></li>
                                     <li><a><?php echo e(__('website/home.applicants_numbers')); ?>:<span class="cat-count"><?php echo e($event->comments->count()); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.average_offers')); ?>:<span class="cat-count"><?php echo e(intval($event->comments->sum('value') ?? '' / $event->comments->count() ?? '')); ?></span></a></li>
                                     <li><a><?php echo e(__('website/home.country')); ?>:<span class="cat-count"><?php echo e($event->country->name ?? ''); ?></span></a></li>

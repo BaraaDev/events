@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('body');
             $table->integer('value')->unsigned();
             $table->integer('user_id')->unsigned();
-            $table->integer('parent_id')->unsigned();
+            $table->integer('parent_id')->unsigned()->nullable();
             $table->integer('commentable_id')->unsigned();
             $table->string('commentable_type');
             $table->timestamps();
