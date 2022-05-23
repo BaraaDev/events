@@ -115,7 +115,7 @@
                                         </div>
                                         <div class="comments__body">
                                             <div class="row">
-                                                <div class="@if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard') col-lg-4 col-md-4 @else col-lg-8 col-md-8 @endif" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
+                                                <div class="@if(auth()->user()) @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard') col-lg-4 col-md-4 @else col-lg-8 col-md-8 @endif @endif" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
                                                     <div class="d-flex--content-inline">
                                                         <header class="comment-meta comments__header">
                                                             <cite class="fn url comments__author">

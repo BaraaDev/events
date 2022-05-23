@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="comments__body">
                                             <div class="row">
-                                                <div class="<?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'): ?> col-lg-4 col-md-4 <?php else: ?> col-lg-8 col-md-8 <?php endif; ?>" <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> style="float: right; margin: 0 auto;" <?php endif; ?>>
+                                                <div class="<?php if(auth()->user()): ?> <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'): ?> col-lg-4 col-md-4 <?php else: ?> col-lg-8 col-md-8 <?php endif; ?> <?php endif; ?>" <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> style="float: right; margin: 0 auto;" <?php endif; ?>>
                                                     <div class="d-flex--content-inline">
                                                         <header class="comment-meta comments__header">
                                                             <cite class="fn url comments__author">
