@@ -22,8 +22,8 @@ class EventController extends Controller
 
     public function category($id)
     {
-        $category     = Category::status(1)->findOrFail($id);
-        $events       = Event::status('Available')->where('category_id',$category->id)->paginate(12);
+        $category         = Category::status(1)->findOrFail($id);
+        $events           = Event::status('Available')->where('category_id',$category->id)->paginate(12);
         return view('website.events.index',compact('events'));
     }
 
@@ -56,25 +56,30 @@ class EventController extends Controller
 
     public function create()
     {
-        $categories = Category::status(1)->get();
-        $countries = Country::all();
-        $governorates = Governorate::all();
-        $cities = City::all();
-        return view('website.events.create',compact('categories','countries','governorates','cities'));
+        if (!auth()->user()->user_type == 'supplier'){
+            $categories = Category::status(1)->get();
+            $countries = Country::all();
+            $governorates = Governorate::all();
+            $cities = City::all();
+            return view('website.events.create',compact('categories','countries','governorates','cities'));
+        } else {
+            return redirect()->route('allEvents');
+        }
+
     }
 
     public function store(EventRequest $request)
     {
         $events = new Event();
-        $events->setTranslation('title', 'en', $request->title_en)
-            ->setTranslation('title', 'ar', $request->title_ar)
-            ->setTranslation('title', 'fr', $request->title_fr)
-            ->setTranslation('description', 'en', $request->description_en)
-            ->setTranslation('description', 'ar', $request->description_ar)
-            ->setTranslation('description', 'fr', $request->description_fr)
-            ->setTranslation('location', 'en', $request->location_en)
-            ->setTranslation('location', 'ar', $request->location_ar)
-            ->setTranslation('location', 'fr', $request->location_fr);
+        $events->setTranslation('title', 'en', $request->title_en ?? '')
+            ->setTranslation('title', 'ar', $request->title_ar ?? '')
+            ->setTranslation('title', 'fr', $request->title_fr ?? '')
+            ->setTranslation('description', 'en', $request->description_en ?? '')
+            ->setTranslation('description', 'ar', $request->description_ar ?? '')
+            ->setTranslation('description', 'fr', $request->description_fr ?? '')
+            ->setTranslation('location', 'en', $request->location_en ?? '')
+            ->setTranslation('location', 'ar', $request->location_ar ?? '')
+            ->setTranslation('location', 'fr', $request->location_fr ?? '');
         $events->time               = $request->time;
         $events->date               = $request->date;
         $events->country_id         = $request->country_id;

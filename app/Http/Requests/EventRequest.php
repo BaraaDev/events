@@ -24,15 +24,15 @@ class EventRequest extends FormRequest
     public function rules()
     {
         return [
-            'title_ar'           => 'required|min:3|max:199',
-            'title_en'           => 'required|min:3|max:199',
-            'title_fr'           => 'required|min:3|max:199',
-            'description_ar'     => 'required|max:600',
-            'description_en'     => 'required|max:600',
-            'description_fr'     => 'required|max:600',
-            'location_ar'        => 'required|min:3|max:199',
-            'location_en'        => 'required|min:3|max:199',
-            'location_fr'        => 'required|min:3|max:199',
+            'title_ar'           => 'nullable|min:3|max:199',
+            'title_en'           => 'nullable|min:3|max:199',
+            'title_fr'           => 'nullable|min:3|max:199',
+            'description_ar'     => 'nullable|max:600',
+            'description_en'     => 'nullable|max:600',
+            'description_fr'     => 'nullable|max:600',
+            'location_ar'        => 'nullable|min:3|max:199',
+            'location_en'        => 'nullable|min:3|max:199',
+            'location_fr'        => 'nullable|min:3|max:199',
             'time'               => 'required|sometimes',
             'date'               => 'required|date',
             'budget'             => 'required|integer',
@@ -55,7 +55,6 @@ class EventRequest extends FormRequest
             'title_ar.required'                => __('admin/request.title_ar_required'),
             'title_ar.min'                     => __('admin/request.title_ar_min'),
             'title_ar.max'                     => __('admin/request.title_ar_max'),
-
 
             // Validation title en
             'title_en.required'                => __('admin/request.title_en_required'),

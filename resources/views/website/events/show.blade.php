@@ -6,12 +6,16 @@
         <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left stunning-header--content-inline stunning-bg-clouds">
             <div class="container">
                 <div class="stunning-header-content">
-                    <div class="inline-items">
-                        <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
-                        <a href="{{route('event.create')}}" class="btn btn--green btn--with-shadow f-right">
-                            {{__('website/event.add_event')}}
-                        </a>
-                    </div>
+                    @if(auth()->user())
+                        @if(auth()->user()->user_type == 'customer')
+                            <div class="inline-items">
+                                <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
+                                <a href="{{route('event.create')}}" class="btn btn--green btn--with-shadow f-right">
+                                    {{__('website/event.add_event')}}
+                                </a>
+                            </div>
+                        @endif
+                    @endif
                     <div class="breadcrumbs-wrap inline-items">
                     @component('components.breadcrumbs-wrap')
                         @slot('breadcrumbs_item')
@@ -52,6 +56,7 @@
                         <div class="comments">
                             @if(auth()->user())
                                 @if(count($event->comments->where('user_id',auth()->user()->id)) == 0)
+                                    @if(auth()->user()->user_type == 'supplier')
                                     <form class="contact-form" action="{{route('comment.add')}}" method="post">
                                         @csrf
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -59,10 +64,10 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <input name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
+                                                <input required name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <input disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
+                                                <input required disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
                                             </div>
 
                                             <input name="event_id" value="{{ $event->id }}" type="hidden" autocomplete="off">
@@ -83,6 +88,7 @@
                                             </div>
                                         </div>
                                     </form>
+                                    @endif
                                 @endif
                             @else
                                 <div class="crumina-module crumina-heading align-center">
@@ -109,7 +115,7 @@
                                         </div>
                                         <div class="comments__body">
                                             <div class="row">
-                                                <div class="col-lg-4 col-md-4" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
+                                                <div class="@if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard') col-lg-4 col-md-4 @else col-lg-8 col-md-8 @endif" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
                                                     <div class="d-flex--content-inline">
                                                         <header class="comment-meta comments__header">
                                                             <cite class="fn url comments__author">
@@ -121,20 +127,26 @@
                                                         </header>
                                                     </div>
                                                 </div>
-                                                @if(auth()->user())
-                                                    @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id)
+                                                <?php
 
-                                                        <div class="col-lg-4 col-md-4">
-                                                            {!! Form::open([
-                                                                'route' => ['payNow'],
-                                                                'method' => 'post'
-                                                            ])!!}
-                                                            <input type="hidden" value="{{ $event->id }}" name="event_id">
-                                                            <input type="hidden" value="{{ $comment->user_id }}" name="user_to">
-                                                            <input type="hidden" value="{{ $comment->value }}" name="value">
-                                                            <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="{{__('website/home.payNow')}}">{{$comment->value}} (USD)</button>
-                                                            {!! Form::close() !!}
-                                                        </div>
+                                                ?>
+                                                @if(auth()->user())
+                                                    @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
+                                                        @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard')
+                                                            <div class="col-lg-4 col-md-4">
+                                                                {!! Form::open([
+                                                                    'route' => ['payNow'],
+                                                                    'method' => 'post'
+                                                                ])!!}
+                                                                <input type="hidden" value="{{ $event->id }}" name="event_id">
+                                                                <input type="hidden" value="{{ $comment->user_id }}" name="user_to">
+                                                                <input type="hidden" value="{{ $comment->value }}" name="value">
+                                                                <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="{{__('website/home.payNow')}}">{{$comment->value}} (USD)</button>
+                                                                {!! Form::close() !!}
+                                                            </div>
+                                                        @endif
+
+
                                                         <div class="col-lg-4 col-md-4">
                                                             {!! Form::open([
                                                                 'route' => ['comment.delete',$comment->id],

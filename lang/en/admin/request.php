@@ -94,12 +94,15 @@ return [
     /// Check the message title
     ///////////////////////////////////////////////////////////////////////////////////////
     'title_ar_required'         => 'The Arabic title field is required!',
+    'title_ar_min'              => 'The text length of the Arabic title field must be at least 3 characters/character!',
     'title_ar_max'              => 'The text length of the Arabic title field must not exceed 199 characters/characters!',
 
     'title_en_required'         => 'The English title field is required!',
+    'title_en_min'              => 'The text length of the English title field must be at least 3 characters/character!',
     'title_en_max'              => 'The text length of the English title field must not exceed 199 characters/characters!',
 
     'title_fr_required'         => 'The French title field is required!',
+    'title_fr_min'              => 'The text length of the French title field must be at least 3 characters/character!',
     'title_fr_max'              => 'The text length of the French title field must not exceed 199 characters/characters!',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message location

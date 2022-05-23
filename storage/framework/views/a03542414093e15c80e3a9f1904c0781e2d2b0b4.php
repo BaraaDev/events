@@ -36,7 +36,7 @@
             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                 <div class="widget w-info">
                     <div class="site-logo">
-                        <a href="index.html" class="full-block"></a>
+                        <a href="<?php echo e(route('home')); ?>" class="full-block"></a>
                         <div class="logo-text">
                             <div class="logo-title">Utouch</div>
                             <div class="logo-sub-title">app startup</div>

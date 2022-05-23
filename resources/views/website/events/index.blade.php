@@ -6,12 +6,16 @@
         <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left stunning-header--content-inline stunning-bg-clouds">
             <div class="container">
                 <div class="stunning-header-content">
-                    <div class="inline-items">
-                        <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
-                        <a href="{{route('event.create')}}" class="btn btn--green btn--with-shadow f-right">
-                            {{__('website/event.add_event')}}
-                        </a>
-                    </div>
+                    @if(auth()->user())
+                        @if(auth()->user()->user_type == 'customer')
+                        <div class="inline-items">
+                            <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
+                            <a href="{{route('event.create')}}" class="btn btn--green btn--with-shadow f-right">
+                                {{__('website/event.add_event')}}
+                            </a>
+                        </div>
+                        @endif
+                    @endif
                     <div class="breadcrumbs-wrap inline-items">
                         @component('components.breadcrumbs-wrap')
                             @slot('breadcrumbs_item_active')

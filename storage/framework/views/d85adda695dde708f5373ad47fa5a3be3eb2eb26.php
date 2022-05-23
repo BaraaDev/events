@@ -4,13 +4,17 @@
         <div class="crumina-stunning-header stunning-header--breadcrumbs-bottom-left stunning-header--content-inline stunning-bg-clouds">
             <div class="container">
                 <div class="stunning-header-content">
-                    <div class="inline-items">
-                        <h4 class="stunning-header-title"><?php echo e(__('website/event.your_latest_events')); ?></h4>
-                        <a href="<?php echo e(route('event.create')); ?>" class="btn btn--green btn--with-shadow f-right">
-                            <?php echo e(__('website/event.add_event')); ?>
+                    <?php if(auth()->user()): ?>
+                        <?php if(auth()->user()->user_type == 'customer'): ?>
+                        <div class="inline-items">
+                            <h4 class="stunning-header-title"><?php echo e(__('website/event.your_latest_events')); ?></h4>
+                            <a href="<?php echo e(route('event.create')); ?>" class="btn btn--green btn--with-shadow f-right">
+                                <?php echo e(__('website/event.add_event')); ?>
 
-                        </a>
-                    </div>
+                            </a>
+                        </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
                     <div class="breadcrumbs-wrap inline-items">
                         <?php $__env->startComponent('components.breadcrumbs-wrap'); ?>
                             <?php $__env->slot('breadcrumbs_item_active'); ?>
