@@ -497,7 +497,7 @@ table > tbody > tr > td, .table > tfoot > tr > td {
 
 .choose-item.bg-primary-color::after {
   border-left-color: unset;
-  border-right-color: #0083ff; }
+  border-right-color: #E22727; }
 
 .choose-item::after {
   right: auto;

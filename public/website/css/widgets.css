@@ -12,7 +12,7 @@
 
 .w-info .logo-title {
   margin-right: 20px;
-  color: #0083ff;
+  color: #E22727;
   font-size: 45px; }
 
 .w-info .logo-sub-title {
@@ -24,7 +24,7 @@
   font-size: 14px;
   font-weight: 700; }
   .w-info .learn-more:hover {
-    color: #0083ff; }
+    color: #E22727; }
 
 .widget-title {
   margin-bottom: 20px; }
@@ -46,7 +46,7 @@
     .w-list .list li:hover .utouch-icon {
       opacity: 1; }
     .w-list .list li:hover a {
-      color: #0083ff;
+      color: #E22727;
       margin-left: 8px; }
     .w-list .list li .utouch-icon {
       width: 16px;
@@ -77,8 +77,8 @@
   height: 14px;
   width: 14px; }
   .w-follow .utouch-icon:hover {
-    color: #0083ff;
-    fill: #0083ff; }
+    color: #E22727;
+    fill: #E22727; }
 
 svg.utouch-icon {
   -webkit-transition: all .3s ease;
@@ -100,15 +100,15 @@ svg.utouch-icon {
   display: block; }
 
 .w-contacts a.info:hover {
-  color: #0083ff; }
+  color: #E22727; }
 
 .contact-item {
   margin-bottom: 5px; }
   .contact-item .utouch-icon {
     height: 18px;
     width: 18px;
-    color: #0083ff;
-    fill: #0083ff;
+    color: #E22727;
+    fill: #E22727;
     margin-right: 10px; }
 
 .contacts-text {
@@ -174,7 +174,7 @@ svg.utouch-icon {
     color: #273f5b;
     margin-bottom: 20px; }
   .location-details a:hover {
-    color: #0083ff; }
+    color: #E22727; }
 
 /*================= Responsive Mode ============*/
 @media (max-width: 580px) {
@@ -246,12 +246,12 @@ svg.utouch-icon {
     -webkit-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0; }
   .w-category .category-list li:hover a {
-    color: #0083ff; }
+    color: #E22727; }
     .w-category .category-list li:hover a:before {
-      background-color: #0083ff; }
+      background-color: #E22727; }
   .w-category .category-list li:hover .cat-count {
     color: #fff;
-    background-color: #0083ff; }
+    background-color: #E22727; }
 
 .w-category .cat-count {
   font-size: 11px;
@@ -302,9 +302,9 @@ svg.utouch-icon {
     display: block;
     line-height: 1; }
     .w-tags a:hover {
-      background-color: #0083ff;
+      background-color: #E22727;
       color: #fff;
-      border-color: #0083ff;
+      border-color: #E22727;
       -webkit-box-shadow: 10px 0 30px rgba(0, 131, 255, 0.3);
       box-shadow: 10px 0 30px rgba(0, 131, 255, 0.3); }
 
@@ -402,7 +402,7 @@ svg.utouch-icon {
       height: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
-      background-color: #0083ff;
+      background-color: #E22727;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -413,7 +413,7 @@ svg.utouch-icon {
   .tab-control + .tab-control {
     margin-left: 30px; }
   .tab-control.active a {
-    color: #0083ff; }
+    color: #E22727; }
     .tab-control.active a:after {
       opacity: 1;
       width: 100%; }

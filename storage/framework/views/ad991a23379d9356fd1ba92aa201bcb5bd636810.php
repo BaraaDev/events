@@ -95,9 +95,9 @@
                                 <div class="crumina-module crumina-heading align-center">
                                     <div class="heading-text"> <?php echo e(__('website/event.to_add')); ?>
 
-                                        <a href="<?php echo e(route('register')); ?>"><?php echo e(__('website/event.register')); ?></a> <?php echo e(__('website/event.or')); ?>
+                                        <a href="<?php echo e(route('register')); ?>" style="color: #E22727; font-weight: bold;"><?php echo e(__('website/event.register')); ?></a> <?php echo e(__('website/event.or')); ?>
 
-                                        <a href="<?php echo e(route('login')); ?>"><?php echo e(__('website/event.log_in')); ?></a>
+                                        <a href="<?php echo e(route('login')); ?>" style="color: #E22727; font-weight: bold;"><?php echo e(__('website/event.log_in')); ?></a>
                                     </div>
                                 </div>
                             <?php endif; ?>
@@ -135,7 +135,7 @@
                                                 ?>
                                                 <?php if(auth()->user()): ?>
                                                     <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
-                                                        <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'): ?>
+                                                        <?php if(auth()->user()->user_type == 'customer'): ?>
                                                             <div class="col-lg-4 col-md-4">
                                                                 <?php echo Form::open([
                                                                     'route' => ['payNow'],
