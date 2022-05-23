@@ -107,10 +107,9 @@ unset($__errorArgs, $__bag); ?>
                             <label for="user_type" class="col-md-4 col-form-label text-md-end"><?php echo e(__('User Type')); ?></label>
 
                             <div class="col-md-6">
-                                <?php $users = app('App\Models\User'); ?>
+                                
                                     <select class="form-control" name="user_type" id="user_type">
                                         <option value="user_type">Please select user type</option>
-                                        
                                     </select>                
                             </div>
                         </div>

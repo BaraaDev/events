@@ -65,14 +65,9 @@
                             <label for="user_type" class="col-md-4 col-form-label text-md-end">{{ __('User Type') }}</label>
 
                             <div class="col-md-6">
-                                @inject('users','App\Models\User')
+                                {{-- @inject('user','App\Models\User') --}}
                                     <select class="form-control" name="user_type" id="user_type">
                                         <option value="user_type">Please select user type</option>
-                                        {{-- @foreach($users as $user)
-                                        <option value="{{$user->user_type}}">
-                                            {{$user->user_type}}
-                                        </option>
-                                        @endforeach --}}
                                     </select>                
                             </div>
                         </div>
