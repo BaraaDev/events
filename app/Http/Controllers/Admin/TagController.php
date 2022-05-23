@@ -19,7 +19,6 @@ class TagController extends Controller
         return view('dashboard.tags.index',compact('tags'));
     }
 
-
     public function create()
     {
         activity()->log('The new tags creation page has been opened')->causer(auth()->user()->id);
