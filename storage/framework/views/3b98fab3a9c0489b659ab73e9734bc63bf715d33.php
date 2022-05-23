@@ -110,12 +110,7 @@ unset($__errorArgs, $__bag); ?>
                                 <?php $users = app('App\Models\User'); ?>
                                     <select class="form-control" name="user_type" id="user_type">
                                         <option value="user_type">Please select user type</option>
-                                        <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <option value="<?php echo e($user->user_type); ?>">
-                                            <?php echo e($user->user_type); ?>
-
-                                        </option>
-                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                        
                                     </select>                
                             </div>
                         </div>

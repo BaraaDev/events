@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\ContributionController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
+use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SettingController;
