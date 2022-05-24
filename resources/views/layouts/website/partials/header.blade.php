@@ -57,6 +57,30 @@
                     <li><a href="javascript:void(0)">{{__('website/home.about_us')}}</a></li>
 
                     <li><a href="javascript:void(0)">{{__('website/home.contact_us')}}</a></li>
+
+
+                    @if(!auth()->user())
+                        <li>
+                            <a href="javascript:void(0)">{{__('auth.register')}}</a>
+                            <ul class="sub-menu">
+                                <li><a href="{{route('register')}}">{{__('auth.register')}}</a></li>
+                                <li><a href="{{route('login')}}">{{__('auth.login')}}</a></li>
+                            </ul>
+                        </li>
+                    @else
+                        <li>
+                            <a href="javascript:void(0)">{{auth()->user()->name ?? ''}}</a>
+                            <ul class="sub-menu">
+                            @if(auth()->user()->user_type == 'dashboard')
+                                <li><a href="{{route('dashboard')}}">{{__('admin/home.dashboard')}}</a></li>
+                            @endif
+                                <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{__('auth.logout')}}</a></li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </ul>
+                        </li>
+                    @endif
                 </ul>
                 <ul class="nav-add">
                     <li class="search search_main">
@@ -89,10 +113,7 @@
                     </form>
                 </div>
             </nav>
-
         </div>
-
     </div>
-
 </header>
 <div class="header-spacer"></div>

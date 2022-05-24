@@ -11,6 +11,7 @@ use App\Models\Event;
 use App\Models\Governorate;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class EventController extends Controller
 {
@@ -56,7 +57,7 @@ class EventController extends Controller
 
     public function create()
     {
-        if (!auth()->user()->user_type == 'supplier'){
+        if (auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'){
             $categories = Category::status(1)->get();
             $countries = Country::all();
             $governorates = Governorate::all();
@@ -71,15 +72,58 @@ class EventController extends Controller
     public function store(EventRequest $request)
     {
         $events = new Event();
-        $events->setTranslation('title', 'en', $request->title_en ?? '')
-            ->setTranslation('title', 'ar', $request->title_ar ?? '')
-            ->setTranslation('title', 'fr', $request->title_fr ?? '')
-            ->setTranslation('description', 'en', $request->description_en ?? '')
-            ->setTranslation('description', 'ar', $request->description_ar ?? '')
-            ->setTranslation('description', 'fr', $request->description_fr ?? '')
-            ->setTranslation('location', 'en', $request->location_en ?? '')
-            ->setTranslation('location', 'ar', $request->location_ar ?? '')
-            ->setTranslation('location', 'fr', $request->location_fr ?? '');
+        if (LaravelLocalization::getCurrentLocale() == 'ar')
+        {
+            $events->setTranslation('title', 'en', $request->title_en ?? $request->title_ar)
+                ->setTranslation('title', 'ar', $request->title_ar ?? $request->title_ar)
+                ->setTranslation('title', 'fr', $request->title_fr ?? $request->title_ar);
+        }elseif (LaravelLocalization::getCurrentLocale() == 'en') {
+            $events->setTranslation('title', 'en', $request->title_en ?? $request->title_en)
+                ->setTranslation('title', 'ar', $request->title_ar ?? $request->title_en)
+                ->setTranslation('title', 'fr', $request->title_fr ?? $request->title_en);
+        }elseif (LaravelLocalization::getCurrentLocale() == 'fr') {
+            $events->setTranslation('title', 'en', $request->title_en ?? $request->title_fr)
+                ->setTranslation('title', 'ar', $request->title_ar ?? $request->title_fr)
+                ->setTranslation('title', 'fr', $request->title_fr ?? $request->title_fr);
+        }
+
+        if (LaravelLocalization::getCurrentLocale() == 'ar')
+        {
+            $events
+                ->setTranslation('description', 'en', $request->description_en ?? $request->description_ar)
+                ->setTranslation('description', 'ar', $request->description_ar ?? $request->description_ar)
+                ->setTranslation('description', 'fr', $request->description_fr ?? $request->description_ar);
+        }elseif (LaravelLocalization::getCurrentLocale() == 'en') {
+            $events
+                ->setTranslation('description', 'en', $request->description_en ?? $request->description_en)
+                ->setTranslation('description', 'ar', $request->description_ar ?? $request->description_en)
+                ->setTranslation('description', 'fr', $request->description_fr ?? $request->description_en);
+        }elseif (LaravelLocalization::getCurrentLocale() == 'fr') {
+            $events
+                ->setTranslation('description', 'en', $request->description_en ?? $request->description_fr)
+                ->setTranslation('description', 'ar', $request->description_ar ?? $request->description_fr)
+                ->setTranslation('description', 'fr', $request->description_fr ?? $request->description_fr);
+        }
+
+        if (LaravelLocalization::getCurrentLocale() == 'ar')
+        {
+            $events
+                ->setTranslation('location', 'en', $request->location_en ?? $request->location_ar)
+                ->setTranslation('location', 'ar', $request->location_ar ?? $request->location_ar)
+                ->setTranslation('location', 'fr', $request->location_fr ?? $request->location_ar);
+        }elseif (LaravelLocalization::getCurrentLocale() == 'en') {
+            $events
+                ->setTranslation('location', 'en', $request->location_en ?? $request->location_en)
+                ->setTranslation('location', 'ar', $request->location_ar ?? $request->location_en)
+                ->setTranslation('location', 'fr', $request->location_fr ?? $request->location_en);
+        }elseif (LaravelLocalization::getCurrentLocale() == 'fr') {
+            $events
+                ->setTranslation('location', 'en', $request->location_en ?? $request->location_fr)
+                ->setTranslation('location', 'ar', $request->location_ar ?? $request->location_fr)
+                ->setTranslation('location', 'fr', $request->location_fr ?? $request->location_fr);
+        }
+
+
         $events->time               = $request->time;
         $events->date               = $request->date;
         $events->country_id         = $request->country_id;
