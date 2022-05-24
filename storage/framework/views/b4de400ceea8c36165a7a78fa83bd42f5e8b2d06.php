@@ -69,7 +69,7 @@
                         </li>
                     <?php else: ?>
                         <li>
-                            <a href="javascript:void(0)" style="color: rgb(226, 36, 36);" onMouseOver="this.style.color='black'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                            <a href="javascript:void(0)" style="color: #E22727;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#E22727'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                             <ul class="sub-menu">
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
                                 <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.dashboard')); ?></a></li>
