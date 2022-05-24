@@ -95,9 +95,9 @@
                                 <div class="crumina-module crumina-heading align-center">
                                     <div class="heading-text"> <?php echo e(__('website/event.to_add')); ?>
 
-                                        <a href="<?php echo e(route('register')); ?>" style="color: #E22727; font-weight: bold;"><?php echo e(__('website/event.register')); ?></a> <?php echo e(__('website/event.or')); ?>
+                                        <a href="<?php echo e(route('register')); ?>" style="color: #0083FF; font-weight: bold;"><?php echo e(__('website/event.register')); ?></a> <?php echo e(__('website/event.or')); ?>
 
-                                        <a href="<?php echo e(route('login')); ?>" style="color: #E22727; font-weight: bold;"><?php echo e(__('website/event.log_in')); ?></a>
+                                        <a href="<?php echo e(route('login')); ?>" style="color: #0083FF; font-weight: bold;"><?php echo e(__('website/event.log_in')); ?></a>
                                     </div>
                                 </div>
                             <?php endif; ?>
