@@ -57,6 +57,31 @@
                     <li><a href="javascript:void(0)"><?php echo e(__('website/home.about_us')); ?></a></li>
 
                     <li><a href="javascript:void(0)"><?php echo e(__('website/home.contact_us')); ?></a></li>
+
+
+                    <?php if(!auth()->user()): ?>
+                        <li>
+                            <a href="javascript:void(0)"><?php echo e(__('auth.register')); ?></a>
+                            <ul class="sub-menu">
+                                <li><a href="<?php echo e(route('register')); ?>"><?php echo e(__('auth.register')); ?></a></li>
+                                <li><a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a></li>
+                            </ul>
+                        </li>
+                    <?php else: ?>
+                        <li>
+                            <a href="javascript:void(0)" style="color: rgb(226, 36, 36);" onMouseOver="this.style.color='black'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                            <ul class="sub-menu">
+                            <?php if(auth()->user()->user_type == 'dashboard'): ?>
+                                <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.dashboard')); ?></a></li>
+                            <?php endif; ?>
+                                <li><a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><?php echo e(__('auth.logout')); ?></a></li>
+                                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                                    <?php echo e(csrf_field()); ?>
+
+                                </form>
+                            </ul>
+                        </li>
+                    <?php endif; ?>
                 </ul>
                 <ul class="nav-add">
                     <li class="search search_main">
@@ -89,11 +114,8 @@
                     </form>
                 </div>
             </nav>
-
         </div>
-
     </div>
-
 </header>
 <div class="header-spacer"></div>
 <?php /**PATH E:\laragon\www\events\resources\views/layouts/website/partials/header.blade.php ENDPATH**/ ?>
