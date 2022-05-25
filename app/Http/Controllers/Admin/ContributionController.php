@@ -31,6 +31,14 @@ class ContributionController extends Controller
             ->setTranslation('content', 'fr', $request->content_fr);
         $contributions->create_user_id = auth()->user()->id;
         $contributions->category_id = $request->category_id;
+        if($request->hasFile('images')) {
+            $contributions
+                ->clearMediaCollection('images')
+                ->addMediaFromRequest('images')
+                ->UsingName($request->title_en)
+                ->UsingFileName($request->title_en)
+                ->toMediaCollection('images');
+        }
         $contributions->save();
 
         return redirect()->route('contributions.index')
@@ -60,6 +68,14 @@ class ContributionController extends Controller
         $contributions->status         = $request->status;
         $contributions->update_user_id = auth()->user()->id;
         $contributions->category_id = $request->category_id;
+        if($request->hasFile('images')) {
+            $contributions
+                ->clearMediaCollection('images')
+                ->addMediaFromRequest('images')
+                ->UsingName($request->title_en)
+                ->UsingFileName($request->title_en)
+                ->toMediaCollection('images');
+        }
         $contributions->save();
 
         return redirect()->route('contributions.index')

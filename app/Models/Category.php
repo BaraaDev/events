@@ -24,11 +24,6 @@ class Category extends Model
         return $this->hasMany(Contribution::class);
     }
 
-    public function scopeStatus($query,$arg)
-    {
-        return $query->where('status',$arg);
-    }
-
     public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -37,5 +32,10 @@ class Category extends Model
     public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function scopeStatus($query,$arg)
+    {
+        return $query->where('status',$arg);
     }
 }

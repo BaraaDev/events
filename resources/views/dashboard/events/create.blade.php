@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link @if(LaravelLocalization::getCurrentLocale() == 'fr') active  @endif" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="@if(LaravelLocalization::getCurrentLocale() == 'ar') true @else false @endif">{{__('admin/home.french')}}</a></li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <form action="{{route('events.store')}}" method="post" id="alert-form">
+                    <form action="{{route('events.store')}}" method="post" id="alert-form" files="true" enctype="multipart/form-data">
                         @csrf
                         @include('dashboard.events.form')
                         <button class="btn btn-success mt-4 d-block me-auto" type="submit">{{__('admin/event.add_new')}}</button>

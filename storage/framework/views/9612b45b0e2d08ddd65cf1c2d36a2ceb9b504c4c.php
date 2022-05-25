@@ -25,7 +25,7 @@
                     <li class="nav-item"><a class="nav-link <?php if(LaravelLocalization::getCurrentLocale() == 'fr'): ?> active  <?php endif; ?>" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="<?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> true <?php else: ?> false <?php endif; ?>"><?php echo e(__('admin/home.french')); ?></a></li>
                 </ul>
                 <div class="tab-content " id="pills-tabContent">
-                    <form action="<?php echo e(route('contributions.update',$model->id)); ?>" method="post" id="alert-form">
+                    <form action="<?php echo e(route('contributions.update',$model->id)); ?>" method="post" id="alert-form" files="true" enctype="multipart/form-data">
                         <?php echo csrf_field(); ?>
                         <?php echo e(method_field('put')); ?>
 

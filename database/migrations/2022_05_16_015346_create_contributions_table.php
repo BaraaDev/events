@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('content');
             $table->string('category_id')->nullable();
-            $table->enum('status',['1','0'])->nullable();
+            $table->string('status')->default(1);
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();
             $table->timestamps();

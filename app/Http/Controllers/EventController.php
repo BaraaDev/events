@@ -11,6 +11,7 @@ use App\Models\Event;
 use App\Models\Governorate;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class EventController extends Controller
@@ -137,8 +138,8 @@ class EventController extends Controller
         if ($request->hasFile('images')) {
             $events
                 ->addMediaFromRequest('images')
-                ->UsingName($events->title_en)
-                ->UsingFileName("$events->title_en")
+                ->UsingName($events->title_en ?? Str::random(20))
+                ->UsingFileName($events->title_en ?? Str::random(20))
                 ->toMediaCollection('images');
         }
         $events->tags()->sync($request->event_id);

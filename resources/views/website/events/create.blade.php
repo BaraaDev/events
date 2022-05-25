@@ -38,7 +38,7 @@
                 @include('layouts.website.partials.messages.message')
                 @include('layouts.website.partials.validation-errors')
                 <div class="col-lg-12">
-                    <form class="form-validate contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="{{route('event.store')}}" style="margin-bottom: 75px">
+                    <form class="form-validate contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="{{route('event.store')}}" style="margin-bottom: 75px"  files="true" enctype="multipart/form-data">
                         @csrf
                         @if(LaravelLocalization::getCurrentLocale() == 'ar')
                         <div class="row">

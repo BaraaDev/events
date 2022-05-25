@@ -37,7 +37,7 @@
                 <?php echo $__env->make('layouts.website.partials.messages.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 <?php echo $__env->make('layouts.website.partials.validation-errors', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 <div class="col-lg-12">
-                    <form class="form-validate contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="<?php echo e(route('event.store')); ?>" style="margin-bottom: 75px">
+                    <form class="form-validate contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="<?php echo e(route('event.store')); ?>" style="margin-bottom: 75px"  files="true" enctype="multipart/form-data">
                         <?php echo csrf_field(); ?>
                         <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?>
                         <div class="row">

@@ -32,5 +32,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GovernorateSeeder::class);
         $this->call(CityeSeeder::class);
         $this->call(CategorySeeder::class);
+        $this->call(SettingsSeeder::class);
     }
 }
