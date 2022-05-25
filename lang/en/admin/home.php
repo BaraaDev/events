@@ -29,7 +29,7 @@ return [
     'Enter_location_en'                  => 'Enter location in English',
     'Enter_location_fr'                  => 'Enter location in French',
     'select'                             => 'Select Choose',
-    'user'                               => 'User',
+    'customer_user'                      => 'Customer Name',
     'create_user'                        => 'Added By',
     'update_user'                        => 'Edited By',
     'expired'                            => 'Expired',

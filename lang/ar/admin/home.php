@@ -28,7 +28,7 @@ return [
     'Enter_location_en'                 => 'أدخل الموقع بالانجليزي',
     'Enter_location_fr'                 => 'أدخل الموقع بالفرنساوي',
     'select'                            => 'من فضلك اختر',
-    'user'                              => 'المستخدم',
+    'customer_user'                     => 'اسم العميل',
     'create_user'                       => 'أضيفت بواسطة',
     'update_user'                       => 'تعديل بواسطة',
     'expired'                           => 'انتهت',
