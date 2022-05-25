@@ -67,13 +67,13 @@
                             </svg>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><?php echo e(__('website/home.about_us')); ?></a>
+                            <a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a>
                             <svg class="utouch-icon utouch-icon-arrow-right">
                                 <use xlink:href="#utouch-icon-arrow-right"></use>
                             </svg>
                         </li>
                         <li>
-                            <a href="javascript:void(0)"><?php echo e(__('website/home.contributions')); ?></a>
+                            <a href="<?php echo e(route('allContributions')); ?>"><?php echo e(__('website/home.contributions')); ?></a>
                             <svg class="utouch-icon utouch-icon-arrow-right">
                                 <use xlink:href="#utouch-icon-arrow-right"></use>
                             </svg>

@@ -66,13 +66,13 @@
                             </svg>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">{{__('website/home.about_us')}}</a>
+                            <a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a>
                             <svg class="utouch-icon utouch-icon-arrow-right">
                                 <use xlink:href="#utouch-icon-arrow-right"></use>
                             </svg>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">{{__('website/home.contributions')}}</a>
+                            <a href="{{route('allContributions')}}">{{__('website/home.contributions')}}</a>
                             <svg class="utouch-icon utouch-icon-arrow-right">
                                 <use xlink:href="#utouch-icon-arrow-right"></use>
                             </svg>

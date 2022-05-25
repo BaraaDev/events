@@ -54,7 +54,7 @@
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </ul>
                     </li>
-                    <li><a href="javascript:void(0)"><?php echo e(__('website/home.about_us')); ?></a></li>
+                    <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
 
                     <li><a href="javascript:void(0)"><?php echo e(__('website/home.contact_us')); ?></a></li>
 
@@ -69,7 +69,7 @@
                         </li>
                     <?php else: ?>
                         <li>
-                            <a href="javascript:void(0)" style="color: rgb(226, 36, 36);" onMouseOver="this.style.color='black'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                             <ul class="sub-menu">
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
                                 <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.dashboard')); ?></a></li>

@@ -35,6 +35,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
     Auth::routes();
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about-us');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
     Route::get('/contributions', [App\Http\Controllers\ContributionController::class, 'index'])->name('allContributions');
     Route::get('/contributions/{id}', [App\Http\Controllers\ContributionController::class, 'show'])->name('contribution.show');
