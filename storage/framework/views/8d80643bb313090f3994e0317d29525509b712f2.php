@@ -168,7 +168,7 @@
                             </div>
                                 <!-- event end-->
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                                <div class="alert alert-primary">
+                                <div class="alert alert-secondary">
                                     <?php echo e(__('admin/home.alert_no_data')); ?>
 
                                 </div>

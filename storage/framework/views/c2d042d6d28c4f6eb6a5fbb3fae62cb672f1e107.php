@@ -42,7 +42,7 @@
                                     <tr>
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($event->title); ?></td>
-                                        <td class="text-center"><?php echo e($event->budget); ?></td>
+                                        <td class="text-center"><?php echo e($event->budget); ?> USD</td>
                                         <td class="text-center"><?php echo e($event->create_user->name ?? ''); ?></td>
                                         <td class="text-center" title="<?php echo e($event->created_at->format('Y-D-M h:m')); ?>"><?php echo e($event->created_at->format('Y-D-M')); ?></td>
                                         <td class="text-center" title="<?php echo e($event->deleted_at->format('Y-D-M h:m')); ?>"><?php echo e($event->deleted_at->format('Y-D-M')); ?></td>
@@ -60,7 +60,7 @@
                                     </tr>
 
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                                        <div class="alert alert-primary">
+                                        <div class="alert alert-secondary">
                                             <?php echo e(__('admin/home.alert_no_data')); ?>
 
                                         </div>
