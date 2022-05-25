@@ -384,7 +384,7 @@ if (!document.createElement('canvas').getContext) {
     thistle: '#D8BFD8',
     tomato: '#FF6347',
     turquoise: '#40E0D0',
-    violet: '#EE82EE',
+    violet: '#0083FF',
     wheat: '#F5DEB3',
     whitesmoke: '#F5F5F5',
     yellowgreen: '#9ACD32'

@@ -52,7 +52,7 @@
                                                 </div>
                                             @elseif($category->status == 1)
                                                 <div class="badge badge-success">
-                                                    <span>{{__('admin/home.available')}}</span>
+                                                    <span style="color:bisque;">{{__('admin/home.available')}}</span>
                                                 </div>
                                             @endif
                                         </td>

@@ -66,7 +66,7 @@
                                                 </div>
                                             @elseif($event->status == 'Available')
                                                 <div class="badge badge-success label-square">
-                                                    <span>{{__('admin/home.available')}}</span>
+                                                    <span style="color:bisque;">{{__('admin/home.available')}}</span>
                                                 </div>
                                             @endif
                                         </td>

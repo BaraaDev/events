@@ -31,7 +31,7 @@ return [
     'Enter_location_en'                      => "Entrez le lieu en Anglais",
     'Enter_location_fr'                      => 'Entrez le lieu en Français',
     'select'                                 => 'Sélectionnez Choisissez',
-    'user'                                   => "l' utilisateur",
+    'customer_user'                          => 'Nom du client',
     'create_user'                            => 'Ajouté par',
     'update_user'                            => "Dernière modification par",
     'country'                                => 'Pays',

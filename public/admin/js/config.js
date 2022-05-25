@@ -1,4 +1,4 @@
-var primary = localStorage.getItem("primary") || '#24695c';
+var primary = localStorage.getItem("primary") || '#0083FF';
 var secondary = localStorage.getItem("secondary") || '#ba895d';
 
 window.vihoAdminConfig = {

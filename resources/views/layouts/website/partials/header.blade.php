@@ -69,7 +69,7 @@
                         </li>
                     @else
                         <li>
-                            <a href="javascript:void(0)" style="color: rgb(226, 36, 36);" onMouseOver="this.style.color='black'">{{auth()->user()->name ?? ''}}</a>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                             <ul class="sub-menu">
                             @if(auth()->user()->user_type == 'dashboard')
                                 <li><a href="{{route('dashboard')}}">{{__('admin/home.dashboard')}}</a></li>

@@ -164,7 +164,7 @@
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/home.user')}} <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">{{__('admin/home.customer_user')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         @inject('user','App\Models\User')
 
