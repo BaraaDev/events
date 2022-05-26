@@ -127,9 +127,6 @@
                                                         </header>
                                                     </div>
                                                 </div>
-                                                <?php
-
-                                                ?>
                                                 @if(auth()->user())
                                                     @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
                                                         @if(auth()->user()->user_type == 'customer')
@@ -160,6 +157,23 @@
                                             </div>
                                             <div class="comment-content comment">
                                                 <p>{{$comment->body ?? ''}}</p>
+                                            </div>
+                                            <a href="" class="btn reply" onclick="$(this).next('div').slideToggle(500);return false;"></a>
+                                            <div style="display: none">
+                                                <form method="post" action="{{ route('reply.event', $comment->id)}}">
+                                                    @csrf
+                                                    {{ method_field('put') }}
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="with-icon">
+                                                            <textarea type="text" name="comment_body" class="form-control"></textarea>
+                                                            <input type="hidden" name="commentable_id" value="{{ $event->id }}" />
+                                                            <input type="hidden" name="comment_id" value="{{ $comment->id }}" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn bg-blue"><i class="icon-plus22 mr-1"></i>رد</button>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

@@ -27,4 +27,18 @@ class CommentController extends Controller
         return redirect()->back()
             ->with(['delete' => __('website/home.deleted_successfully')]);
     }
+
+    public function reply(Request $request)
+    {
+        $reply = new Comment();
+        $reply->body = $request->get('comment_body');
+        $reply->user()->associate($request->user());
+        $reply->parent_id = $request->get('comment_id');
+        $events = Event::find($request->get('commentable_id'));
+
+        $events->comments()->save($reply);
+
+        return back();
+
+    }
 }

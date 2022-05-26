@@ -340,7 +340,7 @@ unset($__errorArgs, $__bag); ?>
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/home.user')); ?> <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3"><?php echo e(__('admin/home.customer_user')); ?> <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <?php $user = app('App\Models\User'); ?>
 

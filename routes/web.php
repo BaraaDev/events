@@ -49,6 +49,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::get('/governorate/{id}', [App\Http\Controllers\EventController::class, 'governorate'])->name('event.governorate');
     Route::get('/city/{id}', [App\Http\Controllers\EventController::class, 'city'])->name('event.city');
     Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
+    Route::post('/reply', [CommentController::class,'reply'])->name('reply.event');
     //-------------------- start payment route. --------------------//
     Route::post('/payNow',[PaymentController::class,'payNow'])->name('payNow')->middleware(['auth']);
 

@@ -58,7 +58,6 @@
 
                     <li><a href="javascript:void(0)"><?php echo e(__('website/home.contact_us')); ?></a></li>
 
-
                     <?php if(!auth()->user()): ?>
                         <li>
                             <a href="javascript:void(0)"><?php echo e(__('auth.register')); ?></a>
