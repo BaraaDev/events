@@ -140,17 +140,7 @@
     </div>
 </div>
 
-<div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/service.address')}} <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <textarea class="form-control @error('address_fr') is-invalid @enderror" type="text" name="address_fr">{{Request::old('address_fr') ? Request::old('address_fr') : $model->getTranslation('address','fr')}}</textarea>
-        @error('address_fr')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-        @enderror
-    </div>
-</div>
+
 </div>
 </div>
 

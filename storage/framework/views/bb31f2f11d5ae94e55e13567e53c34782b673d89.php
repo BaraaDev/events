@@ -294,31 +294,7 @@ unset($__errorArgs, $__bag); ?>
     </div>
 </div>
 
-<div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <textarea class="form-control <?php $__errorArgs = ['address_fr'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="address_fr"><?php echo e(Request::old('address_fr') ? Request::old('address_fr') : $model->getTranslation('address','fr')); ?></textarea>
-        <?php $__errorArgs = ['address_fr'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-        <span class="invalid-feedback" role="alert">
-            <strong><?php echo e($message); ?></strong>
-        </span>
-        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-    </div>
-</div>
+
 </div>
 </div>
 
