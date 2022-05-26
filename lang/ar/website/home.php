@@ -133,4 +133,12 @@ return [
     'previous_contribution'             => 'المساهمة السابقة',
     'reply'                             => 'رد',
     'add_reply'                         => 'أضف رد',
+    'description_contact'               => 'إذا كنت ترغب في الاتصال بنا، يُرجى ملء النموذج أدناه وسنقوم بالرد عليك في أسرع وقت ممكن',
+    'send'                              => 'إرسال',
+    'send_message'                      => 'ارسل رسالة',
+    'your_name'                         => 'اسمك',
+    'email_address'                     => 'بريدك الإلكتروني',
+    'phone_number'                      => 'رقم هاتفك',
+    'subject'                           => 'الموضوع',
+    'your_message'                      => 'رسالتك',
 ];

@@ -114,7 +114,7 @@
                     </div>
 
                     <a href="#" class="btn btn--green full-width btn--with-shadow js-message-popup cd-nav-trigger">
-                        Send a Message
+                        {{__('website/home.send_message')}}
                     </a>
                 </div>
 
@@ -166,15 +166,17 @@
 </footer>
 
 <!-- End Footer -->
-
+<!-- Send Message Popup -->
 <div class="window-popup message-popup">
     <a href="#" class="popup-close js-popup-close cd-nav-trigger">
         <svg class="utouch-icon utouch-icon-cancel-1">
             <use xlink:href="#utouch-icon-cancel-1"></use>
         </svg>
     </a>
-<!-- Send Message Popup -->
-@livewire('contact-us')
+
+
+        @livewire('contact-us')
+    </div>
 </div>
 
 

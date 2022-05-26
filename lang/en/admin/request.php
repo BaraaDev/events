@@ -19,7 +19,19 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     'phone_required'          => 'The phone field is required.',
     'phone_numeric'           => 'The phone must be a number.',
-    'phone_digits'            => 'The phone must be 11 digits.',
+    'phone_digits'            => 'The phone must be 12 digits.',
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message message
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'message_required'        => 'The message field is required.',
+    'message_max'             => 'The text length of the message field must not exceed 500 characters/characters.',
+    'message_min'             => 'The text length of the message field must be at least 3 characters/character.',
+    ///////////////////////////////////////////////////////////////////////////////////////
+    /// Check the message subject
+    ///////////////////////////////////////////////////////////////////////////////////////
+    'subject_required'        => 'The subject field is required.',
+    'subject_max'             => 'The text length of the subject field must not exceed 199 characters/characters.',
+    'subject_min'             => 'The text length of the subject field must be at least 3 characters/character.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message whatsApp
     ///////////////////////////////////////////////////////////////////////////////////////

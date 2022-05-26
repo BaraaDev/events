@@ -115,7 +115,8 @@
                     </div>
 
                     <a href="#" class="btn btn--green full-width btn--with-shadow js-message-popup cd-nav-trigger">
-                        Send a Message
+                        <?php echo e(__('website/home.send_message')); ?>
+
                     </a>
                 </div>
 
@@ -167,29 +168,31 @@
 </footer>
 
 <!-- End Footer -->
-
+<!-- Send Message Popup -->
 <div class="window-popup message-popup">
     <a href="#" class="popup-close js-popup-close cd-nav-trigger">
         <svg class="utouch-icon utouch-icon-cancel-1">
             <use xlink:href="#utouch-icon-cancel-1"></use>
         </svg>
     </a>
-<!-- Send Message Popup -->
-<?php
+
+
+        <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('pat1Zyr')) {
-    $componentId = $_instance->getRenderedChildComponentId('pat1Zyr');
-    $componentTag = $_instance->getRenderedChildComponentTagName('pat1Zyr');
+} elseif ($_instance->childHasBeenRendered('apZTyTD')) {
+    $componentId = $_instance->getRenderedChildComponentId('apZTyTD');
+    $componentTag = $_instance->getRenderedChildComponentTagName('apZTyTD');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('pat1Zyr');
+    $_instance->preserveRenderedChild('apZTyTD');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('pat1Zyr', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('apZTyTD', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
+    </div>
 </div>
 
 

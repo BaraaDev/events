@@ -134,4 +134,12 @@ return [
     'previous_contribution'              => 'Previous Contribution',
     'reply'                              => 'Reply',
     'add_reply'                          => 'Add Reply',
+    'description_contact'                => 'If you would like to contact us please complete the form below and we will respond to you as soon as possible',
+    'send'                               => 'Send',
+    'send_message'                       => 'Send a Message',
+    'your_name'                          => 'Your Name',
+    'email_address'                      => 'Email Address',
+    'phone_number'                       => 'Phone Number',
+    'subject'                            => 'Subject',
+    'your_message'                       => 'Your Message',
 ];
