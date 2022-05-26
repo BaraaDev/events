@@ -105,11 +105,11 @@
                             <div class="d-flex--content-inline">
                                 <h3><?php echo e(__('website/event.provided_offers')); ?></h3>
                             </div>
-
-                            <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                             <?php if(session('message') ?? '' ): ?>
                                 <?php echo $__env->make('layouts.website.partials.alert.success', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                             <?php endif; ?>
+                            <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+
                             <ol class="comments__list">
                                 <li class="comments__item">
                                     <div class="comment-entry comment comments__article">
@@ -130,11 +130,9 @@
                                                         </header>
                                                     </div>
                                                 </div>
-                                                <?php
-
-                                                ?>
                                                 <?php if(auth()->user()): ?>
                                                     <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
+
                                                         <?php if(auth()->user()->user_type == 'customer'): ?>
                                                             <div class="col-lg-4 col-md-4">
                                                                 <?php echo Form::open([
@@ -150,8 +148,6 @@
 
                                                             </div>
                                                         <?php endif; ?>
-
-
                                                         <div class="col-lg-4 col-md-4">
                                                             <?php echo Form::open([
                                                                 'route' => ['comment.delete',$comment->id],
@@ -168,11 +164,35 @@
                                             <div class="comment-content comment">
                                                 <p><?php echo e($comment->body ?? ''); ?></p>
                                             </div>
+
                                         </div>
                                     </div>
+                                    <?php $__currentLoopData = $comment->replies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $reply): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <?php echo $__env->make('website.events.reply', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 </li>
+                                <?php if(auth()->user()): ?>
+                                    <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
+                                        <a href="" class="btn bg-yellow" onclick="$(this).next('div').slideToggle(500);return false;"><?php echo e(__('website/home.reply')); ?></a>
+                                        <div style="display: none">
+                                            <form method="post" action="<?php echo e(route('reply.event', $comment->id)); ?>">
+                                                <?php echo csrf_field(); ?>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="with-icon">
+                                                        <textarea name="comment_body" required placeholder="<?php echo e(__('website/event.offer_details')); ?>" style="min-height: 160px;"></textarea>
+                                                        <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                                        <input type="hidden" name="commentable_id" value="<?php echo e($event->id); ?>" />
+                                                        <input type="hidden" name="comment_id" value="<?php echo e($comment->id); ?>" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn bg-blue"><?php echo e(__('website/home.add_reply')); ?></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    <?php endif; ?>
+                                <?php endif; ?>
                             </ol>
-
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                                 <div class="alert alert-danger" role="alert">
                                     <strong><?php echo e(__('website/event.Oh_snap')); ?> </strong><?php echo e(__('website/event.no_offers')); ?>

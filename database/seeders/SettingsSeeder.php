@@ -21,9 +21,9 @@ class SettingsSeeder extends Seeder
             ->setTranslation('title', 'ar', 'Graduation Project 2 - AASTMT©')
             ->setTranslation('title', 'fr', 'Graduation Project 2 - AASTMT©');
         $settings
-            ->setTranslation('content', 'en', 'Graduation Project 2 - AASTMT content ')
-            ->setTranslation('content', 'ar', 'Graduation Project 2 - AASTMT content ')
-            ->setTranslation('content', 'fr', 'Graduation Project 2 - AASTMT content ');
+            ->setTranslation('content', 'en', 'Graduation Project 2 - AASTMT content')
+            ->setTranslation('content', 'ar', 'Graduation Project 2 - AASTMT content')
+            ->setTranslation('content', 'fr', 'Graduation Project 2 - AASTMT content');
         $settings->phone     = 010101010101;
         $settings->email     = 'info@event.com';
         $settings->facebook  = 'facebook';
