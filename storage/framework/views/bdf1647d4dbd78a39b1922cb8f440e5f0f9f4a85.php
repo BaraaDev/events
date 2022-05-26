@@ -28,7 +28,8 @@
 <script src="<?php echo e(asset('website/js/js-plugins/parsley.min.js')); ?>"></script>
 
 <script src="<?php echo e(asset('website/js/main.js')); ?>"></script>
-<?php echo $__env->yieldPushContent('scripts'); ?>
+
+<?php echo $__env->yieldContent('scripts'); ?>
 <?php echo \Livewire\Livewire::scripts(); ?>
 
 <?php /**PATH E:\laragon\www\event\resources\views/layouts/website/partials/js.blade.php ENDPATH**/ ?>

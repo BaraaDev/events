@@ -141,4 +141,6 @@ return [
     'phone_number'                      => 'رقم هاتفك',
     'subject'                           => 'الموضوع',
     'your_message'                      => 'رسالتك',
+    'get_touch'                         => 'ابق على تواصل معنا',
+    'central_office'                    => 'المكتب المركزي',
 ];

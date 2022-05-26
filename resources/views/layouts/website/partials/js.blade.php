@@ -28,5 +28,6 @@
 <script src="{{asset('website/js/js-plugins/parsley.min.js')}}"></script>
 
 <script src="{{asset('website/js/main.js')}}"></script>
-@stack('scripts')
+
+@yield('scripts')
 @livewireScripts

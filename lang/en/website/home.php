@@ -142,4 +142,6 @@ return [
     'phone_number'                       => 'Phone Number',
     'subject'                            => 'Subject',
     'your_message'                       => 'Your Message',
+    'get_touch'                          => 'Get in Touch with Us',
+    'central_office'                     => 'Central Office',
 ];
