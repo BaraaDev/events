@@ -2,15 +2,14 @@
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="{{ route('edit-profile') }}"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="{{auth()->user()->photo ?? ''}}" alt="avatar {{auth()->user()->name ?? ''}}" />
         @php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); @endphp
-        @if($data <= 7)
-            <div class="badge-bottom">
-                <span class="badge badge-primary">New </span>
-            </div>
-        @endif
-        <a href="{{route('profile')}}">
-            <h6 class="mt-3 f-14 f-w-600 name">{{auth()->user()->name ?? ''}}</h6>
-        </a>
-        <p class="mb-0 font-roboto">{{auth()->user()->email ?? ''}}</p>
+        @if($data <= 7) <div class="badge-bottom">
+            <span class="badge badge-primary">New </span>
+    </div>
+    @endif
+    <a href="{{route('profile')}}">
+        <h6 class="mt-3 f-14 f-w-600 name">{{auth()->user()->name ?? ''}}</h6>
+    </a>
+    <p class="mb-0 font-roboto">{{auth()->user()->email ?? ''}}</p>
     </div>
     <nav>
         <div class="main-navbar">
@@ -126,6 +125,20 @@
                         </ul>
                     </li>
                     <!------------- End route categories ------------->
+
+                    <!------------- Start route services ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title @if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')) active @endif" href="javascript:void(0)">
+                            <i data-feather="service"></i>
+                            <span>{{__('admin/service.services')}}</span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')) block @else none @endif ;">
+                            <li><a href="{{ route('services.create') }}" class="{{routeActive('services.create')}}">{{__('admin/service.create')}}</a></li>
+                            <li><a href="{{ route('services.index') }}" class="{{routeActive('services.index')}}">{{__('admin/service.all_services')}}</a></li>
+                            <li><a href="{{ route('services.delete') }}" class="{{routeActive('services.delete')}}">{{__('admin/service.deleted_services')}}</a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route services ------------->
 
 
                     <!------------- Start route events ------------->

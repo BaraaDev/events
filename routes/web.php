@@ -150,10 +150,10 @@ Route::group([
             //-------------------- start contributions route. --------------------//
 
             //-------------------- start services route. --------------------//
-            Route::resource('/services', ServiceControllerController::class);
-            Route::get('/service/delete', [serviceController::class, 'delete'])->name('services.delete');
-            Route::get('/service/restore/{id}/', [serviceController::class, 'restore'])->name('services.restore');
-            Route::delete('/service/forceDelete/{id}/', [serviceController::class, 'forceDelete'])->name('services.forceDelete');
+            Route::resource('/services', ServiceController::class);
+            Route::get('/service/delete', [ServiceController::class, 'delete'])->name('services.delete');
+            Route::get('/service/restore/{id}/', [ServiceController::class, 'restore'])->name('services.restore');
+            Route::delete('/service/forceDelete/{id}/', [ServiceController::class, 'forceDelete'])->name('services.forceDelete');
             //-------------------- start services route. --------------------//
         });
     });

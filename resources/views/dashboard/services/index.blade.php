@@ -19,7 +19,7 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <h5>{{__('admin/services.showServices')}} - <span class="b-b-success">{{App\Models\services::count()}}</span></h5>
+                    <h5>{{__('admin/services.showServices')}} - <span class="b-b-success">{{App\Models\Service::count()}}</span></h5>
                     <span>{{__('admin/services.DescriptionServices')}}</span>
                 </div>
                 <div class="card-block row">
