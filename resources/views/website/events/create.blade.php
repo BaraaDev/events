@@ -1,5 +1,8 @@
 @extends('layouts.website.master')
 @inject('model','App\Models\Event')
+@section('title')
+    - @lang('website/event.add_event')
+@endsection
 @section('content')
     <div class="content-wrapper">
         <!-- Start Header -->

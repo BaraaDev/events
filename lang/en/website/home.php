@@ -144,4 +144,6 @@ return [
     'your_message'                       => 'Your Message',
     'get_touch'                          => 'Get in Touch with Us',
     'central_office'                     => 'Central Office',
+    'contact_with_us'                    => 'Contact with us',
+    'userful_links'                      => 'Userful Links',
 ];

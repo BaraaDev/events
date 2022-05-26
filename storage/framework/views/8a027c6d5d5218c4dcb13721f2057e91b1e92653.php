@@ -1,3 +1,7 @@
+<?php $__env->startSection('title'); ?>
+    - <?php echo e($contribution->title); ?>
+
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
 
@@ -188,7 +192,7 @@
                         </aside>
 
                         <aside class="widget w-popular-products crumina-module crumina-module-slider">
-                            <h5 class="widget-title">Popular Projects</h5>
+                            <h5 class="widget-title"><?php echo e(__('website/event.recent_event')); ?></h5>
                             <div class="swiper-container">
 
                                 <div class="swiper-wrapper">

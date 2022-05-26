@@ -1,17 +1,15 @@
+<?php $__env->startSection('title'); ?>
+   - <?php echo app('translator')->get('website/home.contact_us'); ?>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
-
         <!-- Contacts -->
-
         <section>
             <div class="container-fluid no-padding">
-
                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding">
                     <!-- Leaflet map -->
-                    <div id="map" style="height: 820px"></div>
-                    <!-- End Leaflet map -->
+                    <div id="map" style="height: 820px"></div><!-- End Leaflet map -->
                 </div>
-
                 <div class="col-lg-3 col-lg-offset-1 col-md-12 col-sm-12 pt100 pb100">
                     <div class="breadcrumbs-wrap inline-items">
                         <a href="<?php echo e(route('home')); ?>" class="btn btn--transparent btn--round">
@@ -50,18 +48,11 @@
                             <a href="mailto://<?php echo e($setting->whatsApp); ?>" class="info"><?php echo e($setting->email); ?></a>
                         </div>
 
-                        <a href="#" class="btn btn--grey btn--with-shadow js-message-popup cd-nav-trigger">
-                            Send a Message
-                        </a>
+                        <a href="#" class="btn btn--grey btn--with-shadow js-message-popup cd-nav-trigger"><?php echo e(__('website/home.send_message')); ?></a>
                     </div>
-
                 </div>
-
             </div>
-        </section>
-
-        <!-- ... end Contacts -->
-
+        </section><!-- ... end Contacts -->
     </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('scripts'); ?>

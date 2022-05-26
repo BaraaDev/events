@@ -1,5 +1,7 @@
 @extends('layouts.website.master')
-
+@section('title')
+    - @lang('website/home.about_us')
+@endsection
 @section('content')
     <div class="content-wrapper">
 

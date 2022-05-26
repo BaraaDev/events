@@ -143,4 +143,6 @@ return [
     'your_message'                      => 'رسالتك',
     'get_touch'                         => 'ابق على تواصل معنا',
     'central_office'                    => 'المكتب المركزي',
+    'contact_with_us'                   => 'اتصل بنا',
+    'userful_links'                     => 'روابط مفيدة',
 ];

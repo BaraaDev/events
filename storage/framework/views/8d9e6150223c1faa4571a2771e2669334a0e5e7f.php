@@ -1,3 +1,7 @@
+<?php $__env->startSection('title'); ?>
+    - <?php echo e($event->title); ?>
+
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
         <!-- Stunning Header -->

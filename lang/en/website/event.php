@@ -19,4 +19,5 @@ return [
     'register'                 => 'register',
     'log_in'                   => 'log in',
     'or'                       => 'or',
+    'recent_event'             => 'Most Recent Events',
 ];

@@ -1,5 +1,7 @@
 @extends('layouts.website.master')
-
+@section('title')
+    - @lang('website/home.events')
+@endsection
 @section('content')
     <div class="content-wrapper">
         <!-- Start Header -->

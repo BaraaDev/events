@@ -1,5 +1,7 @@
 @extends('layouts.website.master')
-
+@section('title')
+    - @lang('website/home.all_contributions')
+@endsection
 @section('content')
 
     <div class="content-wrapper">
@@ -148,7 +150,7 @@
                         </aside>
 
                         <aside class="widget w-popular-products crumina-module crumina-module-slider">
-                            <h5 class="widget-title">Popular Projects</h5>
+                            <h5 class="widget-title">{{__('website/event.recent_event')}}</h5>
                             <div class="swiper-container">
 
                                 <div class="swiper-wrapper">
@@ -159,7 +161,7 @@
                                             <img src="{{$event->photo}}" alt="product">
                                         </div>
                                         <div class="product-item-content">
-                                            <h6 class="title">{{$event->title}}</h6>
+                                            <h6 class="title"><a href="{{route('event.show',$event->id)}}">{{$event->title}}</a> </h6>
                                         </div>
                                     </div>
                                     @empty

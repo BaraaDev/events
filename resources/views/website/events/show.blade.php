@@ -1,5 +1,7 @@
 @extends('layouts.website.master')
-
+@section('title')
+    - {{$event->title}}
+@endsection
 @section('content')
     <div class="content-wrapper">
         <!-- Stunning Header -->

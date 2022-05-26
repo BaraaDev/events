@@ -1,3 +1,6 @@
+<?php $__env->startSection('title'); ?>
+    - <?php echo app('translator')->get('website/home.all_contributions'); ?>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 
     <div class="content-wrapper">
@@ -149,7 +152,7 @@
                         </aside>
 
                         <aside class="widget w-popular-products crumina-module crumina-module-slider">
-                            <h5 class="widget-title">Popular Projects</h5>
+                            <h5 class="widget-title"><?php echo e(__('website/event.recent_event')); ?></h5>
                             <div class="swiper-container">
 
                                 <div class="swiper-wrapper">
@@ -160,7 +163,7 @@
                                             <img src="<?php echo e($event->photo); ?>" alt="product">
                                         </div>
                                         <div class="product-item-content">
-                                            <h6 class="title"><?php echo e($event->title); ?></h6>
+                                            <h6 class="title"><a href="<?php echo e(route('event.show',$event->id)); ?>"><?php echo e($event->title); ?></a> </h6>
                                         </div>
                                     </div>
                                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>

@@ -56,7 +56,7 @@
                     </li>
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
 
-                    <li><a href="javascript:void(0)">{{__('website/home.contact_us')}}</a></li>
+                    <li><a href="{{route('contact-us')}}">{{__('website/home.contact_us')}}</a></li>
 
                     @if(!auth()->user())
                         <li>

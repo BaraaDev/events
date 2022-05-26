@@ -1,5 +1,7 @@
 @extends('layouts.website.master')
-
+@section('title')
+    - {{$contribution->title}}
+@endsection
 @section('content')
     <div class="content-wrapper">
 
@@ -189,7 +191,7 @@
                         </aside>
 
                         <aside class="widget w-popular-products crumina-module crumina-module-slider">
-                            <h5 class="widget-title">Popular Projects</h5>
+                            <h5 class="widget-title">{{__('website/event.recent_event')}}</h5>
                             <div class="swiper-container">
 
                                 <div class="swiper-wrapper">
