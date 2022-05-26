@@ -17,7 +17,7 @@ class ContactUs extends Component
         'name'        => 'required|string|min:3|max:199',
         'subject'     => 'required|string|min:3|max:199',
         'email'       => 'required|email:rfc,dns|min:3|max:199',
-        'phone'       => 'required|digits:12|numeric',
+        'phone'       => 'required|digits:11|numeric',
         'message'     => 'required|string|min:3|max:500',
     ];
 

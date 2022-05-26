@@ -4,22 +4,22 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message name
     ///////////////////////////////////////////////////////////////////////////////////////
-    'name_required'                   => 'The name field is required.',
-    'name_min'                        => 'The text length of the name field must be at least 3 characters/character.',
-    'name_max'                        => 'The text length of the name field must not exceed 199 characters/characters.',
+    'name_required'                   => 'Il est requis de compléter le champ correspondant au nom.',
+    'name_min'                        => "La longueur du texte du champ de nom doit être d'au moins 3 caractères/caractère.",
+    'name_max'                        => 'La longueur du texte du champ de nom ne doit pas dépasser 199 caractères/caractères.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message username
     ///////////////////////////////////////////////////////////////////////////////////////
-    'username_required'               => 'The username field is required.',
-    'username_min'                    => 'The text length of the username field must be at least 3 characters/character.',
-    'username_max'                    => 'The text length of the username field must not exceed 199 characters/characters.',
-    'username_unique'                 => 'The username value is already in use.',
+    'username_required'               => "Le champ nom d'utilisateur est obligatoire.",
+    'username_min'                    => "La longueur du texte du champ nom d'utilisateur doit être d'au moins 3 caractères/caractère.",
+    'username_max'                    => "La longueur du texte du champ nom d'utilisateur ne doit pas dépasser 199 caractères/caractères.",
+    'username_unique'                 => "La valeur du nom d'utilisateur est déjà utilisée.",
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message phone
     ///////////////////////////////////////////////////////////////////////////////////////
     'phone_required'                  => 'The phone field is required.',
     'phone_numeric'                   => 'The phone must be a number.',
-    'phone_digits'                    => 'The phone must be 12 digits.',
+    'phone_digits'                    => 'The phone must be 11 digits.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message whatsApp
     ///////////////////////////////////////////////////////////////////////////////////////
