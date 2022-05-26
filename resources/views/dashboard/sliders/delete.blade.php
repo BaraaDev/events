@@ -62,7 +62,7 @@
                                     </tr>
 
                                     @empty
-                                    <div class="alert alert-primary">
+                                    <div class="alert alert-secondary">
                                         {{__('admin/home.alert_no_data')}}
                                     </div>
                                     @endforelse

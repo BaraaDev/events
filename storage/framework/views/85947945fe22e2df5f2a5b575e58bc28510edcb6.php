@@ -31,11 +31,11 @@
                     </li>
                     <!------------- End route dashboard ------------->
 
-                    <!------------- Start route site ------------->
+                    <!------------- Start route main website ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title" href="<?php echo e(route('home')); ?>"><i data-feather="home"></i><span><?php echo e(__('website/home.home')); ?></span></a>
                     </li>
-                    <!------------- End route site ------------->
+                    <!------------- End route main website ------------->
 
 
                     <!------------- Start route sliders ------------->
