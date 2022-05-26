@@ -129,7 +129,7 @@
                     <!------------- Start route services ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')) active @endif" href="javascript:void(0)">
-                            <i data-feather="service"></i>
+                            <i data-feather="file-text"></i>
                             <span>{{__('admin/service.services')}}</span>
                         </a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')) block @else none @endif ;">
