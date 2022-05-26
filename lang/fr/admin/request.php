@@ -6,54 +6,54 @@ return [
     ///////////////////////////////////////////////////////////////////////////////////////
     'name_required'                   => 'Il est requis de compléter le champ correspondant au nom.',
     'name_min'                        => "La longueur du texte du champ de nom doit être d'au moins 3 caractères/caractère.",
-    'name_max'                        => 'La longueur du texte du champ de nom ne doit pas dépasser 199 caractères/caractères.',
+    'name_max'                        => 'La longueur du texte du champ de nom ne doit pas dépasser 199 caractères/caractère.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message username
     ///////////////////////////////////////////////////////////////////////////////////////
     'username_required'               => "Le champ nom d'utilisateur est obligatoire.",
     'username_min'                    => "La longueur du texte du champ nom d'utilisateur doit être d'au moins 3 caractères/caractère.",
-    'username_max'                    => "La longueur du texte du champ nom d'utilisateur ne doit pas dépasser 199 caractères/caractères.",
+    'username_max'                    => "La longueur du texte du champ nom d'utilisateur ne doit pas dépasser 199 caractères/caractère.",
     'username_unique'                 => "La valeur du nom d'utilisateur est déjà utilisée.",
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message phone
     ///////////////////////////////////////////////////////////////////////////////////////
-    'phone_required'                  => 'The phone field is required.',
-    'phone_numeric'                   => 'The phone must be a number.',
-    'phone_digits'                    => 'The phone must be 11 digits.',
+    'phone_required'                  => 'Le champ téléphone est obligatoire.',
+    'phone_numeric'                   => 'Le téléphone doit être un numéro.',
+    'phone_digits'                    => 'Le téléphone doit comporter 11 chiffres.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message whatsApp
     ///////////////////////////////////////////////////////////////////////////////////////
-    'whatsApp_required'          => 'The whatsApp field is required.',
-    'whatsApp_numeric'           => 'The whatsApp must be a number.',
-    'whatsApp_digits'            => 'The whatsApp must be 14 digits.',
+    'whatsApp_required'          => 'Le champ WhatsApp est obligatoire.',
+    'whatsApp_numeric'           => 'Le WhatsApp doit être un numéro.',
+    'whatsApp_digits'            => 'Le WhatsApp doit comporter 14 chiffres.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message email
     ///////////////////////////////////////////////////////////////////////////////////////
-    'email_required'                  => 'The email field is required.',
-    'email_min'                       => 'The text length of the email field must be at least 3 characters/character.',
-    'email_max'                       => 'The text length of the email field must not exceed 255 characters/characters.',
-    'email_unique'                    => 'The email value is already in use.',
-    'email_email'                     => 'The email field must be a valid email address.',
+    'email_required'                  => 'Le champ email est obligatoire.',
+    'email_min'                       => "La longueur du texte du champ e-mail doit être d'au moins 3 caractères/caractère.",
+    'email_max'                       => 'La longueur du texte du champ e-mail ne doit pas dépasser 255 caractères/caractère.',
+    'email_unique'                    => 'La valeur e-mail est déjà utilisée.',
+    'email_email'                     => 'Le champ email doit être une adresse email valide.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message bio
     ///////////////////////////////////////////////////////////////////////////////////////
-    'bio_max'                         => 'The text length of the bio field must not exceed 255 characters/characters.',
+    'bio_max'                         => 'La longueur du texte du champ bio ne doit pas dépasser 255 caractères/caractère.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message gender
     ///////////////////////////////////////////////////////////////////////////////////////
-    'gender_in'                       => 'The selected gender is invalid.',
+    'gender_in'                       => "Le sexe sélectionné n'est pas valide.",
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message gender
     ///////////////////////////////////////////////////////////////////////////////////////
-    'dob_date'                        => 'The date of birth is not a valid date.',
+    'dob_date'                        => "La date de naissance n'est pas une date valide.",
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message address
     ///////////////////////////////////////////////////////////////////////////////////////
-    'address_max'                     => 'The text length of the home address field must not exceed 255 characters/characters.',
+    'address_max'                     => "La longueur du texte du champ d'adresse du domicile ne doit pas dépasser 255 caractères/caractère.",
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message postal code
     ///////////////////////////////////////////////////////////////////////////////////////
-    'postal_code_numeric'             => 'The postal code must be a number.',
+    'postal_code_numeric'             => 'Le code postal doit être un nombre.',
     ///////////////////////////////////////////////////////////////////////////////////////
     /// Check the message name
     ///////////////////////////////////////////////////////////////////////////////////////
