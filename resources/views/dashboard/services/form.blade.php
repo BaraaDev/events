@@ -34,22 +34,19 @@
             @enderror
         </div>
     </div>
-</div>
 
-<div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/service.address')}} <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <textarea class="form-control @error('address_ar') is-invalid @enderror" type="text" name="address_ar">{{Request::old('address_ar') ? Request::old('address_ar') : $model->getTranslation('address','ar')}}</textarea>
-        @error('address_ar')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-        @enderror
+    <div class="form-group row">
+        <label class="form-label col-lg-3">{{__('admin/service.address')}} <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <textarea class="form-control @error('address_ar') is-invalid @enderror" type="text" name="address_ar">{{Request::old('address_ar') ? Request::old('address_ar') : $model->getTranslation('address','ar')}}</textarea>
+            @error('address_ar')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
     </div>
 </div>
-</div>
-</div>
-
 
 
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'en') show active @endif" id="en" role="tabpanel" aria-labelledby="en-tab">
@@ -87,20 +84,18 @@
             @enderror
         </div>
     </div>
-</div>
 
-<div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/service.address')}} <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <textarea class="form-control @error('address_en') is-invalid @enderror" type="text" name="address_en">{{Request::old('address_en') ? Request::old('address_en') : $model->getTranslation('address','en')}}</textarea>
-        @error('address_en')
-        <span class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </span>
-        @enderror
+    <div class="form-group row">
+        <label class="form-label col-lg-3">{{__('admin/service.address')}} <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <textarea class="form-control @error('address_en') is-invalid @enderror" type="text" name="address_en">{{Request::old('address_en') ? Request::old('address_en') : $model->getTranslation('address','en')}}</textarea>
+            @error('address_en')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
     </div>
-</div>
-</div>
 </div>
 
 
@@ -116,6 +111,7 @@
             @enderror
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/service.description')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
@@ -127,6 +123,7 @@
             @enderror
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/service.price')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
@@ -138,11 +135,20 @@
             @enderror
         </div>
     </div>
+
+    <div class="form-group row">
+        <label class="form-label col-lg-3">{{__('admin/service.address')}} <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <textarea class="form-control @error('address_fr') is-invalid @enderror" type="text" name="address_fr">{{Request::old('address_fr') ? Request::old('address_fr') : $model->getTranslation('address','fr')}}</textarea>
+            @error('address_fr')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
+    </div>
 </div>
 
-
-</div>
-</div>
 
 <div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/event.available_date')}} <span class="text-danger">*</span> </label>
