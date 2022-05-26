@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('available_date');
             $table->enum('status', ['Expired', 'Available', 'Stopped'])->nullable();
             $table->float('price');
+            $table->string('address');
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();
             $table->string('category_id')->nullable();

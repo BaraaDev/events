@@ -7,26 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Translatable\HasTranslations;
 
-class Category extends Model
+class Service extends Model
 {
     use HasFactory, HasTranslations, SoftDeletes;
     protected $fillable = ['status'];
 
-    public $translatable = ['name','content'];
+    public $translatable = ['name', 'description' , 'price', 'address'];
 
-    public function events(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function categories(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->hasMany(Event::class,'category_id');
-    }
-
-    public function contributions(): \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany(Contribution::class);
-    }
-
-    public function services(): \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany(Service::class);
+        return $this->belongsTo(Category::class, 'category_id');
     }
 
     public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
@@ -39,8 +29,8 @@ class Category extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function scopeStatus($query,$arg)
+    public function scopeStatus($query, $arg)
     {
-        return $query->where('status',$arg);
+        return $query->where('status', $arg);
     }
 }
