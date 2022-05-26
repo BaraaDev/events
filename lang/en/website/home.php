@@ -4,6 +4,7 @@
 return [
     'home'                               => 'Home',
     'added_successfully'                 => 'Your offer has been successfully added!',
+    'added_successfully_reply'           => 'Your reply has been successfully added!',
     'deleted_successfully'               => 'Your offer has been successfully deleted!',
     'events'                             => 'Events',
     'event'                              => 'Event',
@@ -131,4 +132,6 @@ return [
     'type_search'                        => 'Type and hit Enter...',
     'next_contribution'                  => 'Next Contribution',
     'previous_contribution'              => 'Previous Contribution',
+    'reply'                              => 'Reply',
+    'add_reply'                          => 'Add Reply',
 ];

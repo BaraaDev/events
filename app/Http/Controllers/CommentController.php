@@ -17,7 +17,7 @@ class CommentController extends Controller
         $event          = Event::find($request->get('event_id'));
         $event->comments()->save($comment);
 
-        return redirect()->route('event.show',['id' => $event->id, "#comments$comment->id"])
+        return redirect()->route('event.show',['id' => $event->id, "#comments"])
             ->with(['message' => __('website/home.added_successfully')]);
     }
 
@@ -38,7 +38,8 @@ class CommentController extends Controller
 
         $events->comments()->save($reply);
 
-        return back();
+        return redirect()->route('event.show',['id' => $events->id, "#reply"])
+            ->with(['message' => __('website/home.added_successfully_reply')]);
 
     }
 }

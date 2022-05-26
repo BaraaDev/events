@@ -29,6 +29,7 @@ return [
     'delete'                            => 'حذف',
     'edit'                              => 'تعديل',
     'added_successfully'                => '!تمت إضافة عرضك بنجاح',
+    'added_successfully_reply'          => '!تمت إضافة ردك بنجاح',
     'deleted_successfully'              => '!تمت حذف عرضك بنجاح',
     'edited_successfully'               => 'تم التعديل بنجاح',
     'arabic'                            => 'العربي',
@@ -130,4 +131,6 @@ return [
     'type_search'                       => 'اكتب واضغط...',
     'next_contribution'                 => 'المساهمة التالية',
     'previous_contribution'             => 'المساهمة السابقة',
+    'reply'                             => 'رد',
+    'add_reply'                         => 'أضف رد',
 ];
