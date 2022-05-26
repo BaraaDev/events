@@ -144,7 +144,7 @@
                                     <?php if($event->status == 'Stopped'): ?>
                                     <span class="badge badge-danger"><?php echo e($event->status); ?></span>
                                     <?php elseif($event->status == 'Available'): ?>
-                                    <span class="badge badge-success"><?php echo e($event->status); ?></span>
+                                    <span class="badge badge-success" style="color:bisque;"><?php echo e($event->status); ?></span>
                                     <?php elseif($event->status == 'Expired'): ?>
                                     <span class="badge badge-dark"><?php echo e($event->status); ?></span>
                                     <?php endif; ?>

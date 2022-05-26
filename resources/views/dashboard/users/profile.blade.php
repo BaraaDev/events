@@ -144,7 +144,7 @@
                                     @if($event->status == 'Stopped')
                                     <span class="badge badge-danger">{{$event->status}}</span>
                                     @elseif($event->status == 'Available')
-                                    <span class="badge badge-success">{{$event->status}}</span>
+                                    <span class="badge badge-success" style="color:bisque;">{{$event->status}}</span>
                                     @elseif($event->status == 'Expired')
                                     <span class="badge badge-dark">{{$event->status}}</span>
                                     @endif
