@@ -2,15 +2,14 @@
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="<?php echo e(route('edit-profile')); ?>"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(auth()->user()->photo ?? ''); ?>" alt="avatar <?php echo e(auth()->user()->name ?? ''); ?>" />
         <?php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); ?>
-        <?php if($data <= 7): ?>
-            <div class="badge-bottom">
-                <span class="badge badge-primary">New </span>
-            </div>
-        <?php endif; ?>
-        <a href="<?php echo e(route('profile')); ?>">
-            <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>
-        </a>
-        <p class="mb-0 font-roboto"><?php echo e(auth()->user()->email ?? ''); ?></p>
+        <?php if($data <= 7): ?> <div class="badge-bottom">
+            <span class="badge badge-primary">New </span>
+    </div>
+    <?php endif; ?>
+    <a href="<?php echo e(route('profile')); ?>">
+        <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>
+    </a>
+    <p class="mb-0 font-roboto"><?php echo e(auth()->user()->email ?? ''); ?></p>
     </div>
     <nav>
         <div class="main-navbar">
@@ -31,11 +30,11 @@
                     </li>
                     <!------------- End route dashboard ------------->
 
-                    <!------------- Start route site ------------->
+                    <!------------- Start route main website ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title" href="<?php echo e(route('home')); ?>"><i data-feather="home"></i><span><?php echo e(__('website/home.home')); ?></span></a>
                     </li>
-                    <!------------- End route site ------------->
+                    <!------------- End route main website ------------->
 
 
                     <!------------- Start route sliders ------------->
@@ -127,6 +126,20 @@
                     </li>
                     <!------------- End route categories ------------->
 
+                    <!------------- Start route services ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
+                            <i data-feather="service"></i>
+                            <span><?php echo e(__('admin/service.services')); ?></span>
+                        </a>
+                        <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')): ?> block <?php else: ?> none <?php endif; ?> ;">
+                            <li><a href="<?php echo e(route('services.create')); ?>" class="<?php echo e(routeActive('services.create')); ?>"><?php echo e(__('admin/service.create')); ?></a></li>
+                            <li><a href="<?php echo e(route('services.index')); ?>" class="<?php echo e(routeActive('services.index')); ?>"><?php echo e(__('admin/service.all_services')); ?></a></li>
+                            <li><a href="<?php echo e(route('services.delete')); ?>" class="<?php echo e(routeActive('services.delete')); ?>"><?php echo e(__('admin/service.deleted_services')); ?></a></li>
+                        </ul>
+                    </li>
+                    <!------------- End route services ------------->
+
 
                     <!------------- Start route events ------------->
                     <li class="dropdown">
@@ -174,5 +187,4 @@
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
         </div>
     </nav>
-</header>
-<?php /**PATH E:\laragon\www\event\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
+</header><?php /**PATH E:\laragon\www\event\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>

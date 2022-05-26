@@ -168,51 +168,30 @@
 
 <!-- End Footer -->
 
-
-<!-- Send Message Popup -->
-
 <div class="window-popup message-popup">
     <a href="#" class="popup-close js-popup-close cd-nav-trigger">
         <svg class="utouch-icon utouch-icon-cancel-1">
             <use xlink:href="#utouch-icon-cancel-1"></use>
         </svg>
     </a>
-
-    <div class="send-message-popup">
-        <h5>Send a Message</h5>
-        <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnais.</p>
-        <form class="form-validate contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="modules/forms/submit.php">
-            <div class="with-icon">
-                <input name="name" placeholder="Your Name" type="text" required>
-                <svg class="utouch-icon utouch-icon-user"><use xlink:href="#utouch-icon-user"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <input name="email" placeholder="Email Adress" type="text" required>
-                <svg class="utouch-icon utouch-icon-message-closed-envelope-1"><use xlink:href="#utouch-icon-message-closed-envelope-1"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <input class="with-icon" name="phone" placeholder="Phone Number" type="tel" required>
-                <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys"><use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <input class="with-icon" name="subject" placeholder="Subject" type="text" required>
-                <svg class="utouch-icon utouch-icon-icon-1"><use xlink:href="#utouch-icon-icon-1"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <textarea name="message" required placeholder="Your Message" rows="5"></textarea>
-                <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-            </div>
-
-            <button class="btn btn--green btn--with-shadow full-width">
-                Send a Message
-            </button>
-        </form>
-    </div>
+<!-- Send Message Popup -->
+<?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('contact-us')->html();
+} elseif ($_instance->childHasBeenRendered('pat1Zyr')) {
+    $componentId = $_instance->getRenderedChildComponentId('pat1Zyr');
+    $componentTag = $_instance->getRenderedChildComponentTagName('pat1Zyr');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('pat1Zyr');
+} else {
+    $response = \Livewire\Livewire::mount('contact-us');
+    $html = $response->html();
+    $_instance->logRenderedChild('pat1Zyr', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
 </div>
+
 
 <!-- Send Message Popup -->
 

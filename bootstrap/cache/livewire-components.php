@@ -1,3 +1,3 @@
 <?php return array (
-  'comment' => 'App\\Http\\Livewire\\Comment',
+  'contact-us' => 'App\\Http\\Livewire\\ContactUs',
 );
