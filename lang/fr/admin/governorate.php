@@ -4,7 +4,7 @@ return [
     'Governorate'                       => 'Gouvernorat',
     'Governorates'                      => 'Gouvernorats',
     'all_Governorates'                  => 'Tous les gouvernorats',
-    'create'                            => 'Créer des gouvernorats',
+    'create'                            => 'Créer des gouvernorat',
     'edit'                              => 'Mettre à jour les gouvernorats',
     'NameGovernorate'                   => 'Noms des gouvernorats',
     'addGovernorate'                    => 'Ajouter un nouveau gouvernorat',

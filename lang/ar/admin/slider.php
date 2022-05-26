@@ -8,7 +8,7 @@ return [
     'Enter_name_button_fr'          => 'ادخل سم الزر بالفرنسيه',
     'enter_link_button'             => 'ادخل رابط الزر',
     'create'                        => 'انشاء',
-    'sliders'                       => 'sliders',
+    'sliders'                       => 'المنزلقات',
     'addSlider'                     => 'اضافة',
     'titleSlider'                   => 'العنوان',
     'content_sliders'               => 'المحتوى',

@@ -4,7 +4,7 @@ return [
     'event'                       => 'حدث',
     'events'                      => 'الأحداث',
     'all_events'                  => 'جميع الأحداث',
-    'create'                      => 'إنشاء حداث',
+    'create'                      => 'إنشاء حدث',
     'edit'                        => 'تعديل',
     'TitleEvent'                  => 'عنوان الحدث',
     'addEvent'                    => 'إضافة حدث جديد',

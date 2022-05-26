@@ -7,7 +7,7 @@ return [
     'deletes'                           => 'المحذوفات',
     'all_contributions'                 => 'جميع المساهمات',
     'content_contributions'             => 'محتوي المساهمات',
-    'create'                            => 'إنشاء مساهمة جديدة',
+    'create'                            => 'إنشاء مساهمة',
     'edit'                              => 'تعديل',
     'NameContribution'                  => 'عنوان المساهمة',
     'addContribution'                   => 'إضافة مساهمة جديدة',

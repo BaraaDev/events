@@ -7,7 +7,7 @@ return [
     'deletes'                       => 'المحذوفات',
     'all_categories'                => 'جميع الفئات',
     'content_categories'            => 'محتوي الفئات',
-    'create'                        => 'إنشاء فئة جديدة',
+    'create'                        => 'إنشاء فئة',
     'edit'                          => 'تعديل',
     'NameCategory'                  => 'عنوان الفئة',
     'addCategory'                   => 'إضافة فئة جديدة',
