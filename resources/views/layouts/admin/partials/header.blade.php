@@ -71,7 +71,8 @@
                 </li>
 
                 <li>
-                     <div class="mode"><i id="dark-only" class="@if($theme == 'dark-only') fa fa-lightbulb-o @else fa fa-moon-o @endif"></i></div>
+                    {{-- <div class="mode"><i id="dark-only" class="@if($theme == 'dark-only') fa fa-lightbulb-o @else fa fa-moon-o @endif"></i></div> --}}
+                    <div class="mode"><i class="fa fa-moon-o"></i></div>
                  </li>
 
                 <li class="onhover-dropdown p-0">
