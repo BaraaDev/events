@@ -16,6 +16,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PayPalController;
+use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,8 +32,10 @@ use Illuminate\Support\Facades\Route;
 
 
 //*****-------------------- start customer event route. --------------------*****//
-Route::group(['prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+], function () {
     Auth::routes();
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about-us');
@@ -48,14 +51,14 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     Route::get('/country/{id}', [App\Http\Controllers\EventController::class, 'country'])->name('event.country');
     Route::get('/governorate/{id}', [App\Http\Controllers\EventController::class, 'governorate'])->name('event.governorate');
     Route::get('/city/{id}', [App\Http\Controllers\EventController::class, 'city'])->name('event.city');
-    Route::post('/comment/store', [CommentController::class,'store'])->name('comment.add');
-    Route::post('/reply', [CommentController::class,'reply'])->name('reply.event');
+    Route::post('/comment/store', [CommentController::class, 'store'])->name('comment.add');
+    Route::post('/reply', [CommentController::class, 'reply'])->name('reply.event');
     //-------------------- start payment route. --------------------//
-    Route::post('/payNow',[PaymentController::class,'payNow'])->name('payNow')->middleware(['auth']);
+    Route::post('/payNow', [PaymentController::class, 'payNow'])->name('payNow')->middleware(['auth']);
 
-    Route::get('paypal/checkout/{order}', [PayPalController::class,'getExpressCheckout'])->name('paypal.checkout');
-    Route::get('paypal/checkout-success/{order}', [PayPalController::class,'getExpressCheckoutSuccess'])->name('paypal.success');
-    Route::get('paypal/checkout-cancel', [PayPalController::class,'cancelPage'])->name('paypal.cancel');
+    Route::get('paypal/checkout/{order}', [PayPalController::class, 'getExpressCheckout'])->name('paypal.checkout');
+    Route::get('paypal/checkout-success/{order}', [PayPalController::class, 'getExpressCheckoutSuccess'])->name('paypal.success');
+    Route::get('paypal/checkout-cancel', [PayPalController::class, 'cancelPage'])->name('paypal.cancel');
     //-------------------- end payment route. --------------------//
 
     //*****-------------------- end customer event route. --------------------*****//
@@ -135,8 +138,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
 
 
             //-------------------- start setting route. --------------------//
-            Route::get('/setting', [SettingController::class,'setting'])->name('setting');
-            Route::post('/setting-post', [SettingController::class,'update'])->name('setting.update');
+            Route::get('/setting', [SettingController::class, 'setting'])->name('setting');
+            Route::post('/setting-post', [SettingController::class, 'update'])->name('setting.update');
             //-------------------- end setting route. --------------------//
 
             //-------------------- start contributions route. --------------------//
@@ -145,6 +148,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
             Route::get('/contribution/restore/{id}/', [ContributionController::class, 'restore'])->name('contributions.restore');
             Route::delete('/contribution/forceDelete/{id}/', [ContributionController::class, 'forceDelete'])->name('contributions.forceDelete');
             //-------------------- start contributions route. --------------------//
+
+            //-------------------- start services route. --------------------//
+            Route::resource('/services', ServiceControllerController::class);
+            Route::get('/service/delete', [serviceController::class, 'delete'])->name('services.delete');
+            Route::get('/service/restore/{id}/', [serviceController::class, 'restore'])->name('services.restore');
+            Route::delete('/service/forceDelete/{id}/', [serviceController::class, 'forceDelete'])->name('services.forceDelete');
+            //-------------------- start services route. --------------------//
         });
     });
     //*****-------------------- end dashboard/admin route. --------------------*****//
