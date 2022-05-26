@@ -4,11 +4,18 @@
             <img class="img-70 rounded-circle" alt="Avatar <?php echo e($model->name); ?>" src="<?php echo e($model->photo); ?>" />
             <div class="media-body">
                 <h3 class="mb-1 f-20 txt-primary"><?php echo e($model->name); ?></h3>
-                <p class="f-12"><?php echo e($model->user_type); ?></p>
+                <?php if($model->user_type =='dashboard'): ?>
+                    <p class="f-12">Admin</p>
+                <?php else: ?>
+                    <p class="f-2"><?php echo e($model->user_type); ?></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 </div>
+
+<div class="mb-5"><h5><?php echo e(__('admin/user.change_password')); ?></h5></div>
+
 <div class="mb-3">
     <label class="form-label"><?php echo e(__('admin/user.current_password')); ?></label>
     <input class="form-control <?php $__errorArgs = ['current_password'];
@@ -33,7 +40,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
 </div>
 <div class="mb-3">
-    <label class="form-label"><?php echo e(__('admin/user.password')); ?></label>
+    <label class="form-label"><?php echo e(__('admin/user.new_password')); ?></label>
     <input class="form-control <?php $__errorArgs = ['password'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -56,7 +63,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
 </div>
 <div class="mb-3">
-    <label class="form-label"><?php echo e(__('admin/user.confirm_password')); ?></label>
+    <label class="form-label"><?php echo e(__('admin/user.confirm_new_password')); ?></label>
     <input class="form-control <?php $__errorArgs = ['password_confirmation'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
