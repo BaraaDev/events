@@ -319,7 +319,7 @@ unset($__errorArgs, $__bag); ?>
 
 
 <div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/event.available_date')); ?> <span class="text-danger">*</span> </label>
+    <label class="form-label col-lg-3"><?php echo e(__('admin/service.available_date')); ?> <span class="text-danger">*</span> </label>
     <div class="col-lg-9">
         <input class="form-control <?php $__errorArgs = ['available_date'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

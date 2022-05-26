@@ -151,7 +151,7 @@
 
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">{{__('admin/event.available_date')}} <span class="text-danger">*</span> </label>
+    <label class="form-label col-lg-3">{{__('admin/service.available_date')}} <span class="text-danger">*</span> </label>
     <div class="col-lg-9">
         <input class="form-control @error('available_date') is-invalid @enderror" value="{{Request::old('available_date') ? Request::old('available_date') : $model->available_date}}" type="date" name="available_date" autocomplete="off">
         @error('available_date')
