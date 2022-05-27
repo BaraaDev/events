@@ -32,6 +32,9 @@
 
                                         </h1>
                                         <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <div>
+                                                <span onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold;">Getting Day Planned (GDP)</span>
+                                            </div>
                                             {{__('admin/home.home_page_content')}}
                                         </h6>
 
