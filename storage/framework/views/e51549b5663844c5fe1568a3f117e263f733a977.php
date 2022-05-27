@@ -16,11 +16,7 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item" id="clock">
-                    <span id="show_date"></span>
-
-
-
-                    
+                    <span><?php echo e(Carbon\Carbon::now()->format('D Y H:m:s')); ?></span>
                 </div>
 
                 <div class="contact-item">
