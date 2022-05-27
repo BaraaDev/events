@@ -39,12 +39,14 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="03_products.html" class="btn btn--yellow btn--with-shadow">
-                                                Learn More
+                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="03_products.html" class="btn btn--yellow btn--with-shadow">
+                                                <?php echo e(__('admin/home.home_page_learn-more')); ?>
+
                                             </a>
 
-                                            <a href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
-                                                Get Started Now
+                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
+                                                <?php echo e(__('admin/home.home_page_content3_button')); ?>
+
                                             </a>
                                         </div>
                                     </div>
@@ -121,7 +123,7 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="02_company.html" class="btn btn--lime btn--with-shadow">
+                                            <a onmouseover="this.style.backgroundColor ='orange'" onmouseout="this.style.backgroundColor =''" href="02_company.html" class="btn btn--lime btn--with-shadow">
                                                 <?php echo e(__('admin/home.home_page_content3_button')); ?>
 
                                             </a>
