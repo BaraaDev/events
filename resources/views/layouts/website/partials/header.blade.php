@@ -16,7 +16,25 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item">
-                    <span>{{Carbon\Carbon::now()->format('D Y h:m')}}</span>
+                    {{-- <span>{{Carbon\Carbon::now()->format('D Y h:m')}}</span> --}}
+                    <span id="txt"></span>
+                      
+                      <script>
+                      function startTime() {
+                        var today = new Date();
+                        var h = today.getHours();
+                        var m = today.getMinutes();
+                        var s = today.getSeconds();
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.querySelector('#txt').innerHTML = h + ":" + m + ":" + s;
+                        var t = setTimeout(startTime, 500);
+                      }
+                      function checkTime(i) {
+                        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                        return i;
+                      }
+                      </script>
                 </div>
 
                 <div class="contact-item">
@@ -119,7 +137,7 @@
                         </li>
                     @else
                         <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                             <ul class="sub-menu">
                             @if(auth()->user()->user_type == 'dashboard')
                                 <li><a href="{{route('dashboard')}}">{{__('admin/home.dashboard')}}</a></li>
