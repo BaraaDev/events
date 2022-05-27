@@ -1,4 +1,4 @@
-<header class="header header--menu-rounded header--blue-lighteen" id="site-header">
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #FFFFFF;">
 
     {{-- <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="background-color: #FFFFFF;">
         <a href="javascript:void(0)" id="top-bar-js" class="top-bar-link">
             <svg class="utouch-icon utouch-icon-arrow-top">
                 <use xlink:href="#utouch-icon-arrow-top"></use>
