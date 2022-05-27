@@ -35,6 +35,8 @@
                         return i;
                       }
                       </script>
+                <div class="contact-item" id="clock">
+                    <span>{{Carbon\Carbon::now()->format('D Y H:i:s')}}</span>
                 </div>
 
                 <div class="contact-item">

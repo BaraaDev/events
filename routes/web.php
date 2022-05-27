@@ -1,22 +1,23 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CityController;
 use App\Http\Controllers\Admin\ContributionController;
-use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\CountryController;
+use App\Http\Controllers\Admin\EmailController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\GovernorateController;
-use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\TagController;
-use App\Http\Controllers\Admin\CountryController;
-use App\Http\Controllers\Admin\CityController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PayPalController;
-use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -156,6 +157,13 @@ Route::group([
             Route::get('/service/restore/{id}/', [ServiceController::class, 'restore'])->name('services.restore');
             Route::delete('/service/forceDelete/{id}/', [ServiceController::class, 'forceDelete'])->name('services.forceDelete');
             //-------------------- start services route. --------------------//
+
+            //-------------------- start email route. --------------------//
+            Route::get('mail/inbox',[EmailController::class,'inbox'])->name('mail.inbox');
+            Route::get('mail/all-mail',[EmailController::class,'allMail'])->name('mail.all-mail');
+            Route::get('mail/trash',[EmailController::class,'trash'])->name('mail.trash');
+            Route::get('mail/show/{id}',[EmailController::class,'show'])->name('mail.show');
+            //-------------------- end email route. --------------------//
         });
     });
     //*****-------------------- end dashboard/admin route. --------------------*****//
