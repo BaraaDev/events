@@ -15,8 +15,30 @@
 
             <div class="top-bar-contact">
 
-                <div class="contact-item" id="clock">
-                    <span>{{Carbon\Carbon::now()->format('D Y H:i:s')}}</span>
+                <div class="contact-item">
+                    {{-- <span id="txt"></span>
+                      
+                      <script>
+                      function startTime() {
+                        var today = new Date();
+                        var h = today.getHours();
+                        var m = today.getMinutes();
+                        var s = today.getSeconds();
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.querySelector('#txt').innerHTML = h + ":" + m + ":" + s;
+                        var t = setTimeout(startTime, 500);
+                      }
+                      function checkTime(i) {
+                        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                        return i;
+                      }
+                      </script> --}}
+
+
+                    <div class="contact-item" id="clock">
+                        <span>{{Carbon\Carbon::now()->format('D Y H:i')}}</span>
+                    </div>
                 </div>
 
                 <div class="contact-item">
@@ -119,7 +141,7 @@
                         </li>
                     @else
                         <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='black'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                             <ul class="sub-menu">
                             @if(auth()->user()->user_type == 'dashboard')
                                 <li><a href="{{route('dashboard')}}">{{__('admin/home.dashboard')}}</a></li>
@@ -132,7 +154,9 @@
                         </li>
                     @endif
                 </ul>
-                <ul class="nav-add">
+                <!--------------------------------------- start search button --------------------------------------->
+
+                {{-- <ul class="nav-add">
                     <li class="search search_main">
                         <a href="#" class="js-open-search-popup">
                             <svg class="utouch-icon utouch-icon-search cd-nav-trigger">
@@ -140,8 +164,9 @@
                             </svg>
                         </a>
                     </li>
-                </ul>
-                <div class="search-standard">
+                </ul> --}}
+
+                {{-- <div class="search-standard">
                     <form id="search-header" name="form-search-header" method="post">
                         <div class="typeahead__container">
                             <div class="typeahead__field">
@@ -154,14 +179,16 @@
                                         <use xlink:href="#utouch-icon-search"></use>
                                     </svg>
                                 </button>
-                                <span class="close js-popup-clear-input form-icon">
+                            <span class="close js-popup-clear-input form-icon">
 								<svg class="utouch-icon utouch-icon-cancel-1"><use xlink:href="#utouch-icon-cancel-1"></use></svg>
 							</span>
 
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> --}}
+
+                <!--------------------------------------- end search button --------------------------------------->
             </nav>
         </div>
     </div>

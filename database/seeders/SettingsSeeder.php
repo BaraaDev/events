@@ -17,13 +17,13 @@ class SettingsSeeder extends Seeder
     {
         $settings = new Setting();
         $settings
-            ->setTranslation('title', 'en', 'Graduation Project 2 - AASTMT©')
-            ->setTranslation('title', 'ar', 'Graduation Project 2 - AASTMT©')
-            ->setTranslation('title', 'fr', 'Graduation Project 2 - AASTMT©');
+            ->setTranslation('title', 'en', 'GDP')
+            ->setTranslation('title', 'ar', 'GDP')
+            ->setTranslation('title', 'fr', 'GDP');
         $settings
-            ->setTranslation('content', 'en', 'Graduation Project 2 - AASTMT content')
-            ->setTranslation('content', 'ar', 'Graduation Project 2 - AASTMT content')
-            ->setTranslation('content', 'fr', 'Graduation Project 2 - AASTMT content');
+            ->setTranslation('content', 'en', 'Getting Day Planned - AASTMT©')
+            ->setTranslation('content', 'ar', 'Getting Day Planned - AASTMT©')
+            ->setTranslation('content', 'fr', 'Getting Day Planned - AASTMT©');
         $settings->phone     = 010101010101;
         $settings->email     = 'info@event.com';
         $settings->facebook  = 'facebook';

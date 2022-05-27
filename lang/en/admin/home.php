@@ -79,5 +79,14 @@ return [
     'title'                              => 'Title',
     'content'                            => 'Content',
     'add_new'                            => 'Add New',
+    //--------------------------- Main website keys & values only down below --------------------------------//
+    'home_page_title'                    => 'WELCOME TO',
+    'home_page_content'                  => 'Getting Day Planned (GDP) is a Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',
+    'home_page_learn-more'               => 'Learn More',
+    'home_page_title2'                   => 'will be available soon on..',
+    'home_page_content2'                 => 'is quality product that will make your life better',
+    'home_page_title3'                   => 'Rise Up With the Most Interesting & Less Time Consuming Online Service!',
+    'home_page_content3'                 => 'From the variety of different categories of services & suppliers, find the service that you need from our suppliers.',
+    'home_page_content3_button'          => 'Get Started Now!'
 
 ];
