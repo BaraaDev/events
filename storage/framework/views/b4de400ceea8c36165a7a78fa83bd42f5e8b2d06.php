@@ -93,7 +93,7 @@
 
                 <ul class="primary-menu-menu">
                     <li class="menu-item-has-children"><a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
-                    <li><a href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
+                    <li><a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
                     <li>
                         <a href="javascript:void(0)"><?php echo e(__('website/home.categories')); ?></a>
                         <ul class="sub-menu">
@@ -105,6 +105,13 @@
                     <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
 
                     <li><a href="<?php echo e(route('contact-us')); ?>"><?php echo e(__('website/home.contact_us')); ?></a></li>
+
+                    <style>
+                        nav .primary-menu-menu li .menu-component-item:hover{
+                            color: #FFFFFF;
+                            background-color: #FCB41E;
+                        }
+                    </style>
 
                     <?php if(!auth()->user()): ?>
                         <li>
