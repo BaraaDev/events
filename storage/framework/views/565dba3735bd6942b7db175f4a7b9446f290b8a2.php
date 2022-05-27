@@ -340,7 +340,7 @@ unset($__errorArgs, $__bag); ?>
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/home.user')); ?> <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3"><?php echo e(__('admin/home.customer_user')); ?> <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <?php $user = app('App\Models\User'); ?>
 
@@ -452,7 +452,7 @@ unset($__errorArgs, $__bag); ?>
 <div class="form-group row">
     <label class="form-label col-lg-3"><?php echo e(__('admin/home.image')); ?></label>
     <div class="col-lg-9">
-        <input class="form-control <?php $__errorArgs = ['avatar'];
+        <input class="form-control <?php $__errorArgs = ['images'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -460,7 +460,7 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" type="file" name="images"/>
-        <?php $__errorArgs = ['avatar'];
+        <?php $__errorArgs = ['images'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }

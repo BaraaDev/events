@@ -76,12 +76,11 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
-</div>
 
-<div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <textarea class="form-control <?php $__errorArgs = ['address_ar'];
+    <div class="form-group row">
+        <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <textarea class="form-control <?php $__errorArgs = ['address_ar'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -89,23 +88,21 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="address_ar"><?php echo e(Request::old('address_ar') ? Request::old('address_ar') : $model->getTranslation('address','ar')); ?></textarea>
-        <?php $__errorArgs = ['address_ar'];
+            <?php $__errorArgs = ['address_ar'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?>
-        <span class="invalid-feedback" role="alert">
-            <strong><?php echo e($message); ?></strong>
-        </span>
-        <?php unset($message);
+            <span class="invalid-feedback" role="alert">
+                <strong><?php echo e($message); ?></strong>
+            </span>
+            <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
+        </div>
     </div>
 </div>
-</div>
-</div>
-
 
 
 <div class="tab-pane fade mt-4 <?php if(LaravelLocalization::getCurrentLocale() == 'en'): ?> show active <?php endif; ?>" id="en" role="tabpanel" aria-labelledby="en-tab">
@@ -185,12 +182,11 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
-</div>
 
-<div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <textarea class="form-control <?php $__errorArgs = ['address_en'];
+    <div class="form-group row">
+        <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <textarea class="form-control <?php $__errorArgs = ['address_en'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -198,21 +194,20 @@ $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="address_en"><?php echo e(Request::old('address_en') ? Request::old('address_en') : $model->getTranslation('address','en')); ?></textarea>
-        <?php $__errorArgs = ['address_en'];
+            <?php $__errorArgs = ['address_en'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?>
-        <span class="invalid-feedback" role="alert">
-            <strong><?php echo e($message); ?></strong>
-        </span>
-        <?php unset($message);
+            <span class="invalid-feedback" role="alert">
+                <strong><?php echo e($message); ?></strong>
+            </span>
+            <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
+        </div>
     </div>
-</div>
-</div>
 </div>
 
 
@@ -242,6 +237,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3"><?php echo e(__('admin/service.description')); ?> <span class="text-danger">*</span></label>
         <div class="col-lg-9">
@@ -267,6 +263,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3"><?php echo e(__('admin/service.price')); ?> <span class="text-danger">*</span></label>
         <div class="col-lg-9">
@@ -292,14 +289,37 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
+
+    <div class="form-group row">
+        <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <textarea class="form-control <?php $__errorArgs = ['address_fr'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>" type="text" name="address_fr"><?php echo e(Request::old('address_fr') ? Request::old('address_fr') : $model->getTranslation('address','fr')); ?></textarea>
+            <?php $__errorArgs = ['address_fr'];
+$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
+if ($__bag->has($__errorArgs[0])) :
+if (isset($message)) { $__messageOriginal = $message; }
+$message = $__bag->first($__errorArgs[0]); ?>
+            <span class="invalid-feedback" role="alert">
+                <strong><?php echo e($message); ?></strong>
+            </span>
+            <?php unset($message);
+if (isset($__messageOriginal)) { $message = $__messageOriginal; }
+endif;
+unset($__errorArgs, $__bag); ?>
+        </div>
+    </div>
 </div>
 
-
-</div>
-</div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/event.available_date')); ?> <span class="text-danger">*</span> </label>
+    <label class="form-label col-lg-3"><?php echo e(__('admin/service.available_date')); ?> <span class="text-danger">*</span> </label>
     <div class="col-lg-9">
         <input class="form-control <?php $__errorArgs = ['available_date'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

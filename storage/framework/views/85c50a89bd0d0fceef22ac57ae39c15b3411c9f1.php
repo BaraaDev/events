@@ -2,9 +2,10 @@
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="<?php echo e(route('edit-profile')); ?>"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(auth()->user()->photo ?? ''); ?>" alt="avatar <?php echo e(auth()->user()->name ?? ''); ?>" />
         <?php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); ?>
-        <?php if($data <= 7): ?> <div class="badge-bottom">
-            <span class="badge badge-primary">New </span>
-    </div>
+        <?php if($data <= 7): ?>
+            <div class="badge-bottom">
+                <span class="badge badge-primary">New </span>
+            </div>
     <?php endif; ?>
     <a href="<?php echo e(route('profile')); ?>">
         <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>
@@ -129,7 +130,7 @@
                     <!------------- Start route services ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title <?php if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
-                            <i data-feather="service"></i>
+                            <i data-feather="file-text"></i>
                             <span><?php echo e(__('admin/service.services')); ?></span>
                         </a>
                         <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')): ?> block <?php else: ?> none <?php endif; ?> ;">
@@ -171,6 +172,16 @@
                     <!------------- End route contributions ------------->
 
 
+                    <!------------- Start route email ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php if(routeActive('mail.inbox') || routeActive('mail.all-mail') || routeActive('mail.trash')): ?> active <?php endif; ?>" href="<?php echo e(route('mail.all-mail')); ?>">
+                            <i data-feather="mail"></i>
+                            <span><?php echo e(__('admin/email.all_mail')); ?></span>
+                        </a>
+                    </li>
+                    <!------------- End route email ------------->
+
+
                     <!------------- Start route setting ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title <?php if(routeActive('setting')): ?> active <?php endif; ?>" href="javascript:void(0)">
@@ -187,4 +198,5 @@
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
         </div>
     </nav>
-</header><?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
+</header>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>

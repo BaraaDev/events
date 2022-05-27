@@ -74,14 +74,17 @@ class serviceRequest extends FormRequest
 
             // Validation describtion ar
             'describtion_ar.required' => __('admin/request.describtion_ar_required'),
+            'description_ar.min'      => __('admin/request.description_ar_min'),
             'describtion_ar.max'      => __('admin/request.describtion_ar_max'),
 
             // Validation describtion en
             'describtion_en.required' => __('admin/request.describtion_en_required'),
+            'description_en.min'      => __('admin/request.description_en_min'),
             'describtion_en.max'      => __('admin/request.describtion_en_max'),
 
             // Validation describtion fr
             'describtion_fr.required' => __('admin/request.describtion_fr_required'),
+            'description_fr.min'      => __('admin/request.description_fr_min'),
             'describtion_fr.max'      => __('admin/request.describtion_fr_max'),
 
             // Validation price ar

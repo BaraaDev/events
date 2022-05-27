@@ -48,7 +48,7 @@
 
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$service->name}}</td>
-                                        <td class="text-center">{{Str::limit($service->description,'50','......')}}</td>
+                                        <td class="text-center">{{$service->description}}</td>
                                         <td class="text-center">{{$service->category->name}}</td>
                                         <td class="text-center">{{$service->price}}</td>
                                         <td class="text-center">{{$service->address}}</td>

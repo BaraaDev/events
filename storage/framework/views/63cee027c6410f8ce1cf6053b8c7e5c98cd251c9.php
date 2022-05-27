@@ -44,7 +44,7 @@
 
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($category->name); ?></td>
-                                        <td class="text-center"><?php echo e(Str::limit($category->content,'75','......')); ?></td>
+                                        <td class="text-center"><?php echo e(Str::limit($category->content,'45','......')); ?></td>
                                         <td class="text-center">
                                             <?php if($category->status == 0): ?>
                                                 <div class="badge badge-danger">
@@ -52,7 +52,7 @@
                                                 </div>
                                             <?php elseif($category->status == 1): ?>
                                                 <div class="badge badge-success">
-                                                    <span><?php echo e(__('admin/home.available')); ?></span>
+                                                    <span style="color:bisque;"><?php echo e(__('admin/home.available')); ?></span>
                                                 </div>
                                             <?php endif; ?>
                                         </td>
