@@ -16,8 +16,7 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item">
-                    {{-- <span>{{Carbon\Carbon::now()->format('D Y h:m')}}</span> --}}
-                    <span id="txt"></span>
+                    {{-- <span id="txt"></span>
                       
                       <script>
                       function startTime() {
@@ -34,9 +33,12 @@
                         if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
                         return i;
                       }
-                      </script>
-                <div class="contact-item" id="clock">
-                    <span>{{Carbon\Carbon::now()->format('D Y H:i:s')}}</span>
+                      </script> --}}
+
+
+                    <div class="contact-item" id="clock">
+                        <span>{{Carbon\Carbon::now()->format('D Y H:i')}}</span>
+                    </div>
                 </div>
 
                 <div class="contact-item">
