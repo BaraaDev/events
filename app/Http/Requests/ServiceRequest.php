@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class serviceRequest extends FormRequest
+class ServiceRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -32,12 +32,12 @@ class serviceRequest extends FormRequest
     protected function onUpdate()
     {
         return [
-            'name_ar'          => 'required|min:3|max:199|unique:categories,name',
-            'name_en'          => 'required|min:3|max:199',
-            'name_fr'          => 'required|min:3|max:199',
-            'description_ar'   => 'required|max:500',
-            'description_en'   => 'required|max:500',
-            'description_fr'   => 'required|max:500',
+            'name_ar'        => 'required|min:3|max:199|unique:categories,name',
+            'name_en'        => 'required|min:3|max:199',
+            'name_fr'        => 'required|min:3|max:199',
+            'description_ar' => 'required|max:500',
+            'description_en' => 'required|max:500',
+            'description_fr' => 'required|max:500',
         ];
     }
 
@@ -86,7 +86,6 @@ class serviceRequest extends FormRequest
             'description_fr.required' => __('admin/request.description_fr_required'),
             'description_fr.min'      => __('admin/request.description_fr_min'),
             'description_fr.max'      => __('admin/request.description_fr_max'),
-
         ];
     }
 }

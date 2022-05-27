@@ -11,7 +11,7 @@
 <li class="breadcrumb-item"><a href="{{route('services.index')}}">{{__('admin/service.services')}}</a> </li>
 <li class="breadcrumb-item active">{{__('admin/service.edit')}} ({{$model->name}})</li>
 @slot('bookmark')
-<a href="{{route('services.create')}}" class="btn btn-pill btn-air-success btn-success-gradient" type="button" title="{{__('admin/service.addService')}}">{{__('admin/service.addService')}}</a>
+    <a href="{{route('services.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/service.create')}}">{{__('admin/service.create')}}</a>
 @endslot
 @endcomponent
 @include('layouts.admin.partials.validation-errors')
