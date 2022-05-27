@@ -171,6 +171,16 @@
                     <!------------- End route contributions ------------->
 
 
+                    <!------------- Start route email ------------->
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php if(routeActive('mail.inbox') || routeActive('mail.all-mail') || routeActive('mail.trash')): ?> active <?php endif; ?>" href="<?php echo e(route('mail.all-mail')); ?>">
+                            <i data-feather="mail"></i>
+                            <span><?php echo e(__('admin/email.all_mail')); ?></span>
+                        </a>
+                    </li>
+                    <!------------- End route email ------------->
+
+
                     <!------------- Start route setting ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title <?php if(routeActive('setting')): ?> active <?php endif; ?>" href="javascript:void(0)">
@@ -187,4 +197,5 @@
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
         </div>
     </nav>
-</header><?php /**PATH E:\laragon\www\event\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
+</header>
+<?php /**PATH E:\laragon\www\event\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
