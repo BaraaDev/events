@@ -7,7 +7,7 @@
 @slot('breadcrumb_title')
 <h3>{{__('admin/city.deleted_cities')}}</h3>
 @endslot
-<li class="breadcrumb-item"><a href="{{route('cities.index')}}">{{__('admin/city.Cities')}}</a> </li>
+<li class="breadcrumb-item"><a href="{{route('cities.index')}}">{{__('admin/city.cities')}}</a> </li>
 <li class="breadcrumb-item active">{{__('admin/city.deleted_cities')}}</li>
 @slot('bookmark')
 <a href="{{route('cities.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/city.addcity')}}">{{__('admin/city.addCity')}}</a>
@@ -20,7 +20,7 @@
             <div class="card">
                 <div class="card-header">
                     <h5>{{__('admin/city.Show_deleted_cities')}} - <span class="b-b-success">{{App\Models\City::onlyTrashed()->count()}}</span></h5>
-                    <span>{{__('admin/city.DescriptionCity_delete')}}</span>
+                    <span>{{__('admin/city.cityDescription')}}</span>
                 </div>
                 <div class="card-block row">
                     <div class="col-sm-12 col-lg-12 col-xl-12">

@@ -7,7 +7,7 @@
 <?php $__env->slot('breadcrumb_title'); ?>
 <h3><?php echo e(__('admin/city.deleted_cities')); ?></h3>
 <?php $__env->endSlot(); ?>
-<li class="breadcrumb-item"><a href="<?php echo e(route('cities.index')); ?>"><?php echo e(__('admin/city.Cities')); ?></a> </li>
+<li class="breadcrumb-item"><a href="<?php echo e(route('cities.index')); ?>"><?php echo e(__('admin/city.cities')); ?></a> </li>
 <li class="breadcrumb-item active"><?php echo e(__('admin/city.deleted_cities')); ?></li>
 <?php $__env->slot('bookmark'); ?>
 <a href="<?php echo e(route('cities.create')); ?>" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="<?php echo e(__('admin/city.addcity')); ?>"><?php echo e(__('admin/city.addCity')); ?></a>
@@ -20,7 +20,7 @@
             <div class="card">
                 <div class="card-header">
                     <h5><?php echo e(__('admin/city.Show_deleted_cities')); ?> - <span class="b-b-success"><?php echo e(App\Models\City::onlyTrashed()->count()); ?></span></h5>
-                    <span><?php echo e(__('admin/city.DescriptionCity_delete')); ?></span>
+                    <span><?php echo e(__('admin/city.cityDescription')); ?></span>
                 </div>
                 <div class="card-block row">
                     <div class="col-sm-12 col-lg-12 col-xl-12">
