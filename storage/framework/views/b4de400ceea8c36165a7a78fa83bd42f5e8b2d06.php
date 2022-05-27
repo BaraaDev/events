@@ -138,36 +138,13 @@
                         </li>
                     <?php endif; ?>
                 </ul>
-                <ul class="nav-add">
-                    <li class="search search_main">
-                        <a href="#" class="js-open-search-popup">
-                            <svg class="utouch-icon utouch-icon-search cd-nav-trigger">
-                                <use xlink:href="#utouch-icon-search"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <div class="search-standard">
-                    <form id="search-header" name="form-search-header" method="post">
-                        <div class="typeahead__container">
-                            <div class="typeahead__field">
+                <!--------------------------------------- start search button --------------------------------------->
 
-							<span class="typeahead__query">
-								<input class="js-typeahead" name="utouch_posts[query]" placeholder="What are you looking for?" autocomplete="off" type="search" autofocus>
-							</span>
-                                <button type="submit" class="form-icon">
-                                    <svg class="utouch-icon utouch-icon-search">
-                                        <use xlink:href="#utouch-icon-search"></use>
-                                    </svg>
-                                </button>
-                                <span class="close js-popup-clear-input form-icon">
-								<svg class="utouch-icon utouch-icon-cancel-1"><use xlink:href="#utouch-icon-cancel-1"></use></svg>
-							</span>
+                
 
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                
+
+                <!--------------------------------------- end search button --------------------------------------->
             </nav>
         </div>
     </div>

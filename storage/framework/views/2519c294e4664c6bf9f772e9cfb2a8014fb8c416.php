@@ -20,7 +20,8 @@
                                     <div class="slider-content align-center">
 
                                         <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                            The power of Technology
+                                            <?php echo e(__('admin/home.home_page_title')); ?>
+
 
                                             <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
                                                 <use xlink:href="#utouch-icon-arrow-left"></use>
@@ -31,9 +32,9 @@
                                             </svg>
 
                                         </h1>
-                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum dolor sit
-                                            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                                            laoreet dolore magna aliquam erat volutpat.
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <?php echo e(__('admin/home.home_page_content')); ?>
+
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
