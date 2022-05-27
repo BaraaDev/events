@@ -81,7 +81,10 @@ return [
     'title'                                  => 'Titre',
     'content'                                => 'teneur',
     'add_new'                                => 'créer',
-    //--------------------------- Main website keys & values below --------------------------------//
-    'home_page_title'                      => 'BIENVENUE À',
-    'home_page_content'                    => "Getting Day Planned (GDP) est une société d'événements exécutifs du Moyen-Orient qui fournit des services complets de planification, d'administration, de coordination et de promotion d'événements.",
+    //--------------------------- Main website keys & values only down below --------------------------------//
+    'home_page_title'                        => 'BIENVENUE À',
+    'home_page_content'                      => "Getting Day Planned (GDP) est une société d'événements exécutifs du Moyen-Orient qui fournit des services complets de planification, d'administration, de coordination et de promotion d'événements.",
+    'home_page_title2'                       => 'Sera bientôt disponible sur..',
+    'home_page_content2'                     => 'est un produit de qualité qui vous rendra la vie meilleure',
+
 ];

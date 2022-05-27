@@ -65,17 +65,16 @@
                                 <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                                     <div class="slider-content align-both">
                                         <h2 class="slider-content-title" data-swiper-parallax="-100">
-                                            <span class="c-primary">Utouch</span>
-                                            is quality product that will make your life better
+                                            <span class="c-primary">GDP</span>
+                                            {{__('admin/home.home_page_title2')}}
                                         </h2>
-                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum dolor sit amet,
-                                            consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                            magna aliquam erat volutpat.
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <span>GDP</span> {{__('admin/home.home_page_content2')}}
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="#" class="btn btn-market btn--with-shadow">
+                                            <a onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color=''" href="#" class="btn btn-market btn--with-shadow">
                                                 <svg class="utouch-icon utouch-icon-apple-logotype-1">
                                                     <use xlink:href="#utouch-icon-apple-logotype-1"></use>
                                                 </svg>
@@ -85,7 +84,7 @@
                                                 </div>
                                             </a>
 
-                                            <a href="#" class="btn btn-market btn--with-shadow">
+                                            <a onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color=''" href="#" class="btn btn-market btn--with-shadow">
                                                 <img class="utouch-icon" src="{{asset('website/svg-icons/google-play.svg')}}" alt="google">
                                                 <div class="text">
                                                     <span class="sup-title">Download on the</span>
