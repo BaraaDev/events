@@ -2,9 +2,10 @@
     <div class="sidebar-user text-center">
         <a class="setting-primary" href="<?php echo e(route('edit-profile')); ?>"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(auth()->user()->photo ?? ''); ?>" alt="avatar <?php echo e(auth()->user()->name ?? ''); ?>" />
         <?php $data = Carbon\Carbon::parse(Auth::user()->created_at)->diffInDays(Carbon\Carbon::now()); ?>
-        <?php if($data <= 7): ?> <div class="badge-bottom">
-            <span class="badge badge-primary">New </span>
-    </div>
+        <?php if($data <= 7): ?>
+            <div class="badge-bottom">
+                <span class="badge badge-primary">New </span>
+            </div>
     <?php endif; ?>
     <a href="<?php echo e(route('profile')); ?>">
         <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>

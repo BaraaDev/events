@@ -4,7 +4,7 @@
             <div class="media-body">
                 <h6>{{$row->name}}</h6>
                 <p>{!! Str::limit($row->message,'45','...') !!}</p>
-                <span title="{{$row->created_at->diffForHumans()}}">{{$row->created_at->format('h:m a')}}</span>
+                <span title="{{$row->created_at->diffForHumans()}}">{{$row->created_at->format('H:i a')}}</span>
             </div>
         </div>
     </a>

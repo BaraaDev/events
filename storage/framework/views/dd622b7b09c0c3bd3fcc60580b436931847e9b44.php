@@ -4,7 +4,7 @@
             <div class="media-body">
                 <h6><?php echo e($row->name); ?></h6>
                 <p><?php echo Str::limit($row->message,'45','...'); ?></p>
-                <span title="<?php echo e($row->created_at->diffForHumans()); ?>"><?php echo e($row->created_at->format('h:m a')); ?></span>
+                <span title="<?php echo e($row->created_at->diffForHumans()); ?>"><?php echo e($row->created_at->format('H:i a')); ?></span>
             </div>
         </div>
     </a>

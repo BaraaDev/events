@@ -16,7 +16,7 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item" id="clock">
-                    <span>{{Carbon\Carbon::now()->format('D Y H:m:s')}}</span>
+                    <span>{{Carbon\Carbon::now()->format('D Y H:i:s')}}</span>
                 </div>
 
                 <div class="contact-item">
