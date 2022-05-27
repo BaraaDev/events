@@ -43,6 +43,7 @@
                                     <tr>
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($city->name); ?></td>
+                                        <td class="text-center"><?php echo e($city->governorate->name ?? ''); ?></td>
                                         <td class="text-center"><?php echo e($city->country->name ?? ''); ?></td>
                                         <td class="text-center"><?php echo e($city->create_user->name ?? ''); ?></td>
                                         <td class="text-center" title="<?php echo e($city->created_at->format('Y-D-M h:m')); ?>"><?php echo e($city->created_at->format('Y-D-M')); ?></td>

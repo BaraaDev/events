@@ -43,6 +43,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$city->name}}</td>
+                                        <td class="text-center">{{$city->governorate->name ?? ''}}</td>
                                         <td class="text-center">{{$city->country->name ?? ''}}</td>
                                         <td class="text-center">{{$city->create_user->name ?? ''}}</td>
                                         <td class="text-center" title="{{$city->created_at->format('Y-D-M h:m')}}">{{$city->created_at->format('Y-D-M')}}</td>

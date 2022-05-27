@@ -21,14 +21,31 @@
 <script src="<?php echo e(asset('website/js/js-plugins/smooth-scroll.js')); ?>"></script>
 <script src="<?php echo e(asset('website/js/js-plugins/segment.js')); ?>"></script>
 <script src="<?php echo e(asset('website/js/js-plugins/bootstrap.js')); ?>"></script>
-
+<script src="<?php echo e(asset('admin/js/bootstrap/bootstrap.min.js')); ?>"></script>
 
 <script src="<?php echo e(asset('website/js/js-plugins/isotope.pkgd.min.js')); ?>"></script>
 <script src="<?php echo e(asset('website/js/js-plugins/ion.rangeSlider.js')); ?>"></script>
 <script src="<?php echo e(asset('website/js/js-plugins/parsley.min.js')); ?>"></script>
 
 <script src="<?php echo e(asset('website/js/main.js')); ?>"></script>
-<?php echo $__env->yieldPushContent('scripts'); ?>
+<script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+<?php echo $__env->yieldContent('scripts'); ?>
 <?php echo \Livewire\Livewire::scripts(); ?>
 
 <?php /**PATH D:\laragon\www\events\resources\views/layouts/website/partials/js.blade.php ENDPATH**/ ?>

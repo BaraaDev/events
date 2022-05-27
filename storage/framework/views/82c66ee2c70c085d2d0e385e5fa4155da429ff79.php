@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><?php echo e($setting->content); ?></title>
+    <title><?php echo e($setting->title); ?>  <?php echo $__env->yieldContent('title'); ?></title>
     <?php echo $__env->make('layouts.website.partials.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
 
@@ -11,15 +11,11 @@
 <body class="crumina-grid">
 <!-- Header -->
 
-<?php echo $__env->make('layouts.website.partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
-<!-- ... End Header -->
+<?php echo $__env->make('layouts.website.partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><!-- ... End Header -->
 
 
 <?php echo $__env->yieldContent('content'); ?>
-
 <!-- Footer -->
-
 <footer class="footer" id="site-footer">
     <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
@@ -41,18 +37,14 @@
                             <div class="logo-title"><?php echo e($setting->title); ?></div>
                         </div>
                     </div>
-
-                    <p>
-                        <?php echo $setting->content; ?>
-
-                    </p>
+                    <p><?php echo $setting->content; ?></p>
                 </div>
             </div>
 
             <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
                 <div class="widget w-list">
 
-                    <h5 class="widget-title">Userful Links</h5>
+                    <h5 class="widget-title"><?php echo e(__('website/home.userful_links')); ?></h5>
                     <ul class="list list--primary">
                         <li>
                             <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a>
@@ -100,7 +92,7 @@
             <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-12 col-sm-offset-0 col-xs-12">
                 <div class="widget w-contacts">
 
-                    <h5 class="widget-title">Contact with us</h5>
+                    <h5 class="widget-title"><?php echo e(__('website/home.contact_with_us')); ?></h5>
                     <div class="contact-item display-flex">
                         <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys">
                             <use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use>
@@ -115,7 +107,8 @@
                     </div>
 
                     <a href="#" class="btn btn--green full-width btn--with-shadow js-message-popup cd-nav-trigger">
-                        Send a Message
+                        <?php echo e(__('website/home.send_message')); ?>
+
                     </a>
                 </div>
 
@@ -167,58 +160,32 @@
 </footer>
 
 <!-- End Footer -->
-
-
 <!-- Send Message Popup -->
-
 <div class="window-popup message-popup">
     <a href="#" class="popup-close js-popup-close cd-nav-trigger">
         <svg class="utouch-icon utouch-icon-cancel-1">
             <use xlink:href="#utouch-icon-cancel-1"></use>
         </svg>
     </a>
-
-    <div class="send-message-popup">
-        <h5>Send a Message</h5>
-        <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnais.</p>
-        <form class="form-validate contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="modules/forms/submit.php">
-            <div class="with-icon">
-                <input name="name" placeholder="Your Name" type="text" required>
-                <svg class="utouch-icon utouch-icon-user"><use xlink:href="#utouch-icon-user"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <input name="email" placeholder="Email Adress" type="text" required>
-                <svg class="utouch-icon utouch-icon-message-closed-envelope-1"><use xlink:href="#utouch-icon-message-closed-envelope-1"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <input class="with-icon" name="phone" placeholder="Phone Number" type="tel" required>
-                <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys"><use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <input class="with-icon" name="subject" placeholder="Subject" type="text" required>
-                <svg class="utouch-icon utouch-icon-icon-1"><use xlink:href="#utouch-icon-icon-1"></use></svg>
-            </div>
-
-            <div class="with-icon">
-                <textarea name="message" required placeholder="Your Message" rows="5"></textarea>
-                <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-            </div>
-
-            <button class="btn btn--green btn--with-shadow full-width">
-                Send a Message
-            </button>
-        </form>
-    </div>
-</div>
-
-<!-- Send Message Popup -->
+        <?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('contact-us')->html();
+} elseif ($_instance->childHasBeenRendered('Sq475L0')) {
+    $componentId = $_instance->getRenderedChildComponentId('Sq475L0');
+    $componentTag = $_instance->getRenderedChildComponentTagName('Sq475L0');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('Sq475L0');
+} else {
+    $response = \Livewire\Livewire::mount('contact-us');
+    $html = $response->html();
+    $_instance->logRenderedChild('Sq475L0', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
+</div><!-- Send Message Popup -->
 
 
 <!-- Search Popup -->
-
 <div class="search-popup search--dark">
     <a href="#" class="popup-close js-popup-close cd-nav-trigger">
         <svg class="utouch-icon utouch-icon-cancel-1">
@@ -250,19 +217,12 @@
                 </div>
             </form>
         </div>
-
     </div>
-
-</div>
-
-
-<!-- ... end Search Popup -->
+</div><!-- ... end Search Popup -->
 
 
 <!-- Used SVG-icons -->
-
 <svg xmlns="http://www.w3.org/2000/svg" style="display: block; width: 1px; height: 1px; visibility: hidden; opacity: 0;">
-
     <symbol id="utouch-icon-calendar-1" viewBox="0 0 512 512">
         <path d="m462 77l-46 0 0-18c0-9-7-17-16-17-9 0-17 8-17 17l0 18-254 0 0-18c0-9-8-17-17-17-9 0-16 8-16 17l0 18-46 0c-28 0-50 23-50 50 0 4 0 323 0 326 0 9 7 17 17 17l478 0c10 0 17-8 17-17 0-3 0-322 0-326 0-27-22-50-50-50z m17 359l-446 0 0-229 446 0z m0-262l-446 0 0-47c0-9 8-16 17-16l46 0 0 5c0 9 7 16 16 16 9 0 17-7 17-16l0-5 254 0 0 5c0 9 8 16 17 16 9 0 16-7 16-16l0-5 46 0c9 0 17 7 17 16z m-355 66c-17 0-30 14-30 30 0 17 13 30 30 30 16 0 30-13 30-30 0-16-14-30-30-30z m132 0c-17 0-30 14-30 30 0 17 13 30 30 30 17 0 30-13 30-30 0-16-13-30-30-30z m132 0c-16 0-30 14-30 30 0 17 14 30 30 30 17 0 30-13 30-30 0-16-13-30-30-30z m-264 103c-17 0-30 14-30 31 0 16 13 30 30 30 16 0 30-14 30-30 0-17-14-31-30-31z m132 0c-17 0-30 14-30 31 0 16 13 30 30 30 17 0 30-14 30-30 0-17-13-31-30-31z m132 0c-16 0-30 14-30 31 0 16 14 30 30 30 17 0 30-14 30-30 0-17-13-31-30-31z" />
     </symbol>
@@ -491,13 +451,9 @@
         <path d="m397 486c-2 0-4 0-6-1l-135-74-135 74c-4 2-9 2-13-1-4-3-6-8-5-13l24-147-98-97c-3-4-4-9-3-13 2-5 6-8 10-9l147-25 62-122c2-4 6-7 11-7 5 0 9 3 11 7l62 122 147 25c4 1 8 4 10 9 1 4 0 9-3 13l-98 97 24 147c1 5-1 10-5 13-2 2-5 2-7 2z m-141-102c2 0 4 1 6 2l118 64-21-128c-1-4 0-8 3-11l85-85-129-21c-4-1-8-4-9-7l-53-105-53 105c-1 3-5 6-9 7l-129 21 85 85c3 3 4 7 3 11l-21 128 118-64c2-1 4-2 6-2z" />
     </symbol>
 
-</svg>
-
-<!-- ... end Used SVG-icons -->
-
+</svg><!-- ... end Used SVG-icons -->
 
 <?php echo $__env->make('layouts.website.partials.js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
 </body>
 </html>
 <?php /**PATH D:\laragon\www\events\resources\views/layouts/website/master.blade.php ENDPATH**/ ?>

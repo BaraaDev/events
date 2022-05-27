@@ -16,5 +16,5 @@ return [
     'update'                        => 'Update',
     'deleted_cities'                => 'Deleted Cities',
     'Show_deleted_cities'           => 'All Deleted Cities',
-    'cityDescription'               => 'All cities If you want to create and add new cities, you must click on the (Add new city) button at the top of the page.',
+    'DescriptionCity_delete'        => 'All cities If you want to create and add new cities, you must click on the (Add new city) button at the top of the page.',
 ];
