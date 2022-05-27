@@ -1,17 +1,17 @@
 @extends('layouts.admin.master')
 
-@section('title') {{__('admin/services.all_services')}} @endsection
+@section('title') {{__('admin/service.all_services')}} @endsection
 
 @section('content')
 @component('components.breadcrumb')
-@slot('breadcrumb_title')
-<h3>{{__('admin/services.services')}}</h3>
-@endslot
-<li class="breadcrumb-item active">{{__('admin/services.services')}}</li>
+    @slot('breadcrumb_title')
+    <h3>{{__('admin/service.services')}}</h3>
+    @endslot
+    <li class="breadcrumb-item active">{{__('admin/service.services')}}</li>
 
-@slot('bookmark')
-<a href="{{route('services.create')}}" class="btn btn-pill btn-air-success btn-success-gradient" type="button" title="{{__('admin/services.addServices')}}">{{__('admin/services.addServices')}}</a>
-@endslot
+    @slot('bookmark')
+        <a href="{{route('services.create')}}" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="{{__('admin/service.create')}}">{{__('admin/service.create')}}</a>
+    @endslot
 @endcomponent
 @include('layouts.admin.partials.messages.message')
 <div class="container-fluid">
@@ -19,8 +19,8 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <h5>{{__('admin/services.showServices')}} - <span class="b-b-success">{{App\Models\Service::count()}}</span></h5>
-                    <span>{{__('admin/services.DescriptionServices')}}</span>
+                    <h5>{{__('admin/service.showServices')}} - <span class="b-b-success">{{App\Models\Service::count()}}</span></h5>
+                    <span>{{__('admin/service.DescriptionService')}}</span>
                 </div>
                 <div class="card-block row">
                     <div class="col-sm-12 col-lg-12 col-xl-12">
@@ -29,12 +29,8 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" class="text-center">#</th>
-                                        <th scope="col" class="text-center">{{__('admin/service.NameServices')}}</th>
+                                        <th scope="col" class="text-center">{{__('admin/service.NameService')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/service.description')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/category.NameCategory')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/service.price')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/service.address')}}</th>
-                                        <th scope="col" class="text-center">{{__('admin/service.available_date')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.status')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.create_user')}}</th>
                                         <th scope="col" class="text-center">{{__('admin/home.update_user')}}</th>
@@ -49,10 +45,6 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$service->name}}</td>
                                         <td class="text-center">{{$service->description}}</td>
-                                        <td class="text-center">{{$service->category->name}}</td>
-                                        <td class="text-center">{{$service->price}}</td>
-                                        <td class="text-center">{{$service->address}}</td>
-                                        <td class="text-center">{{$service->available_date}}</td>
                                         <td class="text-center">
                                             @if($service->status == 0)
                                             <div class="badge badge-danger">

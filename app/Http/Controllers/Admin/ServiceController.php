@@ -30,17 +30,7 @@ class ServiceController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr)
             ->setTranslation('description', 'en', $request->description_en)
             ->setTranslation('description', 'ar', $request->description_ar)
-            ->setTranslation('description', 'fr', $request->description_fr)
-            ->setTranslation('price', 'en', $request->price_en)
-            ->setTranslation('price', 'ar', $request->price_ar)
-            ->setTranslation('price', 'fr', $request->price_fr)
-            ->setTranslation('address', 'en', $request->address_en)
-            ->setTranslation('address', 'ar', $request->address_ar)
-            ->setTranslation('address', 'fr', $request->address_fr);
-        $services->available_date = $request->available_date;
-        $services->price          = $request->price;
-        $services->category_id    = $request->category_id;
-        $services->address        = $request->address;
+            ->setTranslation('description', 'fr', $request->description_fr);
         $services->status         = $request->status;
         $services->create_user_id = auth()->user()->id;
         $services->save();
@@ -68,18 +58,7 @@ class ServiceController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr)
             ->setTranslation('description', 'en', $request->description_en)
             ->setTranslation('description', 'ar', $request->description_ar)
-            ->setTranslation('description', 'fr', $request->description_fr)
-            ->setTranslation('price', 'en', $request->price_en)
-            ->setTranslation('price', 'ar', $request->price_ar)
-            ->setTranslation('price', 'fr', $request->price_fr)
-            ->setTranslation('address', 'en', $request->address_en)
-            ->setTranslation('address', 'ar', $request->address_ar)
-            ->setTranslation('address', 'fr', $request->address_fr);
-
-        $services->available_date = $request->available_date;
-        $services->price          = $request->price;
-        $services->address        = $request->address;
-        $services->category_id    = $request->category_id;
+            ->setTranslation('description', 'fr', $request->description_fr);
         $services->status         = $request->status;
         $services->update_user_id = auth()->user()->id;
         $services->save();

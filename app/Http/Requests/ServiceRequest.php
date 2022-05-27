@@ -19,12 +19,12 @@ class serviceRequest extends FormRequest
     protected function onCreate()
     {
         return [
-            'name_ar'        => 'required|min:3|max:199',
-            'name_en'        => 'required|min:3|max:199',
-            'name_fr'        => 'required|min:3|max:199',
-            'describtion_ar' => 'required|max:500',
-            'describtion_en' => 'required|max:500',
-            'describtion_fr' => 'required|max:500',
+            'name_ar'          => 'required|min:3|max:199',
+            'name_en'          => 'required|min:3|max:199',
+            'name_fr'          => 'required|min:3|max:199',
+            'description_ar'   => 'required|max:500',
+            'description_en'   => 'required|max:500',
+            'description_fr'   => 'required|max:500',
         ];
     }
 
@@ -32,12 +32,12 @@ class serviceRequest extends FormRequest
     protected function onUpdate()
     {
         return [
-            'name_ar'        => 'required|min:3|max:199|unique:categories,name',
-            'name_en'        => 'required|min:3|max:199',
-            'name_fr'        => 'required|min:3|max:199',
-            'describtion_ar' => 'required|max:500',
-            'describtion_en' => 'required|max:500',
-            'describtion_fr' => 'required|max:500',
+            'name_ar'          => 'required|min:3|max:199|unique:categories,name',
+            'name_en'          => 'required|min:3|max:199',
+            'name_fr'          => 'required|min:3|max:199',
+            'description_ar'   => 'required|max:500',
+            'description_en'   => 'required|max:500',
+            'description_fr'   => 'required|max:500',
         ];
     }
 
@@ -72,44 +72,21 @@ class serviceRequest extends FormRequest
             'name_fr.max'      => __('admin/request.name_fr_max'),
 
 
-            // Validation describtion ar
-            'describtion_ar.required' => __('admin/request.describtion_ar_required'),
+            // Validation description ar
+            'description_ar.required' => __('admin/request.description_ar_required'),
             'description_ar.min'      => __('admin/request.description_ar_min'),
-            'describtion_ar.max'      => __('admin/request.describtion_ar_max'),
+            'description_ar.max'      => __('admin/request.description_ar_max'),
 
-            // Validation describtion en
-            'describtion_en.required' => __('admin/request.describtion_en_required'),
+            // Validation description en
+            'description_en.required' => __('admin/request.description_en_required'),
             'description_en.min'      => __('admin/request.description_en_min'),
-            'describtion_en.max'      => __('admin/request.describtion_en_max'),
+            'description_en.max'      => __('admin/request.description_en_max'),
 
-            // Validation describtion fr
-            'describtion_fr.required' => __('admin/request.describtion_fr_required'),
+            // Validation description fr
+            'description_fr.required' => __('admin/request.description_fr_required'),
             'description_fr.min'      => __('admin/request.description_fr_min'),
-            'describtion_fr.max'      => __('admin/request.describtion_fr_max'),
+            'description_fr.max'      => __('admin/request.description_fr_max'),
 
-            // Validation price ar
-            'price_ar.required' => __('admin/request.price_ar_required'),
-            'price_ar.max'      => __('admin/request.price_ar_max'),
-
-            // Validation price en
-            'price_en.required' => __('admin/request.price_en_required'),
-            'price_en.max'      => __('admin/request.price_en_max'),
-
-            // Validation price fr
-            'price_fr.required' => __('admin/request.price_fr_required'),
-            'price_fr.max'      => __('admin/request.price_fr_max'),
-
-            // Validation address ar
-            'address_ar.required' => __('admin/request.address_ar_required'),
-            'address_ar.max'      => __('admin/request.address_ar_max'),
-
-            // Validation address en
-            'address_en.required' => __('admin/request.address_en_required'),
-            'address_en.max'      => __('admin/request.address_en_max'),
-
-            // Validation address fr
-            'address_fr.required' => __('admin/request.address_fr_required'),
-            'address_fr.max'      => __('admin/request.address_fr_max'),
         ];
     }
 }

@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
         <!-- Main Slider -->
@@ -18,7 +20,8 @@
                                     <div class="slider-content align-center">
 
                                         <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                            The power of Technology
+                                            <?php echo e(__('admin/home.home_page_title')); ?>
+
 
                                             <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
                                                 <use xlink:href="#utouch-icon-arrow-left"></use>
@@ -29,19 +32,21 @@
                                             </svg>
 
                                         </h1>
-                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum dolor sit
-                                            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                                            laoreet dolore magna aliquam erat volutpat.
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <?php echo e(__('admin/home.home_page_content')); ?>
+
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="03_products.html" class="btn btn--yellow btn--with-shadow">
-                                                Learn More
+                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="03_products.html" class="btn btn--yellow btn--with-shadow">
+                                                <?php echo e(__('admin/home.home_page_learn-more')); ?>
+
                                             </a>
 
-                                            <a href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
-                                                Get Started Now
+                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
+                                                <?php echo e(__('admin/home.home_page_content3_button')); ?>
+
                                             </a>
                                         </div>
                                     </div>
@@ -64,17 +69,18 @@
                                 <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                                     <div class="slider-content align-both">
                                         <h2 class="slider-content-title" data-swiper-parallax="-100">
-                                            <span class="c-primary">Utouch</span>
-                                            is quality product that will make your life better
+                                            <span class="c-primary">GDP</span>
+                                            <?php echo e(__('admin/home.home_page_title2')); ?>
+
                                         </h2>
-                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum dolor sit amet,
-                                            consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                            magna aliquam erat volutpat.
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <span>GDP</span> <?php echo e(__('admin/home.home_page_content2')); ?>
+
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="#" class="btn btn-market btn--with-shadow">
+                                            <a onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color=''" href="#" class="btn btn-market btn--with-shadow">
                                                 <svg class="utouch-icon utouch-icon-apple-logotype-1">
                                                     <use xlink:href="#utouch-icon-apple-logotype-1"></use>
                                                 </svg>
@@ -84,7 +90,7 @@
                                                 </div>
                                             </a>
 
-                                            <a href="#" class="btn btn-market btn--with-shadow">
+                                            <a onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color=''" href="#" class="btn btn-market btn--with-shadow">
                                                 <img class="utouch-icon" src="<?php echo e(asset('website/svg-icons/google-play.svg')); ?>" alt="google">
                                                 <div class="text">
                                                     <span class="sup-title">Download on the</span>
@@ -108,17 +114,18 @@
 
                                     <div class="slider-content align-both">
 
-                                        <h2 class="slider-content-title" data-swiper-parallax="-100">Rise Up With the Most Interesting App</h2>
+                                        <h2 class="slider-content-title" data-swiper-parallax="-100"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
 
-                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum dolor sit amet,
-                                            consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                            dolore magna aliquam erat volutpat.
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <?php echo e(__('admin/home.home_page_content3')); ?>
+
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a href="02_company.html" class="btn btn--lime btn--with-shadow">
-                                                Get Started Now
+                                            <a onmouseover="this.style.backgroundColor ='orange'" onmouseout="this.style.backgroundColor =''" href="02_company.html" class="btn btn--lime btn--with-shadow">
+                                                <?php echo e(__('admin/home.home_page_content3_button')); ?>
+
                                             </a>
 
                                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.admin.master')
 @inject('model', 'App\Models\Service')
 
-@section('title') {{__('admin/Service.create')}} @endsection
+@section('title') {{__('admin/service.create')}} @endsection
 
 @section('content')
 

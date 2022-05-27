@@ -17,13 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('name', '500');
             $table->text('description');
-            $table->date('available_date');
-            $table->enum('status', ['Expired', 'Available', 'Stopped'])->nullable();
-            $table->float('price');
-            $table->string('address');
+            $table->enum('status', [0,1])->nullable();
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();
-            $table->string('category_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
