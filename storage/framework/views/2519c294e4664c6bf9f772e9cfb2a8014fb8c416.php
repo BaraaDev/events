@@ -112,17 +112,18 @@
 
                                     <div class="slider-content align-both">
 
-                                        <h2 class="slider-content-title" data-swiper-parallax="-100">Rise Up With the Most Interesting App</h2>
+                                        <h2 class="slider-content-title" data-swiper-parallax="-100"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
 
-                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Lorem ipsum dolor sit amet,
-                                            consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                                            dolore magna aliquam erat volutpat.
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <?php echo e(__('admin/home.home_page_content3')); ?>
+
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
                                             <a href="02_company.html" class="btn btn--lime btn--with-shadow">
-                                                Get Started Now
+                                                <?php echo e(__('admin/home.home_page_content3_button')); ?>
+
                                             </a>
 
                                         </div>
