@@ -139,7 +139,7 @@
 
                                 <div class="col-lg-6 col-sm-12 table-cell">
                                     <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                        <img src="<?php echo e(asset('website/img/slides2.png')); ?>" alt="slider">
+                                        <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider">
                                     </div>
                                 </div>
 
