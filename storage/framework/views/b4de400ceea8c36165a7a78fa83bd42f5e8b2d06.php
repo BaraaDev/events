@@ -1,14 +1,6 @@
 <header class="header header--menu-rounded header--blue-lighteen" id="site-header">
 
-    <div class="header-lines-decoration">
-        <span class="bg-secondary-color"></span>
-        <span class="bg-blue"></span>
-        <span class="bg-blue-light"></span>
-        <span class="bg-orange-light"></span>
-        <span class="bg-red"></span>
-        <span class="bg-green"></span>
-        <span class="bg-secondary-color"></span>
-    </div>
+    
 
     <div class="top-bar top-bar-dark">
         <div class="container">

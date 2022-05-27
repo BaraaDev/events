@@ -1,5 +1,7 @@
 
-
+<?php $__env->startSection('title'); ?>
+    - <?php echo app('translator')->get('website/home.events'); ?>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
         <!-- Start Header -->
