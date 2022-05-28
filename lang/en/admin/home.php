@@ -3,6 +3,7 @@
 return [
     'dashboard'                          => 'Dashboard',
     'home'                               => 'Home page',
+    'site'                               => 'Site',
     'sidebar_main_title'                 => 'Main Sidebar (Admin)',
     'action'                             => 'Action',
     'alert_no_data'                      => 'There are no data',

@@ -58,7 +58,7 @@
                                         </td>
                                         <td class="text-center">{{$category->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$category->update_user->name ?? ''}}</td>
-                                        <td class="text-center">{{$category->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$category->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                                 'route' => ['categories.destroy',$category->id],
@@ -85,7 +85,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        {!! $categories->links('pagination::bootstrap-4') !!}
+                        {!! $categories->links('pagination::bootstrap-5') !!}
                     </ul>
                 </nav>
             </div>

@@ -40,11 +40,11 @@
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="03_products.html" class="btn btn--yellow btn--with-shadow">
+                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="{{route('allContributions')}}" class="btn btn--yellow btn--with-shadow">
                                                 {{__('admin/home.home_page_learn-more')}}
                                             </a>
 
-                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
+                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="{{route('allEvents')}}" class="btn btn-border btn--with-shadow c-primary">
                                                 {{__('admin/home.home_page_content3_button')}}
                                             </a>
                                         </div>
@@ -52,7 +52,8 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                        <img src="{{asset('website/img/')}}" alt="slider"> <!--original: slides1.png-->
+                                        <img src="{{asset('website/img/slides5-modified.png')}}" width="200" height="600" alt="slider"> <!--original: slides1.png-->
+                                        <img src="{{asset('website/img/slides7.png')}}" width="300" height="600" alt="slider"> <!--original: slides1.png-->
                                     </div>
                                 </div>
 

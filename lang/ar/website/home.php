@@ -145,4 +145,5 @@ return [
     'central_office'                    => 'المكتب المركزي',
     'contact_with_us'                   => 'اتصل بنا',
     'userful_links'                     => 'روابط مفيدة',
+    'offers'                            => 'العروض المقدمة',
 ];

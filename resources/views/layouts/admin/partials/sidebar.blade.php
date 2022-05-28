@@ -27,30 +27,29 @@
                     </li>
                     <!------------- Start route dashboard ------------->
                     <li class="dropdown">
-                        <a class="nav-link menu-title active" href="{{route('dashboard')}}"><i data-feather="home"></i><span>{{__('admin/home.dashboard')}}</span></a>
+                        <a class="nav-link menu-title @if(routeActive('dashboard')) active @endif " href="{{route('dashboard')}}"><i data-feather="home"></i><span>{{__('admin/home.dashboard')}}</span></a>
                     </li>
                     <!------------- End route dashboard ------------->
 
                     <!------------- Start route main website ------------->
                     <li class="dropdown">
-                        <a class="nav-link menu-title" href="{{route('home')}}"><i data-feather="home"></i><span>{{__('website/home.home')}}</span></a>
+                        <a class="nav-link menu-title" href="{{route('home')}}" target="_blank"><i data-feather="home"></i><span>{{__('admin/home.site')}}</span></a>
                     </li>
                     <!------------- End route main website ------------->
 
-
-                    <!------------- Start route sliders ------------->
-                    <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('sliders.index') || routeActive('sliders.create') || routeActive('sliders.delete')) active @endif" href="javascript:void(0)">
-                            <i data-feather="sliders"></i>
-                            <span>{{__('admin/slider.sliders')}}</span>
-                        </a>
-                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('sliders.index') || routeActive('sliders.create')  || routeActive('sliders.delete')) block @else none @endif ;">
-                            <li><a href="{{ route('sliders.create') }}" class="{{routeActive('sliders.create')}}">{{__('admin/slider.create')}}</a></li>
-                            <li><a href="{{ route('sliders.index') }}" class="{{routeActive('sliders.index')}}">{{__('admin/slider.all_sliders')}}</a></li>
-                            <li><a href="{{ route('sliders.delete') }}" class="{{routeActive('sliders.delete')}}">{{__('admin/slider.deleted_sliders')}}</a></li>
-                        </ul>
-                    </li>
-                    <!------------- End route sliders ------------->
+{{--                    <!------------- Start route sliders ------------->--}}
+{{--                    <li class="dropdown">--}}
+{{--                        <a class="nav-link menu-title @if(routeActive('sliders.index') || routeActive('sliders.create') || routeActive('sliders.delete')) active @endif" href="javascript:void(0)">--}}
+{{--                            <i data-feather="sliders"></i>--}}
+{{--                            <span>{{__('admin/slider.sliders')}}</span>--}}
+{{--                        </a>--}}
+{{--                        <ul class="nav-submenu menu-content" style="display: @if(routeActive('sliders.index') || routeActive('sliders.create')  || routeActive('sliders.delete')) block @else none @endif ;">--}}
+{{--                            <li><a href="{{ route('sliders.create') }}" class="{{routeActive('sliders.create')}}">{{__('admin/slider.create')}}</a></li>--}}
+{{--                            <li><a href="{{ route('sliders.index') }}" class="{{routeActive('sliders.index')}}">{{__('admin/slider.all_sliders')}}</a></li>--}}
+{{--                            <li><a href="{{ route('sliders.delete') }}" class="{{routeActive('sliders.delete')}}">{{__('admin/slider.deleted_sliders')}}</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+{{--                    <!------------- End route sliders ------------->--}}
 
 
                     <!------------- Start route tags ------------->

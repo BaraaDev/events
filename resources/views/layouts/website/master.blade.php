@@ -84,7 +84,6 @@
                                 </svg>
                             </li>
                         @endguest
-
                     </ul>
                 </div>
             </div>
@@ -144,7 +143,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <span>
-                    Copyright © 2022 <a href="index.html" class="sub-footer__link">Graduation </a>
+                    Copyright © 2022 <a href="javascript:void(0);" class="sub-footer__link">Graduation </a>
                 </span>
 
                     <span>Developed by <a href="javascript:void(0)">Kareem</a>

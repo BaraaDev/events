@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title'); ?> <?php echo e(__('admin/tag.all_tags')); ?> <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -42,7 +40,7 @@
                                     <tr>
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($tag->name ?? 'not found'); ?></td>
-                                        <td class="text-center"><?php echo e($tag->created_at->format('Y-D-M')); ?></td>
+                                        <td class="text-center"><?php echo e($tag->created_at->translatedFormat('Y-m-d')); ?></td>
                                         <td class="text-center"><?php echo e($tag->create_user->name ?? ''); ?></td>
                                         <td class="text-center"><?php echo e($tag->update_user->name ?? ''); ?></td>
                                         <td class="text-center">
@@ -73,7 +71,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        <?php echo $tags->links('pagination::bootstrap-4'); ?>
+                        <?php echo $tags->links('pagination::bootstrap-5'); ?>
 
                     </ul>
                 </nav>

@@ -84,7 +84,6 @@
                                 </svg>
                             </li>
                         <?php endif; ?>
-
                     </ul>
                 </div>
             </div>
@@ -145,7 +144,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <span>
-                    Copyright © 2022 <a href="index.html" class="sub-footer__link">Graduation </a>
+                    Copyright © 2022 <a href="javascript:void(0);" class="sub-footer__link">Graduation </a>
                 </span>
 
                     <span>Developed by <a href="javascript:void(0)">Kareem</a>
@@ -170,15 +169,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('WwTDt6n')) {
-    $componentId = $_instance->getRenderedChildComponentId('WwTDt6n');
-    $componentTag = $_instance->getRenderedChildComponentTagName('WwTDt6n');
+} elseif ($_instance->childHasBeenRendered('2OVwuDe')) {
+    $componentId = $_instance->getRenderedChildComponentId('2OVwuDe');
+    $componentTag = $_instance->getRenderedChildComponentTagName('2OVwuDe');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('WwTDt6n');
+    $_instance->preserveRenderedChild('2OVwuDe');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('WwTDt6n', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('2OVwuDe', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

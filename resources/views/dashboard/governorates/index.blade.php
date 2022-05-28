@@ -43,7 +43,7 @@
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$governorate->name}}</td>
                                         <td class="text-center">{{$governorate->country->name ?? ''}}</td>
-                                        <td class="text-center">{{$governorate->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$governorate->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">{{$governorate->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$governorate->update_user->name ?? ''}}</td>
                                         <td class="text-center">
@@ -73,7 +73,7 @@
             </div>
             <nav class="m-b-30" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center pagination-primary">
-                    {!! $governorates->links('pagination::bootstrap-4') !!}
+                    {!! $governorates->links('pagination::bootstrap-5') !!}
                 </ul>
             </nav>
         </div>

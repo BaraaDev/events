@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
         <!-- Main Slider -->
@@ -33,18 +31,21 @@
 
                                         </h1>
                                         <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <div>
+                                                <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold;">Getting Day Planned (GDP)</h5>
+                                            </div>
                                             <?php echo e(__('admin/home.home_page_content')); ?>
 
                                         </h6>
 
                                         <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="03_products.html" class="btn btn--yellow btn--with-shadow">
+                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="<?php echo e(route('allContributions')); ?>" class="btn btn--yellow btn--with-shadow">
                                                 <?php echo e(__('admin/home.home_page_learn-more')); ?>
 
                                             </a>
 
-                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="02_company.html" class="btn btn-border btn--with-shadow c-primary">
+                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="<?php echo e(route('allEvents')); ?>" class="btn btn-border btn--with-shadow c-primary">
                                                 <?php echo e(__('admin/home.home_page_content3_button')); ?>
 
                                             </a>
@@ -53,7 +54,8 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                        <img src="<?php echo e(asset('website/img/slides1.png')); ?>" alt="slider">
+                                        <img src="<?php echo e(asset('website/img/slides5-modified.png')); ?>" width="200" height="600" alt="slider"> <!--original: slides1.png-->
+                                        <img src="<?php echo e(asset('website/img/slides7.png')); ?>" width="300" height="600" alt="slider"> <!--original: slides1.png-->
                                     </div>
                                 </div>
 
@@ -98,6 +100,8 @@
                                                 </div>
                                             </a>
 
+                                            <img src="<?php echo e(asset('website/img/balloon.png')); ?>">
+
                                         </div>
 
                                     </div>
@@ -135,8 +139,8 @@
                                 </div>
 
                                 <div class="col-lg-6 col-sm-12 table-cell">
-                                    <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-                                        <img src="<?php echo e(asset('website/img/slides2.png')); ?>" alt="slider">
+                                    <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
+                                        <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider"> <!--original: slides2.png-->
                                     </div>
                                 </div>
 
@@ -179,12 +183,12 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="<?php echo e(asset('website/svg-icons/smartphone.svg')); ?>" alt="smartphone">
+                                <img class="utouch-icon" src="<?php echo e(asset('website/img/wedding.png')); ?>" alt="wedding">
                                 <img class="cloud" src="<?php echo e(asset('website/img/clouds8.png')); ?>" alt="cloud">
                             </div>
 
                             <div class="info-box-content">
-                                <a href="#" class="h5 info-box-title">Online Shopping</a>
+                                <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
                                 <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                     nibh euismod tincidunt ut laoreet dolore magna aliquam.
                                 </p>
@@ -206,12 +210,12 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="<?php echo e(asset('website/svg-icons/music%20(1).svg')); ?>" alt="smartphone">
+                                <img class="utouch-icon" src="<?php echo e(asset('website/img/party.png')); ?>" alt="party">
                                 <img class="cloud" src="<?php echo e(asset('website/img/clouds9.png')); ?>" alt="cloud">
                             </div>
 
                             <div class="info-box-content">
-                                <a href="#" class="h5 info-box-title">Multimedia Archives</a>
+                                <a href="#" class="h5 info-box-title">Birthday Party</a>
                                 <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                     nibh euismod tincidunt ut laoreet dolore magna aliquam.
                                 </p>
@@ -233,12 +237,12 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="<?php echo e(asset('website/svg-icons/settings%20(4).svg')); ?>" alt="smartphone">
+                                <img class="utouch-icon" src="<?php echo e(asset('website/img/sushi2.png')); ?>" alt="food_service">
                                 <img class="cloud" src="<?php echo e(asset('website/img/clouds10.png')); ?>" alt="cloud">
                             </div>
 
                             <div class="info-box-content">
-                                <a href="#" class="h5 info-box-title">Quick Settings</a>
+                                <a href="#" class="h5 info-box-title">Food Service</a>
                                 <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                     nibh euismod tincidunt ut laoreet dolore magna aliquam.
                                 </p>

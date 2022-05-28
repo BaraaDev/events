@@ -58,7 +58,7 @@
                                         </td>
                                         <td class="text-center">{{$service->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$service->update_user->name ?? ''}}</td>
-                                        <td class="text-center">{{$service->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$service->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                             'route' => ['services.destroy',$service->id],
@@ -87,7 +87,7 @@
             </div>
             <nav class="m-b-30" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center pagination-primary">
-                    {!! $services->links('pagination::bootstrap-4') !!}
+                    {!! $services->links('pagination::bootstrap-5') !!}
                 </ul>
             </nav>
         </div>

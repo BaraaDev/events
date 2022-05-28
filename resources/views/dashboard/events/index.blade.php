@@ -54,7 +54,7 @@
                                             <a href="{{route('cities.edit',$event->city->id ?? '')}}">{{$event->city->name ?? ''}}</a>
                                         </td>
                                         <td class="text-center">{{$event->create_user->name ?? ''}}</td>
-                                        <td class="text-center">{{$event->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$event->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">
                                             @if($event->status == 'Expired')
                                                 <div class="badge badge-dark label-square">
@@ -95,7 +95,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        {!! $events->links('pagination::bootstrap-4') !!}
+                        {!! $events->links('pagination::bootstrap-5') !!}
                     </ul>
                 </nav>
             </div>

@@ -1,6 +1,6 @@
 <header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
 
-    {{-- <div class="header-lines-decoration">
+     <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
         <span class="bg-blue"></span>
         <span class="bg-blue-light"></span>
@@ -8,7 +8,7 @@
         <span class="bg-red"></span>
         <span class="bg-green"></span>
         <span class="bg-secondary-color"></span>
-    </div> --}}
+    </div>
 
     <div class="top-bar top-bar-dark">
         <div class="container">
@@ -16,28 +16,26 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item">
-                    {{-- <span id="txt"></span>
-                      
-                      <script>
-                      function startTime() {
-                        var today = new Date();
-                        var h = today.getHours();
-                        var m = today.getMinutes();
-                        var s = today.getSeconds();
-                        m = checkTime(m);
-                        s = checkTime(s);
-                        document.querySelector('#txt').innerHTML = h + ":" + m + ":" + s;
-                        var t = setTimeout(startTime, 500);
-                      }
-                      function checkTime(i) {
-                        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                        return i;
-                      }
-                      </script> --}}
-
-
                     <div class="contact-item" id="clock">
-                        <span>{{Carbon\Carbon::now()->format('D Y H:i')}}</span>
+                        {{Carbon\Carbon::now()->translatedFormat('D Y')}}
+                        <span id="time"></span>
+                        <script >
+                            function showTime() {
+                                var date = new Date(),
+                                    utc = new Date(Date.UTC(
+                                        date.getFullYear(),
+                                        date.getMonth(),
+                                        date.getDate(),
+                                        date.getHours(),
+                                        date.getMinutes(),
+                                        date.getSeconds()
+                                    ));
+
+                                document.getElementById('time').innerHTML = utc.toLocaleTimeString();
+                            }
+
+                            setInterval(showTime, 1000);
+                        </script>
                     </div>
                 </div>
 

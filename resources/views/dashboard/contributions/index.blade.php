@@ -60,7 +60,7 @@
                                         </td>
                                         <td class="text-center">{{$contribution->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$contribution->update_user->name ?? ''}}</td>
-                                        <td class="text-center">{{$contribution->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$contribution->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                                 'route' => ['contributions.destroy',$contribution->id],
@@ -87,7 +87,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        {!! $contributions->links('pagination::bootstrap-4') !!}
+                        {!! $contributions->links('pagination::bootstrap-5') !!}
                     </ul>
                 </nav>
             </div>

@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title'); ?> <?php echo e(__('admin/event.all_events')); ?> <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -54,7 +52,7 @@
                                             <a href="<?php echo e(route('cities.edit',$event->city->id ?? '')); ?>"><?php echo e($event->city->name ?? ''); ?></a>
                                         </td>
                                         <td class="text-center"><?php echo e($event->create_user->name ?? ''); ?></td>
-                                        <td class="text-center"><?php echo e($event->created_at->format('Y-D-M')); ?></td>
+                                        <td class="text-center"><?php echo e($event->created_at->translatedFormat('Y-m-d')); ?></td>
                                         <td class="text-center">
                                             <?php if($event->status == 'Expired'): ?>
                                                 <div class="badge badge-dark label-square">
@@ -98,7 +96,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        <?php echo $events->links('pagination::bootstrap-4'); ?>
+                        <?php echo $events->links('pagination::bootstrap-5'); ?>
 
                     </ul>
                 </nav>

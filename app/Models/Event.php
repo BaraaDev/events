@@ -63,13 +63,6 @@ class Event extends Model implements HasMedia
         return $this->morphMany(Comment::class, 'commentable')->whereNull('parent_id');
     }
 
-//    public function registerMediaConversions(Media $media = null): void
-//    {
-//        $this->addMediaConversion('image')
-//            ->width(810)
-//            ->height(540)
-//            ->nonOptimized();
-//    }
 
     public function getPhotoAttribute()
     {

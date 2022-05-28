@@ -35,7 +35,6 @@
                                         {{__('admin/home.arabic')}}
                                     </div>
                                 </a>
-
                             </div>
                         </li>
 

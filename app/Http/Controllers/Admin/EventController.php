@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\EventRequest;
 use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class EventController extends Controller
 {
@@ -48,8 +49,8 @@ class EventController extends Controller
         if ($request->hasFile('images')) {
             $events
                 ->addMediaFromRequest('images')
-                ->UsingName($events->title_en)
-                ->UsingFileName("$events->title_en")
+                ->UsingName(Str::random(50))
+                ->UsingFileName(Str::random(50))
                 ->toMediaCollection('images');
         }
 

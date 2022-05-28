@@ -42,7 +42,7 @@
                                     <tr>
                                         <th scope="row" class="text-center">{{$loop->iteration}}</th>
                                         <td class="text-center">{{$tag->name ?? 'not found'}}</td>
-                                        <td class="text-center">{{$tag->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$tag->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">{{$tag->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$tag->update_user->name ?? ''}}</td>
                                         <td class="text-center">
@@ -70,7 +70,7 @@
                 </div>
                 <nav class="m-b-30" aria-label="Page navigation example">
                     <ul class="pagination justify-content-center pagination-primary">
-                        {!! $tags->links('pagination::bootstrap-4') !!}
+                        {!! $tags->links('pagination::bootstrap-5') !!}
                     </ul>
                 </nav>
             </div>

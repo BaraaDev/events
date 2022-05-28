@@ -46,7 +46,7 @@
                                         <td class="text-center">{{$city->country->name ?? ''}}</td>
                                         <td class="text-center">{{$city->create_user->name ?? ''}}</td>
                                         <td class="text-center">{{$city->update_user->name ?? ''}}</td>
-                                        <td class="text-center">{{$city->created_at->format('Y-D-M')}}</td>
+                                        <td class="text-center">{{$city->created_at->translatedFormat('Y-m-d')}}</td>
                                         <td class="text-center">
                                             {!! Form::open([
                                             'route' => ['cities.destroy',$city->id],
@@ -73,7 +73,7 @@
             </div>
             <nav class="m-b-30" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center pagination-primary">
-                    {!! $cities->links('pagination::bootstrap-4') !!}
+                    {!! $cities->links('pagination::bootstrap-5') !!}
                 </ul>
             </nav>
         </div>
