@@ -1,4 +1,4 @@
-<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #FFFFFF;">
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
 
     {{-- <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div class="container" style="background-color: #FFFFFF;">
+    <div class="container" style="">
         <a href="javascript:void(0)" id="top-bar-js" class="top-bar-link">
             <svg class="utouch-icon utouch-icon-arrow-top">
                 <use xlink:href="#utouch-icon-arrow-top"></use>
@@ -130,13 +130,6 @@
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
 
                     <li><a href="{{route('contact-us')}}">{{__('website/home.contact_us')}}</a></li>
-
-                    <style>
-                        nav .primary-menu-menu li .menu-component-item:hover{
-                            color: #FFFFFF;
-                            background-color: #FCB41E;
-                        }
-                    </style>
 
                     @if(!auth()->user())
                         <li>

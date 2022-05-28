@@ -174,12 +174,12 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/svg-icons/smartphone.svg')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/wedding.png')}}" alt="smartphone">
                                 <img class="cloud" src="{{asset('website/img/clouds8.png')}}" alt="cloud">
                             </div>
 
                             <div class="info-box-content">
-                                <a href="#" class="h5 info-box-title">Online Shopping</a>
+                                <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
                                 <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                     nibh euismod tincidunt ut laoreet dolore magna aliquam.
                                 </p>
@@ -201,12 +201,12 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/svg-icons/music%20(1).svg')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/party.png')}}" alt="smartphone">
                                 <img class="cloud" src="{{asset('website/img/clouds9.png')}}" alt="cloud">
                             </div>
 
                             <div class="info-box-content">
-                                <a href="#" class="h5 info-box-title">Multimedia Archives</a>
+                                <a href="#" class="h5 info-box-title">Birthday Party</a>
                                 <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                     nibh euismod tincidunt ut laoreet dolore magna aliquam.
                                 </p>
@@ -228,12 +228,12 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/svg-icons/settings%20(4).svg')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/sushi.png')}}" alt="smartphone">
                                 <img class="cloud" src="{{asset('website/img/clouds10.png')}}" alt="cloud">
                             </div>
 
                             <div class="info-box-content">
-                                <a href="#" class="h5 info-box-title">Quick Settings</a>
+                                <a href="#" class="h5 info-box-title">Food Service</a>
                                 <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                     nibh euismod tincidunt ut laoreet dolore magna aliquam.
                                 </p>

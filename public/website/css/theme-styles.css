@@ -4580,7 +4580,7 @@ textarea {
   padding: 10px 13px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  background-color: transparent; }
+  }
 
 .header--menu-rounded .primary-menu-menu > li {
   padding: 50px 0; }

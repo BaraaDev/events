@@ -1,4 +1,4 @@
-<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #FFFFFF;">
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
 
     
 
@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <div class="container" style="background-color: #FFFFFF;">
+    <div class="container" style="">
         <a href="javascript:void(0)" id="top-bar-js" class="top-bar-link">
             <svg class="utouch-icon utouch-icon-arrow-top">
                 <use xlink:href="#utouch-icon-arrow-top"></use>
@@ -105,13 +105,6 @@
                     <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
 
                     <li><a href="<?php echo e(route('contact-us')); ?>"><?php echo e(__('website/home.contact_us')); ?></a></li>
-
-                    <style>
-                        nav .primary-menu-menu li .menu-component-item:hover{
-                            color: #FFFFFF;
-                            background-color: #FCB41E;
-                        }
-                    </style>
 
                     <?php if(!auth()->user()): ?>
                         <li>
