@@ -40,7 +40,7 @@
                                     <tr>
                                         <th scope="row" class="text-center"><?php echo e($loop->iteration); ?></th>
                                         <td class="text-center"><?php echo e($country->name); ?></td>
-                                        <td class="text-center"><?php echo e($country->created_at->format('Y-D-M')); ?></td>
+                                        <td class="text-center"><?php echo e($country->created_at->translatedFormat('Y-m-d')); ?></td>
                                         <td class="text-center"><?php echo e($country->create_user->name ?? ''); ?></td>
                                         <td class="text-center"><?php echo e($country->update_user->name ?? ''); ?></td>
                                         <td class="text-center">
@@ -70,7 +70,7 @@
             </div>
             <nav class="m-b-30" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center pagination-primary">
-                    <?php echo $countries->links('pagination::bootstrap-4'); ?>
+                    <?php echo $countries->links('pagination::bootstrap-5'); ?>
 
                 </ul>
             </nav>

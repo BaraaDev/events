@@ -1,6 +1,14 @@
 <header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
 
-    
+     <div class="header-lines-decoration">
+        <span class="bg-secondary-color"></span>
+        <span class="bg-blue"></span>
+        <span class="bg-blue-light"></span>
+        <span class="bg-orange-light"></span>
+        <span class="bg-red"></span>
+        <span class="bg-green"></span>
+        <span class="bg-secondary-color"></span>
+    </div>
 
     <div class="top-bar top-bar-dark">
         <div class="container">
@@ -8,11 +16,27 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item">
-                    
-
-
                     <div class="contact-item" id="clock">
-                        <span><?php echo e(Carbon\Carbon::now()->format('D Y H:i')); ?></span>
+                        <?php echo e(Carbon\Carbon::now()->translatedFormat('D Y')); ?>
+
+                        <span id="time"></span>
+                        <script >
+                            function showTime() {
+                                var date = new Date(),
+                                    utc = new Date(Date.UTC(
+                                        date.getFullYear(),
+                                        date.getMonth(),
+                                        date.getDate(),
+                                        date.getHours(),
+                                        date.getMinutes(),
+                                        date.getSeconds()
+                                    ));
+
+                                document.getElementById('time').innerHTML = utc.toLocaleTimeString();
+                            }
+
+                            setInterval(showTime, 1000);
+                        </script>
                     </div>
                 </div>
 
