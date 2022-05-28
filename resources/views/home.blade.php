@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                        <img src="{{asset('website/img/slides1.png')}}" alt="slider">
+                                        <img src="{{asset('website/img/')}}" alt="slider">
                                     </div>
                                 </div>
 
@@ -176,7 +176,7 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/img/wedding.png')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/wedding.png')}}" alt="wedding">
                                 <img class="cloud" src="{{asset('website/img/clouds8.png')}}" alt="cloud">
                             </div>
 
@@ -203,7 +203,7 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/img/party.png')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/party.png')}}" alt="party">
                                 <img class="cloud" src="{{asset('website/img/clouds9.png')}}" alt="cloud">
                             </div>
 
@@ -230,7 +230,7 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/img/sushi2.png')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/sushi2.png')}}" alt="food_service">
                                 <img class="cloud" src="{{asset('website/img/clouds10.png')}}" alt="cloud">
                             </div>
 

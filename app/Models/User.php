@@ -49,15 +49,15 @@ class User extends Authenticatable implements HasMedia
         return $this->hasMany(Event::class,'create_user_id');
     }
 
-    public function city()
+    public function city(): \Illuminate\Database\Eloquent\Relations\belongsTo
     {
         return $this->belongsTo(City::class);
     }
-    public function governorate()
+    public function governorate(): \Illuminate\Database\Eloquent\Relations\belongsTo
     {
         return $this->belongsTo(Governorate::class);
     }
-    public function country()
+    public function country(): \Illuminate\Database\Eloquent\Relations\belongsTo
     {
         return $this->belongsTo(Country::class);
     }
