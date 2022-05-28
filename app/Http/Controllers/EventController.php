@@ -18,7 +18,7 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::status('Available')->paginate(12);
+        $events = Event::paginate(12);
         return view('website.events.index',compact('events'));
     }
 
@@ -52,8 +52,10 @@ class EventController extends Controller
 
     public function show($id)
     {
-        $event = Event::status('Available')->findOrFail($id);
-        return view('website.events.show',compact('event'));
+        $event = Event::findOrFail($id);
+
+            return view('website.events.show',compact('event'));
+
     }
 
     public function create()

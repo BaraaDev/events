@@ -52,6 +52,10 @@ class Event extends Model implements HasMedia
     {
         return $this->belongsTo(User::class);
     }
+    public function order(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(EventOrder::class,'event_id','id');
+    }
 
     public function tags()
     {

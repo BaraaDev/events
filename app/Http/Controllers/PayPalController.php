@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use App\Models\Order;
 use App\Services\PaypalService;
 use Illuminate\Http\Request;
@@ -44,14 +45,14 @@ class PayPalController extends Controller
         $order = Order::find($orderId);
         $order->is_paid = 1;
         $order->save();
-        // Mail::to($order->user->email)->send(new OrderPaid($order));
+
         return redirect()->route('allEvents')->withMessage('Payment successful!');
 
         $response = $this->paypalService->captureOrder($order->paypal_orderid);
         if ($response->result->status == 'COMPLETED') {
             $order->is_paid = 1;
             $order->save();
-            // Mail::to($order->user->email)->send(new OrderPaid($order));
+
             return redirect()->route('allEvents')->withMessage('Payment successful!');
         }
         return redirect()->route('allEvents')->withError('Payment UnSuccessful! Something went wrong!');

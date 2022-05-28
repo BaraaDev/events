@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('order_number');
-            $table->string('paypal_orderid');
+            $table->string('paypal_orderid')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('user_to_id');
             $table->float('value');

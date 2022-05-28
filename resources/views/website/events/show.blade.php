@@ -107,92 +107,99 @@
                             @if(session('message') ?? '' )
                                 @include('layouts.website.partials.alert.success')
                             @endif
-                            @forelse($event->comments as $comment)
+                                @if($event->status == 'Available')
+                                @forelse($event->comments as $comment)
 
-                            <ol class="comments__list">
-                                <li class="comments__item">
-                                    <div class="comment-entry comment comments__article">
-                                        <div class="comments__avatar">
-                                            <img src="{{$comment->user->photo ?? ''}}" alt="{{$comment->user->name ?? ''}}">
-                                        </div>
-                                        <div class="comments__body">
-                                            <div class="row">
-                                                <div class="@if(auth()->user()) @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard') col-lg-4 col-md-4 @else col-lg-8 col-md-8 @endif @endif" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
-                                                    <div class="d-flex--content-inline">
-                                                        <header class="comment-meta comments__header">
-                                                            <cite class="fn url comments__author">
-                                                                <a href="javascript:void(0)" rel="external" class="h6">{{$comment->user->name ?? ''}}</a>
-                                                            </cite>
-                                                            <div class="comments__time">
-                                                                <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('dD M Y, H:m a')}}</time>
-                                                            </div>
-                                                        </header>
+                                <ol class="comments__list">
+                                    <li class="comments__item">
+                                        <div class="comment-entry comment comments__article">
+                                            <div class="comments__avatar">
+                                                <img src="{{$comment->user->photo ?? ''}}" alt="{{$comment->user->name ?? ''}}">
+                                            </div>
+                                            <div class="comments__body">
+                                                <div class="row">
+                                                    <div class="@if(auth()->user()) @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard') col-lg-4 col-md-4 @else col-lg-8 col-md-8 @endif @endif" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right; margin: 0 auto;" @endif>
+                                                        <div class="d-flex--content-inline">
+                                                            <header class="comment-meta comments__header">
+                                                                <cite class="fn url comments__author">
+                                                                    <a href="javascript:void(0)" rel="external" class="h6">{{$comment->user->name ?? ''}}</a>
+                                                                </cite>
+                                                                <div class="comments__time">
+                                                                    <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('dD M Y, H:m a')}}</time>
+                                                                </div>
+                                                            </header>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                @if(auth()->user())
-                                                    @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
+                                                    @if(auth()->user())
+                                                        @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
 
-                                                        @if(auth()->user()->user_type == 'customer')
+                                                            @if(auth()->user()->user_type == 'customer')
+                                                                <div class="col-lg-4 col-md-4">
+                                                                    {!! Form::open([
+                                                                        'route' => ['payNow'],
+                                                                        'method' => 'post'
+                                                                    ])!!}
+                                                                    <input type="hidden" value="{{ $event->id }}" name="event_id">
+                                                                    <input type="hidden" value="{{ $comment->user_id }}" name="user_to">
+                                                                    <input type="hidden" value="{{ $comment->value }}" name="value">
+                                                                    <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="{{__('website/home.payNow')}}">{{$comment->value}} (USD)</button>
+                                                                    {!! Form::close() !!}
+                                                                </div>
+                                                            @endif
                                                             <div class="col-lg-4 col-md-4">
                                                                 {!! Form::open([
-                                                                    'route' => ['payNow'],
-                                                                    'method' => 'post'
+                                                                    'route' => ['comment.delete',$comment->id],
+                                                                    'method' => 'delete'
                                                                 ])!!}
-                                                                <input type="hidden" value="{{ $event->id }}" name="event_id">
-                                                                <input type="hidden" value="{{ $comment->user_id }}" name="user_to">
-                                                                <input type="hidden" value="{{ $comment->value }}" name="value">
-                                                                <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="{{__('website/home.payNow')}}">{{$comment->value}} (USD)</button>
+                                                                <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">{{__('website/home.delete')}}</button>
                                                                 {!! Form::close() !!}
                                                             </div>
                                                         @endif
-                                                        <div class="col-lg-4 col-md-4">
-                                                            {!! Form::open([
-                                                                'route' => ['comment.delete',$comment->id],
-                                                                'method' => 'delete'
-                                                            ])!!}
-                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;">{{__('website/home.delete')}}</button>
-                                                            {!! Form::close() !!}
-                                                        </div>
                                                     @endif
-                                                @endif
-                                            </div>
-                                            <div class="comment-content comment">
-                                                <p>{{$comment->body ?? ''}}</p>
-                                            </div>
+                                                </div>
+                                                <div class="comment-content comment">
+                                                    <p>{{$comment->body ?? ''}}</p>
+                                                </div>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                    @foreach($comment->replies as $reply)
-                                        @include('website.events.reply')
-                                    @endforeach
-                                </li>
-                                @if(auth()->user())
-                                    @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
-                                        <a href="" class="btn bg-yellow" onclick="$(this).next('div').slideToggle(500);return false;">{{__('website/home.reply')}}</a>
-                                        <div style="display: none">
-                                            <form method="post" action="{{ route('reply.event', $comment->id)}}">
-                                                @csrf
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="with-icon">
-                                                        <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
-                                                        <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-                                                        <input type="hidden" name="commentable_id" value="{{ $event->id }}" />
-                                                        <input type="hidden" name="comment_id" value="{{ $comment->id }}" />
+                                        @foreach($comment->replies as $reply)
+                                            @include('website.events.reply')
+                                        @endforeach
+                                    </li>
+                                    @if(auth()->user())
+                                        @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
+                                            <a href="" class="btn bg-yellow" onclick="$(this).next('div').slideToggle(500);return false;">{{__('website/home.reply')}}</a>
+                                            <div style="display: none">
+                                                <form method="post" action="{{ route('reply.event', $comment->id)}}">
+                                                    @csrf
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="with-icon">
+                                                            <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
+                                                            <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                                            <input type="hidden" name="commentable_id" value="{{ $event->id }}" />
+                                                            <input type="hidden" name="comment_id" value="{{ $comment->id }}" />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn bg-blue">{{__('website/home.add_reply')}}</button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn bg-blue">{{__('website/home.add_reply')}}</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        @endif
                                     @endif
+                                </ol>
+
+                                @empty
+                                    <div class="alert alert-danger" role="alert">
+                                        <strong>{{__('website/event.Oh_snap')}} </strong>{{__('website/event.no_offers')}}
+                                    </div>
+                                @endforelse
+                                @else
+                                    <div class="alert alert-danger" role="alert">
+                                        <strong>{{__('website/event.Oh_snap')}} </strong>{{__('website/event.no_offers')}}
+                                    </div>
                                 @endif
-                            </ol>
-                            @empty
-                                <div class="alert alert-danger" role="alert">
-                                    <strong>{{__('website/event.Oh_snap')}} </strong>{{__('website/event.no_offers')}}
-                                </div>
-                            @endforelse
                         </div>
                     </div>
 

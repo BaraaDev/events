@@ -110,97 +110,105 @@
                             <?php if(session('message') ?? '' ): ?>
                                 <?php echo $__env->make('layouts.website.partials.alert.success', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                             <?php endif; ?>
-                            <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                                <?php if($event->status == 'Available'): ?>
+                                <?php $__empty_1 = true; $__currentLoopData = $event->comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comment): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
 
-                            <ol class="comments__list">
-                                <li class="comments__item">
-                                    <div class="comment-entry comment comments__article">
-                                        <div class="comments__avatar">
-                                            <img src="<?php echo e($comment->user->photo ?? ''); ?>" alt="<?php echo e($comment->user->name ?? ''); ?>">
-                                        </div>
-                                        <div class="comments__body">
-                                            <div class="row">
-                                                <div class="<?php if(auth()->user()): ?> <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'): ?> col-lg-4 col-md-4 <?php else: ?> col-lg-8 col-md-8 <?php endif; ?> <?php endif; ?>" <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> style="float: right; margin: 0 auto;" <?php endif; ?>>
-                                                    <div class="d-flex--content-inline">
-                                                        <header class="comment-meta comments__header">
-                                                            <cite class="fn url comments__author">
-                                                                <a href="javascript:void(0)" rel="external" class="h6"><?php echo e($comment->user->name ?? ''); ?></a>
-                                                            </cite>
-                                                            <div class="comments__time">
-                                                                <time class="published" title="<?php echo e($comment->created_at->diffForHumans()); ?>" datetime="<?php echo e($comment->created_at); ?>"><?php echo e($comment->created_at->format('dD M Y, H:m a')); ?></time>
-                                                            </div>
-                                                        </header>
+                                <ol class="comments__list">
+                                    <li class="comments__item">
+                                        <div class="comment-entry comment comments__article">
+                                            <div class="comments__avatar">
+                                                <img src="<?php echo e($comment->user->photo ?? ''); ?>" alt="<?php echo e($comment->user->name ?? ''); ?>">
+                                            </div>
+                                            <div class="comments__body">
+                                                <div class="row">
+                                                    <div class="<?php if(auth()->user()): ?> <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'): ?> col-lg-4 col-md-4 <?php else: ?> col-lg-8 col-md-8 <?php endif; ?> <?php endif; ?>" <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> style="float: right; margin: 0 auto;" <?php endif; ?>>
+                                                        <div class="d-flex--content-inline">
+                                                            <header class="comment-meta comments__header">
+                                                                <cite class="fn url comments__author">
+                                                                    <a href="javascript:void(0)" rel="external" class="h6"><?php echo e($comment->user->name ?? ''); ?></a>
+                                                                </cite>
+                                                                <div class="comments__time">
+                                                                    <time class="published" title="<?php echo e($comment->created_at->diffForHumans()); ?>" datetime="<?php echo e($comment->created_at); ?>"><?php echo e($comment->created_at->format('dD M Y, H:m a')); ?></time>
+                                                                </div>
+                                                            </header>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <?php if(auth()->user()): ?>
-                                                    <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
+                                                    <?php if(auth()->user()): ?>
+                                                        <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
 
-                                                        <?php if(auth()->user()->user_type == 'customer'): ?>
+                                                            <?php if(auth()->user()->user_type == 'customer'): ?>
+                                                                <div class="col-lg-4 col-md-4">
+                                                                    <?php echo Form::open([
+                                                                        'route' => ['payNow'],
+                                                                        'method' => 'post'
+                                                                    ]); ?>
+
+                                                                    <input type="hidden" value="<?php echo e($event->id); ?>" name="event_id">
+                                                                    <input type="hidden" value="<?php echo e($comment->user_id); ?>" name="user_to">
+                                                                    <input type="hidden" value="<?php echo e($comment->value); ?>" name="value">
+                                                                    <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="<?php echo e(__('website/home.payNow')); ?>"><?php echo e($comment->value); ?> (USD)</button>
+                                                                    <?php echo Form::close(); ?>
+
+                                                                </div>
+                                                            <?php endif; ?>
                                                             <div class="col-lg-4 col-md-4">
                                                                 <?php echo Form::open([
-                                                                    'route' => ['payNow'],
-                                                                    'method' => 'post'
+                                                                    'route' => ['comment.delete',$comment->id],
+                                                                    'method' => 'delete'
                                                                 ]); ?>
 
-                                                                <input type="hidden" value="<?php echo e($event->id); ?>" name="event_id">
-                                                                <input type="hidden" value="<?php echo e($comment->user_id); ?>" name="user_to">
-                                                                <input type="hidden" value="<?php echo e($comment->value); ?>" name="value">
-                                                                <button class="btn btn--green" style="margin-bottom: 20px; margin-left: 0;" title="<?php echo e(__('website/home.payNow')); ?>"><?php echo e($comment->value); ?> (USD)</button>
+                                                                <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;"><?php echo e(__('website/home.delete')); ?></button>
                                                                 <?php echo Form::close(); ?>
 
                                                             </div>
                                                         <?php endif; ?>
-                                                        <div class="col-lg-4 col-md-4">
-                                                            <?php echo Form::open([
-                                                                'route' => ['comment.delete',$comment->id],
-                                                                'method' => 'delete'
-                                                            ]); ?>
-
-                                                            <button class="btn btn--red" style="margin-bottom: 20px; margin-left: 0;"><?php echo e(__('website/home.delete')); ?></button>
-                                                            <?php echo Form::close(); ?>
-
-                                                        </div>
                                                     <?php endif; ?>
-                                                <?php endif; ?>
-                                            </div>
-                                            <div class="comment-content comment">
-                                                <p><?php echo e($comment->body ?? ''); ?></p>
-                                            </div>
+                                                </div>
+                                                <div class="comment-content comment">
+                                                    <p><?php echo e($comment->body ?? ''); ?></p>
+                                                </div>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                    <?php $__currentLoopData = $comment->replies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $reply): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                        <?php echo $__env->make('website.events.reply', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                </li>
-                                <?php if(auth()->user()): ?>
-                                    <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
-                                        <a href="" class="btn bg-yellow" onclick="$(this).next('div').slideToggle(500);return false;"><?php echo e(__('website/home.reply')); ?></a>
-                                        <div style="display: none">
-                                            <form method="post" action="<?php echo e(route('reply.event', $comment->id)); ?>">
-                                                <?php echo csrf_field(); ?>
-                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    <div class="with-icon">
-                                                        <textarea name="comment_body" required placeholder="<?php echo e(__('website/event.offer_details')); ?>" style="min-height: 160px;"></textarea>
-                                                        <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-                                                        <input type="hidden" name="commentable_id" value="<?php echo e($event->id); ?>" />
-                                                        <input type="hidden" name="comment_id" value="<?php echo e($comment->id); ?>" />
+                                        <?php $__currentLoopData = $comment->replies; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $reply): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                            <?php echo $__env->make('website.events.reply', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                    </li>
+                                    <?php if(auth()->user()): ?>
+                                        <?php if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard'): ?>
+                                            <a href="" class="btn bg-yellow" onclick="$(this).next('div').slideToggle(500);return false;"><?php echo e(__('website/home.reply')); ?></a>
+                                            <div style="display: none">
+                                                <form method="post" action="<?php echo e(route('reply.event', $comment->id)); ?>">
+                                                    <?php echo csrf_field(); ?>
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="with-icon">
+                                                            <textarea name="comment_body" required placeholder="<?php echo e(__('website/event.offer_details')); ?>" style="min-height: 160px;"></textarea>
+                                                            <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                                            <input type="hidden" name="commentable_id" value="<?php echo e($event->id); ?>" />
+                                                            <input type="hidden" name="comment_id" value="<?php echo e($comment->id); ?>" />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn bg-blue"><?php echo e(__('website/home.add_reply')); ?></button>
-                                                </div>
-                                            </form>
-                                        </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn bg-blue"><?php echo e(__('website/home.add_reply')); ?></button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        <?php endif; ?>
                                     <?php endif; ?>
-                                <?php endif; ?>
-                            </ol>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                                <div class="alert alert-danger" role="alert">
-                                    <strong><?php echo e(__('website/event.Oh_snap')); ?> </strong><?php echo e(__('website/event.no_offers')); ?>
+                                </ol>
 
-                                </div>
-                            <?php endif; ?>
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        <strong><?php echo e(__('website/event.Oh_snap')); ?> </strong><?php echo e(__('website/event.no_offers')); ?>
+
+                                    </div>
+                                <?php endif; ?>
+                                <?php else: ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        <strong><?php echo e(__('website/event.Oh_snap')); ?> </strong><?php echo e(__('website/event.no_offers')); ?>
+
+                                    </div>
+                                <?php endif; ?>
                         </div>
                     </div>
 
