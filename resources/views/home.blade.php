@@ -95,6 +95,8 @@
                                                 </div>
                                             </a>
 
+                                            <img src="{{asset('website/img/balloon.png')}}">
+
                                         </div>
 
                                     </div>
@@ -228,7 +230,7 @@
                         <div class="crumina-module crumina-info-box info-box--standard-hover">
 
                             <div class="info-box-image">
-                                <img class="utouch-icon" src="{{asset('website/img/sushi.png')}}" alt="smartphone">
+                                <img class="utouch-icon" src="{{asset('website/img/sushi2.png')}}" alt="smartphone">
                                 <img class="cloud" src="{{asset('website/img/clouds10.png')}}" alt="cloud">
                             </div>
 
