@@ -1,6 +1,6 @@
-<header class="header header--menu-rounded header--blue-lighteen" id="site-header">
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
 
-    <div class="header-lines-decoration">
+     <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
         <span class="bg-blue"></span>
         <span class="bg-blue-light"></span>
@@ -16,11 +16,27 @@
             <div class="top-bar-contact">
 
                 <div class="contact-item">
-                    
-
-
                     <div class="contact-item" id="clock">
-                        <span><?php echo e(Carbon\Carbon::now()->format('D Y H:i')); ?></span>
+                        <?php echo e(Carbon\Carbon::now()->translatedFormat('D Y')); ?>
+
+                        <span id="time"></span>
+                        <script >
+                            function showTime() {
+                                var date = new Date(),
+                                    utc = new Date(Date.UTC(
+                                        date.getFullYear(),
+                                        date.getMonth(),
+                                        date.getDate(),
+                                        date.getHours(),
+                                        date.getMinutes(),
+                                        date.getSeconds()
+                                    ));
+
+                                document.getElementById('time').innerHTML = utc.toLocaleTimeString();
+                            }
+
+                            setInterval(showTime, 1000);
+                        </script>
                     </div>
                 </div>
 
@@ -67,7 +83,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="">
         <a href="javascript:void(0)" id="top-bar-js" class="top-bar-link">
             <svg class="utouch-icon utouch-icon-arrow-top">
                 <use xlink:href="#utouch-icon-arrow-top"></use>
@@ -101,7 +117,7 @@
 
                 <ul class="primary-menu-menu">
                     <li class="menu-item-has-children"><a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
-                    <li><a href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
+                    <li><a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
                     <li>
                         <a href="javascript:void(0)"><?php echo e(__('website/home.categories')); ?></a>
                         <ul class="sub-menu">
