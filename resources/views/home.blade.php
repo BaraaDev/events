@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                        <img src="{{asset('website/img/')}}" alt="slider">
+                                        <img src="{{asset('website/img/')}}" alt="slider"> <!--original: slides1.png-->
                                     </div>
                                 </div>
 
