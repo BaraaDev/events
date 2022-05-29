@@ -24,7 +24,7 @@
                             <a class="btn-arrow arrow-primary" href="{{route('events.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                                Show
+                               {{__('website/home.show_link')}}
                             </a>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                                 <i data-feather="message-circle"></i>
                             </div>
                             <h5>{{\App\Models\Comment::count()}}</h5>
-                            <p>{{__('website/home.offers')}}</p><label class="btn-arrow arrow-secondary" style="color:#BA895D;">Available in each event in the main website</label>
+                            <p>{{__('website/home.offers_made')}}</p><label class="btn-arrow arrow-secondary" style="color:#BA895D;">{{__('website/home.offers_made_content')}}</label>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                             <a class="btn-arrow arrow-primary" href="{{route('contributions.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                                Show
+                                {{__('website/home.show_link')}}
                             </a>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                             <a class="btn-arrow arrow-primary" href="{{route('categories.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                                Show
+                               {{__('website/home.show_link')}}
                             </a>
                         </div>
                     </div>

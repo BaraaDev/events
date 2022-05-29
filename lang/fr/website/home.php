@@ -17,4 +17,7 @@ return [
     'Prev_Page'                    => 'Page précédente',
     'Next_Page'                    => 'Page suivante',
     'Well_done'                    => 'Bon travail!',
+    'offers_made'                  => 'Total des offres faites (dans la section de réponse)',
+    'offers_made_content'          => "Il est situé dans chaque événement du site Web principal!",
+    'show_link'                    => 'Affichage',
 ];
