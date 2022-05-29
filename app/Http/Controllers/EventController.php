@@ -9,6 +9,7 @@ use App\Models\Comment;
 use App\Models\Country;
 use App\Models\Event;
 use App\Models\Governorate;
+use App\Models\Order;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -53,9 +54,9 @@ class EventController extends Controller
     public function show($id)
     {
         $event = Event::findOrFail($id);
-
-            return view('website.events.show',compact('event'));
-
+        $order = Order::where('order_number',$event->id)->with('user_to')->first();
+       // dd($order == true);
+        return view('website.events.show',compact('event','order'));
     }
 
     public function create()

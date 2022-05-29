@@ -21,7 +21,7 @@ class PaymentController extends Controller
             'is_paid'      => 0,
             'user_to_id'   => $request->user_to,
             'user_id'      => auth()->user()->id,
-            'order_number' => auth()->user()->id,
+            'order_number' => $request->event_id,
 
         ]);
 

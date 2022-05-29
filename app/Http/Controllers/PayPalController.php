@@ -42,14 +42,20 @@ class PayPalController extends Controller
 
     public function getExpressCheckoutSuccess(Request $request, $orderId)
     {
-        $order = Order::find($orderId);
+        $order = Order::with('ordernumber')->find($orderId);
+
+        $event = Event::findOrFail($order->ordernumber->id);
+        //dd($event);
+        $event->update(['status' => 'Expired']);
         $order->is_paid = 1;
         $order->save();
 
-        return redirect()->route('allEvents')->withMessage('Payment successful!');
+        return redirect()->route('event.show',$order->ordernumber->id)->withMessage('Payment successful!');
 
         $response = $this->paypalService->captureOrder($order->paypal_orderid);
         if ($response->result->status == 'COMPLETED') {
+//            $event = Event::findOrFail($order->ordernumber->id);
+//            $event->update(['status' => 'Expired']);
             $order->is_paid = 1;
             $order->save();
 

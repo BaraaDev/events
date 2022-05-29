@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     use HasFactory;
-    protected $guarded = [];
+    protected $fillable = ['order_number','paypal_orderid','user_id','user_to_id','value','is_paid'];
 
     public function user()
     {
@@ -23,5 +23,9 @@ class Order extends Model
     public function event()
     {
         return $this->hasMany(EventOrder::class,'event_id','id');
+    }
+    public function ordernumber()
+    {
+        return $this->belongsTo(Event::class,'order_number','id');
     }
 }

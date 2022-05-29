@@ -1,4 +1,7 @@
 <?php $model = app('App\Models\Event'); ?>
+<?php $__env->startSection('title'); ?>
+    - <?php echo app('translator')->get('website/event.add_event'); ?>
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
         <!-- Start Header -->

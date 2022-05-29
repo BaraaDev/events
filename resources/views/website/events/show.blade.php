@@ -56,49 +56,51 @@
                         </div>
 
                         <div class="comments">
-                            @if(auth()->user())
-                                @if(count($event->comments->where('user_id',auth()->user()->id)) == 0)
-                                    @if(auth()->user()->user_type == 'supplier')
-                                    <form class="contact-form" action="{{route('comment.add')}}" method="post">
-                                        @csrf
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <h3>{{__('website/event.add_offer_now')}}</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <input required name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <input required disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
-                                            </div>
-
-                                            <input name="event_id" value="{{ $event->id }}" type="hidden" autocomplete="off">
-
+                            @if($event->status == 'Available' || $order && $order->is_paid == 0)
+                                @if(auth()->user())
+                                    @if(count($event->comments->where('user_id',auth()->user()->id)) == 0)
+                                        @if(auth()->user()->user_type == 'supplier')
+                                        <form class="contact-form" action="{{route('comment.add')}}" method="post">
+                                            @csrf
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="with-icon">
-                                                    <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
-                                                    <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
-                                                </div>
+                                                <h3>{{__('website/event.add_offer_now')}}</h3>
                                             </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <input required name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*15/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <input required disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">
+                                                </div>
 
-                                            <div class="submit-block">
-                                                <div class="col-lg-12">
-                                                    <button type="submit" class="btn btn--large btn--green btn--with-shadow full-width">
-                                                        <span class="text">{{__('website/event.add_offer')}}</span>
-                                                    </button>
+                                                <input name="event_id" value="{{ $event->id }}" type="hidden" autocomplete="off">
+
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="with-icon">
+                                                        <textarea name="comment_body" required placeholder="{{__('website/event.offer_details')}}" style="min-height: 160px;"></textarea>
+                                                        <svg class="utouch-icon utouch-icon-edit"><use xlink:href="#utouch-icon-edit"></use></svg>
+                                                    </div>
+                                                </div>
+
+                                                <div class="submit-block">
+                                                    <div class="col-lg-12">
+                                                        <button type="submit" class="btn btn--large btn--green btn--with-shadow full-width">
+                                                            <span class="text">{{__('website/event.add_offer')}}</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form>
+                                        @endif
                                     @endif
-                                @endif
-                            @else
-                                <div class="crumina-module crumina-heading align-center">
-                                    <div class="heading-text"> {{__('website/event.to_add')}}
-                                        <a href="{{route('register')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.register')}}</a> {{__('website/event.or')}}
-                                        <a href="{{route('login')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.log_in')}}</a>
+                                @else
+                                    <div class="crumina-module crumina-heading align-center">
+                                        <div class="heading-text"> {{__('website/event.to_add')}}
+                                            <a href="{{route('register')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.register')}}</a> {{__('website/event.or')}}
+                                            <a href="{{route('login')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.log_in')}}</a>
+                                        </div>
                                     </div>
-                                </div>
+                                @endif
                             @endif
 
                             <div class="d-flex--content-inline">
@@ -107,7 +109,7 @@
                             @if(session('message') ?? '' )
                                 @include('layouts.website.partials.alert.success')
                             @endif
-                                @if($event->status == 'Available')
+                                @if($event->status == 'Available' || $order && $order->is_paid == 0)
                                 @forelse($event->comments as $comment)
 
                                 <ol class="comments__list">
@@ -197,7 +199,7 @@
                                 @endforelse
                                 @else
                                     <div class="alert alert-danger" role="alert">
-                                        <strong>{{__('website/event.Oh_snap')}} </strong>{{__('website/event.no_offers')}}
+                                       {{__('website/event.expired')}}
                                     </div>
                                 @endif
                         </div>
@@ -238,22 +240,30 @@
                                                 <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/>
                                             </svg>
                                         </a>
+
                                     </div>
                                 </div>
-
-                                <a href="#" class="h5 title">{{$event->user->name ?? ''}}</a>
+                                <a href="#" class="h6 title">{{__('website/home.customer')}}</a>
+                                <a href="#" class="h4 title">{{$event->user->name ?? ''}}</a>
                                 <p class="contacts-text">{{$event->user->address ?? ''}}</p>
 
                                 <div class="contact-item display-flex">
-                                    <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys"><use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use></svg>
-                                    <span class="info"><a href="tel://{{$event->user->phone ?? ''}}">{{$event->user->phone ?? ''}}</a> </span>
-                                </div>
-
-                                <div class="contact-item display-flex">
-                                    <svg class="utouch-icon utouch-icon-message-closed-envelope-1"><use xlink:href="#utouch-icon-message-closed-envelope-1"></use></svg>
-                                    <span class="info"><a href="mailto://{{$event->user->email ?? ''}}">{{$event->user->email ?? ''}}</a> </span>
+                                    <svg class="utouch-icon utouch-icon-user"><use xlink:href="#utouch-icon-user"></use></svg>
+                                    <span class="info" title="{{$event->user->created_at->format('Y M') ?? ''}}">{{$event->user->created_at->format('Y M') ?? ''}}</span>
                                 </div>
                             </aside>
+                            @if($order && $order->is_paid == 1)
+                                <aside class="widget w-author">
+                                    <div class="testimonial-img-author">
+                                        <img src="{{$order->user_to->photo ?? ''}}" alt="{{$order->user_to->name ?? ''}}">
+                                    </div>
+
+                                    <a href="javascript:void(0);" class="h6 title">{{__('website/home.supplier')}}</a>
+                                    <a href="javascript:void(0);" class="h4 title">{{$order->user_to->name ?? ''}}</a>
+                                    <p class="contacts-text">{{$order->user_to->address ?? ''}}</p>
+                                </aside>
+                            @endif
+
 
                             <aside class="widget w-tags">
                                 <h5 class="widget-title">{{__('website/event.required_skills')}}</h5>
