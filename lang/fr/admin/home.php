@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'dashboard'                              => 'Tableau de bord',
+    'admin_dashboard_website'                => 'Tableau de bord administrateur',
     'home'                                   => 'Domicile',
-    'site'                                   => 'Site',
+    'main_website'                           => 'Site principal',
     'sidebar_main_title'                     => 'Barre latérale principale (Admin)',
     'action'                                 => "l' action",
     'alert_no_data'                          => 'Alerte pas de données',

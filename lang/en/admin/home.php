@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'dashboard'                          => 'Dashboard',
+    'admin_dashboard_website'            => 'Admin Dashboard',
     'home'                               => 'Home page',
-    'site'                               => 'Site',
+    'main_website'                       => 'Main Website',
     'sidebar_main_title'                 => 'Main Sidebar (Admin)',
     'action'                             => 'Action',
     'alert_no_data'                      => 'There are no data',

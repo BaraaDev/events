@@ -25,15 +25,15 @@
                             <h6>{{__('admin/home.sidebar_main_title')}}</h6>
                         </div>
                     </li>
-                    <!------------- Start route dashboard ------------->
+                    <!------------- Start route admin dashboard ------------->
                     <li class="dropdown">
-                        <a class="nav-link menu-title @if(routeActive('dashboard')) active @endif " href="{{route('dashboard')}}"><i data-feather="home"></i><span>{{__('admin/home.dashboard')}}</span></a>
+                        <a class="nav-link menu-title @if(routeActive('dashboard')) active @endif " href="{{route('dashboard')}}"><i data-feather="home"></i><span>{{__('admin/home.admin_dashboard_website')}}</span></a>
                     </li>
-                    <!------------- End route dashboard ------------->
+                    <!------------- End route admin dashboard ------------->
 
                     <!------------- Start route main website ------------->
                     <li class="dropdown">
-                        <a class="nav-link menu-title" href="{{route('home')}}" target="_blank"><i data-feather="home"></i><span>{{__('admin/home.site')}}</span></a>
+                        <a class="nav-link menu-title" href="{{route('home')}}" target="_blank"><i data-feather="home"></i><span>{{__('admin/home.main_website')}}</span></a>
                     </li>
                     <!------------- End route main website ------------->
 

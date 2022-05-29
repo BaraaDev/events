@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'dashboard'                         => 'لوحة التحكم',
+    'admin_dashboard_website'           => 'لوحة تحكم المسؤول',
     'home'                              => 'الصفحة الرئيسية',
-    'site'                              => 'الموقع',
+    'main_website'                      => 'الموقع الرئيسي',
     'sidebar_main_title'                => 'الشريط الجانبي الرئيسي (مسؤول)',
     'action'                            => 'أجراءات',
     'alert_no_data'                     => 'لا يوجد بيانات',

@@ -4,6 +4,7 @@ return [
     'category'                      => 'الفئة',
     'content'                       => 'المحتوي',
     'categories'                    => 'الفئات',
+    'services_categories'           => 'فئات الخدمات',
     'deletes'                       => 'المحذوفات',
     'all_categories'                => 'جميع الفئات',
     'content_categories'            => 'محتوي الفئات',
