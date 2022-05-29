@@ -1,3 +1,4 @@
+
 <?php $model = app('App\Models\Event'); ?>
 <?php $__env->startSection('title'); ?>
     - <?php echo app('translator')->get('website/event.add_event'); ?>
@@ -19,7 +20,7 @@
                                     <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
                                 </li>
                             <?php $__env->endSlot(); ?>
-
+                            
                             <?php $__env->slot('breadcrumbs_item_active'); ?>
                                 <li class="breadcrumbs-item active">
                                     <span class="breadcrumbs-custom"><?php echo e(__('website/event.add_event')); ?></span>

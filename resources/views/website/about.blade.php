@@ -48,8 +48,7 @@
         <section class="medium-padding100">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">01.</h5>
                             <h3 class="h5 info-box-title">Who We Are</h3>
@@ -59,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">02.</h5>
                             <h3 class="h5 info-box-title">What We Do</h3>
@@ -70,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">03.</h5>
                             <h3 class="h5 info-box-title">How We Do It</h3>
@@ -80,7 +79,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">04.</h5>
                             <h3 class="h5 info-box-title">How We Do It</h3>
@@ -89,7 +88,7 @@
                             </p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
