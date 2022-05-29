@@ -1087,19 +1087,21 @@
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                    <img src="<?php echo e(asset('website/img/author2.png')); ?>" alt="avatar">
+                                    <img src="<?php echo e(asset('website/img/testimonial1.png')); ?>" alt="testimonial">
                                 </div>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Using this website was a very good experience. It eased the arrangement process 
-                                    of my birthday party this year. 
+                                    Using this website was a very good experience. It eased the arrangement process of my birthday party
+                                    this year in everything such as getting the right cooks with an affordable price. 
+                                    It was one of the most things that i really liked here in this website 
+                                    which is the negotiation about the service's price with the suppliers. 
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Kareem Tarek</a>
-                                        <div class="author-company">Engineer, 26 years old</div>
+                                        <a href="#" class="h6 author-name">Mohamed El-haddad</a>
+                                        <div class="author-company">Professor, 45 years old</div>
                                     </div>
 
                                 </div>
@@ -1112,15 +1114,17 @@
                                 </div>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum claram.
+                                    I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price 
+                                    in the real life world with the traditional way. in this website that the suppliers provides many services 
+                                    with a variety of different categories. It actually saved my money & time before when i was searching 
+                                    for a dress to buy to attend my best friend's party.
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
                                         <a href="#" class="h6 author-name">Reham Kouta</a>
-                                        <div class="author-company">Teacher Assistance, 35 years old</div>
+                                        <div class="author-company">Teacher Assistance, 33 years old</div>
                                     </div>
 
                                 </div>
