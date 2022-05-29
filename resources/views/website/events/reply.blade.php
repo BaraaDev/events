@@ -14,7 +14,7 @@
                                     <a href="#" rel="external" class="h6">{{$reply->user->name ?? ''}}</a>
                                 </cite>
                                 <div class="comments__time">
-                                    <time class="published" title="{{$reply->created_at->diffForHumans()}}" datetime="{{$reply->created_at}}">{{$reply->created_at->format('dD M Y, H:m a')}}</time>
+                                    <time class="published" title="{{$reply->created_at->diffForHumans()}}" datetime="{{$reply->created_at}}">{{$reply->created_at->format('d D M Y, H:m a')}}</time>
                                 </div>
                             </header>
                         </div>

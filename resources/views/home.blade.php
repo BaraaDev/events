@@ -189,14 +189,14 @@
                             </p>
                         </div>
 
-                        <a href="#" class="btn-next">
+                        {{-- <a href="#" class="btn-next">
                             <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                 <use xlink:href="#utouch-icon-arrow-right-1"></use>
                             </svg>
                             <svg class="utouch-icon utouch-icon-arrow-right1">
                                 <use xlink:href="#utouch-icon-arrow-right1"></use>
                             </svg>
-                        </a>
+                        </a> --}}
 
                     </div>
                 </div>
@@ -216,14 +216,14 @@
                             </p>
                         </div>
 
-                        <a href="#" class="btn-next">
+                        {{-- <a href="#" class="btn-next">
                             <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                 <use xlink:href="#utouch-icon-arrow-right-1"></use>
                             </svg>
                             <svg class="utouch-icon utouch-icon-arrow-right1">
                                 <use xlink:href="#utouch-icon-arrow-right1"></use>
                             </svg>
-                        </a>
+                        </a> --}}
 
                     </div>
                 </div>
@@ -243,14 +243,14 @@
                             </p>
                         </div>
 
-                        <a href="#" class="btn-next">
+                        {{-- <a href="#" class="btn-next">
                             <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                 <use xlink:href="#utouch-icon-arrow-right-1"></use>
                             </svg>
                             <svg class="utouch-icon utouch-icon-arrow-right1">
                                 <use xlink:href="#utouch-icon-arrow-right1"></use>
                             </svg>
-                        </a>
+                        </a> --}}
 
                     </div>
                 </div>
@@ -422,27 +422,29 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How the <span class="c-primary">Utouch</span> works</h2>
-                        <p class="heading-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
-                            consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                            anteposuerit litterarum formas humanitatis per.
+                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works</h2>
+                        <p class="heading-text">
+                            The video explains how the users of the website are able to communicate together on the website 
+                            & get every thing done through the website. A whole process functionality is made 
+                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process 
+                            which is the payment process (for both perspectives "Customer & Supplier").
                         </p>
                     </div>
-                    <a href="02_company.html" class="btn btn-small btn--icon-right btn-border btn--with-shadow c-primary">
+                    {{-- <a href="02_company.html" class="btn btn-small btn--icon-right btn-border btn--with-shadow c-primary">
                         <svg class="utouch-icon utouch-icon-arrow-right1">
                             <use xlink:href="#utouch-icon-arrow-right1"></use>
                         </svg>
                         <div class="text">
-                            <span class="title">Get Started Now</span>
+                            <span class="title">Get Started Now!</span>
                         </div>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-our-video">
                         <div class="video-thumb">
                             <img src="{{asset('website/img/video-thumb.png')}}" alt="video">
-                            <a href="https://www.youtube.com/watch?v=wnJ6LuUFpMo" class="video-control js-popup-iframe">
+                            <a href="#" class="video-control js-popup-iframe">
                                 <img src="{{asset('website/img/play.png')}}" alt="play">
                             </a>
                         </div>
@@ -533,44 +535,63 @@
         <div class="container">
             <div class="row">
                 <div class="counters">
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="6237" data-from="2">6237</span>
+                                <div class="units">+</div>
+                                <span data-speed="2000" data-refresh-interval="3" data-to="7850" data-from="500">7850</span>
                             </div>
-                            <h5 class="counter-title">Line of codes</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">Line of codes</h5>
                         </div>
                     </div>
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="4000" data-from="2">4000</span>
+                                <span data-speed="2000" data-refresh-interval="3" data-to="7" data-from="2">7</span>
                             </div>
-                            <h5 class="counter-title">Solutions</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Paid Events</h5>
                         </div>
                     </div>
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="3" data-from="2">3</span>
-                                <div class="units">M+</div>
+                                <span data-speed="2000" data-refresh-interval="3" data-to="4" data-from="2">4</span>
                             </div>
-                            <h5 class="counter-title">Active users</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">Testimonals</h5>
                         </div>
                     </div>
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="8" data-from="2">8</span>
-                                <div class="units">M+</div>
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
                             </div>
-                            <h5 class="counter-title">Download</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Comments</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                        <div class="crumina-module crumina-counter-item">
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
+                            </div>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Events</h5>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <h5 class="c-white">Utouch is an awesome app</h5>
-                        <p class="c-semitransparent-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod.</p>
+                        <h5 class="c-white">GDP</h5>
+                        <p class="c-semitransparent-white">
+                            <em>
+                                "is an awesome online service that could help many users to find the service/product they need
+                                with an affordable price & also matches everyone's income level which is also a friendly 
+                                feature (customers). Also it helps many service (suppliers) providers to run their businesses 
+                                through it."
+                            </em>
+                        </p>
                     </div>
 
                 </div>
@@ -975,7 +996,7 @@
 
     <!-- Pricing Tables -->
 
-    <section class="background-contain bg-13 medium-padding100">
+    {{-- <section class="background-contain bg-13 medium-padding100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
@@ -1083,7 +1104,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- ... end Pricing Tables -->
 
@@ -1096,22 +1117,31 @@
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">
                     <div class="swiper-container" data-effect="fade">
                         <div class="swiper-wrapper">
+
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                    <img src="{{asset('website/img/author2.png')}}" alt="avatar">
+                                    <img src="{{asset('website/img/testimonial1.png')}}" alt="testimonial">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum claram.
+                                    Using this website was a very good experience. It eased the arrangement process of my birthday party
+                                    this year in everything such as getting the right cooks with an affordable price. 
+                                    It was one of the most things that i really liked here in this website 
+                                    which is the negotiation about the service's price with the suppliers. 
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Doe Simpson</a>
-                                        <div class="author-company">Student, 23 years old</div>
+                                        <a href="#" class="h6 author-name">Mohamed El-haddad</a>
+                                        <div class="author-company">Professor, 45 years old</div>
                                     </div>
 
                                 </div>
@@ -1120,19 +1150,27 @@
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                    <img src="{{asset('website/img/author2.png')}}" alt="avatar">
+                                    <img src="{{asset('website/img/testimonial2.png')}}" alt="avatar">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum claram.
+                                    I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price 
+                                    in the real life world with the traditional way. in this website that the suppliers provides many services 
+                                    with a variety of different categories. It actually saved my money & time before when i was searching 
+                                    for a dress to buy to attend my best friend's party.
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Doe Simpson</a>
-                                        <div class="author-company">Student, 23 years old</div>
+                                        <a href="#" class="h6 author-name">Reham Kouta</a>
+                                        <div class="author-company">Teacher Assistance, 33 years old</div>
                                     </div>
 
                                 </div>
@@ -1141,19 +1179,55 @@
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                    <img src="{{asset('website/img/author2.png')}}" alt="avatar">
+                                    <img src="{{asset('website/img/testimonial3.png')}}" alt="avatar">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum claram.
+                                    It was a delight experience since i used this website and i am still using it actually. 
+                                    Most of my men suits that were already bought are from suppliers from this website. 
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Doe Simpson</a>
-                                        <div class="author-company">Student, 23 years old</div>
+                                        <a href="#" class="h6 author-name">Khaled Badran</a>
+                                        <div class="author-company">Professor, 52 years old</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
+
+                                <div class="testimonial-img-author" data-swiper-parallax="-100">
+                                    <img src="{{asset('website/img/testimonial4.png')}}" alt="avatar">
+                                </div>
+
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+
+                                <h6 class="testimonial-text" data-swiper-parallax="-300">
+                                    I don't usually use online shopping/procurement but since my friend told me about this website 
+                                    i registered in it and tried it and it was really easy and helpful experience. 
+                                    Also i like the fact that customers are able to negotiate with suppliers 
+                                    to make a deal about the price of the transaction that will be done 
+                                    which is actually so friendly & comfortable for both the buyer and the seller.
+                                </h6>
+
+                                <div class="author-info-wrap" data-swiper-parallax="-100">
+
+                                    <div class="author-info">
+                                        <a href="#" class="h6 author-name">Menna Hani</a>
+                                        <div class="author-company">Teacher Assistance, 27 years old</div>
                                     </div>
 
                                 </div>

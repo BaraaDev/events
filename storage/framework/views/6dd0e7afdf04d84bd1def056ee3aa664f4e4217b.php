@@ -143,14 +143,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <span>
-                    Copyright © 2022 <a href="javascript:void(0);" class="sub-footer__link">Graduation </a>
-                </span>
+                    <span>
+                        Copyright © 2022 <label class="sub-footer__link" style="font-size:21px;">Graduation Project 2 (Group 6) - Event Planner</label>
+                    </span>
 
-                    <span>Developed by <a href="javascript:void(0)">Kareem</a>
-                    && <a href="javascript:void(0)">Mostafaa</a>
-                    && <a href="javascript:void(0)">anther</a>
-                </span>
+                    <span>Developed by 
+                        <a href="javascript:void(0)" style="color: red; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'">Kareem</a>, 
+                        <a href="javascript:void(0)" style="color: #0083FF; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'">Mustafa</a>, 
+                        <a href="javascript:void(0)" style="color: orange; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'">Rawan</a>, 
+                        <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'">Aseel</a> & 
+                        <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">Sara</a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -169,15 +172,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('4BiiqGh')) {
-    $componentId = $_instance->getRenderedChildComponentId('4BiiqGh');
-    $componentTag = $_instance->getRenderedChildComponentTagName('4BiiqGh');
+} elseif ($_instance->childHasBeenRendered('ohB5ClD')) {
+    $componentId = $_instance->getRenderedChildComponentId('ohB5ClD');
+    $componentTag = $_instance->getRenderedChildComponentTagName('ohB5ClD');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('4BiiqGh');
+    $_instance->preserveRenderedChild('ohB5ClD');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('4BiiqGh', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('ohB5ClD', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

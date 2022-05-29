@@ -50,58 +50,6 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
-
-    <div class="form-group row">
-        <label class="form-label col-lg-3"><?php echo e(__('admin/service.price')); ?> <span class="text-danger">*</span></label>
-        <div class="col-lg-9">
-            <textarea class="form-control <?php $__errorArgs = ['price_ar'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="price_ar"><?php echo e(Request::old('price_ar') ? Request::old('price_ar') : $model->getTranslation('price','ar')); ?></textarea>
-            <?php $__errorArgs = ['price_ar'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-            <span class="invalid-feedback" role="alert">
-                <strong><?php echo e($message); ?></strong>
-            </span>
-            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
-        <div class="col-lg-9">
-            <textarea class="form-control <?php $__errorArgs = ['address_ar'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="address_ar"><?php echo e(Request::old('address_ar') ? Request::old('address_ar') : $model->getTranslation('address','ar')); ?></textarea>
-            <?php $__errorArgs = ['address_ar'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-            <span class="invalid-feedback" role="alert">
-                <strong><?php echo e($message); ?></strong>
-            </span>
-            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-        </div>
-    </div>
 </div>
 
 
@@ -143,58 +91,6 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="description_en"><?php echo e(Request::old('description_en') ? Request::old('description_en') : $model->getTranslation('description','en')); ?></textarea>
             <?php $__errorArgs = ['description_en'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-            <span class="invalid-feedback" role="alert">
-                <strong><?php echo e($message); ?></strong>
-            </span>
-            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <label class="form-label col-lg-3"><?php echo e(__('admin/service.price')); ?> <span class="text-danger">*</span></label>
-        <div class="col-lg-9">
-            <textarea class="form-control <?php $__errorArgs = ['price_en'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="price_en"><?php echo e(Request::old('price_en') ? Request::old('price_en') : $model->getTranslation('price','en')); ?></textarea>
-            <?php $__errorArgs = ['price_en'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-            <span class="invalid-feedback" role="alert">
-                <strong><?php echo e($message); ?></strong>
-            </span>
-            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
-        <div class="col-lg-9">
-            <textarea class="form-control <?php $__errorArgs = ['address_en'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="address_en"><?php echo e(Request::old('address_en') ? Request::old('address_en') : $model->getTranslation('address','en')); ?></textarea>
-            <?php $__errorArgs = ['address_en'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
 if (isset($message)) { $__messageOriginal = $message; }
@@ -263,109 +159,6 @@ endif;
 unset($__errorArgs, $__bag); ?>
         </div>
     </div>
-
-    <div class="form-group row">
-        <label class="form-label col-lg-3"><?php echo e(__('admin/service.price')); ?> <span class="text-danger">*</span></label>
-        <div class="col-lg-9">
-            <textarea class="form-control <?php $__errorArgs = ['price_fr'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="price_fr"><?php echo e(Request::old('price_fr') ? Request::old('price_fr') : $model->getTranslation('price','fr')); ?></textarea>
-            <?php $__errorArgs = ['price_fr'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-            <span class="invalid-feedback" role="alert">
-                <strong><?php echo e($message); ?></strong>
-            </span>
-            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <label class="form-label col-lg-3"><?php echo e(__('admin/service.address')); ?> <span class="text-danger">*</span></label>
-        <div class="col-lg-9">
-            <textarea class="form-control <?php $__errorArgs = ['address_fr'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="address_fr"><?php echo e(Request::old('address_fr') ? Request::old('address_fr') : $model->getTranslation('address','fr')); ?></textarea>
-            <?php $__errorArgs = ['address_fr'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-            <span class="invalid-feedback" role="alert">
-                <strong><?php echo e($message); ?></strong>
-            </span>
-            <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-        </div>
-    </div>
-</div>
-
-
-<div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/service.available_date')); ?> <span class="text-danger">*</span> </label>
-    <div class="col-lg-9">
-        <input class="form-control <?php $__errorArgs = ['available_date'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('available_date') ? Request::old('available_date') : $model->available_date); ?>" type="date" name="available_date" autocomplete="off">
-        <?php $__errorArgs = ['available_date'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-        <span class="invalid-feedback" role="alert">
-            <strong><?php echo e($message); ?></strong>
-        </span>
-        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-    </div>
-</div>
-
-<div class="form-group row">
-    <label class="form-label col-lg-3"><?php echo e(__('admin/category.category')); ?> <span class="text-danger">*</span></label>
-    <div class="col-lg-9">
-        <?php $category = app('App\Models\Category'); ?>
-        <?php echo Form::select('category_id',$category->pluck('name','id'),Request::old('category_id') ? Request::old('category_id') : $model->category_id,[
-        'placeholder' => __('admin/home.select'),
-        'class' => 'form-control select'. ( $errors->has('category_id') ? ' is-invalid' : '' )
-        ]); ?>
-
-        <?php $__errorArgs = ['category_id'];
-$__bag = $errors->getBag($__errorArgs[1] ?? 'default');
-if ($__bag->has($__errorArgs[0])) :
-if (isset($message)) { $__messageOriginal = $message; }
-$message = $__bag->first($__errorArgs[0]); ?>
-        <span class="invalid-feedback" role="alert">
-            <strong><?php echo e($message); ?></strong>
-        </span>
-        <?php unset($message);
-if (isset($__messageOriginal)) { $message = $__messageOriginal; }
-endif;
-unset($__errorArgs, $__bag); ?>
-    </div>
 </div>
 
 <div class="form-group row">
@@ -396,4 +189,5 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
     </div>
-</div><?php /**PATH E:\laragon\www\events\resources\views/dashboard/services/form.blade.php ENDPATH**/ ?>
+</div>
+<?php /**PATH E:\laragon\www\events\resources\views/dashboard/services/form.blade.php ENDPATH**/ ?>

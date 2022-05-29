@@ -30,9 +30,6 @@
                                                             <h6 class="d-block">{{$readMail->name}}</h6>
                                                         </div>
                                                         <div class="col-4">
-                                                            <h6 class="d-block">{{$readMail->user->user_type ?? 'user_type not found'}}</h6>
-                                                        </div>
-                                                        <div class="col-4">
                                                             <h6 class="d-block"><a href="tel://{{$readMail->phone}}">{{$readMail->phone}}</a></h6>
                                                         </div>
                                                         <div class="col-4">

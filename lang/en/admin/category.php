@@ -4,6 +4,7 @@ return [
     'category'                      => 'Category',
     'content'                       => 'Content',
     'categories'                    => 'Categories',
+    'services_categories'           => 'Services Categories',
     'deletes'                       => 'Recycle Bin',
     'all_categories'                => 'All Categories',
     'content_categories'            => 'Category Content',

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'dashboard'                          => 'Dashboard',
+    'admin_dashboard_website'            => 'Admin Dashboard',
     'home'                               => 'Home page',
-    'site'                               => 'Site',
+    'main_website'                       => 'Main Website',
     'sidebar_main_title'                 => 'Main Sidebar (Admin)',
     'action'                             => 'Action',
     'alert_no_data'                      => 'There are no data',
@@ -80,6 +80,10 @@ return [
     'title'                              => 'Title',
     'content'                            => 'Content',
     'add_new'                            => 'Add New',
+    'offers_made1'                        => 'Total Offers Made',
+    'offers_made2'                        => '(in reply section)',
+    'offers_made_content'                => "It's located in each event in the main website!",
+    'show_link'                          => 'Show',
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                    => 'WELCOME TO',
     'home_page_content'                  => 'is a Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',
