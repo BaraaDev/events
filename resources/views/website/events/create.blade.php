@@ -20,7 +20,7 @@
                                     <svg class="utouch-icon utouch-icon-media-play-symbol breadcrumbs-custom"><use xlink:href="#utouch-icon-media-play-symbol"></use></svg>
                                 </li>
                             @endslot
-
+                            
                             @slot('breadcrumbs_item_active')
                                 <li class="breadcrumbs-item active">
                                     <span class="breadcrumbs-custom">{{__('website/event.add_event')}}</span>

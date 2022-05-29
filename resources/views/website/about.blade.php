@@ -6,7 +6,7 @@
     <div class="content-wrapper">
 
 
-        <!-- Block IMG-bottom -->
+        {{-- <!-- Block IMG-bottom -->
 
         <section class="background-contain bg-15 bg-blue-lighteen pt120">
             <div class="container">
@@ -41,14 +41,14 @@
             </div>
         </section>
 
-        <!-- ... end Block IMG-bottom -->
+        <!-- ... end Block IMG-bottom --> --}}
 
 
         <!-- Info Boxes -->
-
         <section class="medium-padding100">
             <div class="container">
                 <div class="row">
+
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">01.</h5>
@@ -79,6 +79,17 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="crumina-module crumina-info-box info-box--numbers">
+                            <h5 class="order-number">04.</h5>
+                            <h3 class="h5 info-box-title">How We Do It</h3>
+                            <p class="info-box-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                anteposuerit litterarum formas humanitatis per.
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
