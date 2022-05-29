@@ -1103,6 +1103,12 @@
                                     <img src="{{asset('website/img/testimonial1.png')}}" alt="testimonial">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     Using this website was a very good experience. It eased the arrangement process of my birthday party
                                     this year in everything such as getting the right cooks with an affordable price. 
@@ -1125,6 +1131,12 @@
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
                                     <img src="{{asset('website/img/testimonial2.png')}}" alt="avatar">
                                 </div>
+
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price 
@@ -1149,6 +1161,12 @@
                                     <img src="{{asset('website/img/testimonial3.png')}}" alt="avatar">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     It was a delight experience since i used this website and i am still using it actually. 
                                     Most of my men suits that were already bought are from suppliers from this website. 
@@ -1169,6 +1187,12 @@
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
                                     <img src="{{asset('website/img/testimonial4.png')}}" alt="avatar">
                                 </div>
+
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     I don't usually use online shopping/procurement but since my friend told me about this website 

@@ -1090,6 +1090,12 @@
                                     <img src="<?php echo e(asset('website/img/testimonial1.png')); ?>" alt="testimonial">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     Using this website was a very good experience. It eased the arrangement process of my birthday party
                                     this year in everything such as getting the right cooks with an affordable price. 
@@ -1113,6 +1119,12 @@
                                     <img src="<?php echo e(asset('website/img/testimonial2.png')); ?>" alt="avatar">
                                 </div>
 
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price 
                                     in the real life world with the traditional way. in this website that the suppliers provides many services 
@@ -1135,6 +1147,12 @@
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
                                     <img src="<?php echo e(asset('website/img/testimonial3.png')); ?>" alt="avatar">
                                 </div>
+
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     It was a delight experience since i used this website and i am still using it actually. 
