@@ -30,9 +30,6 @@
                                                             <h6 class="d-block"><?php echo e($readMail->name); ?></h6>
                                                         </div>
                                                         <div class="col-4">
-                                                            <h6 class="d-block"><?php echo e($readMail->user->user_type ?? 'user_type not found'); ?></h6>
-                                                        </div>
-                                                        <div class="col-4">
                                                             <h6 class="d-block"><a href="tel://<?php echo e($readMail->phone); ?>"><?php echo e($readMail->phone); ?></a></h6>
                                                         </div>
                                                         <div class="col-4">

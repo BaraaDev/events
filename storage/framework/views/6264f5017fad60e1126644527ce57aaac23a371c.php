@@ -9,7 +9,7 @@
         
 
 
-        <!-- Info Boxes -->>
+        <!-- Info Boxes -->
         <section class="medium-padding100">
             <div class="container">
                 <div class="row">
