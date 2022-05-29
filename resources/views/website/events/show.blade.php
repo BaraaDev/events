@@ -165,9 +165,14 @@
 
                                             </div>
                                         </div>
-                                        @foreach($comment->replies as $reply)
-                                            @include('website.events.reply')
-                                        @endforeach
+                                        @if(auth()->user())
+                                            @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id || auth()->user()->user_type == 'dashboard')
+                                                @foreach($comment->replies as $reply)
+                                                    @include('website.events.reply')
+                                                @endforeach
+                                            @endif
+                                        @endif
+
                                     </li>
                                     @if(auth()->user())
                                         @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')

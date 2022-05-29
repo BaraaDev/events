@@ -10,15 +10,22 @@ class CommentController extends Controller
 {
     public function store(Request $request)
     {
+
         $comment = new Comment;
         $comment->body  = $request->get('comment_body');
         $comment->value = $request->get('value');
         $comment->user()->associate($request->user());
         $event          = Event::find($request->get('event_id'));
         $event->comments()->save($comment);
+        if (count($event->comments->where('user_id',auth()->user()->id)) == 0)
+        {
+            return redirect()->route('event.show',['id' => $event->id, "#comments"])
+                ->with(['message' => __('website/home.added_successfully')]);
+        } else {
+            return redirect()->route('event.show',['id' => $event->id, "#comments"])
+                ->with(['message' => __('website/home.added_successfully')]);
+        }
 
-        return redirect()->route('event.show',['id' => $event->id, "#comments"])
-            ->with(['message' => __('website/home.added_successfully')]);
     }
 
     public function CommentDelete($id)
