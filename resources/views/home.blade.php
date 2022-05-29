@@ -1123,7 +1123,7 @@
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                    <img src="{{asset('website/img/author2.png')}}" alt="avatar">
+                                    <img src="{{asset('website/img/testimonial2.png')}}" alt="avatar">
                                 </div>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
@@ -1146,19 +1146,43 @@
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                    <img src="{{asset('website/img/author2.png')}}" alt="avatar">
+                                    <img src="{{asset('website/img/testimonial3.png')}}" alt="avatar">
                                 </div>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum claram.
+                                    It was a delight experience since i used this website and i am still using it actually. 
+                                    Most of my men suits that were already bought are from suppliers from this website. 
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Doe Simpson</a>
-                                        <div class="author-company">Student, 23 years old</div>
+                                        <a href="#" class="h6 author-name">Khaled Badran</a>
+                                        <div class="author-company">Professor, 52 years old</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
+
+                                <div class="testimonial-img-author" data-swiper-parallax="-100">
+                                    <img src="{{asset('website/img/testimonial4.png')}}" alt="avatar">
+                                </div>
+
+                                <h6 class="testimonial-text" data-swiper-parallax="-300">
+                                    I don't usually use online shopping/procurement but since my friend told me about this website 
+                                    i registered in it and tried it and it was really easy and helpful experience. 
+                                    Also i like the fact that customers are able to negotiate with suppliers 
+                                    to make a deal about the price of the transaction that will be done 
+                                    which is actually so friendly & comfortable for both the buyer and the seller.
+                                </h6>
+
+                                <div class="author-info-wrap" data-swiper-parallax="-100">
+
+                                    <div class="author-info">
+                                        <a href="#" class="h6 author-name">Menna Hani</a>
+                                        <div class="author-company">Teacher Assistance, 27 years old</div>
                                     </div>
 
                                 </div>
