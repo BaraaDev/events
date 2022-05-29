@@ -61,11 +61,16 @@ class User extends Authenticatable implements HasMedia
     {
         return $this->belongsTo(Country::class);
     }
+
+    public function order()
+    {
+        return $this->belongsTo(Order::class);
+    }
     public function getPhotoAttribute()
     {
         return $this->getFirstMediaUrl('avatar')
             ?  $this->getFirstMediaUrl('avatar')
-            : asset('website/signin_dark.png');
+            : asset('website/img/signin_color.png');
     }
 
     public function scopeType($query,$arg)

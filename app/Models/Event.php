@@ -18,43 +18,48 @@ class Event extends Model implements HasMedia
     protected $fillable = ['status'];
     public $translatable = ['title','description','location'];
 
-    public function category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
-    public function city(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function city()
     {
         return $this->belongsTo(City::class);
     }
 
-    public function governorate(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function governorate()
     {
         return $this->belongsTo(Governorate::class);
     }
 
-    public function country(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function country()
     {
         return $this->belongsTo(Country::class);
     }
 
-    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function create_user()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function update_user()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
-    public function order(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function order()
     {
-        return $this->hasMany(EventOrder::class,'event_id','id');
+        return $this->belongsTo(EventOrder::class,'event_id','id');
+    }
+
+    public function ordernumber()
+    {
+        return $this->hasMany(Order::class,'order_number','id');
     }
 
     public function tags()
