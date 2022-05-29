@@ -56,7 +56,7 @@
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                    <img src="<?php echo e(asset('website/img/catering.jpg')); ?>" width="1163px" height="500px" alt="slider">
+                                    
                                     <!--original: slides1.png-->
                                 </div>
                             </div>
