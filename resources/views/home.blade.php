@@ -567,18 +567,18 @@
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
+                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Events</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Comments</h5>
                         </div>
                     </div>
 
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
+                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Comments</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Events</h5>
                         </div>
                     </div>
 
