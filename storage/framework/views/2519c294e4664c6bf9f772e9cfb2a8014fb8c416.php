@@ -409,10 +409,12 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How the <span class="c-primary">Utouch</span> works</h2>
-                        <p class="heading-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
-                            consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                            anteposuerit litterarum formas humanitatis per.
+                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works</h2>
+                        <p class="heading-text">
+                            The video explains how the users of the website are able to communicate together on the website 
+                            & get every thing done through the website. A whole process functionality is made 
+                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process 
+                            which is the payment process (for both perspectives "Customer & Supplier").
                         </p>
                     </div>
                     <a href="02_company.html" class="btn btn-small btn--icon-right btn-border btn--with-shadow c-primary">
@@ -420,7 +422,7 @@
                             <use xlink:href="#utouch-icon-arrow-right1"></use>
                         </svg>
                         <div class="text">
-                            <span class="title">Get Started Now</span>
+                            <span class="title">Get Started Now!</span>
                         </div>
                     </a>
                 </div>
@@ -429,7 +431,7 @@
                     <div class="crumina-module crumina-our-video">
                         <div class="video-thumb">
                             <img src="<?php echo e(asset('website/img/video-thumb.png')); ?>" alt="video">
-                            <a href="https://www.youtube.com/watch?v=wnJ6LuUFpMo" class="video-control js-popup-iframe">
+                            <a href="#" class="video-control js-popup-iframe">
                                 <img src="<?php echo e(asset('website/img/play.png')); ?>" alt="play">
                             </a>
                         </div>
@@ -962,115 +964,7 @@
 
     <!-- Pricing Tables -->
 
-    <section class="background-contain bg-13 medium-padding100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
-                    <div class="crumina-module crumina-heading align-center">
-                        <h6 class="heading-sup-title">Our Pricing Plans</h6>
-                        <h2 class="heading-title">Choose the product that you really need!</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="pricing-wrap">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div class="crumina-module crumina-pricing-tables-item pricing-tables-item-standard">
-                            <div class="main-pricing-content">
-                                <h2 class="h1 rate">$<span class="price">0</span></h2>
-                                <h5 class="pricing-title">Freebie Plan</h5>
-
-                                <div class="pricing-line bg-green"></div>
-
-                                <p class="pricing-description">Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
-
-                                <p class="sub-description">Ut wisi enim ad minim veniam, nostrud ullamcorper.</p>
-
-                            </div>
-
-                            <div class="bg-pricing-content bg-green">
-                                <a href="15_pricing_tables.html" class="h6 title">Get trial version</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div class="crumina-module crumina-pricing-tables-item pricing-tables-item-standard main-plan">
-                            <div class="main-pricing-content">
-                                <h2 class="h1 rate">$<span class="price">49</span></h2>
-                                <h5 class="pricing-title">Premium Plan</h5>
-
-                                <div class="pricing-line bg-pamaranch"></div>
-
-                                <p class="pricing-description">Claritas est etiam processus dynamicus, qui sequitur legere me lius quod.</p>
-
-                                <ul class="pricing-tables-position">
-                                    <li class="position-item">
-                                        Unlimited Free Update
-                                    </li>
-                                    <li class="position-item">
-                                        Unlimited Disk Dreator
-                                    </li>
-                                    <li class="position-item">
-                                        Unlimited User Support
-                                    </li>
-                                    <li class="position-item">
-                                        Money Transfer System
-                                    </li>
-                                    <li class="position-item">
-                                        Unlimited Support
-                                    </li>
-                                </ul>
-
-                                <p class="sub-description">Ut wisi enim ad minim veniam, nostrud ullamcorper.</p>
-                            </div>
-
-                            <div class="bg-pricing-content bg-pamaranch">
-                                <a href="#" class="h6 title">Become a member</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div class="crumina-module crumina-pricing-tables-item pricing-tables-item-standard">
-                            <div class="main-pricing-content">
-                                <h2 class="h1 rate">$<span class="price">29</span></h2>
-                                <h5 class="pricing-title">Business Plan</h5>
-
-                                <div class="pricing-line bg-red"></div>
-
-                                <p class="pricing-description">Investigationes demonstraverunt lectores legere.</p>
-
-                                <ul class="pricing-tables-position">
-                                    <li class="position-item del">
-                                        Unlimited Free Update
-                                    </li>
-                                    <li class="position-item">
-                                        Unlimited Disk Dreator
-                                    </li>
-                                    <li class="position-item">
-                                        Unlimited User Support
-                                    </li>
-                                    <li class="position-item del">
-                                        Money Transfer System
-                                    </li>
-                                    <li class="position-item">
-                                        Unlimited Support
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <div class="bg-pricing-content bg-red">
-                                <a href="#" class="h6 title">Buy It Now!</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- ... end Pricing Tables -->
 
@@ -1174,6 +1068,12 @@
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
                                     <img src="<?php echo e(asset('website/img/testimonial4.png')); ?>" alt="avatar">
                                 </div>
+
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
+                                <span class="fa fa-star checked" style="color: orange;"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     I don't usually use online shopping/procurement but since my friend told me about this website 

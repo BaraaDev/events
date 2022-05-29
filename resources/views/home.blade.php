@@ -422,10 +422,12 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How the <span class="c-primary">Utouch</span> works</h2>
-                        <p class="heading-text">Claritas est etiam processus dynamicus, qui sequitur mutationem
-                            consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                            anteposuerit litterarum formas humanitatis per.
+                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works</h2>
+                        <p class="heading-text">
+                            The video explains how the users of the website are able to communicate together on the website 
+                            & get every thing done through the website. A whole process functionality is made 
+                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process 
+                            which is the payment process (for both perspectives "Customer & Supplier").
                         </p>
                     </div>
                     <a href="02_company.html" class="btn btn-small btn--icon-right btn-border btn--with-shadow c-primary">
@@ -433,7 +435,7 @@
                             <use xlink:href="#utouch-icon-arrow-right1"></use>
                         </svg>
                         <div class="text">
-                            <span class="title">Get Started Now</span>
+                            <span class="title">Get Started Now!</span>
                         </div>
                     </a>
                 </div>
@@ -442,7 +444,7 @@
                     <div class="crumina-module crumina-our-video">
                         <div class="video-thumb">
                             <img src="{{asset('website/img/video-thumb.png')}}" alt="video">
-                            <a href="https://www.youtube.com/watch?v=wnJ6LuUFpMo" class="video-control js-popup-iframe">
+                            <a href="#" class="video-control js-popup-iframe">
                                 <img src="{{asset('website/img/play.png')}}" alt="play">
                             </a>
                         </div>
@@ -975,7 +977,7 @@
 
     <!-- Pricing Tables -->
 
-    <section class="background-contain bg-13 medium-padding100">
+    {{-- <section class="background-contain bg-13 medium-padding100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 mb60">
@@ -1083,7 +1085,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- ... end Pricing Tables -->
 
