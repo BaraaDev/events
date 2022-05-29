@@ -21,7 +21,7 @@
                             </div>
                             <h5>{{\App\Models\Event::count()}}</h5>
                             <p>{{__('admin/event.events')}}</p>
-                            <hr>
+                            <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <a class="btn-arrow arrow-primary" href="{{route('events.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
@@ -37,8 +37,9 @@
                                 <i data-feather="message-circle"></i>
                             </div>
                             <h5>{{\App\Models\Comment::count()}}</h5>
-                            <p>{{__('admin/home.offers_made')}}</p>
-                            <hr>
+                            <span>{{__('admin/home.offers_made1')}}</span>
+                            <p>{{__('admin/home.offers_made2')}}</p>
+                            <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <label class="btn-arrow arrow-secondary" style="color:#BA895D;">{{__('admin/home.offers_made_content')}}</label>
                         </div>
                     </div>
@@ -55,7 +56,7 @@
                             </div>
                             <h5>{{\App\Models\Contribution::count()}}</h5>
                             <p>{{__('admin/contribution.contributions')}}</p>
-                            <hr>
+                            <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <a class="btn-arrow arrow-primary" href="{{route('contributions.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
@@ -74,7 +75,7 @@
                             </div>
                             <h5>{{\App\Models\Category::count()}}</h5>
                             <p>{{__('admin/category.services_categories')}}</p>
-                            <hr>
+                            <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <a class="btn-arrow arrow-primary" href="{{route('categories.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">

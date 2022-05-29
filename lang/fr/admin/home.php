@@ -82,7 +82,8 @@ return [
     'title'                                  => 'Titre',
     'content'                                => 'teneur',
     'add_new'                                => 'créer',
-    'offers_made'                            => 'Total des offres faites (dans la section de réponse)',
+    'offers_made1'                           => 'Total des offres faites',
+    'offers_made2'                           => '(dans la section de réponse)',
     'offers_made_content'                    => "Il est situé dans chaque événement du site Web principal!",
     'show_link'                              => 'Affichage',
     //--------------------------- Main website keys & values only down below --------------------------------//
