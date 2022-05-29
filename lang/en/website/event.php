@@ -20,4 +20,5 @@ return [
     'log_in'                   => 'log in',
     'or'                       => 'or',
     'recent_event'             => 'Most Recent Events',
+    'expired'             => 'event has expired',
 ];
