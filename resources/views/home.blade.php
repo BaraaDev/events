@@ -267,19 +267,21 @@
 
         <div class="swiper-container" data-show-items="1">
             <div class="swiper-wrapper">
+
                 <div class="swiper-slide bg-primary-color bg-5" data-mh="slide">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/iphone.png')}}" alt="iphone">
+                                    <img src="{{asset('website/img/barber-home.jpg')}}" style="border-radius:20px;" alt="barber">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <h6 class="heading-sup-title">User Interface</h6>
-                                    <h2 class="heading-title">Discover new horisons</h2>
-                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Barber / Coiffer</p>
+                                    <h2 class="heading-title">Check out our new barbers!</h2>
+                                    <div class="heading-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                         diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                                         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
                                         Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
@@ -314,7 +316,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/iphone2.png')}}" alt="iphone">
+                                    <img src="{{asset('website/img/')}}" alt="zaffa">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -392,19 +394,20 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="slider-slides slider-slides--vertical-line">
                 <a href="#" class="slides-item">
-                    <span class="round primary"></span>01.
+                    <span class="round primary"></span>1.
                 </a>
 
                 <a href="#" class="slides-item">
-                    <span class="round orange"></span>02.
+                    <span class="round orange"></span>2.
                 </a>
 
                 <a href="#" class="slides-item">
-                    <span class="round red"></span>03.
+                    <span class="round red"></span>3.
                 </a>
 
             </div>
