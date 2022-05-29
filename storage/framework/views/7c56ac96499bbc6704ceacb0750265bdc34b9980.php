@@ -58,7 +58,7 @@
                                         </td>
                                         <td class="text-center"><?php echo e($service->create_user->name ?? ''); ?></td>
                                         <td class="text-center"><?php echo e($service->update_user->name ?? ''); ?></td>
-                                        <td class="text-center"><?php echo e($service->created_at->format('Y-D-M')); ?></td>
+                                        <td class="text-center"><?php echo e($service->created_at->translatedFormat('Y-m-d')); ?></td>
                                         <td class="text-center">
                                             <?php echo Form::open([
                                             'route' => ['services.destroy',$service->id],
@@ -91,7 +91,7 @@
             </div>
             <nav class="m-b-30" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center pagination-primary">
-                    <?php echo $services->links('pagination::bootstrap-4'); ?>
+                    <?php echo $services->links('pagination::bootstrap-5'); ?>
 
                 </ul>
             </nav>

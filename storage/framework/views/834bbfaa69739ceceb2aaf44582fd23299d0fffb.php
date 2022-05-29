@@ -1,7 +1,7 @@
 
 <?php $model = app('App\Models\Service'); ?>
 
-<?php $__env->startSection('title'); ?> <?php echo e(__('admin/Service.create')); ?> <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?> <?php echo e(__('admin/service.create')); ?> <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 

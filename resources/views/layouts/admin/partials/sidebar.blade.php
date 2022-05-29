@@ -70,7 +70,7 @@
                     <!------------- Start route countries ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('countries.index') || routeActive('countries.create') || routeActive('countries.delete')) active @endif" href="javascript:void(0)">
-                            <i data-feather="flag"></i>
+                            <i class="fa fa-globe" style="font-size: 140%;"></i> &nbsp; &nbsp;
                             <span>{{__('admin/country.countries')}}</span>
                         </a>
                         <ul class="nav-submenu menu-content" style="display: @if(routeActive('countries.index') || routeActive('countries.create') || routeActive('countries.delete'))  block @else none @endif; ">

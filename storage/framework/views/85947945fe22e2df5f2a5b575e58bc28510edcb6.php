@@ -70,7 +70,7 @@
                     <!------------- Start route countries ------------->
                     <li class="dropdown">
                         <a class="nav-link menu-title <?php if(routeActive('countries.index') || routeActive('countries.create') || routeActive('countries.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
-                            <i data-feather="flag"></i>
+                            <i class="fa fa-globe" style="font-size: 140%;"></i> &nbsp; &nbsp;
                             <span><?php echo e(__('admin/country.countries')); ?></span>
                         </a>
                         <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('countries.index') || routeActive('countries.create') || routeActive('countries.delete')): ?>  block <?php else: ?> none <?php endif; ?>; ">

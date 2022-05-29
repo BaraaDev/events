@@ -197,14 +197,7 @@
                             </p>
                         </div>
 
-                        <a href="#" class="btn-next">
-                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
-                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
-                            </svg>
-                            <svg class="utouch-icon utouch-icon-arrow-right1">
-                                <use xlink:href="#utouch-icon-arrow-right1"></use>
-                            </svg>
-                        </a>
+                        
 
                     </div>
                 </div>
@@ -224,14 +217,7 @@
                             </p>
                         </div>
 
-                        <a href="#" class="btn-next">
-                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
-                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
-                            </svg>
-                            <svg class="utouch-icon utouch-icon-arrow-right1">
-                                <use xlink:href="#utouch-icon-arrow-right1"></use>
-                            </svg>
-                        </a>
+                        
 
                     </div>
                 </div>
@@ -251,14 +237,7 @@
                             </p>
                         </div>
 
-                        <a href="#" class="btn-next">
-                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
-                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
-                            </svg>
-                            <svg class="utouch-icon utouch-icon-arrow-right1">
-                                <use xlink:href="#utouch-icon-arrow-right1"></use>
-                            </svg>
-                        </a>
+                        
 
                     </div>
                 </div>
@@ -1104,6 +1083,7 @@
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">
                     <div class="swiper-container" data-effect="fade">
                         <div class="swiper-wrapper">
+
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
@@ -1111,15 +1091,15 @@
                                 </div>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                    etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum parum claram.
+                                    Using this website was a very good experience. It eased the arrangement process 
+                                    of my birthday party this year. 
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Doe Simpson</a>
-                                        <div class="author-company">Student, 23 years old</div>
+                                        <a href="#" class="h6 author-name">Kareem Tarek</a>
+                                        <div class="author-company">Engineer, 26 years old</div>
                                     </div>
 
                                 </div>
@@ -1139,8 +1119,8 @@
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
 
                                     <div class="author-info">
-                                        <a href="#" class="h6 author-name">Doe Simpson</a>
-                                        <div class="author-company">Student, 23 years old</div>
+                                        <a href="#" class="h6 author-name">Reham Kouta</a>
+                                        <div class="author-company">Teacher Assistance, 35 years old</div>
                                     </div>
 
                                 </div>
