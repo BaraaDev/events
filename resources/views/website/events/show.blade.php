@@ -127,7 +127,7 @@
                                                                     <a href="javascript:void(0)" rel="external" class="h6">{{$comment->user->name ?? ''}}</a>
                                                                 </cite>
                                                                 <div class="comments__time">
-                                                                    <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('dD M Y, H:m a')}}</time>
+                                                                    <time class="published" title="{{$comment->created_at->diffForHumans()}}" datetime="{{$comment->created_at}}">{{$comment->created_at->format('d D M Y, H:m a')}}</time>
                                                                 </div>
                                                             </header>
                                                         </div>
@@ -176,7 +176,7 @@
                                     </li>
                                     @if(auth()->user())
                                         @if($comment->user_id == auth()->user()->id || $event->user_id == auth()->user()->id  || auth()->user()->user_type == 'dashboard')
-                                            <a href="" class="btn bg-yellow" onclick="$(this).next('div').slideToggle(500);return false;">{{__('website/home.reply')}}</a>
+                                            <a href="" class="btn bg-yellow" style="margin-bottom: 3%;" onclick="$(this).next('div').slideToggle(500);return false;">{{__('website/home.reply')}}</a>
                                             <div style="display: none">
                                                 <form method="post" action="{{ route('reply.event', $comment->id)}}">
                                                     @csrf

@@ -14,7 +14,7 @@
                                     <a href="#" rel="external" class="h6"><?php echo e($reply->user->name ?? ''); ?></a>
                                 </cite>
                                 <div class="comments__time">
-                                    <time class="published" title="<?php echo e($reply->created_at->diffForHumans()); ?>" datetime="<?php echo e($reply->created_at); ?>"><?php echo e($reply->created_at->format('dD M Y, H:m a')); ?></time>
+                                    <time class="published" title="<?php echo e($reply->created_at->diffForHumans()); ?>" datetime="<?php echo e($reply->created_at); ?>"><?php echo e($reply->created_at->format('d D M Y, H:m a')); ?></time>
                                 </div>
                             </header>
                         </div>
