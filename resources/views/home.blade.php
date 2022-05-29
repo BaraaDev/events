@@ -535,38 +535,50 @@
         <div class="container">
             <div class="row">
                 <div class="counters">
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="6237" data-from="2">6237</span>
+                                <div class="units">+</div>
+                                <span data-speed="2000" data-refresh-interval="3" data-to="7850" data-from="500">7850</span>
                             </div>
-                            <h5 class="counter-title">Line of codes</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">Line of codes</h5>
                         </div>
                     </div>
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="4000" data-from="2">4000</span>
+                                <span data-speed="2000" data-refresh-interval="3" data-to="7" data-from="2">7</span>
                             </div>
-                            <h5 class="counter-title">Solutions</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Paid Events</h5>
                         </div>
                     </div>
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="3" data-from="2">3</span>
-                                <div class="units">M+</div>
+                                <span data-speed="2000" data-refresh-interval="3" data-to="4" data-from="2">4</span>
                             </div>
-                            <h5 class="counter-title">Active users</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">Testimonals</h5>
                         </div>
                     </div>
+
                     <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="8" data-from="2">8</span>
-                                <div class="units">M+</div>
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
                             </div>
-                            <h5 class="counter-title">Download</h5>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Events</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                        <div class="crumina-module crumina-counter-item">
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
+                            </div>
+                            <h5 class="counter-title" style="font-size: 90%;">No. of Comments</h5>
                         </div>
                     </div>
 
