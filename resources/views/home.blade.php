@@ -1096,6 +1096,7 @@
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">
                     <div class="swiper-container" data-effect="fade">
                         <div class="swiper-wrapper">
+                            
                             <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                                 <div class="testimonial-img-author" data-swiper-parallax="-100">
