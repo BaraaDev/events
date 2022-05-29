@@ -80,6 +80,9 @@ return [
     'title'                              => 'Title',
     'content'                            => 'Content',
     'add_new'                            => 'Add New',
+    'offers_made'                        => 'Total Offers Made (in reply section)',
+    'offers_made_content'                => "It's located in each event in the main website!",
+    'show_link'                          => 'Show',
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                    => 'WELCOME TO',
     'home_page_content'                  => 'is a Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',

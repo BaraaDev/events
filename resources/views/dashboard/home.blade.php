@@ -21,10 +21,11 @@
                             </div>
                             <h5>{{\App\Models\Event::count()}}</h5>
                             <p>{{__('admin/event.events')}}</p>
+                            <hr>
                             <a class="btn-arrow arrow-primary" href="{{route('events.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                               {{__('website/home.show_link')}}
+                               {{__('admin/home.show_link')}}
                             </a>
                         </div>
                     </div>
@@ -36,7 +37,9 @@
                                 <i data-feather="message-circle"></i>
                             </div>
                             <h5>{{\App\Models\Comment::count()}}</h5>
-                            <p>{{__('website/home.offers_made')}}</p><label class="btn-arrow arrow-secondary" style="color:#BA895D;">{{__('website/home.offers_made_content')}}</label>
+                            <p>{{__('admin/home.offers_made')}}</p>
+                            <hr>
+                            <label class="btn-arrow arrow-secondary" style="color:#BA895D;">{{__('admin/home.offers_made_content')}}</label>
                         </div>
                     </div>
                 </div>
@@ -52,10 +55,11 @@
                             </div>
                             <h5>{{\App\Models\Contribution::count()}}</h5>
                             <p>{{__('admin/contribution.contributions')}}</p>
+                            <hr>
                             <a class="btn-arrow arrow-primary" href="{{route('contributions.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                                {{__('website/home.show_link')}}
+                                {{__('admin/home.show_link')}}
                             </a>
                         </div>
                     </div>
@@ -70,10 +74,11 @@
                             </div>
                             <h5>{{\App\Models\Category::count()}}</h5>
                             <p>{{__('admin/category.services_categories')}}</p>
+                            <hr>
                             <a class="btn-arrow arrow-primary" href="{{route('categories.index')}}" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                               {{__('website/home.show_link')}}
+                               {{__('admin/home.show_link')}}
                             </a>
                         </div>
                     </div>

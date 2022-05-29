@@ -21,10 +21,11 @@
                             </div>
                             <h5><?php echo e(\App\Models\Event::count()); ?></h5>
                             <p><?php echo e(__('admin/event.events')); ?></p>
+                            <hr>
                             <a class="btn-arrow arrow-primary" href="<?php echo e(route('events.index')); ?>" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                               <?php echo e(__('website/home.show_link')); ?>
+                               <?php echo e(__('admin/home.show_link')); ?>
 
                             </a>
                         </div>
@@ -37,7 +38,9 @@
                                 <i data-feather="message-circle"></i>
                             </div>
                             <h5><?php echo e(\App\Models\Comment::count()); ?></h5>
-                            <p><?php echo e(__('website/home.offers_made')); ?></p><label class="btn-arrow arrow-secondary" style="color:#BA895D;"><?php echo e(__('website/home.offers_made_content')); ?></label>
+                            <p><?php echo e(__('admin/home.offers_made')); ?></p>
+                            <hr>
+                            <label class="btn-arrow arrow-secondary" style="color:#BA895D;"><?php echo e(__('admin/home.offers_made_content')); ?></label>
                         </div>
                     </div>
                 </div>
@@ -53,10 +56,11 @@
                             </div>
                             <h5><?php echo e(\App\Models\Contribution::count()); ?></h5>
                             <p><?php echo e(__('admin/contribution.contributions')); ?></p>
+                            <hr>
                             <a class="btn-arrow arrow-primary" href="<?php echo e(route('contributions.index')); ?>" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                                <?php echo e(__('website/home.show_link')); ?>
+                                <?php echo e(__('admin/home.show_link')); ?>
 
                             </a>
                         </div>
@@ -72,10 +76,11 @@
                             </div>
                             <h5><?php echo e(\App\Models\Category::count()); ?></h5>
                             <p><?php echo e(__('admin/category.services_categories')); ?></p>
+                            <hr>
                             <a class="btn-arrow arrow-primary" href="<?php echo e(route('categories.index')); ?>" 
                                style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
-                               <?php echo e(__('website/home.show_link')); ?>
+                               <?php echo e(__('admin/home.show_link')); ?>
 
                             </a>
                         </div>

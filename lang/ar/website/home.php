@@ -145,7 +145,4 @@ return [
     'central_office'                    => 'المكتب المركزي',
     'contact_with_us'                   => 'اتصل بنا',
     'userful_links'                     => 'روابط مفيدة',
-    'offers_made'                       => 'إجمالي العروض المقدمة (في قسم الرد)',
-    'offers_made_content'               => 'إنه موجود في كل حدث في الموقع الرئيسي!',
-    'show_link'                         => 'اعرض',
 ];

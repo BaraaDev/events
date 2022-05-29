@@ -146,7 +146,4 @@ return [
     'central_office'                     => 'Central Office',
     'contact_with_us'                    => 'Contact with us',
     'userful_links'                      => 'Userful Links',
-    'offers_made'                        => 'Total Offers Made (in reply section)',
-    'offers_made_content'                => "It's located in each event in the main website!",
-    'show_link'                          => 'Show'
 ];
