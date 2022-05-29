@@ -417,14 +417,7 @@
                             which is the payment process (for both perspectives "Customer & Supplier").
                         </p>
                     </div>
-                    <a href="02_company.html" class="btn btn-small btn--icon-right btn-border btn--with-shadow c-primary">
-                        <svg class="utouch-icon utouch-icon-arrow-right1">
-                            <use xlink:href="#utouch-icon-arrow-right1"></use>
-                        </svg>
-                        <div class="text">
-                            <span class="title">Get Started Now!</span>
-                        </div>
-                    </a>
+                    
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -558,8 +551,15 @@
                     </div>
 
                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <h5 class="c-white">Utouch is an awesome app</h5>
-                        <p class="c-semitransparent-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod.</p>
+                        <h5 class="c-white">GDP</h5>
+                        <p class="c-semitransparent-white">
+                            <em>
+                                "is an awesome online service that could help many users to find the service/product they need
+                                with an affordable price & also matches everyone's income level which is also a friendly 
+                                feature (customers). Also it helps many service (suppliers) providers to run their businesses 
+                                through it."
+                            </em>
+                        </p>
                     </div>
 
                 </div>
