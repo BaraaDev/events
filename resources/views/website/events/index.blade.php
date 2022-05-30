@@ -71,7 +71,7 @@
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
                                             <div class="c-green"><u>{{__('website/event.status')}}</u> &nbsp; {{$event->status ?? ''}}</div>
-                                            <div class="c-red"><u>{{__('website/event.budget')}}</u> {{$event->budget}} USD</div>
+                                            <div class="c-red"><u>{{__('website/event.budget')}}</u> &nbsp; {{$event->budget}} USD</div>
                                         </div>
 
                                         {{-- <div class="col-lg-4 col-sm-4 col-md-4">
