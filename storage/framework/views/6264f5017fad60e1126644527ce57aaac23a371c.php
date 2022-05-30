@@ -15,41 +15,48 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">01.</h5>
-                            <h3 class="h5 info-box-title">Who We Are</h3>
-                            <p class="info-box-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+                            <h5 class="order-number">1.</h5>
+                            <h3 class="h5 info-box-title">Who We Are?</h3>
+                            <p class="info-box-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
+                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
+                                sit debitis saepe.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">02.</h5>
-                            <h3 class="h5 info-box-title">What We Do</h3>
-                            <p class="info-box-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-                                lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                anteposuerit litterarum formas humanitatis per.
+                            <h5 class="order-number">2.</h5>
+                            <h3 class="h5 info-box-title">What We Do?</h3>
+                            <p class="info-box-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
+                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
+                                sit debitis saepe.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">03.</h5>
-                            <h3 class="h5 info-box-title">How We Do It</h3>
-                            <p class="info-box-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                anteposuerit litterarum formas humanitatis per.
+                            <h5 class="order-number">3.</h5>
+                            <h3 class="h5 info-box-title">How Things Are Done?</h3>
+                            <p class="info-box-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
+                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
+                                sit debitis saepe.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">04.</h5>
-                            <h3 class="h5 info-box-title">How We Do It</h3>
-                            <p class="info-box-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                anteposuerit litterarum formas humanitatis per.
+                            <h5 class="order-number">4.</h5>
+                            <h3 class="h5 info-box-title">Who we deal with from other businesses (Suppliers)?</h3>
+                            <p class="info-box-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
+                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
+                                sit debitis saepe.
                             </p>
                         </div>
                     </div>
@@ -68,7 +75,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
                         <div class="crumina-module crumina-heading align-center">
-                            <h2 class="heading-title">Short Story About Our Company</h2>
+                            <h2 class="heading-title">History</h2>
                         </div>
                     </div>
 
@@ -87,7 +94,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-primary">2013</h6>
-                                            <a href="#" class="h6 info-box-title">Claritas est processus</a>
+                                            <a href="#" class="h6 info-box-title">Lorem</a>
                                             <p class="info-box-text">Wisi enim ad minim veniam, quis nostrud exerci tation
                                                 qui nunc nobis videntur parum clari.
                                             </p>
@@ -108,7 +115,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-orange">2015</h6>
-                                            <a href="#" class="h6 info-box-title">Typi non claritatem</a>
+                                            <a href="#" class="h6 info-box-title">Lorem</a>
                                             <p class="info-box-text">Mirum est notare quam littera gothica, quam nunc putamus
                                                 parum claram, anteposuerit lectores legere me lius quod ii legunt.
                                             </p>
@@ -129,7 +136,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-red">2016</h6>
-                                            <a href="#" class="h6 info-box-title">Eodem modo typi</a>
+                                            <a href="#" class="h6 info-box-title">Lorem</a>
                                             <p class="info-box-text">Investigationes demonstraverunt lectores legere me lius quod.
                                             </p>
                                         </div>
@@ -149,7 +156,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-green">2017</h6>
-                                            <a href="#" class="h6 info-box-title">Duis autem vel eum</a>
+                                            <a href="#" class="h6 info-box-title">Lorem</a>
                                             <p class="info-box-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation
                                                 ullamcorper suscipit lobortis nisl ut aliquip.
                                             </p>
@@ -332,7 +339,8 @@
                 <div class="row">
                     <div class="crumina-module crumina-module-img-bottom">
                         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                            <img class="img-bottom" src="<?php echo e(asset('website/img/man2.png')); ?>" alt="man">
+                            
+                            <img class="img-bottom" src="<?php echo e(asset('website/img/testimonial-about-us2.png')); ?>" alt="testimonial about us" style="height:300px;">
                         </div>
 
                         <div class="col-lg-8 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
@@ -340,7 +348,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                     <div class="crumina-module-img-content">
                                         <div class="crumina-module crumina-heading">
-                                            <h2 class="heading-title">What Our Customers Say about Utouch app</h2>
+                                            <h3 class="heading-title">What Our Customers Say about <span class="c-primary">GDP</span>..?</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -353,55 +361,26 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="<?php echo e(asset('website/img/author2.png')); ?>" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial1.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
-                                                                <a href="#" class="h6 author-name">Chris Miller</a>
-                                                                <div class="author-company">Student, 23 years old</div>
+                                                                <a href="#" class="h6 author-name">Mohamed El-Haddad</a>
+                                                                <div class="author-company">Professor, 45 years old</div>
                                                             </div>
                                                         </div>
 
                                                         <h6 class="testimonial-text">
-                                                            Qest etiam processus dynamicus, qui sequitur mutationem.
+                                                            Using this website was a very good experience. It eased the arrangement process of my birthday party
+                                                            this year in everything such as getting the right cooks with an affordable price.
+                                                            It was one of the most things that i really liked here in this website
+                                                            which is the negotiation about the service's price with the suppliers.
                                                         </h6>
 
-                                                        <ul class="rait-stars">
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star-half-empty">
-                                                                        <use xlink:href="#utouch-icon-star-half-empty"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star"></span>
 
                                                     </div>
 
@@ -413,56 +392,26 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="<?php echo e(asset('website/img/author3.png')); ?>" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial2.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
-                                                                <a href="#" class="h6 author-name">Susan Meyer</a>
-                                                                <div class="author-company">Student, 20 years old</div>
+                                                                <a href="#" class="h6 author-name">Reham Kouta</a>
+                                                                <div class="author-company">Teacher Assistance, 33 years old</div>
                                                             </div>
                                                         </div>
 
                                                         <h6 class="testimonial-text">
-                                                            Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
-                                                            per seacula quarta decima decima.
+                                                            I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price
+                                                            in the real life world with the traditional way. in this website that the suppliers provides many services
+                                                            with a variety of different categories. It actually saved my money & time before when i was searching
+                                                            for a dress to buy to attend my best friend's party.
                                                         </h6>
 
-                                                        <ul class="rait-stars">
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
 
                                                     </div>
 
@@ -474,55 +423,56 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="<?php echo e(asset('website/img/author4.png')); ?>" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial3.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
-                                                                <a href="#" class="h6 author-name">Doe Simpson</a>
-                                                                <div class="author-company">Student, 23 years old</div>
+                                                                <a href="#" class="h6 author-name">Khaled Badran</a>
+                                                                <div class="author-company">Professor, 52 years old</div>
                                                             </div>
                                                         </div>
 
                                                         <h6 class="testimonial-text">
-                                                            Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                                                            It was a delight experience since i used this website and i am still using it actually.
+                                                            Most of my men suits that were already bought are from suppliers from this website.
                                                         </h6>
 
-                                                        <ul class="rait-stars">
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star">
-                                                                        <use xlink:href="#utouch-icon-star"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">
-                                                                    <svg class="utouch-icon utouch-icon-star-half-empty">
-                                                                        <use xlink:href="#utouch-icon-star-half-empty"></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="col-lg-12 col-md-4 col-sm-12">
+                                                    <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
+                                                        <div class="author-info-wrap">
+                                                            <div class="testimonial-img-author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial4.png')); ?>" alt="author">
+                                                            </div>
+                                                            <div class="author-info">
+                                                                <a href="#" class="h6 author-name">Menna Hani</a>
+                                                                <div class="author-company">Teacher Assistance, 27 years old</div>
+                                                            </div>
+                                                        </div>
+
+                                                        <h6 class="testimonial-text">
+                                                            I don't usually use online shopping/procurement but since my friend told me about this website
+                                                            i registered in it and tried it and it was really easy and helpful experience.
+                                                            Also i like the fact that customers are able to negotiate with suppliers
+                                                            to make a deal about the price of the transaction that will be done
+                                                            which is actually so friendly & comfortable for both the buyer and the seller.
+                                                        </h6>
+
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
+                                                        <span class="fa fa-star checked" style="color: orange;"></span>
 
                                                     </div>
 
@@ -587,7 +537,7 @@
                             <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
 
                                 <div class="teammembers-thumb">
-                                    <img src="<?php echo e(asset('website/img/kareem.jpg')); ?>" alt="kareem team member" width="200" style="border-radius: 50px;">
+                                    <img src="<?php echo e(asset('website/img/kareem2.png')); ?>" alt="kareem team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
