@@ -559,7 +559,7 @@
                                 <div class="units">+</div>
                                 <span data-speed="2000" data-refresh-interval="3" data-to="7850" data-from="500">7850</span>
                             </div>
-                            <h5 class="counter-title">Line of codes</h5>
+                            <h5 class="counter-title" style="font-size: 200%; color:#939FAD;">Line of codes</h5>
                         </div>
                     </div>
 
