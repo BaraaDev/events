@@ -538,6 +538,19 @@
 
         <div class="container">
             <div class="row">
+
+                <div style="text-align:center; width: 65%; margin-left: auto; margin-right: auto; padding-top:5%;">
+                    <h5 class="c-white" style="font-size:170%;">GDP</h5>
+                    <p class="c-semitransparent-white" style="font-weight:bold;">
+                        <em style="font-size:100%">
+                            "is an awesome online service that could help many users to find the service/product they need
+                            with an affordable price & also matches everyone's income level which is also a friendly
+                            feature (customers). Also it helps many service (suppliers) providers to run their businesses
+                            through it."
+                        </em>
+                    </p>
+                </div>
+
                 <div class="counters">
 
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -587,18 +600,6 @@
                     </div>
 
                 </div>
-
-                    <div style="text-align:center; width: 65%; margin-left: auto; margin-right: auto; margin-bottom:3%;">
-                        <h5 class="c-white" style="font-size:170%;">GDP</h5>
-                        <p class="c-semitransparent-white" style="font-weight:bold;">
-                            <em style="font-size:100%">
-                                "is an awesome online service that could help many users to find the service/product they need
-                                with an affordable price & also matches everyone's income level which is also a friendly
-                                feature (customers). Also it helps many service (suppliers) providers to run their businesses
-                                through it."
-                            </em>
-                        </p>
-                    </div>
 
             </div>
         </div>
