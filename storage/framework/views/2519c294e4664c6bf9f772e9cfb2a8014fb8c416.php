@@ -537,11 +537,14 @@
                 <div class="counters">
 
                     
-
+                    
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1"><?php echo e(\App\Models\User::count()); ?></span>
+                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1">
+                                        <?php echo e(\App\Models\User::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title">No. of Customers</h5>
                         </div>

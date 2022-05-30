@@ -72,7 +72,6 @@ class User extends Authenticatable implements HasMedia
             ?  $this->getFirstMediaUrl('avatar')
             : asset('website/img/signin_color.png');
     }
-
     public function scopeType($query,$arg)
     {
         return $query->where('user_type',$arg);
