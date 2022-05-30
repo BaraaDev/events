@@ -572,7 +572,8 @@
         <section class="medium-padding100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12" style="margin-bottom: 8%;">
                         <div class="crumina-module crumina-heading align-center">
                             <h2 class="heading-title">Meet Our Professional Team</h2>
                             <div class="heading-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
@@ -583,19 +584,22 @@
 
                     <div class="teammembers-wrap">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="crumina-module crumina-teammembers-item">
+
+                            <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
 
                                 <div class="teammembers-thumb">
-                                    <img src="<?php echo e(asset('website/img/teammember1.png')); ?>" alt="team member">
+                                    <img src="<?php echo e(asset('website/img/kareem.jpg')); ?>" alt="kareem team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">Manager</div>
+                                    <div class="teammembers-item-prof">Admin</div>
 
-                                    <a href="#" class="h5 teammembers-item-name">Britney Simpson</a>
+                                    <a href="#" class="h5 teammembers-item-name">Kareem Tarek</a>
 
-                                    <p>Sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt est etiam.</p>
+                                    <div class="teammembers-item-prof">18105771</div>
+
+                                    <div class="teammembers-item-prof">01010110457</div>
 
                                     <ul class="socials socials--round">
                                         <li>
@@ -630,16 +634,18 @@
                             <div class="crumina-module crumina-teammembers-item">
 
                                 <div class="teammembers-thumb">
-                                    <img src="<?php echo e(asset('website/img/teammember2.png')); ?>" alt="team member">
+                                    <img src="<?php echo e(asset('website/img/teammember2.png')); ?>" alt="rawan team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">Web Developer</div>
+                                     <div class="teammembers-item-prof">Admin</div>
 
-                                    <a href="#" class="h5 teammembers-item-name">Britney Simpson</a>
+                                    <a href="#" class="h5 teammembers-item-name">Rawan El-Housseiny</a>
 
-                                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                    <div class="teammembers-item-prof">18106139</div>
+
+                                    <div class="teammembers-item-prof">01120400655</div>
 
                                     <ul class="socials socials--round">
                                         <li>
@@ -676,16 +682,18 @@
                             <div class="crumina-module crumina-teammembers-item">
 
                                 <div class="teammembers-thumb">
-                                    <img src="<?php echo e(asset('website/img/teammember3.png')); ?>" alt="team member">
+                                    <img src="<?php echo e(asset('website/img/mustafa.jpeg')); ?>" alt="mustafa team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">JS Developer</div>
+                                    <div class="teammembers-item-prof">Admin</div>
 
-                                    <a href="#" class="h5 teammembers-item-name">Christian Bush</a>
+                                    <a href="#" class="h5 teammembers-item-name">Mustafa Hesham</a>
 
-                                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                    <div class="teammembers-item-prof">17105773</div>
+
+                                    <div class="teammembers-item-prof">01066544486</div>
 
                                     <ul class="socials socials--round">
                                         <li>
@@ -724,11 +732,13 @@
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">Copyrighter</div>
+                                    <div class="teammembers-item-prof">Admin</div>
 
-                                    <a href="#" class="h5 teammembers-item-name">Jane Nguyen</a>
+                                    <a href="#" class="h5 teammembers-item-name">xyz</a>
 
-                                    <p>Sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt est etiam.</p>
+                                    <div class="teammembers-item-prof">18101111</div>
+
+                                    <div class="teammembers-item-prof">01011111111</div>
 
                                     <ul class="socials socials--round">
                                         <li>
