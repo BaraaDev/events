@@ -66,14 +66,17 @@
                                             <a href="{{route('event.governorate',$event->governorate_id)}}">{{$event->governorate->name ?? ''}}</a> ,
                                             <a href="{{route('event.city',$event->city_id)}}">{{$event->city->name ?? ''}}</a>
                                         </div>
-
                                     </div>
+
+                                    <u>{{__('website/event.category')}}</u> &nbsp; <a href="{{route('event.category',$event->category_id)}}">{{$event->category->name ?? ''}}</a>
+
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
-                                            <div class="c-green">{{$event->status ?? ''}}</div>
+                                            <div class="c-green"><u>{{__('website/event.status')}}</u> &nbsp; {{$event->status ?? ''}}</div>
                                         </div>
+
                                         <div class="col-lg-4 col-sm-4 col-md-4">
-                                            <div class="c-green" style="float: left; margin: 0 auto;">{{$event->budget}} USD</div>
+                                            <div class="c-red" style="float: left; margin: 0 auto;"> {{$event->budget}} USD</div>
                                         </div>
                                     </div>
                                     <a href="{{route('event.show',$event->id)}}" class="h5 title">{{$event->title}}</a>

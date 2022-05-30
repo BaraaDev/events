@@ -67,14 +67,17 @@
                                             <a href="<?php echo e(route('event.governorate',$event->governorate_id)); ?>"><?php echo e($event->governorate->name ?? ''); ?></a> ,
                                             <a href="<?php echo e(route('event.city',$event->city_id)); ?>"><?php echo e($event->city->name ?? ''); ?></a>
                                         </div>
-
                                     </div>
+
+                                    <u><?php echo e(__('website/event.category')); ?></u> &nbsp; <a href="<?php echo e(route('event.category',$event->category_id)); ?>"><?php echo e($event->category->name ?? ''); ?></a>
+
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
-                                            <div class="c-green"><?php echo e($event->status ?? ''); ?></div>
+                                            <div class="c-green"><u><?php echo e(__('website/event.status')); ?></u> &nbsp; <?php echo e($event->status ?? ''); ?></div>
                                         </div>
+
                                         <div class="col-lg-4 col-sm-4 col-md-4">
-                                            <div class="c-green" style="float: left; margin: 0 auto;"><?php echo e($event->budget); ?> USD</div>
+                                            <div class="c-red" style="float: left; margin: 0 auto;"> <?php echo e($event->budget); ?> USD</div>
                                         </div>
                                     </div>
                                     <a href="<?php echo e(route('event.show',$event->id)); ?>" class="h5 title"><?php echo e($event->title); ?></a>

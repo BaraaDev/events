@@ -15,4 +15,6 @@ return [
     'add_event'                => 'Ajouter un évènement',
     'your_latest_events'       => 'Vos derniers événements',
     'no_events'                => 'Aucun événement pour le moment.',
+    'category'                 => 'La catégorie:',
+    'status'                   => 'Statut:',
 ];
