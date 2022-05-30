@@ -400,7 +400,7 @@
                                                             </div>
                                                             <div class="author-info">
                                                                 <a href="#" class="h6 author-name">Mohamed El-Haddad</a>
-                                                                <div class="author-company">Professor, 45 years old</div>
+                                                                <div class="author-company">Professor, 40 years old</div>
                                                             </div>
                                                         </div>
 
@@ -431,7 +431,7 @@
                                                             </div>
                                                             <div class="author-info">
                                                                 <a href="#" class="h6 author-name">Reham Kouta</a>
-                                                                <div class="author-company">Teacher Assistance, 33 years old</div>
+                                                                <div class="author-company">Teacher Assistance, 34 years old</div>
                                                             </div>
                                                         </div>
 

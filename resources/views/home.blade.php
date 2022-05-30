@@ -556,7 +556,7 @@
 
                 <div class="counters">
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
                                 <div class="units">+</div>
@@ -564,7 +564,7 @@
                             </div>
                             <h5 class="counter-title" style="font-size: 200%; color:#939FAD;">Line of codes</h5>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
@@ -1155,7 +1155,7 @@
 
                                     <div class="author-info">
                                         <a href="#" class="h6 author-name">Mohamed El-haddad</a>
-                                        <div class="author-company">Professor, 45 years old</div>
+                                        <div class="author-company">Professor, 40 years old</div>
                                     </div>
 
                                 </div>
@@ -1184,7 +1184,7 @@
 
                                     <div class="author-info">
                                         <a href="#" class="h6 author-name">Reham Kouta</a>
-                                        <div class="author-company">Teacher Assistance, 33 years old</div>
+                                        <div class="author-company">Teacher Assistance, 34 years old</div>
                                     </div>
 
                                 </div>

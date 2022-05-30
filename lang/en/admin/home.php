@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'admin_dashboard_website'            => 'Admin Dashboard',
+    'admin_dashboard_website'            => 'Admin Dashboard Website',
+    'admin_title'                        => 'Admin',
     'home'                               => 'Home page',
     'main_website'                       => 'Main Website',
     'sidebar_main_title'                 => 'Main Sidebar (Admin)',

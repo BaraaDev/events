@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'admin_dashboard_website'                => 'Tableau de bord administrateur',
+    'admin_dashboard_website'                => "Site Web du tableau de bord d'administration",
+    'admin_title'                            => 'Administrateur',
     'home'                                   => 'Domicile',
     'main_website'                           => 'Site principal',
     'sidebar_main_title'                     => 'Barre latérale principale (Admin)',

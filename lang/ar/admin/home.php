@@ -1,7 +1,8 @@
 <?php
 
 return [
-    'admin_dashboard_website'           => 'لوحة تحكم المسؤول',
+    'admin_dashboard_website'           => 'موقع لوحة تحكم المسؤول',
+    'admin_title'                       => 'مسؤول',
     'home'                              => 'الصفحة الرئيسية',
     'main_website'                      => 'الموقع الرئيسي',
     'sidebar_main_title'                => 'الشريط الجانبي الرئيسي (مسؤول)',

@@ -139,10 +139,14 @@
                         </li>
                     @else
                         <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
+                            @if(auth()->user()->user_type == 'dashboard')
+                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a><label>{{__('admin/home.admin_title')}}</label>
+                            @else
+                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
+                            @endif
                             <ul class="sub-menu">
                             @if(auth()->user()->user_type == 'dashboard')
-                                <li><a href="{{route('dashboard')}}">{{__('admin/home.dashboard')}}</a></li>
+                                <li><a href="{{route('dashboard')}}">{{__('admin/home.admin_dashboard_website')}}</a></li>
                             @endif
                                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{__('auth.logout')}}</a></li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

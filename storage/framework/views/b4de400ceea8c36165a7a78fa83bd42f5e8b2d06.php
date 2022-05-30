@@ -140,10 +140,14 @@
                         </li>
                     <?php else: ?>
                         <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                            <?php if(auth()->user()->user_type == 'dashboard'): ?>
+                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a><label><?php echo e(__('admin/home.admin_title')); ?></label>
+                            <?php else: ?>
+                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                            <?php endif; ?>
                             <ul class="sub-menu">
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
-                                <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.dashboard')); ?></a></li>
+                                <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
                             <?php endif; ?>
                                 <li><a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><?php echo e(__('auth.logout')); ?></a></li>
                                 <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
