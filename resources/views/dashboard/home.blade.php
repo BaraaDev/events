@@ -23,7 +23,7 @@
                             <p>{{__('admin/event.events')}}</p>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <a class="btn-arrow arrow-primary" href="{{route('events.index')}}" 
-                               style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
+                               style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.40s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
                                {{__('admin/home.show_link')}}
                             </a>
@@ -58,7 +58,7 @@
                             <p>{{__('admin/contribution.contributions')}}</p>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <a class="btn-arrow arrow-primary" href="{{route('contributions.index')}}" 
-                               style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
+                               style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.40s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
                                 {{__('admin/home.show_link')}}
                             </a>
@@ -77,7 +77,7 @@
                             <p>{{__('admin/category.services_categories')}}</p>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span>
                             <a class="btn-arrow arrow-primary" href="{{route('categories.index')}}" 
-                               style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.45s ease-in-out;"
+                               style="color:#FFFFFF; background-color:rgb(95, 95, 95); padding:4%; border-radius:5px; transition: 0.40s ease-in-out;"
                                onMouseOver="this.style.backgroundColor='#BA895D'" onMouseOut="this.style.backgroundColor='rgb(95, 95, 95)'">
                                {{__('admin/home.show_link')}}
                             </a>
