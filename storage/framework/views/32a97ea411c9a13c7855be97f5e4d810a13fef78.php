@@ -6,50 +6,14 @@
     <div class="content-wrapper">
 
 
-        <!-- Block IMG-bottom -->
-
-        <section class="background-contain bg-15 bg-blue-lighteen pt120">
-            <div class="container">
-                <div class="row">
-                    <div class="crumina-module crumina-module-img-bottom">
-                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                            <div class="crumina-module-img-content medium-padding100">
-                                <div class="crumina-module crumina-heading">
-                                    <h6 class="heading-sup-title">Company</h6>
-                                    <h2 class="heading-title">Welcome to
-                                        <span class="c-primary">Utouch!</span> We create high quality products that will make your life better.
-                                    </h2>
-                                    <div class="h6 heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                </div>
-
-                                <a href="javascript:void(0)" class="btn btn-border btn--with-shadow c-primary">
-                                    Learn More
-                                </a>
-
-                                <a href="javascript:void(0)" class="btn btn--green btn--with-shadow">
-                                    Get trial version
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
-                            <img class="img-bottom" src="<?php echo e(asset('website/img/man.png')); ?>" alt="man">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ... end Block IMG-bottom -->
+        
 
 
         <!-- Info Boxes -->
-
         <section class="medium-padding100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">01.</h5>
                             <h3 class="h5 info-box-title">Who We Are</h3>
@@ -59,7 +23,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">02.</h5>
                             <h3 class="h5 info-box-title">What We Do</h3>
@@ -70,7 +34,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">03.</h5>
                             <h3 class="h5 info-box-title">How We Do It</h3>
@@ -79,6 +43,17 @@
                             </p>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="crumina-module crumina-info-box info-box--numbers">
+                            <h5 class="order-number">04.</h5>
+                            <h3 class="h5 info-box-title">How We Do It</h3>
+                            <p class="info-box-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                                anteposuerit litterarum formas humanitatis per.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

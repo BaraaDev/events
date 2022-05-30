@@ -48,6 +48,9 @@ Route::group([
     Route::post('/events/store', [App\Http\Controllers\EventController::class, 'store'])->name('event.store')->middleware(['auth']);
     Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show'])->name('event.show');
     Route::delete('/comment/delete/{id}/', [App\Http\Controllers\CommentController::class, 'CommentDelete'])->name('comment.delete');
+    //-- --//
+    Route::get('/allCategories', [App\Http\Controllers\HomeController::class, 'allCategories'])->name('allCategories');
+    //-- --//
     Route::get('event/category/{id}', [App\Http\Controllers\EventController::class, 'category'])->name('event.category');
     Route::get('contributions/category/{id}', [App\Http\Controllers\ContributionController::class, 'category'])->name('contribution.category');
     Route::get('/country/{id}', [App\Http\Controllers\EventController::class, 'country'])->name('event.country');
@@ -159,10 +162,10 @@ Route::group([
             //-------------------- start services route. --------------------//
 
             //-------------------- start email route. --------------------//
-            Route::get('mail/inbox',[EmailController::class,'inbox'])->name('mail.inbox');
-            Route::get('mail/all-mail',[EmailController::class,'allMail'])->name('mail.all-mail');
-            Route::get('mail/trash',[EmailController::class,'trash'])->name('mail.trash');
-            Route::get('mail/show/{id}',[EmailController::class,'show'])->name('mail.show');
+            Route::get('mail/inbox', [EmailController::class, 'inbox'])->name('mail.inbox');
+            Route::get('mail/all-mail', [EmailController::class, 'allMail'])->name('mail.all-mail');
+            Route::get('mail/trash', [EmailController::class, 'trash'])->name('mail.trash');
+            Route::get('mail/show/{id}', [EmailController::class, 'show'])->name('mail.show');
             //-------------------- end email route. --------------------//
         });
     });
