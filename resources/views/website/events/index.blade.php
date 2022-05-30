@@ -42,7 +42,7 @@
                             <div class="curriculum-event c-primary" data-mh="curriculum">
                                 <div class="curriculum-event-thumb">
                                     <img src="{{$event->photo}}" alt="{{$event->title}}">
-                                    <div class="category-link c-orange">{{$event->category->name ?? ''}}</div>
+                                    <div class="category-link">{{$event->category->name ?? ''}}</div>
 
                                     <div class="curriculum-event-content">
                                         <div class="author-block inline-items">
@@ -61,7 +61,7 @@
                                     <div class="icon-text-item display-flex">
                                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
                                         <div class="text">
-                                            {{$event->created_at->format('D d-Y')}} –
+                                            {{$event->created_at->format('D d-m-Y')}} –
                                             <a href="{{route('event.country',$event->country_id)}}">{{$event->country->name ?? ''}}</a> ,
                                             <a href="{{route('event.governorate',$event->governorate_id)}}">{{$event->governorate->name ?? ''}}</a> ,
                                             <a href="{{route('event.city',$event->city_id)}}">{{$event->city->name ?? ''}}</a>

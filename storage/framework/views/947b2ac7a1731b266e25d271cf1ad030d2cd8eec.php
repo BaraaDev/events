@@ -43,7 +43,7 @@
                             <div class="curriculum-event c-primary" data-mh="curriculum">
                                 <div class="curriculum-event-thumb">
                                     <img src="<?php echo e($event->photo); ?>" alt="<?php echo e($event->title); ?>">
-                                    <div class="category-link c-orange"><?php echo e($event->category->name ?? ''); ?></div>
+                                    <div class="category-link"><?php echo e($event->category->name ?? ''); ?></div>
 
                                     <div class="curriculum-event-content">
                                         <div class="author-block inline-items">
@@ -62,7 +62,7 @@
                                     <div class="icon-text-item display-flex">
                                         <svg class="utouch-icon utouch-icon-calendar-2"><use xlink:href="#utouch-icon-calendar-2"></use></svg>
                                         <div class="text">
-                                            <?php echo e($event->created_at->format('D d-Y')); ?> –
+                                            <?php echo e($event->created_at->format('D d-m-Y')); ?> –
                                             <a href="<?php echo e(route('event.country',$event->country_id)); ?>"><?php echo e($event->country->name ?? ''); ?></a> ,
                                             <a href="<?php echo e(route('event.governorate',$event->governorate_id)); ?>"><?php echo e($event->governorate->name ?? ''); ?></a> ,
                                             <a href="<?php echo e(route('event.city',$event->city_id)); ?>"><?php echo e($event->city->name ?? ''); ?></a>
@@ -72,7 +72,7 @@
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
                                             <div class="c-green"><u><?php echo e(__('website/event.status')); ?></u> &nbsp; <?php echo e($event->status ?? ''); ?></div>
-                                            <div class="c-red"><u><?php echo e(__('website/event.budget')); ?></u> <?php echo e($event->budget); ?> USD</div>
+                                            <div class="c-red"><u><?php echo e(__('website/event.budget')); ?></u> &nbsp; <?php echo e($event->budget); ?> USD</div>
                                         </div>
 
                                         
