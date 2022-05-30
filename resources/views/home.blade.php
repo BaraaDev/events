@@ -444,7 +444,7 @@
                     </a> --}}
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="padding-bottom:5%;">
                     <div class="crumina-module crumina-our-video">
                         <div class="video-thumb">
                             <img src="{{asset('website/img/video-thumb.png')}}" alt="video">
