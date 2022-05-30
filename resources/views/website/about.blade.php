@@ -608,16 +608,23 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12" style="margin-bottom: 8%;">
+                    {{-- <div class="col-lg-8 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12" style="margin-bottom: 8%; margin-right:auto; margin-left:auto; justify-content:center;">
                         <div class="crumina-module crumina-heading align-center">
                             <h2 class="heading-title">Meet Our Professional Team</h2>
-                            <div class="heading-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                anteposuerit litterarum formas humanitatis per.
+                            <div class="heading-text">
+                                <em>"Coming together is a beginning. Keeping together is progress. Working together is success." --Henry Ford</em>
                             </div>
                         </div>
                     </div>
+                    <br> --}}
+                    <div style="text-align:center; margin-left: auto; margin-right: auto; position:relative;">
+                        <h5 class="c-black" style="font-size:220%;">Meet Our Professional Team</h5>
+                        <p style="font-size:120%;">
+                            <strong><em>"Coming together is a beginning. Keeping together is progress. Working together is success." ⎯ Henry Ford</em></strong>
+                        </p>
+                    </div>
 
-                    <div class="teammembers-wrap">
+                    <div class="teammembers-wrap" style="margin-top: 15%;">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
                             <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
