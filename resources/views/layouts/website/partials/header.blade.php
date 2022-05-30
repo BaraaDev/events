@@ -156,6 +156,49 @@
                         </li>
                     @endif
                 </ul>
+                
+                <div class="nav-right col pull-right right-menu p-0">
+                    <ul class="nav-menus">
+                        <li class="onhover-dropdown">
+                            <div class="notification-box"><i data-feather="flag"></i></div>
+                            <ul class="notification-dropdown onhover-show-div">
+
+                                <li class="noti-primary">
+                                    <div class="media">
+                                        <span class="notification-bg"><i class="flag-icon flag-icon-eg"></i></span>
+                                        <a href="{{url('ar/')}}">
+                                            <div class="media-body">
+                                                {{__('admin/home.arabic')}}
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="noti-secondary">
+                                    <div class="media">
+                                        <span class="notification-bg"><i class="flag-icon flag-icon-us"> </i></span>
+                                        <a href="{{url('en/')}}">
+                                            <div class="media-body">
+                                                {{__('admin/home.english')}}
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="noti-success">
+                                    <div class="media">
+                                        <span class="notification-bg"><i class="flag-icon flag-icon-fr"> </i></span>
+                                        <a href="{{url('fr/')}}">
+                                        <div class="media-body">
+                                                {{__('admin/home.french')}}
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>  
+                </div>  
+
                 <!--------------------------------------- start search button --------------------------------------->
 
                 {{-- <ul class="nav-add">
