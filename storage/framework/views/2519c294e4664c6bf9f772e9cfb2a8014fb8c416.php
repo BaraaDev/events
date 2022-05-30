@@ -410,21 +410,21 @@
     <section class="bg-8 background-contain pt100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
                         <h2 class="heading-title">How <span class="c-primary">GDP</span> works?</h2>
-                        <p class="heading-text">
+                        <p class="heading-text" style="font-size:110%;">
                             The video explains how the users of the website are able to communicate together on the website
                             & get every thing done through the website. A whole process functionality is made
                             (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
-                            which is the payment process (for both perspectives "Customer & Supplier").
+                            which is the payment process (for both perspectives "<strong><u>Customer</u></strong>" & "<strong><u>Supplier</u></strong>").
                         </p>
                     </div>
                     
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-our-video">
                         <div class="video-thumb">
                             <img src="<?php echo e(asset('website/img/video-thumb.png')); ?>" alt="video">
@@ -519,10 +519,10 @@
         <div class="container">
             <div class="row">
 
-                <div style="text-align:center; width: 65%; margin-left: auto; margin-right: auto; padding-top:5%;">
+                <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto; padding-top:5%;">
                     <h5 class="c-white" style="font-size:170%;">GDP</h5>
                     <p class="c-semitransparent-white" style="font-weight:bold;">
-                        <em style="font-size:100%">
+                        <em style="font-size:130%">
                             "is an awesome online service that could help many users to find the service/product they need
                             with an affordable price & also matches everyone's income level which is also a friendly
                             feature (customers). Also it helps many service (suppliers) providers to run their businesses
