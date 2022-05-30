@@ -994,6 +994,11 @@
 
     <section class="crumina-module crumina-module-slider bg-4 cloud-center navigation-center-both-sides medium-padding100">
         <div class="container">
+
+            <div style="text-align:center; padding-bottom:1%;">
+                <h5 class="c-black" style="font-size:200%;"><u>Testimonials</u></h5>
+            </div>
+
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">
                     <div class="swiper-container" data-effect="fade">
