@@ -519,55 +519,55 @@
             <div class="row">
                 <div class="counters">
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers counter c-yellow">
                                 <div class="units">+</div>
                                 <span data-speed="2000" data-refresh-interval="3" data-to="7850" data-from="500">7850</span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">Line of codes</h5>
+                            <h5 class="counter-title">Line of codes</h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="7" data-from="2">7</span>
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1"><?php echo e(\App\Models\User::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Paid Events</h5>
+                            <h5 class="counter-title">No. of Customers</h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="4" data-from="2">4</span>
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1"><?php echo e(\App\Models\User::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">Testimonals</h5>
+                            <h5 class="counter-title">No. of Suppliers</h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Comment::count()); ?>" data-from="1"><?php echo e(\App\Models\Comment::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Comments</h5>
+                            <h5 class="counter-title">No. of Comments</h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Event::count()); ?>" data-from="1"><?php echo e(\App\Models\Event::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Events</h5>
+                            <h5 class="counter-title">No. of Events</h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <h5 class="c-white">GDP</h5>
-                        <p class="c-semitransparent-white">
+                        <p class="c-semitransparent-white" style="font-weight:bold;">
                             <em>
                                 "is an awesome online service that could help many users to find the service/product they need
                                 with an affordable price & also matches everyone's income level which is also a friendly 
