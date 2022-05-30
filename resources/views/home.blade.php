@@ -427,7 +427,7 @@
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
                         <h2 class="heading-title">How <span class="c-primary">GDP</span> works?</h2>
-                        <p class="heading-text" style="font-size:110%;">
+                        <p class="heading-text" style="font-size:110%; font-family: Arial, Helvetica, sans-serif;">
                             The video explains how the users of the website are able to communicate together on the website
                             & get every thing done through the website. A whole process functionality is made
                             (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
@@ -539,12 +539,12 @@
         <div class="container">
             <div class="row">
 
-                <div style="text-align:center; width: 80%; margin-left: auto; margin-right: auto; padding-top:5%;">
+                <div style="text-align:center; width: 82%; margin-left: auto; margin-right: auto; padding-top:5%;">
                     <h5 class="c-white" style="font-size:200%;">What's GDP?</h5>
                     <p class="c-semitransparent-white" style="font-weight:bold;">
-                        <em style="font-size:130%">
+                        <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
-                            <span>the website represents the power of negotiation between the customers and the suppliers</span> <br>
+                            <span style="color:rgb(208, 208, 208);">the website represents the power of negotiation between the customers and the suppliers</span> <br>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
                             "It's an awesome online service that could help many users to find the service/product they need
                             with an affordable price & also matches everyone's income level which is also a friendly
