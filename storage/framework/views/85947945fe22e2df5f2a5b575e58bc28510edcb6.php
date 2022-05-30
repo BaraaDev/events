@@ -8,7 +8,7 @@
             </div>
     <?php endif; ?>
     <a href="<?php echo e(route('profile')); ?>">
-        <h6 class="mt-3 f-14 f-w-600 name"><?php echo e(auth()->user()->name ?? ''); ?></h6>
+        <h6 class="mt-3 f-14 f-w-600 name" onMouseOver="this.style.color='#FFFFFF'" onMouseOut="this.style.color=''"><?php echo e(auth()->user()->name ?? ''); ?></h6>
     </a>
     <p class="mb-0 font-roboto"><?php echo e(auth()->user()->email ?? ''); ?></p>
     </div>

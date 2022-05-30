@@ -27,7 +27,7 @@
                             <div class="user-designation">
                                 <div class="title">
                                     <a target="_blank" href="">
-                                        <h4><?php echo e($user->name); ?></h4>
+                                        <h4 onMouseOver="this.style.color='#0083FF'" onMouseOut="this.style.color='#B4B6BB'"><?php echo e($user->name); ?></h4>
                                         <?php if($user->user_type =='dashboard'): ?>
                                             <h6>Admin</h6>
                                         <?php else: ?>
