@@ -2,6 +2,7 @@
 
 <?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
+
     <!-- Main Slider -->
 
     <div class="crumina-module crumina-module-slider container-full-width">
@@ -175,7 +176,7 @@
         </div>
     </div>
 
-    <!-- ... end Main Slider -->
+    <!-- end main slider -->
 
     <!-- Info Boxes -->
 
@@ -414,9 +415,9 @@
                         <h6 class="heading-sup-title">Watch the video</h6>
                         <h2 class="heading-title">How <span class="c-primary">GDP</span> works</h2>
                         <p class="heading-text">
-                            The video explains how the users of the website are able to communicate together on the website 
-                            & get every thing done through the website. A whole process functionality is made 
-                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process 
+                            The video explains how the users of the website are able to communicate together on the website
+                            & get every thing done through the website. A whole process functionality is made
+                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
                             which is the payment process (for both perspectives "Customer & Supplier").
                         </p>
                     </div>
@@ -552,7 +553,7 @@
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Comment::count()); ?>" data-from="1"><?php echo e(\App\Models\Comment::count()); ?></span>
                             </div>
-                            <h5 class="counter-title">No. of Comments</h5>
+                            <h5 class="counter-title">No. of Replies</h5>
                         </div>
                     </div>
 
@@ -570,8 +571,8 @@
                         <p class="c-semitransparent-white" style="font-weight:bold;">
                             <em>
                                 "is an awesome online service that could help many users to find the service/product they need
-                                with an affordable price & also matches everyone's income level which is also a friendly 
-                                feature (customers). Also it helps many service (suppliers) providers to run their businesses 
+                                with an affordable price & also matches everyone's income level which is also a friendly
+                                feature (customers). Also it helps many service (suppliers) providers to run their businesses
                                 through it."
                             </em>
                         </p>
@@ -1007,9 +1008,9 @@
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
                                     Using this website was a very good experience. It eased the arrangement process of my birthday party
-                                    this year in everything such as getting the right cooks with an affordable price. 
-                                    It was one of the most things that i really liked here in this website 
-                                    which is the negotiation about the service's price with the suppliers. 
+                                    this year in everything such as getting the right cooks with an affordable price.
+                                    It was one of the most things that i really liked here in this website
+                                    which is the negotiation about the service's price with the suppliers.
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
@@ -1035,9 +1036,9 @@
                                 <span class="fa fa-star checked" style="color: orange;"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price 
-                                    in the real life world with the traditional way. in this website that the suppliers provides many services 
-                                    with a variety of different categories. It actually saved my money & time before when i was searching 
+                                    I would recommend anyone to use this website if it's hard to find a suitable service with an affordable price
+                                    in the real life world with the traditional way. in this website that the suppliers provides many services
+                                    with a variety of different categories. It actually saved my money & time before when i was searching
                                     for a dress to buy to attend my best friend's party.
                                 </h6>
 
@@ -1064,8 +1065,8 @@
                                 <span class="fa fa-star"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    It was a delight experience since i used this website and i am still using it actually. 
-                                    Most of my men suits that were already bought are from suppliers from this website. 
+                                    It was a delight experience since i used this website and i am still using it actually.
+                                    Most of my men suits that were already bought are from suppliers from this website.
                                 </h6>
 
                                 <div class="author-info-wrap" data-swiper-parallax="-100">
@@ -1091,10 +1092,10 @@
                                 <span class="fa fa-star checked" style="color: orange;"></span>
 
                                 <h6 class="testimonial-text" data-swiper-parallax="-300">
-                                    I don't usually use online shopping/procurement but since my friend told me about this website 
-                                    i registered in it and tried it and it was really easy and helpful experience. 
-                                    Also i like the fact that customers are able to negotiate with suppliers 
-                                    to make a deal about the price of the transaction that will be done 
+                                    I don't usually use online shopping/procurement but since my friend told me about this website
+                                    i registered in it and tried it and it was really easy and helpful experience.
+                                    Also i like the fact that customers are able to negotiate with suppliers
+                                    to make a deal about the price of the transaction that will be done
                                     which is actually so friendly & comfortable for both the buyer and the seller.
                                 </h6>
 
@@ -1147,5 +1148,6 @@
 <script src="<?php echo e(asset('website/modules/forms/src/js/sweetalert2.all.js')); ?>"></script>
 <script src="<?php echo e(asset('website/modules/forms/src/js/scripts.js')); ?>"></script>
 <!-- /jQuery-scripts for Modules (Send Message) -->
+
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>
