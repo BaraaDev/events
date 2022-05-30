@@ -42,7 +42,7 @@
                             <div class="curriculum-event c-primary" data-mh="curriculum">
                                 <div class="curriculum-event-thumb">
                                     <img src="{{$event->photo}}" alt="{{$event->title}}">
-                                    <div class="category-link c-yellow">{{$event->category->name ?? ''}}</div>
+                                    <div class="category-link c-orange">{{$event->category->name ?? ''}}</div>
 
                                     <div class="curriculum-event-content">
                                         <div class="author-block inline-items">
@@ -68,16 +68,15 @@
                                         </div>
                                     </div>
 
-                                    <u>{{__('website/event.category')}}</u> &nbsp; <a href="{{route('event.category',$event->category_id)}}">{{$event->category->name ?? ''}}</a>
-
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
                                             <div class="c-green"><u>{{__('website/event.status')}}</u> &nbsp; {{$event->status ?? ''}}</div>
+                                            <div class="c-red"><u>{{__('website/event.budget')}}</u> {{$event->budget}} USD</div>
                                         </div>
 
-                                        <div class="col-lg-4 col-sm-4 col-md-4">
-                                            <div class="c-red" style="float: left; margin: 0 auto;"> {{$event->budget}} USD</div>
-                                        </div>
+                                        {{-- <div class="col-lg-4 col-sm-4 col-md-4">
+                                            
+                                        </div> --}}
                                     </div>
                                     <a href="{{route('event.show',$event->id)}}" class="h5 title">{{$event->title}}</a>
                                 </div>

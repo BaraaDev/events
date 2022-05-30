@@ -21,6 +21,6 @@ return [
     'or'                       => 'or',
     'recent_event'             => 'Most Recent Events',
     'expired'                  => 'event has expired',
-    'category'                 => 'Category:',
     'status'                   => 'Status:',
+    'budget'                   => 'Budget:',
 ];
