@@ -1,4 +1,4 @@
-<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #F7F7F7">
 
      <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
@@ -88,11 +88,11 @@
                 <use xlink:href="#utouch-icon-arrow-top"></use>
             </svg>
         </a>
-        <div class="header-content-wrapper">
+        <div class="header-content-wrapper" style="background-color: #F7F7F7">
 
             <div class="site-logo">
                 <a href="{{route('home')}}" class="full-block"></a>
-                <img src="{{asset('website/img/logo.png')}}" alt="touch">
+                <img src="{{asset('website/img/GDP-logo.jpg')}}" alt="touch" style="width: 35%; border-radius:10px;"><br>
                 <div class="logo-text">
                     <div class="logo-title">{{$setting->title ?? ''}}</div>
                     <div class="logo-sub-title">{{$setting->content ?? ''}}</div>
