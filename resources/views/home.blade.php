@@ -426,7 +426,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works</h2>
+                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works?</h2>
                         <p class="heading-text">
                             The video explains how the users of the website are able to communicate together on the website
                             & get every thing done through the website. A whole process functionality is made
