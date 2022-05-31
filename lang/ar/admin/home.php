@@ -3,6 +3,8 @@
 return [
     'admin_dashboard_website'           => 'موقع لوحة تحكم المسؤول',
     'admin_title'                       => 'مسؤول',
+    'customer_title'                    => 'عميل',
+    'supplier_title'                    => 'مورد',
     'home'                              => 'الصفحة الرئيسية',
     'main_website'                      => 'الموقع الرئيسي',
     'sidebar_main_title'                => 'الشريط الجانبي الرئيسي (مسؤول)',
