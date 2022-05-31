@@ -114,7 +114,7 @@
 					</span>
                 </a>
 
-                <ul class="primary-menu-menu">
+                <ul class="primary-menu-menu" style="width: 110%;">
                     <li class="menu-item-has-children"><a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
                     <li><a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a></li>
                     <li>
@@ -154,10 +154,21 @@
                                 </form>
                             </ul>
                         </li>
+
+                        <!--++++++++++++-->
+                        <li>
+                            <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="{{url('ar/')}}">Arabic</a></li>
+                                <li><a href="{{url('en/')}}">English</a></li>
+                                <li><a href="{{url('fr/')}}">French</a></li>
+                            </ul>
+                        </li>
+                        <!--++++++++++++-->
                     @endif
                 </ul>
                 
-                <div class="nav-right col pull-right right-menu p-0">
+                {{-- <div class="nav-right col pull-right right-menu p-0">
                     <ul class="nav-menus">
                         <li class="onhover-dropdown">
                             <div class="notification-box"><i data-feather="flag"></i></div>
@@ -197,7 +208,7 @@
                             </ul>
                         </li>
                     </ul>  
-                </div>  
+                </div>   --}}
 
                 <!--------------------------------------- start search button --------------------------------------->
 
