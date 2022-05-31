@@ -129,7 +129,7 @@
 
                     <li><a href="{{route('contact-us')}}">{{__('website/home.contact_us')}}</a></li>
 
-                    @if(!auth()->user())
+                    @if(!auth()->user()) <!---------- = unregistered user ---------->
                         <li>
                             <a href="javascript:void(0)">{{__('auth.register')}}</a>
                             <ul class="sub-menu">
@@ -137,7 +137,7 @@
                                 <li><a href="{{route('login')}}">{{__('auth.login')}}</a></li>
                             </ul>
                         </li>
-                    @else
+                    @else <!---------- = registered user ---------->
                         <li>
                             @if(auth()->user()->user_type == 'dashboard') <!---------- dashboard (admin) ---------->
                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
@@ -163,9 +163,26 @@
                         <li>
                             <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
                             <ul class="sub-menu">
-                                <li><a href="{{url('ar/')}}"><img src="{{asset('admin/fonts/flag-icon/eg.svg')}}" alt="arabic-egypt" width="40"></a></li>
-                                <li><a href="{{url('en/')}}"><img src="{{asset('admin/fonts/flag-icon/us.svg')}}" alt="english-us" width="40"></a></li>
-                                <li><a href="{{url('fr/')}}"><img src="{{asset('admin/fonts/flag-icon/fr.svg')}}" alt="french" width="40"></a></li>
+                                <li>
+                                    <a href="{{url('ar/')}}">
+                                        <img src="{{asset('admin/fonts/flag-icon/eg.svg')}}" alt="arabic-egypt" width="40">
+                                        <span>&nbsp;&nbsp;&nbsp;Arabic</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="{{url('en/')}}">
+                                        <img src="{{asset('admin/fonts/flag-icon/us.svg')}}" alt="english-us" width="40">
+                                        <span>&nbsp;&nbsp;&nbsp;English</span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="{{url('fr/')}}">
+                                        <img src="{{asset('admin/fonts/flag-icon/fr.svg')}}" alt="french" width="40">
+                                        <span>&nbsp;&nbsp;&nbsp;French</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     @endif

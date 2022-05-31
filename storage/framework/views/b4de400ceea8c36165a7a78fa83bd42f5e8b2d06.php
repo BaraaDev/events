@@ -115,7 +115,7 @@
 					</span>
                 </a>
 
-                <ul class="primary-menu-menu" style="width: 125%; padding-left:3%;">
+                <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children"><a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
                     <li><a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
                     <li>
@@ -130,7 +130,7 @@
 
                     <li><a href="<?php echo e(route('contact-us')); ?>"><?php echo e(__('website/home.contact_us')); ?></a></li>
 
-                    <?php if(!auth()->user()): ?>
+                    <?php if(!auth()->user()): ?> <!---------- = unregistered user ---------->
                         <li>
                             <a href="javascript:void(0)"><?php echo e(__('auth.register')); ?></a>
                             <ul class="sub-menu">
@@ -138,7 +138,7 @@
                                 <li><a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a></li>
                             </ul>
                         </li>
-                    <?php else: ?>
+                    <?php else: ?> <!---------- = registered user ---------->
                         <li>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
@@ -165,9 +165,26 @@
                         <li>
                             <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
                             <ul class="sub-menu">
-                                <li><a href="<?php echo e(url('ar/')); ?>"><img src="<?php echo e(asset('admin/fonts/flag-icon/eg.svg')); ?>" alt="arabic-egypt" width="40"></a></li>
-                                <li><a href="<?php echo e(url('en/')); ?>"><img src="<?php echo e(asset('admin/fonts/flag-icon/us.svg')); ?>" alt="english-us" width="40"></a></li>
-                                <li><a href="<?php echo e(url('fr/')); ?>"><img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40"></a></li>
+                                <li>
+                                    <a href="<?php echo e(url('ar/')); ?>">
+                                        <img src="<?php echo e(asset('admin/fonts/flag-icon/eg.svg')); ?>" alt="arabic-egypt" width="40">
+                                        <span>&nbsp;&nbsp;&nbsp;Arabic</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="<?php echo e(url('en/')); ?>">
+                                        <img src="<?php echo e(asset('admin/fonts/flag-icon/us.svg')); ?>" alt="english-us" width="40">
+                                        <span>&nbsp;&nbsp;&nbsp;English</span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="<?php echo e(url('fr/')); ?>">
+                                        <img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40">
+                                        <span>&nbsp;&nbsp;&nbsp;French</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     <?php endif; ?>
