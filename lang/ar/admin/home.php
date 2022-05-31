@@ -82,6 +82,10 @@ return [
     'offers_made2'                      => '(في قسم الرد)',
     'offers_made_content'               => 'إنه موجود في كل حدث في الموقع الرئيسي!',
     'show_link'                         => 'اعرض',
+    'number_of_customers'               => 'عدد العملاء',
+    'number_of_suppliers'               => 'عدد الموردين',
+    'number_of_comments'                => 'عدد التعليقات',
+    'number_of_events'                  => 'عدد الأحداث',
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                   => 'مرحبا بك في',
     'home_page_content'                 => '.هي شركة تنفيذية في الشرق الأوسط تقدم خدمات التخطيط والإدارة والتنسيق والترويج الشاملة للأحداث',

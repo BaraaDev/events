@@ -89,6 +89,10 @@ return [
     'offers_made2'                           => '(dans la section de réponse)',
     'offers_made_content'                    => "Il est situé dans chaque événement du site Web principal!",
     'show_link'                              => 'Affichage',
+    'number_of_suppliers'                    => 'Nombre de fournisseurs',
+    'number_of_customers'                    => 'Nombre de clients',
+    'number_of_comments'                     => 'Nombre de commentaires',
+    'number_of_events'                       => "Nombre d'événements",
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                        => 'BIENVENUE À',
     'home_page_content'                      => "est une société d'événements exécutifs du Moyen-Orient qui fournit des services complets de planification, d'administration, de coordination et de promotion d'événements.",

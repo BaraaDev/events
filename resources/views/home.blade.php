@@ -573,7 +573,7 @@
                                         {{\App\Models\User::count()}}
                                 </span>
                             </div>
-                            <h5 class="counter-title">No. of Customers</h5>
+                            <h5 class="counter-title">{{__('admin/home.number_of_customers')}}</h5>
                         </div>
                     </div>
 
@@ -582,7 +582,7 @@
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">{{\App\Models\User::count()}}</span>
                             </div>
-                            <h5 class="counter-title">No. of Suppliers</h5>
+                            <h5 class="counter-title">{{__('admin/home.number_of_suppliers')}}</h5>
                         </div>
                     </div>
 
@@ -591,7 +591,7 @@
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
                             </div>
-                            <h5 class="counter-title">No. of Comments</h5>
+                            <h5 class="counter-title">{{__('admin/home.number_of_comments')}}</h5>
                         </div>
                     </div>
 
@@ -600,7 +600,7 @@
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
                             </div>
-                            <h5 class="counter-title">No. of Events</h5>
+                            <h5 class="counter-title">{{__('admin/home.number_of_events')}}</h5>
                         </div>
                     </div>
 
