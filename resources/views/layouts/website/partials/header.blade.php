@@ -166,7 +166,7 @@
                                 <li>
                                     <a href="{{url('ar/')}}">
                                         <img src="{{asset('admin/fonts/flag-icon/eg.svg')}}" alt="arabic-egypt" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp; {{__('website/home.arabic')}}</span>
+                                        <span>&nbsp;&nbsp;&nbsp;{{__('website/home.arabic')}}</span>
                                     </a>
                                 </li>
 
