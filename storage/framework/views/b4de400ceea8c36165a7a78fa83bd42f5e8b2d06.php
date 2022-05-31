@@ -141,7 +141,8 @@
                     <?php else: ?>
                         <li>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a><label style="color:grey;"><?php echo e(__('admin/home.admin_title')); ?></label>
+                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                                
                             <?php else: ?>
                                  <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                             <?php endif; ?>
