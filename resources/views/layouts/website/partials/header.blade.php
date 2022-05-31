@@ -90,7 +90,7 @@
         </a>
         <div class="header-content-wrapper" style="background-color: #F7F7F7">
 
-            <div class="site-logo" style="width: 40%">
+            <div class="site-logo" style="width: 35%">
                 <a href="{{route('home')}}" class="full-block"></a>
                 <img src="{{asset('website/img/GDP-logo.jpg')}}" alt="touch" style="width: 35%; border-radius:10px;"><br>
                 <div class="logo-text">
@@ -114,7 +114,7 @@
 					</span>
                 </a>
 
-                <ul class="primary-menu-menu" style="width: 125%;">
+                <ul class="primary-menu-menu" style="width: 125%; padding-left:1%;">
                     <li class="menu-item-has-children"><a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
                     <li><a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a></li>
                     <li>
