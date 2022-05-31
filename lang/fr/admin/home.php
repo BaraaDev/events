@@ -2,7 +2,7 @@
 
 return [
     'admin_dashboard_website'                => "Site Web du tableau de bord d'administration",
-    'admin_title'                            => 'Administrateur',
+    'admin_title'                            => 'Admin',
     'home'                                   => 'Domicile',
     'main_website'                           => 'Site principal',
     'sidebar_main_title'                     => 'Barre latérale principale (Admin)',

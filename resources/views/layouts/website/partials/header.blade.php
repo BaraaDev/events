@@ -114,7 +114,7 @@
 					</span>
                 </a>
 
-                <ul class="primary-menu-menu" style="width: 110%;">
+                <ul class="primary-menu-menu" style="width: 120%;">
                     <li class="menu-item-has-children"><a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
                     <li><a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a></li>
                     <li>
