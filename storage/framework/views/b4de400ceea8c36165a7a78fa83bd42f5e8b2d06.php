@@ -168,21 +168,21 @@
                                 <li>
                                     <a href="<?php echo e(url('ar/')); ?>">
                                         <img src="<?php echo e(asset('admin/fonts/flag-icon/eg.svg')); ?>" alt="arabic-egypt" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;Arabic</span>
+                                        <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.arabic')); ?></span>
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="<?php echo e(url('en/')); ?>">
                                         <img src="<?php echo e(asset('admin/fonts/flag-icon/us.svg')); ?>" alt="english-us" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;English</span>
+                                        <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.english')); ?></span>
                                     </a>
                                 </li>
                                 
                                 <li>
                                     <a href="<?php echo e(url('fr/')); ?>">
                                         <img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;French</span>
+                                        <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.french')); ?></span>
                                     </a>
                                 </li>
                             </ul>
