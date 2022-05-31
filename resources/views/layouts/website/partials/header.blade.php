@@ -155,16 +155,14 @@
                             </ul>
                         </li>
 
-                        <!--++++++++++++-->
                         <li>
                             <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
                             <ul class="sub-menu">
-                                <li><a href="{{url('ar/')}}">Arabic</a></li>
-                                <li><a href="{{url('en/')}}">English</a></li>
-                                <li><a href="{{url('fr/')}}">French</a></li>
+                                <li><a href="{{url('ar/')}}"><img src="{{asset('admin/fonts/flag-icon/eg.svg')}}" alt="arabic-egypt" width="40"></a></li>
+                                <li><a href="{{url('en/')}}"><img src="{{asset('admin/fonts/flag-icon/us.svg')}}" alt="english-us" width="40"></a></li>
+                                <li><a href="{{url('fr/')}}"><img src="{{asset('admin/fonts/flag-icon/fr.svg')}}" alt="french" width="40"></a></li>
                             </ul>
                         </li>
-                        <!--++++++++++++-->
                     @endif
                 </ul>
 
