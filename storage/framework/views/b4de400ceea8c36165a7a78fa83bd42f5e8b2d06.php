@@ -115,7 +115,7 @@
 					</span>
                 </a>
 
-                <ul class="primary-menu-menu" style="width: 125%; padding-left:1%;">
+                <ul class="primary-menu-menu" style="width: 125%; padding-left:5%;">
                     <li class="menu-item-has-children"><a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
                     <li><a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
                     <li>
