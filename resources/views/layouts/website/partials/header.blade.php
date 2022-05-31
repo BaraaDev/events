@@ -140,7 +140,7 @@
                     @else
                         <li>
                             @if(auth()->user()->user_type == 'dashboard')
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a><label>{{__('admin/home.admin_title')}}</label>
+                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a><label style="color:grey;">{{__('admin/home.admin_title')}}</label>
                             @else
                                  <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                             @endif
