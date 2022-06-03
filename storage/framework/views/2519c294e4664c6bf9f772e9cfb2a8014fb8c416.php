@@ -11,7 +11,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide bg-1 main-slider-bg-light">
+                <div class="swiper-slide main-slider-bg-light">
 
                     <div class="container">
                         <div class="row table-cell">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide bg-2 main-slider-bg-light">
+                <div class="swiper-slide main-slider-bg-light">
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide thumb-left bg-3 main-slider-bg-light">
+                <div class="swiper-slide thumb-left main-slider-bg-light">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
