@@ -161,33 +161,33 @@
                                 </form>
                             </ul>
                         </li>
-
-                        <li>
-                            <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="<?php echo e(url('ar/')); ?>">
-                                        <img src="<?php echo e(asset('admin/fonts/flag-icon/eg.svg')); ?>" alt="arabic-egypt" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.arabic')); ?></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="<?php echo e(url('en/')); ?>">
-                                        <img src="<?php echo e(asset('admin/fonts/flag-icon/us.svg')); ?>" alt="english-us" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.english')); ?></span>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="<?php echo e(url('fr/')); ?>">
-                                        <img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.french')); ?></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                     <?php endif; ?>
+
+                    <li>
+                        <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="<?php echo e(url('ar/')); ?>">
+                                    <img src="<?php echo e(asset('admin/fonts/flag-icon/eg.svg')); ?>" alt="arabic-egypt" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.arabic')); ?></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="<?php echo e(url('en/')); ?>">
+                                    <img src="<?php echo e(asset('admin/fonts/flag-icon/us.svg')); ?>" alt="english-us" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.english')); ?></span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="<?php echo e(url('fr/')); ?>">
+                                    <img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.french')); ?></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <!--------------------------------------- start search button --------------------------------------->

@@ -159,33 +159,33 @@
                                 </form>
                             </ul>
                         </li>
-
-                        <li>
-                            <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="{{url('ar/')}}">
-                                        <img src="{{asset('admin/fonts/flag-icon/eg.svg')}}" alt="arabic-egypt" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;{{__('website/home.arabic')}}</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="{{url('en/')}}">
-                                        <img src="{{asset('admin/fonts/flag-icon/us.svg')}}" alt="english-us" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;{{__('website/home.english')}}</span>
-                                    </a>
-                                </li>
-                                
-                                <li>
-                                    <a href="{{url('fr/')}}">
-                                        <img src="{{asset('admin/fonts/flag-icon/fr.svg')}}" alt="french" width="40">
-                                        <span>&nbsp;&nbsp;&nbsp;{{__('website/home.french')}}</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                     @endif
+
+                    <li>
+                        <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="{{url('ar/')}}">
+                                    <img src="{{asset('admin/fonts/flag-icon/eg.svg')}}" alt="arabic-egypt" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;{{__('website/home.arabic')}}</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{url('en/')}}">
+                                    <img src="{{asset('admin/fonts/flag-icon/us.svg')}}" alt="english-us" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;{{__('website/home.english')}}</span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="{{url('fr/')}}">
+                                    <img src="{{asset('admin/fonts/flag-icon/fr.svg')}}" alt="french" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;{{__('website/home.french')}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <!--------------------------------------- start search button --------------------------------------->
