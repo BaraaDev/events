@@ -184,7 +184,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
+                            <a href="{{asset('website/img/clouds2.png')}}" class="h5 info-box-title">Wedding Arrangement</a>
                             <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                 nibh euismod tincidunt ut laoreet dolore magna aliquam.
                             </p>
@@ -548,7 +548,7 @@
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
                             "It's an awesome online service that could help many users to find the service/product they need
                             with an affordable price & also matches everyone's income level which is also a friendly
-                            feature (customers). Also it helps many service providers (suppliers) to run their businesses 
+                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
                             through it smoothly and much better."
                         </em>
                     </p>
@@ -565,12 +565,12 @@
                             <h5 class="counter-title" style="font-size: 200%; color:#939FAD;">Line of codes</h5>
                         </div>
                     </div> --}}
-                    
+
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">
-                                        {{\App\Models\User::count()}}
+                                    {{\App\Models\User::count()}}
                                 </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_customers')}}</h5>

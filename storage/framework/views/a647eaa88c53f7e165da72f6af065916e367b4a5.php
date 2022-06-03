@@ -192,7 +192,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
+                            <a href="<?php echo e(asset('website/img/clouds2.png')); ?>" class="h5 info-box-title">Wedding Arrangement</a>
                             <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                 nibh euismod tincidunt ut laoreet dolore magna aliquam.
                             </p>
@@ -410,21 +410,21 @@
     <section class="bg-8 background-contain pt100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
                         <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works</h2>
-                        <p class="heading-text">
+                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works?</h2>
+                        <p class="heading-text" style="font-size:110%; font-family: Arial, Helvetica, sans-serif;">
                             The video explains how the users of the website are able to communicate together on the website
                             & get every thing done through the website. A whole process functionality is made
                             (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
-                            which is the payment process (for both perspectives "Customer & Supplier").
+                            which is the payment process (for both perspectives "<strong><u>Customer</u></strong>" & "<strong><u>Supplier</u></strong>").
                         </p>
                     </div>
                     
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="padding-bottom:5%;">
                     <div class="crumina-module crumina-our-video">
                         <div class="video-thumb">
                             <img src="<?php echo e(asset('website/img/video-thumb.png')); ?>" alt="video">
@@ -518,67 +518,67 @@
 
         <div class="container">
             <div class="row">
+
+                <div style="text-align:center; width: 82%; margin-left: auto; margin-right: auto; padding-top:5%;">
+                    <h5 class="c-white" style="font-size:200%;">What's GDP?</h5>
+                    <p class="c-semitransparent-white" style="font-weight:bold;">
+                        <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
+                            <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
+                            <span style="color:rgb(208, 208, 208);">the website represents the power of negotiation between the customers and the suppliers</span> <br>
+                            <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
+                            "It's an awesome online service that could help many users to find the service/product they need
+                            with an affordable price & also matches everyone's income level which is also a friendly
+                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
+                            through it smoothly and much better."
+                        </em>
+                    </p>
+                </div>
+
                 <div class="counters">
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <div class="units">+</div>
-                                <span data-speed="2000" data-refresh-interval="3" data-to="7850" data-from="500">7850</span>
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1">
+                                    <?php echo e(\App\Models\User::count()); ?>
+
+                                </span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">Line of codes</h5>
+                            <h5 class="counter-title"><?php echo e(__('admin/home.number_of_customers')); ?></h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="7" data-from="2">7</span>
+                            <div class="counter-numbers c-yellow">
+                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1"><?php echo e(\App\Models\User::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Paid Events</h5>
+                            <h5 class="counter-title"><?php echo e(__('admin/home.number_of_suppliers')); ?></h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                        <div class="crumina-module crumina-counter-item">
-                            <div class="counter-numbers counter c-yellow">
-                                <span data-speed="2000" data-refresh-interval="3" data-to="4" data-from="2">4</span>
-                            </div>
-                            <h5 class="counter-title" style="font-size: 90%;">Testimonals</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Comment::count()); ?>" data-from="1"><?php echo e(\App\Models\Comment::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Comments</h5>
+                            <h5 class="counter-title"><?php echo e(__('admin/home.number_of_comments')); ?></h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Event::count()); ?>" data-from="1"><?php echo e(\App\Models\Event::count()); ?></span>
                             </div>
-                            <h5 class="counter-title" style="font-size: 90%;">No. of Events</h5>
+                            <h5 class="counter-title"><?php echo e(__('admin/home.number_of_events')); ?></h5>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <h5 class="c-white">GDP</h5>
-                        <p class="c-semitransparent-white">
-                            <em>
-                                "is an awesome online service that could help many users to find the service/product they need
-                                with an affordable price & also matches everyone's income level which is also a friendly
-                                feature (customers). Also it helps many service (suppliers) providers to run their businesses
-                                through it."
-                            </em>
-                        </p>
-                    </div>
-
                 </div>
+
             </div>
         </div>
 
@@ -989,6 +989,11 @@
 
     <section class="crumina-module crumina-module-slider bg-4 cloud-center navigation-center-both-sides medium-padding100">
         <div class="container">
+
+            <div style="text-align:center; padding-bottom:1%;">
+                <h5 class="c-black" style="font-size:200%;"><u>Testimonials</u></h5>
+            </div>
+
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">
                     <div class="swiper-container" data-effect="fade">
@@ -1017,7 +1022,7 @@
 
                                     <div class="author-info">
                                         <a href="#" class="h6 author-name">Mohamed El-haddad</a>
-                                        <div class="author-company">Professor, 45 years old</div>
+                                        <div class="author-company">Professor, 40 years old</div>
                                     </div>
 
                                 </div>
@@ -1046,7 +1051,7 @@
 
                                     <div class="author-info">
                                         <a href="#" class="h6 author-name">Reham Kouta</a>
-                                        <div class="author-company">Teacher Assistance, 33 years old</div>
+                                        <div class="author-company">Teacher Assistance, 34 years old</div>
                                     </div>
 
                                 </div>

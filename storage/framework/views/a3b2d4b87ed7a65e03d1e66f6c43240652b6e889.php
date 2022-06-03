@@ -1,4 +1,4 @@
-<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="">
+<header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #F7F7F7">
 
      <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
@@ -89,11 +89,11 @@
                 <use xlink:href="#utouch-icon-arrow-top"></use>
             </svg>
         </a>
-        <div class="header-content-wrapper">
+        <div class="header-content-wrapper" style="background-color: #F7F7F7">
 
-            <div class="site-logo">
+            <div class="site-logo" style="width: 35%">
                 <a href="<?php echo e(route('home')); ?>" class="full-block"></a>
-                <img src="<?php echo e(asset('website/img/logo.png')); ?>" alt="touch">
+                <img src="<?php echo e(asset('website/img/GDP-logo.jpg')); ?>" alt="touch" style="width: 35%; border-radius:10px;"><br>
                 <div class="logo-text">
                     <div class="logo-title"><?php echo e($setting->title ?? ''); ?></div>
                     <div class="logo-sub-title"><?php echo e($setting->content ?? ''); ?></div>
@@ -115,7 +115,7 @@
 					</span>
                 </a>
 
-                <ul class="primary-menu-menu">
+                <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children"><a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
                     <li><a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
                     <li>
@@ -130,7 +130,7 @@
 
                     <li><a href="<?php echo e(route('contact-us')); ?>"><?php echo e(__('website/home.contact_us')); ?></a></li>
 
-                    <?php if(!auth()->user()): ?>
+                    <?php if(!auth()->user()): ?> <!---------- = unregistered user ---------->
                         <li>
                             <a href="javascript:void(0)"><?php echo e(__('auth.register')); ?></a>
                             <ul class="sub-menu">
@@ -138,12 +138,21 @@
                                 <li><a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a></li>
                             </ul>
                         </li>
-                    <?php else: ?>
+                    <?php else: ?> <!---------- = registered user ---------->
                         <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                            <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
+                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                                <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.admin_title')); ?></label>
+                            <?php elseif(auth()->user()->user_type == 'customer'): ?> <!---------- customer ---------->
+                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                                 <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.customer_title')); ?></label>
+                            <?php else: ?> <!---------- supplier ---------->
+                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                                 <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.supplier_title')); ?></label>
+                            <?php endif; ?>
                             <ul class="sub-menu">
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
-                                <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.dashboard')); ?></a></li>
+                                <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
                             <?php endif; ?>
                                 <li><a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><?php echo e(__('auth.logout')); ?></a></li>
                                 <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
@@ -153,7 +162,34 @@
                             </ul>
                         </li>
                     <?php endif; ?>
+
+                    <li>
+                        <a href="javascript:void(0)"><i class="fa fa-flag" aria-hidden="true"></i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="<?php echo e(url('ar/')); ?>">
+                                    <img src="<?php echo e(asset('admin/fonts/flag-icon/eg.svg')); ?>" alt="arabic-egypt" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.arabic')); ?></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="<?php echo e(url('en/')); ?>">
+                                    <img src="<?php echo e(asset('admin/fonts/flag-icon/us.svg')); ?>" alt="english-us" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.english')); ?></span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="<?php echo e(url('fr/')); ?>">
+                                    <img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40">
+                                    <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.french')); ?></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
+
                 <!--------------------------------------- start search button --------------------------------------->
 
                 
