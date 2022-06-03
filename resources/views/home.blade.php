@@ -11,7 +11,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide bg-1 main-slider-bg-light">
+                <div class="swiper-slide main-slider-bg-light">
 
                     <div class="container">
                         <div class="row table-cell">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide bg-2 main-slider-bg-light">
+                <div class="swiper-slide main-slider-bg-light">
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide thumb-left bg-3 main-slider-bg-light">
+                <div class="swiper-slide thumb-left main-slider-bg-light">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
@@ -184,7 +184,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="{{asset('website/img/clouds2.png')}}" class="h5 info-box-title">Wedding Arrangement</a>
+                            <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
                             <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                 nibh euismod tincidunt ut laoreet dolore magna aliquam.
                             </p>
@@ -416,7 +416,6 @@
     </section>
 
     <!-- ... Slider with vertical tabs -->
-
 
     <!-- Video -->
 

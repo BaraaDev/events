@@ -404,6 +404,7 @@
 
     <!-- ... Slider with vertical tabs -->
 
+
     <!-- Video -->
 
     <section class="bg-8 background-contain pt100">
@@ -527,7 +528,7 @@
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
                             "It's an awesome online service that could help many users to find the service/product they need
                             with an affordable price & also matches everyone's income level which is also a friendly
-                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
+                            feature (customers). Also it helps many service providers (suppliers) to run their businesses 
                             through it smoothly and much better."
                         </em>
                     </p>
@@ -536,12 +537,12 @@
                 <div class="counters">
 
                     
-
+                    
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1">
-                                    <?php echo e(\App\Models\User::count()); ?>
+                                        <?php echo e(\App\Models\User::count()); ?>
 
                                 </span>
                             </div>
@@ -1154,4 +1155,4 @@
 <!-- /jQuery-scripts for Modules (Send Message) -->
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>
