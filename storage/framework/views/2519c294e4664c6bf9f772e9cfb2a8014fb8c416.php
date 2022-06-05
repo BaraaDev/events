@@ -193,7 +193,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service1')); ?></a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service1')); ?></a>
                             <p class="info-box-text">
                                 <?php echo e(__('admin/home.service1_content')); ?>
 
@@ -214,7 +214,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service2')); ?></a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service2')); ?></a>
                             <p class="info-box-text">
                                 <?php echo e(__('admin/home.service2_content')); ?>
 
@@ -235,7 +235,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service3')); ?></a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service3')); ?></a>
                             <p class="info-box-text">
                                 <?php echo e(__('admin/home.service3_content')); ?>
 
@@ -542,9 +542,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1">
-                                        <?php echo e(\App\Models\User::count()); ?>
-
+                                <span>
+                                        
                                 </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_customers')); ?></h5>
@@ -554,7 +553,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1"><?php echo e(\App\Models\User::count()); ?></span>
+                                <span>
+                                    <?php echo e(\App\Models\User::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_suppliers')); ?></h5>
                         </div>
@@ -563,7 +565,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Comment::count()); ?>" data-from="1"><?php echo e(\App\Models\Comment::count()); ?></span>
+                                <span>
+                                    <?php echo e(\App\Models\Comment::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_comments')); ?></h5>
                         </div>
@@ -572,7 +577,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Event::count()); ?>" data-from="1"><?php echo e(\App\Models\Event::count()); ?></span>
+                                <span>
+                                    <?php echo e(\App\Models\Event::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_events')); ?></h5>
                         </div>

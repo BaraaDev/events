@@ -76,4 +76,5 @@ class User extends Authenticatable implements HasMedia
     {
         return $query->where('user_type',$arg);
     }
+    
 }
