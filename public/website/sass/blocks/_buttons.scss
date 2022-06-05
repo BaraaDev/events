@@ -16,7 +16,7 @@
   text-align: center;
   line-height: 1;
 
- & + .btn {
+  &+.btn {
     margin-left: 30px;
   }
 }
@@ -26,7 +26,7 @@
   text-align: left;
   fill: $white-color;
 
-  & > * {
+  &>* {
     display: inline-block;
     vertical-align: middle;
   }
@@ -144,7 +144,7 @@
 /*------------- #Color-scheme for buttons --------------*/
 
 
-div:hover > .btn-reverse-bg-green {
+div:hover>.btn-reverse-bg-green {
   background-color: $green-light;
   color: $white-color;
 
@@ -307,7 +307,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(0,131,255, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(0, 131, 255, 0.5);
     }
   }
 }
@@ -317,7 +317,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(39,63,91, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(39, 63, 91, 0.5);
     }
   }
 }
@@ -327,7 +327,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(1,162,60, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(1, 162, 60, 0.5);
     }
   }
 }
@@ -337,7 +337,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(97,177,49, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(97, 177, 49, 0.5);
     }
   }
 }
@@ -347,7 +347,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(18,25,33, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(18, 25, 33, 0.5);
     }
   }
 }
@@ -357,7 +357,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(239,101,23, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(239, 101, 23, 0.5);
     }
   }
 }
@@ -367,7 +367,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(248,145,1, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(248, 145, 1, 0.5);
     }
   }
 }
@@ -377,7 +377,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(255,49,51, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(255, 49, 51, 0.5);
     }
   }
 }
@@ -387,7 +387,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(115,140,170, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(115, 140, 170, 0.5);
     }
   }
 }
@@ -402,7 +402,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(236,244,252, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(236, 244, 252, 0.5);
     }
   }
 }
@@ -412,7 +412,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(254,207,57, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(254, 207, 57, 0.5);
     }
   }
 }
@@ -422,7 +422,7 @@ div:hover > .btn-reverse-bg-green {
 
   &.btn--with-shadow {
     &:after {
-      box-shadow: 10px 0 30px 0 rgba(159,195,26, 0.5);
+      box-shadow: 10px 0 30px 0 rgba(159, 195, 26, 0.5);
     }
   }
 }
@@ -433,6 +433,7 @@ div:hover > .btn-reverse-bg-green {
   text-align: left;
   fill: $white-color;
   padding: 13px 26px;
+  margin-left: 20%;
 
   .utouch-icon {
     margin-right: 5px;
@@ -440,7 +441,7 @@ div:hover > .btn-reverse-bg-green {
     width: 26px;
   }
 
-  > * {
+  >* {
     display: inline-block;
     vertical-align: middle;
   }
@@ -463,7 +464,7 @@ div:hover > .btn-reverse-bg-green {
   }
 
   &:after {
-    box-shadow: 10px 0 15px 0 rgba(18,25,33, 0.3);
+    box-shadow: 10px 0 15px 0 rgba(18, 25, 33, 0.3);
   }
 }
 
@@ -486,7 +487,7 @@ div:hover > .btn-reverse-bg-green {
   left: 50%;
   transform: translate(-50%, 0);
   cursor: pointer;
-  box-shadow: 10px 0 30px 0 rgba(0,130,215, 0.4);
+  box-shadow: 10px 0 30px 0 rgba(0, 130, 215, 0.4);
   border-radius: 100%;
   background-color: $primary-color;
   text-align: center;
@@ -506,7 +507,7 @@ div:hover > .btn-reverse-bg-green {
 /*================= Responsive Mode ============*/
 
 @media (max-width: 1024px) {
-  .btn + .btn {
+  .btn+.btn {
     margin-left: 0;
     margin-top: 15px;
   }

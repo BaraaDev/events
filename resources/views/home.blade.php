@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide main-slider-bg-light">
+                <div class="swiper-slide bg-1 main-slider-bg-light">
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -269,12 +269,37 @@
         <div class="swiper-container" data-show-items="1">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide bg-primary-color bg-5" data-mh="slide">
+                <div class="swiper-slide " data-mh="slide" style="background-color:#ab7f5d ;">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/barber-home.jpg')}}" style="border-radius:20px;" alt="barber">
+                                    <img src="{{asset('website/img/prom.jpg')}}" style="border-radius:5%;" alt="Prom Prep">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
+                                <div class="crumina-module crumina-heading custom-color c-white">
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Graduation / Parties</p>
+                                    <h2 class="heading-title">Breaking new Graduation offers are on doors, Check them out!</h2>
+                                    <div class="heading-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+                                        litterarum formas humanitatis per.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide " data-mh="slide" style="background-color: #79543D;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
+                                <div class="slider-tabs-vertical-thumb">
+                                    <img src="{{asset('website/img/fireworks.jpg')}}" style="border-radius:5%;" alt="fireworks">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -291,64 +316,13 @@
                                 </div>
 
                                 <a href="#" class="btn btn-market btn--with-shadow">
-                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                    </svg>
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">App Store</span>
+                                    <img src="https://img.icons8.com/external-basicons-color-edtgraphics/50/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
+                                    <div class="text" style="padding-left:5px ;">
+                                        <span class="sup-title">Check it now on</span>
+                                        <span class="title">Decorations</span>
                                     </div>
                                 </a>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img class="utouch-icon" src="{{asset('website/svg-icons/google-play.svg')}}" alt="google">
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide bg-orange-light bg-6" data-mh="slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/')}}" alt="zaffa">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="crumina-module crumina-heading custom-color c-white">
-                                    <h6 class="heading-sup-title">User Interface</h6>
-                                    <h2 class="heading-title">Discover new horisons</h2>
-                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
-                                        litterarum formas humanitatis per.
-                                    </div>
-                                </div>
-
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                    </svg>
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">App Store</span>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img class="utouch-icon" src="{{asset('website/svg-icons/google-play.svg')}}" alt="google">
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -359,14 +333,15 @@
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/iphone3.png')}}" alt="iphone">
+                                    <img src="{{asset('website/img/barber-home.jpg')}}" style="border-radius:20px;" alt="barber">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <h6 class="heading-sup-title">User Interface</h6>
-                                    <h2 class="heading-title">Discover new horisons</h2>
-                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Barber / Coiffer</p>
+                                    <h2 class="heading-title">Check out our new barbers!</h2>
+                                    <div class="heading-text">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                         diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                                         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
                                         Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
