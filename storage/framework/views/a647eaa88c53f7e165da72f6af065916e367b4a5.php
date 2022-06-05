@@ -6,14 +6,14 @@
     <!-- Main Slider -->
 
     <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade">
-
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;">
+            
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);">
                 <!-- Slides -->
                 <div class="swiper-slide main-slider-bg-light">
 
-                    <div class="container">
+                    <div class="container table">
                         <div class="row table-cell">
 
                             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
@@ -35,7 +35,7 @@
                                     </h1>
                                     <h6 class="slider-content-text" data-swiper-parallax="-200">
                                         <div>
-                                            <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold;">Getting Day Planned (GDP)</h5>
+                                            <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
                                         </div>
                                         <?php echo e(__('admin/home.home_page_content')); ?>
 
@@ -66,7 +66,11 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD:storage/framework/views/a647eaa88c53f7e165da72f6af065916e367b4a5.php
                 <div class="swiper-slide bg-1 main-slider-bg-light">
+=======
+                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(246, 224, 201);">
+>>>>>>> c71c1c47bc1b9b562aec22911e464c570ff6a2b8:storage/framework/views/2519c294e4664c6bf9f772e9cfb2a8014fb8c416.php
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -113,7 +117,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide thumb-left main-slider-bg-light">
+                
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214);">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
@@ -192,9 +197,10 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
-                            <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service1')); ?></a>
+                            <p class="info-box-text">
+                                <?php echo e(__('admin/home.service1_content')); ?>
+
                             </p>
                         </div>
 
@@ -212,9 +218,10 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Birthday Party</a>
-                            <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service2')); ?></a>
+                            <p class="info-box-text">
+                                <?php echo e(__('admin/home.service2_content')); ?>
+
                             </p>
                         </div>
 
@@ -232,9 +239,10 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Food Service</a>
-                            <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service3')); ?></a>
+                            <p class="info-box-text">
+                                <?php echo e(__('admin/home.service3_content')); ?>
+
                             </p>
                         </div>
 
@@ -386,13 +394,10 @@
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
-                        <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works?</h2>
+                        <h6 class="heading-sup-title"><?php echo e(__('admin/home.how_it_works_video')); ?></h6>
+                        <h2 class="heading-title"><?php echo e(__('admin/home.how_it_works1')); ?> <span class="c-primary">GDP</span> <?php echo e(__('admin/home.how_it_works2')); ?></h2>
                         <p class="heading-text" style="font-size:110%; font-family: Arial, Helvetica, sans-serif;">
-                            The video explains how the users of the website are able to communicate together on the website
-                            & get every thing done through the website. A whole process functionality is made
-                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
-                            which is the payment process (for both perspectives "<strong><u>Customer</u></strong>" & "<strong><u>Supplier</u></strong>").
+                            <?php echo e(__('admin/home.how_it_works_content')); ?> "<strong><u><?php echo e(__('admin/home.customer_title')); ?></u></strong>" & "<strong><u><?php echo e(__('admin/home.supplier_title')); ?></u></strong>").
                         </p>
                     </div>
                     

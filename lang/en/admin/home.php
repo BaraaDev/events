@@ -87,10 +87,6 @@ return [
     'offers_made2'                       => '(in reply section)',
     'offers_made_content'                => "It's located in each event in the main website!",
     'show_link'                          => 'Show',
-    'number_of_customers'                => 'No. of Customers',
-    'number_of_suppliers'                => 'No. of Suppliers',
-    'number_of_comments'                 => 'No. of Comments',
-    'number_of_events'                   => 'No. of Events',
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                    => 'WELCOME TO',
     'home_page_content'                  => 'is a Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',
@@ -99,6 +95,25 @@ return [
     'home_page_content2'                 => 'is quality product that will make your life better',
     'home_page_title3'                   => 'Rise Up With the Most Interesting & Less Time Consuming Online Service!',
     'home_page_content3'                 => 'From the variety of different categories of services & suppliers, find the service that you need from our suppliers.',
-    'home_page_content3_button'          => 'Get Started Now!'
+    'home_page_content3_button'          => 'Get Started Now!', 
+    'service1'                           => 'Wedding Arrangements',
+    'service2'                           => 'Birthday Parties',
+    'service3'                           => 'Food Services',
+    'service1_content'                   => 'wedding album, wedding anniversary, wedding announcement, 
+                                             wedding attire, wedding banquet, bouquet flowers, decor and design, etc.',
+    'service2_content'                   => 'plan games, balloons, goodie bags, birthday gifts, birthday cakes, candles,
+                                             DJs, tables and chairs, birthday party favors, invitations, entertainment rentals etc.',
+    'service3_content'                   => 'food, beverages & snacks preparations, semi-self service, waiter service, buffet service.',
+    'number_of_customers'                => 'No. of Customers',
+    'number_of_suppliers'                => 'No. of Suppliers',
+    'number_of_comments'                 => 'No. of Comments',
+    'number_of_events'                   => 'No. of Events',
+    'how_it_works_video'                 => 'WATCH THE VIDEO',
+    'how_it_works1'                      => 'How',
+    'how_it_works2'                      => 'works?',
+    'how_it_works_content'               => 'The video explains how the users of the website are able to communicate together on the website
+                                             & get every thing done through the website. A whole process functionality is made
+                                             (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
+                                             which is the payment process (for both perspectives',
 
 ];

@@ -89,10 +89,6 @@ return [
     'offers_made2'                           => '(dans la section de réponse)',
     'offers_made_content'                    => "Il est situé dans chaque événement du site Web principal!",
     'show_link'                              => 'Affichage',
-    'number_of_suppliers'                    => 'Nombre de fournisseurs',
-    'number_of_customers'                    => 'Nombre de clients',
-    'number_of_comments'                     => 'Nombre de commentaires',
-    'number_of_events'                       => "Nombre d'événements",
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                        => 'BIENVENUE À',
     'home_page_content'                      => "est une société d'événements exécutifs du Moyen-Orient qui fournit des services complets de planification, d'administration, de coordination et de promotion d'événements.",
@@ -101,6 +97,27 @@ return [
     'home_page_content2'                     => 'est un produit de qualité qui vous rendra la vie meilleure',
     'home_page_title3'                       => 'Montez avec le service en ligne le plus intéressant et le moins chronophage!',
     'home_page_content3'                     => 'Parmi la variété des différentes catégories de services et de fournisseurs, trouvez le service dont vous avez besoin auprès de nos fournisseurs.',
-    'home_page_content3_button'              => 'Commencez maintenant!'
+    'home_page_content3_button'              => 'Commencez maintenant!', 
+    'service1'                               => 'Arrangements de mariage',
+    'service2'                               => "Fêtes d'anniversaire",
+    'service3'                               => "Services d'alimentation",
+    'service1_content'                       => 'album de mariage, anniversaire de mariage, faire-part de mariage, tenue de mariage, 
+                                                 banquet de mariage, bouquet de fleurs, décoration et design, etc.',
+    'service2_content'                       => "Planifiez des jeux, des ballons, des sacs cadeaux, des cadeaux d'anniversaire, 
+                                                 des gâteaux d'anniversaire, des bougies, des DJ, des tables et des chaises, 
+                                                 des cadeaux d'anniversaire, des invitations, des locations de divertissement, etc.",
+    'service3_content'                       => "préparations d'aliments, de boissons et de collations, semi-libre-service, 
+                                                 service à table, service de buffet.",
+    'number_of_suppliers'                    => 'Nombre de fournisseurs',
+    'number_of_customers'                    => 'Nombre de clients',
+    'number_of_comments'                     => 'Nombre de commentaires',
+    'number_of_events'                       => "Nombre d'événements",
+    'how_it_works_video'                     => 'VOIR LA VIDÉO',
+    'how_it_works1'                          => 'Comment',
+    'how_it_works2'                          => 'fonctionne?',
+    'how_it_works_content'                   => "La vidéo explique comment les utilisateurs du site Web sont capables de communiquer 
+                                                 ensemble sur le site Web et de tout faire via le site Web. Toute une fonctionnalité de processus est créée 
+                                                 (y compris les événements, les négociations, etc.) qui sont les étapes de pré-paiement jusqu'à atteindre 
+                                                 le processus final qui est le processus de paiement (pour les deux perspectives",
 
 ];
