@@ -9,7 +9,7 @@
         <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade">
 
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);">
                 <!-- Slides -->
                 <div class="swiper-slide main-slider-bg-light">
 
@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide main-slider-bg-light">
+                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(246, 224, 201);">
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -113,7 +113,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide thumb-left main-slider-bg-light">
+                
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214);">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
@@ -192,9 +193,10 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Wedding Arrangement</a>
-                            <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service1')); ?></a>
+                            <p class="info-box-text">
+                                <?php echo e(__('admin/home.service1_content')); ?>
+
                             </p>
                         </div>
 
@@ -212,9 +214,10 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Birthday Party</a>
-                            <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service2')); ?></a>
+                            <p class="info-box-text">
+                                <?php echo e(__('admin/home.service2_content')); ?>
+
                             </p>
                         </div>
 
@@ -232,9 +235,10 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">Food Service</a>
-                            <p class="info-box-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service3')); ?></a>
+                            <p class="info-box-text">
+                                <?php echo e(__('admin/home.service3_content')); ?>
+
                             </p>
                         </div>
 
