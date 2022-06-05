@@ -7,7 +7,7 @@
 
     <div class="crumina-module crumina-module-slider container-full-width">
         <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;">
-
+            
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);">
                 <!-- Slides -->
@@ -426,13 +426,10 @@
             <div class="row">
                 <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                     <div class="crumina-module crumina-heading">
-                        <h6 class="heading-sup-title">Watch the video</h6>
-                        <h2 class="heading-title">How <span class="c-primary">GDP</span> works?</h2>
+                        <h6 class="heading-sup-title">{{__('admin/home.how_it_works_video')}}</h6>
+                        <h2 class="heading-title">{{__('admin/home.how_it_works1')}} <span class="c-primary">GDP</span> {{__('admin/home.how_it_works2')}}</h2>
                         <p class="heading-text" style="font-size:110%; font-family: Arial, Helvetica, sans-serif;">
-                            The video explains how the users of the website are able to communicate together on the website
-                            & get every thing done through the website. A whole process functionality is made
-                            (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
-                            which is the payment process (for both perspectives "<strong><u>Customer</u></strong>" & "<strong><u>Supplier</u></strong>").
+                            {{__('admin/home.how_it_works_content')}} "<strong><u>{{__('admin/home.customer_title')}}</u></strong>" & "<strong><u>{{__('admin/home.supplier_title')}}</u></strong>").
                         </p>
                     </div>
                     {{-- <a href="02_company.html" class="btn btn-small btn--icon-right btn-border btn--with-shadow c-primary">
