@@ -5,7 +5,7 @@
 
     <!-- Main Slider -->
 
-    <div class="crumina-module crumina-module-slider container-full-width">
+    <div class="crumina-module crumina-module-slider container-full-width" style="cursor: grabbing;">
         <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade">
 
             <!-- Additional required wrapper -->
@@ -35,7 +35,7 @@
                                     </h1>
                                     <h6 class="slider-content-text" data-swiper-parallax="-200">
                                         <div>
-                                            <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold;">Getting Day Planned (GDP)</h5>
+                                            <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
                                         </div>
                                         <?php echo e(__('admin/home.home_page_content')); ?>
 
