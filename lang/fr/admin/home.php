@@ -123,11 +123,11 @@ return [
     'testimonials'                           => 'Témoignages',
     'what_s'                                 => "Qu'est-ce que",
     'middle_section'                         => 'le site web représente le pouvoir de négociation entre les clients et les fournisseurs',
-    'middle_section_content'             => "C'est un service en ligne génial qui pourrait aider de nombreux utilisateurs à trouver 
-                                             le service/produit dont ils ont besoin à un prix abordable et qui correspond également 
-                                             au niveau de revenu de chacun, ce qui est également une fonctionnalité conviviale (clients). 
-                                             En outre, cela aide de nombreux prestataires de services (fournisseurs) à gérer leur entreprise 
-                                             de manière fluide et bien meilleure.",
+    'middle_section_content'                 => "C'est un service en ligne génial qui pourrait aider de nombreux utilisateurs à trouver 
+                                                 le service/produit dont ils ont besoin à un prix abordable et qui correspond également 
+                                                 au niveau de revenu de chacun, ce qui est également une fonctionnalité conviviale (clients). 
+                                                 En outre, cela aide de nombreux prestataires de services (fournisseurs) à gérer leur entreprise 
+                                                 de manière fluide et bien meilleure.",
 
 
 ];
