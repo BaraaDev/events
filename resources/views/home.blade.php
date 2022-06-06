@@ -186,7 +186,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">{{__('admin/home.service1')}}</a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service1')}}</a>
                             <p class="info-box-text">
                                 {{__('admin/home.service1_content')}}
                             </p>
@@ -213,7 +213,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">{{__('admin/home.service2')}}</a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service2')}}</a>
                             <p class="info-box-text">
                                 {{__('admin/home.service2_content')}}
                             </p>
@@ -240,7 +240,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">{{__('admin/home.service3')}}</a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service3')}}</a>
                             <p class="info-box-text">
                                 {{__('admin/home.service3_content')}}
                             </p>
