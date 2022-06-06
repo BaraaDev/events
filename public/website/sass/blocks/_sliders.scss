@@ -415,12 +415,12 @@
 					height: 60px;
 				}
 
-				&.primary {
-					background-color: $primary-color;
+				&.dark-grey {
+					background-color: $dark-grey;
 				}
 
-				&.orange {
-					background-color: $orange-light;
+				&.brown {
+					background-color: $light-brown;
 				}
 
 				&.red {
@@ -435,7 +435,6 @@
 		width: 6px;
 		height: 6px;
 		border-radius: 100%;
-		background-color: #a1b7d2;
 		margin-right: 15px;
 		position: relative;
 
@@ -452,12 +451,12 @@
 			transition: all .3s ease;
 		}
 
-		&.primary:before {
-			background-color: $primary-color;
+		&.dark-grey:before {
+			background-color: $dark-grey;
 		}
 
-		&.orange:before {
-			background-color: $orange-light;
+		&.light-brown:before {
+			background-color: $light-brown;
 		}
 
 		&.red:before {
@@ -482,6 +481,7 @@
 
 .video-control {
 	padding: 15px;
+
 	img {
 		box-shadow: 10px 0 30px 0 rgba(215, 20, 58, 0.4);
 		border-radius: 20px;
@@ -1035,5 +1035,6 @@
 
 	.slider-slides--vertical-line .slides-item:first-child {
 		margin-left: 0;
+		background-color: black;
 	}
 }

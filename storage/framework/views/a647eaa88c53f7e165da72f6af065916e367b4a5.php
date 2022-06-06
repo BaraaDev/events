@@ -261,7 +261,7 @@
         <div class="swiper-container" data-show-items="1">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide " data-mh="slide" style="background-color:#ab7f5d ;">
+                <div class="swiper-slide " data-mh="slide" style="background-color:#273842 ;">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
@@ -281,6 +281,15 @@
                                         litterarum formas humanitatis per.
                                     </div>
                                 </div>
+
+                                <a href="#" class="btn btn-market btn--with-shadow">
+                                    <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/40/undefined/external-graduation-cap-learning-xnimrodx-lineal-color-xnimrodx-2.png" />
+                                    <div class="text" style="padding-left:5px ;">
+                                        <span class="sup-title">Check now on</span>
+                                        <span class="title">Parties</span>
+                                    </div>
+                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -308,9 +317,9 @@
                                 </div>
 
                                 <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img src="https://img.icons8.com/external-basicons-color-edtgraphics/50/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
+                                    <img src="https://img.icons8.com/external-basicons-color-edtgraphics/40/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
                                     <div class="text" style="padding-left:5px ;">
-                                        <span class="sup-title">Check it now on</span>
+                                        <span class="sup-title">Check now on</span>
                                         <span class="title">Decorations</span>
                                     </div>
                                 </a>
@@ -320,12 +329,12 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide bg-red bg-7" data-mh="slide">
+                <div class="swiper-slide " data-mh="slide" style="background-color: #CC969D;">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="<?php echo e(asset('website/img/barber-home.jpg')); ?>" style="border-radius:20px;" alt="barber">
+                                    <img src="<?php echo e(asset('website/img/roses.jpg')); ?>" style="border-radius:20px;" alt="barber">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -342,17 +351,7 @@
                                 </div>
 
                                 <a href="#" class="btn btn-market btn--with-shadow">
-                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                    </svg>
-                                    <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">App Store</span>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img class="utouch-icon" src="<?php echo e(asset('website/svg-icons/google-play.svg')); ?>" alt="google">
+                                    <img src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/40/undefined/external-rose-supermarket-photo3ideastudio-flat-photo3ideastudio.png" />
                                     <div class="text">
                                         <span class="sup-title">Download on the</span>
                                         <span class="title">Google Play</span>
@@ -367,11 +366,11 @@
 
             <div class="slider-slides slider-slides--vertical-line">
                 <a href="#" class="slides-item">
-                    <span class="round primary"></span>1.
+                    <span class="round dark-grey"></span>1.
                 </a>
 
                 <a href="#" class="slides-item">
-                    <span class="round orange"></span>2.
+                    <span class="round light-brown"></span>2.
                 </a>
 
                 <a href="#" class="slides-item">
@@ -502,14 +501,7 @@
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
                             <span style="color:rgb(208, 208, 208);"><?php echo e(__('admin/home.middle_section')); ?></span> <br>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
-<<<<<<< HEAD:storage/framework/views/2519c294e4664c6bf9f772e9cfb2a8014fb8c416.php
                             "<?php echo e(__('admin/home.middle_section_content')); ?>"
-=======
-                            "It's an awesome online service that could help many users to find the service/product they need
-                            with an affordable price & also matches everyone's income level which is also a friendly
-                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
-                            through it smoothly and much better."
->>>>>>> e4075353c292448d51695f48a005a8eb8e0c8b8e:storage/framework/views/a647eaa88c53f7e165da72f6af065916e367b4a5.php
                         </em>
                     </p>
                 </div>
@@ -521,7 +513,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1">
+                                <span>
                                     <?php echo e(\App\Models\User::count()); ?>
 
                                 </span>
@@ -533,7 +525,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1"><?php echo e(\App\Models\User::count()); ?></span>
+                                <span>
+                                    <?php echo e(\App\Models\User::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_suppliers')); ?></h5>
                         </div>
@@ -542,7 +537,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Comment::count()); ?>" data-from="1"><?php echo e(\App\Models\Comment::count()); ?></span>
+                                <span>
+                                    <?php echo e(\App\Models\Comment::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_comments')); ?></h5>
                         </div>
@@ -551,7 +549,10 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\Event::count()); ?>" data-from="1"><?php echo e(\App\Models\Event::count()); ?></span>
+                                <span>
+                                    <?php echo e(\App\Models\Event::count()); ?>
+
+                                </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_events')); ?></h5>
                         </div>
