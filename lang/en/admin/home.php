@@ -89,7 +89,7 @@ return [
     'show_link'                          => 'Show',
     //--------------------------- Main website keys & values only down below --------------------------------//
     'home_page_title'                    => 'WELCOME TO',
-    'home_page_content'                  => 'is a Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',
+    'home_page_content'                  => 'A Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',
     'home_page_learn-more'               => 'Learn More',
     'home_page_title2'                   => 'will be available soon on..',
     'home_page_content2'                 => 'is quality product that will make your life better',
