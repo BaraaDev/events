@@ -967,7 +967,7 @@
         <div class="container">
 
             <div style="text-align:center; padding-bottom:1%;">
-                <h5 class="c-black" style="font-size:200%;"><u>Testimonials</u></h5>
+                <h5 class="c-black" style="font-size:200%;"><u><?php echo e(__('admin/home.testimonials')); ?></u></h5>
             </div>
 
             <div class="row">

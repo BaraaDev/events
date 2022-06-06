@@ -115,5 +115,6 @@ return [
                                              & get every thing done through the website. A whole process functionality is made
                                              (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
                                              which is the payment process (for both perspectives',
+    'testimonials'                       => 'Testimonials',
 
 ];
