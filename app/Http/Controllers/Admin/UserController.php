@@ -45,12 +45,12 @@ class UserController extends Controller
         //
     }
 
-    public function count_users()
-    {
-        $no_of_customers = User::where('user_type','=','customer')->count();
-        $no_of_suppliers = User::where('user_type','=','supplier')->count();
+    // public function count_users()
+    // {
+    //     $no_of_customers = User::where('user_type','=','customer')->count();
+    //     $no_of_suppliers = User::where('user_type','=','supplier')->count();
 
-        return view('home',compact('no_of_customers','no_of_suppliers'));
-    }
+    //     return view('home',compact('no_of_customers','no_of_suppliers'));
+    // }
 
 }

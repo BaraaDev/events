@@ -292,7 +292,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
+                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;">
                                     <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/40/undefined/external-graduation-cap-learning-xnimrodx-lineal-color-xnimrodx-2.png" />
                                     <div class="text" style="padding-left:5px ;">
                                         <span class="sup-title">Check now on</span>
@@ -326,7 +326,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
+                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;">
                                     <img src="https://img.icons8.com/external-basicons-color-edtgraphics/40/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
                                     <div class="text" style="padding-left:5px ;">
                                         <span class="sup-title">Check now on</span>
@@ -360,11 +360,11 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
+                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;">
                                     <img src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/40/undefined/external-rose-supermarket-photo3ideastudio-flat-photo3ideastudio.png" />
                                     <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
+                                        <span class="sup-title">Check now on</span>
+                                        <span class="title">Flowers</span>
                                     </div>
                                 </a>
                             </div>
