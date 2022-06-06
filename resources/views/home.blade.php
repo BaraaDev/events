@@ -550,7 +550,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">{{\App\Models\User::count()}}</span>
+                                <span>
+                                    {{\App\Models\User::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_suppliers')}}</h5>
                         </div>
@@ -559,7 +561,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
+                                <span>
+                                    {{\App\Models\Comment::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_comments')}}</h5>
                         </div>
@@ -568,7 +572,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
+                                <span>
+                                    {{\App\Models\Event::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_events')}}</h5>
                         </div>
