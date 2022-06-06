@@ -66,11 +66,11 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD:storage/framework/views/a647eaa88c53f7e165da72f6af065916e367b4a5.php
+<<<<<<< HEAD
                 <div class="swiper-slide bg-1 main-slider-bg-light">
 =======
                 <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(246, 224, 201);">
->>>>>>> c71c1c47bc1b9b562aec22911e464c570ff6a2b8:storage/framework/views/2519c294e4664c6bf9f772e9cfb2a8014fb8c416.php
+>>>>>>> c71c1c47bc1b9b562aec22911e464c570ff6a2b8
 
                     <div class="container table">
                         <div class="row table-cell">

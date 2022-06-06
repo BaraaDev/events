@@ -62,11 +62,7 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-                <div class="swiper-slide bg-1 main-slider-bg-light">
-=======
                 <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(246, 224, 201);">
->>>>>>> c71c1c47bc1b9b562aec22911e464c570ff6a2b8
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -274,37 +270,12 @@
         <div class="swiper-container" data-show-items="1">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide " data-mh="slide" style="background-color:#ab7f5d ;">
+                <div class="swiper-slide bg-primary-color bg-5" data-mh="slide">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/prom.jpg')}}" style="border-radius:5%;" alt="Prom Prep">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Graduation / Parties</p>
-                                    <h2 class="heading-title">Breaking new Graduation offers are on doors, Check them out!</h2>
-                                    <div class="heading-text">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
-                                        litterarum formas humanitatis per.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide " data-mh="slide" style="background-color: #79543D;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
-                                <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/fireworks.jpg')}}" style="border-radius:5%;" alt="fireworks">
+                                    <img src="{{asset('website/img/barber-home.jpg')}}" style="border-radius:20px;" alt="barber">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -321,13 +292,64 @@
                                 </div>
 
                                 <a href="#" class="btn btn-market btn--with-shadow">
-                                    <img src="https://img.icons8.com/external-basicons-color-edtgraphics/50/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
-                                    <div class="text" style="padding-left:5px ;">
-                                        <span class="sup-title">Check it now on</span>
-                                        <span class="title">Decorations</span>
+                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
+                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
+                                    </svg>
+                                    <div class="text">
+                                        <span class="sup-title">Download on the</span>
+                                        <span class="title">App Store</span>
                                     </div>
                                 </a>
 
+                                <a href="#" class="btn btn-market btn--with-shadow">
+                                    <img class="utouch-icon" src="{{asset('website/svg-icons/google-play.svg')}}" alt="google">
+                                    <div class="text">
+                                        <span class="sup-title">Download on the</span>
+                                        <span class="title">Google Play</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide bg-orange-light bg-6" data-mh="slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
+                                <div class="slider-tabs-vertical-thumb">
+                                    <img src="{{asset('website/img/')}}" alt="zaffa">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
+                                <div class="crumina-module crumina-heading custom-color c-white">
+                                    <h6 class="heading-sup-title">User Interface</h6>
+                                    <h2 class="heading-title">Discover new horisons</h2>
+                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+                                        litterarum formas humanitatis per.
+                                    </div>
+                                </div>
+
+                                <a href="#" class="btn btn-market btn--with-shadow">
+                                    <svg class="utouch-icon utouch-icon-apple-logotype-1">
+                                        <use xlink:href="#utouch-icon-apple-logotype-1"></use>
+                                    </svg>
+                                    <div class="text">
+                                        <span class="sup-title">Download on the</span>
+                                        <span class="title">App Store</span>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="btn btn-market btn--with-shadow">
+                                    <img class="utouch-icon" src="{{asset('website/svg-icons/google-play.svg')}}" alt="google">
+                                    <div class="text">
+                                        <span class="sup-title">Download on the</span>
+                                        <span class="title">Google Play</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -338,15 +360,14 @@
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/barber-home.jpg')}}" style="border-radius:20px;" alt="barber">
+                                    <img src="{{asset('website/img/iphone3.png')}}" alt="iphone">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Barber / Coiffer</p>
-                                    <h2 class="heading-title">Check out our new barbers!</h2>
-                                    <div class="heading-text">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                    <h6 class="heading-sup-title">User Interface</h6>
+                                    <h2 class="heading-title">Discover new horisons</h2>
+                                    <div class="heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                         diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                                         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
                                         Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
@@ -396,6 +417,7 @@
     </section>
 
     <!-- ... Slider with vertical tabs -->
+
 
     <!-- Video -->
 
@@ -524,7 +546,7 @@
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
                             "It's an awesome online service that could help many users to find the service/product they need
                             with an affordable price & also matches everyone's income level which is also a friendly
-                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
+                            feature (customers). Also it helps many service providers (suppliers) to run their businesses 
                             through it smoothly and much better."
                         </em>
                     </p>
@@ -541,12 +563,12 @@
                             <h5 class="counter-title" style="font-size: 200%; color:#939FAD;">Line of codes</h5>
                         </div>
                     </div> --}}
-
+                    
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">
-                                    {{\App\Models\User::count()}}
+                                <span>
+                                        {{-- {{$no_of_customers}} --}}
                                 </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_customers')}}</h5>
@@ -556,7 +578,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">{{\App\Models\User::count()}}</span>
+                                <span>
+                                    {{\App\Models\User::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_suppliers')}}</h5>
                         </div>
@@ -565,7 +589,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
+                                <span>
+                                    {{\App\Models\Comment::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_comments')}}</h5>
                         </div>
@@ -574,7 +600,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
+                                <span>
+                                    {{\App\Models\Event::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_events')}}</h5>
                         </div>
