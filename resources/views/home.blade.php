@@ -186,7 +186,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">{{__('admin/home.service1')}}</a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service1')}}</a>
                             <p class="info-box-text">
                                 {{__('admin/home.service1_content')}}
                             </p>
@@ -213,7 +213,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">{{__('admin/home.service2')}}</a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service2')}}</a>
                             <p class="info-box-text">
                                 {{__('admin/home.service2_content')}}
                             </p>
@@ -240,7 +240,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title">{{__('admin/home.service3')}}</a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service3')}}</a>
                             <p class="info-box-text">
                                 {{__('admin/home.service3_content')}}
                             </p>
@@ -512,7 +512,7 @@
             <div class="row">
 
                 <div style="text-align:center; width: 82%; margin-left: auto; margin-right: auto; padding-top:5%;">
-                    <h5 class="c-white" style="font-size:200%;">{{__('admin/home.what_s')}} GDP?</h5>
+                    <h5 class="c-white" style="font-size:200%;">{{__('admin/home.what_s')}} GDP{{__('admin/home.question_mark')}}</h5>
                     <p class="c-semitransparent-white" style="font-weight:bold;">
                         <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>

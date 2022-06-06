@@ -108,6 +108,7 @@ return [
     'number_of_suppliers'                => 'No. of Suppliers',
     'number_of_comments'                 => 'No. of Comments',
     'number_of_events'                   => 'No. of Events',
+    'question_mark'                      => '?',
     'how_it_works_video'                 => 'WATCH THE VIDEO',
     'how_it_works1'                      => 'How',
     'how_it_works2'                      => 'works?',

@@ -101,6 +101,7 @@ return [
     'number_of_suppliers'               => 'عدد الموردين',
     'number_of_comments'                => 'عدد التعليقات',
     'number_of_events'                  => 'عدد الأحداث',
+    'question_mark'                     => '؟',
     'how_it_works_video'                => 'شاهد الفيديو',
     'how_it_works1'                     => 'كيف',
     'how_it_works2'                     => 'يعمل؟',

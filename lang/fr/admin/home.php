@@ -112,6 +112,7 @@ return [
     'number_of_customers'                    => 'Nombre de clients',
     'number_of_comments'                     => 'Nombre de commentaires',
     'number_of_events'                       => "Nombre d'événements",
+    'question_mark'                          => '?',
     'how_it_works_video'                     => 'VOIR LA VIDÉO',
     'how_it_works1'                          => 'Comment',
     'how_it_works2'                          => 'fonctionne?',
