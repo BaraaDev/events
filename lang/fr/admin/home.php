@@ -119,5 +119,6 @@ return [
                                                  ensemble sur le site Web et de tout faire via le site Web. Toute une fonctionnalité de processus est créée 
                                                  (y compris les événements, les négociations, etc.) qui sont les étapes de pré-paiement jusqu'à atteindre 
                                                  le processus final qui est le processus de paiement (pour les deux perspectives",
+    'testimonials'                           => 'Témoignages',
 
 ];
