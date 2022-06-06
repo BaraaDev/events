@@ -502,14 +502,7 @@
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
                             <span style="color:rgb(208, 208, 208);"><?php echo e(__('admin/home.middle_section')); ?></span> <br>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
-<<<<<<< HEAD:storage/framework/views/2519c294e4664c6bf9f772e9cfb2a8014fb8c416.php
                             "<?php echo e(__('admin/home.middle_section_content')); ?>"
-=======
-                            "It's an awesome online service that could help many users to find the service/product they need
-                            with an affordable price & also matches everyone's income level which is also a friendly
-                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
-                            through it smoothly and much better."
->>>>>>> e4075353c292448d51695f48a005a8eb8e0c8b8e:storage/framework/views/a647eaa88c53f7e165da72f6af065916e367b4a5.php
                         </em>
                     </p>
                 </div>
@@ -521,7 +514,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="<?php echo e(\App\Models\User::count()); ?>" data-from="1">
+                                <span>
                                     <?php echo e(\App\Models\User::count()); ?>
 
                                 </span>
@@ -1135,4 +1128,4 @@
 <!-- /jQuery-scripts for Modules (Send Message) -->
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>

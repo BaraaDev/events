@@ -116,5 +116,11 @@ return [
                                              (including events, negotiations, etc.) which is the pre-payment steps until reaching the final process
                                              which is the payment process (for both perspectives',
     'testimonials'                       => 'Testimonials',
+    'what_s'                             => "What's",
+    'middle_section'                     => 'the website represents the power of negotiation between the customers and the suppliers',
+    'middle_section_content'             => "It's an awesome online service that could help many users to find the service/product they 
+                                             need with an affordable price & also matches everyone's income level which is also a friendly 
+                                             feature (customers). Also it helps many service providers (suppliers) to run their businesses 
+                                             through it smoothly and much better.",
 
 ];

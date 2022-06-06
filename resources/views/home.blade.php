@@ -513,16 +513,13 @@
             <div class="row">
 
                 <div style="text-align:center; width: 82%; margin-left: auto; margin-right: auto; padding-top:5%;">
-                    <h5 class="c-white" style="font-size:200%;">What's GDP?</h5>
+                    <h5 class="c-white" style="font-size:200%;">{{__('admin/home.what_s')}} GDP?</h5>
                     <p class="c-semitransparent-white" style="font-weight:bold;">
                         <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
-                            <span style="color:rgb(208, 208, 208);">the website represents the power of negotiation between the customers and the suppliers</span> <br>
+                            <span style="color:rgb(208, 208, 208);">{{__('admin/home.middle_section')}}</span> <br>
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
-                            "It's an awesome online service that could help many users to find the service/product they need
-                            with an affordable price & also matches everyone's income level which is also a friendly
-                            feature (customers). Also it helps many service providers (suppliers) to run their businesses
-                            through it smoothly and much better."
+                            "{{__('admin/home.middle_section_content')}}"
                         </em>
                     </p>
                 </div>
@@ -542,7 +539,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">
+                                <span>
                                     {{\App\Models\User::count()}}
                                 </span>
                             </div>
@@ -553,7 +550,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\User::count()}}" data-from="1">{{\App\Models\User::count()}}</span>
+                                <span>
+                                    {{\App\Models\User::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_suppliers')}}</h5>
                         </div>
@@ -562,7 +561,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Comment::count()}}" data-from="1">{{\App\Models\Comment::count()}}</span>
+                                <span>
+                                    {{\App\Models\Comment::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_comments')}}</h5>
                         </div>
@@ -571,7 +572,9 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
-                                <span data-speed="2000" data-refresh-interval="2" data-to="{{\App\Models\Event::count()}}" data-from="1">{{\App\Models\Event::count()}}</span>
+                                <span>
+                                    {{\App\Models\Event::count()}}
+                                </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_events')}}</h5>
                         </div>
