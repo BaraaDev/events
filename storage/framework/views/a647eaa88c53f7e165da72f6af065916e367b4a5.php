@@ -7,7 +7,7 @@
 
     <div class="crumina-module crumina-module-slider container-full-width">
         <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;">
-            
+
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);">
                 <!-- Slides -->
@@ -66,11 +66,7 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-                <div class="swiper-slide bg-1 main-slider-bg-light">
-=======
                 <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(246, 224, 201);">
->>>>>>> c71c1c47bc1b9b562aec22911e464c570ff6a2b8
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -117,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214);">
 
                     <div class="container table full-height">
@@ -182,6 +178,7 @@
     </div>
 
     <!-- end main slider -->
+
 
     <!-- Info Boxes -->
 
