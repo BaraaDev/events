@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
     public function run()
     {
         $user = \App\Models\User::create([
-            'name'              => 'Baraa',
-            'username'          => 'Baraa',
+            'name'              => 'Ramy Mohamed',
+            'username'          => 'Ramy',
             'phone'             => '010658583855',
             'bio'               => 'Web Developer',
             'email'             => 'baraa@app.com',
@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
         ]);
 
         $user = \App\Models\User::create([
-            'name'              => 'Mohamed',
+            'name'              => 'Mohamed Essam',
             'username'          => 'Mohamed',
             'phone'             => '010658583855',
             'bio'               => 'Web Developer',
@@ -63,7 +63,7 @@ class UserSeeder extends Seeder
         ]);
 
         $user = \App\Models\User::create([
-            'name'              => 'Ahmed',
+            'name'              => 'Ahmed Sabry',
             'username'          => 'Ahmed',
             'phone'             => '010658583855',
             'bio'               => 'Web Developer',
@@ -87,7 +87,7 @@ class UserSeeder extends Seeder
         ]);
 
         $user = \App\Models\User::create([
-            'name'              => 'Kareem',
+            'name'              => 'Kareem Ali',
             'username'          => 'Kareem',
             'phone'             => '010658583855',
             'bio'               => 'Web Developer',
@@ -111,7 +111,7 @@ class UserSeeder extends Seeder
         ]);
 
         $user = \App\Models\User::create([
-            'name'              => 'Omar',
+            'name'              => 'Omar El-Shazly',
             'username'          => 'Omar',
             'phone'             => '010658583855',
             'bio'               => 'Web Developer',
@@ -135,7 +135,7 @@ class UserSeeder extends Seeder
         ]);
 
         $user = \App\Models\User::create([
-            'name'              => 'Abdelrahman',
+            'name'              => 'Abdelrahman Alaa',
             'username'          => 'Abdelrahman',
             'phone'             => '010658583855',
             'bio'               => 'Web Developer',

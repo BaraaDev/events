@@ -27,7 +27,7 @@
                     <div class="notification-box"><i data-feather="flag"></i></div>
                     <ul class="notification-dropdown onhover-show-div">
 
-                        <li class="noti-primary">
+                        <li class="noti-secondary">
                             <div class="media">
                                 <span class="notification-bg"><i class="flag-icon flag-icon-eg"></i></span>
                                 <a href="<?php echo e(url('ar/dashboard')); ?>">
@@ -50,7 +50,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="noti-success">
+                        <li class="noti-secondary">
                             <div class="media">
                                 <span class="notification-bg"><i class="flag-icon flag-icon-fr"> </i></span>
                                 <a href="<?php echo e(url('fr/dashboard')); ?>">

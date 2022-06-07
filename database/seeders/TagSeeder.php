@@ -17,15 +17,15 @@ class TagSeeder extends Seeder
     {
         $tags = new Tag();
         $tags->setTranslation('name', 'en', 'programming')
-            ->setTranslation('name', 'ar', 'البرمجة')
-            ->setTranslation('name', 'fr', 'programmation');
+            ->setTranslation('name', 'ar', 'برمجة')
+            ->setTranslation('name', 'fr', 'le programmation');
         $tags->create_user_id = 3;
         $tags->save();
 
         $tags = new Tag();
-        $tags->setTranslation('name', 'en', 'site')
+        $tags->setTranslation('name', 'en', 'Website')
             ->setTranslation('name', 'ar', 'موقع')
-            ->setTranslation('name', 'fr', 'site');
+            ->setTranslation('name', 'fr', 'le site Web');
         $tags->create_user_id = 4;
         $tags->save();
 
@@ -39,14 +39,14 @@ class TagSeeder extends Seeder
         $tags = new Tag();
         $tags->setTranslation('name', 'en', 'App')
             ->setTranslation('name', 'ar', 'تطبيق')
-            ->setTranslation('name', 'fr', 'app');
+            ->setTranslation('name', 'fr', 'App');
         $tags->create_user_id = 2;
         $tags->save();
 
         $tags = new Tag();
         $tags->setTranslation('name', 'en', 'Tags')
             ->setTranslation('name', 'ar', 'علامات')
-            ->setTranslation('name', 'fr', 'Tags');
+            ->setTranslation('name', 'fr', 'Mots clés');
         $tags->create_user_id = 2;
         $tags->save();
     }

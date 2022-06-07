@@ -18,7 +18,7 @@ class CityeSeeder extends Seeder
         $city = new City();
         $city->setTranslation('name', 'en', 'Nasr City')
             ->setTranslation('name', 'ar', 'مدينة نصر')
-            ->setTranslation('name', 'fr', 'Nasr City FR');
+            ->setTranslation('name', 'fr', 'Nasr ville');
         $city->country_id = 1; // Country Egypt = id:1
         $city->governorate_id = 1; // Governorate Cairo = id:1
         $city->create_user_id = 1;
@@ -27,19 +27,37 @@ class CityeSeeder extends Seeder
         $city = new City();
         $city->setTranslation('name', 'en', 'Kasbah alawdia')
             ->setTranslation('name', 'ar', 'قصبة الاوديه')
-            ->setTranslation('name', 'fr', 'Kasbah alawdia FR');
+            ->setTranslation('name', 'fr', 'Kasbah alawdia');
         $city->country_id = 2; // Country Morocco = id:2
         $city->governorate_id = 2; // Governorate Rabat = id:2
         $city->create_user_id = 2;
         $city->save();
 
         $city = new City();
-        $city->setTranslation('name', 'en', 'albatann')
+        $city->setTranslation('name', 'en', 'El Battan')
             ->setTranslation('name', 'ar', 'البطان')
-            ->setTranslation('name', 'fr', 'albatann FR');
+            ->setTranslation('name', 'fr', 'El Battán');
         $city->country_id = 3; // Country Tunisia = id:3
         $city->governorate_id = 3; // Governorate Tunisia = id:3
         $city->create_user_id = 3;
+        $city->save();
+
+        $city = new City();
+        $city->setTranslation('name', 'en', 'Badaro')
+            ->setTranslation('name', 'ar', 'بدارو')
+            ->setTranslation('name', 'fr', 'Badaro');
+        $city->country_id = 4; // Country Lebanon = id:4
+        $city->governorate_id = 4; // Governorate Beirut = id:4
+        $city->create_user_id = 4;
+        $city->save();
+
+        $city = new City();
+        $city->setTranslation('name', 'en', 'Sinaiyah Qadeem')
+            ->setTranslation('name', 'ar', 'الصناعية القديمة')
+            ->setTranslation('name', 'fr', 'Sinaiyah Qadeem');
+        $city->country_id = 5; // Country Saudi Arabia = id:5
+        $city->governorate_id = 5; // Governorate Riyadh = id:5
+        $city->create_user_id = 5;
         $city->save();
     }
 }
