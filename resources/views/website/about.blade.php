@@ -108,9 +108,11 @@
         <section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
                         <div class="crumina-module crumina-heading align-center">
-                            <h2 class="heading-title">History</h2>
+                            <h3 class="heading-title">
+                                What is different about <span class="c-primary">GDP</span>{{__('admin/home.question_mark')}}
+                            </h3>
                         </div>
                     </div>
 
@@ -120,18 +122,22 @@
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
-                                        <div class="info-box-image bg-primary-color">
-                                            <img class="utouch-icon" src="{{asset('website/svg/flag.svg')}}" alt="flag">
+                                        <div class="info-box-image bg-secondary-color">
+                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/flag.svg')}}" alt="flag"> --}}
+                                            <i class='far fa-comments' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
                                             </svg>
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-primary">2013</h6>
-                                            <a href="#" class="h6 info-box-title">Lorem</a>
-                                            <p class="info-box-text">Wisi enim ad minim veniam, quis nostrud exerci tation
-                                                qui nunc nobis videntur parum clari.
+                                            <h6 class="timeline-year c-secondary">Power of Negotiation</h6>
+                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            <p class="info-box-text">
+                                                {{__('admin/home.customer_title')}} & {{__('admin/home.supplier_title')}} are able to
+                                                negotiate in a reply section in the requested event (by the customer) and then both could 
+                                                make a deal together about the price in order for the satisfaction & the comfortability 
+                                                for both in the website. 
                                             </p>
                                         </div>
 
@@ -142,17 +148,22 @@
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
                                         <div class="info-box-image bg-orange">
-                                            <img class="utouch-icon" src="{{asset('website/svg/settings.svg')}}" alt="settings">
+                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/settings.svg')}}" alt="settings"> --}}
+                                            <i class='fas fa-tasks' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
                                             </svg>
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-orange">2015</h6>
-                                            <a href="#" class="h6 info-box-title">Lorem</a>
-                                            <p class="info-box-text">Mirum est notare quam littera gothica, quam nunc putamus
-                                                parum claram, anteposuerit lectores legere me lius quod ii legunt.
+                                            <h6 class="timeline-year c-orange">Good Managerial Quality</h6>
+                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            <p class="info-box-text">
+                                                Anything that happens in the website (including the pre-transaction process) must be confirmed 
+                                                by the admins. Admins are able to help customers (event request) & 
+                                                suppliers (contacting the customers in the registered event) to run 
+                                                their operations in the system normally, if there was any kind of maintenance, 
+                                                bug or error in the website.
                                             </p>
                                         </div>
 
@@ -163,16 +174,20 @@
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
                                         <div class="info-box-image bg-red">
-                                            <img class="utouch-icon" src="{{asset('website/svg/team.svg')}}" alt="team">
+                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/team.svg')}}" alt="team"> --}}
+                                            <i class='fa fa-shopping-cart' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
                                             </svg>
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-red">2016</h6>
-                                            <a href="#" class="h6 info-box-title">Lorem</a>
-                                            <p class="info-box-text">Investigationes demonstraverunt lectores legere me lius quod.
+                                            <h6 class="timeline-year c-red">Variety of Different Services' Categories</h6>
+                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            <p class="info-box-text">
+                                                Suppliers are having more opportunities to put their 
+                                                products/services on the website and increase their profitability and customers reach & loyalty. 
+                                                And Customers are having many choices for many different types of services in the website.
                                             </p>
                                         </div>
 
@@ -182,18 +197,18 @@
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
-                                        <div class="info-box-image bg-green">
-                                            <img class="utouch-icon" src="{{asset('website/svg/rocket-launch.svg')}}" alt="rocket">
+                                        <div class="info-box-image bg-yellow">
+                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/rocket-launch.svg')}}" alt="rocket"> --}}
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
                                             </svg>
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-green">2017</h6>
-                                            <a href="#" class="h6 info-box-title">Lorem</a>
-                                            <p class="info-box-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                ullamcorper suscipit lobortis nisl ut aliquip.
+                                            <h6 class="timeline-year c-yellow">xxxx</h6>
+                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            <p class="info-box-text">
+                                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                             </p>
                                         </div>
 
@@ -240,17 +255,18 @@
                     <div class="crumina-module crumina-module-img-bottom">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="crumina-module crumina-heading">
-                                <h6 class="heading-sup-title">Our Works</h6>
-                                <h2 class="heading-title">Let Everyone Know Why We are the Best</h2>
-                                <div class="heading-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                    anteposuerit litterarum formas humanitatis per.
+                                <h6 class="heading-sup-title">Our Suppliers' Services</h6>
+                                <h5 class="heading-title">Let Everyone Know Why We are the Best!</h5>
+                                <div class="heading-text">
+                                    Check out our suppliers' services which includes a variety of different services'
+                                    categories.
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-lg-offset-3 col-md-12 col-sm-12 col-sm-offset-0">
-                            <a href="04_works.html" class="btn btn-border btn--with-shadow c-primary mb30">
-                                All Works
+                        <div class="col-lg-4 col-lg-offset-3 col-md-12 col-sm-12 col-sm-offset-0">
+                            <a href="#" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor=''">
+                                All Services' Categories
                             </a>
                         </div>
                     </div>
@@ -258,17 +274,20 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="swiper-container pagination-bottom" data-show-items="2">
                             <div class="swiper-wrapper">
+
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/case1.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/case1.jpg')}}" alt="case">
+                                        <a href="{{asset('website/img/food-service-about-slider-for-viewing.jpg')}}" class="case-item__thumb js-zoom-image">
+                                            <img src="{{asset('website/img/food-service-about-slider.jpg')}}" alt="food service">
                                         </a>
-
-                                        <div class="square-colored bg-product-blue"></div>
+                                        <div class="square-colored bg-product-brown"></div>
                                         <div class="case-item-content">
-                                            <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                            <h6 class="title" style="font-family: bold; font-size: 110%;">
+                                                Different food services, customized for many different types of events 
+                                                such as Birthday Parties, Weddings, etc.
+                                            </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Case</span>
+                                                <span>View Service Category</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
@@ -284,15 +303,17 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/case2.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/case2.jpg')}}" alt="case">
+                                        <a href="{{asset('website/img/occassional-attires-about-slider-for-viewing.jpg')}}" class="case-item__thumb js-zoom-image">
+                                            <img src="{{asset('website/img/occassional-attires-about-slider.jpg')}}" alt="occassional attires">
                                         </a>
-
-                                        <div class="square-colored bg-product-violet"></div>
+                                        <div class="square-colored bg-product-red"></div>
                                         <div class="case-item-content">
-                                            <h5 class="title">Mirum est notare quam littera gothica, quam nunc putamus parum</h5>
+                                            <h6 class="title" style="font-family: bold; font-size: 110%;">
+                                                Many different attires for special occasions such as Birthday, 
+                                                Graduation, Friends' Parties, etc.
+                                            </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Case</span>
+                                                <span>View Service Category</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
@@ -308,15 +329,17 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/case1.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/case1.jpg')}}" alt="case">
+                                        <a href="{{asset('website/img/barber-about-slider-for-viewing.jpg')}}" class="case-item__thumb js-zoom-image">
+                                            <img src="{{asset('website/img/barber-about-slider.jpg')}}" alt="barber">
                                         </a>
-
-                                        <div class="square-colored bg-product-blue"></div>
+                                        <div class="square-colored bg-product-blue-dark"></div>
                                         <div class="case-item-content">
-                                            <h5 class="title">Investigationes demonstraverunt lectores legere me legunt saepius</h5>
+                                            <h6 class="title" style="font-family: bold; font-size: 110%;">
+                                                Hairdressing/Barbering. cutting, styling, and coloring hair, 
+                                                as well as shaving or grooming facial hair (for men) and doing other related tasks.
+                                            </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Case</span>
+                                                <span>View Service Category</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
@@ -332,15 +355,17 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/case2.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/case2.jpg')}}" alt="case">
+                                        <a href="{{asset('website/img/zaffah-about-for-viewing.jpeg')}}" class="case-item__thumb js-zoom-image">
+                                            <img src="{{asset('website/img/zaffah-about.jpeg')}}" alt="zaffah">
                                         </a>
-
-                                        <div class="square-colored bg-product-violet"></div>
+                                        <div class="square-colored bg-product-green"></div>
                                         <div class="case-item-content">
-                                            <h5 class="title">Mirum est notare quam littera gothica, quam nunc putamus parum</h5>
+                                            <h6 class="title" style="font-family: bold; font-size: 110%;">
+                                                For wedding events. Zaffah/Wedding march, a musical procession of bendir 
+                                                drums, bagpipes, horns, Dabke dancers and men carrying flaming swords.
+                                            </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Case</span>
+                                                <span>View Service Category</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>

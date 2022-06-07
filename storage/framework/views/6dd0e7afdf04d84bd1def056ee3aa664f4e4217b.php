@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php echo e($setting->title); ?> <?php echo $__env->yieldContent('title'); ?></title>
     <?php echo $__env->make('layouts.website.partials.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 
@@ -176,15 +176,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('RpMgeH0')) {
-    $componentId = $_instance->getRenderedChildComponentId('RpMgeH0');
-    $componentTag = $_instance->getRenderedChildComponentTagName('RpMgeH0');
+} elseif ($_instance->childHasBeenRendered('RT9XnVv')) {
+    $componentId = $_instance->getRenderedChildComponentId('RT9XnVv');
+    $componentTag = $_instance->getRenderedChildComponentTagName('RT9XnVv');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('RpMgeH0');
+    $_instance->preserveRenderedChild('RT9XnVv');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('RpMgeH0', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('RT9XnVv', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
