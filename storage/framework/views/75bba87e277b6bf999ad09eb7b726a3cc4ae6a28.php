@@ -1,16 +1,19 @@
 
 
+
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><?php echo e(__('auth.login')); ?></div>
+                <div class="card-header" style="text-align: center; padding:1%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
+                    <h2><?php echo e(__('auth.login')); ?></h2>
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="<?php echo e(route('login')); ?>">
                         <?php echo csrf_field(); ?>
-                        <div class="row mb-3">
+                        <div class="row mb-3" style="margin-bottom:2%;">
                             <label for="email" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.email')); ?></label>
 
                             <div class="col-md-6">
@@ -38,7 +41,7 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="row mb-3" style="margin-bottom:2%;">
                             <label for="password" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.password')); ?></label>
 
                             <div class="col-md-6">
@@ -68,7 +71,7 @@ unset($__errorArgs, $__bag); ?>
 
                         <div class="row mb-3">
                             <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
+                                <div class="form-check" style="text-align: center;">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" <?php echo e(old('remember') ? 'checked' : ''); ?>>
 
                                     <label class="form-check-label" for="remember">
@@ -79,9 +82,9 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-0">
+                        <div class="row mb-0" style="text-align: center; margin-bottom:3%;">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="color:rgb(246, 246, 246); background-color:rgb(50, 50, 50);" onmouseover="this.style.backgroundColor='rgb(108, 108, 108)'" onmouseout="this.style.backgroundColor='rgb(50, 50, 50)'">
                                     <?php echo e(__('auth.login')); ?>
 
                                 </button>
@@ -101,4 +104,4 @@ unset($__errorArgs, $__bag); ?>
 </div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/auth/login.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/auth/login.blade.php ENDPATH**/ ?>
