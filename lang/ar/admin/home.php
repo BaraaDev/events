@@ -83,6 +83,7 @@ return [
     'offers_made_content'               => 'إنه موجود في كل حدث في الموقع الرئيسي!',
     'show_link'                         => 'اعرض',
     //--------------------------- Main website keys & values only down below --------------------------------//
+    'please_choose_user_type'           => 'الرجاء اختيار نوع المستخدم...',
     'home_page_title'                   => 'مرحبا بك في',
     'home_page_content'                 => 'شركة تنفيذية في الشرق الأوسط تقدم خدمات التخطيط والإدارة والتنسيق والترويج الشاملة للحدث.',
     'home_page_learn-more'              => 'تعلم أكثر',

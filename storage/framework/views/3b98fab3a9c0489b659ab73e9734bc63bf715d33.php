@@ -6,15 +6,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="text-align: center; padding:1%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
+                <div class="card-header" style="text-align: center; padding:0.25%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
                     <h2><?php echo e(__('auth.register')); ?></h2>
                 </div>
 
                 <div class="card-body">
                     <form method="POST" action="<?php echo e(route('register')); ?>">
                         <?php echo csrf_field(); ?>
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="name" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.name')); ?></label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control <?php $__errorArgs = ['name'];
@@ -40,8 +40,8 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="email" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.email')); ?></label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control <?php $__errorArgs = ['email'];
@@ -68,8 +68,8 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="password" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.password')); ?></label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control <?php $__errorArgs = ['password'];
@@ -96,19 +96,20 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.confirm_password')); ?></label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="<?php echo e(__('website/home.enter_confirm_password')); ?>" required autocomplete="off">
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="user_type" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.user_type')); ?></label><br>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-lg-6">
                                 <select name="user_type" class="form-control" required>
+                                    <option value=""><?php echo e(__('admin/home.please_choose_user_type')); ?></option>
                                     <option value="supplier"><?php echo e(__('website/home.supplier')); ?></option>
                                     <option value="customer"><?php echo e(__('website/home.customer')); ?></option>
                                 </select>

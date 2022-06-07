@@ -6,15 +6,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="text-align: center; padding:1%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
+                <div class="card-header" style="text-align: center; padding:0.25%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
                     <h2>{{__('auth.register')}}</h2>
                 </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{route('register')}}">
                         @csrf
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{__('website/home.name')}}</label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            {{-- <label for="name" class="col-md-4 col-form-label text-md-end">{{__('website/home.name')}}</label> --}}
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" placeholder="{{__('website/home.enter_name')}}" required autocomplete="off" autofocus>
@@ -26,8 +26,8 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{__('website/home.email')}}</label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            {{-- <label for="email" class="col-md-4 col-form-label text-md-end">{{__('website/home.email')}}</label> --}}
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="{{__('website/home.enter_email')}}" required autocomplete="off">
@@ -40,8 +40,8 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('website/home.password') }}</label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            {{-- <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('website/home.password') }}</label> --}}
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="{{ __('website/home.enter_password') }}" required autocomplete="off">
@@ -54,19 +54,20 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('website/home.confirm_password') }}</label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            {{-- <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('website/home.confirm_password') }}</label> --}}
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="{{__('website/home.enter_confirm_password')}}" required autocomplete="off">
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="user_type" class="col-md-4 col-form-label text-md-end">{{ __('website/home.user_type') }}</label><br>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            {{-- <label for="user_type" class="col-md-4 col-form-label text-md-end">{{ __('website/home.user_type') }}</label><br> --}}
 
                             <div class="col-lg-6">
                                 <select name="user_type" class="form-control" required>
+                                    <option value="">{{__('admin/home.please_choose_user_type')}}</option>
                                     <option value="supplier">{{__('website/home.supplier')}}</option>
                                     <option value="customer">{{__('website/home.customer')}}</option>
                                 </select>

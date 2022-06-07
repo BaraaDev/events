@@ -6,15 +6,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="text-align: center; padding:1%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
+                <div class="card-header" style="text-align: center; padding:0.25%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:2%;">
                     <h2><?php echo e(__('auth.login')); ?></h2>
                 </div>
 
                 <div class="card-body">
                     <form method="POST" action="<?php echo e(route('login')); ?>">
                         <?php echo csrf_field(); ?>
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="email" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.email')); ?></label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control <?php $__errorArgs = ['email'];
@@ -41,8 +41,8 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:2%;">
-                            <label for="password" class="col-md-4 col-form-label text-md-end"><?php echo e(__('website/home.password')); ?></label>
+                        <div class="row mb-3" style="margin-bottom:1%;">
+                            
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control <?php $__errorArgs = ['password'];

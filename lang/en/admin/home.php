@@ -88,6 +88,7 @@ return [
     'offers_made_content'                => "It's located in each event in the main website!",
     'show_link'                          => 'Show',
     //--------------------------- Main website keys & values only down below --------------------------------//
+    'please_choose_user_type'            => 'Please choose a user type...',
     'home_page_title'                    => 'WELCOME TO',
     'home_page_content'                  => 'A Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',
     'home_page_learn-more'               => 'Learn More',
