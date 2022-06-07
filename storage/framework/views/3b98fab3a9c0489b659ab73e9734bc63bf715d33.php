@@ -116,7 +116,7 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-0" style="margin-bottom:3%;">
+                        <div class="row mb-0" style="margin-bottom:3%; margin-right:auto; margin-left:auto;">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary" style="color:rgb(246, 246, 246); background-color:rgb(50, 50, 50);" onmouseover="this.style.backgroundColor='rgb(108, 108, 108)'" onmouseout="this.style.backgroundColor='rgb(50, 50, 50)'">
                                     <?php echo e(__('auth.register')); ?>
