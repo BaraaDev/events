@@ -5,8 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php echo e($setting->title); ?> <?php echo $__env->yieldContent('title'); ?></title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <?php echo $__env->make('layouts.website.partials.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        /* Main Slider Starts */
+
+        .slider-111 {
+            position: relative;
+            background-color: #000;
+        }
+
+        .caption-111 {
+            background: var(--slider-opacity);
+            height: 20vh;
+        }
+
+        .caption-111 .button-111 {
+            color: whitesmoke;
+        }
+
+        .caption-111 .button-111:hover {
+            color: #000;
+            background-color: var(--Body_color);
+            transition: 0.5s all ease-in-out;
+        }
+
+        .icon-111 {
+            background-color: white;
+            width: 35px;
+            height: 35px;
+            padding-left: 1%;
+        }
+
+        /* Main Slider Ends */
+    </style>
 
 </head>
 
@@ -176,15 +213,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('mGcvlmt')) {
-    $componentId = $_instance->getRenderedChildComponentId('mGcvlmt');
-    $componentTag = $_instance->getRenderedChildComponentTagName('mGcvlmt');
+} elseif ($_instance->childHasBeenRendered('5uZPWsN')) {
+    $componentId = $_instance->getRenderedChildComponentId('5uZPWsN');
+    $componentTag = $_instance->getRenderedChildComponentTagName('5uZPWsN');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('mGcvlmt');
+    $_instance->preserveRenderedChild('5uZPWsN');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('mGcvlmt', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('5uZPWsN', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

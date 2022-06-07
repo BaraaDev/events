@@ -3,15 +3,68 @@
 <?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
 
+    <!-- MY SLIDER -->
+    <!-- Carousel Slider Starts -->
+
+    <div class="slider-111">
+        <div id="carouselExampleCaptions" class="carousel slide sliders" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="<?php echo e(asset('website/img/header-main1.jfif')); ?>" class="d-block w-100 Carousel" style="height: 83vh; opacity: 0.7;" alt="...">
+                    <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 caption-111">
+                        <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/conference.png" />Citizens Portal</h3>
+                        <p>Citizen Portal Services</p>
+                        <a class="btn button-111" href="#">Sign In</a>
+                        <a class="btn button-111" href="#">Sign Up</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="<?php echo e(asset('website/img/slider2.jpg')); ?>" class="d-block w-100" style="height: 83vh; opacity: 0.5;" alt="...">
+                    <div class="carousel-caption d-none d-md-block position-absolute bottom-50 end-50 caption-111">
+                        <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/scales.png" />Lawyers Portal</h3>
+                        <p>Lawyer Portal Services</p>
+                        <a class="btn button-111" href="#">Sign In</a>
+                        <a class="btn button-111" href="#">Sign Up</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="<?php echo e(asset('website/img/slider3.jpg')); ?>" class="d-block w-100" style="height: 83vh; opacity: 0.7;" alt="...">
+                    <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 caption-111">
+                        <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/court-judge.png" />Judges Portal</h3>
+                        <p>Judges Portal Services</p>
+                        <a class="btn button-111" href="#">Sign In</a>
+                        <a class="btn button-111" href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Carousel Slider Ends -->
+
     <!-- Main Slider -->
 
-    <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;">
+    <!-- <div class="crumina-module crumina-module-slider container-full-width">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;"> -->
 
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);">
-                <!-- Slides -->
-                <div class="swiper-slide main-slider-bg-light">
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);"> -->
+    <!-- Slides -->
+    <!-- <div class="swiper-slide main-slider-bg-light">
 
                     <div class="container table">
                         <div class="row table-cell">
@@ -57,9 +110,9 @@
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                    
-                                    <!--original: slides1.png-->
-                                </div>
+                                     -->
+    <!--original: slides1.png-->
+    <!-- </div>
                             </div>
 
                         </div>
@@ -144,19 +197,22 @@
 
                             <div class="col-lg-6 col-sm-12 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
-                                    <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider">
-                                    <!--original: slides2.png-->
+                                    <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider"> -->
+
+    <!-- original: slides2.png
+
+
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <!--Prev next buttons-->
+    <!--Prev next buttons-->
 
-            <div class="btn-prev with-bg">
+    <!-- <div class="btn-prev with-bg">
                 <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
                     <use xlink:href="#utouch-icon-arrow-left-1"></use>
                 </svg>
@@ -175,7 +231,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- end main slider -->
 
@@ -194,7 +250,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service1')); ?></a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service1')); ?></a>
                             <p class="info-box-text">
                                 <?php echo e(__('admin/home.service1_content')); ?>
 
@@ -215,7 +271,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service2')); ?></a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service2')); ?></a>
                             <p class="info-box-text">
                                 <?php echo e(__('admin/home.service2_content')); ?>
 
@@ -236,7 +292,7 @@
                         </div>
 
                         <div class="info-box-content">
-                            <a href="#" class="h5 info-box-title"><?php echo e(__('admin/home.service3')); ?></a>
+                            <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service3')); ?></a>
                             <p class="info-box-text">
                                 <?php echo e(__('admin/home.service3_content')); ?>
 
@@ -282,7 +338,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
+                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#C52A0C'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/40/undefined/external-graduation-cap-learning-xnimrodx-lineal-color-xnimrodx-2.png" />
                                     <div class="text" style="padding-left:5px ;">
                                         <span class="sup-title">Check now on</span>
@@ -316,7 +372,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
+                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='orange'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-basicons-color-edtgraphics/40/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
                                     <div class="text" style="padding-left:5px ;">
                                         <span class="sup-title">Check now on</span>
@@ -350,11 +406,11 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow">
+                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#A16B78'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/40/undefined/external-rose-supermarket-photo3ideastudio-flat-photo3ideastudio.png" />
                                     <div class="text">
-                                        <span class="sup-title">Download on the</span>
-                                        <span class="title">Google Play</span>
+                                        <span class="sup-title">Check now on</span>
+                                        <span class="title">Flowers</span>
                                     </div>
                                 </a>
                             </div>
@@ -495,7 +551,7 @@
             <div class="row">
 
                 <div style="text-align:center; width: 82%; margin-left: auto; margin-right: auto; padding-top:5%;">
-                    <h5 class="c-white" style="font-size:200%;"><?php echo e(__('admin/home.what_s')); ?> GDP?</h5>
+                    <h5 class="c-white" style="font-size:200%;"><?php echo e(__('admin/home.what_s')); ?> GDP<?php echo e(__('admin/home.question_mark')); ?></h5>
                     <p class="c-semitransparent-white" style="font-weight:bold;">
                         <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
                             <span style="color:white;">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</span><br>
@@ -514,8 +570,10 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    <?php echo e(\App\Models\User::count()); ?>
+                                    <?php echo e($no_of_customers); ?>
 
+                                    <!---- from the HomeController of the main website -> 
+                                                                   counting users where user_type is equal to "customer" ---->
                                 </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_customers')); ?></h5>
@@ -526,8 +584,10 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    <?php echo e(\App\Models\User::count()); ?>
+                                    <?php echo e($no_of_suppliers); ?>
 
+                                    <!---- from the HomeController of the main website -> 
+                                                                   counting users where user_type is equal to "supplier" ---->
                                 </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_suppliers')); ?></h5>

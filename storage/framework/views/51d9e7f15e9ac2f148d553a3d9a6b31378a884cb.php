@@ -20,4 +20,4 @@
 <?php echo \Livewire\Livewire::scripts(); ?>
 
 
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/admin/partials/js.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/js.blade.php ENDPATH**/ ?>

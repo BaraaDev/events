@@ -82,4 +82,4 @@
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
     </div>
 </div>
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/admin/partials/header.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/header.blade.php ENDPATH**/ ?>

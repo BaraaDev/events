@@ -97,4 +97,4 @@
 <?php $__env->stopSection(); ?>
 
 
-<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/website/events/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\laragon\www\events\resources\views/website/events/index.blade.php ENDPATH**/ ?>

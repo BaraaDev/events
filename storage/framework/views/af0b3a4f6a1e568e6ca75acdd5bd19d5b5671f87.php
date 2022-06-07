@@ -75,4 +75,4 @@
     </div>
     <?php endif; ?>
 <?php endif; ?>
-<?php /**PATH E:\laragon\www\events\resources\views/vendor/pagination/simple-default.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/vendor/pagination/simple-default.blade.php ENDPATH**/ ?>
