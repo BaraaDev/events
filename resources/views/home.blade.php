@@ -14,8 +14,9 @@
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+
                 <div class="carousel-item active">
-                    <img src="{{asset('website/img/header-main1.jfif')}}" class="d-block w-100 Carousel" style="height: 83vh; opacity: 0.7;" alt="...">
+                    <img src="{{asset('website/img/catering.jpg')}}" class="d-block w-100 Carousel" style="height: 83vh; opacity: 0.7;" alt="...">
                     <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 caption-111">
                         <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/conference.png" />Citizens Portal</h3>
                         <p>Citizen Portal Services</p>
@@ -23,6 +24,7 @@
                         <a class="btn button-111" href="#">Sign Up</a>
                     </div>
                 </div>
+
                 <div class="carousel-item">
                     <img src="{{asset('website/img/slider2.jpg')}}" class="d-block w-100" style="height: 83vh; opacity: 0.5;" alt="...">
                     <div class="carousel-caption d-none d-md-block position-absolute bottom-50 end-50 caption-111">
@@ -32,6 +34,7 @@
                         <a class="btn button-111" href="#">Sign Up</a>
                     </div>
                 </div>
+
                 <div class="carousel-item">
                     <img src="{{asset('website/img/slider3.jpg')}}" class="d-block w-100" style="height: 83vh; opacity: 0.7;" alt="...">
                     <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 caption-111">
@@ -41,6 +44,7 @@
                         <a class="btn button-111" href="#">Sign Up</a>
                     </div>
                 </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

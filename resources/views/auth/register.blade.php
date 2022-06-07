@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" style="margin-top:6%; margin-bottom:6%;">
                 <div class="card-header" style="text-align: center; padding:0.25%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:3%;">
                     <h2>{{__('auth.register')}}</h2>
                 </div>
@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{route('register')}}">
                         @csrf
-                        <div class="row mb-3" style="margin-bottom:1%;">
+                        <div class="row mb-3" style="margin-bottom:1%; justify-content: center;">
                             {{-- <label for="name" class="col-md-4 col-form-label text-md-end">{{__('website/home.name')}}</label> --}}
 
                             <div class="col-md-6">
@@ -26,7 +26,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:1%;">
+                        <div class="row mb-3" style="margin-bottom:1%; justify-content: center;">
                             {{-- <label for="email" class="col-md-4 col-form-label text-md-end">{{__('website/home.email')}}</label> --}}
 
                             <div class="col-md-6">
@@ -40,7 +40,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:1%;">
+                        <div class="row mb-3"  style="margin-bottom:1%; justify-content: center;">
                             {{-- <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('website/home.password') }}</label> --}}
 
                             <div class="col-md-6">
@@ -54,7 +54,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:1%;">
+                        <div class="row mb-3" style="margin-bottom:1%; justify-content: center;">
                             {{-- <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('website/home.confirm_password') }}</label> --}}
 
                             <div class="col-md-6">
@@ -62,7 +62,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:1%;">
+                        <div class="row mb-3" style="margin-bottom:1%; justify-content: center;">
                             {{-- <label for="user_type" class="col-md-4 col-form-label text-md-end">{{ __('website/home.user_type') }}</label><br> --}}
 
                             <div class="col-lg-6">
@@ -74,7 +74,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0" style="float: right; margin-bottom:3%;">
+                        <div class="row mb-0" style="margin-bottom:3%;">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary" style="color:rgb(246, 246, 246); background-color:rgb(50, 50, 50);" onmouseover="this.style.backgroundColor='rgb(108, 108, 108)'" onmouseout="this.style.backgroundColor='rgb(50, 50, 50)'">
                                     {{ __('auth.register') }}
