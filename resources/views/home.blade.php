@@ -539,7 +539,8 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    {{\App\Models\User::count()}}
+                                    {{-- {{\App\Models\User::count()}} --}}
+                                    {{$no_of_customers}}
                                 </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_customers')}}</h5>
@@ -550,7 +551,7 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    {{\App\Models\User::count()}}
+                                    {{$no_of_suppliers}}
                                 </span>
                             </div>
                             <h5 class="counter-title">{{__('admin/home.number_of_suppliers')}}</h5>

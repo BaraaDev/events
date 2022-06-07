@@ -514,7 +514,8 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    <?php echo e(\App\Models\User::count()); ?>
+                                    
+                                    <?php echo e($no_of_customers); ?>
 
                                 </span>
                             </div>
@@ -526,7 +527,7 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    <?php echo e(\App\Models\User::count()); ?>
+                                    <?php echo e($no_of_suppliers); ?>
 
                                 </span>
                             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,7 +15,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $no_of_customers = User::where('user_type','=','customer')->count();
+        $no_of_suppliers = User::where('user_type','=','supplier')->count();
+
+        return view('home',compact('no_of_customers','no_of_suppliers'));
     }
 
     public function about()
