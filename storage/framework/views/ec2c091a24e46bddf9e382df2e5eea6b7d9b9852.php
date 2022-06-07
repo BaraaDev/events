@@ -1,9 +1,9 @@
 <div class="page-main-header">
     <div class="main-header-right row m-0">
         <div class="main-header-left">
-            <div class="logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="{{asset('admin/images/logo/GDP-logo.jpg')}}" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
-            {{-- <div class="dark-logo-wrapper"><a href="javascript:void(0)" style="color: snow; font-weight: bold;">Graduation Project 2 - AASTMT&#169;</a></div> --}}
-            <div class="dark-logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="{{asset('admin/images/logo/GDP-logo.jpg')}}" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
+            <div class="logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="<?php echo e(asset('admin/images/logo/GDP-logo.jpg')); ?>" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
+            
+            <div class="dark-logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="<?php echo e(asset('admin/images/logo/GDP-logo.jpg')); ?>" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
             <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-center" id="sidebar-toggle" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''"> </i></div>
         </div>
         <div class="left-menu-header col">
@@ -30,9 +30,10 @@
                         <li class="noti-primary">
                             <div class="media">
                                 <span class="notification-bg"><i class="flag-icon flag-icon-eg"></i></span>
-                                <a href="{{url('ar/dashboard')}}">
+                                <a href="<?php echo e(url('ar/dashboard')); ?>">
                                     <div class="media-body">
-                                        {{__('admin/home.arabic')}}
+                                        <?php echo e(__('admin/home.arabic')); ?>
+
                                     </div>
                                 </a>
                             </div>
@@ -41,9 +42,10 @@
                         <li class="noti-secondary">
                             <div class="media">
                                 <span class="notification-bg"><i class="flag-icon flag-icon-us"> </i></span>
-                                <a href="{{url('en/dashboard')}}">
+                                <a href="<?php echo e(url('en/dashboard')); ?>">
                                     <div class="media-body">
-                                        {{__('admin/home.english')}}
+                                        <?php echo e(__('admin/home.english')); ?>
+
                                     </div>
                                 </a>
                             </div>
@@ -51,9 +53,10 @@
                         <li class="noti-success">
                             <div class="media">
                                 <span class="notification-bg"><i class="flag-icon flag-icon-fr"> </i></span>
-                                <a href="{{url('fr/dashboard')}}">
+                                <a href="<?php echo e(url('fr/dashboard')); ?>">
                                 <div class="media-body">
-                                        {{__('admin/home.french')}}
+                                        <?php echo e(__('admin/home.french')); ?>
+
                                     </div>
                                 </a>
                             </div>
@@ -62,14 +65,15 @@
                 </li>
 
                 <li>
-                    {{-- <div class="mode"><i id="dark-only" class="@if($theme == 'dark-only') fa fa-lightbulb-o @else fa fa-moon-o @endif"></i></div> --}}
+                    
                     <div class="mode" style="cursor: pointer;"><i class="fa fa-moon-o"></i></div>
                  </li>
 
                 <li class="onhover-dropdown p-0">
-                    <button class="btn btn-primary-light" type="button" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>{{__('admin/home.logout')}}</button>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        {{ csrf_field() }}
+                    <button class="btn btn-primary-light" type="button" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i data-feather="log-out"></i><?php echo e(__('admin/home.logout')); ?></button>
+                    <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                        <?php echo e(csrf_field()); ?>
+
                     </form>
                 </li>
             </ul>
@@ -78,3 +82,4 @@
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
     </div>
 </div>
+<?php /**PATH E:\laragon\www\events\resources\views/layouts/admin/partials/header.blade.php ENDPATH**/ ?>

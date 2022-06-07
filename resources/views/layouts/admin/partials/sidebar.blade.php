@@ -8,7 +8,7 @@
             </div>
     @endif
     <a href="{{route('profile')}}">
-        <h6 class="mt-3 f-14 f-w-600 name" onMouseOver="this.style.color='#FFFFFF'" onMouseOut="this.style.color=''">{{auth()->user()->name ?? ''}}</h6>
+        <h6 class="mt-3 f-14 f-w-600 name" onMouseOver="this.style.color='grey'" onMouseOut="this.style.color=''">{{auth()->user()->name ?? ''}}</h6>
     </a>
     <p class="mb-0 font-roboto">{{auth()->user()->email ?? ''}}</p>
     </div>
