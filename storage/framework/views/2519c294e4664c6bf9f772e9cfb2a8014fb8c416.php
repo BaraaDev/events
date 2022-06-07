@@ -514,9 +514,7 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    
-                                    <?php echo e($no_of_customers); ?>
-
+                                    <?php echo e($no_of_customers); ?>    <!-------- counting users where user_type is equal to "customer "-------->
                                 </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_customers')); ?></h5>
@@ -527,8 +525,7 @@
                         <div class="crumina-module crumina-counter-item">
                             <div class="counter-numbers c-yellow">
                                 <span>
-                                    <?php echo e($no_of_suppliers); ?>
-
+                                    <?php echo e($no_of_suppliers); ?>    <!-------- counting users where user_type is equal to "supplier" -------->
                                 </span>
                             </div>
                             <h5 class="counter-title"><?php echo e(__('admin/home.number_of_suppliers')); ?></h5>
