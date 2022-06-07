@@ -6,7 +6,7 @@
     <!-- MY SLIDER -->
     <!-- Carousel Slider Starts -->
 
-    <div class="slider-111">
+    {{-- <div class="slider-111">
         <div id="carouselExampleCaptions" class="carousel slide sliders" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,65 +55,64 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </div> --}}
 
 
     <!-- Carousel Slider Ends -->
 
     <!-- Main Slider -->
 
-    <!-- <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;"> -->
+    <div class="crumina-module crumina-module-slider container-full-width">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: url({{asset('website/img/catering.jpg')}});  background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main-slider-bg-light">
 
-    <!-- Additional required wrapper -->
-    <!-- <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);"> -->
-    <!-- Slides -->
-    <!-- <div class="swiper-slide main-slider-bg-light">
+                        <div class="container table">
+                            <div class="row table-cell">
 
-                    <div class="container table">
-                        <div class="row table-cell">
+                                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
 
-                            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
+                                    <div class="slider-content align-center" >
 
-                                <div class="slider-content align-center">
+                                        <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
+                                            {{__('admin/home.home_page_title')}}
 
-                                    <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                        {{__('admin/home.home_page_title')}}
+                                            <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
+                                                <use xlink:href="#utouch-icon-arrow-left"></use>
+                                            </svg>
 
-                                        <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
-                                            <use xlink:href="#utouch-icon-arrow-left"></use>
-                                        </svg>
+                                            <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
+                                                <use xlink:href="#utouch-icon-arrow-left"></use>
+                                            </svg>
 
-                                        <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
-                                            <use xlink:href="#utouch-icon-arrow-left"></use>
-                                        </svg>
+                                        </h1>
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <div>
+                                                <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                                            </div>
+                                            {{__('admin/home.home_page_content')}}
+                                        </h6>
 
-                                    </h1>
-                                    <h6 class="slider-content-text" data-swiper-parallax="-200">
-                                        <div>
-                                            <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="{{route('allContributions')}}" class="btn btn--yellow btn--with-shadow">
+                                                {{__('admin/home.home_page_learn-more')}}
+                                            </a>
+
+                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="{{route('allEvents')}}" class="btn btn-border btn--with-shadow c-primary">
+                                                {{__('admin/home.home_page_content3_button')}}
+                                            </a>
                                         </div>
-                                        {{__('admin/home.home_page_content')}}
-                                    </h6>
-
-                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-                                        <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="{{route('allContributions')}}" class="btn btn--yellow btn--with-shadow">
-                                            {{__('admin/home.home_page_learn-more')}}
-                                        </a>
-
-                                        <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="{{route('allEvents')}}" class="btn btn-border btn--with-shadow c-primary">
-                                            {{__('admin/home.home_page_content3_button')}}
-                                        </a>
                                     </div>
-                                </div>
                             </div>
+
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                    {{-- <img src="{{asset('website/img/catering.jpg')}}" style="border-radius: 15px;" width="" height="" alt="slider"> --}} -->
-    <!--original: slides1.png-->
-    <!-- </div>
-                            </div>
+                                 <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                     <img src="" style="border-radius: 15px;" width="" height="" alt="slider">
+
+                                        <!--original: slides1.png-->
+                                </div>
+                             </div>
 
                         </div>
                     </div>
@@ -123,7 +122,6 @@
 
                     <div class="container table">
                         <div class="row table-cell">
-
                             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-content align-both">
                                     <h2 class="slider-content-title" data-swiper-parallax="-100">
@@ -195,7 +193,7 @@
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
                                     <img src="{{asset('website/img/events_image.png')}}" alt="slider"> -->
 
-    <!-- original: slides2.png
+                                        <!-- original: slides2.png -->
 
 
                                 </div>
@@ -204,11 +202,11 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div> 
 
     <!--Prev next buttons-->
 
-    <!-- <div class="btn-prev with-bg">
+    <div class="btn-prev with-bg">
                 <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
                     <use xlink:href="#utouch-icon-arrow-left-1"></use>
                 </svg>
@@ -227,7 +225,7 @@
             </div>
 
         </div>
-    </div> -->
+    </div>
 
     <!-- end main slider -->
 

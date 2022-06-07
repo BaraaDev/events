@@ -7,7 +7,7 @@
     <title><?php echo e($setting->title); ?> <?php echo $__env->yieldContent('title'); ?></title>
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
 
     <?php echo $__env->make('layouts.website.partials.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
@@ -213,15 +213,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('OVGeFxd')) {
-    $componentId = $_instance->getRenderedChildComponentId('OVGeFxd');
-    $componentTag = $_instance->getRenderedChildComponentTagName('OVGeFxd');
+} elseif ($_instance->childHasBeenRendered('9q3DwuW')) {
+    $componentId = $_instance->getRenderedChildComponentId('9q3DwuW');
+    $componentTag = $_instance->getRenderedChildComponentTagName('9q3DwuW');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('OVGeFxd');
+    $_instance->preserveRenderedChild('9q3DwuW');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('OVGeFxd', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('9q3DwuW', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

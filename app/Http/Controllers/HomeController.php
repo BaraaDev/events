@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\User;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -35,5 +36,12 @@ class HomeController extends Controller
     {
         $categories = Category::get();
         return view('website.categories.index', compact('categories'));
+    }
+    public function profile()
+    {
+        $user   = User::findOrFail(auth()->user()->id);
+        $events = Event::where('user_id',$user->id)->get();
+
+        return view('website.profile',compact('user','events'));
     }
 }
