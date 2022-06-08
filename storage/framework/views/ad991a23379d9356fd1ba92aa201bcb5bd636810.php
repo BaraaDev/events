@@ -54,7 +54,7 @@
                         <div class="block-rounded-shadow">
                             <h3><?php echo e($event->title); ?></h3>
                             <img src="<?php echo e($event->photo); ?>" alt="<?php echo e($event->title); ?>">
-                            <p><?php echo $event->description; ?></p>
+                            <p><?php echo e($event->description); ?></p>
                         </div>
 
                         <div class="comments">
