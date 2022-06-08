@@ -146,4 +146,7 @@ return [
     'central_office'                     => 'Central Office',
     'contact_with_us'                    => 'Contact with us',
     'userful_links'                      => 'Userful Links',
+    'is_paid_pending'                    => 'Pending',
+    'is_paid_success'                    => 'Success',
+    'offers'                             => 'Offers',
 ];

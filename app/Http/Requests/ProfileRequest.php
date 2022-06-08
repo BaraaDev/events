@@ -27,7 +27,7 @@ class ProfileRequest extends FormRequest
         return [
             'name'                      => 'required|string|min:3|max:199',
             'username'                  => 'required|string|min:3|max:199',Rule::unique('users')->ignore($this->id),
-            'phone'                     => 'required|numeric|digits:12',Rule::unique('users')->ignore($this->id),
+            'phone'                     => 'required|numeric|digits:11',Rule::unique('users')->ignore($this->id),
             'email'                     => 'required|string|min:3|max:255|email',Rule::unique('users')->ignore($this->id),
             'bio'                       => 'nullable|string|max:255',
             'gender'                    => 'string|in:male,female',

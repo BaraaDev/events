@@ -148,7 +148,7 @@
                                                                     {!! Form::close() !!}
                                                                 </div>
                                                             @endif
-                                                            
+
                                                             <div class="col-lg-4 col-md-4">
                                                                 {!! Form::open([
                                                                     'route' => ['comment.delete',$comment->id],
