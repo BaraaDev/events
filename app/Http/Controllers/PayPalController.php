@@ -43,7 +43,6 @@ class PayPalController extends Controller
     public function getExpressCheckoutSuccess(Request $request, $orderId)
     {
         $order = Order::with('ordernumber')->find($orderId);
-
         $event = Event::findOrFail($order->ordernumber->id);
         //dd($event);
         $event->update(['status' => 'Expired']);

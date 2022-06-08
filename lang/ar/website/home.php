@@ -145,4 +145,7 @@ return [
     'central_office'                    => 'المكتب المركزي',
     'contact_with_us'                   => 'اتصل بنا',
     'userful_links'                     => 'روابط مفيدة',
+    'is_paid_pending'                   => 'تحت المراجعه',
+    'is_paid_success'                   => 'تم الدفع',
+    'offers'                            => 'العروض',
 ];

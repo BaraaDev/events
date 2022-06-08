@@ -52,7 +52,7 @@
                         <div class="block-rounded-shadow">
                             <h3>{{$event->title}}</h3>
                             <img src="{{$event->photo}}" alt="{{$event->title}}">
-                            <p>{!! $event->description !!}</p>
+                            <p>{{ $event->description }}</p>
                         </div>
 
                         <div class="comments">
@@ -148,7 +148,7 @@
                                                                     {!! Form::close() !!}
                                                                 </div>
                                                             @endif
-                                                            
+
                                                             <div class="col-lg-4 col-md-4">
                                                                 {!! Form::open([
                                                                     'route' => ['comment.delete',$comment->id],

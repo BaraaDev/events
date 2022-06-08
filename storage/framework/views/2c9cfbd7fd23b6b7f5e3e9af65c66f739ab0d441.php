@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html  @if(LaravelLocalization::getCurrentLocale() == 'ar') dir="rtl" @else dir="ltr" @endif>
+<html  <?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> dir="rtl" <?php else: ?> dir="ltr" <?php endif; ?>>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('admin/images/favicon.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}" type="image/x-icon">
-    <title>{{$user->name}}</title>
+    <link rel="icon" href="<?php echo e(asset('admin/images/favicon.png')); ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo e(asset('admin/images/favicon.png')); ?>" type="image/x-icon">
+    <title><?php echo $__env->yieldContent('title'); ?> - <?php echo e(__('admin/home.home')); ?></title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Harmattan&display=swap" rel="stylesheet">
     <!-- Font Awesome-->
-    @includeIf('layouts.admin.partials.css')
+    <?php if ($__env->exists('layouts.admin.partials.css')) echo $__env->make('layouts.admin.partials.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </head>
-<body class="@if(LaravelLocalization::getCurrentLocale() == 'ar') rtl @else ltr @endif">
+<body class="<?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> rtl <?php else: ?> ltr <?php endif; ?>">
 <div class="loader-wrapper">
     <div class="theme-loader"></div>
 </div>
@@ -24,50 +24,71 @@
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-sidebar" id="pageWrapper">
     <!-- Page Header Start-->
-
+    
 <!-- Page Header Ends -->
     <!-- Page Body Start-->
     <div class="page-body-wrapper sidebar-icon">
         <!-- Page Sidebar Start-->
     <!-- Page Sidebar Ends-->
-{{--        <div class="page-body">--}}
+        <div class="page-body">
             <!-- Container-fluid starts-->
             <div class="container-fluid">
                 <div class="user-profile">
                     <div class="row">
                         <!-- user users header start-->
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 
+                        ">
                             <div class="card profile-header">
-                                <img class="img-fluid bg-img-cover" src="{{$user->getFirstMediaUrl('cover')}}" alt="cover {{$user->name}}" />
-                                <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover" src="{{$user->getFirstMediaUrl('cover')}}" alt="cover {{$user->name}}" /></div>
+                                <img class="img-fluid bg-img-cover" src="<?php echo e($user->getFirstMediaUrl('cover')); ?>" alt="cover <?php echo e($user->name); ?>" />
+                                <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover" src="<?php echo e($user->getFirstMediaUrl('cover')); ?>" alt="cover <?php echo e($user->name); ?>" /></div>
                                 <div class="userpro-box">
                                     <div class="img-wrraper">
-                                        <div class="avatar"><img class="img-fluid" alt="{{$user->name}}" src="{{$user->photo}}" /></div>
-                                        <a class="icon-wrapper" href="{{route('editProfile')}}"><i class="icofont icofont-pencil-alt-5"></i></a>
+                                        <div class="avatar"><img class="img-fluid" alt="<?php echo e($user->name); ?>" src="<?php echo e($user->photo); ?>" /></div>
+                                        <a class="icon-wrapper" href="<?php echo e(route('edit-profile')); ?>"><i class="icofont icofont-pencil-alt-5"></i></a>
                                     </div>
                                     <div class="user-designation">
                                         <div class="title">
-                                            <a target="_blank" href="javascript:void(0);">
-                                                <h4 onMouseOver="this.style.color='#0083FF'" onMouseOut="this.style.color='#B4B6BB'">{{$user->name}}</h4>
-                                                <h6>{{$user->user_type}}</h6>
+                                            <a target="_blank" href="">
+                                                <h4 onMouseOver="this.style.color='#0083FF'" onMouseOut="this.style.color='#B4B6BB'"><?php echo e($user->name); ?></h4>
+                                                <?php if($user->user_type =='dashboard'): ?>
+                                                    <h6>Admin</h6>
+                                                <?php else: ?>
+                                                    <h6><?php echo e($user->user_type); ?></h6>
+                                                <?php endif; ?>
                                             </a>
                                         </div>
                                         <div class="social-media">
                                             <ul class="user-list-social">
                                                 <li>
-                                                    <a href="https://facebook.com/{{$user->facebook}}" target="_blank"><i class="fa fa-facebook"></i></a>
+                                                    <a href="https://facebook.com/<?php echo e($user->facebook); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://twitter.com/{{$user->twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
+                                                    <a href="https://twitter.com/<?php echo e($user->twitter); ?>" target="_blank"><i class="fa fa-twitter"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://instagram.com/{{$user->instagram}}" target="_blank"><i class="fa fa-instagram"></i></a>
+                                                    <a href="https://instagram.com/<?php echo e($user->instagram); ?>" target="_blank"><i class="fa fa-instagram"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://whatsapp.com/{{$user->whatsapp}}" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                                                    <a href="https://whatsapp.com/<?php echo e($user->whatsapp); ?>" target="_blank"><i class="fa fa-whatsapp"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="https://t.me/{{$user->telegram}}" target="_blank"><i class="fa fa-telegram"></i></a>
+                                                    <a href="https://t.me/<?php echo e($user->telegram); ?>" target="_blank"><i class="fa fa-telegram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="follow">
+                                            <ul class="follow-list">
+                                                <li>
+                                                    <div class="follow-num counter">325</div>
+                                                    <span>Follower</span>
+                                                </li>
+                                                <li>
+                                                    <div class="follow-num counter">450</div>
+                                                    <span>Following</span>
+                                                </li>
+                                                <li>
+                                                    <div class="follow-num counter">500</div>
+                                                    <span>Likes</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -83,7 +104,7 @@
                                         <div class="card">
                                             <div class="card-header">
                                                 <h5 class="p-0">
-                                                    <button class="btn btn-link ps-0" data-bs-toggle="collapse" data-bs-target="#collapseicon2" aria-expanded="true" aria-controls="collapseicon2">{{__('admin/user.about_me')}}</button>
+                                                    <button class="btn btn-link ps-0" data-bs-toggle="collapse" data-bs-target="#collapseicon2" aria-expanded="true" aria-controls="collapseicon2"><?php echo e(__('admin/user.about_me')); ?></button>
                                                 </h5>
                                             </div>
                                             <div class="collapse show" id="collapseicon2" aria-labelledby="collapseicon2" data-parent="#accordion">
@@ -92,7 +113,7 @@
                                                         <li>
                                                             <div class="icon"><i data-feather="at-sign"></i></div>
                                                             <div>
-                                                                <h5>{{$user->username ?? __('admin/home.alertUsername')}}</h5>
+                                                                <h5><?php echo e($user->username ?? __('admin/home.alertUsername')); ?></h5>
                                                             </div>
                                                         </li>
                                                         <li>
@@ -100,31 +121,31 @@
                                                                 <i data-feather="mail"></i>
                                                             </div>
                                                             <div>
-                                                                <h5>{{$user->email ?? __('admin/home.alertEmail')}}</h5>
+                                                                <h5><?php echo e($user->email ?? __('admin/home.alertEmail')); ?></h5>
                                                             </div>
                                                         </li>
-
+        
                                                         <li>
                                                             <div class="icon"><i data-feather="map-pin"></i></div>
                                                             <div>
-                                                                <h5>{{$user->address ?? __('admin/home.alertLocation')}}</h5>
-                                                                <p>{{$user->city->name ?? ''}} - {{$user->governorate->name ?? ''}} - {{$user->country->name ?? ''}}</p>
+                                                                <h5><?php echo e($user->address ?? __('admin/home.alertLocation')); ?></h5>
+                                                                <p><?php echo e($user->city->name ?? ''); ?> - <?php echo e($user->governorate->name ?? ''); ?> - <?php echo e($user->country->name ?? ''); ?></p>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="icon"><i class="icofont icofont-air-balloon"></i></div>
                                                             <div>
-                                                                <h5>{{$user->dob}}</h5>
+                                                                <h5><?php echo e($user->dob); ?></h5>
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            @if($user->gender == 'male')
+                                                            <?php if($user->gender == 'male'): ?>
                                                                 <div class="icon"><i class="fa fa-male"></i></div>
-                                                            @else
+                                                            <?php else: ?>
                                                                 <div class="icon"><i class="fa fa-venus"></i></div>
-                                                            @endif
+                                                            <?php endif; ?>
                                                             <div>
-                                                                <h5>{{$user->gender ?? __('admin/home.alertGender')}}</h5>
+                                                                <h5><?php echo e($user->gender ?? __('admin/home.alertGender')); ?></h5>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -135,100 +156,61 @@
                                 </div>
                             </div>
                         </div>
-                        @if($user->user_type == 'customer')
-                            <div class="col-xl-9 col-lg-12 col-md-7 xl-65">
-                                <div class="card">
-                                    <div class="card-body">
-                                    @forelse($events as $event)
-                                        <!-- event start-->
-                                        <div class="col-xxl-12 col-lg-12">
-                                            <div class="project-box">
-                                                @if($event->status == 'Stopped')
-                                                    <span class="badge badge-danger">{{$event->status}}</span>
-                                                @elseif($event->status == 'Available')
-                                                    <span class="badge badge-success" style="color:bisque;">{{$event->status}}</span>
-                                                @elseif($event->status == 'Expired')
-                                                    <span class="badge badge-dark">{{$event->status}}</span>
-                                                @endif
-                                                <h6>{{$event->title}}</h6>
-                                                <div class="media">
-                                                    <img class="img-20 me-2 rounded-circle" src="{{$offer->user->photo ?? ''}}" alt="{{$offer->user->name ?? ''}}" data-original-title="" title="" />
-                                                    <div class="media-body">
-                                                        <p>{{$event->user->name ?? ''}}</p>
-                                                    </div>
-                                                </div>
-                                                <p>{!! Illuminate\Support\Str::limit($event->description,'70','...') !!}</p>
-                                                <div class="row details">
-                                                    <div class="col-6"><span>{{__('admin/event.time')}}</span></div>
-                                                    <div class="col-6 font-secondary">{{$event->time}}</div>
-                                                    <div class="col-6"><span>{{__('admin/event.date')}}</span></div>
-                                                    <div class="col-6 font-secondary">{{$event->date}}</div>
-                                                    <div class="col-6"><span>{{__('admin/event.budget')}}</span></div>
-                                                    <div class="col-6 font-danger">{{$event->budget}} {{__('admin/home.currency')}}</div>
-                                                </div>
-                                            </div>
-                                        </div><!-- event end-->
-                                        @empty
-                                            <div class="alert alert-secondary">
-                                                {{__('admin/home.alert_no_data')}}
-                                            </div>
-                                        @endforelse
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-
-                        @if($user->user_type == 'supplier')
                         <div class="col-xl-9 col-lg-12 col-md-7 xl-65">
                             <div class="card">
                                 <div class="card-body">
-                                @forelse($offers as $offer)
-                                <!-- event start-->
+                                    <?php $__empty_1 = true; $__currentLoopData = $events; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $event): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                                    <!-- event start-->
                                     <div class="col-xxl-12 col-lg-12">
                                         <div class="project-box">
-                                            @if($offer->value == 0)
-                                                <span class="badge badge-danger">{{__('website/home.is_paid_pending')}}</span>
-                                            @elseif($offer->value == 1)
-                                                <span class="badge badge-success" style="color:bisque;">{{__('website/home.is_paid_success')}}</span>
-                                            @endif
-                                            <h6>{{__('website/home.offers')}}</h6>
+                                            <?php if($event->status == 'Stopped'): ?>
+                                            <span class="badge badge-danger"><?php echo e($event->status); ?></span>
+                                            <?php elseif($event->status == 'Available'): ?>
+                                            <span class="badge badge-success" style="color:bisque;"><?php echo e($event->status); ?></span>
+                                            <?php elseif($event->status == 'Expired'): ?>
+                                            <span class="badge badge-dark"><?php echo e($event->status); ?></span>
+                                            <?php endif; ?>
+                                            <h6><?php echo e($event->title); ?></h6>
                                             <div class="media">
-                                                <img class="img-20 me-2 rounded-circle" src="{{$offer->user->photo ?? ''}}" alt="{{$offer->user->name ?? ''}}" data-original-title="" title="" />
+                                                <img class="img-20 me-2 rounded-circle" src="<?php echo e(asset('admin/images/user/3.jpg')); ?>" alt="" data-original-title="" title="" />
                                                 <div class="media-body">
-                                                    <p>{{$offer->user->name ?? ''}}</p>
+                                                    <p><?php echo e($event->user->name ?? ''); ?></p>
                                                 </div>
                                             </div>
-                                            <p>{{$offer->body}}</p>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                             <div class="row details">
-                                                <div class="col-6"><span>{{__('admin/event.date')}}</span></div>
-                                                <div class="col-6 font-secondary">{{$offer->created_at}}</div>
-                                                <div class="col-6"><span>{{__('admin/event.budget')}}</span></div>
-                                                <div class="col-6 font-danger">{{$offer->value}} {{__('admin/home.currency')}}</div>
+                                                <div class="col-6"><span><?php echo e(__('admin/event.time')); ?></span></div>
+                                                <div class="col-6 font-secondary"><?php echo e($event->time); ?></div>
+                                                <div class="col-6"><span><?php echo e(__('admin/event.date')); ?></span></div>
+                                                <div class="col-6 font-secondary"><?php echo e($event->date); ?></div>
+                                                <div class="col-6"><span><?php echo e(__('admin/event.budget')); ?></span></div>
+                                                <div class="col-6 font-danger"><?php echo e($event->budget); ?> <?php echo e(__('admin/home.currency')); ?></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- event end-->
-                                    @empty
+                                        <!-- event end-->
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
                                         <div class="alert alert-secondary">
-                                            {{__('admin/home.alert_no_data')}}
+                                            <?php echo e(__('admin/home.alert_no_data')); ?>
+
                                         </div>
-                                    @endforelse
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
-                        @endif
+        
                     </div>
                 </div>
             </div>
         <!-- Container-fluid Ends-->
-{{--        </div>--}}
+        </div>
 
         <!-- footer start-->
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 footer-copyright">
-                        <p class="mb-0">Copyright {{date('Y')}}-{{date('y', strtotime('+1 year'))}} © viho All rights reserved.</p>
+                        <p class="mb-0">Copyright <?php echo e(date('Y')); ?>-<?php echo e(date('y', strtotime('+1 year'))); ?> © viho All rights reserved.</p>
                     </div>
                     <div class="col-md-6">
                         <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i></p>
@@ -239,7 +221,7 @@
     </div>
 </div>
 <!-- latest jquery-->
-@includeIf('layouts.admin.partials.js')
+<?php if ($__env->exists('layouts.admin.partials.js')) echo $__env->make('layouts.admin.partials.js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <script>
     $(document).ready(function(){
         var form = $('#alert-form'),
@@ -251,7 +233,7 @@
 
         window.onbeforeunload = function(){
             if (form.serialize() != original)
-                return '{{__('admin/home.alert_form')}}'
+                return '<?php echo e(__('admin/home.alert_form')); ?>'
         }
     })
 
@@ -288,6 +270,7 @@
 
 
 
+    
 
 
-
+<?php /**PATH E:\laragon\www\events\resources\views/website/profile.blade.php ENDPATH**/ ?>
