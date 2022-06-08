@@ -13,9 +13,8 @@
                 <div class="card-body">
                     <form method="POST" action="<?php echo e(route('login')); ?>">
                         <?php echo csrf_field(); ?>
-                        <div class="row mb-3" style="margin-bottom:1%; justify-content: center;">
+                        <div class="row mb-3" style="margin-bottom:1%; width: 50%; margin-left:auto; margin-right: auto;">
                             
-
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control <?php $__errorArgs = ['email'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -41,9 +40,8 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3" style="margin-bottom:1%; justify-content: center;">
+                        <div class="row mb-3" style="margin-bottom:1%; width: 50%; margin-left:auto; margin-right: auto;">
                             
-
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control <?php $__errorArgs = ['password'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -69,7 +67,7 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="row mb-3" style="text-align: center">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
                                     <input class="" type="checkbox" name="remember" id="remember" <?php echo e(old('remember') ? 'checked' : ''); ?>>
@@ -82,7 +80,7 @@ unset($__errorArgs, $__bag); ?>
                             </div>
                         </div>
 
-                        <div class="row mb-0" style="margin-bottom:3%; margin-right:auto; margin-left:auto;">
+                        <div class="row mb-3" style="margin-bottom:1%; text-align: center;">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary" style="color:rgb(246, 246, 246); background-color:rgb(50, 50, 50);" onmouseover="this.style.backgroundColor='rgb(108, 108, 108)'" onmouseout="this.style.backgroundColor='rgb(50, 50, 50)'">
                                     <?php echo e(__('auth.login')); ?>
@@ -94,6 +92,14 @@ unset($__errorArgs, $__bag); ?>
                                 
                                 
                                 
+                            </div>
+                        </div>
+
+                        <div class="row mb-0" style="text-align: center;">
+                            <div class="col-md-6 offset-md-4">
+                                <a href="<?php echo e(route('register')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">
+                                    Are you a new user?
+                                </a>
                             </div>
                         </div>
                     </form>
