@@ -98,7 +98,8 @@ unset($__errorArgs, $__bag); ?>
                         <div class="row mb-0" style="text-align: center;">
                             <div class="col-md-6 offset-md-4">
                                 <a href="<?php echo e(route('register')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">
-                                    Are you a new user?
+                                    <?php echo e(__('admin/home.register_new_user')); ?>
+
                                 </a>
                             </div>
                         </div>
