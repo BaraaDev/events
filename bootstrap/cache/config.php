@@ -15,7 +15,7 @@
     'name' => 'Laravel',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'https://events.dev/',
     'asset_url' => NULL,
     'timezone' => 'Africa/Cairo',
     'locale' => 'ar',
@@ -373,7 +373,7 @@
       array (
         'driver' => 'local',
         'root' => 'D:\\laragon\\www\\events\\public\\media',
-        'url' => 'http://localhost/media',
+        'url' => 'https://events.dev//media',
       ),
       'local' => 
       array (
@@ -385,7 +385,7 @@
       array (
         'driver' => 'local',
         'root' => 'D:\\laragon\\www\\events\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'https://events.dev//storage',
         'visibility' => 'public',
         'throw' => false,
       ),
@@ -932,7 +932,7 @@
       2 => '127.0.0.1',
       3 => '127.0.0.1:8000',
       4 => '::1',
-      5 => 'localhost',
+      5 => 'events.dev',
     ),
     'guard' => 
     array (

@@ -3,117 +3,69 @@
 <?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
 
-    <!-- MY SLIDER -->
     <!-- Carousel Slider Starts -->
 
-    <div class="slider-111">
-        <div id="carouselExampleCaptions" class="carousel slide sliders" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="<?php echo e(asset('website/img/header-main1.jfif')); ?>" class="d-block w-100 Carousel" style="height: 83vh; opacity: 0.7;" alt="...">
-                    <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 caption-111">
-                        <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/conference.png" />Citizens Portal</h3>
-                        <p>Citizen Portal Services</p>
-                        <a class="btn button-111" href="#">Sign In</a>
-                        <a class="btn button-111" href="#">Sign Up</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="<?php echo e(asset('website/img/slider2.jpg')); ?>" class="d-block w-100" style="height: 83vh; opacity: 0.5;" alt="...">
-                    <div class="carousel-caption d-none d-md-block position-absolute bottom-50 end-50 caption-111">
-                        <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/scales.png" />Lawyers Portal</h3>
-                        <p>Lawyer Portal Services</p>
-                        <a class="btn button-111" href="#">Sign In</a>
-                        <a class="btn button-111" href="#">Sign Up</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="<?php echo e(asset('website/img/slider3.jpg')); ?>" class="d-block w-100" style="height: 83vh; opacity: 0.7;" alt="...">
-                    <div class="carousel-caption d-none d-md-block position-absolute top-50 start-50 caption-111">
-                        <h3><img class="icon-111" src="https://img.icons8.com/ios/50/000000/court-judge.png" />Judges Portal</h3>
-                        <p>Judges Portal Services</p>
-                        <a class="btn button-111" href="#">Sign In</a>
-                        <a class="btn button-111" href="#">Sign Up</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
+    
 
     <!-- Carousel Slider Ends -->
 
-    <!-- Main Slider -->
+    <!-- Start Main Slider -->
 
-    <!-- <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing;"> -->
+    <div class="crumina-module crumina-module-slider container-full-width">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: url(<?php echo e(asset('website/img/catering.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main-slider-bg-light">
 
-    <!-- Additional required wrapper -->
-    <!-- <div class="swiper-wrapper" style="background-color: rgb(211, 227, 235);"> -->
-    <!-- Slides -->
-    <!-- <div class="swiper-slide main-slider-bg-light">
+                        <div class="container table">
+                            <div class="row table-cell">
 
-                    <div class="container table">
-                        <div class="row table-cell">
+                                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style="background-color: rgba(169, 169, 169,0.75); box-shadow:10px 10px 10px #000; padding: 3%; padding-bottom:0.5%; border-radius:5px;">
 
-                            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
+                                    <div class="slider-content align-center" >
 
-                                <div class="slider-content align-center">
-
-                                    <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                        <?php echo e(__('admin/home.home_page_title')); ?>
+                                        <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
+                                            <?php echo e(__('admin/home.home_page_title')); ?>
 
 
-                                        <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
-                                            <use xlink:href="#utouch-icon-arrow-left"></use>
-                                        </svg>
+                                            <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
+                                                <use xlink:href="#utouch-icon-arrow-left"></use>
+                                            </svg>
 
-                                        <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
-                                            <use xlink:href="#utouch-icon-arrow-left"></use>
-                                        </svg>
+                                            <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
+                                                <use xlink:href="#utouch-icon-arrow-left"></use>
+                                            </svg>
 
-                                    </h1>
-                                    <h6 class="slider-content-text" data-swiper-parallax="-200">
-                                        <div>
-                                            <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                                        </h1>
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                            <div>
+                                                <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                                            </div>
+                                            <?php echo e(__('admin/home.home_page_content')); ?>
+
+                                        </h6>
+
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="<?php echo e(route('allContributions')); ?>" class="btn btn--yellow btn--with-shadow">
+                                                <?php echo e(__('admin/home.home_page_learn-more')); ?>
+
+                                            </a>
+
+                                            <a onmouseover="this.style.color='gold'" onmouseout="this.style.color=''" href="#" class="btn btn-border btn--with-shadow">
+                                                <?php echo e(__('admin/home.home_page_content3_button')); ?>
+
+                                            </a>
                                         </div>
-                                        <?php echo e(__('admin/home.home_page_content')); ?>
-
-                                    </h6>
-
-                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-                                        <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="<?php echo e(route('allContributions')); ?>" class="btn btn--yellow btn--with-shadow">
-                                            <?php echo e(__('admin/home.home_page_learn-more')); ?>
-
-                                        </a>
-
-                                        <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="<?php echo e(route('allEvents')); ?>" class="btn btn-border btn--with-shadow c-primary">
-                                            <?php echo e(__('admin/home.home_page_content3_button')); ?>
-
-                                        </a>
                                     </div>
-                                </div>
                             </div>
+
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-                                     -->
-    <!--original: slides1.png-->
-    <!-- </div>
-                            </div>
+                                 <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                     <img src="" style="border-radius: 15px;" width="" height="" alt="slider">
+
+                                        <!--original: slides1.png-->
+                                </div>
+                             </div>
 
                         </div>
                     </div>
@@ -123,7 +75,6 @@
 
                     <div class="container table">
                         <div class="row table-cell">
-
                             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                                 <div class="slider-content align-both">
                                     <h2 class="slider-content-title" data-swiper-parallax="-100">
@@ -167,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214);">
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/sparks2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
@@ -175,9 +126,9 @@
 
                                 <div class="slider-content align-both">
 
-                                    <h2 class="slider-content-title" data-swiper-parallax="-100"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
+                                    <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: gold;"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
 
-                                    <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                    <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: gold;">
                                         <?php echo e(__('admin/home.home_page_content3')); ?>
 
                                     </h6>
@@ -199,7 +150,7 @@
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
                                     <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider"> -->
 
-    <!-- original: slides2.png
+                                        <!-- original: slides2.png -->
 
 
                                 </div>
@@ -208,11 +159,11 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div> 
 
     <!--Prev next buttons-->
 
-    <!-- <div class="btn-prev with-bg">
+    <div class="btn-prev with-bg">
                 <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
                     <use xlink:href="#utouch-icon-arrow-left-1"></use>
                 </svg>
@@ -231,9 +182,9 @@
             </div>
 
         </div>
-    </div> -->
+    </div>
 
-    <!-- end main slider -->
+    <!-- End Main Slider -->
 
 
     <!-- Info Boxes -->
