@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{$setting->title}} @yield('title')</title>
+    <title><?php echo e($setting->title); ?> <?php echo $__env->yieldContent('title'); ?></title>
 
     <!-- CSS only -->
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> --}}
+    
 
-    @include('layouts.website.partials.css')
+    <?php echo $__env->make('layouts.website.partials.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <style>
@@ -51,11 +51,11 @@
 <body class="crumina-grid">
     <!-- Header -->
 
-    @include('layouts.website.partials.header')
+    <?php echo $__env->make('layouts.website.partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <!-- ... End Header -->
 
 
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
     <!-- Footer -->
     <footer class="footer" id="site-footer">
         <div class="header-lines-decoration">
@@ -73,58 +73,58 @@
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <div class="widget w-info">
                         <div class="site-logo">
-                            <a href="{{route('home')}}" class="full-block"></a>
+                            <a href="<?php echo e(route('home')); ?>" class="full-block"></a>
                             <div class="logo-text">
-                                <div class="logo-title">{{$setting->title}}</div>
+                                <div class="logo-title"><?php echo e($setting->title); ?></div>
                             </div>
                         </div>
-                        <p>{!! $setting->content !!}</p>
+                        <p><?php echo $setting->content; ?></p>
                     </div>
                 </div>
 
                 <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
                     <div class="widget w-list">
 
-                        <h5 class="widget-title">{{__('website/home.userful_links')}}</h5>
+                        <h5 class="widget-title"><?php echo e(__('website/home.userful_links')); ?></h5>
                         <ul class="list list--primary">
                             <li>
-                                <a href="{{route('home')}}">{{__('website/home.home')}}</a>
+                                <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a>
                                 <svg class="utouch-icon utouch-icon-arrow-right">
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
                             <li>
-                                <a href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                                <a href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
                                 <svg class="utouch-icon utouch-icon-arrow-right">
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
                             <li>
-                                <a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a>
+                                <a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a>
                                 <svg class="utouch-icon utouch-icon-arrow-right">
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
                             <li>
-                                <a href="{{route('allContributions')}}">{{__('website/home.contributions')}}</a>
+                                <a href="<?php echo e(route('allContributions')); ?>"><?php echo e(__('website/home.contributions')); ?></a>
                                 <svg class="utouch-icon utouch-icon-arrow-right">
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
-                            @guest
+                            <?php if(auth()->guard()->guest()): ?>
                             <li>
-                                <a href="{{route('login')}}">{{__('auth.login')}}</a>
+                                <a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a>
                                 <svg class="utouch-icon utouch-icon-arrow-right">
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
                             <li>
-                                <a href="{{route('register')}}">{{__('auth.register')}}</a>
+                                <a href="<?php echo e(route('register')); ?>"><?php echo e(__('auth.register')); ?></a>
                                 <svg class="utouch-icon utouch-icon-arrow-right">
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
-                            @endguest
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -132,37 +132,38 @@
                 <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-12 col-sm-offset-0 col-xs-12">
                     <div class="widget w-contacts">
 
-                        <h5 class="widget-title">{{__('website/home.contact_with_us')}}</h5>
+                        <h5 class="widget-title"><?php echo e(__('website/home.contact_with_us')); ?></h5>
                         <div class="contact-item display-flex">
                             <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys">
                                 <use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use>
                             </svg>
-                            <span class="info"><a href="tel://{{$setting->phone}}">{{$setting->phone}}</a></span>
+                            <span class="info"><a href="tel://<?php echo e($setting->phone); ?>"><?php echo e($setting->phone); ?></a></span>
                         </div>
                         <div class="contact-item display-flex">
                             <svg class="utouch-icon utouch-icon-message-closed-envelope-1">
                                 <use xlink:href="#utouch-icon-message-closed-envelope-1"></use>
                             </svg>
-                            <span class="info"><a href="mailto://{{$setting->email}}">{{$setting->email}}</a></span>
+                            <span class="info"><a href="mailto://<?php echo e($setting->email); ?>"><?php echo e($setting->email); ?></a></span>
                         </div>
 
                         <a href="#" class="btn btn--green full-width btn--with-shadow js-message-popup cd-nav-trigger">
-                            {{__('website/home.send_message')}}
+                            <?php echo e(__('website/home.send_message')); ?>
+
                         </a>
                     </div>
 
                     <div class="widget w-follow">
                         <ul>
-                            <li>{{__('website/home.follow_us')}}:</li>
+                            <li><?php echo e(__('website/home.follow_us')); ?>:</li>
                             <li>
-                                <a href="https://facebook.com/{{$setting->facebook}}" rel="nofollow" target="_blank">
+                                <a href="https://facebook.com/<?php echo e($setting->facebook); ?>" rel="nofollow" target="_blank">
                                     <svg class="utouch-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
                                         <path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/{{$setting->twitter}}" rel="nofollow" target="_blank">
+                                <a href="https://twitter.com/<?php echo e($setting->twitter); ?>" rel="nofollow" target="_blank">
                                     <svg class="utouch-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
                                         <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"></path>
                                     </svg>
@@ -209,7 +210,21 @@
                 <use xlink:href="#utouch-icon-cancel-1"></use>
             </svg>
         </a>
-        @livewire('contact-us')
+        <?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('contact-us')->html();
+} elseif ($_instance->childHasBeenRendered('9q3DwuW')) {
+    $componentId = $_instance->getRenderedChildComponentId('9q3DwuW');
+    $componentTag = $_instance->getRenderedChildComponentTagName('9q3DwuW');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('9q3DwuW');
+} else {
+    $response = \Livewire\Livewire::mount('contact-us');
+    $html = $response->html();
+    $_instance->logRenderedChild('9q3DwuW', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
     </div><!-- Send Message Popup -->
 
 
@@ -483,8 +498,8 @@
 
     </svg><!-- ... end Used SVG-icons -->
 
-    @include('layouts.website.partials.js')
+    <?php echo $__env->make('layouts.website.partials.js', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 </body>
 
-</html>
+</html><?php /**PATH E:\laragon\www\events\resources\views/layouts/website/master.blade.php ENDPATH**/ ?>

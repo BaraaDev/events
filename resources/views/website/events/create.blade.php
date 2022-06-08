@@ -70,14 +70,15 @@
                                         <input name="title_en" placeholder="{{__('website/home.Enter_title_en')}}" type="text" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" required autocomplete="off">
                                     </div>
                                 </div>
+                                
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
                                     <textarea name="description_en" required  placeholder="{{__('website/home.Enter_description_en')}}">{{Request::old('description_en') ? Request::old('description_ar') : $model->getTranslation('description','en')}}</textarea>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                        <input name="location_en" placeholder="{{__('website/home.enter_location_en')}}" type="text" value="{{Request::old('location_en') ? Request::old('location_en') : $model->getTranslation('location','en')}}" required autocomplete="off">
-                                    </div>
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
+                                    <input name="location_en" placeholder="{{__('website/home.enter_location_en')}}" type="text" value="{{Request::old('location_en') ? Request::old('location_en') : $model->getTranslation('location','en')}}" required autocomplete="off">
                                 </div>
+                                
                             </div>
                         </div>
                         @elseif(LaravelLocalization::getCurrentLocale() == 'fr')

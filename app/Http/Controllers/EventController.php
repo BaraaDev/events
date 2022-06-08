@@ -23,6 +23,12 @@ class EventController extends Controller
         return view('website.events.index',compact('events'));
     }
 
+    public function myEvent()
+    {
+        $events = Event::where('user_id',auth()->user()->id)->paginate(12);
+        return view('website.events.myEvents',compact('events'));
+    }
+
     public function category($id)
     {
         $category         = Category::status(1)->findOrFail($id);

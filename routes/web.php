@@ -38,10 +38,12 @@ Route::group([
     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
 ], function () {
     Auth::routes();
+    Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about-us');
     Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
+    Route::get('/my-events', [App\Http\Controllers\EventController::class, 'myEvent'])->name('myEvents');
     Route::get('/contributions', [App\Http\Controllers\ContributionController::class, 'index'])->name('allContributions');
     Route::get('/contributions/{id}', [App\Http\Controllers\ContributionController::class, 'show'])->name('contribution.show');
     Route::get('/events/create', [App\Http\Controllers\EventController::class, 'create'])->name('event.create')->middleware(['auth']);
