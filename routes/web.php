@@ -62,7 +62,6 @@ Route::group([
     Route::post('/reply', [CommentController::class, 'reply'])->name('reply.event');
     //-------------------- start payment route. --------------------//
     Route::post('/payNow', [PaymentController::class, 'payNow'])->name('payNow')->middleware(['auth']);
-
     Route::get('paypal/checkout/{order}', [PayPalController::class, 'getExpressCheckout'])->name('paypal.checkout');
     Route::get('paypal/checkout-success/{order}', [PayPalController::class, 'getExpressCheckoutSuccess'])->name('paypal.success');
     Route::get('paypal/checkout-cancel', [PayPalController::class, 'cancelPage'])->name('paypal.cancel');
