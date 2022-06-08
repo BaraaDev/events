@@ -52,7 +52,7 @@
                         <div class="block-rounded-shadow">
                             <h3>{{$event->title}}</h3>
                             <img src="{{$event->photo}}" alt="{{$event->title}}">
-                            <p>{!! $event->description !!}</p>
+                            <p>{{ $event->description }}</p>
                         </div>
 
                         <div class="comments">
