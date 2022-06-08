@@ -180,74 +180,74 @@
 
 <!-- Info Boxes -->
 
-<section class="medium-padding100">
+<section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
-
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="<?php echo e(asset('website/img/wedding.png')); ?>" alt="wedding">
-                        <img class="cloud" src="<?php echo e(asset('website/img/clouds8.png')); ?>" alt="cloud">
-                    </div>
-
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service1')); ?></a>
-                        <p class="info-box-text">
-                            <?php echo e(__('admin/home.service1_content')); ?>
-
-                        </p>
-                    </div>
-
-                    
-
+            <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
+                <div class="crumina-module crumina-heading align-center">
+                    <h4 class="heading-title">Check Our Suppliers' Services</h4>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="swiper-container pagination-bottom" data-show-items="4">
+                    <div class="swiper-wrapper">
+                        <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <div class="swiper-slide">
+                            
+                            <div class="crumina-module crumina-info-box info-box--time-line">
 
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="<?php echo e(asset('website/img/party.png')); ?>" alt="party">
-                        <img class="cloud" src="<?php echo e(asset('website/img/clouds9.png')); ?>" alt="cloud">
+                                <div class="info-box-image bg-secondary-color">
+                                    <i class='far fa-comments' style='font-size:36px; color:#FFFFFF;'></i> <!--icon from DB-->
+                                    <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
+                                        <use xlink:href="#utouch-icon-dot-arrow"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="info-box-content">
+                                    <h6 class="timeline-year c-secondary"><?php echo e($category->name); ?></h6>
+                                    
+                                    <p class="info-box-text">
+                                        <?php echo e($category->content); ?>
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
 
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service2')); ?></a>
-                        <p class="info-box-text">
-                            <?php echo e(__('admin/home.service2_content')); ?>
+                    <!--Prev next buttons-->
 
-                        </p>
+                    <div class="btn-slider-wrap navigation-center-bottom">
+
+                        <div class="btn-prev">
+                            <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
+                                <use xlink:href="#utouch-icon-arrow-left-1"></use>
+                            </svg>
+                            <svg class="utouch-icon utouch-icon-arrow-left1">
+                                <use xlink:href="#utouch-icon-arrow-left1"></use>
+                            </svg>
+                        </div>
+
+                        <div class="btn-next">
+                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                            </svg>
+                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                            </svg>
+                        </div>
+
                     </div>
-
-                    
-
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
-
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="<?php echo e(asset('website/img/sushi2.png')); ?>" alt="food_service">
-                        <img class="cloud" src="<?php echo e(asset('website/img/clouds10.png')); ?>" alt="cloud">
-                    </div>
-
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service3')); ?></a>
-                        <p class="info-box-text">
-                            <?php echo e(__('admin/home.service3_content')); ?>
-
-                        </p>
-                    </div>
-
-                    
-
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- ... end Info Boxes -->
 
