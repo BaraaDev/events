@@ -24,6 +24,7 @@
 <!-- page-wrapper Start-->
 <div class="page-wrapper compact-sidebar" id="pageWrapper">
     <!-- Page Header Start-->
+    
 <!-- Page Header Ends -->
     <!-- Page Body Start-->
     <div class="page-body-wrapper sidebar-icon">
@@ -35,7 +36,8 @@
                 <div class="user-profile">
                     <div class="row">
                         <!-- user users header start-->
-                        <div class="col-sm-12 ">
+                        <div class="col-sm-12 
+                        ">
                             <div class="card profile-header">
                                 <img class="img-fluid bg-img-cover" src="<?php echo e($user->getFirstMediaUrl('cover')); ?>" alt="cover <?php echo e($user->name); ?>" />
                                 <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover" src="<?php echo e($user->getFirstMediaUrl('cover')); ?>" alt="cover <?php echo e($user->name); ?>" /></div>

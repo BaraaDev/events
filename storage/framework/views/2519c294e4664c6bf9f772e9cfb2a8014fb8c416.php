@@ -3,25 +3,23 @@
 <?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
 
-    <!-- MY SLIDER -->
     <!-- Carousel Slider Starts -->
 
     
 
-
     <!-- Carousel Slider Ends -->
 
-    <!-- Main Slider -->
+    <!-- Start Main Slider -->
 
     <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: url(<?php echo e(asset('website/img/catering.jpg')); ?>);  background-repeat: no-repeat; background-size: 100% auto;">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: url(<?php echo e(asset('website/img/catering.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide main-slider-bg-light">
 
                         <div class="container table">
                             <div class="row table-cell">
 
-                                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12">
+                                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style="background-color: rgba(169, 169, 169,0.75); box-shadow:10px 10px 10px #000; padding: 3%; padding-bottom:0.5%; border-radius:5px;">
 
                                     <div class="slider-content align-center" >
 
@@ -53,7 +51,7 @@
 
                                             </a>
 
-                                            <a onmouseover="this.style.borderColor='#000000'" onmouseout="this.style.borderColor=''" href="<?php echo e(route('allEvents')); ?>" class="btn btn-border btn--with-shadow c-primary">
+                                            <a onmouseover="this.style.color='gold'" onmouseout="this.style.color=''" href="#" class="btn btn-border btn--with-shadow">
                                                 <?php echo e(__('admin/home.home_page_content3_button')); ?>
 
                                             </a>
@@ -120,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214);">
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/sparks2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
@@ -128,9 +126,9 @@
 
                                 <div class="slider-content align-both">
 
-                                    <h2 class="slider-content-title" data-swiper-parallax="-100"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
+                                    <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: gold;"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
 
-                                    <h6 class="slider-content-text" data-swiper-parallax="-200">
+                                    <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: gold;">
                                         <?php echo e(__('admin/home.home_page_content3')); ?>
 
                                     </h6>
@@ -186,7 +184,7 @@
         </div>
     </div>
 
-    <!-- end main slider -->
+    <!-- End Main Slider -->
 
 
     <!-- Info Boxes -->
