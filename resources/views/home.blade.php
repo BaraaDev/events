@@ -61,14 +61,14 @@
 <!-- Start Main Slider -->
 
 <div class="crumina-module crumina-module-slider container-full-width">
-    <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+    <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.45)),url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
         <div class="swiper-wrapper">
             <div class="swiper-slide main-slider-bg-light">
 
                 <div class="container table">
                     <div class="row table-cell">
 
-                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style="background-color: rgba(169, 169, 169,0.75); box-shadow:10px 10px 10px #000; padding: 3%; padding-bottom:0.5%; border-radius:5px;">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style="background-color: rgba(169, 169, 169,0.75); box-shadow:10px 10px 10px #000; padding: 3%; padding-bottom:0.5%; border: double 5px rgba(255, 255, 255, 0.65);">
 
                             <div class="slider-content align-center">
 
@@ -86,9 +86,9 @@
                                 </h1>
                                 <h6 class="slider-content-text" data-swiper-parallax="-200">
                                     <div>
-                                        <h5 onmouseover="this.style.color='orange'" onmouseout="this.style.color=''" style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                                        <h5 style="font-weight: bold; cursor: context-menu;">Getting Day Planned (GDP)</h5>
                                     </div>
-                                    {{__('admin/home.home_page_content')}}
+                                    <span style="color: snow;">{{__('admin/home.home_page_content')}}</span>
                                 </h6>
 
                                 <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
