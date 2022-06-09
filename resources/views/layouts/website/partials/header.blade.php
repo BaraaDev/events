@@ -131,6 +131,10 @@
                                 <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
                             </li>
                         @endif --}}
+
+                        <li>
+                            <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                        </li>
                     </li>
 
                     <li>
