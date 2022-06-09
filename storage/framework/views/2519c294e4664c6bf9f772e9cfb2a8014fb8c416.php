@@ -348,11 +348,11 @@
 
         <div class="slider-slides slider-slides--vertical-line">
             <a href="#" class="slides-item">
-                <span class="round dark-grey"></span>1.
+                <span class="round primary"></span>1.
             </a>
 
             <a href="#" class="slides-item">
-                <span class="round light-brown"></span>2.
+                <span class="round orange"></span>2.
             </a>
 
             <a href="#" class="slides-item">
