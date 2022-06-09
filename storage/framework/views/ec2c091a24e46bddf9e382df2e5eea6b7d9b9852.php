@@ -1,5 +1,5 @@
 <div class="page-main-header">
-    <div class="main-header-right row m-0" style="background-color:#F7F7F7;;">
+    <div class="main-header-right row m-0">
         <div class="main-header-left">
             <div class="logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="<?php echo e(asset('admin/images/logo/GDP-logo.jpg')); ?>" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
             
