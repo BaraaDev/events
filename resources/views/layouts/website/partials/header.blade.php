@@ -117,7 +117,7 @@
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
                         <a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
-                        @if(auth()->user()->user_type == 'customer')
+                        {{-- @if(auth()->user()->user_type == 'customer')
                         <li>
                             <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
                             <ul class="sub-menu">
@@ -130,7 +130,7 @@
                         <li>
                             <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
                         </li>
-                        @endif
+                        @endif --}}
                     </li>
 
                     <li>

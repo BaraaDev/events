@@ -32,4 +32,4 @@
         </div>
     </body>
 </html>
-<?php /**PATH E:\laragon\www\event\resources\views/errors/minimal.blade.php ENDPATH**/ ?>
+<?php /**PATH E:\laragon\www\events\resources\views/errors/minimal.blade.php ENDPATH**/ ?>
