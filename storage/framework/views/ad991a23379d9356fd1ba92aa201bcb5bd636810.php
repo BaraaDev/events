@@ -230,7 +230,7 @@
                                 <ul class="category-list">
                                     <li><a><?php echo e(__('website/home.status')); ?>:
                                                 <?php if($event->status == 'Available'): ?>
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 4%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
                                                         Active
                                                     </span>
                                                 <?php elseif($event->status == 'Expired'): ?>

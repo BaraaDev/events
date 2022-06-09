@@ -220,15 +220,15 @@
                                 <ul class="category-list">
                                     <li><a>{{__('website/home.status')}}:
                                                 @if($event->status == 'Available')
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 4%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
                                                         Active
                                                     </span>
                                                 @elseif($event->status == 'Expired')
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 4%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 3%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
                                                         Paid
                                                     </span>
                                                 @else <!-- $event->status == 'Stopped' -->
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 4%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 3%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
                                                         Pending
                                                     </span>
                                                 @endif
