@@ -50,7 +50,7 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-eg"></i></span>
-                                    <a href="{{url('ar/dashboard')}}">
+                                    <a href="{{url('ar/')}}">
                                         <div class="media-body">
                                             {{__('admin/home.arabic')}}
                                         </div>
@@ -61,7 +61,7 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-us"> </i></span>
-                                    <a href="{{url('en/dashboard')}}">
+                                    <a href="{{url('en/')}}">
                                         <div class="media-body">
                                             {{__('admin/home.english')}}
                                         </div>
@@ -71,7 +71,7 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-fr"> </i></span>
-                                    <a href="{{url('fr/dashboard')}}">
+                                    <a href="{{url('fr/')}}">
                                     <div class="media-body">
                                             {{__('admin/home.french')}}
                                         </div>

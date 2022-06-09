@@ -50,7 +50,7 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-eg"></i></span>
-                                    <a href="<?php echo e(url('ar/dashboard')); ?>">
+                                    <a href="<?php echo e(url('ar/')); ?>">
                                         <div class="media-body">
                                             <?php echo e(__('admin/home.arabic')); ?>
 
@@ -62,7 +62,7 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-us"> </i></span>
-                                    <a href="<?php echo e(url('en/dashboard')); ?>">
+                                    <a href="<?php echo e(url('en/')); ?>">
                                         <div class="media-body">
                                             <?php echo e(__('admin/home.english')); ?>
 
@@ -73,7 +73,7 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-fr"> </i></span>
-                                    <a href="<?php echo e(url('fr/dashboard')); ?>">
+                                    <a href="<?php echo e(url('fr/')); ?>">
                                     <div class="media-body">
                                             <?php echo e(__('admin/home.french')); ?>
 
