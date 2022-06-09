@@ -25,30 +25,20 @@
 <div class="page-wrapper compact-sidebar" id="pageWrapper">
     <!-- Page Header Start-->
     <div class="page-main-header">
-        <div class="main-header-right row m-0">
+        <div class="main-header-right row m-0" style="background-color: #F7F7F7;">
             <div class="main-header-left">
                 <div class="logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="<?php echo e(asset('admin/images/logo/GDP-logo.jpg')); ?>" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
                 
                 <div class="dark-logo-wrapper"><a href="javascript:void(0)"><img class="img-fluid" src="<?php echo e(asset('admin/images/logo/GDP-logo.jpg')); ?>" alt="GDP" style="width: 55%; border-radius:10px;"></a></div>
-                <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-center" id="sidebar-toggle" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''"> </i></div>
             </div>
-            <div class="left-menu-header col">
-                <ul>
-                    <li>
-                        <form class="form-inline search-form">
-                            <div class="search-bg"><i class="fa fa-search"></i>
-                                <input class="form-control-plaintext" placeholder="Search here.....">
-                            </div>
-                        </form>
-                        <span class="d-sm-none mobile-search search-bg"><i class="fa fa-search"></i></span>
-                    </li>
-                </ul>
-            </div>
+            
             <div class="nav-right col pull-right right-menu p-0">
     
                 <ul class="nav-menus">
-                    <li>
-                        <a class="text-dark" href="<?php echo e(route('home')); ?>">Website</a>
+                    <li style="padding-right: 3%;">
+                        <a class="text-dark btn btn-primary" href="<?php echo e(route('home')); ?>" style="background-color: grey; padding: 3%; width: 120%; border-radius: 6px; box-shadow: 5px 6px;">
+                            Back to the Website
+                        </a>
                     </li>
 
                     <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
@@ -127,7 +117,7 @@
                             <div class="card profile-header">
                                 <img class="img-fluid bg-img-cover" src="<?php echo e($user->getFirstMediaUrl('cover')); ?>" alt="cover <?php echo e($user->name); ?>" />
                                 <div class="profile-img-wrrap"><img class="img-fluid bg-img-cover" src="<?php echo e($user->getFirstMediaUrl('cover')); ?>" alt="cover <?php echo e($user->name); ?>" /></div>
-                                <div class="userpro-box">
+                                <div class="userpro-box" style="padding-top: 8%;">
                                     <div class="img-wrraper">
                                         <div class="avatar"><img class="img-fluid" alt="<?php echo e($user->name); ?>" src="<?php echo e($user->photo); ?>" /></div>
                                         <a class="icon-wrapper" href="<?php echo e(route('editProfile')); ?>"><i class="icofont icofont-pencil-alt-5"></i></a>
