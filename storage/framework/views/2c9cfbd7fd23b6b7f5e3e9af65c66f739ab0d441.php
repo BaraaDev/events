@@ -124,8 +124,8 @@
                                     </div>
                                     <div class="user-designation">
                                         <div class="title">
-                                            <a target="_blank" href="javascript:void(0);">
-                                                <h4 onMouseOver="this.style.color='#0083FF'" onMouseOut="this.style.color='#B4B6BB'"><?php echo e($user->name); ?></h4>
+                                            <a target="_blank" href="javascript:void(0);" style="cursor: context-menu">
+                                                <h4><?php echo e($user->name); ?></h4>
                                                 <h6><?php echo e($user->user_type); ?></h6>
                                             </a>
                                         </div>
