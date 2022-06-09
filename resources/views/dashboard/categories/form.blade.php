@@ -22,6 +22,27 @@
             @enderror
         </div>
     </div>
+
+    <div class="form-group row">
+        <label class="form-label col-lg-3">Icon Background Color <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <select class="form-control @error('color_ar') is-invalid @enderror" type="text" name="color_ar">{{Request::old('color_ar') ? Request::old('color_ar') : $model->getTranslation('color','ar')}}
+                <option>{{__('admin/home.select')}}</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="cyan">cyan</option>
+                <option value="green">green</option>
+                <option value="orange">orange</option>
+                <option value="brown">brown</option>
+                <option value="grey">grey</option>
+            </select>
+            @error('color_ar')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
+    </div>
 </div>
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'en') show active @endif" id="en" role="tabpanel" aria-labelledby="en-tab">
     <div class="form-group row">
@@ -46,6 +67,26 @@
             @enderror
         </div>
     </div>
+    <div class="form-group row">
+        <label class="form-label col-lg-3">Icon Background Color <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <select class="form-control @error('color_en') is-invalid @enderror" type="text" name="color_en">{{Request::old('color_en') ? Request::old('color_en') : $model->getTranslation('color','en')}}
+                <option>{{__('admin/home.select')}}</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="cyan">cyan</option>
+                <option value="green">green</option>
+                <option value="orange">orange</option>
+                <option value="brown">brown</option>
+                <option value="grey">grey</option>
+            </select>
+            @error('color_en')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
+    </div>
 </div>
 <div class="tab-pane fade mt-4 @if(LaravelLocalization::getCurrentLocale() == 'fr') show active @endif" id="fr" role="tabpanel" aria-labelledby="fr-tab">
     <div class="form-group row">
@@ -59,6 +100,7 @@
             @enderror
         </div>
     </div>
+
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/category.content')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
@@ -70,7 +112,41 @@
             @enderror
         </div>
     </div>
+
+    <div class="form-group row">
+        <label class="form-label col-lg-3">Icon Background Color <span class="text-danger">*</span></label>
+        <div class="col-lg-9">
+            <select class="form-control @error('color_fr') is-invalid @enderror" type="text" name="color_fr">{{Request::old('color_fr') ? Request::old('color_fr') : $model->getTranslation('color','fr')}}
+                <option>{{__('admin/home.select')}}</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="cyan">cyan</option>
+                <option value="green">green</option>
+                <option value="orange">orange</option>
+                <option value="brown">brown</option>
+                <option value="grey">grey</option>
+            </select>
+            @error('color_fr')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+        </div>
+    </div>
 </div>
+
+<div class="form-group row">
+    <label class="form-label col-lg-3">Icon <span class="text-danger">*</span></label>
+    <div class="col-lg-9">
+        <input class="form-control @error('icon') is-invalid @enderror" type="text" name="icon"> <!-- the link of the image icon -->
+        @error('icon')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+</div>
+
 <div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">

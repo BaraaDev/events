@@ -12,7 +12,7 @@ class Category extends Model
     use HasFactory, HasTranslations, SoftDeletes;
     protected $fillable = ['status'];
 
-    public $translatable = ['name','content'];
+    public $translatable = ['name','content','color'];
 
     public function events(): \Illuminate\Database\Eloquent\Relations\HasMany
     {

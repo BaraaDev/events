@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name','500');
             $table->longText('content');
-            $table->string('icon');
+            $table->string('icon')->nullable();
             $table->string('color');
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();
