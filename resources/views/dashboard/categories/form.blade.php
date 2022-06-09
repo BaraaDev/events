@@ -138,7 +138,7 @@
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon <span class="text-danger">*</span></label>
     <div class="col-lg-9">
-        <input class="form-control @error('icon') is-invalid @enderror" type="text" name="icon"> <!-- the link of the image icon -->
+        <input class="form-control @error('icon') is-invalid @enderror" type="text" name="icon" value="{{Request::old('icon') ? Request::old('icon') : $model->icon}}"> <!-- the link of the image icon -->
         @error('icon')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
