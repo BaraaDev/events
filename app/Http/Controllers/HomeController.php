@@ -26,9 +26,8 @@ class HomeController extends Controller
     {
         $no_of_customers = User::where('user_type','=','customer')->count();
         $no_of_suppliers = User::where('user_type','=','supplier')->count();
-        $category_image_source = Category::get('icon');
 
-        return view('home',compact('no_of_customers','no_of_suppliers','category_image_source'));
+        return view('home',compact('no_of_customers','no_of_suppliers'));
     }
 
     public function about()
