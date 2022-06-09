@@ -144,7 +144,9 @@
                                  <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.supplier_title')); ?></label>
                             <?php endif; ?>
                             <ul class="sub-menu">
+                            <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier'): ?> 
                                 <li><a href="<?php echo e(route('User')); ?>">Profile Management</a></li>
+                            <?php endif; ?>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
                                 <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
                             <?php endif; ?>
