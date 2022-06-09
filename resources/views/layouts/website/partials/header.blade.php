@@ -119,7 +119,7 @@
                         <a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
                         @if(auth()->user()->user_type == 'customer')
                             <li>
-                                <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                                <a class="menu-component-item" href="javascript:void(0)">{{__('website/home.events')}}</a>
                                 <ul class="sub-menu">
                                     <li><a href="{{route('myEvents')}}">My Events</a></li>
                                     <li><a href="{{route('allEvents')}}">Other Events</a></li>
