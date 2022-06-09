@@ -48,11 +48,11 @@
                                         <td class="text-center">
                                             <?php if($category->status == 0): ?>
                                                 <div class="badge badge-danger">
-                                                    <span><?php echo e(__('admin/home.stopped')); ?></span>
+                                                    <span><?php echo e(__('admin/home.unavailable_category')); ?></span>
                                                 </div>
                                             <?php elseif($category->status == 1): ?>
                                                 <div class="badge badge-success">
-                                                    <span style="color:bisque;"><?php echo e(__('admin/home.available')); ?></span>
+                                                    <span style="color:bisque;"><?php echo e(__('admin/home.available_category')); ?></span>
                                                 </div>
                                             <?php endif; ?>
                                         </td>

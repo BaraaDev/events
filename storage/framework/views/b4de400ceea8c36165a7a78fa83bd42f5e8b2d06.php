@@ -109,11 +109,22 @@
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
                         <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
-                        
+                        <?php if(auth()->user()->user_type == 'customer'): ?>
+                            <li>
+                                <a class="menu-component-item" href="javascript:void(0)"><?php echo e(__('website/home.events')); ?></a>
+                                <ul class="sub-menu">
+                                    <li><a href="<?php echo e(route('myEvents')); ?>">My Events</a></li>
+                                    <li><a href="<?php echo e(route('allEvents')); ?>">Other Events</a></li>
+                                    <li><a href="<?php echo e(route('event.create')); ?>">Create an Event</a></li>
+                                </ul>
+                            </li>
+                        <?php else: ?>   <!---------- == 'dashboard' or == 'supplier' ---------->
+                            <li>
+                                <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
+                            </li>
+                        <?php endif; ?>
 
-                        <li>
-                            <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
-                        </li>
+                        
                     </li>
 
                     <li>

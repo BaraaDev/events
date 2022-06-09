@@ -302,8 +302,8 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>">
             <option><?php echo e(__('admin/home.select')); ?></option>
-            <option value="1" <?php echo e(isset($model) && $model->status == 1 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.available')); ?></option>
-            <option value="0" <?php echo e(isset($model) && $model->status == 0 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.stopped')); ?></option>
+            <option value="1" <?php echo e(isset($model) && $model->status == 1 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.available_category')); ?></option>
+            <option value="0" <?php echo e(isset($model) && $model->status == 0 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.unavailable_category')); ?></option>
         </select>
         <?php $__errorArgs = ['status'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

@@ -38,6 +38,8 @@ return [
     'expired_paid'                      => 'مدفوع',
     'available_active'                  => 'نشط',
     'stopped_pending'                   => 'في الإنتظار',
+    'available_category'                => 'متوفرة',
+    'unavailable_category'              => 'غير متوفره',
     'status'                            => 'الحالة',
     'country'                           => 'الدولة',
     'create_history'                    => 'تاريخ الإضافة',

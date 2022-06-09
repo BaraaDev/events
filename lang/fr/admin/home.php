@@ -45,6 +45,8 @@ return [
     'expired_paid'                           => 'Payé',
     'available_active'                       => 'Actif',
     'stopped_pending'                        => 'En attente',
+    'available_category'                     => 'Disponible',
+    'unavailable_category'                   => 'Indisponible',
     'status'                                 => 'Statut',
     'restore'                                => 'Restaurer',
     'delete_forever'                         => 'Suppression permanente',
