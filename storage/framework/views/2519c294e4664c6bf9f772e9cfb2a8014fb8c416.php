@@ -37,12 +37,12 @@
 
                             <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="<?php echo e(route('allContributions')); ?>" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
                                     <?php echo e(__('admin/home.home_page_learn-more')); ?>
 
                                 </a>
 
-                                <a onmouseover="this.style.color='#FFFEF7'" onmouseout="this.style.color='#F89522'" href="#" class="btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">
+                                <a onmouseover="this.style.color='#FFFEF7'" onmouseout="this.style.color='#F89522'" href="<?php echo e(route('allContributions')); ?>" class="btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">
                                     Contributions
                                 </a>
                             </div>
