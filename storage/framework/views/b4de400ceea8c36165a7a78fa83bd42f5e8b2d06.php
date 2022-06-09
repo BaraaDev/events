@@ -119,11 +119,7 @@
                                     <li><a href="<?php echo e(route('event.create')); ?>">Create an Event</a></li>
                                 </ul>
                             </li>
-                        <?php elseif(auth()->user()->user_type == 'dashboard' || auth()->user()->user_type == 'supplier'): ?>   <!---------- == 'dashboard' or == 'supplier' ---------->
-                            <li>
-                                <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
-                            </li>
-                        <?php else: ?>
+                        <?php else: ?>   <!---------- == 'dashboard' or == 'supplier' ---------->
                             <li>
                                 <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
                             </li>
