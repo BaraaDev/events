@@ -126,7 +126,7 @@
                                     <li><a href="{{route('event.create')}}">Create an Event</a></li>
                                 </ul>
                             </li>
-                        @else
+                        @else   <!---------- == 'dashboard' or == 'supplier' ---------->
                             <li>
                                 <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
                             </li>
