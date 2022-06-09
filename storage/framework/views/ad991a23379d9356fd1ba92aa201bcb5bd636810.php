@@ -234,11 +234,11 @@
                                                         Active
                                                     </span>
                                                 <?php elseif($event->status == 'Expired'): ?>
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 4%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 3%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
                                                         Paid
                                                     </span>
                                                 <?php else: ?> <!-- $event->status == 'Stopped' -->
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 4%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 3%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
                                                         Pending
                                                     </span>
                                                 <?php endif; ?>
