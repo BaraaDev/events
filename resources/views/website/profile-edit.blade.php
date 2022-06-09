@@ -180,7 +180,7 @@
                                         <a class="card-options-collapse" href="#" data-bs-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a><a class="card-options-remove" href="#" data-bs-toggle="card-remove"><i class="fe fe-x"></i></a>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="margin-top: 8%;">
                                     <div class="row">
                                         <div class="col-sm-6 col-md-6">
                                             <div class="mb-3">
