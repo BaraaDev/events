@@ -71,7 +71,6 @@
 
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
-                                            
                                             <div style="color: grey;"><u><?php echo e(__('website/event.status')); ?></u> &nbsp; 
                                                 <?php if($event->status == 'Available'): ?>
                                                     <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 15px; border-radius: 10px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">

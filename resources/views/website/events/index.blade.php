@@ -70,7 +70,6 @@
 
                                     <div class="row">
                                         <div class="col-lg-8 col-sm-8 col-md-8">
-                                            {{-- <div class="c-green"><u>{{__('website/event.status')}}</u> &nbsp; {{$event->status ?? ''}}</div> --}}
                                             <div style="color: grey;"><u>{{__('website/event.status')}}</u> &nbsp; 
                                                 @if($event->status == 'Available')
                                                     <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 15px; border-radius: 10px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">

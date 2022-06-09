@@ -487,9 +487,9 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>">
             <option><?php echo e(__('admin/home.select')); ?></option>
-            <option value="Expired" <?php echo e(isset($model) && $model->status == 'Expired' ? 'selected'  : ''); ?>><?php echo e(__('admin/home.expired')); ?></option>
-            <option value="Available" <?php echo e(isset($model) && $model->status == 'Available' ? 'selected'  : ''); ?>><?php echo e(__('admin/home.available')); ?></option>
-            <option value="Stopped" <?php echo e(isset($model) && $model->status == 'Stopped' ? 'selected'  : ''); ?>><?php echo e(__('admin/home.stopped')); ?></option>
+            <option value="Expired" <?php echo e(isset($model) && $model->status == 'Expired' ? 'selected'  : ''); ?>><?php echo e(__('admin/home.expired_paid')); ?></option>
+            <option value="Available" <?php echo e(isset($model) && $model->status == 'Available' ? 'selected'  : ''); ?>><?php echo e(__('admin/home.available_active')); ?></option>
+            <option value="Stopped" <?php echo e(isset($model) && $model->status == 'Stopped' ? 'selected'  : ''); ?>><?php echo e(__('admin/home.stopped_pending')); ?></option>
         </select>
         <?php $__errorArgs = ['status'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

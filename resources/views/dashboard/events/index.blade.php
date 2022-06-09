@@ -58,15 +58,15 @@
                                         <td class="text-center">
                                             @if($event->status == 'Expired')
                                                 <div class="badge badge-dark label-square">
-                                                    <span>{{__('admin/home.expired')}}</span>
+                                                    <span>{{__('admin/home.expired_paid')}}</span>
                                                 </div>
                                             @elseif($event->status == 'Stopped')
                                                 <div class="badge badge-danger label-square">
-                                                    <span>{{__('admin/home.stopped')}}</span>
+                                                    <span>{{__('admin/home.stopped_pending')}}</span>
                                                 </div>
                                             @elseif($event->status == 'Available')
                                                 <div class="badge badge-success label-square">
-                                                    <span style="color:bisque;">{{__('admin/home.available')}}</span>
+                                                    <span style="color:bisque;">{{__('admin/home.available_active')}}</span>
                                                 </div>
                                             @endif
                                         </td>

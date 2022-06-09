@@ -58,15 +58,15 @@
                                         <td class="text-center">
                                             <?php if($event->status == 'Expired'): ?>
                                                 <div class="badge badge-dark label-square">
-                                                    <span><?php echo e(__('admin/home.expired')); ?></span>
+                                                    <span><?php echo e(__('admin/home.expired_paid')); ?></span>
                                                 </div>
                                             <?php elseif($event->status == 'Stopped'): ?>
                                                 <div class="badge badge-danger label-square">
-                                                    <span><?php echo e(__('admin/home.stopped')); ?></span>
+                                                    <span><?php echo e(__('admin/home.stopped_pending')); ?></span>
                                                 </div>
                                             <?php elseif($event->status == 'Available'): ?>
                                                 <div class="badge badge-success label-square">
-                                                    <span style="color:bisque;"><?php echo e(__('admin/home.available')); ?></span>
+                                                    <span style="color:bisque;"><?php echo e(__('admin/home.available_active')); ?></span>
                                                 </div>
                                             <?php endif; ?>
                                         </td>
