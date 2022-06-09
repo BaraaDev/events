@@ -265,7 +265,7 @@ unset($__errorArgs, $__bag); ?>
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">Icon <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">Icon (Image/SVG link) <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <input class="form-control <?php $__errorArgs = ['icon'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -274,7 +274,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" type="text" name="icon" value="<?php echo e(Request::old('icon') ? Request::old('icon') : $model->icon); ?>"> <!-- the link of the image icon -->
+unset($__errorArgs, $__bag); ?>" type="text" name="icon" value="<?php echo e(Request::old('icon') ? Request::old('icon') : $model->icon); ?>"> <!-- the directory link of the image icon -->
         <?php $__errorArgs = ['icon'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :

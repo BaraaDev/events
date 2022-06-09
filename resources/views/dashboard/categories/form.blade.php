@@ -136,7 +136,7 @@
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">Icon <span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">Icon (Image/SVG link) <span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <input class="form-control @error('icon') is-invalid @enderror" type="text" name="icon" value="{{Request::old('icon') ? Request::old('icon') : $model->icon}}"> <!-- the directory link of the image icon -->
         @error('icon')
