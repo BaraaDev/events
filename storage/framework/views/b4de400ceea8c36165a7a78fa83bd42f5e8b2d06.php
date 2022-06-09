@@ -110,7 +110,7 @@
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
                         <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
-                        <?php if(auth()->user()->user_type == 'customer'): ?>
+                        <?php if(auth()->user()->user_type === 'customer'): ?>
                             <li>
                                 <a class="menu-component-item" href="javascript:void(0)"><?php echo e(__('website/home.events')); ?></a>
                                 <ul class="sub-menu">
@@ -119,7 +119,7 @@
                                     <li><a href="<?php echo e(route('event.create')); ?>">Create an Event</a></li>
                                 </ul>
                             </li>
-                        <?php else: ?>
+                        <?php else: ?>   <!---------- == 'dashboard' or == 'supplier' ---------->
                             <li>
                                 <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
                             </li>
@@ -127,12 +127,8 @@
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)"><?php echo e(__('website/home.categories')); ?></a>
-                        <ul class="sub-menu">
-                            <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li><a href="<?php echo e(route('event.category',$category->id)); ?>"><?php echo e($category->name); ?></a></li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                        </ul>
+                        <a href="#suppliers-services-home-page"><?php echo e(__('website/home.categories')); ?></a>
+                        
                     </li>
                     <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
 

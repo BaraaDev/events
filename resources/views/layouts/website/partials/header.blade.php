@@ -134,12 +134,12 @@
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)">{{__('website/home.categories')}}</a>
-                        <ul class="sub-menu">
+                        <a href="#suppliers-services-home-page">{{__('website/home.categories')}}</a>
+                        {{-- <ul class="sub-menu">
                             @foreach($categories as $category)
                                 <li><a href="{{route('event.category',$category->id)}}">{{$category->name}}</a></li>
                             @endforeach
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
 

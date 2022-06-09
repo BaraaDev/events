@@ -164,7 +164,7 @@
 
 <!-- Info Boxes -->
 
-<section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100">
+<section id="suppliers-services-home-page" class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
