@@ -220,7 +220,7 @@
                                 <ul class="category-list">
                                     <li><a>{{__('website/home.status')}}:
                                                 @if($event->status == 'Available')
-                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 4%; color: black; font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='black'">
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 4%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
                                                         Active
                                                     </span>
                                                 @elseif($event->status == 'Expired')
