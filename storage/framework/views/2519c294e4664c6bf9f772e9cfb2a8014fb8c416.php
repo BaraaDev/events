@@ -181,8 +181,8 @@
                             
                             <div class="crumina-module crumina-info-box info-box--time-line">
 
-                                <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;">
-                                    <img src="<?php echo e($category->icon); ?>"> <!--icon & icon bg-color from DB-->
+                                <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;"> <!-- bg-color from DB for icon -->
+                                    <img src="<?php echo e($category->icon); ?>"> <!--icon from DB-->
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                         <use xlink:href="#utouch-icon-dot-arrow"></use>
                                     </svg>
