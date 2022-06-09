@@ -126,11 +126,7 @@
                                         <div class="title">
                                             <a target="_blank" href="javascript:void(0);">
                                                 <h4 onMouseOver="this.style.color='#0083FF'" onMouseOut="this.style.color='#B4B6BB'"><?php echo e($user->name); ?></h4>
-                                                <?php if(auth()->user()->user_type == 'dashboard'): ?>
-                                                    <h6>Admin</h6>
-                                                <?php else: ?>
-                                                    <h6><?php echo e($user->user_type); ?></h6>    
-                                                <?php endif; ?>
+                                                <h6><?php echo e($user->user_type); ?></h6>
                                             </a>
                                         </div>
                                         <div class="social-media">
