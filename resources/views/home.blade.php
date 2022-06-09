@@ -210,7 +210,7 @@
 
 <!-- Info Boxes -->
 
-<section id="suppliers-services-home-page" class="crumina-module crumina-module-slider medium-padding100" style="background-color: rgba(241, 234, 225, 0.962)">
+<section id="suppliers-services-home-page" class="crumina-module crumina-module-slider medium-padding100" style="background-color: rgba(241, 234, 225, 0.962); border-top: solid 5px #F89522; border-bottom: solid 5px #F89522;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
