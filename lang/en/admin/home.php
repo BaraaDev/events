@@ -39,6 +39,8 @@ return [
     'expired_paid'                       => 'Paid',
     'available_active'                   => 'Active',
     'stopped_pending'                    => 'Pending',
+    'available_category'                 => 'Available',
+    'unavailable_category'               => 'Unavailable',
     'status'                             => 'Status',
     'country'                            => 'Country',
     'logout'                             => 'Logout',

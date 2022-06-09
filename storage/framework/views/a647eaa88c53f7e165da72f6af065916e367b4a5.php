@@ -182,10 +182,15 @@
 
                             <div class="crumina-module crumina-info-box info-box--time-line">
 
+<<<<<<< HEAD:storage/framework/views/a647eaa88c53f7e165da72f6af065916e367b4a5.php
                                 <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;">
                                     <!-- bg-color from DB for icon -->
                                     <img src="<?php echo e($category->icon); ?>">
                                     <!--icon from DB-->
+=======
+                                <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;"> <!-- bg-color from DB for icon -->
+                                    <img src="<?php echo e(url('../img/', $category->icon)); ?>"> <!--icon from DB-->
+>>>>>>> 43d97e05adbc6bdb11799d6d3ae4510662086bfd:storage/framework/views/2519c294e4664c6bf9f772e9cfb2a8014fb8c416.php
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                         <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                     </svg>

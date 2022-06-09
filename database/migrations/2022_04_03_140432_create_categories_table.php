@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name', '500');
-            $table->string('content', '800');
+            $table->longText('content', '800');
             $table->string('icon')->nullable();
             $table->string('color');
             /** background color of the icon's div **/
