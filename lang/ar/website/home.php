@@ -11,7 +11,7 @@ return [
     'contact_us'                        => 'اتصل بنا',
     'publication_date'                  => 'تاريخ النشر',
     'budget'                            => 'الميزانية',
-    'applicants_numbers'                => 'عدد المتقدمون',
+    'no_of_suppliers_involved'          => 'عدد الموردين المشاركين',
     'Prev_Page'                         => 'الصفحة السابقة',
     'Next_Page'                         => 'الصفحة التالية',
     'average_offers'                    => 'متوسط العروض',
