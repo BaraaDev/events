@@ -199,4 +199,4 @@
 <div class="header-spacer"></div>
 <br>
 <br>
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/website/partials/header.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/website/partials/header.blade.php ENDPATH**/ ?>

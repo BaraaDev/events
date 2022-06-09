@@ -19,15 +19,15 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->only('profile','edit_my_Profile','editProfile','profileUpdatePassword');
+        $this->middleware('auth')->only('profile', 'edit_my_Profile', 'editProfile', 'profileUpdatePassword');
     }
 
     public function index()
     {
-        $no_of_customers = User::where('user_type','=','customer')->count();
-        $no_of_suppliers = User::where('user_type','=','supplier')->count();
+        $no_of_customers = User::where('user_type', '=', 'customer')->count();
+        $no_of_suppliers = User::where('user_type', '=', 'supplier')->count();
 
-        return view('home',compact('no_of_customers','no_of_suppliers'));
+        return view('home', compact('no_of_customers', 'no_of_suppliers'));
     }
 
     public function about()
@@ -48,16 +48,16 @@ class HomeController extends Controller
     public function profile()
     {
         $user   = User::findOrFail(auth()->user()->id);
-        $events = Event::where('user_id',$user->id)->get();
-        $offers = Comment::where('user_id',$user->id)->get();
+        $events = Event::where('user_id', $user->id)->get();
+        $offers = Comment::where('user_id', $user->id)->get();
 
-        return view('website.profile',compact('user','events','offers'));
+        return view('website.profile', compact('user', 'events', 'offers'));
     }
 
     public function editProfile()
     {
         $model = User::findOrFail(auth()->user()->id);
-        return view('website.profile-edit',compact('model'));
+        return view('website.profile-edit', compact('model'));
     }
 
 
@@ -79,15 +79,15 @@ class HomeController extends Controller
             'password.min'                               => __('admin/request.password_min'),
 
         ];
-        $this->validate($request, $rules,$message);
+        $this->validate($request, $rules, $message);
 
         $user = $request->user();
-        if($request->password != ''){
+        if ($request->password != '') {
             if (Hash::check($request->input('current_password'), $user->password)) {
                 // The passwords match...
                 $user->password = bcrypt($request->input('password'));
                 $user->save();
-            }else {
+            } else {
                 return redirect()->route('User')
                     ->with(['error' => 'كلمة المرور الحالية غير صحيح، حاول مرة آخري']);
             }
@@ -100,64 +100,64 @@ class HomeController extends Controller
     {
         $user = User::findOrFail(auth()->user()->id);
         $array = [];
-        if($request->email != $user->email){
-            $email = User::where('email' , $request->email)->first();
-            if($email == null){
+        if ($request->email != $user->email) {
+            $email = User::where('email', $request->email)->first();
+            if ($email == null) {
                 $array['email'] =  $request->email;
             }
         }
-        if($request->name != $user->name){
+        if ($request->name != $user->name) {
             $array['name'] =  $request->name;
         }
-        if($request->username != $user->username){
+        if ($request->username != $user->username) {
             $array['username'] =  $request->username;
         }
-        if($request->bio != $user->bio){
+        if ($request->bio != $user->bio) {
             $array['bio'] =  $request->bio;
         }
-        if($request->address != $user->address){
+        if ($request->address != $user->address) {
             $array['address'] =  $request->address;
         }
-        if($request->phone != $user->phone){
+        if ($request->phone != $user->phone) {
             $array['phone'] =  $request->phone;
         }
-        if($request->gender != $user->gender){
+        if ($request->gender != $user->gender) {
             $array['gender'] =  $request->gender;
         }
-        if($request->dob != $user->dob){
+        if ($request->dob != $user->dob) {
             $array['dob'] =  $request->dob;
         }
-        if($request->postal_code != $user->postal_code){
+        if ($request->postal_code != $user->postal_code) {
             $array['postal_code'] =  $request->postal_code;
         }
-        if($request->state_province != $user->state_province){
+        if ($request->state_province != $user->state_province) {
             $array['state_province'] =  $request->state_province;
         }
-        if($request->facebook != $user->facebook){
+        if ($request->facebook != $user->facebook) {
             $array['facebook'] =  $request->facebook;
         }
-        if($request->twitter != $user->twitter){
+        if ($request->twitter != $user->twitter) {
             $array['twitter'] =  $request->twitter;
         }
-        if($request->instagram != $user->instagram){
+        if ($request->instagram != $user->instagram) {
             $array['instagram'] =  $request->instagram;
         }
-        if($request->whatsApp != $user->whatsApp){
+        if ($request->whatsApp != $user->whatsApp) {
             $array['whatsApp'] =  $request->whatsApp;
         }
-        if($request->telegram != $user->telegram){
+        if ($request->telegram != $user->telegram) {
             $array['telegram'] =  $request->telegram;
         }
 
-        if($request->country_id != $user->country_id){
+        if ($request->country_id != $user->country_id) {
             $array['country_id'] =  $request->country_id;
         }
 
-        if($request->governorate_id != $user->governorate_id){
+        if ($request->governorate_id != $user->governorate_id) {
             $array['governorate_id'] =  $request->governorate_id;
         }
 
-        if($request->city_id != $user->city_id){
+        if ($request->city_id != $user->city_id) {
             $array['city_id'] =  $request->city_id;
         }
 
@@ -165,7 +165,7 @@ class HomeController extends Controller
             $user
                 ->clearMediaCollection('avatar')
                 ->addMediaFromRequest('avatar')
-                ->UsingName('avatar-'.$user->name)
+                ->UsingName('avatar-' . $user->name)
                 ->UsingFileName("avatar-.$user->name")
                 ->toMediaCollection('avatar');
         }
@@ -173,12 +173,12 @@ class HomeController extends Controller
             $user
                 ->clearMediaCollection('cover')
                 ->addMediaFromRequest('cover')
-                ->UsingName('cover-'.$user->name)
+                ->UsingName('cover-' . $user->name)
                 ->UsingFileName("cover-.$user->name")
                 ->toMediaCollection('cover');
         }
 
-        if(!empty($array)){
+        if (!empty($array)) {
             $user->update($array);
         }
 

@@ -19,4 +19,4 @@
 <link rel="stylesheet" type="text/css" href="<?php echo e(asset('admin/css/responsive.css')); ?>">
 <?php echo \Livewire\Livewire::styles(); ?>
 
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/admin/partials/css.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/css.blade.php ENDPATH**/ ?>

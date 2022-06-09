@@ -222,13 +222,16 @@
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="swiper-container pagination-bottom" data-show-items="4">
                     <div class="swiper-wrapper">
+
                         @foreach($categories as $category)
                         <div class="swiper-slide">
-                            
+
                             <div class="crumina-module crumina-info-box info-box--time-line">
 
-                                <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$category->color}};"> <!-- bg-color from DB for icon -->
-                                    <img src="{{$category->icon}}"> <!--icon from DB-->
+                                <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$category->color}};">
+                                    <!-- bg-color from DB for icon -->
+                                    <img src="{{$category->icon}}">
+                                    <!--icon from DB-->
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                         <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                     </svg>
@@ -284,49 +287,49 @@
                 <div class="crumina-module crumina-info-box info-box--standard-hover">
                     <div class="info-box-image">
                         <img class="utouch-icon" src="{{asset('website/img/wedding.png')}}" alt="wedding">
-                        <img class="cloud" src="{{asset('website/img/clouds8.png')}}" alt="cloud">
-                    </div>
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service1')}}</a>
-                        <p class="info-box-text">
-                            {{__('admin/home.service1_content')}}
-                        </p>
-                    </div>
-                </div>
-            </div>
+<img class="cloud" src="{{asset('website/img/clouds8.png')}}" alt="cloud">
+</div>
+<div class="info-box-content">
+    <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service1')}}</a>
+    <p class="info-box-text">
+        {{__('admin/home.service1_content')}}
+    </p>
+</div>
+</div>
+</div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="{{asset('website/img/party.png')}}" alt="party">
-                        <img class="cloud" src="{{asset('website/img/clouds9.png')}}" alt="cloud">
-                    </div>
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service2')}}</a>
-                        <p class="info-box-text">
-                            {{__('admin/home.service2_content')}}
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="{{asset('website/img/sushi2.png')}}" alt="food_service">
-                        <img class="cloud" src="{{asset('website/img/clouds10.png')}}" alt="cloud">
-                    </div>
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service3')}}</a>
-                        <p class="info-box-text">
-                            {{__('admin/home.service3_content')}}
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="crumina-module crumina-info-box info-box--standard-hover">
+        <div class="info-box-image">
+            <img class="utouch-icon" src="{{asset('website/img/party.png')}}" alt="party">
+            <img class="cloud" src="{{asset('website/img/clouds9.png')}}" alt="cloud">
+        </div>
+        <div class="info-box-content">
+            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service2')}}</a>
+            <p class="info-box-text">
+                {{__('admin/home.service2_content')}}
+            </p>
         </div>
     </div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <div class="crumina-module crumina-info-box info-box--standard-hover">
+        <div class="info-box-image">
+            <img class="utouch-icon" src="{{asset('website/img/sushi2.png')}}" alt="food_service">
+            <img class="cloud" src="{{asset('website/img/clouds10.png')}}" alt="cloud">
+        </div>
+        <div class="info-box-content">
+            <a href="#" class="h5 info-box-title" style="cursor: context-menu;">{{__('admin/home.service3')}}</a>
+            <p class="info-box-text">
+                {{__('admin/home.service3_content')}}
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
 </section> --}}
 
 <!-- ... end Info Boxes -->

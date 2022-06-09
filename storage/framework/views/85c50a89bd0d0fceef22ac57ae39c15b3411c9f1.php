@@ -198,4 +198,4 @@
         </div>
     </nav>
 </header>
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>

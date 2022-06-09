@@ -176,13 +176,16 @@
             <div class="col-lg-12 col-sm-12 col-md-12">
                 <div class="swiper-container pagination-bottom" data-show-items="4">
                     <div class="swiper-wrapper">
+
                         <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="swiper-slide">
-                            
+
                             <div class="crumina-module crumina-info-box info-box--time-line">
 
-                                <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;"> <!-- bg-color from DB for icon -->
-                                    <img src="<?php echo e($category->icon); ?>"> <!--icon from DB-->
+                                <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;">
+                                    <!-- bg-color from DB for icon -->
+                                    <img src="<?php echo e($category->icon); ?>">
+                                    <!--icon from DB-->
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                         <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                     </svg>
@@ -1122,4 +1125,4 @@
 <!-- /jQuery-scripts for Modules (Send Message) -->
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>

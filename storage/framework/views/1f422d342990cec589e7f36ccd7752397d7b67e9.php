@@ -8,4 +8,4 @@
 
 <?php endif; ?>
 
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/website/partials/validation-errors.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/partials/validation-errors.blade.php ENDPATH**/ ?>

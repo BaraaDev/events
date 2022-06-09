@@ -44,4 +44,4 @@
         </ul>
     </nav>
 <?php endif; ?>
-<?php /**PATH E:\laragon\www\events\resources\views/vendor/pagination/bootstrap-5.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/vendor/pagination/bootstrap-5.blade.php ENDPATH**/ ?>

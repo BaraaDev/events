@@ -98,4 +98,4 @@
 </script>
 </body>
 </html>
-<?php /**PATH E:\laragon\www\events\resources\views/layouts/admin/master.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/layouts/admin/master.blade.php ENDPATH**/ ?>

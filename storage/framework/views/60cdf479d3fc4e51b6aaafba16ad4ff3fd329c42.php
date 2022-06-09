@@ -319,4 +319,4 @@ endif;
 unset($__errorArgs, $__bag); ?>
     </div>
 </div>
-<?php /**PATH E:\laragon\www\events\resources\views/dashboard/categories/form.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\laragon\www\events\resources\views/dashboard/categories/form.blade.php ENDPATH**/ ?>
