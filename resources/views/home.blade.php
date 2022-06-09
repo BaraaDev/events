@@ -230,7 +230,7 @@
                                 <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$category->color}};"> <!-- bg-color from DB for icon -->
                                     <img src="{{$category->icon}}"> <!--icon from DB-->
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
-                                        <use xlink:href="#utouch-icon-dot-arrow"></use>
+                                        <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                     </svg>
                                 </div>
 
@@ -253,19 +253,19 @@
 
                         <div class="btn-prev">
                             <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
-                                <use xlink:href="#utouch-icon-arrow-left-1"></use>
+                                <use xlink:href="#utouch-icon-arrow-left-1" style="fill: #F89522;"></use>
                             </svg>
                             <svg class="utouch-icon utouch-icon-arrow-left1">
-                                <use xlink:href="#utouch-icon-arrow-left1"></use>
+                                <use xlink:href="#utouch-icon-arrow-left1" style="fill: #F89522;"></use>
                             </svg>
                         </div>
 
                         <div class="btn-next">
                             <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
-                                <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                <use xlink:href="#utouch-icon-arrow-right-1" style="fill: #F89522;"></use>
                             </svg>
                             <svg class="utouch-icon utouch-icon-arrow-right1">
-                                <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                <use xlink:href="#utouch-icon-arrow-right1" style="fill: #F89522;"></use>
                             </svg>
                         </div>
 
