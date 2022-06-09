@@ -135,17 +135,16 @@
                         </li>
                     <?php else: ?> <!---------- = registered user ---------->
                         <li>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                                 <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.admin_title')); ?></label>
                             <?php elseif(auth()->user()->user_type == 'customer'): ?> <!---------- customer ---------->
-                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                                  <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.customer_title')); ?></label>
                             <?php else: ?> <!---------- supplier ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                                  <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.supplier_title')); ?></label>
                             <?php endif; ?>
                             <ul class="sub-menu">
+                                <li><a href="<?php echo e(route('User')); ?>">Profile Management</a></li>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
                                 <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
                             <?php endif; ?>

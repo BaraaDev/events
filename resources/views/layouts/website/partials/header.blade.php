@@ -159,17 +159,16 @@
                         </li>
                     @else <!---------- = registered user ---------->
                         <li>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                             @if(auth()->user()->user_type == 'dashboard') <!---------- dashboard (admin) ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                                 <label style="color:rgb(125, 125, 125);">{{__('admin/home.admin_title')}}</label>
                             @elseif(auth()->user()->user_type == 'customer') <!---------- customer ---------->
-                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                                  <label style="color:rgb(125, 125, 125);">{{__('admin/home.customer_title')}}</label>
                             @else <!---------- supplier ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                                  <label style="color:rgb(125, 125, 125);">{{__('admin/home.supplier_title')}}</label>
                             @endif
                             <ul class="sub-menu">
+                                <li><a href="{{route('User')}}">Profile Management</a></li>
                             @if(auth()->user()->user_type == 'dashboard')
                                 <li><a href="{{route('dashboard')}}">{{__('admin/home.admin_dashboard_website')}}</a></li>
                             @endif
