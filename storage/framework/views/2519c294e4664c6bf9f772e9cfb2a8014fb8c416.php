@@ -138,7 +138,7 @@
 
     <!--Prev next buttons-->
 
-    <div class="btn-prev with-bg">
+    <div class="btn-prev with-bg" style="background-color: #F89522;">
         <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
             <use xlink:href="#utouch-icon-arrow-left-1"></use>
         </svg>
@@ -147,7 +147,7 @@
         </svg>
     </div>
 
-    <div class="btn-next with-bg">
+    <div class="btn-next with-bg" style="background-color: #F89522;">
         <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
             <use xlink:href="#utouch-icon-arrow-right-1"></use>
         </svg>
