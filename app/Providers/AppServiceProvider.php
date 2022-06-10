@@ -17,7 +17,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-
     }
 
     /**
@@ -28,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->share('setting',Setting::first());
-        //view()->share('categories',Category::status(1)->limit(5)->get());
+        view()->share('categories',Category::status(1)->limit(5)->get());
         view()->composer('layouts.admin.master', function ($view) {
             $theme = Cookie::get('theme');
          //   dd($theme);

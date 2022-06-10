@@ -123,19 +123,21 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="swiper-container pagination-bottom" data-show-items="4">
                         <div class="swiper-wrapper">
-                            <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php $__currentLoopData = $sections; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $section): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
-                                    <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;"> <!-- bg-color from DB for icon -->
-                                        <img class="utouch-icon" src="<?php echo e(asset("website/$category->icon")); ?>"> <!--icon from DB-->
-                                        <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
-                                            <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
-                                        </svg>
-                                    </div>
+                                    <a href="<?php echo e(route('event.category',$section->id)); ?>">
+                                        <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$section->color); ?>;"> <!-- bg-color from DB for icon -->
+                                            <img class="utouch-icon" src="<?php echo e(asset("website/$section->icon")); ?>"> <!--icon from DB-->
+                                            <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
+                                                <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary"><a href="<?php echo e(route('event.category',$category->id)); ?>"><?php echo e($category->name); ?></a> </h6>
-                                        <p class="info-box-text"><?php echo \Str::words($category->content,'20',' ...'); ?></p>
+                                        <h6 class="timeline-year c-secondary"><a href="<?php echo e(route('event.category',$section->id)); ?>"><?php echo e($section->name); ?></a> </h6>
+                                        <p class="info-box-text"><?php echo \Str::words($section->content,'20',' ...'); ?></p>
                                     </div>
                                 </div>
                             </div>

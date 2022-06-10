@@ -125,19 +125,21 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="swiper-container pagination-bottom" data-show-items="4">
                         <div class="swiper-wrapper">
-                            @foreach($categories as $category)
+                            @foreach($sections as $section)
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
-                                    <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$category->color}};"> <!-- bg-color from DB for icon -->
-                                        <img class="utouch-icon" src="{{asset("website/$category->icon")}}"> <!--icon from DB-->
-                                        <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
-                                            <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
-                                        </svg>
-                                    </div>
+                                    <a href="{{route('event.category',$section->id)}}">
+                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$section->color}};"> <!-- bg-color from DB for icon -->
+                                            <img class="utouch-icon" src="{{asset("website/$section->icon")}}"> <!--icon from DB-->
+                                            <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
+                                                <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary"><a href="{{route('event.category',$category->id)}}">{{$category->name}}</a> </h6>
-                                        <p class="info-box-text">{!! \Str::words($category->content,'20',' ...') !!}</p>
+                                        <h6 class="timeline-year c-secondary"><a href="{{route('event.category',$section->id)}}">{{$section->name}}</a> </h6>
+                                        <p class="info-box-text">{!! \Str::words($section->content,'20',' ...') !!}</p>
                                     </div>
                                 </div>
                             </div>
