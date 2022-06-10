@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
 
@@ -183,15 +181,14 @@
                             <div class="crumina-module crumina-info-box info-box--time-line">
 
                                 <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;"> <!-- bg-color from DB for icon -->
-                                    <img src="<?php echo e($category->icon); ?>"> <!--icon from DB-->
+                                    <img class="utouch-icon" src="<?php echo e($category->icon); ?>"> <!--icon from DB-->
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                         <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                     </svg>
                                 </div>
 
                                 <div class="info-box-content">
-                                    <h6 class="timeline-year c-secondary"><?php echo e($category->name); ?></h6>
-                                    
+                                    <h6 class="timeline-year c-secondary"><a href="<?php echo e(route('event.category',$category->id)); ?>"><?php echo e($category->name); ?></a> </h6>
                                     <p class="info-box-text">
                                         <?php echo $category->content; ?>
 
@@ -499,7 +496,7 @@
                             <span>
                                 <?php echo e($no_of_customers); ?>
 
-                                <!---- from the HomeController of the main website -> 
+                                <!---- from the HomeController of the main website ->
                                                                    counting users where user_type is equal to "customer" ---->
                             </span>
                         </div>
@@ -513,7 +510,7 @@
                             <span>
                                 <?php echo e($no_of_suppliers); ?>
 
-                                <!---- from the HomeController of the main website -> 
+                                <!---- from the HomeController of the main website ->
                                                                    counting users where user_type is equal to "supplier" ---->
                             </span>
                         </div>
@@ -1123,4 +1120,5 @@
 <!-- /jQuery-scripts for Modules (Send Message) -->
 
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\event\resources\views/home.blade.php ENDPATH**/ ?>
