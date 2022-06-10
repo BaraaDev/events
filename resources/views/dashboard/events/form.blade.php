@@ -257,9 +257,9 @@
     <div class="col-lg-9">
         <select name="status" class="form-control select @error('status') is-invalid @enderror">
             <option>{{__('admin/home.select')}}</option>
-            <option value="Expired" {{ isset($model) && $model->status == 'Expired' ? 'selected'  : '' }}>{{__('admin/home.expired')}}</option>
-            <option value="Available" {{ isset($model) && $model->status == 'Available' ? 'selected'  : '' }}>{{__('admin/home.available')}}</option>
-            <option value="Stopped" {{ isset($model) && $model->status == 'Stopped' ? 'selected'  : '' }}>{{__('admin/home.stopped')}}</option>
+            <option value="Expired" {{ isset($model) && $model->status == 'Expired' ? 'selected'  : '' }}>{{__('admin/home.expired_paid')}}</option>
+            <option value="Available" {{ isset($model) && $model->status == 'Available' ? 'selected'  : '' }}>{{__('admin/home.available_active')}}</option>
+            <option value="Stopped" {{ isset($model) && $model->status == 'Stopped' ? 'selected'  : '' }}>{{__('admin/home.stopped_pending')}}</option>
         </select>
         @error('status')
         <span class="invalid-feedback" role="alert">

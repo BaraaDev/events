@@ -15,7 +15,7 @@ return [
     'status'                             => 'Status',
     'publication_date'                   => 'Publication Date',
     'budget'                             => 'Budget',
-    'applicants_numbers'                 => 'Applicants Numbers',
+    'no_of_suppliers_involved'           => 'No. of Suppliers involved',
     'Prev_Page'                          => 'Prev Page',
     'Next_Page'                          => 'Next Page',
     'average_offers'                     => 'Average Offers',

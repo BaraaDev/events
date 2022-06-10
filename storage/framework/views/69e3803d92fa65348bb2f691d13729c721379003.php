@@ -12,167 +12,151 @@
 <!-- Start Main Slider -->
 
 <div class="crumina-module crumina-module-slider container-full-width">
-    <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.45)),url(<?php echo e(asset('website/img/catering-2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
+    <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/catering-2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
         <div class="swiper-wrapper">
             <div class="swiper-slide main-slider-bg-light">
 
                 <div class="container table">
                     <div class="row table-cell">
 
-                        <div class="first-main-slider-show col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style="background-color: rgba(203, 203, 203, 0.75); padding: 3%; padding-bottom:0.5%;">
+                        <div class="first-main-slider-show col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style=" padding: 3%; padding-bottom:0.5%;">
                             <!--first-main-slider-show css: border: double 5px rgba(255, 255, 255, 0.65); box-shadow:10px 10px 10px #000; -->
 
                             <div class="slider-content align-center">
 
                                 <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                    <span style="color: snow;"><?php echo e(__('admin/home.home_page_title')); ?></span>
-
-                                    <svg class="first-decoration utouch-icon utouch-icon-arrow-left">
-                                        <use xlink:href="#utouch-icon-arrow-left"></use>
-                                    </svg>
-
-                                    <svg class="second-decoration utouch-icon utouch-icon-arrow-left">
-                                        <use xlink:href="#utouch-icon-arrow-left"></use>
-                                    </svg>
-
+                                    <span style="color: #F89522; font-size:50px;"><?php echo e(__('admin/home.home_page_title')); ?></span>
                                 </h1>
-                                <h6 class="slider-content-text" data-swiper-parallax="-200">
+
+                                <h6 class="slider-content-text" data-swiper-parallax="-200"">
                                     <div>
-                                        <h5 style="font-weight: bold; color: snow; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                                        <h5 style=" font-size:30px; font-weight: bold; color: #FFFEF7; cursor: context-menu;">Getting Day Planned (GDP)</h5>
+                            </div>
+                            <span style="color: #FFFEF7; font-size:20px;"><?php echo e(__('admin/home.home_page_content')); ?></span>
+                            </h6>
+
+                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                    <?php echo e(__('admin/home.home_page_learn-more')); ?>
+
+                                </a>
+
+                                <a onmouseover="this.style.color='#FFFEF7'" onmouseout="this.style.color='#F89522'" href="<?php echo e(route('allContributions')); ?>" class="btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">
+                                    Contributions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/friends-2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide main-slider-bg-light">
+
+                    <div class="container table">
+                        <div class="row table-cell">
+
+                            <div class="first-main-slider-show col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style=" padding: 3%; padding-bottom:0.5%;">
+                                <!--first-main-slider-show css: border: double 5px rgba(255, 255, 255, 0.65); box-shadow:10px 10px 10px #000; -->
+
+                                <div class="slider-content align-center">
+
+                                    <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
+                                        <span style="color: #F89522; font-size:60px;">Let us help</span></br>
+                                        <span style="color: #FFFEF7; font-size:60px;">You Create</span>
+                                    </h1>
+
+                                    <h6 class="slider-content-text" data-swiper-parallax="-200"">
+
+                                <span style=" color: #FFFEF7; font-size:20px;">Planning a Wedding, Proposal, or Event in our busy city is not easy
+                                        , and it takes skills "and time" to make it all look easy-going</span>
+                                    </h6>
+
+                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                        <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="<?php echo e(route('allContributions')); ?>" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                            Check our categories
+                                        </a>
+
                                     </div>
-                                    <span style="color: snow;"><?php echo e(__('admin/home.home_page_content')); ?></span>
-                                </h6>
-
-                                <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-                                    <a onmouseover="this.style.color='#000000'" onmouseout="this.style.color=''" href="<?php echo e(route('allContributions')); ?>" class="btn btn--yellow btn--with-shadow">
-                                        <?php echo e(__('admin/home.home_page_learn-more')); ?>
-
-                                    </a>
-
-                                    <a onmouseover="this.style.color='gold'" onmouseout="this.style.color=''" href="#" class="btn btn-border btn--with-shadow">
-                                        <?php echo e(__('admin/home.home_page_content3_button')); ?>
-
-                                    </a>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(246, 224, 201);">
-
-                <div class="container table">
-                    <div class="row table-cell">
-                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                            <div class="slider-content align-both">
-                                <h2 class="slider-content-title" data-swiper-parallax="-100">
-                                    <span class="c-primary">GDP</span>
-                                    <?php echo e(__('admin/home.home_page_title2')); ?>
-
-                                </h2>
-                                <h6 class="slider-content-text" data-swiper-parallax="-200">
-                                    <span>GDP</span> <?php echo e(__('admin/home.home_page_content2')); ?>
-
-                                </h6>
-
-                                <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-                                    <a onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color=''" href="#" class="btn btn-market btn--with-shadow">
-                                        <svg class="utouch-icon utouch-icon-apple-logotype-1">
-                                            <use xlink:href="#utouch-icon-apple-logotype-1"></use>
-                                        </svg>
-                                        <div class="text">
-                                            <span class="sup-title">Download on the</span>
-                                            <span class="title">App Store</span>
-                                        </div>
-                                    </a>
-
-                                    <a onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color=''" href="#" class="btn btn-market btn--with-shadow">
-                                        <img class="utouch-icon" src="<?php echo e(asset('website/svg-icons/google-play.svg')); ?>" alt="google">
-                                        <div class="text">
-                                            <span class="sup-title">Download on the</span>
-                                            <span class="title">Google Play</span>
-                                        </div>
-                                    </a>
-
-                                    <img src="<?php echo e(asset('website/img/balloon.png')); ?>">
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/sparks2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
-
-                <div class="container table full-height">
-                    <div class="row table-cell">
-                        <div class="col-lg-6 col-sm-12 table-cell">
-
-                            <div class="slider-content align-both">
-
-                                <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: gold;"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
-
-                                <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: gold;">
-                                    <?php echo e(__('admin/home.home_page_content3')); ?>
-
-                                </h6>
-
-                                <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-                                    <a onmouseover="this.style.backgroundColor ='orange'" onmouseout="this.style.backgroundColor =''" href="02_company.html" class="btn btn--lime btn--with-shadow">
-                                        <?php echo e(__('admin/home.home_page_content3_button')); ?>
-
-                                    </a>
-
-                                </div>
-
-                            </div>
 
                         </div>
-
-                        <div class="col-lg-6 col-sm-12 table-cell">
-                            <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
-                                <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider" style="height:600px ;">
-
-                                <!-- original: slides2.png -->
-
-
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--Prev next buttons-->
+        <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/sparks2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
 
-        <div class="btn-prev with-bg">
-            <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
-                <use xlink:href="#utouch-icon-arrow-left-1"></use>
-            </svg>
-            <svg class="utouch-icon utouch-icon-arrow-left1">
-                <use xlink:href="#utouch-icon-arrow-left1"></use>
-            </svg>
+            <div class="container table full-height">
+                <div class="row table-cell">
+                    <div class="col-lg-6 col-sm-12 table-cell">
+
+                        <div class="slider-content align-both">
+
+                            <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: #F89522;"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
+
+                            <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: #FFFEF7;">
+                                <?php echo e(__('admin/home.home_page_content3')); ?>
+
+                            </h6>
+
+                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                <a onmouseover="this.style.backgroundColor ='6D4A23'" onmouseout="this.style.backgroundColor ='F89522'" href="02_company.html" class="btn btn--lime btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                    <?php echo e(__('admin/home.home_page_content3_button')); ?>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 table-cell">
+                        <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
+                            <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider" style="height:600px ;">
+
+                            <!-- original: slides2.png -->
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-        <div class="btn-next with-bg">
-            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
-                <use xlink:href="#utouch-icon-arrow-right-1"></use>
-            </svg>
-            <svg class="utouch-icon utouch-icon-arrow-right1">
-                <use xlink:href="#utouch-icon-arrow-right1"></use>
-            </svg>
-        </div>
-
     </div>
+
+    <!--Prev next buttons-->
+
+    <div class="btn-prev with-bg" style="background-color: #F89522;">
+        <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
+            <use xlink:href="#utouch-icon-arrow-left-1"></use>
+        </svg>
+        <svg class="utouch-icon utouch-icon-arrow-left1">
+            <use xlink:href="#utouch-icon-arrow-left1"></use>
+        </svg>
+    </div>
+
+    <div class="btn-next with-bg" style="background-color: #F89522;">
+        <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+            <use xlink:href="#utouch-icon-arrow-right-1"></use>
+        </svg>
+        <svg class="utouch-icon utouch-icon-arrow-right1">
+            <use xlink:href="#utouch-icon-arrow-right1"></use>
+        </svg>
+    </div>
+
+</div>
 </div>
 
 <!-- End Main Slider -->
@@ -180,74 +164,75 @@
 
 <!-- Info Boxes -->
 
-<section class="medium-padding100">
+<section id="suppliers-services-home-page" class="crumina-module crumina-module-slider medium-padding100" style="background-color: rgba(241, 234, 225, 0.962); border-top: solid 5px #F89522; border-bottom: solid 5px #F89522;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
-
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="<?php echo e(asset('website/img/wedding.png')); ?>" alt="wedding">
-                        <img class="cloud" src="<?php echo e(asset('website/img/clouds8.png')); ?>" alt="cloud">
-                    </div>
-
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service1')); ?></a>
-                        <p class="info-box-text">
-                            <?php echo e(__('admin/home.service1_content')); ?>
-
-                        </p>
-                    </div>
-
-                    
-
+            <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
+                <div class="crumina-module crumina-heading align-center">
+                    <h4 class="heading-title">Check Our Suppliers' Services</h4>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
+            <div class="col-lg-12 col-sm-12 col-md-12">
+                <div class="swiper-container pagination-bottom" data-show-items="4">
+                    <div class="swiper-wrapper">
 
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="<?php echo e(asset('website/img/party.png')); ?>" alt="party">
-                        <img class="cloud" src="<?php echo e(asset('website/img/clouds9.png')); ?>" alt="cloud">
+                        <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <div class="swiper-slide">
+
+                            <div class="crumina-module crumina-info-box info-box--time-line">
+
+                                <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$category->color); ?>;"> <!-- bg-color from DB for icon -->
+                                    <img src="<?php echo e($category->icon); ?>"> <!--icon from DB-->
+                                    <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
+                                        <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="info-box-content">
+                                    <h6 class="timeline-year c-secondary"><?php echo e($category->name); ?></h6>
+                                    
+                                    <p class="info-box-text">
+                                        <?php echo $category->content; ?>
+
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
 
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service2')); ?></a>
-                        <p class="info-box-text">
-                            <?php echo e(__('admin/home.service2_content')); ?>
+                    <!--Prev next buttons-->
 
-                        </p>
+                    <div class="btn-slider-wrap navigation-center-bottom">
+
+                        <div class="btn-prev">
+                            <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
+                                <use xlink:href="#utouch-icon-arrow-left-1" style="fill: #F89522;"></use>
+                            </svg>
+                            <svg class="utouch-icon utouch-icon-arrow-left1">
+                                <use xlink:href="#utouch-icon-arrow-left1" style="fill: #F89522;"></use>
+                            </svg>
+                        </div>
+
+                        <div class="btn-next">
+                            <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
+                                <use xlink:href="#utouch-icon-arrow-right-1" style="fill: #F89522;"></use>
+                            </svg>
+                            <svg class="utouch-icon utouch-icon-arrow-right1">
+                                <use xlink:href="#utouch-icon-arrow-right1" style="fill: #F89522;"></use>
+                            </svg>
+                        </div>
+
                     </div>
-
-                    
-
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="crumina-module crumina-info-box info-box--standard-hover">
-
-                    <div class="info-box-image">
-                        <img class="utouch-icon" src="<?php echo e(asset('website/img/sushi2.png')); ?>" alt="food_service">
-                        <img class="cloud" src="<?php echo e(asset('website/img/clouds10.png')); ?>" alt="cloud">
-                    </div>
-
-                    <div class="info-box-content">
-                        <a href="#" class="h5 info-box-title" style="cursor: context-menu;"><?php echo e(__('admin/home.service3')); ?></a>
-                        <p class="info-box-text">
-                            <?php echo e(__('admin/home.service3_content')); ?>
-
-                        </p>
-                    </div>
-
-                    
-
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- ... end Info Boxes -->
 
@@ -364,11 +349,11 @@
 
         <div class="slider-slides slider-slides--vertical-line">
             <a href="#" class="slides-item">
-                <span class="round dark-grey"></span>1.
+                <span class="round primary"></span>1.
             </a>
 
             <a href="#" class="slides-item">
-                <span class="round light-brown"></span>2.
+                <span class="round orange"></span>2.
             </a>
 
             <a href="#" class="slides-item">

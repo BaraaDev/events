@@ -13,7 +13,7 @@ return [
     'status'                       => 'Statut',
     'publication_date'             => 'Date de publication',
     'budget'                       => 'Budget',
-    'applicants_numbers'           => 'Numéros de candidats',
+    'no_of_suppliers_involved'     => 'Nombre de fournisseurs impliqués',
     'Prev_Page'                    => 'Page précédente',
     'Next_Page'                    => 'Page suivante',
     'Well_done'                    => 'Bon travail!',

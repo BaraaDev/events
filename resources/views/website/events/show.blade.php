@@ -218,10 +218,25 @@
                             <aside class="widget w-category">
                                 <h5 class="widget-title">{{__('website/event.event_card')}}</h5>
                                 <ul class="category-list">
-                                    <li><a>{{__('website/home.status')}}:<span class="cat-count c-yellow">{{$event->status}}</span></a></li>
+                                    <li><a>{{__('website/home.status')}}:
+                                                @if($event->status == 'Available')
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
+                                                        Active
+                                                    </span>
+                                                @elseif($event->status == 'Expired')
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 3%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
+                                                        Paid
+                                                    </span>
+                                                @else <!-- $event->status == 'Stopped' -->
+                                                    <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 3%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
+                                                        Pending
+                                                    </span>
+                                                @endif
+                                        </a>
+                                    </li>
                                     <li><a>{{__('website/home.publication_date')}}:<span class="cat-count">{{$event->created_at->format('Y-d-h')}}</span></a></li>
                                     <li><a>{{__('website/home.budget')}}:<span class="cat-count">{{$event->budget}} USD</span></a></li>
-                                    <li><a>{{__('website/home.applicants_numbers')}}:<span class="cat-count">{{$event->comments->count()}}</span></a></li>
+                                    <li><a>{{__('website/home.no_of_suppliers_involved')}}:<span class="cat-count">{{$event->comments->count()}}</span></a></li>
                                     <li><a>{{__('website/home.average_offers')}}:<span class="cat-count">{{intval($event->comments->sum('value') ?? '' / $event->comments->count() ?? '')}}</span></a></li>
                                     <li><a>{{__('website/home.country')}}:<span class="cat-count">{{$event->country->name ?? ''}}</span></a></li>
                                     <li><a>{{__('website/home.governorate')}}:<span class="cat-count">{{$event->governorate->name ?? ''}}</span></a></li>

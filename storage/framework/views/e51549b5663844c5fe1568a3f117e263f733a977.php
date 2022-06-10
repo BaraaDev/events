@@ -2,16 +2,15 @@
 
      
 
-    <div class="top-bar top-bar-dark">
+    <div class="top-bar top-bar" style="background-color: rgb(0, 0, 0); font-weight:bold; color: #6987AB;">
         <div class="container">
 
             <div class="top-bar-contact">
 
                 <div class="contact-item">
                     <div class="contact-item" id="clock">
-                        <?php echo e(Carbon\Carbon::now()->translatedFormat('D Y')); ?>
-
-                        <span id="time"></span>
+                        <?php echo e(Carbon\Carbon::now()->translatedFormat('D Y')); ?> &nbsp;
+                        <span id="time" style="color: snow;"></span>
                         <script >
                             function showTime() {
                                 var date = new Date(),
@@ -36,14 +35,14 @@
                     <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys">
                         <use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use>
                     </svg>
-                    <span><?php echo e($setting->phone); ?></span>
+                    <span style="color: snow;"><?php echo e($setting->phone); ?></span>
                 </div>
 
                 <div class="contact-item">
                     <svg class="utouch-icon utouch-icon-letter">
                         <use xlink:href="#utouch-icon-letter"></use>
                     </svg>
-                    <a href="mailto://<?php echo e($setting->email); ?>"><?php echo e($setting->email); ?></a>
+                    <a href="mailto://<?php echo e($setting->email); ?>" style="color: snow;"><?php echo e($setting->email); ?></a>
                 </div>
 
             </div>
@@ -109,6 +108,7 @@
 
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
+
                         <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a>
                     </li>
                     <?php if(auth()->guard()->check()): ?>
@@ -131,13 +131,31 @@
                             <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
                         </li>
                     <?php endif; ?>
+
+                        <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
+                       <?php if(auth()->user()): ?>
+                            <?php if(auth()->user()->user_type == 'customer'): ?>
+                                <li>
+                                    <a class="menu-component-item" href="javascript:void(0)"><?php echo e(__('website/home.events')); ?></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="<?php echo e(route('myEvents')); ?>">My Events</a></li>
+                                        <li><a href="<?php echo e(route('allEvents')); ?>">Other Events</a></li>
+                                        <li><a href="<?php echo e(route('event.create')); ?>">Create an Event</a></li>
+                                    </ul>
+                                </li>
+                            <?php else: ?>   <!---------- == 'dashboard' or == 'supplier' ---------->
+                                <li>
+                                    <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
+                                </li>
+                            <?php endif; ?>
+                        <?php endif; ?>
+
+                        
+                    </li>
+
                     <li>
-                        <a href="javascript:void(0)"><?php echo e(__('website/home.categories')); ?></a>
-                        <ul class="sub-menu">
-                            <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li><a href="<?php echo e(route('event.category',$category->id)); ?>"><?php echo e($category->name); ?></a></li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                        </ul>
+                        <a href="#suppliers-services-home-page"><?php echo e(__('website/home.categories')); ?></a>
+                        
                     </li>
                     <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
 
@@ -153,17 +171,18 @@
                         </li>
                     <?php else: ?> <!---------- = registered user ---------->
                         <li>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                                 <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.admin_title')); ?></label>
                             <?php elseif(auth()->user()->user_type == 'customer'): ?> <!---------- customer ---------->
-                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                                  <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.customer_title')); ?></label>
                             <?php else: ?> <!---------- supplier ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                                  <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.supplier_title')); ?></label>
                             <?php endif; ?>
                             <ul class="sub-menu">
+                            <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier'): ?>
+                                <li><a href="<?php echo e(route('User')); ?>">Profile Management</a></li>
+                            <?php endif; ?>
                             <?php if(auth()->user()->user_type == 'dashboard'): ?>
                                 <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
                             <?php endif; ?>

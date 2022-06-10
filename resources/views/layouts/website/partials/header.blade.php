@@ -10,15 +10,15 @@
         <span class="bg-secondary-color"></span>
     </div> --}}
 
-    <div class="top-bar top-bar-dark">
+    <div class="top-bar top-bar" style="background-color: rgb(0, 0, 0); font-weight:bold; color: #6987AB;">
         <div class="container">
 
             <div class="top-bar-contact">
 
                 <div class="contact-item">
                     <div class="contact-item" id="clock">
-                        {{Carbon\Carbon::now()->translatedFormat('D Y')}}
-                        <span id="time"></span>
+                        {{Carbon\Carbon::now()->translatedFormat('D Y')}} &nbsp;
+                        <span id="time" style="color: snow;"></span>
                         <script >
                             function showTime() {
                                 var date = new Date(),
@@ -43,14 +43,14 @@
                     <svg class="utouch-icon utouch-icon-telephone-keypad-with-ten-keys">
                         <use xlink:href="#utouch-icon-telephone-keypad-with-ten-keys"></use>
                     </svg>
-                    <span>{{$setting->phone}}</span>
+                    <span style="color: snow;">{{$setting->phone}}</span>
                 </div>
 
                 <div class="contact-item">
                     <svg class="utouch-icon utouch-icon-letter">
                         <use xlink:href="#utouch-icon-letter"></use>
                     </svg>
-                    <a href="mailto://{{$setting->email}}">{{$setting->email}}</a>
+                    <a href="mailto://{{$setting->email}}" style="color: snow;">{{$setting->email}}</a>
                 </div>
 
             </div>
@@ -116,6 +116,7 @@
 
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
+
                         <a href="{{route('home')}}">{{__('website/home.home')}}</a>
                     </li>
                     @auth
@@ -138,13 +139,37 @@
                             <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
                         </li>
                     @endauth
+
+                        <a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
+                       @if(auth()->user())
+                            @if(auth()->user()->user_type == 'customer')
+                                <li>
+                                    <a class="menu-component-item" href="javascript:void(0)">{{__('website/home.events')}}</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{{route('myEvents')}}">My Events</a></li>
+                                        <li><a href="{{route('allEvents')}}">Other Events</a></li>
+                                        <li><a href="{{route('event.create')}}">Create an Event</a></li>
+                                    </ul>
+                                </li>
+                            @else   <!---------- == 'dashboard' or == 'supplier' ---------->
+                                <li>
+                                    <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                                </li>
+                            @endif
+                        @endif
+
+                        {{-- <li>
+                            <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                        </li> --}}
+                    </li>
+
                     <li>
-                        <a href="javascript:void(0)">{{__('website/home.categories')}}</a>
-                        <ul class="sub-menu">
+                        <a href="#suppliers-services-home-page">{{__('website/home.categories')}}</a>
+                        {{-- <ul class="sub-menu">
                             @foreach($categories as $category)
                                 <li><a href="{{route('event.category',$category->id)}}">{{$category->name}}</a></li>
                             @endforeach
-                        </ul>
+                        </ul> --}}
                     </li>
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
 
@@ -160,17 +185,18 @@
                         </li>
                     @else <!---------- = registered user ---------->
                         <li>
+                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                             @if(auth()->user()->user_type == 'dashboard') <!---------- dashboard (admin) ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                                 <label style="color:rgb(125, 125, 125);">{{__('admin/home.admin_title')}}</label>
                             @elseif(auth()->user()->user_type == 'customer') <!---------- customer ---------->
-                                 <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                                  <label style="color:rgb(125, 125, 125);">{{__('admin/home.customer_title')}}</label>
                             @else <!---------- supplier ---------->
-                                <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                                  <label style="color:rgb(125, 125, 125);">{{__('admin/home.supplier_title')}}</label>
                             @endif
                             <ul class="sub-menu">
+                            @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier')
+                                <li><a href="{{route('User')}}">Profile Management</a></li>
+                            @endif
                             @if(auth()->user()->user_type == 'dashboard')
                                 <li><a href="{{route('dashboard')}}">{{__('admin/home.admin_dashboard_website')}}</a></li>
                             @endif
