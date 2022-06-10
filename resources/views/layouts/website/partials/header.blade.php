@@ -116,23 +116,28 @@
 
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
-                        <a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
-                        @if(auth()->user()->user_type == 'customer')
-                        <li>
-                            <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
-                            <ul class="sub-menu">
-                                <li><a href="{{route('myEvents')}}">My Events</a></li>
-                                <li><a href="{{route('allEvents')}}">Other Events</a></li>
-                                <li><a href="{{route('event.create')}}">Create an Event</a></li>
-                            </ul>
-                        </li>
-                        @else
-                        <li>
-                            <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
-                        </li>
-                        @endif
+                        <a href="{{route('home')}}">{{__('website/home.home')}}</a>
                     </li>
-
+                    @auth
+                        @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard')
+                            <li>
+                                <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{route('myEvents')}}">My Events</a></li>
+                                    <li><a href="{{route('allEvents')}}">Other Events</a></li>
+                                    <li><a href="{{route('event.create')}}">Create an Event</a></li>
+                                </ul>
+                            </li>
+                        @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard')
+                            <li>
+                                <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                            </li>
+                        @endif
+                    @else
+                        <li>
+                            <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                        </li>
+                    @endauth
                     <li>
                         <a href="javascript:void(0)">{{__('website/home.categories')}}</a>
                         <ul class="sub-menu">
@@ -193,7 +198,7 @@
                                     <span>&nbsp;&nbsp;&nbsp;{{__('website/home.english')}}</span>
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="{{url('fr/')}}">
                                     <img src="{{asset('admin/fonts/flag-icon/fr.svg')}}" alt="french" width="40">

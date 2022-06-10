@@ -108,8 +108,29 @@
                 </a>
 
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
-                    <li class="menu-item-has-children"><a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a></li>
-                    <li><a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a></li>
+                    <li class="menu-item-has-children">
+                        <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a>
+                    </li>
+                    <?php if(auth()->guard()->check()): ?>
+                        <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'dashboard'): ?>
+                            <li>
+                                <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
+                                <ul class="sub-menu">
+                                    <li><a href="<?php echo e(route('myEvents')); ?>">My Events</a></li>
+                                    <li><a href="<?php echo e(route('allEvents')); ?>">Other Events</a></li>
+                                    <li><a href="<?php echo e(route('event.create')); ?>">Create an Event</a></li>
+                                </ul>
+                            </li>
+                        <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?>
+                            <li>
+                                <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
+                            </li>
+                        <?php endif; ?>
+                    <?php else: ?>
+                        <li>
+                            <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
+                        </li>
+                    <?php endif; ?>
                     <li>
                         <a href="javascript:void(0)"><?php echo e(__('website/home.categories')); ?></a>
                         <ul class="sub-menu">
@@ -171,7 +192,7 @@
                                     <span>&nbsp;&nbsp;&nbsp;<?php echo e(__('website/home.english')); ?></span>
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="<?php echo e(url('fr/')); ?>">
                                     <img src="<?php echo e(asset('admin/fonts/flag-icon/fr.svg')); ?>" alt="french" width="40">

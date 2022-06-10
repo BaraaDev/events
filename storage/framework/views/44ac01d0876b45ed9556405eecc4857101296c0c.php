@@ -22,7 +22,7 @@
 </div>
 <!-- Loader ends-->
 <!-- page-wrapper Start-->
-<div class=" compact-sidebar" id="pageWrapper">
+<div class="page-wrapper compact-sidebar" id="pageWrapper">
     <!-- Page Header Start-->
 
 <!-- Page Header Ends -->
