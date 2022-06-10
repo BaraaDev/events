@@ -127,17 +127,7 @@
                     <!------------- End route categories ------------->
 
                     <!------------- Start route services ------------->
-                    <li class="dropdown">
-                        <a class="nav-link menu-title <?php if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')): ?> active <?php endif; ?>" href="javascript:void(0)">
-                            <i data-feather="file-text"></i>
-                            <span><?php echo e(__('admin/service.services')); ?></span>
-                        </a>
-                        <ul class="nav-submenu menu-content" style="display: <?php if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')): ?> block <?php else: ?> none <?php endif; ?> ;">
-                            <li><a href="<?php echo e(route('services.create')); ?>" class="<?php echo e(routeActive('services.create')); ?>"><?php echo e(__('admin/service.create')); ?></a></li>
-                            <li><a href="<?php echo e(route('services.index')); ?>" class="<?php echo e(routeActive('services.index')); ?>"><?php echo e(__('admin/service.all_services')); ?></a></li>
-                            <li><a href="<?php echo e(route('services.delete')); ?>" class="<?php echo e(routeActive('services.delete')); ?>"><?php echo e(__('admin/service.deleted_services')); ?></a></li>
-                        </ul>
-                    </li>
+                    
                     <!------------- End route services ------------->
 
 

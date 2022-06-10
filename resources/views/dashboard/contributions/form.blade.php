@@ -104,8 +104,8 @@
     <div class="col-lg-9">
         <select name="status" class="form-control select @error('status') is-invalid @enderror">
             <option>{{__('admin/home.select')}}</option>
-            <option value="1" {{ isset($model) && $model->status == 1 ? 'selected'  : '' }}>{{__('admin/home.available')}}</option>
-            <option value="0" {{ isset($model) && $model->status == 0 ? 'selected'  : '' }}>{{__('admin/home.stopped')}}</option>
+            <option value="1" {{ isset($model) && $model->status == 1 ? 'selected'  : '' }}>{{__('admin/home.available_title')}}</option>
+            <option value="0" {{ isset($model) && $model->status == 0 ? 'selected'  : '' }}>{{__('admin/home.unavailable_title')}}</option>
         </select>
         @error('status')
         <span class="invalid-feedback" role="alert">

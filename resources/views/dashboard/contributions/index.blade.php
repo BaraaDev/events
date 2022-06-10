@@ -50,11 +50,11 @@
                                         <td class="text-center">
                                             @if($contribution->status == 0)
                                                 <div class="badge badge-danger">
-                                                    <span>{{__('admin/home.stopped')}}</span>
+                                                    <span>{{__('admin/home.unavailable_title')}}</span>
                                                 </div>
                                             @elseif($contribution->status == 1)
                                                 <div class="badge badge-success">
-                                                    <span style="color:bisque;">{{__('admin/home.available')}}</span>
+                                                    <span style="color:bisque;">{{__('admin/home.available_title')}}</span>
                                                 </div>
                                             @endif
                                         </td>

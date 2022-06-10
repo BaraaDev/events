@@ -127,7 +127,7 @@
                     <!------------- End route categories ------------->
 
                     <!------------- Start route services ------------->
-                    <li class="dropdown">
+                    {{-- <li class="dropdown">
                         <a class="nav-link menu-title @if(routeActive('services.index') || routeActive('services.create') || routeActive('services.delete')) active @endif" href="javascript:void(0)">
                             <i data-feather="file-text"></i>
                             <span>{{__('admin/service.services')}}</span>
@@ -137,7 +137,7 @@
                             <li><a href="{{ route('services.index') }}" class="{{routeActive('services.index')}}">{{__('admin/service.all_services')}}</a></li>
                             <li><a href="{{ route('services.delete') }}" class="{{routeActive('services.delete')}}">{{__('admin/service.deleted_services')}}</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <!------------- End route services ------------->
 
 
