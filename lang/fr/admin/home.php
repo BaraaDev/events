@@ -92,8 +92,10 @@ return [
     'offers_made_content'                    => "Il est situé dans chaque événement du site Web principal!",
     'show_link'                              => 'Affichage',
     //--------------------------- Main website keys & values only down below --------------------------------//
-    'register_new_user'                      => 'Êtes-vous un nouvel utilisateur?',
+    'register_new_user'                      => "Vous n'avez pas de compte?",
     'login_already_existing_user'            => 'Vous avez déjà un compte?',
+    'signup_title'                           => "S'inscrire",
+    'login_title'                            => 'Connexion',
     'please_choose_user_type'                => "Veuillez choisir un type d'utilisateur...",
     'home_page_title'                        => 'BIENVENUE À',
     'home_page_content'                      => "Une entreprise d'événements exécutifs au Moyen-Orient qui fournit des services complets de planification, d'administration, de coordination et de promotion d'événements.",

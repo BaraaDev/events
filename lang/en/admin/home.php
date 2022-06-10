@@ -90,8 +90,10 @@ return [
     'offers_made_content'                => "It's located in each event in the main website!",
     'show_link'                          => 'Show',
     //--------------------------- Main website keys & values only down below --------------------------------//
-    'register_new_user'                  => 'Are you a new user?',
+    'register_new_user'                  => "Don't have an account?",
     'login_already_existing_user'        => 'Already have an account?',
+    'signup_title'                       => 'Sign Up',
+    'login_title'                        => 'Login',
     'please_choose_user_type'            => 'Please choose a user type...',
     'home_page_title'                    => 'WELCOME TO',
     'home_page_content'                  => 'A Middle East executive event firm that provides comprehensive event planning, administration, coordination, and promotion services.',

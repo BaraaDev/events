@@ -67,8 +67,9 @@
 
                         <div class="row mb-0" style="text-align: center;">
                             <div class="col-md-6 offset-md-4">
+                                {{__('admin/home.register_new_user')}}
                                 <a href="{{route('register')}}" style="color: rgb(17, 17, 187); font-weight: bold;">
-                                    {{__('admin/home.register_new_user')}}
+                                    <u>{{__('admin/home.signup_title')}}</u>
                                 </a>
                             </div>
                         </div>

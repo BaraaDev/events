@@ -85,8 +85,10 @@ return [
     'offers_made_content'               => 'إنه موجود في كل حدث في الموقع الرئيسي!',
     'show_link'                         => 'اعرض',
     //--------------------------- Main website keys & values only down below --------------------------------//
-    'register_new_user'                 => 'هل أنت مستخدم جديد؟',
+    'register_new_user'                 => 'ليس لديك حساب؟',
     'login_already_existing_user'       => 'هل لديك حساب؟',
+    'signup_title'                      => 'سجل',
+    'login_title'                       => 'تسجيل الدخول',
     'please_choose_user_type'           => 'الرجاء اختيار نوع المستخدم...',
     'home_page_title'                   => 'مرحبا بك في',
     'home_page_content'                 => 'شركة تنفيذية في الشرق الأوسط تقدم خدمات التخطيط والإدارة والتنسيق والترويج الشاملة للحدث.',
