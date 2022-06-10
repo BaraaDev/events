@@ -121,7 +121,7 @@
                     @auth
                         @if(auth()->user()->user_type == 'customer')
                             <li>
-                                <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
+                                <a class="menu-component-item" href="javascript:void(0);">{{__('website/home.events')}}</a>
                                 <ul class="sub-menu">
                                     <li><a href="{{route('myEvents')}}">My Events</a></li>
                                     <li><a href="{{route('allEvents')}}">Other Events</a></li>
@@ -140,18 +140,9 @@
                     @endauth
 
 
-                    <li>
-                        <a href="#suppliers-services-home-page">{{__('website/home.categories')}}</a>
-                        {{-- <ul class="sub-menu">
-                            @foreach($categories as $category)
-                                <li><a href="{{route('event.category',$category->id)}}">{{$category->name}}</a></li>
-                            @endforeach
-                        </ul> --}}
-                    </li>
+                    <li><a href="#suppliers-services-home-page">{{__('website/home.categories')}}</a></li>
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
-
                     <li><a href="{{route('contact-us')}}">{{__('website/home.contact_us')}}</a></li>
-
                     @if(!auth()->user()) <!---------- = unregistered user ---------->
                         <li>
                             <a href="javascript:void(0)">{{__('auth.register')}}</a>
@@ -161,22 +152,21 @@
                             </ul>
                         </li>
                     @else <!---------- = registered user ---------->
-                        <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
-                            @if(auth()->user()->user_type == 'dashboard') <!---------- dashboard (admin) ---------->
-                                <label style="color:rgb(125, 125, 125);">{{__('admin/home.admin_title')}}</label>
-                            @elseif(auth()->user()->user_type == 'customer') <!---------- customer ---------->
-                                 <label style="color:rgb(125, 125, 125);">{{__('admin/home.customer_title')}}</label>
-                            @else <!---------- supplier ---------->
-                                 <label style="color:rgb(125, 125, 125);">{{__('admin/home.supplier_title')}}</label>
+                        <li><a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
+                        @if(auth()->user()->user_type == 'dashboard') <!---------- dashboard (admin) ---------->
+                            <label style="color:rgb(125, 125, 125);">{{__('admin/home.admin_title')}}</label>
+                        @elseif(auth()->user()->user_type == 'customer') <!---------- customer ---------->
+                            <label style="color:rgb(125, 125, 125);">{{__('admin/home.customer_title')}}</label>
+                        @else <!---------- supplier ---------->
+                            <label style="color:rgb(125, 125, 125);">{{__('admin/home.supplier_title')}}</label>
                             @endif
                             <ul class="sub-menu">
-                            @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier')
-                                <li><a href="{{route('User')}}">Profile Management</a></li>
-                            @endif
-                            @if(auth()->user()->user_type == 'dashboard')
-                                <li><a href="{{route('dashboard')}}">{{__('admin/home.admin_dashboard_website')}}</a></li>
-                            @endif
+                                @if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier')
+                                    <li><a href="{{route('User')}}">Profile Management</a></li>
+                                @endif
+                                @if(auth()->user()->user_type == 'dashboard')
+                                    <li><a href="{{route('dashboard')}}">{{__('admin/home.admin_dashboard_website')}}</a></li>
+                                @endif
                                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{__('auth.logout')}}</a></li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
@@ -212,41 +202,6 @@
                     </li>
                 </ul>
 
-                <!--------------------------------------- start search button --------------------------------------->
-
-                {{-- <ul class="nav-add">
-                    <li class="search search_main">
-                        <a href="#" class="js-open-search-popup">
-                            <svg class="utouch-icon utouch-icon-search cd-nav-trigger">
-                                <use xlink:href="#utouch-icon-search"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul> --}}
-
-                {{-- <div class="search-standard">
-                    <form id="search-header" name="form-search-header" method="post">
-                        <div class="typeahead__container">
-                            <div class="typeahead__field">
-
-							<span class="typeahead__query">
-								<input class="js-typeahead" name="utouch_posts[query]" placeholder="What are you looking for?" autocomplete="off" type="search" autofocus>
-							</span>
-                                <button type="submit" class="form-icon">
-                                    <svg class="utouch-icon utouch-icon-search">
-                                        <use xlink:href="#utouch-icon-search"></use>
-                                    </svg>
-                                </button>
-                            <span class="close js-popup-clear-input form-icon">
-								<svg class="utouch-icon utouch-icon-cancel-1"><use xlink:href="#utouch-icon-cancel-1"></use></svg>
-							</span>
-
-                            </div>
-                        </div>
-                    </form>
-                </div> --}}
-
-                <!--------------------------------------- end search button --------------------------------------->
             </nav>
         </div>
     </div>
