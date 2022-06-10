@@ -36,11 +36,60 @@
     
                 <ul class="nav-menus">
                     <li style="padding-right: 3%;">
-                        <a class="text-dark btn btn-primary" href="<?php echo e(route('home')); ?>" style="background-color: grey; padding: 3%; width: 120%; border-radius: 6px; box-shadow: 5px 6px;">
-                            Back to the Website
-                        </a>
+                        
+
+                        <li><a href="<?php echo e(route('home')); ?>" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.home')); ?></a></li>
+                        <?php if(auth()->guard()->check()): ?>
+                            <?php if(auth()->user()->user_type == 'customer'): ?>
+                                    <li class="onhover-dropdown" style="cursor: context-menu;">
+                                        <div class="notification-box" style="color: #C8A17D; font-weight: bold;"><?php echo e(__('website/home.events')); ?><i data-feather="chevron-down"></i></div>
+                                        <ul class="notification-dropdown onhover-show-div">
+
+                                            <li class="noti-secondary">
+                                                <div class="media">
+                                                    <a href="<?php echo e(route('myEvents')); ?>">
+                                                        <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            My Events
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                    
+                                            <li class="noti-secondary">
+                                                <div class="media">
+                                                    <a href="<?php echo e(route('allEvents')); ?>">
+                                                        <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            Other Events
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="noti-secondary">
+                                                <div class="media">
+                                                    <a href="<?php echo e(route('event.create')); ?>">
+                                                    <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            Create an Event
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            <?php elseif(auth()->user()->user_type == 'supplier'): ?>
+                                <li>
+                                    <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.events')); ?></a>
+                                </li>
+                            <?php endif; ?>
+                            
+                        <?php endif; ?>
                     </li>
 
+                    <li><a href="#suppliers-services-home-page" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.categories')); ?></a></li>
+                    
+                    <li><a href="<?php echo e(route('about-us')); ?>" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.about_us')); ?></a></li>
+                    
+                    <li><a href="<?php echo e(route('contact-us')); ?>" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.contact_us')); ?></a></li>
+                    
                     <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
     
                     <li class="onhover-dropdown" style="cursor: context-menu;">
@@ -50,8 +99,8 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-eg"></i></span>
-                                    <a href="<?php echo e(url('ar/')); ?>">
-                                        <div class="media-body">
+                                    <a href="<?php echo e(url('https://events.dev/ar/profile')); ?>">
+                                        <div class="media-body" style="color: rgb(0, 0, 0);">
                                             <?php echo e(__('admin/home.arabic')); ?>
 
                                         </div>
@@ -62,8 +111,8 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-us"> </i></span>
-                                    <a href="<?php echo e(url('en/')); ?>">
-                                        <div class="media-body">
+                                    <a href="<?php echo e(url('https://events.dev/en/profile')); ?>">
+                                        <div class="media-body" style="color: rgb(0, 0, 0);">
                                             <?php echo e(__('admin/home.english')); ?>
 
                                         </div>
@@ -73,8 +122,8 @@
                             <li class="noti-secondary">
                                 <div class="media">
                                     <span class="notification-bg"><i class="flag-icon flag-icon-fr"> </i></span>
-                                    <a href="<?php echo e(url('fr/')); ?>">
-                                    <div class="media-body">
+                                    <a href="<?php echo e(url('https://events.dev/fr/profile/')); ?>">
+                                    <div class="media-body" style="color: rgb(0, 0, 0);">
                                             <?php echo e(__('admin/home.french')); ?>
 
                                         </div>
@@ -83,11 +132,6 @@
                             </li>
                         </ul>
                     </li>
-    
-                    <li>
-                        
-                        <div class="mode" style="cursor: pointer;"><i class="fa fa-moon-o"></i></div>
-                     </li>
     
                     <li class="onhover-dropdown p-0">
                         <button class="btn btn-primary-light" type="button" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i data-feather="log-out"></i><?php echo e(__('admin/home.logout')); ?></button>
