@@ -123,9 +123,9 @@
                             <li>
                                 <a class="menu-component-item" href="javascript:void(0);"><?php echo e(__('website/home.events')); ?></a>
                                 <ul class="sub-menu">
-                                    <li><a href="<?php echo e(route('myEvents')); ?>">My Events</a></li>
-                                    <li><a href="<?php echo e(route('allEvents')); ?>">Other Events</a></li>
-                                    <li><a href="<?php echo e(route('event.create')); ?>">Create an Event</a></li>
+                                    <li><a href="<?php echo e(route('myEvents')); ?>"><?php echo e(__('admin/home.my_events')); ?></a></li>
+                                    <li><a href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('admin/home.other_events')); ?></a></li>
+                                    <li><a href="<?php echo e(route('event.create')); ?>"><?php echo e(__('admin/home.create_an_event')); ?></a></li>
                                 </ul>
                             </li>
                         <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?>

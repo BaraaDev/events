@@ -78,7 +78,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                            <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?> <!-- dashboard is supposed to be disabled -->
+                            <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?> <!-- dashboard (admin) is supposed to be disabled -->
                                 <li>
                                     <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.events')); ?></a>
                                 </li>
