@@ -49,7 +49,8 @@
                                                 <div class="media">
                                                     <a href="<?php echo e(route('myEvents')); ?>">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            My Events
+                                                            <?php echo e(__('admin/home.my_events')); ?>
+
                                                         </div>
                                                     </a>
                                                 </div>
@@ -59,7 +60,8 @@
                                                 <div class="media">
                                                     <a href="<?php echo e(route('allEvents')); ?>">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Other Events
+                                                            <?php echo e(__('admin/home.other_events')); ?>
+
                                                         </div>
                                                     </a>
                                                 </div>
@@ -67,8 +69,9 @@
                                             <li class="noti-secondary">
                                                 <div class="media">
                                                     <a href="<?php echo e(route('event.create')); ?>">
-                                                    <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Create an Event
+                                                        <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            <?php echo e(__('admin/home.create_an_event')); ?>
+
                                                         </div>
                                                     </a>
                                                 </div>
@@ -175,8 +178,11 @@
                                                     <img class="img-70 rounded-circle" alt="Avatar <?php echo e($model->name); ?>" src="<?php echo e($model->photo); ?>" />
                                                     <div class="media-body">
                                                         <h3 class="mb-1 f-20 txt-primary"><?php echo e($model->name); ?></h3>
-                                                        <p class="f-2"><?php echo e($model->user_type); ?></p>
-
+                                                        <?php if($model->user_type =='dashboard'): ?>
+                                                            <p class="f-2">Admin</p>
+                                                        <?php else: ?>
+                                                            <p class="f-2"><?php echo e($model->user_type); ?></>
+                                                        <?php endif; ?>
                                                     </div>
                                                 </div>
                                             </div>

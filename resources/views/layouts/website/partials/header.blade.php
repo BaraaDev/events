@@ -123,9 +123,9 @@
                             <li>
                                 <a class="menu-component-item" href="javascript:void(0);">{{__('website/home.events')}}</a>
                                 <ul class="sub-menu">
-                                    <li><a href="{{route('myEvents')}}">My Events</a></li>
-                                    <li><a href="{{route('allEvents')}}">Other Events</a></li>
-                                    <li><a href="{{route('event.create')}}">Create an Event</a></li>
+                                    <li><a href="{{route('myEvents')}}">{{__('admin/home.my_events')}}</a></li>
+                                    <li><a href="{{route('allEvents')}}">{{__('admin/home.other_events')}}</a></li>
+                                    <li><a href="{{route('event.create')}}">{{__('admin/home.create_an_event')}}</a></li>
                                 </ul>
                             </li>
                         @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard')

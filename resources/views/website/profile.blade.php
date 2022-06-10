@@ -51,7 +51,7 @@
                                                 <div class="media">
                                                     <a href="{{route('myEvents')}}">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            My Events
+                                                            {{__('admin/home.my_events')}}
                                                         </div>
                                                     </a>
                                                 </div>
@@ -61,7 +61,7 @@
                                                 <div class="media">
                                                     <a href="{{route('allEvents')}}">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Other Events
+                                                            {{__('admin/home.other_events')}}
                                                         </div>
                                                     </a>
                                                 </div>
@@ -69,15 +69,15 @@
                                             <li class="noti-secondary">
                                                 <div class="media">
                                                     <a href="{{route('event.create')}}">
-                                                    <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Create an Event
+                                                        <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            {{__('admin/home.create_an_event')}}
                                                         </div>
                                                     </a>
                                                 </div>
                                             </li>
                                         </ul>
                                     </li>
-                            @elseif(auth()->user()->user_type == 'supplier')
+                            @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard') <!-- dashboard (admin) is supposed to be disabled -->
                                 <li>
                                     <a class="menu-component-item" href="{{route('allEvents')}}" style="color: rgb(0, 0, 0);">{{__('website/home.events')}}</a>
                                 </li>
@@ -171,7 +171,11 @@
                                         <div class="title">
                                             <a target="_blank" href="javascript:void(0);" style="cursor: context-menu">
                                                 <h4>{{$user->name}}</h4>
-                                                <h6>{{$user->user_type}}</h6>
+                                                @if($user->user_type =='dashboard')
+                                                    <h6>Admin</h6>
+                                                @else
+                                                    <h6>{{$user->user_type}}</h6>
+                                                @endif
                                             </a>
                                         </div>
                                         <div class="social-media">

@@ -135,6 +135,9 @@ return [
                                                  au niveau de revenu de chacun, ce qui est également une fonctionnalité conviviale (clients). 
                                                  En outre, cela aide de nombreux prestataires de services (fournisseurs) à gérer leur entreprise 
                                                  de manière fluide et bien meilleure.",
+    'my_events'                              => 'Mes événements',
+    'other_events'                           => 'Autres événements',
+    'create_an_event'                        => 'Créer un événement',
 
 
 ];

@@ -49,7 +49,8 @@
                                                 <div class="media">
                                                     <a href="<?php echo e(route('myEvents')); ?>">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            My Events
+                                                            <?php echo e(__('admin/home.my_events')); ?>
+
                                                         </div>
                                                     </a>
                                                 </div>
@@ -59,7 +60,8 @@
                                                 <div class="media">
                                                     <a href="<?php echo e(route('allEvents')); ?>">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Other Events
+                                                            <?php echo e(__('admin/home.other_events')); ?>
+
                                                         </div>
                                                     </a>
                                                 </div>
@@ -67,15 +69,16 @@
                                             <li class="noti-secondary">
                                                 <div class="media">
                                                     <a href="<?php echo e(route('event.create')); ?>">
-                                                    <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Create an Event
+                                                        <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            <?php echo e(__('admin/home.create_an_event')); ?>
+
                                                         </div>
                                                     </a>
                                                 </div>
                                             </li>
                                         </ul>
                                     </li>
-                            <?php elseif(auth()->user()->user_type == 'supplier'): ?>
+                            <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?> <!-- dashboard is supposed to be disabled -->
                                 <li>
                                     <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>" style="color: rgb(0, 0, 0);"><?php echo e(__('website/home.events')); ?></a>
                                 </li>
@@ -170,7 +173,11 @@
                                         <div class="title">
                                             <a target="_blank" href="javascript:void(0);" style="cursor: context-menu">
                                                 <h4><?php echo e($user->name); ?></h4>
-                                                <h6><?php echo e($user->user_type); ?></h6>
+                                                <?php if($user->user_type =='dashboard'): ?>
+                                                    <h6>Admin</h6>
+                                                <?php else: ?>
+                                                    <h6><?php echo e($user->user_type); ?></h6>
+                                                <?php endif; ?>
                                             </a>
                                         </div>
                                         <div class="social-media">

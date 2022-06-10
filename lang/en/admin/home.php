@@ -130,5 +130,8 @@ return [
                                              need with an affordable price & also matches everyone's income level which is also a friendly 
                                              feature (customers). Also it helps many service providers (suppliers) to run their businesses 
                                              through it smoothly and much better.",
+    'my_events'                          => 'My Events',
+    'other_events'                       => 'Other Events',
+    'create_an_event'                    => 'Create an Event',
 
 ];

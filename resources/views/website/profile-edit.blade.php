@@ -51,7 +51,7 @@
                                                 <div class="media">
                                                     <a href="{{route('myEvents')}}">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            My Events
+                                                            {{__('admin/home.my_events')}}
                                                         </div>
                                                     </a>
                                                 </div>
@@ -61,7 +61,7 @@
                                                 <div class="media">
                                                     <a href="{{route('allEvents')}}">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Other Events
+                                                            {{__('admin/home.other_events')}}
                                                         </div>
                                                     </a>
                                                 </div>
@@ -69,8 +69,8 @@
                                             <li class="noti-secondary">
                                                 <div class="media">
                                                     <a href="{{route('event.create')}}">
-                                                    <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            Create an Event
+                                                        <div class="media-body" style="color: rgb(0, 0, 0);">
+                                                            {{__('admin/home.create_an_event')}}
                                                         </div>
                                                     </a>
                                                 </div>
@@ -176,8 +176,11 @@
                                                     <img class="img-70 rounded-circle" alt="Avatar {{$model->name}}" src="{{$model->photo}}" />
                                                     <div class="media-body">
                                                         <h3 class="mb-1 f-20 txt-primary">{{$model->name}}</h3>
-                                                        <p class="f-2">{{$model->user_type}}</p>
-
+                                                        @if($model->user_type =='dashboard')
+                                                            <p class="f-2">Admin</p>
+                                                        @else
+                                                            <p class="f-2">{{$model->user_type}}</>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
