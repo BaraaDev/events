@@ -229,15 +229,14 @@
                             <div class="crumina-module crumina-info-box info-box--time-line">
 
                                 <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$category->color}};"> <!-- bg-color from DB for icon -->
-                                    <img src="{{$category->icon}}"> <!--icon from DB-->
+                                    <img class="utouch-icon" src="{{$category->icon}}"> <!--icon from DB-->
                                     <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                         <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                     </svg>
                                 </div>
 
                                 <div class="info-box-content">
-                                    <h6 class="timeline-year c-secondary">{{$category->name}}</h6>
-                                    {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                    <h6 class="timeline-year c-secondary"><a href="{{route('event.category',$category->id)}}">{{$category->name}}</a> </h6>
                                     <p class="info-box-text">
                                         {!! $category->content !!}
                                     </p>
@@ -609,7 +608,7 @@
                         <div class="counter-numbers c-yellow">
                             <span>
                                 {{$no_of_customers}}
-                                <!---- from the HomeController of the main website -> 
+                                <!---- from the HomeController of the main website ->
                                                                    counting users where user_type is equal to "customer" ---->
                             </span>
                         </div>
@@ -622,7 +621,7 @@
                         <div class="counter-numbers c-yellow">
                             <span>
                                 {{$no_of_suppliers}}
-                                <!---- from the HomeController of the main website -> 
+                                <!---- from the HomeController of the main website ->
                                                                    counting users where user_type is equal to "supplier" ---->
                             </span>
                         </div>

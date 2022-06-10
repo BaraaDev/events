@@ -1,6 +1,6 @@
 <header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #F7F7F7;">
 
-     {{-- <div class="header-lines-decoration">
+     <div class="header-lines-decoration">
         <span class="bg-secondary-color"></span>
         <span class="bg-blue"></span>
         <span class="bg-blue-light"></span>
@@ -8,7 +8,7 @@
         <span class="bg-red"></span>
         <span class="bg-green"></span>
         <span class="bg-secondary-color"></span>
-    </div> --}}
+    </div>
 
     <div class="top-bar top-bar" style="background-color: rgb(0, 0, 0); font-weight:bold; color: #6987AB;">
         <div class="container">
@@ -116,7 +116,6 @@
 
                 <ul class="primary-menu-menu" style="width: 125%; padding-left:4%;">
                     <li class="menu-item-has-children">
-
                         <a href="{{route('home')}}">{{__('website/home.home')}}</a>
                     </li>
                     @auth
@@ -140,28 +139,6 @@
                         </li>
                     @endauth
 
-                        <a href="{{route('home')}}">{{__('website/home.home')}}</a></li>
-                       @if(auth()->user())
-                            @if(auth()->user()->user_type == 'customer')
-                                <li>
-                                    <a class="menu-component-item" href="javascript:void(0)">{{__('website/home.events')}}</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{{route('myEvents')}}">My Events</a></li>
-                                        <li><a href="{{route('allEvents')}}">Other Events</a></li>
-                                        <li><a href="{{route('event.create')}}">Create an Event</a></li>
-                                    </ul>
-                                </li>
-                            @else   <!---------- == 'dashboard' or == 'supplier' ---------->
-                                <li>
-                                    <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
-                                </li>
-                            @endif
-                        @endif
-
-                        {{-- <li>
-                            <a class="menu-component-item" href="{{route('allEvents')}}">{{__('website/home.events')}}</a>
-                        </li> --}}
-                    </li>
 
                     <li>
                         <a href="#suppliers-services-home-page">{{__('website/home.categories')}}</a>

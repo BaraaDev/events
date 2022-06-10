@@ -19,7 +19,14 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::paginate(12);
+        if (auth()->user())
+        {
+            $events = Event::where('user_id','!=',auth()->user()->id)->paginate(12);
+
+        } else {
+            $events = Event::paginate(12);
+        }
+
         return view('website.events.index',compact('events'));
     }
 
