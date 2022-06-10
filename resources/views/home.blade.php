@@ -132,7 +132,7 @@
                                         <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};"> <!-- bg-color from DB for icon -->
                                             <img class="utouch-icon" src="{{asset("website/$service->icon")}}"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
-                                                <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
+                                                <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
                                             </svg>
                                         </div>
                                     </a>
