@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-xl-6 box-col-12 des-xl-100">
             <div class="row">
-                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec">
+                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec" style="margin-top: 5%;">
                     <div class="card income-card">
                         <div class="card-body text-center">
                             <div class="round-box">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec">
+                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec" style="margin-top: 5%;">
                     <div class="card income-card">
                         <div class="card-body text-center">
                             <div class="round-box">
@@ -48,7 +48,7 @@
         </div>
         <div class="col-xl-6 box-col-12 des-xl-100">
             <div class="row">
-                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec">
+                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec" style="margin-top: 5%;">
                     <div class="card income-card">
                         <div class="card-body text-center">
                             <div class="round-box">
@@ -67,7 +67,7 @@
                 </div>
 
 
-                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec">
+                <div class="col-xl-6 col-md-6 col-sm-6 box-col-3 des-xl-25 rate-sec" style="margin-top: 5%;">
                     <div class="card income-card">
                         <div class="card-body text-center">
                             <div class="round-box">

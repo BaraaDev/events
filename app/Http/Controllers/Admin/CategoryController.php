@@ -28,10 +28,7 @@ class CategoryController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr)
             ->setTranslation('content', 'en', $request->content_en)
             ->setTranslation('content', 'ar', $request->content_ar)
-            ->setTranslation('content', 'fr', $request->content_fr)
-            ->setTranslation('color', 'en', $request->color_en)
-            ->setTranslation('color', 'ar', $request->color_ar)
-            ->setTranslation('color', 'fe', $request->color_fr);
+            ->setTranslation('content', 'fr', $request->content_fr);
         $categories->create_user_id = auth()->user()->id;
         $categories->save();
 
@@ -58,10 +55,7 @@ class CategoryController extends Controller
             ->setTranslation('name', 'fr', $request->name_fr)
             ->setTranslation('content', 'en', $request->content_en)
             ->setTranslation('content', 'ar', $request->content_ar)
-            ->setTranslation('content', 'fr', $request->content_fr)
-            ->setTranslation('color', 'en', $request->color_en)
-            ->setTranslation('color', 'ar', $request->color_ar)
-            ->setTranslation('color', 'fe', $request->color_fr);
+            ->setTranslation('content', 'fr', $request->content_fr);
         $categories->status         = $request->status;
         $categories->update_user_id = auth()->user()->id;
         $categories->save();

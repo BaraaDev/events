@@ -125,12 +125,12 @@
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="swiper-container pagination-bottom" data-show-items="4">
                         <div class="swiper-wrapper">
-                            @foreach($sections as $section)
+                            @foreach($services_section as $service)
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
-                                    <a href="{{route('event.category',$section->id)}}">
-                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$section->color}};"> <!-- bg-color from DB for icon -->
-                                            <img class="utouch-icon" src="{{asset("website/$section->icon")}}"> <!--icon from DB-->
+                                    <a href="{{route('event.category',$service->id)}}">
+                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};"> <!-- bg-color from DB for icon -->
+                                            <img class="utouch-icon" src="{{asset("website/$service->icon")}}"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: black;"></use>
                                             </svg>
@@ -138,8 +138,8 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary"><a href="{{route('event.category',$section->id)}}">{{$section->name}}</a> </h6>
-                                        <p class="info-box-text">{!! \Str::words($section->content,'20',' ...') !!}</p>
+                                        <h6 class="timeline-year c-secondary" style="color: {{$service->color}};"><a href="{{route('event.category',$service->id)}}">{{$service->name}}</a> </h6>
+                                        <p class="info-box-text">{!! \Str::words($service->content,'20',' ...') !!}</p>
                                     </div>
                                 </div>
                             </div>

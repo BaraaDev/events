@@ -121,7 +121,7 @@
                     <?php if(auth()->guard()->check()): ?>
                         <?php if(auth()->user()->user_type == 'customer'): ?>
                             <li>
-                                <a class="menu-component-item" href="<?php echo e(route('allEvents')); ?>"><?php echo e(__('website/home.events')); ?></a>
+                                <a class="menu-component-item" href="javascript:void(0);"><?php echo e(__('website/home.events')); ?></a>
                                 <ul class="sub-menu">
                                     <li><a href="<?php echo e(route('myEvents')); ?>">My Events</a></li>
                                     <li><a href="<?php echo e(route('allEvents')); ?>">Other Events</a></li>
@@ -140,14 +140,9 @@
                     <?php endif; ?>
 
 
-                    <li>
-                        <a href="#suppliers-services-home-page"><?php echo e(__('website/home.categories')); ?></a>
-                        
-                    </li>
+                    <li><a href="#suppliers-services-home-page"><?php echo e(__('website/home.categories')); ?></a></li>
                     <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
-
                     <li><a href="<?php echo e(route('contact-us')); ?>"><?php echo e(__('website/home.contact_us')); ?></a></li>
-
                     <?php if(!auth()->user()): ?> <!---------- = unregistered user ---------->
                         <li>
                             <a href="javascript:void(0)"><?php echo e(__('auth.register')); ?></a>
@@ -157,22 +152,21 @@
                             </ul>
                         </li>
                     <?php else: ?> <!---------- = registered user ---------->
-                        <li>
-                            <a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
-                            <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
-                                <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.admin_title')); ?></label>
-                            <?php elseif(auth()->user()->user_type == 'customer'): ?> <!---------- customer ---------->
-                                 <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.customer_title')); ?></label>
-                            <?php else: ?> <!---------- supplier ---------->
-                                 <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.supplier_title')); ?></label>
+                        <li><a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
+                        <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
+                            <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.admin_title')); ?></label>
+                        <?php elseif(auth()->user()->user_type == 'customer'): ?> <!---------- customer ---------->
+                            <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.customer_title')); ?></label>
+                        <?php else: ?> <!---------- supplier ---------->
+                            <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.supplier_title')); ?></label>
                             <?php endif; ?>
                             <ul class="sub-menu">
-                            <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier'): ?>
-                                <li><a href="<?php echo e(route('User')); ?>">Profile Management</a></li>
-                            <?php endif; ?>
-                            <?php if(auth()->user()->user_type == 'dashboard'): ?>
-                                <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
-                            <?php endif; ?>
+                                <?php if(auth()->user()->user_type == 'customer' || auth()->user()->user_type == 'supplier'): ?>
+                                    <li><a href="<?php echo e(route('User')); ?>">Profile Management</a></li>
+                                <?php endif; ?>
+                                <?php if(auth()->user()->user_type == 'dashboard'): ?>
+                                    <li><a href="<?php echo e(route('dashboard')); ?>"><?php echo e(__('admin/home.admin_dashboard_website')); ?></a></li>
+                                <?php endif; ?>
                                 <li><a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><?php echo e(__('auth.logout')); ?></a></li>
                                 <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
                                     <?php echo e(csrf_field()); ?>
@@ -209,13 +203,6 @@
                     </li>
                 </ul>
 
-                <!--------------------------------------- start search button --------------------------------------->
-
-                
-
-                
-
-                <!--------------------------------------- end search button --------------------------------------->
             </nav>
         </div>
     </div>
