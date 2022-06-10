@@ -115,7 +115,7 @@
                                 <div class="slider-content align-center">
 
                                     <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                        <span style="color: #F89522; font-size:60px;">Let us help</span></br>
+                                        <span style="color: #F89522; font-size:60px;">Let us help</span><br>
                                         <span style="color: #FFFEF7; font-size:60px;">You Create</span>
                                     </h1>
 
