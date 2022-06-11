@@ -341,10 +341,10 @@
                 <h5 class="c-white" style="font-size:200%;"><?php echo e(__('admin/home.what_s')); ?> GDP<?php echo e(__('admin/home.question_mark')); ?></h5>
                 <p class="c-semitransparent-white" style="font-weight:bold;">
                     <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
-                <hr>
-                <span style="color:rgb(208, 208, 208);"><?php echo e(__('admin/home.middle_section')); ?></span>
-                <hr>
-                "<?php echo e(__('admin/home.middle_section_content')); ?>"
+                    <hr>
+                        <span style="color:rgb(208, 208, 208);"><?php echo e(__('admin/home.middle_section')); ?></span>
+                    <hr>
+                        <span style="color: rgb(150, 150, 150);">"<?php echo e(__('admin/home.middle_section_content')); ?>"</span>
                     </em>
                 </p>
             </div>
