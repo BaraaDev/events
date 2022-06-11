@@ -89,7 +89,7 @@
                         @endauth
                     </li>
 
-                    <li><a href="#suppliers-services-home-page" style="color: rgb(0, 0, 0);">{{__('website/home.categories')}}</a></li>
+                    <li><a href="https://events.dev/en#suppliers-services-home-page" style="color: rgb(0, 0, 0);">{{__('website/home.categories')}}</a></li>
                     
                     <li><a href="{{route('about-us')}}" style="color: rgb(0, 0, 0);">{{__('website/home.about_us')}}</a></li>
                     
