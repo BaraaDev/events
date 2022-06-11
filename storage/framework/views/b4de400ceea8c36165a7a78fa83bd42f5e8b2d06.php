@@ -1,14 +1,16 @@
 <header class="header header--menu-rounded header--blue-lighteen" id="site-header" style="background-color: #F7F7F7;">
 
      <div class="header-lines-decoration">
-        <span class="bg-secondary-color"></span>
-        <span class="bg-blue"></span>
-        <span class="bg-blue-light"></span>
-        <span class="bg-orange-light"></span>
-        <span class="bg-red"></span>
-        <span class="bg-green"></span>
-        <span class="bg-secondary-color"></span>
+        <span style="background-color: #6987AB;"></span>
+        <span style="background-color: #6987AB;"></span>
+        <span style="background-color: #6987AB;"></span>
+        <span style="background-color: #6987AB;"></span>
+        <span style="background-color: #6987AB;"></span>
+        <span style="background-color: #6987AB;"></span>
+        <span style="background-color: #6987AB;"></span>
     </div>
+
+    
 
     <div class="top-bar top-bar" style="background-color: rgb(0, 0, 0); font-weight:bold; color: #6987AB;">
         <div class="container">

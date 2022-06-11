@@ -398,6 +398,17 @@
 
     <!-- Testimonials -->
     <section class="crumina-module crumina-module-slider bg-4 cloud-center navigation-center-both-sides medium-padding100">
+
+        <div class="header-lines-decoration">
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+        </div>
+
     <div class="container">
 
         <div style="text-align:center; padding-bottom:1%;">

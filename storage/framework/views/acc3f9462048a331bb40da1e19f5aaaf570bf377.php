@@ -38,4 +38,4 @@
         </nav>
     </div>
 </div>
-<?php /**PATH E:\laragon\www\event\resources\views/vendor/pagination/bootstrap-4.blade.php ENDPATH**/ ?>
+<?php /**PATH E:\laragon\www\events\resources\views/vendor/pagination/bootstrap-4.blade.php ENDPATH**/ ?>

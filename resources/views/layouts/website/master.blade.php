@@ -23,7 +23,7 @@
     @yield('content')
     <!-- Footer -->
     <footer class="footer" id="site-footer">
-        <div class="header-lines-decoration">
+        {{-- <div class="header-lines-decoration">
             <span class="bg-secondary-color"></span>
             <span class="bg-blue"></span>
             <span class="bg-blue-light"></span>
@@ -31,6 +31,16 @@
             <span class="bg-red"></span>
             <span class="bg-green"></span>
             <span class="bg-secondary-color"></span>
+        </div> --}}
+
+        <div class="header-lines-decoration">
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
         </div>
 
         <div class="container">

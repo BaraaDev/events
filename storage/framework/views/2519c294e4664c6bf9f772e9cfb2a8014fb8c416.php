@@ -51,8 +51,8 @@
                                                 <span style=" color: #FFFEF7; font-size:20px;">Planning a Wedding, Proposal, or Event in our busy city is not easy, and it takes skills "and time" to make it all look easy-going</span>
                                             </h6>
 
-                                            <div class="" data-swiper-parallax="-300">
-                                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#suppliers-services-home-page" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+                                                <a href="#suppliers-services-home-page" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;" onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'">
                                                     Check our categories
                                                 </a>
                                             </div>
@@ -398,6 +398,17 @@
 
     <!-- Testimonials -->
     <section class="crumina-module crumina-module-slider bg-4 cloud-center navigation-center-both-sides medium-padding100">
+
+        <div class="header-lines-decoration">
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+        </div>
+
     <div class="container">
 
         <div style="text-align:center; padding-bottom:1%;">

@@ -23,14 +23,16 @@
     <?php echo $__env->yieldContent('content'); ?>
     <!-- Footer -->
     <footer class="footer" id="site-footer">
+        
+
         <div class="header-lines-decoration">
-            <span class="bg-secondary-color"></span>
-            <span class="bg-blue"></span>
-            <span class="bg-blue-light"></span>
-            <span class="bg-orange-light"></span>
-            <span class="bg-red"></span>
-            <span class="bg-green"></span>
-            <span class="bg-secondary-color"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
+            <span style="background-color: #6987AB;"></span>
         </div>
 
         <div class="container">
@@ -178,15 +180,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('4yntMjL')) {
-    $componentId = $_instance->getRenderedChildComponentId('4yntMjL');
-    $componentTag = $_instance->getRenderedChildComponentTagName('4yntMjL');
+} elseif ($_instance->childHasBeenRendered('cOmOoGM')) {
+    $componentId = $_instance->getRenderedChildComponentId('cOmOoGM');
+    $componentTag = $_instance->getRenderedChildComponentTagName('cOmOoGM');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('4yntMjL');
+    $_instance->preserveRenderedChild('cOmOoGM');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('4yntMjL', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('cOmOoGM', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
