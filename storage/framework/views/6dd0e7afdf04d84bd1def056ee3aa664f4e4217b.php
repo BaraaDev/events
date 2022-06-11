@@ -157,11 +157,14 @@
 
                         <span>Developed by
                             <a href="javascript:void(0)" style="color: red; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'">Kareem</a>,
-                            <a href="javascript:void(0)" style="color: #0083FF; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'">Mustafa</a>,
+                            <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'">Mustafa</a>,
                             <a href="javascript:void(0)" style="color: orange; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'">Rawan</a>,
                             <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'">Aseel</a> &
-                            <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">Sara</a>
+                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">Sara</a>
                         </span>
+                        <div style="background-color: #d3dae2; width: 12%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; border-radius:6px; font-weight: bold;">
+                            <a href="https://events.dev/about-us#meet-our-team-about-us-page">Meet Our Team!</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,15 +183,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('cOmOoGM')) {
-    $componentId = $_instance->getRenderedChildComponentId('cOmOoGM');
-    $componentTag = $_instance->getRenderedChildComponentTagName('cOmOoGM');
+} elseif ($_instance->childHasBeenRendered('ogKglOL')) {
+    $componentId = $_instance->getRenderedChildComponentId('ogKglOL');
+    $componentTag = $_instance->getRenderedChildComponentTagName('ogKglOL');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('cOmOoGM');
+    $_instance->preserveRenderedChild('ogKglOL');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('cOmOoGM', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('ogKglOL', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

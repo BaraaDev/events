@@ -142,7 +142,7 @@
                     @endauth
 
 
-                    <li><a href="#suppliers-services-home-page">{{__('website/home.categories')}}</a></li>
+                    <li><a href="https://events.dev/en#suppliers-services-home-page">{{__('website/home.categories')}}</a></li>
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
                     <li><a href="{{route('contact-us')}}">{{__('website/home.contact_us')}}</a></li>
                     @if(!auth()->user()) <!---------- = unregistered user ---------->
