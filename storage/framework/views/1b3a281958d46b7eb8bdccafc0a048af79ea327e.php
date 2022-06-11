@@ -160,7 +160,7 @@ unset($__errorArgs, $__bag); ?>
 </div>
 
 <div class="form-group row">
-    <label class="form-label col-lg-3">Icon's Background Color<span class="text-danger">*</span></label>
+    <label class="form-label col-lg-3">Icon's Text & Background Color<span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <select class="form-control <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -172,13 +172,13 @@ endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="color"><?php echo e(Request::old('color') ? Request::old('color') : $model->color); ?>
 
             <option><?php echo e(__('admin/home.select')); ?></option>
-            <option value="red">red</option>
-            <option value="blue">blue</option>
-            <option value="cyan">cyan</option>
-            <option value="green">green</option>
-            <option value="orange">orange</option>
-            <option value="brown">brown</option>
-            <option value="grey">grey</option>
+            <option <?php echo e(isset($model) && $model->color == 'red' ? 'selected' : ''); ?> value="red">red</option>
+            <option <?php echo e(isset($model) && $model->color == 'blue' ? 'selected' : ''); ?> value="blue">blue</option>
+            <option <?php echo e(isset($model) && $model->color == 'cyan' ? 'selected' : ''); ?> value="cyan">cyan</option>
+            <option <?php echo e(isset($model) && $model->color == 'green' ? 'selected' : ''); ?> value="green">green</option>
+            <option <?php echo e(isset($model) && $model->color == 'orange' ? 'selected' : ''); ?> value="orange">orange</option>
+            <option <?php echo e(isset($model) && $model->color == 'brown' ? 'selected' : ''); ?> value="brown">brown</option>
+            <option <?php echo e(isset($model) && $model->color == 'grey' ? 'selected' : ''); ?> value="grey">grey</option>
         </select>
         <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -239,8 +239,8 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>">
             <option><?php echo e(__('admin/home.select')); ?></option>
-            <option value="1" <?php echo e(isset($model) && $model->status == 1 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.available_category')); ?></option>
-            <option value="0" <?php echo e(isset($model) && $model->status == 0 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.unavailable_category')); ?></option>
+            <option value="1" <?php echo e(isset($model) && $model->status == 1 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.available_title')); ?></option>
+            <option value="0" <?php echo e(isset($model) && $model->status == 0 ? 'selected'  : ''); ?>><?php echo e(__('admin/home.unavailable_title')); ?></option>
         </select>
         <?php $__errorArgs = ['status'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');

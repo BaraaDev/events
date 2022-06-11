@@ -80,13 +80,13 @@
     <div class="col-lg-9">
         <select class="form-control @error('color') is-invalid @enderror" type="text" name="color">{{Request::old('color') ? Request::old('color') : $model->color}}
             <option>{{__('admin/home.select')}}</option>
-            <option value="red">red</option>
-            <option value="blue">blue</option>
-            <option value="cyan">cyan</option>
-            <option value="green">green</option>
-            <option value="orange">orange</option>
-            <option value="brown">brown</option>
-            <option value="grey">grey</option>
+            <option {{ isset($model) && $model->color == 'red' ? 'selected' : '' }} value="red">red</option>
+            <option {{ isset($model) && $model->color == 'blue' ? 'selected' : '' }} value="blue">blue</option>
+            <option {{ isset($model) && $model->color == 'cyan' ? 'selected' : '' }} value="cyan">cyan</option>
+            <option {{ isset($model) && $model->color == 'green' ? 'selected' : '' }} value="green">green</option>
+            <option {{ isset($model) && $model->color == 'orange' ? 'selected' : '' }} value="orange">orange</option>
+            <option {{ isset($model) && $model->color == 'brown' ? 'selected' : '' }} value="brown">brown</option>
+            <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">grey</option>
         </select>
         @error('color')
         <span class="invalid-feedback" role="alert">

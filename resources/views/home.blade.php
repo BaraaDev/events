@@ -52,7 +52,7 @@
                                             </h6>
 
                                             <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="{{route('allContributions')}}" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                                <a href="#suppliers-services-home-page" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;" onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'">
                                                     Check our categories
                                                 </a>
                                             </div>

@@ -51,8 +51,8 @@
                                                 <span style=" color: #FFFEF7; font-size:20px;">Planning a Wedding, Proposal, or Event in our busy city is not easy, and it takes skills "and time" to make it all look easy-going</span>
                                             </h6>
 
-                                            <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="<?php echo e(route('allContributions')); ?>" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
+                                            <div class="" data-swiper-parallax="-300">
+                                                <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#suppliers-services-home-page" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">
                                                     Check our categories
                                                 </a>
                                             </div>
