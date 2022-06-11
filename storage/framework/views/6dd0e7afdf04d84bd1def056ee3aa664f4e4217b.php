@@ -162,8 +162,9 @@
                             <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'">Aseel</a> &
                             <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">Sara</a>
                         </span>
-                        <div style="background-color: #d3dae2; width: 12%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; border-radius:6px; font-weight: bold;">
-                            <a href="https://events.dev/about-us#meet-our-team-about-us-page">Meet Our Team!</a>
+                        <div style="background-color: #d3dae2; width: 12%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; 
+                                    border-radius:6px; font-weight: bold;" onmouseover="this.style.backgroundColor='#c4c9cf'" onmouseout="this.style.backgroundColor='#d3dae2'">
+                            <a href="https://events.dev/about-us#meet-our-team-about-us-page" style="color: #6987AB;">Meet Our Team!</a>
                         </div>
                     </div>
                 </div>
@@ -183,15 +184,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('ogKglOL')) {
-    $componentId = $_instance->getRenderedChildComponentId('ogKglOL');
-    $componentTag = $_instance->getRenderedChildComponentTagName('ogKglOL');
+} elseif ($_instance->childHasBeenRendered('zokGCx9')) {
+    $componentId = $_instance->getRenderedChildComponentId('zokGCx9');
+    $componentTag = $_instance->getRenderedChildComponentTagName('zokGCx9');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('ogKglOL');
+    $_instance->preserveRenderedChild('zokGCx9');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('ogKglOL', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('zokGCx9', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
