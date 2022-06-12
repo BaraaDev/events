@@ -10,7 +10,7 @@
 
     <!-- Start Main Slider -->
     <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/catering-2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/catering-2.jpg')); ?>); background-repeat: no-repeat; background-size: cover;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide main-slider-bg-light">
                     <div class="container table">
@@ -138,7 +138,6 @@
                             <h4 class="heading-title">Services Categories</h4>
                             <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now!</h5>
                                 <span>
-                                    
                                     <a href="<?php echo e(route('register')); ?>" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor='rgb(246, 208, 193)'" style="background-color: rgb(246, 208, 193);">
                                         Sign Up!
                                     </a>
