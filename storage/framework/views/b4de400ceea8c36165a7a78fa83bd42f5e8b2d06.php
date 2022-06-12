@@ -58,6 +58,7 @@
             </div>
 
             <div class="follow_us">
+                <span style="position: relative; right: 15%;"><a href="<?php echo e(route('faq')); ?>" style="color: snow;"><?php echo e(__('admin/home.faq')); ?></a></span>
                 <span><?php echo e(__('website/home.follow_us')); ?>:</span>
                 <div class="socials">
 

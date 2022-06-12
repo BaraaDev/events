@@ -76,8 +76,8 @@
                         </li>
                         <li>
                             In the bottom navigator of the website (the footer), you will also see some contact info of the website 
-                            and you can also click on the button that says "SEND A MESSAGE" to send E-mails to the admins without 
-                            going to the "Contact Us" page.
+                            and you can also click on the button that says "SEND A MESSAGE". After clicking on the button, 
+                            complete the form then press "SEND" to send E-mails to the admins without even going to the "Contact Us" page.
                         </li>
                     </ul>
                 </p>

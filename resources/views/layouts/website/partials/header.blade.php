@@ -58,6 +58,7 @@
             </div>
 
             <div class="follow_us">
+                <span style="position: relative; right: 15%;"><a href="{{route('faq')}}" style="color: snow;">{{__('admin/home.faq')}}</a></span>
                 <span>{{__('website/home.follow_us')}}:</span>
                 <div class="socials">
 
