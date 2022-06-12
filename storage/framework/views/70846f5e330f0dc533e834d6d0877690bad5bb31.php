@@ -11,7 +11,7 @@
             <h1><?php echo e(__('admin/home.faq')); ?></h1>
         </div>
   
-        <div class="faq-container">
+        <div class="faq-container" style="margin-bottom: 3%;">
 
             <div class="faq" style="border-radius: 35px;">
                 <h5 class="faq-title">How GDP works in general? (<u>Guidelines by steps</u>)</h5>
@@ -31,10 +31,11 @@
                             Wait until any Supplier(s) contact you in the requested event that you made already. Each Supplier
                             will enter your requested event, and will provide an offer with a suitable price for them and also
                             based on your input budget (when you entered event details including the budget), then 
-                            you will be able to purchase the service based on the Supplier's provided offer/budget <b><u>or</u></b> 
-                            you can still negotiate with the Supplier before accepting the budget in order to change the 
-                            price to meet your availabe budget too as well until both of you and the supplier are okay with 
-                            the deal then you are ready to pay (with PayPal). 
+                            you will be able to purchase the service based on the Supplier's provided offer/budget <b><u>OR</u></b> 
+                            you can still negotiate with the Supplier(s) (within the requested event in the reply section) 
+                            before accepting the budget they provided, in order to change the price to meet your availabe budget 
+                            too as well until both sides (you and the supplier you chose) are okay with the deal then you are ready 
+                            to pay (with PayPal). 
                         </li>
                     </ul>
                 </p>
@@ -54,11 +55,42 @@
                     <i class="fas fa-times"></i>
                 </button>
             </div>
+
+            <div class="faq" style="border-radius: 35px;">
+                <h5 class="faq-title">
+                    What happens if something wrong happened in my account, if the server went down or the website is in maintenance?
+                </h5>
+                <p class="faq-text">
+                    <span style="font-weight: bold;"><u>You can try any of the following methods down below:</u></span>
+                    <ul class="faq-text" style="list-style-type: square; padding-left: 2%;">
+                        <li>
+                            You can contact the admins of the website, you can get their details from "About Us" page in the website.
+                        </li>
+                        <li>
+                            You can also use the "Contact Us" page from the website to send E-mails to the admins 
+                            about a specific issue or problem that you already facing or if you want to ask about any question.
+                        </li>
+                        <li>
+                            In the top navigator over the header of the website, you will see some basic details about the website
+                            for contact info.
+                        </li>
+                        <li>
+                            In the bottom navigator of the website (the footer), you will also see some contact info of the website 
+                            and you can also click on the button that says "SEND A MESSAGE" to send E-mails to the admins without 
+                            going to the "Contact Us" page.
+                        </li>
+                    </ul>
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
     
             <div class="faq" style="border-radius: 35px;">
                 <h5 class="faq-title">What benefits do you get from GDP?</h5>
                 <p class="faq-text">
-                    Depends on who are your asking
+                    xxxxxxxxxxxxxxxxxxxxxxxx
                 </p>
                 <button class="faq-toggle">
                     <i class="fas fa-chevron-down"></i>
@@ -88,9 +120,10 @@ h1 {
 
 .faq {
     background-color: rgb(202, 202, 203);
-    border: 1px solid #c1c4c7;
+    /* border: 1px solid #c1c4c7; */
+    border: 2px solid #000000;
     margin: 20px 0;
-    padding: 30px;
+    padding: 25px;
     position: relative;
     overflow: hidden;
     transition: 0.3s ease;
