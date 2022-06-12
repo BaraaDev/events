@@ -18,7 +18,7 @@
                 <p class="faq-text">
                     <ul class="faq-text" style="list-style-type: upper-latin; padding-left: 2%;">
                         <li>
-                            You won't be allowed to purchase any service in the website unless, you 
+                            You won't be allowed to request an event (to purchase any service) in the website unless you 
                             <a href="{{route('register')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Sign Up</a> first (as a Customer).
                         </li>
                         <hr>

@@ -18,7 +18,7 @@
                 <p class="faq-text">
                     <ul class="faq-text" style="list-style-type: upper-latin; padding-left: 2%;">
                         <li>
-                            You won't be allowed to purchase any service in the website unless, you 
+                            You won't be allowed to request an event (to purchase any service) in the website unless you 
                             <a href="<?php echo e(route('register')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">Sign Up</a> first (as a Customer).
                         </li>
                         <hr>
@@ -88,9 +88,13 @@
             </div>
     
             <div class="faq" style="border-radius: 35px;">
-                <h5 class="faq-title">What benefits do you get from GDP?</h5>
+                <h5 class="faq-title">What is the advantages you get from GDP?</h5>
                 <p class="faq-text">
-                    xxxxxxxxxxxxxxxxxxxxxxxx
+                    When you request an event, many of our Suppliers will try to reach & contact you in the requested event
+                    to complete the payment process. So, in fact suppliers need to sell and customers want to buy 
+                    then it's 2 way advantage. From you perspective as a Customer it's much easier for you to open 
+                    the website and surf it to find a suitable service you need and pay for it online from your own place 
+                    without spending any time or effort trying to find it.
                 </p>
                 <button class="faq-toggle">
                     <i class="fas fa-chevron-down"></i>
