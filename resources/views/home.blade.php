@@ -138,7 +138,10 @@
                             <h4 class="heading-title">Services Categories</h4>
                             <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now!</h5>
                                 <span>
-                                    <a href="{{route('register')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
+                                    {{-- <a href="{{route('register')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
+                                        Sign Up!
+                                    </a> --}}
+                                    <a href="{{route('register')}}" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor='rgb(246, 208, 193)'" style="background-color: rgb(246, 208, 193);">
                                         Sign Up!
                                     </a>
                                 </span>
