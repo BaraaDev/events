@@ -27,7 +27,7 @@
 
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
                                         <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;"><?php echo e(__('admin/home.home_page_learn-more')); ?></a>
-                                        <a href="<?php echo e(route('allContributions')); ?>" class="contribution-button btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">Contributions</a>
+                                        <a href="<?php echo e(route('allContributions')); ?>" class="contribution-button btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;"><?php echo e(__('website/home.contributions')); ?></a>
                                     </div>
                                 </div>
                             </div>
@@ -133,6 +133,15 @@
                             <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?>
                                 <h4 class="heading-title">Services Categories</h4>
                             <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if(auth()->guard()->guest()): ?>
+                            <h4 class="heading-title">Services Categories</h4>
+                            <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now!</h5>
+                                <span>
+                                    <a href="<?php echo e(route('register')); ?>" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
+                                        Sign Up!
+                                    </a>
+                                </span>
                         <?php endif; ?>
                     </div>
                 </div>

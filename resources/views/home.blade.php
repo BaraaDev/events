@@ -27,7 +27,7 @@
 
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
                                         <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">{{__('admin/home.home_page_learn-more')}}</a>
-                                        <a href="{{route('allContributions')}}" class="contribution-button btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">Contributions</a>
+                                        <a href="{{route('allContributions')}}" class="contribution-button btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">{{__('website/home.contributions')}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,6 +134,15 @@
                                 <h4 class="heading-title">Services Categories</h4>
                             @endif
                         @endauth
+                        @guest
+                            <h4 class="heading-title">Services Categories</h4>
+                            <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now!</h5>
+                                <span>
+                                    <a href="{{route('register')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
+                                        Sign Up!
+                                    </a>
+                                </span>
+                        @endguest
                     </div>
                 </div>
 
