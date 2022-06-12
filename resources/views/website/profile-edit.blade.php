@@ -70,7 +70,7 @@
                                                 <div class="media">
                                                     <a href="{{route('event.create')}}">
                                                         <div class="media-body" style="color: rgb(0, 0, 0);">
-                                                            {{__('admin/home.create_an_event')}}
+                                                            {{__('admin/home.request_an_event')}}
                                                         </div>
                                                     </a>
                                                 </div>

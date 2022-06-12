@@ -142,7 +142,7 @@ return [
                                                  de manière fluide et bien meilleure.",
     'my_events'                              => 'Mes événements',
     'other_events'                           => 'Autres événements',
-    'create_an_event'                        => 'Créer un événement',
+    'request_an_event'                       => 'Demander un événement',
     'profile'                                => 'Profil',
     'edit_profile'                           => 'Editer le profil',
 

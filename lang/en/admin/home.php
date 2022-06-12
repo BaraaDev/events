@@ -137,7 +137,7 @@ return [
                                              through it smoothly and much better.",
     'my_events'                          => 'My Events',
     'other_events'                       => 'Other Events',
-    'create_an_event'                    => 'Create an Event',
+    'request_an_event'                   => 'Request an Event',
     'profile'                            => 'Profile',
     'edit_profile'                       => 'Edit Profile',
 

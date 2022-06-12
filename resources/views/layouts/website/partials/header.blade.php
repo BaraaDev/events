@@ -127,7 +127,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="{{route('myEvents')}}">{{__('admin/home.my_events')}}</a></li>
                                     <li><a href="{{route('allEvents')}}">{{__('admin/home.other_events')}}</a></li>
-                                    <li><a href="{{route('event.create')}}">{{__('admin/home.create_an_event')}}</a></li>
+                                    <li><a href="{{route('event.create')}}">{{__('admin/home.request_an_event')}}</a></li>
                                 </ul>
                             </li>
                         @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard')
