@@ -6,125 +6,179 @@
     <div class="content-wrapper">
 
         <!-- start FAQ -->
+
         <div class="card-header" style="text-align: center; width: 79%; padding:0.25%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:3%; margin-top:5%; margin-left:auto; margin-right:auto;">
             <h1>{{__('admin/home.faq')}}</h1>
         </div>
-        <section class="faq-container">
-            <div class="faq-one">
-                <!-- faq question -->
-                <h4 class="faq-page">What is an FAQ Page?</h4>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
-                </div>
+  
+        <div class="faq-container">
+
+            <div class="faq" style="border-radius: 35px;">
+                <h5 class="faq-title">How GDP works in general? (<u>Guidelines by steps</u>)</h5>
+                <p class="faq-text">
+                    <ul class="faq-text" style="list-style-type: upper-latin; padding-left: 2%;">
+                        <li>
+                            You won't be allowed to purchase any service in the website unless, you 
+                            <a href="{{route('register')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Sign Up</a> first (as a Customer).
+                        </li>
+                        <hr>
+                        <li>
+                            After Signing Up, the website will automatically login you in to your account. 
+                            Then you have to make an event request with the event details you need then submit the request.
+                        </li>
+                        <hr>
+                        <li>
+                            Wait until any Supplier(s) contact you in the requested event that you made already. Each Supplier
+                            will enter your requested event, and will provide an offer with a suitable price for them and also
+                            based on your input budget (when you entered event details including the budget), then 
+                            you will be able to purchase the service based on the Supplier's provided offer/budget <b><u>OR</u></b> 
+                            you can still negotiate with the Supplier(s) (within the requested event in the reply section) 
+                            before accepting the budget they provided, in order to change the price to meet your availabe budget 
+                            too as well until both sides (you and the supplier you chose) are okay with the deal then you are ready 
+                            to pay (with PayPal). 
+                        </li>
+                    </ul>
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <hr class="hr-line">
-            <div class="faq-two">
-                <!-- faq question -->
-                <h4 class="faq-page">Why do you need an FAQ page?</h4>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
-                </div>
+
+            <div class="faq" style="border-radius: 35px;">
+                <h5 class="faq-title">How do i pay the services (from the requested event) that i need?</h5>
+                <p class="faq-text">
+                    You need to have a "PayPal" account to pay through the website.
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-            <hr class="hr-line">
-            <div class="faq-three">
-                <!-- faq question -->
-                <h4 class="faq-page">Does it improves the user experience of a website?</h4>
-                <!-- faq answer -->
-                <div class="faq-body">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
-                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
-                        aperiam.
-                        Perspiciatis, porro!</p>
-                </div>
+    
+            <div class="faq" style="border-radius: 35px;">
+                <h5 class="faq-title">What benefits do you get from GDP?</h5>
+                <p class="faq-text">
+                    Depends on who are your asking
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
-        </section>
+
+        </div>
+        <!-- end FAQ -->
 
         <style>
-            .faq-heading{
-    border-bottom: #777;
-    padding: 20px 60px;
+            @import url('https://fonts.googleapis.com//css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
 }
-.faq-container{
-display: flex;
-justify-content: center;
-flex-direction: column;
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
 }
-.hr-line{
-  width: 90%;
-  margin: auto;
-  
+
+.faq-container {
+    max-width: 70%;
+    margin: 0 auto;
 }
-/* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-    /* background-color: #eee; */
-    color: #444;
-    cursor: pointer;
-    padding: 30px 20px;
-    width: 90%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin: auto;
-}
-.faq-body{
-    margin: auto;
-    /* text-align: center; */
-   width: 50%; 
-   padding: auto;
-   
-}
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.faq-page:hover {
-    background-color: #F9F9F9;
-}
-/* Style the faq-page panel. Note: hidden by default */
-.faq-body {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+
+.faq {
+    background-color: rgb(202, 202, 203);
+    border: 1px solid #c1c4c7;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
     overflow: hidden;
+    transition: 0.3s ease;
 }
-.faq-page:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
+
+.faq.active {
+    background-color: rgb(232, 230, 234);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 }
-.active:after {
-    content: "\2796";
+
+.faq.active::before,
+.faq.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0 ;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    color: #222;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
 }
         </style>
 
-        <script>
-            var faq = document.querySelector(".faq-page");
-    var i;
-    for (i = 0; i < faq.length; i++) {
-        faq[i].addEventListener("click", function () {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-            /* Toggle between hiding and showing the active panel */
-            var body = this.nextElementSibling;
-            if (body.style.display === "block") {
-                body.style.display = "none";
-            } else {
-                body.style.display = "block";
-            }
-        });
-    }
-        </script>
-        <!-- end FAQ -->
+<script>
+    const toggles = document.querySelectorAll('.faq-toggle');
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active');
+    });
+});
+</script>
 
     </div>
 @endsection
