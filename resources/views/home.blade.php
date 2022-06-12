@@ -124,7 +124,7 @@
                     <div class="crumina-module crumina-heading align-center">
                         @auth
                             @if(auth()->user()->user_type == 'customer')
-                                <h4 class="heading-title">Pick the service category you need</h4>
+                                <h4 class="heading-title">Pick The Service Category You Need</h4>
                                 <span>
                                     <a href="{{route('event.create')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
                                         Request an Event now!
@@ -144,7 +144,7 @@
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
                                     <a href="{{route('event.category',$service->id)}}">
-                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};"> <!-- bg-color from DB for icon -->
+                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor=''"> <!-- bg-color from DB for icon -->
                                             <img class="utouch-icon" src="{{asset("website/$service->icon")}}"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
@@ -153,7 +153,7 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color: {{$service->color}};"><a href="{{route('event.category',$service->id)}}">{{$service->name}}</a> </h6>
+                                        <h6 class="timeline-year c-secondary" style="color: {{$service->color}};"><a href="{{route('event.category',$service->id)}}" onmouseover="this.style.color='black'" onmouseout="this.style.color=''">{{$service->name}}</a></h6>
                                         <p class="info-box-text">{!! \Str::words($service->content,'20',' ...') !!}</p>
                                     </div>
                                 </div>
