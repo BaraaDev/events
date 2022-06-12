@@ -58,8 +58,8 @@
             </div>
 
             <div class="follow_us">
-                <span style="position: relative; right: 15%;"><a href="{{route('faq')}}" style="color: snow;">{{__('admin/home.faq')}}</a></span>
-                <span>{{__('website/home.follow_us')}}:</span>
+                <span style="position: relative; right: 15%;"><a href="{{route('faq')}}" style="color: snow;"><u>{{__('admin/home.faq')}}</u></a></span>
+                <span><u>{{__('website/home.follow_us')}}:</u></span>
                 <div class="socials">
 
                     <a href="https://facebook.com/{{$setting->facebook}}" rel="nofollow" target="_blank" class="social__item">

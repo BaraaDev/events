@@ -58,8 +58,8 @@
             </div>
 
             <div class="follow_us">
-                <span style="position: relative; right: 15%;"><a href="<?php echo e(route('faq')); ?>" style="color: snow; font-weight: bold;"><?php echo e(__('admin/home.faq')); ?></a></span>
-                <span><?php echo e(__('website/home.follow_us')); ?>:</span>
+                <span style="position: relative; right: 15%;"><a href="<?php echo e(route('faq')); ?>" style="color: snow;"><u><?php echo e(__('admin/home.faq')); ?></u></a></span>
+                <span><u><?php echo e(__('website/home.follow_us')); ?>:</u></span>
                 <div class="socials">
 
                     <a href="https://facebook.com/<?php echo e($setting->facebook); ?>" rel="nofollow" target="_blank" class="social__item">
