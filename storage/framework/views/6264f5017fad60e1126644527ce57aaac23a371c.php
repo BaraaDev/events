@@ -231,7 +231,7 @@
                         </div>
 
                         <div class="col-lg-4 col-lg-offset-3 col-md-12 col-sm-12 col-sm-offset-0">
-                            <a href="#" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor=''">
+                            <a href="https://events.dev/en#suppliers-services-home-page" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor=''">
                                 All Services' Categories
                             </a>
                         </div>

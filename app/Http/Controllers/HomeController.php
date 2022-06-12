@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $no_of_customers        = User::where('user_type', '=', 'customer')->count();
         $no_of_suppliers        = User::where('user_type', '=', 'supplier')->count();
-        $services_section       = Category::status(1)->limit(10)->get();
+        $services_section       = Category::status(1)->limit(15)->get();
         return view('home', compact('no_of_customers', 'no_of_suppliers','services_section'));
     }
 

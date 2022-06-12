@@ -1,16 +1,16 @@
-@extends('layouts.website.master')
 
-@section('title')
-   - @lang('website/home.home')
-@endsection
 
-@section('content')
+<?php $__env->startSection('title'); ?>
+   - <?php echo app('translator')->get('website/home.home'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
 
 
     <!-- Start Main Slider -->
     <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/catering-2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide main-slider-bg-light">
                     <div class="container table">
@@ -18,16 +18,16 @@
                             <div class="first-main-slider-show col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12" style=" padding: 3%; padding-bottom:0.5%;">
                                 <div class="slider-content align-center">
                                     <h1 class="slider-content-title with-decoration" data-swiper-parallax="-100">
-                                        <span style="color: #F89522; font-size:50px;">{{__('admin/home.home_page_title')}}</span>
+                                        <span style="color: #F89522; font-size:50px;"><?php echo e(__('admin/home.home_page_title')); ?></span>
                                     </h1>
                                     <h6 class="slider-content-text" data-swiper-parallax="-200">
                                         <div><h5 style=" font-size:30px; font-weight: bold; color: #FFFEF7; cursor: context-menu;">Getting Day Planned (GDP)</h5></div>
-                                        <span style="color: #FFFEF7; font-size:20px;">{{__('admin/home.home_page_content')}}</span>
+                                        <span style="color: #FFFEF7; font-size:20px;"><?php echo e(__('admin/home.home_page_content')); ?></span>
                                     </h6>
 
                                     <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-                                        <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">{{__('admin/home.home_page_learn-more')}}</a>
-                                        <a onmouseover="this.style.color='#FFFEF7'" onmouseout="this.style.color='#F89522'" href="{{route('allContributions')}}" class="btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">Contributions</a>
+                                        <a onmouseover="this.style.background='#6D4A23'" onmouseout="this.style.background='#F89522'" href="#" class="btn btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;"><?php echo e(__('admin/home.home_page_learn-more')); ?></a>
+                                        <a onmouseover="this.style.color='#FFFEF7'" onmouseout="this.style.color='#F89522'" href="<?php echo e(route('allContributions')); ?>" class="btn btn-border btn--with-shadow" style="border-color:#F89522; color: #F89522; text-decoration:bold;">Contributions</a>
                                     </div>
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/friends-2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/friends-2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide main-slider-bg-light">
 
@@ -68,22 +68,22 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/sparks2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(<?php echo e(asset('website/img/sparks2.jpg')); ?>); background-repeat: no-repeat; background-size: 100% auto;">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
                             <div class="col-lg-6 col-sm-12 table-cell">
 
                                 <div class="slider-content align-both">
-                                    <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: #F89522;">{{__('admin/home.home_page_title3')}}</h2>
-                                    <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: #FFFEF7;">{{__('admin/home.home_page_content3')}}</h6>
-                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300"><a onmouseover="this.style.backgroundColor ='6D4A23'" onmouseout="this.style.backgroundColor ='F89522'" href="02_company.html" class="btn btn--lime btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;">{{__('admin/home.home_page_content3_button')}}</a></div>
+                                    <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: #F89522;"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
+                                    <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: #FFFEF7;"><?php echo e(__('admin/home.home_page_content3')); ?></h6>
+                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300"><a onmouseover="this.style.backgroundColor ='6D4A23'" onmouseout="this.style.backgroundColor ='F89522'" href="02_company.html" class="btn btn--lime btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;"><?php echo e(__('admin/home.home_page_content3_button')); ?></a></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-6 col-sm-12 table-cell">
                                 <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="200">
-                                    <img src="{{asset('website/img/events_image.png')}}" alt="slider" style="height:600px ;">
+                                    <img src="<?php echo e(asset('website/img/events_image.png')); ?>" alt="slider" style="height:600px ;">
                                 </div>
                             </div>
                         </div>
@@ -122,30 +122,30 @@
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
                     <div class="crumina-module crumina-heading align-center">
-                        @auth
-                            @if(auth()->user()->user_type == 'customer')
+                        <?php if(auth()->guard()->check()): ?>
+                            <?php if(auth()->user()->user_type == 'customer'): ?>
                                 <h4 class="heading-title">Pick the service category you need</h4>
                                 <span>
-                                    <a href="{{route('event.create')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
+                                    <a href="<?php echo e(route('event.create')); ?>" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
                                         Request an Event now!
                                     </a>
                                 </span>
-                            @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard')
+                            <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?>
                                 <h4 class="heading-title">Services' Categories</h4>
-                            @endif
-                        @endauth
+                            <?php endif; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
 
                 <div class="col-lg-12 col-sm-12 col-md-12">
                     <div class="swiper-container pagination-bottom" data-show-items="4">
                         <div class="swiper-wrapper">
-                            @foreach($services_section as $service)
+                            <?php $__currentLoopData = $services_section; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
-                                    <a href="{{route('event.category',$service->id)}}">
-                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};"> <!-- bg-color from DB for icon -->
-                                            <img class="utouch-icon" src="{{asset("website/$service->icon")}}"> <!--icon from DB-->
+                                    <a href="<?php echo e(route('event.category',$service->id)); ?>">
+                                        <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$service->color); ?>;"> <!-- bg-color from DB for icon -->
+                                            <img class="utouch-icon" src="<?php echo e(asset("website/$service->icon")); ?>"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
                                             </svg>
@@ -153,12 +153,12 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color: {{$service->color}};"><a href="{{route('event.category',$service->id)}}">{{$service->name}}</a> </h6>
-                                        <p class="info-box-text">{!! \Str::words($service->content,'20',' ...') !!}</p>
+                                        <h6 class="timeline-year c-secondary" style="color: <?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>"><?php echo e($service->name); ?></a> </h6>
+                                        <p class="info-box-text"><?php echo \Str::words($service->content,'20',' ...'); ?></p>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </div>
 
                         <!--Prev next buttons-->
@@ -200,7 +200,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/prom.jpg')}}" style="border-radius:5%;" alt="Prom Prep">
+                                    <img src="<?php echo e(asset('website/img/prom.jpg')); ?>" style="border-radius:5%;" alt="Prom Prep">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -234,7 +234,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/fireworks.jpg')}}" style="border-radius:5%;" alt="fireworks">
+                                    <img src="<?php echo e(asset('website/img/fireworks.jpg')); ?>" style="border-radius:5%;" alt="fireworks">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -268,7 +268,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="slider-tabs-vertical-thumb">
-                                    <img src="{{asset('website/img/roses.jpg')}}" style="border-radius:20px;" alt="barber">
+                                    <img src="<?php echo e(asset('website/img/roses.jpg')); ?>" style="border-radius:20px;" alt="barber">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
@@ -323,10 +323,10 @@
         <div class="row">
             <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
                 <div class="crumina-module crumina-heading">
-                    <h6 class="heading-sup-title">{{__('admin/home.how_it_works_video')}}</h6>
-                    <h2 class="heading-title">{{__('admin/home.how_it_works1')}} <span class="c-primary">GDP</span> {{__('admin/home.how_it_works2')}}</h2>
+                    <h6 class="heading-sup-title"><?php echo e(__('admin/home.how_it_works_video')); ?></h6>
+                    <h2 class="heading-title"><?php echo e(__('admin/home.how_it_works1')); ?> <span class="c-primary">GDP</span> <?php echo e(__('admin/home.how_it_works2')); ?></h2>
                     <p class="heading-text" style="font-size:110%; font-family: Arial, Helvetica, sans-serif;">
-                        {{__('admin/home.how_it_works_content')}} "<strong><u>{{__('admin/home.customer_title')}}</u></strong>" & "<strong><u>{{__('admin/home.supplier_title')}}</u></strong>").
+                        <?php echo e(__('admin/home.how_it_works_content')); ?> "<strong><u><?php echo e(__('admin/home.customer_title')); ?></u></strong>" & "<strong><u><?php echo e(__('admin/home.supplier_title')); ?></u></strong>").
                     </p>
                 </div>
             </div>
@@ -334,9 +334,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="padding-bottom:5%;">
                 <div class="crumina-module crumina-our-video">
                     <div class="video-thumb">
-                        <img src="{{asset('website/img/video-thumb.png')}}" alt="video">
+                        <img src="<?php echo e(asset('website/img/video-thumb.png')); ?>" alt="video">
                         <a href="javascript:void(0);" class="video-control js-popup-iframe">
-                            <img src="{{asset('website/img/play.png')}}" alt="play">
+                            <img src="<?php echo e(asset('website/img/play.png')); ?>" alt="play">
                         </a>
                     </div>
                 </div>
@@ -353,13 +353,13 @@
         <div class="row">
 
             <div style="text-align:center; width: 82%; margin-left: auto; margin-right: auto; padding-top:5%;">
-                <h5 class="c-white" style="font-size:200%;">{{__('admin/home.what_s')}} GDP{{__('admin/home.question_mark')}}</h5>
+                <h5 class="c-white" style="font-size:200%;"><?php echo e(__('admin/home.what_s')); ?> GDP<?php echo e(__('admin/home.question_mark')); ?></h5>
                 <p class="c-semitransparent-white" style="font-weight:bold;">
                     <em style="font-size:120%; font-family:Arial, Helvetica, sans-serif;">
                     <hr>
-                        <span style="color:rgb(208, 208, 208);">{{__('admin/home.middle_section')}}</span>
+                        <span style="color:rgb(208, 208, 208);"><?php echo e(__('admin/home.middle_section')); ?></span>
                     <hr>
-                        <span style="color: rgb(150, 150, 150);">"{{__('admin/home.middle_section_content')}}"</span>
+                        <span style="color: rgb(150, 150, 150);">"<?php echo e(__('admin/home.middle_section_content')); ?>"</span>
                     </em>
                 </p>
             </div>
@@ -369,36 +369,36 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-counter-item">
                         <div class="counter-numbers c-yellow">
-                            <span>{{$no_of_customers}}</span>
+                            <span><?php echo e($no_of_customers); ?></span>
                         </div>
-                        <h5 class="counter-title">{{__('admin/home.number_of_customers')}}</h5>
+                        <h5 class="counter-title"><?php echo e(__('admin/home.number_of_customers')); ?></h5>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-counter-item">
                         <div class="counter-numbers c-yellow">
-                            <span>{{$no_of_suppliers}}</span>
+                            <span><?php echo e($no_of_suppliers); ?></span>
                         </div>
-                        <h5 class="counter-title">{{__('admin/home.number_of_suppliers')}}</h5>
+                        <h5 class="counter-title"><?php echo e(__('admin/home.number_of_suppliers')); ?></h5>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-counter-item">
                         <div class="counter-numbers c-yellow">
-                            <span>{{\App\Models\Comment::count()}}</span>
+                            <span><?php echo e(\App\Models\Comment::count()); ?></span>
                         </div>
-                        <h5 class="counter-title">{{__('admin/home.number_of_comments')}}</h5>
+                        <h5 class="counter-title"><?php echo e(__('admin/home.number_of_comments')); ?></h5>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-counter-item">
                         <div class="counter-numbers c-yellow">
-                            <span>{{\App\Models\Event::count()}}</span>
+                            <span><?php echo e(\App\Models\Event::count()); ?></span>
                         </div>
-                        <h5 class="counter-title">{{__('admin/home.number_of_events')}}</h5>
+                        <h5 class="counter-title"><?php echo e(__('admin/home.number_of_events')); ?></h5>
                     </div>
                 </div>
 
@@ -427,7 +427,7 @@
     <div class="container">
 
         <div style="text-align:center; padding-bottom:1%;">
-            <h5 class="c-black" style="font-size:200%;"><u>{{ __('admin/home.testimonials')}}</u></h5>
+            <h5 class="c-black" style="font-size:200%;"><u><?php echo e(__('admin/home.testimonials')); ?></u></h5>
         </div>
 
         <div class="row">
@@ -438,7 +438,7 @@
                         <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                             <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                <img src="{{asset('website/img/testimonial1.png')}}" alt="testimonial">
+                                <img src="<?php echo e(asset('website/img/testimonial1.png')); ?>" alt="testimonial">
                             </div>
 
                             <span class="fa fa-star checked" style="color: orange;"></span>
@@ -465,7 +465,7 @@
                         <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                             <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                <img src="{{asset('website/img/testimonial2.png')}}" alt="avatar">
+                                <img src="<?php echo e(asset('website/img/testimonial2.png')); ?>" alt="avatar">
                             </div>
 
                             <span class="fa fa-star checked" style="color: orange;"></span>
@@ -494,7 +494,7 @@
                         <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                             <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                <img src="{{asset('website/img/testimonial3.png')}}" alt="avatar">
+                                <img src="<?php echo e(asset('website/img/testimonial3.png')); ?>" alt="avatar">
                             </div>
 
                             <span class="fa fa-star checked" style="color: orange;"></span>
@@ -519,7 +519,7 @@
                         <div class="crumina-module crumina-testimonial-item testimonial-item-author-top swiper-slide">
 
                             <div class="testimonial-img-author" data-swiper-parallax="-100">
-                                <img src="{{asset('website/img/testimonial4.png')}}" alt="avatar">
+                                <img src="<?php echo e(asset('website/img/testimonial4.png')); ?>" alt="avatar">
                             </div>
 
                             <span class="fa fa-star checked" style="color: orange;"></span>
@@ -575,13 +575,15 @@
 
 
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
-@section('script')
+<?php $__env->startSection('script'); ?>
 <!-- jQuery-scripts for Modules (Send Message) -->
-<script src="{{asset('website/modules/forms/src/js/jquery.validate.min.js')}}"></script>
-<script src="{{asset('website/modules/forms/src/js/sweetalert2.all.js')}}"></script>
-<script src="{{asset('website/modules/forms/src/js/scripts.js')}}"></script>
+<script src="<?php echo e(asset('website/modules/forms/src/js/jquery.validate.min.js')); ?>"></script>
+<script src="<?php echo e(asset('website/modules/forms/src/js/sweetalert2.all.js')); ?>"></script>
+<script src="<?php echo e(asset('website/modules/forms/src/js/scripts.js')); ?>"></script>
 <!-- /jQuery-scripts for Modules (Send Message) -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/home.blade.php ENDPATH**/ ?>
