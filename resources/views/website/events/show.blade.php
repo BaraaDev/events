@@ -67,7 +67,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                    <input required name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*5/100) );$('.gain_value').text($(this).val()- ($(this).val()*15/100) );">
+                                                    <input required name="value" placeholder="{{__('website/event.offer_value')}}" type="number" autocomplete="off" onkeyup="$('#gain_value').val($(this).val()- ($(this).val()*5/100) );$('.gain_value').text($(this).val()- ($(this).val()*5/100) );">
                                                 </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                     <input required disabled placeholder="{{__('website/event.you_will_get')}}" id="gain_value" type="number" autocomplete="off">

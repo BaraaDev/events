@@ -1,5 +1,9 @@
 
 
+<?php $__env->startSection('title'); ?>
+   - <?php echo app('translator')->get('website/home.home'); ?>
+<?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
 <div class="content-wrapper">
 

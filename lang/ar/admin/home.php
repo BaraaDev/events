@@ -120,5 +120,7 @@ return [
     'my_events'                         => 'أحداثي',
     'other_events'                      => 'أحداث أخرى',
     'create_an_event'                   => 'أنشئ حدثًا',
+    'profile'                           => 'الملف الشخصي',
+    'edit_profile'                      => 'تعديل الملف الشخصي',
 
 ];

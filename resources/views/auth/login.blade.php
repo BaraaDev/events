@@ -1,6 +1,10 @@
 @extends('layouts.website.master')
 {{-- @extends('layouts.app') --}}
 
+@section('title')
+   - @lang('admin/home.login_title')
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

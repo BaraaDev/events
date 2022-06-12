@@ -133,5 +133,7 @@ return [
     'my_events'                          => 'My Events',
     'other_events'                       => 'Other Events',
     'create_an_event'                    => 'Create an Event',
+    'profile'                            => 'Profile',
+    'edit_profile'                       => 'Edit Profile',
 
 ];

@@ -48,7 +48,9 @@ class HomeController extends Controller
     public function profile()
     {
         $user   = User::findOrFail(auth()->user()->id);
-        $events = Event::where('user_id', $user->id)->get();
+        $events = Event::where('user_id', $user->id)->get(); 
+            //for "all events" is used as ($event->column_name) in the 'index.blade.php' in the main website. 
+            //for "my events" is used as ($event->user->column_name) in the blades in the 'myEvents.blade.php' in the main website. 
         $offers = Comment::where('user_id', $user->id)->get();
 
         return view('website.profile', compact('user', 'events', 'offers'));

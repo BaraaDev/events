@@ -1,6 +1,10 @@
 
 
 
+<?php $__env->startSection('title'); ?>
+   - <?php echo app('translator')->get('admin/home.signup_title'); ?>
+<?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <div class="row justify-content-center">
