@@ -174,7 +174,7 @@
                                             <a target="_blank" href="javascript:void(0);" style="cursor: context-menu">
                                                 <h4><?php echo e($user->name); ?></h4>
                                                 <?php if($user->user_type =='dashboard'): ?>
-                                                    <h6>Admin</h6>
+                                                    <h6><?php echo e(__('admin/home.admin_title')); ?></h6>
                                                 <?php else: ?>
                                                     <h6><?php echo e($user->user_type); ?></h6>
                                                 <?php endif; ?>

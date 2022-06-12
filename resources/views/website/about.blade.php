@@ -579,7 +579,7 @@
 
         <!-- Teammembers -->
 
-        <section id="meet-our-team-about-us-page" class="medium-padding100">
+        <section id="meet--about-us-page" class="medium-padding100">
             <div class="container">
                 <div class="row">
 
@@ -610,7 +610,7 @@
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">Admin</div>
+                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
 
                                     <a href="#" class="h5 teammembers-item-name">Kareem Tarek</a>
 
@@ -656,7 +656,7 @@
 
                                 <div class="teammember-content">
 
-                                     <div class="teammembers-item-prof">Admin</div>
+                                     <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
 
                                     <a href="#" class="h5 teammembers-item-name">Rawan El-Housseiny</a>
 
@@ -704,7 +704,7 @@
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">Admin</div>
+                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
 
                                     <a href="#" class="h5 teammembers-item-name">Mustafa Hesham</a>
 
@@ -749,7 +749,7 @@
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">Admin</div>
+                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
 
                                     <a href="#" class="h5 teammembers-item-name">xyz</a>
 

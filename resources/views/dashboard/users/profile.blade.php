@@ -29,7 +29,7 @@
                                     <a target="_blank" href="">
                                         <h4 onMouseOver="this.style.color='#0083FF'" onMouseOut="this.style.color='#B4B6BB'">{{$user->name}}</h4>
                                         @if($user->user_type =='dashboard')
-                                            <h6>Admin</h6>
+                                            <h6>{{__('admin/home.admin_title')}}</h6>
                                         @else
                                             <h6>{{$user->user_type}}</h6>
                                         @endif

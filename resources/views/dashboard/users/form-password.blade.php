@@ -5,7 +5,7 @@
             <div class="media-body">
                 <h3 class="mb-1 f-20 txt-primary">{{$model->name}}</h3>
                 @if($model->user_type =='dashboard')
-                    <p class="f-12">Admin</p>
+                    <p class="f-12">{{__('admin/home.admin_title')}}</p>
                 @else
                     <p class="f-2">{{$model->user_type}}</p>
                 @endif
