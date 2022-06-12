@@ -602,7 +602,7 @@
                     <div class="teammembers-wrap" style="margin-top: 15%;">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                            <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
+                            <div class="crumina-module crumina-teammembers-item">
 
                                 <div class="teammembers-thumb">
                                     <img src="{{asset('website/img/kareem2.png')}}" alt="kareem tarek team member" width="200" style="border-radius: 50px;">
@@ -648,7 +648,7 @@
                                 </div>
                             </div>
 
-                            <div class="crumina-module crumina-teammembers-item">
+                            <div class="crumina-module crumina-teammembers-item" style="margin-top: 25%;">
 
                                 <div class="teammembers-thumb">
                                     <img src="{{asset('website/img/rawan-housseiny.jpg')}}" alt="rawan el-housseiny team member" width="200" style="border-radius: 50px;">
@@ -696,7 +696,7 @@
                         </div>
 
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
+                            <div class="crumina-module crumina-teammembers-item">
 
                                 <div class="teammembers-thumb">
                                     <img src="{{asset('website/img/mustafa.jpeg')}}" alt="mustafa hesham team member" width="200" style="border-radius: 50px;">
@@ -741,7 +741,7 @@
                                 </div>
                             </div>
 
-                            <div class="crumina-module crumina-teammembers-item">
+                            <div class="crumina-module crumina-teammembers-item" style="margin-top: 25%;">
 
                                 <div class="teammembers-thumb">
                                     <img src="{{asset('website/img/sara.jpg')}}" alt="sara tamer team member" width="200" style="border-radius: 50px;">
