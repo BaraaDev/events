@@ -131,7 +131,7 @@
                                     </a>
                                 </span>
                             @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard')
-                                <h4 class="heading-title">Services' Categories</h4>
+                                <h4 class="heading-title">Services Categories</h4>
                             @endif
                         @endauth
                     </div>
