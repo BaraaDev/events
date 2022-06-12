@@ -253,7 +253,7 @@
                                                 such as Birthday Parties, Weddings, etc.
                                             </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Service Category</span>
+                                                <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
@@ -279,7 +279,7 @@
                                                 Graduation, Friends' Parties, etc.
                                             </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Service Category</span>
+                                                <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
@@ -305,7 +305,7 @@
                                                 as well as shaving or grooming facial hair (for men) and doing other related tasks.
                                             </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Service Category</span>
+                                                <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
@@ -331,7 +331,7 @@
                                                 drums, bagpipes, horns, Dabke dancers and men carrying flaming swords.
                                             </h6>
                                             <a href="#" class="more-arrow white">
-                                                <span>View Service Category</span>
+                                                <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
                                                         <use xlink:href="#utouch-icon-arrow-right-1"></use>
