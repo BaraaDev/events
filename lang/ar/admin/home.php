@@ -85,11 +85,6 @@ return [
     'offers_made_content'               => 'إنه موجود في كل حدث في الموقع الرئيسي!',
     'show_link'                         => 'اعرض',
     //--------------------------- Main website keys & values only down below --------------------------------//
-    'kareem_tarek'                      => 'كريم طارق', //team members in about us page (admin)
-    'mustafa_hesham'                    => 'مصطفي هشام', //team members in about us page (admin)
-    'rawan_el_housseiny'                => 'روان الحسيني', //team members in about us page (admin)
-    'sara_tamer'                        => 'سارة تامر', //team members in about us page (admin)
-    'aseel_ahmed'                       => 'أسيل أحمد', //team members in about us page (admin)
     'register_new_user'                 => 'ليس لديك حساب؟',
     'login_already_existing_user'       => 'هل لديك حساب؟',
     'signup_title'                      => 'سجل',
@@ -127,5 +122,20 @@ return [
     'request_an_event'                  => 'اطلب حدث',
     'profile'                           => 'الملف الشخصي',
     'edit_profile'                      => 'تعديل الملف الشخصي',
+    'faq'                               => 'التعليمات',
+    'footer_translation'                => 'مشروع التخرج 2 (المجموعة 6) - نظام التخطيط للمناسبات',
+    'footer_translation2'                => 'طورت بواسطة',
+    'footer_translation3'               => 'التق بفريقنا!',
+    'kareem_tarek'                      => 'كريم طارق', //team members in about us page (admin)
+    'mustafa_hesham'                    => 'مصطفي هشام', //team members in about us page (admin)
+    'rawan_el_housseiny'                => 'روان الحسيني', //team members in about us page (admin)
+    'sara_tamer'                        => 'سارة تامر', //team members in about us page (admin)
+    'aseel_ahmed'                       => 'أسيل أحمد', //team members in about us page (admin)
+    'kareem'                            => 'كريم', //sub footer members' names of the team
+    'mustafa'                           => 'مصطفي', //sub footer members' names of the team
+    'rawan'                             => 'روان', //sub footer members' names of the team
+    'sara'                              => 'سارة', //sub footer members' names of the team
+    'aseel'                             => 'أسيل', //sub footer members' names of the team
+    '&'                                 => 'و',
 
 ];

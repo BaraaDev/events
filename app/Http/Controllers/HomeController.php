@@ -36,8 +36,13 @@ class HomeController extends Controller
     }
 
     public function contact()
-    {
+    {        
         return view('website.contact');
+    }
+
+    public function faq()
+    {        
+        return view('website.faq');
     }
 
     public function allCategories()

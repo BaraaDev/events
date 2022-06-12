@@ -90,11 +90,6 @@ return [
     'offers_made_content'                => "It's located in each event in the main website!",
     'show_link'                          => 'Show',
     //--------------------------- Main website keys & values only down below --------------------------------//
-    'kareem_tarek'                       => 'Kareem Tarek', //team members in about us page (admin)
-    'mustafa_hesham'                     => 'Mustafa Hesham', //team members in about us page (admin)
-    'rawan_el_housseiny'                 => 'Rawan El-Housseiny', //team members in about us page (admin)
-    'sara_tamer'                         => 'Sara Tamer', //team members in about us page (admin)
-    'aseel_ahmed'                        => 'Aseel Ahmed', //team members in about us page (admin)
     'register_new_user'                  => "Don't have an account?",
     'login_already_existing_user'        => 'Already have an account?',
     'signup_title'                       => 'Sign Up',
@@ -140,5 +135,20 @@ return [
     'request_an_event'                   => 'Request an Event',
     'profile'                            => 'Profile',
     'edit_profile'                       => 'Edit Profile',
+    'faq'                                => 'FAQ',
+    'footer_translation'                 => 'Graduation Project 2 (Group 6) - Event Planning System',
+    'footer_translation2'                 => 'Developed by',
+    'footer_translation3'                => 'Meet Our Team!',
+    'kareem_tarek'                       => 'Kareem Tarek', //team members in about us page (admin)
+    'mustafa_hesham'                     => 'Mustafa Hesham', //team members in about us page (admin)
+    'rawan_el_housseiny'                 => 'Rawan El-Housseiny', //team members in about us page (admin)
+    'sara_tamer'                         => 'Sara Tamer', //team members in about us page (admin)
+    'aseel_ahmed'                        => 'Aseel Ahmed', //team members in about us page (admin)
+    'kareem'                             => 'Kareem', //sub footer members' names of the team
+    'mustafa'                            => 'Mustafa', //sub footer members' names of the team
+    'rawan'                              => 'Rawan', //sub footer members' names of the team
+    'sara'                               => 'Sara', //sub footer members' names of the team
+    'aseel'                              => 'Aseel', //sub footer members' names of the team
+    '&'                                  => '&',
 
 ];

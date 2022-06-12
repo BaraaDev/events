@@ -78,19 +78,25 @@
                                     <use xlink:href="#utouch-icon-arrow-right"></use>
                                 </svg>
                             </li>
+                            <li>
+                                <a href="<?php echo e(route('faq')); ?>"><?php echo e(__('admin/home.faq')); ?></a>
+                                <svg class="utouch-icon utouch-icon-arrow-right">
+                                    <use xlink:href="#utouch-icon-arrow-right"></use>
+                                </svg>
+                            </li>
                             <?php if(auth()->guard()->guest()): ?>
-                            <li>
-                                <a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a>
-                                <svg class="utouch-icon utouch-icon-arrow-right">
-                                    <use xlink:href="#utouch-icon-arrow-right"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <a href="<?php echo e(route('register')); ?>"><?php echo e(__('auth.register')); ?></a>
-                                <svg class="utouch-icon utouch-icon-arrow-right">
-                                    <use xlink:href="#utouch-icon-arrow-right"></use>
-                                </svg>
-                            </li>
+                                <li>
+                                    <a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a>
+                                    <svg class="utouch-icon utouch-icon-arrow-right">
+                                        <use xlink:href="#utouch-icon-arrow-right"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <a href="<?php echo e(route('register')); ?>"><?php echo e(__('auth.register')); ?></a>
+                                    <svg class="utouch-icon utouch-icon-arrow-right">
+                                        <use xlink:href="#utouch-icon-arrow-right"></use>
+                                    </svg>
+                                </li>
                             <?php endif; ?>
                         </ul>
                     </div>
@@ -152,19 +158,22 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <span>
-                            Copyright © 2022 <label class="sub-footer__link" style="font-size:21px;">Graduation Project 2 (Group 6) - Event Planner</label>
+                            <span style="padding-top: 0.5%;">Copyright © 2022</span>
+                            <label class="sub-footer__link" style="font-size:21px;"><?php echo e(__('admin/home.footer_translation')); ?></label>
                         </span>
 
-                        <span>Developed by
-                            <a href="javascript:void(0)" style="color: red; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'">Kareem</a>,
-                            <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'">Mustafa</a>,
-                            <a href="javascript:void(0)" style="color: orange; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'">Rawan</a>,
-                            <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'">Aseel</a> &
-                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">Sara</a>
+                        <span><?php echo e(__('admin/home.footer_translation2')); ?>
+
+                            <a href="javascript:void(0)" style="color: red; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'"><?php echo e(__('admin/home.kareem')); ?></a>,
+                            <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'"><?php echo e(__('admin/home.mustafa')); ?></a>,
+                            <a href="javascript:void(0)" style="color: orange; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'"><?php echo e(__('admin/home.rawan')); ?></a>,
+                            <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'"><?php echo e(__('admin/home.aseel')); ?></a> <?php echo e(__('admin/home.&')); ?>
+
+                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'"><?php echo e(__('admin/home.sara')); ?></a>
                         </span>
-                        <div style="background-color: #d3dae2; width: 12%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; 
+                        <div style="background-color: #d3dae2; width: 16.5%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; 
                                     border-radius:6px; font-weight: bold;" onmouseover="this.style.backgroundColor='#c4c9cf'" onmouseout="this.style.backgroundColor='#d3dae2'">
-                            <a href="https://events.dev/about-us#meet-our-team-about-us-page" style="color: #6987AB;">Meet Our Team!</a>
+                            <a href="https://events.dev/about-us#meet-our-team-about-us-page" style="color: #6987AB;"><?php echo e(__('admin/home.footer_translation3')); ?></a>
                         </div>
                     </div>
                 </div>
@@ -184,15 +193,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('dDCVajO')) {
-    $componentId = $_instance->getRenderedChildComponentId('dDCVajO');
-    $componentTag = $_instance->getRenderedChildComponentTagName('dDCVajO');
+} elseif ($_instance->childHasBeenRendered('9J7Lx58')) {
+    $componentId = $_instance->getRenderedChildComponentId('9J7Lx58');
+    $componentTag = $_instance->getRenderedChildComponentTagName('9J7Lx58');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('dDCVajO');
+    $_instance->preserveRenderedChild('9J7Lx58');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('dDCVajO', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('9J7Lx58', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

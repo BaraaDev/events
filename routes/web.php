@@ -38,13 +38,15 @@ Route::group([
     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
 ], function () {
     Auth::routes();
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); //home route
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); //home route
     Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('User');
     Route::get('/edit-profile', [App\Http\Controllers\HomeController::class, 'editProfile'])->name('editProfile');
     Route::post('/edit-profile-post', [App\Http\Controllers\HomeController::class, 'profileUpdatePassword'])->name('editProfile-post');
     Route::post('/edit-myProfile', [App\Http\Controllers\HomeController::class, 'edit_my_Profile'])->name('editMyProfile');
     Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about-us');
     Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact-us');
+    Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
     Route::get('/events', [App\Http\Controllers\EventController::class, 'index'])->name('allEvents');
     Route::get('/my-events', [App\Http\Controllers\EventController::class, 'myEvent'])->name('myEvents');
     Route::get('/contributions', [App\Http\Controllers\ContributionController::class, 'index'])->name('allContributions');
