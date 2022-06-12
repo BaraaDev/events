@@ -1,47 +1,12 @@
-@extends('layouts.website.master')
-@section('title')
-    - @lang('website/home.about_us')
-@endsection
-@section('content')
+
+<?php $__env->startSection('title'); ?>
+    - <?php echo app('translator')->get('website/home.about_us'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
 
 
-        {{-- <!-- Block IMG-bottom -->
-
-        <section class="background-contain bg-15 bg-blue-lighteen pt120">
-            <div class="container">
-                <div class="row">
-                    <div class="crumina-module crumina-module-img-bottom">
-                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                            <div class="crumina-module-img-content medium-padding100">
-                                <div class="crumina-module crumina-heading">
-                                    <h6 class="heading-sup-title">Company</h6>
-                                    <h2 class="heading-title">Welcome to
-                                        <span class="c-primary">Utouch!</span> We create high quality products that will make your life better.
-                                    </h2>
-                                    <div class="h6 heading-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-                                </div>
-
-                                <a href="javascript:void(0)" class="btn btn-border btn--with-shadow c-primary">
-                                    Learn More
-                                </a>
-
-                                <a href="javascript:void(0)" class="btn btn--green btn--with-shadow">
-                                    Get trial version
-                                </a>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
-                            <img class="img-bottom" src="{{asset('website/img/man.png')}}" alt="man">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ... end Block IMG-bottom --> --}}
+        
 
 
         <!-- Info Boxes -->
@@ -111,7 +76,8 @@
                     <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
                         <div class="crumina-module crumina-heading align-center">
                             <h3 class="heading-title">
-                                What is different about <span class="c-primary">GDP</span>{{__('admin/home.question_mark')}}
+                                What is different about <span class="c-primary">GDP</span><?php echo e(__('admin/home.question_mark')); ?>
+
                             </h3>
                         </div>
                     </div>
@@ -123,7 +89,7 @@
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
                                         <div class="info-box-image bg-secondary-color">
-                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/flag.svg')}}" alt="flag"> --}}
+                                            
                                             <i class='far fa-comments' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
@@ -132,9 +98,9 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-secondary">Power of Negotiation</h6>
-                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            
                                             <p class="info-box-text">
-                                                {{__('admin/home.customer_title')}} & {{__('admin/home.supplier_title')}} are able to
+                                                <?php echo e(__('admin/home.customer_title')); ?> & <?php echo e(__('admin/home.supplier_title')); ?> are able to
                                                 negotiate in a reply section in the requested event (by the customer) and then both could 
                                                 make a deal together about the price in order for the satisfaction & the comfortability 
                                                 for both in the website. 
@@ -148,7 +114,7 @@
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
                                         <div class="info-box-image bg-orange">
-                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/settings.svg')}}" alt="settings"> --}}
+                                            
                                             <i class='fas fa-tasks' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
@@ -157,7 +123,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-orange">Good Managerial Quality</h6>
-                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            
                                             <p class="info-box-text">
                                                 Anything that happens in the website (including the pre-transaction process) must be confirmed 
                                                 by the admins. Admins are able to help customers (event request) & 
@@ -174,7 +140,7 @@
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
                                         <div class="info-box-image bg-red">
-                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/team.svg')}}" alt="team"> --}}
+                                            
                                             <i class='fa fa-shopping-cart' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
@@ -183,7 +149,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-red">Variety of Different Services' Categories</h6>
-                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            
                                             <p class="info-box-text">
                                                 Suppliers are having more opportunities to put their 
                                                 products/services on the website and increase their profitability and customers reach & loyalty. 
@@ -198,7 +164,7 @@
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
                                         <div class="info-box-image bg-yellow">
-                                            {{-- <img class="utouch-icon" src="{{asset('website/svg/rocket-launch.svg')}}" alt="rocket"> --}}
+                                            
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
                                             </svg>
@@ -206,7 +172,7 @@
 
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-yellow">xxxx</h6>
-                                            {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
+                                            
                                             <p class="info-box-text">
                                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                             </p>
@@ -277,8 +243,8 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/food-service-about-slider-for-viewing.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/food-service-about-slider.jpg')}}" alt="food service">
+                                        <a href="<?php echo e(asset('website/img/food-service-about-slider-for-viewing.jpg')); ?>" class="case-item__thumb js-zoom-image">
+                                            <img src="<?php echo e(asset('website/img/food-service-about-slider.jpg')); ?>" alt="food service">
                                         </a>
                                         <div class="square-colored bg-product-brown"></div>
                                         <div class="case-item-content">
@@ -303,8 +269,8 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/occassional-attires-about-slider-for-viewing.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/occassional-attires-about-slider.jpg')}}" alt="occassional attires">
+                                        <a href="<?php echo e(asset('website/img/occassional-attires-about-slider-for-viewing.jpg')); ?>" class="case-item__thumb js-zoom-image">
+                                            <img src="<?php echo e(asset('website/img/occassional-attires-about-slider.jpg')); ?>" alt="occassional attires">
                                         </a>
                                         <div class="square-colored bg-product-red"></div>
                                         <div class="case-item-content">
@@ -329,8 +295,8 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/barber-about-slider-for-viewing.jpg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/barber-about-slider.jpg')}}" alt="barber">
+                                        <a href="<?php echo e(asset('website/img/barber-about-slider-for-viewing.jpg')); ?>" class="case-item__thumb js-zoom-image">
+                                            <img src="<?php echo e(asset('website/img/barber-about-slider.jpg')); ?>" alt="barber">
                                         </a>
                                         <div class="square-colored bg-product-blue-dark"></div>
                                         <div class="case-item-content">
@@ -355,8 +321,8 @@
 
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-case-item" data-mh="case-item">
-                                        <a href="{{asset('website/img/zaffah-about-for-viewing.jpeg')}}" class="case-item__thumb js-zoom-image">
-                                            <img src="{{asset('website/img/zaffah-about.jpeg')}}" alt="zaffah">
+                                        <a href="<?php echo e(asset('website/img/zaffah-about-for-viewing.jpeg')); ?>" class="case-item__thumb js-zoom-image">
+                                            <img src="<?php echo e(asset('website/img/zaffah-about.jpeg')); ?>" alt="zaffah">
                                         </a>
                                         <div class="square-colored bg-product-green"></div>
                                         <div class="case-item-content">
@@ -399,8 +365,8 @@
                 <div class="row">
                     <div class="crumina-module crumina-module-img-bottom">
                         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                            {{-- <img class="img-bottom" src="{{asset('website/img/testimonial-about-us.png')}}" alt="testimonial about us"> --}}
-                            <img class="img-bottom" src="{{asset('website/img/testimonial-about-us2.png')}}" alt="testimonial about us" style="height:300px;">
+                            
+                            <img class="img-bottom" src="<?php echo e(asset('website/img/testimonial-about-us2.png')); ?>" alt="testimonial about us" style="height:300px;">
                         </div>
 
                         <div class="col-lg-8 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
@@ -421,7 +387,7 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="{{asset('website/img/testimonial1.png')}}" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial1.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
                                                                 <a href="#" class="h6 author-name">Mohamed El-Haddad</a>
@@ -452,7 +418,7 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="{{asset('website/img/testimonial2.png')}}" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial2.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
                                                                 <a href="#" class="h6 author-name">Reham Kouta</a>
@@ -483,7 +449,7 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="{{asset('website/img/testimonial3.png')}}" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial3.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
                                                                 <a href="#" class="h6 author-name">Khaled Badran</a>
@@ -512,7 +478,7 @@
                                                     <div class="crumina-module crumina-testimonial-item testimonial-item-arrow">
                                                         <div class="author-info-wrap">
                                                             <div class="testimonial-img-author">
-                                                                <img src="{{asset('website/img/testimonial4.png')}}" alt="author">
+                                                                <img src="<?php echo e(asset('website/img/testimonial4.png')); ?>" alt="author">
                                                             </div>
                                                             <div class="author-info">
                                                                 <a href="#" class="h6 author-name">Menna Hani</a>
@@ -583,15 +549,7 @@
             <div class="container">
                 <div class="row">
 
-                    {{-- <div class="col-lg-8 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12" style="margin-bottom: 8%; margin-right:auto; margin-left:auto; justify-content:center;">
-                        <div class="crumina-module crumina-heading align-center">
-                            <h2 class="heading-title">Meet Our Professional Team</h2>
-                            <div class="heading-text">
-                                <em>"Coming together is a beginning. Keeping together is progress. Working together is success." --Henry Ford</em>
-                            </div>
-                        </div>
-                    </div>
-                    <br> --}}
+                    
                     <div style="text-align:center; margin-left: auto; margin-right: auto; position:relative;">
                         <h5 class="c-black" style="font-size:220%;">Meet Our Professional Team</h5>
                         <p style="font-size:120%;">
@@ -605,14 +563,14 @@
                             <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
 
                                 <div class="teammembers-thumb">
-                                    <img src="{{asset('website/img/kareem2.png')}}" alt="kareem tarek team member" width="200" style="border-radius: 50px;">
+                                    <img src="<?php echo e(asset('website/img/kareem2.png')); ?>" alt="kareem tarek team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
+                                    <div class="teammembers-item-prof"><?php echo e(__('admin/home.admin_title')); ?></div>
 
-                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name">{{__('admin/home.kareem_tarek')}}</a>
+                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name"><?php echo e(__('admin/home.kareem_tarek')); ?></a>
 
                                     <div class="teammembers-item-prof">18105771</div>
 
@@ -651,14 +609,14 @@
                             <div class="crumina-module crumina-teammembers-item">
 
                                 <div class="teammembers-thumb">
-                                    <img src="{{asset('website/img/rawan-housseiny.jpg')}}" alt="rawan el-housseiny team member" width="200" style="border-radius: 50px;">
+                                    <img src="<?php echo e(asset('website/img/rawan-housseiny.jpg')); ?>" alt="rawan el-housseiny team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                     <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
+                                     <div class="teammembers-item-prof"><?php echo e(__('admin/home.admin_title')); ?></div>
 
-                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name">{{__('admin/home.rawan_el_housseiny')}}</a>
+                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name"><?php echo e(__('admin/home.rawan_el_housseiny')); ?></a>
 
                                     <div class="teammembers-item-prof">18106139</div>
 
@@ -699,14 +657,14 @@
                             <div class="crumina-module crumina-teammembers-item" style="margin-bottom: 25%;">
 
                                 <div class="teammembers-thumb">
-                                    <img src="{{asset('website/img/mustafa.jpeg')}}" alt="mustafa hesham team member" width="200" style="border-radius: 50px;">
+                                    <img src="<?php echo e(asset('website/img/mustafa.jpeg')); ?>" alt="mustafa hesham team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
+                                    <div class="teammembers-item-prof"><?php echo e(__('admin/home.admin_title')); ?></div>
 
-                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name">{{__('admin/home.mustafa_hesham')}}</a>
+                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name"><?php echo e(__('admin/home.mustafa_hesham')); ?></a>
 
                                     <div class="teammembers-item-prof">17105773</div>
 
@@ -744,14 +702,14 @@
                             <div class="crumina-module crumina-teammembers-item">
 
                                 <div class="teammembers-thumb">
-                                    <img src="{{asset('website/img/sara.jpg')}}" alt="sara tamer team member" width="200" style="border-radius: 50px;">
+                                    <img src="<?php echo e(asset('website/img/sara.jpg')); ?>" alt="sara tamer team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
+                                    <div class="teammembers-item-prof"><?php echo e(__('admin/home.admin_title')); ?></div>
 
-                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name">{{__('admin/home.sara_tamer')}}</a>
+                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name"><?php echo e(__('admin/home.sara_tamer')); ?></a>
 
                                     <div class="teammembers-item-prof">18108814</div>
 
@@ -790,14 +748,14 @@
                             <div class="crumina-module crumina-teammembers-item" style="margin-top: 25%;">
 
                                 <div class="teammembers-thumb">
-                                    <img src="{{asset('website/img/aseel.jpg')}}" alt="aseel ahmed team member" width="200" style="border-radius: 50px;">
+                                    <img src="<?php echo e(asset('website/img/aseel.jpg')); ?>" alt="aseel ahmed team member" width="200" style="border-radius: 50px;">
                                 </div>
 
                                 <div class="teammember-content">
 
-                                    <div class="teammembers-item-prof">{{__('admin/home.admin_title')}}</div>
+                                    <div class="teammembers-item-prof"><?php echo e(__('admin/home.admin_title')); ?></div>
 
-                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name">{{__('admin/home.aseel_ahmed')}}</a>
+                                    <a href="#" style="cursor: context-menu;" class="h5 teammembers-item-name"><?php echo e(__('admin/home.aseel_ahmed')); ?></a>
 
                                     <div class="teammembers-item-prof">18105070</div>
 
@@ -842,4 +800,6 @@
 
         <!-- ... end Teammembers -->
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/website/about.blade.php ENDPATH**/ ?>

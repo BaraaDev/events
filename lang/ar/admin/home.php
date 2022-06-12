@@ -85,6 +85,11 @@ return [
     'offers_made_content'               => 'إنه موجود في كل حدث في الموقع الرئيسي!',
     'show_link'                         => 'اعرض',
     //--------------------------- Main website keys & values only down below --------------------------------//
+    'kareem_tarek'                      => 'كريم طارق', //team members in about us page (admin)
+    'mustafa_hesham'                    => 'مصطفي هشام', //team members in about us page (admin)
+    'rawan_el_housseiny'                => 'روان الحسيني', //team members in about us page (admin)
+    'sara_tamer'                        => 'سارة تامر', //team members in about us page (admin)
+    'aseel_ahmed'                       => 'أسيل أحمد', //team members in about us page (admin)
     'register_new_user'                 => 'ليس لديك حساب؟',
     'login_already_existing_user'       => 'هل لديك حساب؟',
     'signup_title'                      => 'سجل',

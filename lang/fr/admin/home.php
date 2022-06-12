@@ -92,6 +92,11 @@ return [
     'offers_made_content'                    => "Il est situé dans chaque événement du site Web principal!",
     'show_link'                              => 'Affichage',
     //--------------------------- Main website keys & values only down below --------------------------------//
+    'kareem_tarek'                           => 'Kareem Tarek', //team members in about us page (admin)
+    'mustafa_hesham'                         => 'Mustafa Hesham', //team members in about us page (admin)
+    'rawan_el_housseiny'                     => 'Rawan El-Housseiny', //team members in about us page (admin)
+    'sara_tamer'                             => 'Sara Tamer', //team members in about us page (admin)
+    'aseel_ahmed'                            => 'Aseel Ahmed', //team members in about us page (admin)
     'register_new_user'                      => "Vous n'avez pas de compte?",
     'login_already_existing_user'            => 'Vous avez déjà un compte?',
     'signup_title'                           => "S'inscrire",
