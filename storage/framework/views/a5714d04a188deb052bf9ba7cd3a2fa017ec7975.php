@@ -44,6 +44,20 @@
         if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
         return i;
     }
+
+    //start all main website customized js
+    var contribution = document.querySelector('.contribution-button')
+
+    contribution.addEventListener('mouseover', function(event){
+        contribution.style.color = '#FFFEF7'
+        contribution.style.borderColor = '#FFFEF7'
+    });
+
+    contribution.addEventListener('mouseout', function(event){
+        contribution.style.color = '#F89522'
+        contribution.style.borderColor = '#F89522'
+    });
+    //end all main website customized js
 </script>
 <?php echo $__env->yieldContent('scripts'); ?>
 <?php echo \Livewire\Livewire::scripts(); ?>
