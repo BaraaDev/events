@@ -48,7 +48,8 @@
             <div class="faq" style="border-radius: 35px;">
                 <h5 class="faq-title">How do i pay the services (from the requested event) that i need?</h5>
                 <p class="faq-text">
-                    You need to have a "PayPal" account to pay through the website.
+                    You need to have a "PayPal" account to pay the money online through the website 
+                    to the Supplier you chose or the one you made the deal with.
                 </p>
                 <button class="faq-toggle">
                     <i class="fas fa-chevron-down"></i>
