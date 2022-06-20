@@ -207,8 +207,8 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="icon" value="<?php echo e(Request::old('icon') ? Request::old('icon') : $model->icon); ?>">
             <option><?php echo e(__('admin/home.select')); ?></option>
-            <option value="public/website/svg/flag.svg">Settings</option>
-            <option value="public/website/svg/flag.svg">flag</option>
+            <option value="svg/flag.svg">Settings</option>
+            <option value="svg/flag.svg">flag</option>
             <option value="svg/rocket-launch.svg">Rocket Launch</option>
             <option value="svg/dribbble.svg">Dribbble</option>
         </select> <!-- the directory link of the image icon -->

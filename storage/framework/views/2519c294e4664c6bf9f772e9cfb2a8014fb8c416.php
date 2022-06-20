@@ -154,7 +154,7 @@
                                 <div class="crumina-module crumina-info-box info-box--time-line">
                                     <a href="<?php echo e(route('event.category',$service->id)); ?>">
                                         <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$service->color); ?>;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='<?php echo e($service->color); ?>'"> <!-- bg-color from DB for icon -->
-                                            <img class="utouch-icon" src="<?php echo e(asset("website/$service->icon")); ?>"> <!--icon from DB-->
+                                            <img class="utouch-icon" src="<?php echo e(asset("website/".$service->icon)); ?>"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
                                             </svg>
@@ -162,7 +162,7 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color: <?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='black'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h6>
+                                        <h6 class="timeline-year c-secondary" style="color: <?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='black'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h6> <!-- headline-text-color from DB for icon -->
                                         <p class="info-box-text"><?php echo \Str::words($service->content,'20',' ...'); ?></p>
                                     </div>
                                 </div>
