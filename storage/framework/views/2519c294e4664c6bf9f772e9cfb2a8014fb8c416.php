@@ -136,7 +136,7 @@
                         <?php endif; ?>
                         <?php if(auth()->guard()->guest()): ?>
                             <h4 class="heading-title">Services Categories</h4>
-                            <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now and make a Request for an Event!</h5>
+                            <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now and make a Request for an Event.</h5>
                                 <span>
                                     <a href="<?php echo e(route('register')); ?>" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor='rgb(246, 208, 193)'" style="background-color: rgb(246, 208, 193);">
                                         Sign Up!
@@ -153,7 +153,7 @@
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
                                     <a href="<?php echo e(route('event.category',$service->id)); ?>">
-                                        <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$service->color); ?>;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor=''"> <!-- bg-color from DB for icon -->
+                                        <div class="info-box-image bg-secondary-color" style="<?php echo e('background-color: '.$service->color); ?>;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='<?php echo e($service->color); ?>'"> <!-- bg-color from DB for icon -->
                                             <img class="utouch-icon" src="<?php echo e(asset("website/$service->icon")); ?>"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>

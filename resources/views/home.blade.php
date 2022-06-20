@@ -153,7 +153,7 @@
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
                                     <a href="{{route('event.category',$service->id)}}">
-                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor=''"> <!-- bg-color from DB for icon -->
+                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='{{$service->color}}'"> <!-- bg-color from DB for icon -->
                                             <img class="utouch-icon" src="{{asset("website/$service->icon")}}"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
