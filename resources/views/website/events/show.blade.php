@@ -287,12 +287,12 @@
 
 
                             <aside class="widget w-tags">
-                                <h5 class="widget-title">{{__('website/event.required_skills')}}</h5>
+                                <h5 class="widget-title">{{__('website/event.tags')}}</h5>
                                 <ul class="tags-list">
                                     @forelse($event->tags as $tag)
                                         <li><a >{{$tag->name}}</a></li>
                                     @empty
-                                        <div class="alert alert-danger" role="alert">{{__('website/event.no_tag')}}</div>
+                                        <div class="alert alert-danger" role="alert">{{__('website/event.no_tags')}}</div>
                                     @endforelse
                                 </ul>
                             </aside>

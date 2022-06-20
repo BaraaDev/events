@@ -23,12 +23,12 @@
                         </li>
                         <hr>
                         <li>
-                            After Signing Up, the website will automatically login you in to your account. 
+                            After Signing Up, the website will automatically login you into your account. 
                             Then you have to make an event request with the event details you need then submit the request.
                         </li>
                         <hr>
                         <li>
-                            Wait until any Supplier(s) contact you in the requested event that you made already. Each Supplier
+                            Wait until any Supplier(s) contacts you in the requested event that you made already. Each Supplier
                             will enter your requested event, and will provide an offer with a suitable price for them and also
                             based on your input budget (when you entered event details including the budget), then 
                             you will be able to purchase the service based on the Supplier's provided offer/budget <b><u>OR</u></b> 
@@ -46,7 +46,7 @@
             </div>
 
             <div class="faq" style="border-radius: 35px;">
-                <h5 class="faq-title">How do i pay the services (from the requested event) that i need?</h5>
+                <h5 class="faq-title">How do I pay the services (from the requested event) that I need?</h5>
                 <p class="faq-text">
                     You need to have a "PayPal" account to pay the money online through the website 
                     to the Supplier you chose or the one you made the deal with.
@@ -62,14 +62,14 @@
                     What happens if something wrong happened in my account, if the server went down or the website is in maintenance?
                 </h5>
                 <p class="faq-text">
-                    <span style="font-weight: bold;"><u>You can try any of the following methods down below:</u></span>
+                    <span style="font-weight: bold;"><u>You can try any of the following methods below:</u></span>
                     <ul class="faq-text" style="list-style-type: square; padding-left: 2%;">
                         <li>
-                            You can contact the admins of the website, you can get their details from "About Us" page in the website.
+                            You can contact the admins of the website, you can get their details from "<a href="{{route('about-us')}}" style="color: rgb(17, 17, 187); font-weight: bold;">About Us</a>" page in the website.
                         </li>
                         <li>
-                            You can also use the "Contact Us" page from the website to send E-mails to the admins 
-                            about a specific issue or problem that you already facing or if you want to ask about any question.
+                            You can also use the "<a href="{{route('contact-us')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Contact Us</a>" page from the website to send E-mails to the admins 
+                            about a specific issue or problem that you are already facing or if you want to ask about any question.
                         </li>
                         <li>
                             In the top navigator over the header of the website, you will see some basic details about the website
@@ -78,7 +78,7 @@
                         <li>
                             In the bottom navigator of the website (the footer), you will also see some contact info of the website 
                             and you can also click on the button that says "SEND A MESSAGE". After clicking on the button, 
-                            complete the form then press "SEND" to send E-mails to the admins without even going to the "Contact Us" page.
+                            complete the form then press "SEND" to send E-mails to the admins without even going to the "<a href="{{route('contact-us')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Contact Us</a>" page.
                         </li>
                     </ul>
                 </p>

@@ -1,17 +1,17 @@
 
 
-<?php $__env->startSection('title'); ?> <?php echo e(__('admin/category.edit')); ?> (<?php echo e($model->name); ?>) <?php $__env->stopSection(); ?>
+<?php $__env->startSection('title'); ?> <?php echo e(__('admin/event.edit')); ?> (<?php echo e($model->title); ?>) <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>
 
     <?php $__env->startComponent('components.breadcrumb'); ?>
         <?php $__env->slot('breadcrumb_title'); ?>
-            <h3><?php echo e(__('admin/category.edit')); ?> (<?php echo e($model->name); ?>)</h3>
+            <h3><?php echo e(__('admin/event.edit')); ?> (<?php echo e($model->title); ?>)</h3>
         <?php $__env->endSlot(); ?>
-        <li class="breadcrumb-item"><a href="<?php echo e(route('categories.index')); ?>"><?php echo e(__('admin/category.categories')); ?></a> </li>
-        <li class="breadcrumb-item active"><?php echo e(__('admin/category.edit')); ?> (<?php echo e($model->name); ?>)</li>
+        <li class="breadcrumb-item"><a href="<?php echo e(route('events.index')); ?>"><?php echo e(__('admin/event.events')); ?></a> </li>
+        <li class="breadcrumb-item active"><?php echo e(__('admin/event.edit')); ?> (<?php echo e($model->title); ?>)</li>
         <?php $__env->slot('bookmark'); ?>
-            <a href="<?php echo e(route('categories.create')); ?>" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="<?php echo e(__('admin/category.addCategory')); ?>"><?php echo e(__('admin/category.addCategory')); ?></a>
+            <a href="<?php echo e(route('events.create')); ?>" class="btn btn-pill btn-air-success btn-success-gradien" type="button" title="<?php echo e(__('admin/event.addEvent')); ?>"><?php echo e(__('admin/event.addEvent')); ?></a>
         <?php $__env->endSlot(); ?>
     <?php echo $__env->renderComponent(); ?>
     <?php echo $__env->make('layouts.admin.partials.validation-errors', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -27,12 +27,12 @@
                     <li class="nav-item"><a class="nav-link <?php if(LaravelLocalization::getCurrentLocale() == 'fr'): ?> active  <?php endif; ?>" id="fr-tab" data-bs-toggle="pill" href="#fr" role="tab" aria-controls="fr" aria-selected="<?php if(LaravelLocalization::getCurrentLocale() == 'ar'): ?> true <?php else: ?> false <?php endif; ?>"><?php echo e(__('admin/home.french')); ?></a></li>
                 </ul>
                 <div class="tab-content " id="pills-tabContent">
-                    <form action="<?php echo e(route('categories.update',$model->id)); ?>" method="post" id="alert-form">
+                    <form action="<?php echo e(route('events.update',$model->id)); ?>" method="post" id="alert-form" files="true" enctype="multipart/form-data">
                         <?php echo csrf_field(); ?>
                         <?php echo e(method_field('put')); ?>
 
-                        <?php echo $__env->make('dashboard.categories.form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                        <button class="btn btn-success mt-4 d-block me-auto" type="submit"><?php echo e(__('admin/category.update')); ?></button>
+                        <?php echo $__env->make('dashboard.events.form', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                        <button class="btn btn-success mt-4 d-block me-auto" type="submit"><?php echo e(__('admin/event.update')); ?></button>
                     </form>
                 </div>
             </div>
@@ -41,4 +41,4 @@
     </div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.admin.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/dashboard/categories/edit.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.admin.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/dashboard/events/edit.blade.php ENDPATH**/ ?>
