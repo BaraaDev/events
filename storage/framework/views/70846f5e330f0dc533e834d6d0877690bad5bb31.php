@@ -201,7 +201,6 @@ h1 {
     font-size: 20px;
     color: rgb(217, 7, 7);
     display: block;
-    transition: 0.2s all ease-in-out
 }
 
 .dropdown_faq{
