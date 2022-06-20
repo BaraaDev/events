@@ -221,15 +221,15 @@
                                     <li><a>{{__('website/home.status')}}:
                                                 @if($event->status == 'Available')
                                                     <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
-                                                        Active
+                                                        {{__('admin/home.available_active')}}
                                                     </span>
                                                 @elseif($event->status == 'Expired')
                                                     <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 3%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
-                                                        Paid
+                                                        {{__('admin/home.expired_paid')}}
                                                     </span>
                                                 @else <!-- $event->status == 'Stopped' -->
                                                     <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 3%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
-                                                        Pending
+                                                        {{__('admin/home.stopped_pending')}}
                                                     </span>
                                                 @endif
                                         </a>

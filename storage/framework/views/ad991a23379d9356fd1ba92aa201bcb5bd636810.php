@@ -231,15 +231,18 @@
                                     <li><a><?php echo e(__('website/home.status')); ?>:
                                                 <?php if($event->status == 'Available'): ?>
                                                     <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
-                                                        Active
+                                                        <?php echo e(__('admin/home.available_active')); ?>
+
                                                     </span>
                                                 <?php elseif($event->status == 'Expired'): ?>
                                                     <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 3%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
-                                                        Paid
+                                                        <?php echo e(__('admin/home.expired_paid')); ?>
+
                                                     </span>
                                                 <?php else: ?> <!-- $event->status == 'Stopped' -->
                                                     <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 3%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
-                                                        Pending
+                                                        <?php echo e(__('admin/home.stopped_pending')); ?>
+
                                                     </span>
                                                 <?php endif; ?>
                                         </a>

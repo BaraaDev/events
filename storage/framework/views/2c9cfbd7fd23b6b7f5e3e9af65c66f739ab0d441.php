@@ -272,11 +272,11 @@
                                         <div class="col-xxl-12 col-lg-12">
                                             <div class="project-box">
                                                 <?php if($event->status == 'Stopped'): ?>
-                                                    <span class="badge badge-danger">Pending</span>
+                                                    <span class="badge badge-danger"><?php echo e(__('admin/home.stopped_pending')); ?></span>
                                                 <?php elseif($event->status == 'Available'): ?>
-                                                    <span class="badge badge-success" style="color:bisque;">Active</span>
+                                                    <span class="badge badge-success" style="color:bisque;"><?php echo e(__('admin/home.available_active')); ?></span>
                                                 <?php elseif($event->status == 'Expired'): ?>
-                                                    <span class="badge badge-dark">Paid</span>
+                                                    <span class="badge badge-dark"><?php echo e(__('admin/home.expired_paid')); ?></span>
                                                 <?php endif; ?>
                                                 <h6><?php echo e($event->title); ?></h6>
                                                 <div class="media">
