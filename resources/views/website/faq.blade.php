@@ -40,7 +40,7 @@
                     </ul>
                 </p>
                 <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down dropdown_faq"></i>
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -52,7 +52,7 @@
                     to the Supplier you chose or the one you made the deal with.
                 </p>
                 <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down dropdown_faq"></i>
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -83,7 +83,7 @@
                     </ul>
                 </p>
                 <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down dropdown_faq"></i>
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -98,7 +98,7 @@
                     without spending any time or effort trying to find it.
                 </p>
                 <button class="faq-toggle">
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down dropdown_faq"></i>
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -198,8 +198,14 @@ h1 {
 }
 
 .faq.active .faq-toggle .fa-times {
-    color: #222;
+    font-size: 20px;
+    color: rgb(217, 7, 7);
     display: block;
+}
+
+.dropdown_faq{
+    color: rgb(27, 139, 170);
+    font-size: 20px;
 }
 
 .faq.active .faq-toggle .fa-chevron-down {
@@ -208,7 +214,7 @@ h1 {
         </style>
 
 <script>
-    const toggles = document.querySelectorAll('.faq-toggle');
+const toggles = document.querySelectorAll('.faq-toggle');
 
 toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
