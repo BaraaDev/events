@@ -68,10 +68,6 @@
                                                 <div class="badge badge-success label-square">
                                                     <span style="color:bisque;"><?php echo e(__('admin/home.available_active')); ?></span>
                                                 </div>
-                                            <?php elseif($event->status == 'Canceled'): ?>
-                                                <div class="badge badge-danger label-square">
-                                                    <span><?php echo e(__('admin/home.canceled')); ?></span>
-                                                </div>
                                             <?php endif; ?>
                                         </td>
                                         <td class="text-center"><?php echo e($event->update_user->name ?? ''); ?></td>
