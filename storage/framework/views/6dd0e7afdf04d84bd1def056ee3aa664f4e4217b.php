@@ -52,7 +52,7 @@
                 <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
                     <div class="widget w-list">
 
-                        <h5 class="widget-title"><?php echo e(__('website/home.userful_links')); ?></h5>
+                        <h5 class="widget-title"><?php echo e(__('website/home.useful_links')); ?></h5>
                         <ul class="list list--primary">
                             <li>
                                 <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a>
@@ -193,15 +193,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('tLWaCC9')) {
-    $componentId = $_instance->getRenderedChildComponentId('tLWaCC9');
-    $componentTag = $_instance->getRenderedChildComponentTagName('tLWaCC9');
+} elseif ($_instance->childHasBeenRendered('5Lrkneo')) {
+    $componentId = $_instance->getRenderedChildComponentId('5Lrkneo');
+    $componentTag = $_instance->getRenderedChildComponentTagName('5Lrkneo');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('tLWaCC9');
+    $_instance->preserveRenderedChild('5Lrkneo');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('tLWaCC9', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('5Lrkneo', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

@@ -60,7 +60,7 @@
                 <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
                     <div class="widget w-list">
 
-                        <h5 class="widget-title">{{__('website/home.userful_links')}}</h5>
+                        <h5 class="widget-title">{{__('website/home.useful_links')}}</h5>
                         <ul class="list list--primary">
                             <li>
                                 <a href="{{route('home')}}">{{__('website/home.home')}}</a>
