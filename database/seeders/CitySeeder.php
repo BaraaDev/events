@@ -42,6 +42,24 @@ class CitySeeder extends Seeder
         $city->create_user_id = 3;
         $city->save();
 
+        $city = new City();
+        $city->setTranslation('name', 'en', '6th of October')
+            ->setTranslation('name', 'ar', 'السادس من اكتوبر')
+            ->setTranslation('name', 'fr', '6 Octobre');
+        $city->country_id = 1;
+        $city->governorate_id = 1;
+        $city->create_user_id = 4;
+        $city->save();
+
+        $city = new City();
+        $city->setTranslation('name', 'en', 'Heliopolis')
+            ->setTranslation('name', 'ar', 'مصر الجديدة')
+            ->setTranslation('name', 'fr', 'Héliopolis');
+        $city->country_id = 1;
+        $city->governorate_id = 1;
+        $city->create_user_id = 5;
+        $city->save();
+
         // $city = new City();
         // $city->setTranslation('name', 'en', 'Kasbah alawdia')
         //     ->setTranslation('name', 'ar', 'قصبة الاوديه')
