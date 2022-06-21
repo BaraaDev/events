@@ -14,6 +14,7 @@ return [
     'add_offer'                => 'Add your offer',
     'add_event'                => 'Add Event',
     'your_latest_events'       => 'Your Latest Events',
+    'latest_events'            => 'Latest Events',
     'no_events'                => 'No events yet.',
     'to_add'                   => 'To add an offer, you must',
     'register'                 => 'register',

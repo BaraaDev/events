@@ -11,10 +11,7 @@
                     @if(auth()->user())
                         @if(auth()->user()->user_type == 'customer')
                         <div class="inline-items">
-                            <h4 class="stunning-header-title">{{__('website/event.your_latest_events')}}</h4>
-                            <a href="{{route('event.create')}}" class="btn btn--green btn--with-shadow f-right">
-                                {{__('website/event.add_event')}}
-                            </a>
+                            <h4 class="stunning-header-title">{{__('website/event.latest_events')}}</h4>
                         </div>
                         @endif
                     @endif

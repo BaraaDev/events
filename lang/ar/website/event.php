@@ -14,6 +14,7 @@ return [
     'add_offer'                => 'تقديم العرض',
     'add_event'                => 'أضف حدث',
     'your_latest_events'       => 'أحدث الأحداث الخاصة بك',
+    'latest_events'            => 'الأحداث الأخيرة',
     'no_events'                => 'لا توجد أحداث.',
     'to_add'                   => 'لأضافه عرض عليك',
     'register'                 => 'بالتسجيل',

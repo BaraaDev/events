@@ -14,6 +14,7 @@ return [
     'add_offer'                => 'Ajoutez votre offre',
     'add_event'                => 'Ajouter un évènement',
     'your_latest_events'       => 'Vos derniers événements',
+    'latest_events'            => 'Derniers évènements',
     'no_events'                => 'Aucun événement pour le moment.',
     'to_add'                   => 'Pour ajouter une offre, vous devez',
     'register'                 => "S'inscrire",
