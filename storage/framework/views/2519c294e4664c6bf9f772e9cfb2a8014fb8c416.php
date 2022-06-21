@@ -124,14 +124,17 @@
                     <div class="crumina-module crumina-heading align-center">
                         <?php if(auth()->guard()->check()): ?>
                             <?php if(auth()->user()->user_type == 'customer'): ?>
-                                <h4 class="heading-title">Pick The Service Category You Need</h4>
+                                <h4 class="heading-title">Make an Event Request & Pick The Service Category You Need Within It</h4>
                                 <span>
                                     <a href="<?php echo e(route('event.create')); ?>" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
                                         Request an Event now!
                                     </a>
                                 </span>
-                            <?php elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard'): ?>
+                            <?php elseif(auth()->user()->user_type == 'supplier'): ?>
+                                <h4 class="heading-title">All The Available Services Categories</h4>
+                            <?php elseif(auth()->user()->user_type == 'dashboard'): ?>
                                 <h4 class="heading-title">Services Categories</h4>
+                                <h5 class="heading-title"><a href="<?php echo e(route('categories.create')); ?>" style="color: rgb(17, 17, 187);">Click Here</a> to Add a New Service!</h5>
                             <?php endif; ?>
                         <?php endif; ?>
                         <?php if(auth()->guard()->guest()): ?>
@@ -162,7 +165,7 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color: <?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='black'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h6> <!-- headline-text-color from DB for icon -->
+                                        <h6 class="timeline-year c-secondary" style="color:<?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='black'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h6> <!-- headline-text-color from DB for icon -->
                                         <p class="info-box-text"><?php echo \Str::words($service->content,'20',' ...'); ?></p>
                                     </div>
                                 </div>
