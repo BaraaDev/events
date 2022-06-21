@@ -15,6 +15,12 @@ return [
     'add_event'                => 'Ajouter un évènement',
     'your_latest_events'       => 'Vos derniers événements',
     'no_events'                => 'Aucun événement pour le moment.',
+    'to_add'                   => 'Pour ajouter une offre, vous devez',
+    'register'                 => "S'inscrire",
+    'log_in'                   => 'Connexion',
+    'or'                       => 'ou',
+    'recent_event'             => 'Événements les plus récents',
+    'expired'                  => "l'événement a expiré",
     'status'                   => 'Statut:',
     'budget'                   => 'Budget:',
 ];

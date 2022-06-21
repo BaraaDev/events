@@ -96,8 +96,8 @@
                                 @else
                                     <div class="crumina-module crumina-heading align-center">
                                         <div class="heading-text"> {{__('website/event.to_add')}}
-                                            <a href="{{route('register')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.register')}}</a> {{__('website/event.or')}}
-                                            <a href="{{route('login')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.log_in')}}</a>
+                                            <a href="{{route('register')}}" style="color: rgb(17, 17, 187); font-weight: bold;">{{__('website/event.register')}}</a> {{__('website/event.or')}}
+                                            <a href="{{route('login')}}" style="color: rgb(17, 17, 187); font-weight: bold;">{{__('website/event.log_in')}}</a>
                                         </div>
                                     </div>
                                 @endif
