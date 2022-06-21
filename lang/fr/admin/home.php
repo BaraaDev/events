@@ -43,6 +43,7 @@ return [
     'logout'                                 => 'Se déconnecter',
     'alert_form'                             => 'Êtes-vous sûr de vouloir quitter?',
     'expired_paid'                           => 'Payé',
+    'canceled'                               => 'Annulé',
     'available_active'                       => 'Actif',
     'stopped_pending'                        => 'En attente',
     'available_title'                        => 'Disponible',

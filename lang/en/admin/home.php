@@ -36,6 +36,7 @@ return [
     'customer_user'                      => 'Customer Name',
     'create_user'                        => 'Added By',
     'update_user'                        => 'Edited By',
+    'canceled'                           => 'Canceled',
     'expired_paid'                       => 'Paid',
     'available_active'                   => 'Active',
     'stopped_pending'                    => 'Pending',

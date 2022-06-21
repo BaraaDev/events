@@ -35,6 +35,7 @@ return [
     'customer_user'                     => 'اسم العميل',
     'create_user'                       => 'أضيفت بواسطة',
     'update_user'                       => 'تعديل بواسطة',
+    'canceled'                          => 'ألغيت',
     'expired_paid'                      => 'مدفوع',
     'available_active'                  => 'نشط',
     'stopped_pending'                   => 'في الإنتظار',
