@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/friends-2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/friends-2.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide main-slider-bg-light">
 
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/sparks2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/sparks2.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%;">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
