@@ -10,7 +10,7 @@
 
     <!-- Start Main Slider -->
     <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: cover;">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide main-slider-bg-light">
                     <div class="container table">
