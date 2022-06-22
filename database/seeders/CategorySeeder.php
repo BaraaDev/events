@@ -66,7 +66,7 @@ class CategorySeeder extends Seeder
 
         $category = new Category();
         $category->setTranslation('name', 'en', 'Barber/Hairdresser')
-            ->setTranslation('name', 'ar', 'حلاق / مصفف شعر')
+            ->setTranslation('name', 'ar', 'حلاق/مصفف شعر')
             ->setTranslation('name', 'fr', 'Barbier/Coiffeur');
         $category->setTranslation('content', 'en', 'Having a wedding? conference? Prom? or any other kind of event? You will definitely need to grab the best style! and when we say style, your hair shape automatically pop-up. This is when GDP comes to handy as we deliver wide varieties of barber and/or hairdresser shops with excellent qualities, scheduled timings and best prices, in addition to give-away offers if you were lucky enough.')
             ->setTranslation('content', 'ar', 'حفل زفاف؟ مؤتمر؟ حفلة موسيقية؟ أو أي نوع آخر من الأحداث؟ سوف تحتاج بالتأكيد إلى الحصول على أفضل أسلوب! وعندما نقول أسلوب ، ينبثق شكل شعرك تلقائيًا. هذا عندما يكون الناتج المحلي الإجمالي مفيدًا حيث نقدم مجموعة متنوعة من محلات الحلاقة و / أو تصفيف الشعر ذات الصفات الممتازة والمواعيد المحددة وأفضل الأسعار ، بالإضافة إلى عروض الهدية إذا كنت محظوظًا بما فيه الكفاية.')
