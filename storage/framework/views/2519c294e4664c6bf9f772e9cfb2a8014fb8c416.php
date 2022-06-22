@@ -124,10 +124,10 @@
                     <div class="crumina-module crumina-heading align-center">
                         <?php if(auth()->guard()->check()): ?>
                             <?php if(auth()->user()->user_type == 'customer'): ?>
-                                <h4 class="heading-title">Make an Event Request & Pick The Service Category You Need Within It</h4>
+                                <h4 class="heading-title">Submit an Event Request Form & Pick The Service Category You Need Within It</h4>
                                 <span>
                                     <a href="<?php echo e(route('event.create')); ?>" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
-                                        Request an Event now!
+                                        Make an Event Request Now!
                                     </a>
                                 </span>
                             <?php elseif(auth()->user()->user_type == 'supplier'): ?>
