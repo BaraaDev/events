@@ -61,7 +61,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'fr', "Vous avez donc décidé d'organiser une conférence. Toute une tâche ! Vous devez avoir un million de questions en tête. Par où commencer ? Comment trouver les bons orateurs à inviter ? Quel lieu répondra le mieux à vos besoins ? Ne vous inquiétez pas, nous avons préparé tout ce que vous pouvez demander par l'intermédiaire des propriétaires de petites entreprises disponibles sur notre site Web. Ces messieurs peuvent vous fournir tout ce dont vous avez besoin, de divers thèmes élégants à l'hébergement. De plus, avec des budgets très compétitifs.");
         $category->create_user_id = 2;
         $category->icon = 'svg/conferences.svg';
-        $category->color = 'maroon';
+        $category->color = 'rgb(145, 34, 34)';
         $category->save();
 
         $category = new Category();

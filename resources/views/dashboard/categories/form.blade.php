@@ -96,7 +96,7 @@
         @enderror
     </div>
 </div>
-<span style="color: rgb(200, 202, 74)"></span>
+
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon<span class="text-danger">*</span></label>
     <div class="col-lg-9">
