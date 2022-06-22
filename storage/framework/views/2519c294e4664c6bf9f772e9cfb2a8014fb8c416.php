@@ -218,7 +218,7 @@
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
                                     <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Graduation / Parties</p>
-                                    <h2 class="heading-title">Breaking new Graduation offers are on doors, Check them out!</h2>
+                                    <h2 class="heading-title">Brand new Graduation offers are on doors, Check them out!</h2>
                                     <div class="heading-text">
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                         diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.

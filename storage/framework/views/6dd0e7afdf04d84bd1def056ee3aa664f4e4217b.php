@@ -193,15 +193,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('pzkj4Q4')) {
-    $componentId = $_instance->getRenderedChildComponentId('pzkj4Q4');
-    $componentTag = $_instance->getRenderedChildComponentTagName('pzkj4Q4');
+} elseif ($_instance->childHasBeenRendered('7NVLTle')) {
+    $componentId = $_instance->getRenderedChildComponentId('7NVLTle');
+    $componentTag = $_instance->getRenderedChildComponentTagName('7NVLTle');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('pzkj4Q4');
+    $_instance->preserveRenderedChild('7NVLTle');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('pzkj4Q4', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('7NVLTle', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

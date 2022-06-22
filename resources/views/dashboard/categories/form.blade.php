@@ -86,6 +86,8 @@
             <option {{ isset($model) && $model->color == 'rgb(241, 148, 47)' ? 'selected' : '' }} value="rgb(241, 148, 47)">Orange</option>
             <option {{ isset($model) && $model->color == 'brown' ? 'selected' : '' }} value="brown">Brown</option>
             <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">Grey</option>
+            <option {{ isset($model) && $model->color == 'rgb(243, 142, 142)' ? 'selected' : '' }} value="rgb(243, 142, 142)">Pale Red</option>
+            <option {{ isset($model) && $model->color == 'beige' ? 'selected' : '' }} value="beige">Beige</option>
         </select>
         @error('color')
         <span class="invalid-feedback" role="alert">
@@ -94,21 +96,18 @@
         @enderror
     </div>
 </div>
-<span style="color: rgb(241, 148, 47);"></span>
+<span style="color: rgb(232, 234, 116)"></span>
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon<span class="text-danger">*</span></label>
     <div class="col-lg-9">
         <select class="form-control @error('icon') is-invalid @enderror" type="text" name="icon" value="{{Request::old('icon') ? Request::old('icon') : $model->icon}}">
             <option>{{__('admin/home.select')}}</option>
-            <option value="svg/settings.svg">Settings</option>
-            <option value="svg/flag.svg">flag</option>
-            <option value="svg/rocket-launch.svg">Rocket Launch</option>
-            <option value="svg/dribbble.svg">Dribbble</option>
+            <option value="svg/conferences.svg">Conferences</option>
             <option value="svg/catering.svg">Catering</option>
-            <option value="svg/.svg"></option>
-            <option value="svg/.svg"></option>
-            <option value="svg/.svg"></option>
-            <option value="svg/.svg"></option>
+            <option value="svg/birthday-parties.svg">Birthday Parties</option>
+            <option value="svg/engagement-ring.svg">Engagement Ring</option>
+            <option value="svg/barber-hairdresser.svg">Barber/Hairdresser</option>
+            <option value="svg/grooms-and-brides-attires.svg">Grooms & Brides Attires</option>
             <option value="svg/.svg"></option>
             <option value="svg/.svg"></option>
             <option value="svg/.svg"></option>

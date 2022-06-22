@@ -178,6 +178,8 @@ unset($__errorArgs, $__bag); ?>" type="text" name="color"><?php echo e(Request::
             <option <?php echo e(isset($model) && $model->color == 'rgb(241, 148, 47)' ? 'selected' : ''); ?> value="rgb(241, 148, 47)">Orange</option>
             <option <?php echo e(isset($model) && $model->color == 'brown' ? 'selected' : ''); ?> value="brown">Brown</option>
             <option <?php echo e(isset($model) && $model->color == 'grey' ? 'selected' : ''); ?> value="grey">Grey</option>
+            <option <?php echo e(isset($model) && $model->color == 'rgb(243, 142, 142)' ? 'selected' : ''); ?> value="rgb(243, 142, 142)">Pale Red</option>
+            <option <?php echo e(isset($model) && $model->color == 'beige' ? 'selected' : ''); ?> value="beige">Beige</option>
         </select>
         <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -193,7 +195,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
     </div>
 </div>
-<span style="color: rgb(241, 148, 47);"></span>
+<span style="color: rgb(243, 142, 142);"></span>
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon<span class="text-danger">*</span></label>
     <div class="col-lg-9">
@@ -211,8 +213,8 @@ unset($__errorArgs, $__bag); ?>" type="text" name="icon" value="<?php echo e(Req
             <option value="svg/rocket-launch.svg">Rocket Launch</option>
             <option value="svg/dribbble.svg">Dribbble</option>
             <option value="svg/catering.svg">Catering</option>
-            <option value="svg/.svg"></option>
-            <option value="svg/.svg"></option>
+            <option value="svg/birthday-parties.svg">Birthday Parties</option>
+            <option value="svg/engagement-ring.svg">Engagement Ring</option>
             <option value="svg/.svg"></option>
             <option value="svg/.svg"></option>
             <option value="svg/.svg"></option>
