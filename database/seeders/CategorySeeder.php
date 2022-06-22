@@ -48,7 +48,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'ar', 'تهانينا ، أنت مخطوب! الأسابيع الأولى من خطوبتك مثيرة لأنك تشارك الأخبار وتفكر في الأحداث الاحتفالية في مستقبلك. من أول الأشياء التي يجب تنظيمها والتخطيط لها هي حفلة خطوبة ، حيث يمكنك الاحتفال بهذا الحدث الذي يغير حياتك مع أقرب عائلتك وأصدقائك شخصيًا! على الرغم من أنه ليس عظيماً ومشاركاً مثل حفل الزفاف ، إلا أنه يتطلب التخطيط. في هذه المقالة ، سوف نغطي أساسيات كيفية التخطيط لحفلة خطوبة ، ومن يجب أن تدعوه ، وآداب حفلة الخطوبة حتى يكون حفل زفافك الأول ممتعًا وخاليًا من الإجهاد كما هو الحال بالنسبة للحضور.')
             ->setTranslation('content', 'fr', "Félicitations, vous êtes fiancés ! Les premières semaines de vos fiançailles sont passionnantes alors que vous partagez les nouvelles et pensez aux événements de célébration qui sont dans votre avenir. L'une des premières choses à organiser et à planifier est une fête de fiançailles, où vous pourrez célébrer cet événement qui change la vie avec votre famille et vos amis les plus proches en personne ! Bien qu'il ne soit pas aussi grandiose et impliqué qu'un mariage, il nécessite une planification. Dans cet article, nous aborderons les bases de la planification d'une fête de fiançailles, qui inviter et l'étiquette de la fête de fiançailles afin que votre première célébration de mariage soit aussi amusante et sans stress à planifier qu'à y assister.");
         $category->create_user_id = 1;
-        $category->icon = 'svg/engagements-ring.svg';
+        $category->icon = 'svg/engagement-ring.svg';
         $category->color = '#394B6C';
         $category->save();
 
@@ -73,7 +73,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'fr', "Avoir un mariage? conférence? Bal de promo? ou tout autre type d'événement ? Vous aurez certainement besoin de saisir le meilleur style! et lorsque nous disons style, la forme de vos cheveux apparaît automatiquement. C'est à ce moment-là que GDP devient utile, car nous proposons une grande variété de salons de coiffure et / ou de salons de coiffure avec d'excellentes qualités, des horaires programmés et les meilleurs prix, en plus d'offres promotionnelles si vous avez eu la chance.");
         $category->create_user_id = 4;
         $category->icon = 'svg/barber-hairdresser.svg';
-        $category->color = 'rgb(232, 234, 116)';
+        $category->color = 'rgb(200, 202, 74)';
         $category->save();
 
         $category = new Category();
@@ -85,7 +85,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'fr', "Lors du choix d'une tenue de mariage, de nombreux couples sont guidés non seulement par la mode, mais aussi par la gratitude et une dose de décorum qui correspond à l'événement. Cela rend plus difficile de faire un choix, par conséquent, nous vous offrons un service unique où vous pouvez télécharger une description précise des vêtements que vous collectez ou même des besoins d'une personne et nos fournisseurs vous contacteront pour un plus rapide, plus facile, option moins chère et optimale.");
         $category->create_user_id = 5;
         $category->icon = 'svg/grooms-and-brides-attires.svg';
-        $category->color = 'lightblue';
+        $category->color = 'rgb(112, 205, 236)';
         $category->save();
 
     }
