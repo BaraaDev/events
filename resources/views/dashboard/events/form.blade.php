@@ -102,7 +102,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.location')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
-            <input class="form-control @error('location_fr') is-invalid @enderror" value="{{Request::old('location_fr') ? Request::old('location_fr') : $model->getTranslation('location','fr')}}" type="text" name="location_fr" placeholder="{{__('admin/home.Enter_location_fr')}}" autocomplete="off">
+            <input class="form-control @error('location_fr') is-invalid @enderror" value="{{Request::old('location_fr') ? Request::old('location_fr') : $model->getTranslation('location','fr')}}" type="text" name="location_fr" placeholder="{{__('admin/home.enter_location_fr')}}" autocomplete="off">
             @error('location_fr')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>

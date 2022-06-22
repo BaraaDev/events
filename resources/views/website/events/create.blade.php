@@ -48,11 +48,11 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                        <input name="title_ar" placeholder="{{__('website/home.Enter_title_ar')}}" type="text" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" required autocomplete="off">
+                                        <input name="title_ar" placeholder="{{__('website/home.enter_title_ar')}}" type="text" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" required autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                    <textarea name="description_ar" required placeholder="{{__('website/home.Enter_description_ar')}}">{{Request::old('description_ar') ? Request::old('description_ar') : $model->getTranslation('description','ar')}}</textarea>
+                                    <textarea name="description_ar" required placeholder="{{__('website/home.enter_description_ar')}}">{{Request::old('description_ar') ? Request::old('description_ar') : $model->getTranslation('description','ar')}}</textarea>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
@@ -67,12 +67,12 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                        <input name="title_en" placeholder="{{__('website/home.Enter_title_en')}}" type="text" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" required autocomplete="off">
+                                        <input name="title_en" placeholder="{{__('website/home.enter_title_en')}}" type="text" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" required autocomplete="off">
                                     </div>
                                 </div>
                                 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                    <textarea name="description_en" required  placeholder="{{__('website/home.Enter_description_en')}}">{{Request::old('description_en') ? Request::old('description_ar') : $model->getTranslation('description','en')}}</textarea>
+                                    <textarea name="description_en" required  placeholder="{{__('website/home.enter_description_en')}}">{{Request::old('description_en') ? Request::old('description_ar') : $model->getTranslation('description','en')}}</textarea>
                                 </div>
                                 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
@@ -87,11 +87,11 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                        <input name="title_fr" placeholder="{{__('website/home.Enter_title_fr')}}" type="text" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" required autocomplete="off">
+                                        <input name="title_fr" placeholder="{{__('website/home.enter_title_fr')}}" type="text" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" required autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>
-                                    <textarea name="description_fr" required placeholder="{{__('website/home.Enter_description_fr')}}">{{Request::old('description_fr') ? Request::old('description_fr') : $model->getTranslation('description','fr')}}</textarea>
+                                    <textarea name="description_fr" required placeholder="{{__('website/home.enter_description_fr')}}">{{Request::old('description_fr') ? Request::old('description_fr') : $model->getTranslation('description','fr')}}</textarea>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" @if(LaravelLocalization::getCurrentLocale() == 'ar') style="float: right" @endif>

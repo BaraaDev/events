@@ -88,5 +88,17 @@ class CategorySeeder extends Seeder
         $category->color = 'rgb(112, 205, 236)';
         $category->save();
 
+        $category = new Category();
+        $category->setTranslation('name', 'en', "Graduation Parties")
+            ->setTranslation('name', 'ar', 'حفلات التخرج')
+            ->setTranslation('name', 'fr', "Fêtes de fin d'études");
+        $category->setTranslation('content', 'en', 'Host a memorable graduation party for a grad of any age? We are calling all 2022 Graduates! In just a few short months, it’ll be time to let loose and PARTY! Are you ready? There’s a good chance you haven’t even thought that far in advance, and truthfully, that’s what we were hoping for. We’ve organized and partnered with top organizers and suppliers businesses in Egypt and with the least costs too! Go find your offers and get your graduation party organized now!')
+            ->setTranslation('content', 'ar', 'هل تستضيف حفلة تخرج لا تنسى لخريج في أي عمر؟ نحن ندعو جميع خريجي 2022! في غضون أشهر قليلة فقط ، سيكون الوقت قد حان لتخليصك وحفلة! هل أنت جاهز؟ هناك فرصة جيدة لأنك لم تفكر في ذلك مسبقًا ، وبصدق ، هذا ما كنا نأمله. لقد نظمنا وشاركنا مع كبار المنظمين والموردين في مصر وبأقل التكاليف أيضًا! اذهب وابحث عن عروضك وقم بتنظيم حفل التخرج الآن!')
+            ->setTranslation('content', 'fr', "Organisez une soirée de remise des diplômes mémorable pour un diplômé de tout âge ? Nous appelons tous les diplômés 2022 ! Dans quelques mois seulement, il sera temps de lâcher prise et de FAIRE LA FÊTE ! Es-tu prêt? Il y a de fortes chances que vous n'ayez même pas pensé aussi longtemps à l'avance, et honnêtement, c'est ce que nous espérions. Nous avons organisé et noué des partenariats avec les meilleurs organisateurs et fournisseurs en Égypte et à moindre coût ! Allez chercher vos offres et organisez votre soirée de remise des diplômes dès maintenant!");
+        $category->create_user_id = 1;
+        $category->icon = 'svg/graduation-parties.svg';
+        $category->color = 'rgb(145, 57, 124)';
+        $category->save();
+
     }
 }

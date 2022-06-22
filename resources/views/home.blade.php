@@ -217,14 +217,14 @@
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Graduation / Parties</p>
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Graduation Parties</p>
                                     <h2 class="heading-title">Brand new Graduation offers are on doors, Check them out!</h2>
                                     <div class="heading-text">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
-                                        litterarum formas humanitatis per.
+                                        Throw a memorable graduation party for any age graduate. We're calling all graduates from 2022! 
+                                        In just a few short months, it will be time to let loose and PARTY! Are you ready? Chances are 
+                                        you haven't even thought that far ahead, and to be honest, that's what we wanted. We set up and 
+                                        worked with the best organisers and suppliers in Egypt, and we did it for the least amount of 
+                                        money. Go find your offers and start making plans for your graduation party now.
                                     </div>
                                 </div>
 
@@ -251,14 +251,13 @@
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Barber / Coiffer</p>
-                                    <h2 class="heading-title">Check out our new barbers!</h2>
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Decorations</p>
+                                    <h2 class="heading-title">Trendiest Party Decorations: Indoor & Outdoor Party Decor, Party Banners, Decoration Idea- check it out now!</h2>
                                     <div class="heading-text">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
-                                        litterarum formas humanitatis per.
+                                        Decorate for your next party with effect lighting, international flags, party confetti and 
+                                        other festive decoration items through our suppliers. Anything from personalized banners, 
+                                        cheap piñatas, door curtains, cake decorations & much more. All with the lowest cost possible 
+                                        and latest designs.
                                     </div>
                                 </div>
 
@@ -285,8 +284,8 @@
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Barber / Coiffer</p>
-                                    <h2 class="heading-title">Check out our new barbers!</h2>
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Florists</p>
+                                    <h2 class="heading-title">xxxxxxxxxxxxxxxx</h2>
                                     <div class="heading-text">
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                         diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
