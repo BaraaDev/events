@@ -3,9 +3,9 @@
 return [
     'name_button'                   => 'Nom du bouton',
     'link_button'                   => 'Bouton Lien',
-    'Enter_name_button_ar'          => 'Entrez le nom du bouton en arabe', 
-    'Enter_name_button_en'          => 'Entrez le nom du bouton en anglais', 
-    'Enter_name_button_fr'          => 'Saisir le nom du bouton en français', 
+    'enter_name_button_ar'          => 'Entrez le nom du bouton en arabe', 
+    'enter_name_button_en'          => 'Entrez le nom du bouton en anglais', 
+    'enter_name_button_fr'          => 'Saisir le nom du bouton en français', 
     'enter_link_button'             => 'Entrez le lien du bouton',
     'create'                        => 'Créer',
     'sliders'                       => 'Curseurs',

@@ -3,9 +3,9 @@
 return [
     'name_button'                   => 'Button Name',
     'link_button'                   => 'Button Link',
-    'Enter_name_button_ar'          => 'Enter button name in Arabic',
-    'Enter_name_button_en'          => 'Enter button name in English',
-    'Enter_name_button_fr'          => 'Enter button name in French',
+    'enter_name_button_ar'          => 'Enter button name in Arabic',
+    'enter_name_button_en'          => 'Enter button name in English',
+    'enter_name_button_fr'          => 'Enter button name in French',
     'enter_link_button'             => 'Enter button link',
     'create'                        => 'Create Slider',
     'sliders'                       => 'Sliders',

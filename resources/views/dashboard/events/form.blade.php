@@ -2,7 +2,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.event')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
-            <input class="form-control @error('title_ar') is-invalid @enderror" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" type="text" name="title_ar" placeholder="{{__('admin/home.Enter_title_ar')}}" autocomplete="off">
+            <input class="form-control @error('title_ar') is-invalid @enderror" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" type="text" name="title_ar" placeholder="{{__('admin/home.enter_title_ar')}}" autocomplete="off">
             @error('title_ar')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -26,7 +26,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.location')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
-            <input class="form-control @error('location_ar') is-invalid @enderror" value="{{Request::old('location_ar') ? Request::old('location_ar') : $model->getTranslation('location','ar')}}" type="text" name="location_ar" placeholder="{{__('admin/home.Enter_location_ar')}}" autocomplete="off">
+            <input class="form-control @error('location_ar') is-invalid @enderror" value="{{Request::old('location_ar') ? Request::old('location_ar') : $model->getTranslation('location','ar')}}" type="text" name="location_ar" placeholder="{{__('admin/home.enter_location_ar')}}" autocomplete="off">
             @error('location_ar')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -40,7 +40,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.event')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
-            <input class="form-control @error('title_en') is-invalid @enderror" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" type="text" name="title_en" placeholder="{{__('admin/home.Enter_title_en')}}" autocomplete="off">
+            <input class="form-control @error('title_en') is-invalid @enderror" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" type="text" name="title_en" placeholder="{{__('admin/home.enter_title_en')}}" autocomplete="off">
             @error('title_en')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -64,7 +64,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.location')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
-            <input class="form-control @error('location_en') is-invalid @enderror" value="{{Request::old('location_en') ? Request::old('location_en') : $model->getTranslation('location','en')}}" type="text" name="location_en" placeholder="{{__('admin/home.Enter_location_en')}}" autocomplete="off">
+            <input class="form-control @error('location_en') is-invalid @enderror" value="{{Request::old('location_en') ? Request::old('location_en') : $model->getTranslation('location','en')}}" type="text" name="location_en" placeholder="{{__('admin/home.enter_location_en')}}" autocomplete="off">
             @error('location_en')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -78,7 +78,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/event.event')}} <span class="text-danger">*</span> </label>
         <div class="col-lg-9">
-            <input class="form-control @error('title_fr') is-invalid @enderror" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" type="text" name="title_fr" placeholder="{{__('admin/home.Enter_title_fr')}}" autocomplete="off">
+            <input class="form-control @error('title_fr') is-invalid @enderror" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" type="text" name="title_fr" placeholder="{{__('admin/home.enter_title_fr')}}" autocomplete="off">
             @error('title_fr')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>

@@ -9,7 +9,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')); ?>" type="text" name="title_ar" placeholder="<?php echo e(__('admin/home.Enter_title_ar')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')); ?>" type="text" name="title_ar" placeholder="<?php echo e(__('admin/home.enter_title_ar')); ?>" autocomplete="off">
             <?php $__errorArgs = ['title_ar'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -61,7 +61,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('location_ar') ? Request::old('location_ar') : $model->getTranslation('location','ar')); ?>" type="text" name="location_ar" placeholder="<?php echo e(__('admin/home.Enter_location_ar')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('location_ar') ? Request::old('location_ar') : $model->getTranslation('location','ar')); ?>" type="text" name="location_ar" placeholder="<?php echo e(__('admin/home.enter_location_ar')); ?>" autocomplete="off">
             <?php $__errorArgs = ['location_ar'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -89,7 +89,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')); ?>" type="text" name="title_en" placeholder="<?php echo e(__('admin/home.Enter_title_en')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')); ?>" type="text" name="title_en" placeholder="<?php echo e(__('admin/home.enter_title_en')); ?>" autocomplete="off">
             <?php $__errorArgs = ['title_en'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -141,7 +141,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('location_en') ? Request::old('location_en') : $model->getTranslation('location','en')); ?>" type="text" name="location_en" placeholder="<?php echo e(__('admin/home.Enter_location_en')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('location_en') ? Request::old('location_en') : $model->getTranslation('location','en')); ?>" type="text" name="location_en" placeholder="<?php echo e(__('admin/home.enter_location_en')); ?>" autocomplete="off">
             <?php $__errorArgs = ['location_en'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -169,7 +169,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')); ?>" type="text" name="title_fr" placeholder="<?php echo e(__('admin/home.Enter_title_fr')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')); ?>" type="text" name="title_fr" placeholder="<?php echo e(__('admin/home.enter_title_fr')); ?>" autocomplete="off">
             <?php $__errorArgs = ['title_fr'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :
@@ -221,7 +221,7 @@ if (isset($message)) { $__messageOriginal = $message; }
 $message = $__bag->first($__errorArgs[0]); ?> is-invalid <?php unset($message);
 if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
-unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('location_fr') ? Request::old('location_fr') : $model->getTranslation('location','fr')); ?>" type="text" name="location_fr" placeholder="<?php echo e(__('admin/home.Enter_location_fr')); ?>" autocomplete="off">
+unset($__errorArgs, $__bag); ?>" value="<?php echo e(Request::old('location_fr') ? Request::old('location_fr') : $model->getTranslation('location','fr')); ?>" type="text" name="location_fr" placeholder="<?php echo e(__('admin/home.enter_location_fr')); ?>" autocomplete="off">
             <?php $__errorArgs = ['location_fr'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
 if ($__bag->has($__errorArgs[0])) :

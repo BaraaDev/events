@@ -285,13 +285,12 @@
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
                                     <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Florists</p>
-                                    <h2 class="heading-title">xxxxxxxxxxxxxxxx</h2>
+                                    <h2 class="heading-title">GDP offers great flower deals to people who want fresh but cheap flowering for all types of events.</h2>
                                     <div class="heading-text">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-                                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
-                                        litterarum formas humanitatis per.
+                                        Impress your guests with amazing flowers at your event! For example flower wall 
+                                        installations are the perfect way to create stunning photo moments at corporate events, 
+                                        film screenings, and product launches. From one small floral installation to entire event 
+                                        production. With Special offers with the top suppliers over the market.
                                     </div>
                                 </div>
 

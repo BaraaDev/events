@@ -2,7 +2,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/contribution.title')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <input class="form-control @error('title_ar') is-invalid @enderror" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" type="text" name="title_ar" placeholder="{{__('admin/home.Enter_name_ar')}}" autocomplete="off">
+            <input class="form-control @error('title_ar') is-invalid @enderror" value="{{Request::old('title_ar') ? Request::old('title_ar') : $model->getTranslation('title','ar')}}" type="text" name="title_ar" placeholder="{{__('admin/home.enter_name_ar')}}" autocomplete="off">
             @error('title_ar')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -27,7 +27,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/contribution.title')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <input class="form-control @error('title_en') is-invalid @enderror" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" type="text" name="title_en" placeholder="{{__('admin/home.Enter_name_en')}}" autocomplete="off">
+            <input class="form-control @error('title_en') is-invalid @enderror" value="{{Request::old('title_en') ? Request::old('title_en') : $model->getTranslation('title','en')}}" type="text" name="title_en" placeholder="{{__('admin/home.enter_name_en')}}" autocomplete="off">
             @error('title_en')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -51,7 +51,7 @@
     <div class="form-group row">
         <label class="form-label col-lg-3">{{__('admin/contribution.title')}} <span class="text-danger">*</span></label>
         <div class="col-lg-9">
-            <input class="form-control @error('title_fr') is-invalid @enderror" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" type="text" name="title_fr" placeholder="{{__('admin/home.Enter_name_fr')}}" autocomplete="off">
+            <input class="form-control @error('title_fr') is-invalid @enderror" value="{{Request::old('title_fr') ? Request::old('title_fr') : $model->getTranslation('title','fr')}}" type="text" name="title_fr" placeholder="{{__('admin/home.enter_name_fr')}}" autocomplete="off">
             @error('title_fr')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
