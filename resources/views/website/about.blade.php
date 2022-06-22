@@ -105,13 +105,13 @@
 
         <!-- Info Boxes -->
 
-        <section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100">
+        <section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100" style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url({{asset('website/img/purple_bg.jpg')}}); background-size: cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
                         <div class="crumina-module crumina-heading align-center">
                             <h3 class="heading-title">
-                                What is different about <span class="c-primary">GDP</span>{{__('admin/home.question_mark')}}
+                                <span style="color: snow;">What is different about</span> <span class="c-primary">GDP</span><span style="color: snow;">{{__('admin/home.question_mark')}}</span>
                             </h3>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
-                                        <div class="info-box-image bg-secondary-color">
+                                        <div class="info-box-image" style="background-color: rgb(7, 171, 7);">
                                             {{-- <img class="utouch-icon" src="{{asset('website/svg/flag.svg')}}" alt="flag"> --}}
                                             <i class='far fa-comments' style='font-size:36px; color:#FFFFFF;'></i>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
@@ -131,9 +131,9 @@
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-secondary">Power of Negotiation</h6>
+                                            <h6 class="timeline-year" style="color: rgb(19, 221, 19);">Power of Negotiation</h6>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
-                                            <p class="info-box-text">
+                                            <p class="info-box-text" style="color: snow;">
                                                 {{__('admin/home.customer_title')}} & {{__('admin/home.supplier_title')}} are able to
                                                 negotiate in a reply section in the requested event (by the customer) and then both could 
                                                 make a deal together about the price for the satisfaction & the comfortability 
@@ -158,7 +158,7 @@
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-orange">Good Managerial Quality</h6>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
-                                            <p class="info-box-text">
+                                            <p class="info-box-text" style="color: snow;">
                                                 Anything that happens in the website (including the pre-transaction process) must be confirmed 
                                                 by the admins. Admins are able to help customers (event request) & 
                                                 suppliers (contacting the customers in the registered event) to run 
@@ -184,7 +184,7 @@
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-red">Variety of Different Services' Categories</h6>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
-                                            <p class="info-box-text">
+                                            <p class="info-box-text" style="color: snow;">
                                                 Suppliers are having more opportunities to put their 
                                                 products/services on the website and increase their profitability and customers reach & loyalty. 
                                                 And Customers are having many choices for many different types of services in the website.
@@ -207,7 +207,7 @@
                                         <div class="info-box-content">
                                             <h6 class="timeline-year c-yellow">xxxx</h6>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
-                                            <p class="info-box-text">
+                                            <p class="info-box-text" style="color: snow;">
                                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                             </p>
                                         </div>
