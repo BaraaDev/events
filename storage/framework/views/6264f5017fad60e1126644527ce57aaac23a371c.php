@@ -187,19 +187,19 @@
 
                                 <div class="btn-prev">
                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-left-1">
-                                        <use xlink:href="#utouch-icon-arrow-left-1"></use>
+                                        <use xlink:href="#utouch-icon-arrow-left-1" style="fill: snow;"></use>
                                     </svg>
                                     <svg class="utouch-icon utouch-icon-arrow-left1">
-                                        <use xlink:href="#utouch-icon-arrow-left1"></use>
+                                        <use xlink:href="#utouch-icon-arrow-left1" style="fill: snow;"></use>
                                     </svg>
                                 </div>
 
                                 <div class="btn-next">
                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
-                                        <use xlink:href="#utouch-icon-arrow-right-1"></use>
+                                        <use xlink:href="#utouch-icon-arrow-right-1" style="fill: snow;"></use>
                                     </svg>
                                     <svg class="utouch-icon utouch-icon-arrow-right1">
-                                        <use xlink:href="#utouch-icon-arrow-right1"></use>
+                                        <use xlink:href="#utouch-icon-arrow-right1" style="fill: snow;"></use>
                                     </svg>
                                 </div>
 
