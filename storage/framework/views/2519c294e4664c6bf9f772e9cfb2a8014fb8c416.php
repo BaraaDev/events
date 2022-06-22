@@ -77,7 +77,7 @@
                                 <div class="slider-content align-both">
                                     <h2 class="slider-content-title" data-swiper-parallax="-100" style="color: #F89522;"><?php echo e(__('admin/home.home_page_title3')); ?></h2>
                                     <h6 class="slider-content-text" data-swiper-parallax="-200" style="color: #FFFEF7;"><?php echo e(__('admin/home.home_page_content3')); ?></h6>
-                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300"><a onmouseover="this.style.backgroundColor ='6D4A23'" onmouseout="this.style.backgroundColor ='F89522'" href="02_company.html" class="btn btn--lime btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;"><?php echo e(__('admin/home.home_page_content3_button')); ?></a></div>
+                                    <div class="main-slider-btn-wrap" data-swiper-parallax="-300"><a onmouseover="this.style.backgroundColor ='6D4A23'" onmouseout="this.style.backgroundColor ='F89522'" href="https://events.dev/en#suppliers-services-home-page" class="btn btn--lime btn--with-shadow" style="background-color:#F89522; color:#FFFEF7;"><?php echo e(__('admin/home.home_page_content3_button')); ?></a></div>
                                 </div>
                             </div>
 

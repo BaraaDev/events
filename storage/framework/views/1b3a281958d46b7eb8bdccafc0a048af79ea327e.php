@@ -172,13 +172,12 @@ endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="color"><?php echo e(Request::old('color') ? Request::old('color') : $model->color); ?>
 
             <option><?php echo e(__('admin/home.select')); ?></option>
-            <option <?php echo e(isset($model) && $model->color == 'red' ? 'selected' : ''); ?> value="red">red</option>
-            <option <?php echo e(isset($model) && $model->color == 'blue' ? 'selected' : ''); ?> value="blue">blue</option>
-            <option <?php echo e(isset($model) && $model->color == 'cyan' ? 'selected' : ''); ?> value="cyan">cyan</option>
-            <option <?php echo e(isset($model) && $model->color == 'rgb(31, 213, 31)' ? 'selected' : ''); ?> value="rgb(31, 213, 31)">green</option>
-            <option <?php echo e(isset($model) && $model->color == 'orange' ? 'selected' : ''); ?> value="orange">orange</option>
-            <option <?php echo e(isset($model) && $model->color == 'brown' ? 'selected' : ''); ?> value="brown">brown</option>
-            <option <?php echo e(isset($model) && $model->color == 'grey' ? 'selected' : ''); ?> value="grey">grey</option>
+            <option <?php echo e(isset($model) && $model->color == 'red' ? 'selected' : ''); ?> value="red">Red</option>
+            <option <?php echo e(isset($model) && $model->color == 'blue' ? 'selected' : ''); ?> value="blue">Blue</option>
+            <option <?php echo e(isset($model) && $model->color == 'cyan' ? 'selected' : ''); ?> value="cyan">Cyan</option>
+            <option <?php echo e(isset($model) && $model->color == 'rgb(241, 148, 47)' ? 'selected' : ''); ?> value="rgb(241, 148, 47)">Orange</option>
+            <option <?php echo e(isset($model) && $model->color == 'brown' ? 'selected' : ''); ?> value="brown">Brown</option>
+            <option <?php echo e(isset($model) && $model->color == 'grey' ? 'selected' : ''); ?> value="grey">Grey</option>
         </select>
         <?php $__errorArgs = ['color'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -194,7 +193,7 @@ endif;
 unset($__errorArgs, $__bag); ?>
     </div>
 </div>
-<span style="color: rgb(31, 213, 31);"></span>
+<span style="color: rgb(241, 148, 47);"></span>
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon<span class="text-danger">*</span></label>
     <div class="col-lg-9">

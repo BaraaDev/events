@@ -80,13 +80,12 @@
     <div class="col-lg-9">
         <select class="form-control @error('color') is-invalid @enderror" type="text" name="color">{{Request::old('color') ? Request::old('color') : $model->color}}
             <option>{{__('admin/home.select')}}</option>
-            <option {{ isset($model) && $model->color == 'red' ? 'selected' : '' }} value="red">red</option>
-            <option {{ isset($model) && $model->color == 'blue' ? 'selected' : '' }} value="blue">blue</option>
-            <option {{ isset($model) && $model->color == 'cyan' ? 'selected' : '' }} value="cyan">cyan</option>
-            <option {{ isset($model) && $model->color == 'rgb(31, 213, 31)' ? 'selected' : '' }} value="rgb(31, 213, 31)">green</option>
-            <option {{ isset($model) && $model->color == 'orange' ? 'selected' : '' }} value="orange">orange</option>
-            <option {{ isset($model) && $model->color == 'brown' ? 'selected' : '' }} value="brown">brown</option>
-            <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">grey</option>
+            <option {{ isset($model) && $model->color == 'red' ? 'selected' : '' }} value="red">Red</option>
+            <option {{ isset($model) && $model->color == 'blue' ? 'selected' : '' }} value="blue">Blue</option>
+            <option {{ isset($model) && $model->color == 'cyan' ? 'selected' : '' }} value="cyan">Cyan</option>
+            <option {{ isset($model) && $model->color == 'rgb(241, 148, 47)' ? 'selected' : '' }} value="rgb(241, 148, 47)">Orange</option>
+            <option {{ isset($model) && $model->color == 'brown' ? 'selected' : '' }} value="brown">Brown</option>
+            <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">Grey</option>
         </select>
         @error('color')
         <span class="invalid-feedback" role="alert">
@@ -95,7 +94,7 @@
         @enderror
     </div>
 </div>
-<span style="color: rgb(31, 213, 31);"></span>
+<span style="color: rgb(241, 148, 47);"></span>
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon<span class="text-danger">*</span></label>
     <div class="col-lg-9">
