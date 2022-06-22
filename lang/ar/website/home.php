@@ -145,4 +145,13 @@ return [
     'is_paid_pending'                   => 'تحت المراجعه',
     'is_paid_success'                   => 'تم الدفع',
     'offers'                            => 'العروض',
+    'customer_condition_text1'          => 'أرسل نموذج طلب حدث واختر فئة الخدمة التي تحتاجها ضمنه',
+    'customer_condition_text2'          => 'اطلب حدثًا الآن!',
+    'supplier_condition_text'           => 'جميع فئات الخدمات المتاحة للعملاء',
+    'dashboard_condition_text1'         => 'فئات الخدمات',
+    'dashboard2_condition_text2_1'      => 'انقر هنا',
+    'dashboard2_condition_text2_2'      => 'لإضافة خدمة جديدة!',
+    'guest_condition_text1'             => 'فئات الخدمات',
+    'guest_condition_text2'             => 'إذا كنت بحاجة إلى خدمة ، سارع بالاشتراك الآن وقم بتقديم طلب لحدث.',
+    'guest_condition_text3'             => 'اشترك!',
 ];

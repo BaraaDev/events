@@ -146,4 +146,14 @@ return [
     'is_paid_pending'                    => 'Pending',
     'is_paid_success'                    => 'Success',
     'offers'                             => 'Offers',
+    'customer_condition_text1'           => 'Submit an Event Request Form & Pick The Service Category You Need Within It',
+    'customer_condition_text2'           => 'Make an Event Request Now!',
+    'supplier_condition_text'            => 'All The Available Services Categories For The Customers',
+    'dashboard_condition_text1'          => 'Services Categories',
+    'dashboard2_condition_text2_1'       => 'Click Here',
+    'dashboard2_condition_text2_2'       => 'to Add a New Service!',
+    'guest_condition_text1'              => 'Services Categories',
+    'guest_condition_text2'              => 'If You Need a Service, Hurry Up & Sign Up Now and make a Request for an Event.',
+    'guest_condition_text3'              => 'Sign Up!',
+    
 ];

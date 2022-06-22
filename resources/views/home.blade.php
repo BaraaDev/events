@@ -124,25 +124,25 @@
                     <div class="crumina-module crumina-heading align-center">
                         @auth
                             @if(auth()->user()->user_type == 'customer')
-                                <h4 class="heading-title">Submit an Event Request Form & Pick The Service Category You Need Within It</h4>
+                                <h4 class="heading-title">{{__('website/home.customer_condition_text1')}}</h4>
                                 <span>
                                     <a href="{{route('event.create')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
-                                        Make an Event Request Now!
+                                        {{__('website/home.customer_condition_text2')}}
                                     </a>
                                 </span>
                             @elseif(auth()->user()->user_type == 'supplier')
-                                <h4 class="heading-title">All The Available Services Categories</h4>
+                                <h4 class="heading-title">{{__('website/home.supplier_condition_text')}}</h4>
                             @elseif(auth()->user()->user_type == 'dashboard')
-                                <h4 class="heading-title">Services Categories</h4>
-                                <h5 class="heading-title"><a href="{{route('categories.create')}}" style="color: rgb(17, 17, 187);" onmouseover="this.style.color='purple'" onmouseout="this.style.color='rgb(17, 17, 187)'">Click Here</a> to Add a New Service!</h5>
+                                <h4 class="heading-title">{{__('website/home.dashboard_condition_text1')}}</h4>
+                                <h5 class="heading-title"><a href="{{route('categories.create')}}" style="color: rgb(17, 17, 187);" onmouseover="this.style.color='purple'" onmouseout="this.style.color='rgb(17, 17, 187)'">{{__('website/home.dashboard2_condition_text2_1')}}</a> {{__('website/home.dashboard2_condition_text2_2')}}</h5>
                             @endif
                         @endauth
                         @guest
-                            <h4 class="heading-title">Services Categories</h4>
-                            <h5 class="heading-title">If You Need a Service, Hurry Up & Sign Up Now and make a Request for an Event.</h5>
+                            <h4 class="heading-title">{{__('website/home.guest_condition_text1')}}</h4>
+                            <h5 class="heading-title">{{__('website/home.guest_condition_text2')}}</h5>
                                 <span>
                                     <a href="{{route('register')}}" class="btn btn-border btn--with-shadow c-secondary mb30" onmouseover="this.style.backgroundColor='#C3CFDD'" onmouseout="this.style.backgroundColor='rgb(246, 208, 193)'" style="background-color: rgb(246, 208, 193);">
-                                        Sign Up!
+                                        {{__('website/home.guest_condition_text3')}}
                                     </a>
                                 </span>
                         @endguest
