@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(CountrySeeder::class);
         $this->call(GovernorateSeeder::class);
-        $this->call(CityeSeeder::class);
+        $this->call(CitySeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(SettingsSeeder::class);
     }

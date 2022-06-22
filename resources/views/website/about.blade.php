@@ -136,7 +136,7 @@
                                             <p class="info-box-text">
                                                 {{__('admin/home.customer_title')}} & {{__('admin/home.supplier_title')}} are able to
                                                 negotiate in a reply section in the requested event (by the customer) and then both could 
-                                                make a deal together about the price in order for the satisfaction & the comfortability 
+                                                make a deal together about the price for the satisfaction & the comfortability 
                                                 for both in the website. 
                                             </p>
                                         </div>

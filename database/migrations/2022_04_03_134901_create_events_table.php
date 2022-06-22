@@ -28,7 +28,7 @@ return new class extends Migration
             $table->string('user_id');
             $table->integer('create_user_id');
             $table->integer('update_user_id')->nullable();
-            $table->enum('status',['Paid','Active','Pending'])->nullable();
+            $table->enum('status',['Expired','Available','Stopped']);
             $table->timestamps();
             $table->softDeletes();
         });

@@ -60,7 +60,7 @@
                 <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
                     <div class="widget w-list">
 
-                        <h5 class="widget-title">{{__('website/home.userful_links')}}</h5>
+                        <h5 class="widget-title">{{__('website/home.useful_links')}}</h5>
                         <ul class="list list--primary">
                             <li>
                                 <a href="{{route('home')}}">{{__('website/home.home')}}</a>
@@ -170,11 +170,11 @@
                         </span>
 
                         <span>{{__('admin/home.footer_translation2')}}
-                            <a href="javascript:void(0)" style="color: red; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'">{{__('admin/home.kareem')}}</a>,
-                            <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'">{{__('admin/home.mustafa')}}</a>,
-                            <a href="javascript:void(0)" style="color: orange; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'">{{__('admin/home.rawan')}}</a>,
-                            <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'">{{__('admin/home.aseel')}}</a> {{__('admin/home.&')}}
-                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">{{__('admin/home.sara')}}</a>
+                            <a href="javascript:void(0)" style="color: red; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'">{{__('admin/home.kareem')}}</a>,
+                            <a href="javascript:void(0)" style="color: purple; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'">{{__('admin/home.mustafa')}}</a>,
+                            <a href="javascript:void(0)" style="color: orange; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'">{{__('admin/home.rawan')}}</a>,
+                            <a href="javascript:void(0)" style="color: green; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'">{{__('admin/home.aseel')}}</a> {{__('admin/home.&')}}
+                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'">{{__('admin/home.sara')}}</a>
                         </span>
                         <div style="background-color: #d3dae2; width: 16.5%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; 
                                     border-radius:6px; font-weight: bold;" onmouseover="this.style.backgroundColor='#c4c9cf'" onmouseout="this.style.backgroundColor='#d3dae2'">

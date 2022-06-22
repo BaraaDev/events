@@ -52,7 +52,7 @@
                 <div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-12 col-sm-offset-0 col-xs-12">
                     <div class="widget w-list">
 
-                        <h5 class="widget-title"><?php echo e(__('website/home.userful_links')); ?></h5>
+                        <h5 class="widget-title"><?php echo e(__('website/home.useful_links')); ?></h5>
                         <ul class="list list--primary">
                             <li>
                                 <a href="<?php echo e(route('home')); ?>"><?php echo e(__('website/home.home')); ?></a>
@@ -164,12 +164,12 @@
 
                         <span><?php echo e(__('admin/home.footer_translation2')); ?>
 
-                            <a href="javascript:void(0)" style="color: red; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'"><?php echo e(__('admin/home.kareem')); ?></a>,
-                            <a href="javascript:void(0)" style="color: purple; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'"><?php echo e(__('admin/home.mustafa')); ?></a>,
-                            <a href="javascript:void(0)" style="color: orange; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'"><?php echo e(__('admin/home.rawan')); ?></a>,
-                            <a href="javascript:void(0)" style="color: green; font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'"><?php echo e(__('admin/home.aseel')); ?></a> <?php echo e(__('admin/home.&')); ?>
+                            <a href="javascript:void(0)" style="color: red; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='red'"><?php echo e(__('admin/home.kareem')); ?></a>,
+                            <a href="javascript:void(0)" style="color: purple; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='#0083FF'"><?php echo e(__('admin/home.mustafa')); ?></a>,
+                            <a href="javascript:void(0)" style="color: orange; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='orange'"><?php echo e(__('admin/home.rawan')); ?></a>,
+                            <a href="javascript:void(0)" style="color: green; font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='green'"><?php echo e(__('admin/home.aseel')); ?></a> <?php echo e(__('admin/home.&')); ?>
 
-                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'"><?php echo e(__('admin/home.sara')); ?></a>
+                            <a href="javascript:void(0)" style="color: rgb(235, 111, 132); font-weight:bold; cursor: context-menu;" onmouseover="this.style.color='black'" onmouseout="this.style.color='purple'"><?php echo e(__('admin/home.sara')); ?></a>
                         </span>
                         <div style="background-color: #d3dae2; width: 16.5%; margin-left:auto; margin-right:auto; padding-top:0.25%; padding-bottom:0.25%; 
                                     border-radius:6px; font-weight: bold;" onmouseover="this.style.backgroundColor='#c4c9cf'" onmouseout="this.style.backgroundColor='#d3dae2'">
@@ -193,15 +193,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('contact-us')->html();
-} elseif ($_instance->childHasBeenRendered('7SBDiLK')) {
-    $componentId = $_instance->getRenderedChildComponentId('7SBDiLK');
-    $componentTag = $_instance->getRenderedChildComponentTagName('7SBDiLK');
+} elseif ($_instance->childHasBeenRendered('pzkj4Q4')) {
+    $componentId = $_instance->getRenderedChildComponentId('pzkj4Q4');
+    $componentTag = $_instance->getRenderedChildComponentTagName('pzkj4Q4');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('7SBDiLK');
+    $_instance->preserveRenderedChild('pzkj4Q4');
 } else {
     $response = \Livewire\Livewire::mount('contact-us');
     $html = $response->html();
-    $_instance->logRenderedChild('7SBDiLK', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('pzkj4Q4', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

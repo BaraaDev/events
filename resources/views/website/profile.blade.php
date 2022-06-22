@@ -270,11 +270,11 @@
                                         <div class="col-xxl-12 col-lg-12">
                                             <div class="project-box">
                                                 @if($event->status == 'Stopped')
-                                                    <span class="badge badge-danger">{{$event->status}}</span>
+                                                    <span class="badge badge-danger">{{__('admin/home.stopped_pending')}}</span>
                                                 @elseif($event->status == 'Available')
-                                                    <span class="badge badge-success" style="color:bisque;">{{$event->status}}</span>
+                                                    <span class="badge badge-success" style="color:bisque;">{{__('admin/home.available_active')}}</span>
                                                 @elseif($event->status == 'Expired')
-                                                    <span class="badge badge-dark">{{$event->status}}</span>
+                                                    <span class="badge badge-dark">{{__('admin/home.expired_paid')}}</span>
                                                 @endif
                                                 <h6>{{$event->title}}</h6>
                                                 <div class="media">

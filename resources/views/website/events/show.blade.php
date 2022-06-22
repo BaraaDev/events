@@ -96,8 +96,8 @@
                                 @else
                                     <div class="crumina-module crumina-heading align-center">
                                         <div class="heading-text"> {{__('website/event.to_add')}}
-                                            <a href="{{route('register')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.register')}}</a> {{__('website/event.or')}}
-                                            <a href="{{route('login')}}" style="color: #0083FF; font-weight: bold;">{{__('website/event.log_in')}}</a>
+                                            <a href="{{route('register')}}" style="color: rgb(17, 17, 187); font-weight: bold;">{{__('website/event.register')}}</a> {{__('website/event.or')}}
+                                            <a href="{{route('login')}}" style="color: rgb(17, 17, 187); font-weight: bold;">{{__('website/event.log_in')}}</a>
                                         </div>
                                     </div>
                                 @endif
@@ -221,15 +221,15 @@
                                     <li><a>{{__('website/home.status')}}:
                                                 @if($event->status == 'Available')
                                                     <span class="cat-count c-yellow" style="background-color: rgb(200, 234, 186); padding: 3%; color: rgb(10, 156, 7); font-size: 13px;" onmouseover="this.style.color='#0083FF'" onmouseout="this.style.color='rgb(10, 156, 7)'">
-                                                        Active
+                                                        {{__('admin/home.available_active')}}
                                                     </span>
                                                 @elseif($event->status == 'Expired')
                                                     <span class="cat-count c-yellow" style="background-color: rgb(231, 185, 185); padding: 3%; color: rgb(173, 19, 19); font-size: 13px;" onmouseover="this.style.color='snow'" onmouseout="this.style.color='rgb(173, 19, 19)'">
-                                                        Paid
+                                                        {{__('admin/home.expired_paid')}}
                                                     </span>
                                                 @else <!-- $event->status == 'Stopped' -->
                                                     <span class="cat-count c-yellow" style="background-color: rgb(231, 228, 185); padding: 3%; color: rgb(255, 115, 0); font-size: 13px;" onmouseover="this.style.color='black'" onmouseout="this.style.color='rgb(255, 115, 0)'">
-                                                        Pending
+                                                        {{__('admin/home.stopped_pending')}}
                                                     </span>
                                                 @endif
                                         </a>
@@ -287,12 +287,12 @@
 
 
                             <aside class="widget w-tags">
-                                <h5 class="widget-title">{{__('website/event.required_skills')}}</h5>
+                                <h5 class="widget-title">{{__('website/event.tags')}}</h5>
                                 <ul class="tags-list">
                                     @forelse($event->tags as $tag)
                                         <li><a >{{$tag->name}}</a></li>
                                     @empty
-                                        <div class="alert alert-danger" role="alert">{{__('website/event.no_tag')}}</div>
+                                        <div class="alert alert-danger" role="alert">{{__('website/event.no_tags')}}</div>
                                     @endforelse
                                 </ul>
                             </aside>

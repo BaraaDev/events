@@ -10,7 +10,7 @@
 
     <!-- Start Main Slider -->
     <div class="crumina-module crumina-module-slider container-full-width">
-        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: cover;">
+        <div class="swiper-container main-slider navigation-center-both-sides" data-effect="fade" style="cursor: grabbing; background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/catering-2.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide main-slider-bg-light">
                     <div class="container table">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/friends-2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-slide main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/friends-2.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide main-slider-bg-light">
 
@@ -68,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/sparks2.jpg')}}); background-repeat: no-repeat; background-size: 100% auto;">
+                <div class="swiper-slide thumb-left main-slider-bg-light" style="background-color: rgb(238, 247, 214); background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{asset('website/img/sparks2.jpg')}}); background-repeat: no-repeat; background-size: 100% 100%;">
 
                     <div class="container table full-height">
                         <div class="row table-cell">
@@ -124,14 +124,17 @@
                     <div class="crumina-module crumina-heading align-center">
                         @auth
                             @if(auth()->user()->user_type == 'customer')
-                                <h4 class="heading-title">Pick The Service Category You Need</h4>
+                                <h4 class="heading-title">Submit an Event Request Form & Pick The Service Category You Need Within It</h4>
                                 <span>
                                     <a href="{{route('event.create')}}" class="btn btn--with-shadow" style="background-color: rgb(250, 141, 114); color:#FFFEF7; border: solid 3px black;" onmouseover="this.style.background='rgb(139, 85, 71)'" onmouseout="this.style.background='rgb(250, 141, 114)'">
-                                        Request an Event now!
+                                        Make an Event Request Now!
                                     </a>
                                 </span>
-                            @elseif(auth()->user()->user_type == 'supplier' || auth()->user()->user_type == 'dashboard')
+                            @elseif(auth()->user()->user_type == 'supplier')
+                                <h4 class="heading-title">All The Available Services Categories</h4>
+                            @elseif(auth()->user()->user_type == 'dashboard')
                                 <h4 class="heading-title">Services Categories</h4>
+                                <h5 class="heading-title"><a href="{{route('categories.create')}}" style="color: rgb(17, 17, 187);">Click Here</a> to Add a New Service!</h5>
                             @endif
                         @endauth
                         @guest
@@ -153,8 +156,8 @@
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
                                     <a href="{{route('event.category',$service->id)}}">
-                                        <div class="info-box-image bg-secondary-color" style="{{'background-color: '.$service->color}};" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor=''"> <!-- bg-color from DB for icon -->
-                                            <img class="utouch-icon" src="{{asset("website/$service->icon")}}"> <!--icon from DB-->
+                                        <div class="info-box-image bg-secondary-color" style="background-color:{{$service->color}};" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='{{$service->color}}'"> <!-- bg-color from DB for icon -->
+                                            <img class="utouch-icon" src="{{asset("website/".$service->icon)}}"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
                                             </svg>
@@ -162,7 +165,7 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color: {{$service->color}};"><a href="{{route('event.category',$service->id)}}" onmouseover="this.style.color='black'" onmouseout="this.style.color=''">{{$service->name}}</a></h6>
+                                        <h6 class="timeline-year c-secondary" style="color:{{$service->color}};"><a href="{{route('event.category',$service->id)}}" onmouseover="this.style.color='black'" onmouseout="this.style.color=''">{{$service->name}}</a></h6> <!-- headline-text-color from DB for icon -->
                                         <p class="info-box-text">{!! \Str::words($service->content,'20',' ...') !!}</p>
                                     </div>
                                 </div>

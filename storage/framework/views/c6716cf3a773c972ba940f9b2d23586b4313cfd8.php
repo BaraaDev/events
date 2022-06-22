@@ -207,10 +207,17 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>" type="text" name="icon" value="<?php echo e(Request::old('icon') ? Request::old('icon') : $model->icon); ?>">
             <option><?php echo e(__('admin/home.select')); ?></option>
+<<<<<<< HEAD
             <option value="svg/settings.svg" <?php echo e(isset($model) && $model->icon == 'svg/settings.svg' ? 'selected'  : ''); ?>>Settings</option>
             <option value="svg/flag.svg" <?php echo e(isset($model) && $model->icon == 'svg/flag.svg' ? 'selected'  : ''); ?>>flag</option>
             <option value="svg/rocket-launch.svg" <?php echo e(isset($model) && $model->icon == 'svg/rocket-launch.svg' ? 'selected'  : ''); ?>>Rocket Launch</option>
             <option value="svg/dribbble.svg" <?php echo e(isset($model) && $model->icon == 'svg/dribbble.svg' ? 'selected'  : ''); ?>>Dribbble</option>
+=======
+            <option value="svg/settings.svg">Settings</option>
+            <option value="svg/flag.svg">flag</option>
+            <option value="svg/rocket-launch.svg">Rocket Launch</option>
+            <option value="svg/dribbble.svg">Dribbble</option>
+>>>>>>> 549879857199cd3c37692478bae5be315d3340bc
         </select> <!-- the directory link of the image icon -->
         <?php $__errorArgs = ['icon'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
