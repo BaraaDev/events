@@ -134,7 +134,7 @@
                                 <h4 class="heading-title">All The Available Services Categories</h4>
                             <?php elseif(auth()->user()->user_type == 'dashboard'): ?>
                                 <h4 class="heading-title">Services Categories</h4>
-                                <h5 class="heading-title"><a href="<?php echo e(route('categories.create')); ?>" style="color: rgb(17, 17, 187);">Click Here</a> to Add a New Service!</h5>
+                                <h5 class="heading-title"><a href="<?php echo e(route('categories.create')); ?>" style="color: rgb(17, 17, 187);" onmouseover="this.style.color='purple'" onmouseout="this.style.color='rgb(17, 17, 187)'">Click Here</a> to Add a New Service!</h5>
                             <?php endif; ?>
                         <?php endif; ?>
                         <?php if(auth()->guard()->guest()): ?>
@@ -156,7 +156,7 @@
                             <div class="swiper-slide">
                                 <div class="crumina-module crumina-info-box info-box--time-line">
                                     <a href="<?php echo e(route('event.category',$service->id)); ?>">
-                                        <div class="info-box-image bg-secondary-color" style="background-color:<?php echo e($service->color); ?>;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='<?php echo e($service->color); ?>'"> <!-- bg-color from DB for icon -->
+                                        <div class="info-box-image bg-secondary-color" style="background-color:<?php echo e($service->color); ?>;" onmouseover="this.style.backgroundColor='grey'" onmouseout="this.style.backgroundColor='<?php echo e($service->color); ?>'"> <!-- bg-color from DB for icon -->
                                             <img class="utouch-icon" src="<?php echo e(asset("website/".$service->icon)); ?>"> <!--icon from DB-->
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow" style="fill: rgb(0, 0, 0);"></use>
@@ -165,7 +165,7 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color:<?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='black'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h6> <!-- headline-text-color from DB for icon -->
+                                        <h6 class="timeline-year c-secondary" style="color:<?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h6> <!-- headline-text-color from DB for icon -->
                                         <p class="info-box-text"><?php echo \Str::words($service->content,'20',' ...'); ?></p>
                                     </div>
                                 </div>

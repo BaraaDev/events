@@ -83,7 +83,7 @@
             <option {{ isset($model) && $model->color == 'red' ? 'selected' : '' }} value="red">red</option>
             <option {{ isset($model) && $model->color == 'blue' ? 'selected' : '' }} value="blue">blue</option>
             <option {{ isset($model) && $model->color == 'cyan' ? 'selected' : '' }} value="cyan">cyan</option>
-            <option {{ isset($model) && $model->color == 'green' ? 'selected' : '' }} value="green">green</option>
+            <option {{ isset($model) && $model->color == 'rgb(31, 213, 31)' ? 'selected' : '' }} value="rgb(31, 213, 31)">green</option>
             <option {{ isset($model) && $model->color == 'orange' ? 'selected' : '' }} value="orange">orange</option>
             <option {{ isset($model) && $model->color == 'brown' ? 'selected' : '' }} value="brown">brown</option>
             <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">grey</option>
@@ -95,7 +95,7 @@
         @enderror
     </div>
 </div>
-
+<span style="color: rgb(31, 213, 31);"></span>
 <div class="form-group row">
     <label class="form-label col-lg-3">Icon<span class="text-danger">*</span></label>
     <div class="col-lg-9">
@@ -105,6 +105,32 @@
             <option value="svg/flag.svg">flag</option>
             <option value="svg/rocket-launch.svg">Rocket Launch</option>
             <option value="svg/dribbble.svg">Dribbble</option>
+            <option value="svg/catering.svg">Catering</option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
+            <option value="svg/.svg"></option>
         </select> <!-- the directory link of the image icon -->
         @error('icon')
         <span class="invalid-feedback" role="alert">
