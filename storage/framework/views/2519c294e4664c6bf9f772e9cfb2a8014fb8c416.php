@@ -217,22 +217,16 @@
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Graduation Parties</p>
-                                    <h2 class="heading-title">Brand new Graduation offers are on doors, Check them out!</h2>
-                                    <div class="heading-text">
-                                        Throw a memorable graduation party for any age graduate. We're calling all graduates from 2022! 
-                                        In just a few short months, it will be time to let loose and PARTY! Are you ready? Chances are 
-                                        you haven't even thought that far ahead, and to be honest, that's what we wanted. We set up and 
-                                        worked with the best organisers and suppliers in Egypt, and we did it for the least amount of 
-                                        money. Go find your offers and start making plans for your graduation party now.
-                                    </div>
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;"><?php echo e(__('admin/home.service1')); ?></p>
+                                    <h2 class="heading-title"><?php echo e(__('admin/home.service1_content')); ?></h2>
+                                    <div class="heading-text"><?php echo e(__('admin/home.service1_sub-content')); ?></div>
                                 </div>
 
                                 <a href="javascript:void(0)" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#C52A0C'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/40/undefined/external-graduation-cap-learning-xnimrodx-lineal-color-xnimrodx-2.png" />
                                     <div class="text" style="padding-left:5px ;">
-                                        <span class="sup-title">Check now on</span>
-                                        <span class="title">Parties</span>
+                                        <span class="sup-title"><?php echo e(__('admin/home.services_chceck-now-on_button')); ?></span>
+                                        <span class="title"><?php echo e(__('admin/home.Service1_button_text')); ?></span>
                                     </div>
                                 </a>
 
@@ -251,22 +245,16 @@
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Decorations</p>
-                                    <h2 class="heading-title">Trendiest Party Decorations: Indoor & Outdoor Party Decor, Party Banners, Decoration Idea- check it out now!</h2>
-                                    <div class="heading-text">
-                                        You may get effect lighting, international flags, party confetti, and other items to decorate 
-                                        for a festive occasion via our vendors and use them to spruce up the venue for your next party. 
-                                        Anything from customised banners to inexpensive piatas, door curtains, and even cake 
-                                        decorations, among many other things. All of this, at the most competitive prices and 
-                                        most up-to-date styles conceivable.
-                                    </div>
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;"><?php echo e(__('admin/home.service2')); ?></p>
+                                    <h2 class="heading-title"><?php echo e(__('admin/home.service2_content')); ?></h2>
+                                    <div class="heading-text"><?php echo e(__('admin/home.service2_sub-content')); ?></div>
                                 </div>
 
                                 <a href="javascript:void(0)" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='orange'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-basicons-color-edtgraphics/40/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
                                     <div class="text" style="padding-left:5px ;">
-                                        <span class="sup-title">Check now on</span>
-                                        <span class="title">Decorations</span>
+                                        <span class="sup-title"><?php echo e(__('admin/home.services_chceck-now-on_button')); ?></span>
+                                        <span class="title"><?php echo e(__('admin/home.Service2_button_text')); ?></span>
                                     </div>
                                 </a>
 
@@ -285,21 +273,16 @@
                             </div>
                             <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-12 col-xs-12">
                                 <div class="crumina-module crumina-heading custom-color c-white">
-                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Florists</p>
-                                    <h2 class="heading-title">GDP offers great flower deals to people who want fresh but cheap flowering for all types of events.</h2>
-                                    <div class="heading-text">
-                                        At your event, you can WOW your guests with beautiful flowers. Flower wall installations, 
-                                        for example, are a great way to make beautiful photo moments at corporate events, 
-                                        film screenings, and product launches. From a small flower arrangement to the production 
-                                        of an entire event. With special deals from the best vendors in the market.
-                                    </div>
+                                    <p style="color:#B2DAFF; font-weight:bold; font-size:120%;"><?php echo e(__('admin/home.service3')); ?></p>
+                                    <h2 class="heading-title"><?php echo e(__('admin/home.service3_content')); ?></h2>
+                                    <div class="heading-text"><?php echo e(__('admin/home.service3_sub-content')); ?></div>
                                 </div>
 
                                 <a href="javascript:void(0)" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#A16B78'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/40/undefined/external-rose-supermarket-photo3ideastudio-flat-photo3ideastudio.png" />
                                     <div class="text">
-                                        <span class="sup-title">Check now on</span>
-                                        <span class="title">Flowers</span>
+                                        <span class="sup-title"><?php echo e(__('admin/home.services_chceck-now-on_button')); ?></span>
+                                        <span class="title"><?php echo e(__('admin/home.Service3_button_text')); ?></span>
                                     </div>
                                 </a>
                             </div>

@@ -104,14 +104,30 @@ return [
     'home_page_title3'                   => 'Rise Up With the Most Interesting & Less Time Consuming Online Service!',
     'home_page_content3'                 => 'From the variety of different categories of services & suppliers, find the service that you need from our suppliers.',
     'home_page_content3_button'          => 'Get Started Now!', 
-    'service1'                           => 'Wedding Arrangements',
-    'service2'                           => 'Birthday Parties',
-    'service3'                           => 'Food Services',
-    'service1_content'                   => 'wedding album, wedding anniversary, wedding announcement, 
-                                             wedding attire, wedding banquet, bouquet flowers, decor and design, etc.',
-    'service2_content'                   => 'plan games, balloons, goodie bags, birthday gifts, birthday cakes, candles,
-                                             DJs, tables and chairs, birthday party favors, invitations, entertainment rentals etc.',
-    'service3_content'                   => 'food, beverages & snacks preparations, semi-self service, waiter service, buffet service.',
+    'service1'                           => 'Graduation Parties',
+    'service2'                           => 'Decorations',
+    'service3'                           => 'Florists',
+    'service1_content'                   => 'Brand new Graduation offers are on doors, Check them out!',
+    'service2_content'                   => 'Trendiest Party Decorations: Indoor & Outdoor Party Decor, Party Banners, Decoration Idea- check it out now!',
+    'service3_content'                   => 'GDP offers great flower deals to people who want fresh but cheap flowering for all types of events.',
+    'service1_sub-content'               => "Throw a memorable graduation party for any age graduate. We're calling all graduates from 2022! 
+                                             In just a few short months, it will be time to let loose and PARTY! Are you ready? Chances are 
+                                             you haven't even thought that far ahead, and to be honest, that's what we wanted. We set up and 
+                                             worked with the best organisers and suppliers in Egypt, and we did it for the least amount of 
+                                             money. Go find your offers and start making plans for your graduation party now.",
+    'service2_sub-content'               => 'You may get effect lighting, international flags, party confetti, and other items to decorate 
+                                             for a festive occasion via our vendors and use them to spruce up the venue for your next party. 
+                                             Anything from customised banners to inexpensive piatas, door curtains, and even cake 
+                                             decorations, among many other things. All of this, at the most competitive prices and 
+                                             most up-to-date styles conceivable.',
+    'service3_sub-content'               => 'At your event, you can WOW your guests with beautiful flowers. Flower wall installations, 
+                                             for example, are a great way to make beautiful photo moments at corporate events, 
+                                             film screenings, and product launches. From a small flower arrangement to the production 
+                                             of an entire event. With special deals from the best vendors in the market.',
+    'services_chceck-now-on_button'      => 'Check now on',
+    'Service1_button_text'               => 'Parties',
+    'Service2_button_text'               => 'Decorations',
+    'Service3_button_text'               => 'Flowers',
     'number_of_customers'                => 'No. of Customers',
     'number_of_suppliers'                => 'No. of Suppliers',
     'number_of_comments'                 => 'No. of Comments',
