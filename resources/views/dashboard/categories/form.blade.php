@@ -101,10 +101,10 @@
     <div class="col-lg-9">
         <select class="form-control @error('icon') is-invalid @enderror" type="text" name="icon" value="{{Request::old('icon') ? Request::old('icon') : $model->icon}}">
             <option>{{__('admin/home.select')}}</option>
-            <option value="public/website/svg/flag.svg">Settings</option>
-            <option value="public/website/svg/flag.svg">flag</option>
-            <option value="svg/rocket-launch.svg">Rocket Launch</option>
-            <option value="svg/dribbble.svg">Dribbble</option>
+            <option value="svg/settings.svg" {{ isset($model) && $model->icon == 'svg/settings.svg' ? 'selected'  : '' }}>Settings</option>
+            <option value="svg/flag.svg" {{ isset($model) && $model->icon == 'svg/flag.svg' ? 'selected'  : '' }}>flag</option>
+            <option value="svg/rocket-launch.svg" {{ isset($model) && $model->icon == 'svg/rocket-launch.svg' ? 'selected'  : '' }}>Rocket Launch</option>
+            <option value="svg/dribbble.svg" {{ isset($model) && $model->icon == 'svg/dribbble.svg' ? 'selected'  : '' }}>Dribbble</option>
         </select> <!-- the directory link of the image icon -->
         @error('icon')
         <span class="invalid-feedback" role="alert">
