@@ -27,6 +27,18 @@ class CategorySeeder extends Seeder
         $category->color = 'rgb(243, 142, 142)';
         $category->save();
 
+        $category = new Category();
+        $category->setTranslation('name', 'en', "Decorations")
+            ->setTranslation('name', 'ar', 'الزينة')
+            ->setTranslation('name', 'fr', "Décorations");
+        $category->setTranslation('content', 'en', 'Decorate for your next party with effect lighting, international flags, party confetti and other festive decoration items through our suppliers. Anything from personalized banners, cheap piñatas, door curtains, cake decorations & much more. All with the lowest cost possible and latest designs.')
+            ->setTranslation('content', 'ar', 'قم بتزيين حفلتك القادمة بإضاءة مؤثرة ، وأعلام دولية ، وورق قصاصات فنية للحفلات وغيرها من عناصر الديكور الاحتفالي من خلال موردينا. أي شيء من اللافتات المخصصة ، البيناتا الرخيصة ، ستائر الأبواب ، زينة الكيك وأكثر من ذلك بكثير. كل ذلك بأقل تكلفة ممكنة وأحدث التصميمات.')
+            ->setTranslation('content', 'fr', "Décorez pour votre prochaine fête avec un éclairage à effet, des drapeaux internationaux, des confettis de fête et d'autres articles de décoration festifs grâce à nos fournisseurs. Des bannières personnalisées, des piñatas bon marché, des rideaux de porte, des décorations de gâteaux et bien plus encore. Le tout avec le coût le plus bas possible et les dernières conceptions.");
+        $category->create_user_id = 4;
+        $category->icon = 'svg/decorations.svg';
+        $category->color = 'rgb(50, 177, 164)';
+        $category->save();
+
 
         $category = new Category();
         $category->setTranslation('name', 'en', 'Catering')
@@ -38,6 +50,18 @@ class CategorySeeder extends Seeder
         $category->create_user_id = 2;
         $category->icon = 'svg/catering.svg';
         $category->color = 'rgb(241, 148, 47)';
+        $category->save();
+
+        $category = new Category();
+        $category->setTranslation('name', 'en', "Florists")
+            ->setTranslation('name', 'ar', 'باعة الزهور')
+            ->setTranslation('name', 'fr', "Fleuristes");
+        $category->setTranslation('content', 'en', 'Impress your guests with amazing flowers at your event! For example flower wall installations are the perfect way to create stunning photo moments at corporate events, film screenings, and product launches. From one small floral installation to entire event production. With Special offers with the top suppliers over the market.')
+            ->setTranslation('content', 'ar', 'اعجاب ضيوفك بالزهور المذهلة في مناسبتك! على سبيل المثال ، تُعد تركيبات حائط الزهور الطريقة المثالية لإنشاء لحظات صور مذهلة في أحداث الشركات وعروض الأفلام وإطلاق المنتجات. من تركيب الأزهار الصغيرة إلى إنتاج الحدث بالكامل. مع عروض خاصة مع كبار الموردين في السوق.')
+            ->setTranslation('content', 'fr', "Impressionnez vos invités avec de superbes fleurs lors de votre événement ! Par exemple, les installations murales de fleurs sont le moyen idéal pour créer de superbes moments photo lors d'événements d'entreprise, de projections de films et de lancements de produits. D'une petite installation florale à la production d'un événement complet. Avec des offres spéciales avec les meilleurs fournisseurs du marché.");
+        $category->create_user_id = 6;
+        $category->icon = 'svg/florists.svg';
+        $category->color = 'rgb(193, 26, 98)';
         $category->save();
 
         $category = new Category();

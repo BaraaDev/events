@@ -254,10 +254,7 @@
                                     <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Decorations</p>
                                     <h2 class="heading-title">Trendiest Party Decorations: Indoor & Outdoor Party Decor, Party Banners, Decoration Idea- check it out now!</h2>
                                     <div class="heading-text">
-                                        Decorate for your next party with effect lighting, international flags, party confetti and 
-                                        other festive decoration items through our suppliers. Anything from personalized banners, 
-                                        cheap piñatas, door curtains, cake decorations & much more. All with the lowest cost possible 
-                                        and latest designs.
+                                        xxxxxx
                                     </div>
                                 </div>
 
@@ -287,10 +284,10 @@
                                     <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Florists</p>
                                     <h2 class="heading-title">GDP offers great flower deals to people who want fresh but cheap flowering for all types of events.</h2>
                                     <div class="heading-text">
-                                        Impress your guests with amazing flowers at your event! For example flower wall 
-                                        installations are the perfect way to create stunning photo moments at corporate events, 
-                                        film screenings, and product launches. From one small floral installation to entire event 
-                                        production. With Special offers with the top suppliers over the market.
+                                        At your event, you can WOW your guests with beautiful flowers. Flower wall installations, 
+                                        for example, are a great way to make beautiful photo moments at corporate events, 
+                                        film screenings, and product launches. From a small flower arrangement to the production 
+                                        of an entire event. With special deals from the best vendors in the market.
                                     </div>
                                 </div>
 

@@ -89,6 +89,8 @@
             <option {{ isset($model) && $model->color == 'rgb(243, 142, 142)' ? 'selected' : '' }} value="rgb(243, 142, 142)">Light Red</option>
             <option {{ isset($model) && $model->color == 'beige' ? 'selected' : '' }} value="beige">Beige</option>
             <option {{ isset($model) && $model->color == 'rgb(145, 57, 124)' ? 'selected' : '' }} value="rgb(145, 57, 124)">Light Purple</option>
+            <option {{ isset($model) && $model->color == 'rgb(50, 177, 164)' ? 'selected' : '' }} value="rgb(50, 177, 164)">Greenish Blue</option>
+            <option {{ isset($model) && $model->color == 'rgb(193, 26, 98)' ? 'selected' : '' }} value="rgb(193, 26, 98)">Pinkish Red</option>
         </select>
         @error('color')
         <span class="invalid-feedback" role="alert">
@@ -110,6 +112,8 @@
             <option value="svg/barber-hairdresser.svg">Barber/Hairdresser</option>
             <option value="svg/grooms-and-brides-attires.svg">Grooms & Brides Attires</option>
             <option value="svg/graduation-parties.svg">Graduation Parties</option>
+            <option value="svg/decorations.svg">Decorations</option>
+            <option value="svg/florists.svg">Florists</option>
         </select> <!-- the directory link of the image icon -->
         @error('icon')
         <span class="invalid-feedback" role="alert">
@@ -118,7 +122,7 @@
         @enderror
     </div>
 </div>
-<span style="color: rgb(145, 57, 124);"></span>
+<span style="color: rgb(193, 26, 98);"></span>
 <div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">

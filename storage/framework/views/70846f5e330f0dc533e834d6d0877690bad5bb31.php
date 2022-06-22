@@ -1,14 +1,14 @@
-@extends('layouts.website.master')
-@section('title')
-   - @lang('admin/home.faq')
-@endsection
-@section('content')
+
+<?php $__env->startSection('title'); ?>
+   - <?php echo app('translator')->get('admin/home.faq'); ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
     <div class="content-wrapper">
 
         <!-- start FAQ -->
 
         <div class="card-header" style="text-align: center; width: 79%; padding:0.25%; background-color:rgb(232, 232, 232); color:snow; border-radius:10px; margin-bottom:3%; margin-top:5%; margin-left:auto; margin-right:auto;">
-            <h1>{{__('admin/home.faq')}}</h1>
+            <h1><?php echo e(__('admin/home.faq')); ?></h1>
         </div>
   
         <div class="faq-container" style="margin-bottom: 3%;">
@@ -19,7 +19,7 @@
                     <ul class="faq-text" style="list-style-type: upper-roman; padding-left: 2%;">
                         <li>
                             You won't be allowed to request an event (to purchase any service) in the website unless you 
-                            <a href="{{route('register')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Sign Up</a> first (as a Customer).
+                            <a href="<?php echo e(route('register')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">Sign Up</a> first (as a Customer).
                         </li>
                         <hr>
                         <li>
@@ -65,10 +65,10 @@
                     <span style="font-weight: bold;"><u>You can try any of the following methods below:</u></span>
                     <ul class="faq-text" style="list-style-type: square; padding-left: 2%;">
                         <li>
-                            You can contact the admins of the website, you can get their details from "<a href="{{route('about-us')}}" style="color: rgb(17, 17, 187); font-weight: bold;">About Us</a>" page in the website.
+                            You can contact the admins of the website, you can get their details from "<a href="<?php echo e(route('about-us')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">About Us</a>" page in the website.
                         </li>
                         <li>
-                            You can also use the "<a href="{{route('contact-us')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Contact Us</a>" page from the website to send E-mails to the admins 
+                            You can also use the "<a href="<?php echo e(route('contact-us')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">Contact Us</a>" page from the website to send E-mails to the admins 
                             about a specific issue or problem that you are already facing or if you want to ask about any question.
                         </li>
                         <li>
@@ -78,7 +78,7 @@
                         <li>
                             In the bottom navigator of the website (the footer), you will also see some contact info of the website 
                             and you can also click on the button that says "<a href="#" class="js-message-popup cd-nav-trigger" style="color: rgb(0, 0, 0); font-weight: bold;">SEND A MESSAGE</a>". After clicking on the button, 
-                            complete the form then press "SEND" to send E-mails to the admins without even going to the "<a href="{{route('contact-us')}}" style="color: rgb(17, 17, 187); font-weight: bold;">Contact Us</a>" page.
+                            complete the form then press "SEND" to send E-mails to the admins without even going to the "<a href="<?php echo e(route('contact-us')); ?>" style="color: rgb(17, 17, 187); font-weight: bold;">Contact Us</a>" page.
                         </li>
                     </ul>
                 </p>
@@ -107,7 +107,7 @@
         <!-- end FAQ -->
 
         <style>
-            @import url('https://fonts.googleapis.com//css?family=Muli&display=swap');
+            @import  url('https://fonts.googleapis.com//css?family=Muli&display=swap');
 
 * {
     box-sizing: border-box;
@@ -224,9 +224,7 @@ toggles.forEach(toggle => {
 </script>
 
     </div>
-@endsection
-{{-- @section('scripts')
-    <script src="{{asset('website/js/js-plugins/leaflet.js')}}"></script>
-    <script src="{{asset('website/js/js-plugins/MarkerClusterGroup.js')}}"></script>
-    <script src="{{asset('website/js/js-plugins/leaflet-init.js')}}"></script>
-@endsection --}}
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layouts.website.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\laragon\www\events\resources\views/website/faq.blade.php ENDPATH**/ ?>
