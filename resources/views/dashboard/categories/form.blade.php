@@ -86,7 +86,7 @@
             <option {{ isset($model) && $model->color == 'rgb(241, 148, 47)' ? 'selected' : '' }} value="rgb(241, 148, 47)">Orange</option>
             <option {{ isset($model) && $model->color == 'rgb(126, 57, 57)' ? 'selected' : '' }} value="rgb(126, 57, 57)">Brown</option>
             <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">Grey</option>
-            <option {{ isset($model) && $model->color == 'rgb(243, 142, 142)' ? 'selected' : '' }} value="rgb(243, 142, 142)">Light Red</option>
+            <option {{ isset($model) && $model->color == 'rgb(217, 128, 128)' ? 'selected' : '' }} value="rgb(217, 128, 128)">Light Red</option>
             <option {{ isset($model) && $model->color == 'beige' ? 'selected' : '' }} value="beige">Beige</option>
             <option {{ isset($model) && $model->color == 'rgb(145, 57, 124)' ? 'selected' : '' }} value="rgb(145, 57, 124)">Light Purple</option>
             <option {{ isset($model) && $model->color == 'rgb(50, 177, 164)' ? 'selected' : '' }} value="rgb(50, 177, 164)">Greenish Blue</option>

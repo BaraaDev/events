@@ -24,7 +24,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'fr', "Célébrer son anniversaire est un événement spécial qui se veut être partagé avec ses proches. Les adultes aiment les fêtes autant que les enfants et c'est vraiment agréable quand les gens honorent votre anniversaire en partageant la journée avec vous. Si vous célébrez une étape importante, il est généralement très difficile de planifier et d'organiser parfaitement. Voici notre travail pour raccourcir le temps et mettre fin à la souffrance. Tout ce que vous avez à faire est de télécharger vos besoins et toutes les offres arriveront sur votre bureau.");
         $category->create_user_id = 3;
         $category->icon = 'svg/birthday-parties.svg';
-        $category->color = 'rgb(243, 142, 142)';
+        $category->color = 'rgb(217, 128, 128)';
         $category->save();
 
         $category = new Category();
