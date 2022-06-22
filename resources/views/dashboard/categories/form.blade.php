@@ -84,13 +84,13 @@
             <option {{ isset($model) && $model->color == 'blue' ? 'selected' : '' }} value="blue">Blue</option>
             <option {{ isset($model) && $model->color == 'cyan' ? 'selected' : '' }} value="cyan">Cyan</option>
             <option {{ isset($model) && $model->color == 'rgb(241, 148, 47)' ? 'selected' : '' }} value="rgb(241, 148, 47)">Orange</option>
-            <option {{ isset($model) && $model->color == 'brown' ? 'selected' : '' }} value="brown">Brown</option>
+            <option {{ isset($model) && $model->color == 'rgb(126, 57, 57)' ? 'selected' : '' }} value="rgb(126, 57, 57)">Brown</option>
             <option {{ isset($model) && $model->color == 'grey' ? 'selected' : '' }} value="grey">Grey</option>
             <option {{ isset($model) && $model->color == 'rgb(243, 142, 142)' ? 'selected' : '' }} value="rgb(243, 142, 142)">Light Red</option>
             <option {{ isset($model) && $model->color == 'beige' ? 'selected' : '' }} value="beige">Beige</option>
             <option {{ isset($model) && $model->color == 'rgb(145, 57, 124)' ? 'selected' : '' }} value="rgb(145, 57, 124)">Light Purple</option>
             <option {{ isset($model) && $model->color == 'rgb(50, 177, 164)' ? 'selected' : '' }} value="rgb(50, 177, 164)">Greenish Blue</option>
-            <option {{ isset($model) && $model->color == 'rgb(193, 26, 98)' ? 'selected' : '' }} value="rgb(193, 26, 98)">Pinkish Red</option>
+            <option {{ isset($model) && $model->color == 'rgb(207, 84, 137)' ? 'selected' : '' }} value="rgb(207, 84, 137)">Light Pinkish Red</option>
         </select>
         @error('color')
         <span class="invalid-feedback" role="alert">
@@ -105,7 +105,7 @@
     <div class="col-lg-9">
         <select class="form-control @error('icon') is-invalid @enderror" type="text" name="icon" value="{{Request::old('icon') ? Request::old('icon') : $model->icon}}">
             <option>{{__('admin/home.select')}}</option>
-            <option value="svg/conferences.svg">Conferences</option>
+            <option value="svg/conference.svg">Conferences</option>
             <option value="svg/catering.svg">Catering</option>
             <option value="svg/birthday-parties.svg">Birthday Parties</option>
             <option value="svg/engagement-ring.svg">Engagement Ring</option>
@@ -113,7 +113,7 @@
             <option value="svg/grooms-and-brides-attires.svg">Grooms & Brides Attires</option>
             <option value="svg/graduation-parties.svg">Graduation Parties</option>
             <option value="svg/decorations.svg">Decorations</option>
-            <option value="svg/florists.svg">Florists</option>
+            <option value="svg/flowers.svg">Florists</option>
         </select> <!-- the directory link of the image icon -->
         @error('icon')
         <span class="invalid-feedback" role="alert">
@@ -122,7 +122,7 @@
         @enderror
     </div>
 </div>
-<span style="color: rgb(193, 26, 98);"></span>
+
 <div class="form-group row">
     <label class="form-label col-lg-3">{{__('admin/home.status')}} <span class="text-danger">*</span></label>
     <div class="col-lg-9">

@@ -228,7 +228,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#C52A0C'" onmouseout="this.style.color=''">
+                                <a href="javascript:void(0)" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#C52A0C'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/40/undefined/external-graduation-cap-learning-xnimrodx-lineal-color-xnimrodx-2.png" />
                                     <div class="text" style="padding-left:5px ;">
                                         <span class="sup-title">Check now on</span>
@@ -254,14 +254,15 @@
                                     <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Decorations</p>
                                     <h2 class="heading-title">Trendiest Party Decorations: Indoor & Outdoor Party Decor, Party Banners, Decoration Idea- check it out now!</h2>
                                     <div class="heading-text">
-                                        Decorate for your next party with effect lighting, international flags, party confetti and 
-                                        other festive decoration items through our suppliers. Anything from personalized banners, 
-                                        cheap piñatas, door curtains, cake decorations & much more. All with the lowest cost possible 
-                                        and latest designs.
+                                        You may get effect lighting, international flags, party confetti, and other items to decorate 
+                                        for a festive occasion via our vendors and use them to spruce up the venue for your next party. 
+                                        Anything from customised banners to inexpensive piatas, door curtains, and even cake 
+                                        decorations, among many other things. All of this, at the most competitive prices and 
+                                        most up-to-date styles conceivable.
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='orange'" onmouseout="this.style.color=''">
+                                <a href="javascript:void(0)" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='orange'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-basicons-color-edtgraphics/40/undefined/external-fireworks-birthday-edtim-outline-color-edtim-2.png" />
                                     <div class="text" style="padding-left:5px ;">
                                         <span class="sup-title">Check now on</span>
@@ -287,14 +288,14 @@
                                     <p style="color:#B2DAFF; font-weight:bold; font-size:120%;">Florists</p>
                                     <h2 class="heading-title">GDP offers great flower deals to people who want fresh but cheap flowering for all types of events.</h2>
                                     <div class="heading-text">
-                                        Impress your guests with amazing flowers at your event! For example flower wall 
-                                        installations are the perfect way to create stunning photo moments at corporate events, 
-                                        film screenings, and product launches. From one small floral installation to entire event 
-                                        production. With Special offers with the top suppliers over the market.
+                                        At your event, you can WOW your guests with beautiful flowers. Flower wall installations, 
+                                        for example, are a great way to make beautiful photo moments at corporate events, 
+                                        film screenings, and product launches. From a small flower arrangement to the production 
+                                        of an entire event. With special deals from the best vendors in the market.
                                     </div>
                                 </div>
 
-                                <a href="#" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#A16B78'" onmouseout="this.style.color=''">
+                                <a href="javascript:void(0)" class="btn btn-market btn--with-shadow" style="margin-left:30%; margin-right:auto;" onmouseover="this.style.color='#A16B78'" onmouseout="this.style.color=''">
                                     <img src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/40/undefined/external-rose-supermarket-photo3ideastudio-flat-photo3ideastudio.png" />
                                     <div class="text">
                                         <span class="sup-title">Check now on</span>

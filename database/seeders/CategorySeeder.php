@@ -60,8 +60,8 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'ar', 'اعجاب ضيوفك بالزهور المذهلة في مناسبتك! على سبيل المثال ، تُعد تركيبات حائط الزهور الطريقة المثالية لإنشاء لحظات صور مذهلة في أحداث الشركات وعروض الأفلام وإطلاق المنتجات. من تركيب الأزهار الصغيرة إلى إنتاج الحدث بالكامل. مع عروض خاصة مع كبار الموردين في السوق.')
             ->setTranslation('content', 'fr', "Impressionnez vos invités avec de superbes fleurs lors de votre événement ! Par exemple, les installations murales de fleurs sont le moyen idéal pour créer de superbes moments photo lors d'événements d'entreprise, de projections de films et de lancements de produits. D'une petite installation florale à la production d'un événement complet. Avec des offres spéciales avec les meilleurs fournisseurs du marché.");
         $category->create_user_id = 6;
-        $category->icon = 'svg/florists.svg';
-        $category->color = 'rgb(193, 26, 98)';
+        $category->icon = 'svg/flowers.svg';
+        $category->color = 'rgb(207, 84, 137)';
         $category->save();
 
         $category = new Category();
@@ -84,8 +84,8 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'ar', 'لذلك قررت تنظيم مؤتمر. إنها مهمة! يجب أن يكون لديك مليون سؤال في ذهنك. من أين تبدأ؟ كيف تجد المتحدثين المناسبين لدعوتهم؟ أي مكان يناسب احتياجاتك على أفضل وجه؟ لا داعي للقلق ، لقد أعددنا كل ما يمكن أن تطلبه من خلال أصحاب الأعمال الصغيرة المتاحين على موقعنا. يمكن لهؤلاء السادة أن يوفروا لك كل ما تحتاجه من موضوعات أنيقة متنوعة إلى الاستضافة. علاوة على ذلك ، مع ميزانيات تنافسية للغاية.')
             ->setTranslation('content', 'fr', "Vous avez donc décidé d'organiser une conférence. Toute une tâche ! Vous devez avoir un million de questions en tête. Par où commencer ? Comment trouver les bons orateurs à inviter ? Quel lieu répondra le mieux à vos besoins ? Ne vous inquiétez pas, nous avons préparé tout ce que vous pouvez demander par l'intermédiaire des propriétaires de petites entreprises disponibles sur notre site Web. Ces messieurs peuvent vous fournir tout ce dont vous avez besoin, de divers thèmes élégants à l'hébergement. De plus, avec des budgets très compétitifs.");
         $category->create_user_id = 2;
-        $category->icon = 'svg/conferences.svg';
-        $category->color = 'rgb(145, 34, 34)';
+        $category->icon = 'svg/conference.svg';
+        $category->color = 'rgb(139, 75, 75)';
         $category->save();
 
         $category = new Category();
@@ -97,7 +97,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'fr', "Avoir un mariage? conférence? Bal de promo? ou tout autre type d'événement ? Vous aurez certainement besoin de saisir le meilleur style! et lorsque nous disons style, la forme de vos cheveux apparaît automatiquement. C'est à ce moment-là que GDP devient utile, car nous proposons une grande variété de salons de coiffure et / ou de salons de coiffure avec d'excellentes qualités, des horaires programmés et les meilleurs prix, en plus d'offres promotionnelles si vous avez eu la chance.");
         $category->create_user_id = 4;
         $category->icon = 'svg/barber-hairdresser.svg';
-        $category->color = 'rgb(200, 202, 74)';
+        $category->color = 'rgb(177, 179, 66)';
         $category->save();
 
         $category = new Category();
@@ -109,7 +109,7 @@ class CategorySeeder extends Seeder
             ->setTranslation('content', 'fr', "Lors du choix d'une tenue de mariage, de nombreux couples sont guidés non seulement par la mode, mais aussi par la gratitude et une dose de décorum qui correspond à l'événement. Cela rend plus difficile de faire un choix, par conséquent, nous vous offrons un service unique où vous pouvez télécharger une description précise des vêtements que vous collectez ou même des besoins d'une personne et nos fournisseurs vous contacteront pour un plus rapide, plus facile, option moins chère et optimale.");
         $category->create_user_id = 5;
         $category->icon = 'svg/grooms-and-brides-attires.svg';
-        $category->color = 'rgb(112, 205, 236)';
+        $category->color = 'rgb(96, 181, 209)';
         $category->save();
 
         $category = new Category();
