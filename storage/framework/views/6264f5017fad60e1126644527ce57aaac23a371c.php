@@ -252,7 +252,7 @@
                                                 Different food services, customized for many different types of events 
                                                 such as Birthday Parties, Weddings, etc.
                                             </h6>
-                                            <a href="#" class="more-arrow white">
+                                            <a href="javascript:void(0)" class="more-arrow white">
                                                 <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
@@ -278,7 +278,7 @@
                                                 Many different attires for special occasions such as Birthday, 
                                                 Graduation, Friends' Parties, etc.
                                             </h6>
-                                            <a href="#" class="more-arrow white">
+                                            <a href="javascript:void(0)" class="more-arrow white">
                                                 <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
@@ -304,7 +304,7 @@
                                                 Hairdressing/Barbering. cutting, styling, and coloring hair, 
                                                 as well as shaving or grooming facial hair (for men) and doing other related tasks.
                                             </h6>
-                                            <a href="#" class="more-arrow white">
+                                            <a href="javascript:void(0)" class="more-arrow white">
                                                 <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
@@ -330,7 +330,7 @@
                                                 For wedding events. Zaffah/Wedding march, a musical procession of bendir 
                                                 drums, bagpipes, horns, Dabke dancers and men carrying flaming swords.
                                             </h6>
-                                            <a href="#" class="more-arrow white">
+                                            <a href="javascript:void(0)" class="more-arrow white">
                                                 <span style="font-size: 13.5px;">View Service Category Events</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1">
