@@ -10,56 +10,40 @@
 
 
         <!-- Info Boxes -->
-        <section class="medium-padding100">
+        <section class="medium-padding100" style="background-color: lightblue; border-top: 5px solid #607C9D;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">1.</h5>
                             <h3 class="h5 info-box-title">Who We Are?</h3>
                             <p class="info-box-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
-                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
-                                sit debitis saepe.
+                                GDP An intermediate Event Management Systems provides campus event planners a flexible, fully integrated solution to simplify the event management process and keep your customers, while maintaining important offers and data for making future planning decisions.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">2.</h5>
                             <h3 class="h5 info-box-title">What We Do?</h3>
                             <p class="info-box-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
-                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
-                                sit debitis saepe.
+                                We help people to design and execute memorable events that fulfill their wishes. By providing many suppliers offerings (budget) for their needed service category that was already submitted by them in an event request form.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number">3.</h5>
                             <h3 class="h5 info-box-title">How Things Are Done?</h3>
                             <p class="info-box-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
-                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
-                                sit debitis saepe.
+                                Customers make an event request by selecting the suitable budget and the needed service category while filling the event request form, then there might me one or many suppliers, offers for the event with their suitable budget too and then the negotiation starts (reply section) if any of them wether it was the Customer or the Supplier is/are not okay with the budget or if there is a specific requirement that was needed by the Customer.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">4.</h5>
-                            <h3 class="h5 info-box-title">Who we deal with from other businesses (Suppliers)?</h3>
-                            <p class="info-box-text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium molestiae assumenda commodi dolore. 
-                                Possimus suscipit officiis obcaecati esse voluptatem enim consequatur at pariatur, quod vel illum tempora, 
-                                sit debitis saepe.
-                            </p>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
@@ -70,7 +54,7 @@
 
         <!-- Info Boxes -->
 
-        <section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100" style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(<?php echo e(asset('website/img/purple_bg.jpg')); ?>); background-size: cover;">
+        <section class="crumina-module crumina-module-slider bg-blue-lighteen medium-padding100" style="background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(<?php echo e(asset('website/img/purple_bg.jpg')); ?>); background-size: cover; border-top: 5px solid red; border-bottom: 5px solid red;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-12 col-sm-offset-0">
@@ -83,7 +67,7 @@
 
                     <div class="col-lg-12 col-sm-12 col-md-12">
                         <div class="swiper-container pagination-bottom" data-show-items="4">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper" style="margin-top: 5%;">
                                 <div class="swiper-slide">
                                     <div class="crumina-module crumina-info-box info-box--time-line">
 
@@ -99,10 +83,9 @@
                                             <h6 class="timeline-year" style="color: rgb(19, 221, 19);">Power of Negotiation</h6>
                                             
                                             <p class="info-box-text" style="color: snow;">
-                                                <?php echo e(__('admin/home.customer_title')); ?> & <?php echo e(__('admin/home.supplier_title')); ?> are able to
-                                                negotiate in a reply section in the requested event (by the customer) and then both could 
-                                                make a deal together about the price for the satisfaction & the comfortability 
-                                                for both in the website. 
+                                                Customer & Supplier are able tonegotiate in a reply section in the requested event 
+                                                (by the customer) and then both could make a deal together about the price for the 
+                                                satisfaction & the comfortability for both in the website. 
                                             </p>
                                         </div>
 

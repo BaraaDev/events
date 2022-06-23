@@ -154,6 +154,5 @@ return [
     'dashboard2_condition_text2_2'       => 'to Add a New Service!',
     'guest_condition_text1'              => 'Services Categories',
     'guest_condition_text2'              => 'If You Need a Service, Hurry Up & Sign Up Now and make a Request for an Event.',
-    'guest_condition_text3'              => 'Sign Up!',
-    
+    'guest_condition_text3'              => 'Sign Up!',    
 ];
