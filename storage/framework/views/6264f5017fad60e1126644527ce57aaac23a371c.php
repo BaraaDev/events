@@ -10,34 +10,34 @@
 
 
         <!-- Info Boxes -->
-        <section class="medium-padding100" style="background-color: lightblue; border-top: 5px solid #607C9D;">
+        <section class="medium-padding100" style="background-color: rgb(225, 225, 225); border-top: 5px solid #607C9D;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" style="border: 3px solid black;">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">1.</h5>
-                            <h3 class="h5 info-box-title">Who We Are?</h3>
-                            <p class="info-box-text">
+                            <h5 class="order-number" style="text-align: center;">1.</h5>
+                            <h3 class="h5 info-box-title" style="text-align: center;">Who We Are?</h3>
+                            <p class="info-box-text" style="text-align: center;">
                                 GDP An intermediate Event Management Systems provides campus event planners a flexible, fully integrated solution to simplify the event management process and keep your customers, while maintaining important offers and data for making future planning decisions.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" style="border: 3px solid black;">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">2.</h5>
-                            <h3 class="h5 info-box-title">What We Do?</h3>
-                            <p class="info-box-text">
+                            <h5 class="order-number" style="text-align: center;">2.</h5>
+                            <h3 class="h5 info-box-title" style="text-align: center;">What We Do?</h3>
+                            <p class="info-box-text" style="text-align: center;">
                                 We help people to design and execute memorable events that fulfill their wishes. By providing many suppliers offerings (budget) for their needed service category that was already submitted by them in an event request form.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" style="border: 3px solid black; margin-left: 5px;">
                         <div class="crumina-module crumina-info-box info-box--numbers">
-                            <h5 class="order-number">3.</h5>
-                            <h3 class="h5 info-box-title">How Things Are Done?</h3>
-                            <p class="info-box-text">
+                            <h5 class="order-number" style="text-align: center;">3.</h5>
+                            <h3 class="h5 info-box-title" style="text-align: center;">How Things Are Done?</h3>
+                            <p class="info-box-text" style="text-align: center;">
                                 Customers make an event request by selecting the suitable budget and the needed service category while filling the event request form, then there might me one or many suppliers, offers for the event with their suitable budget too and then the negotiation starts (reply section) if any of them wether it was the Customer or the Supplier is/are not okay with the budget or if there is a specific requirement that was needed by the Customer.
                             </p>
                         </div>
