@@ -165,7 +165,7 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h6 class="timeline-year c-secondary" style="color:{{$service->color}};"><a href="{{route('event.category',$service->id)}}" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''">{{$service->name}}</a></h6> <!-- headline-text-color from DB for icon -->
+                                        <h4 class="timeline-year c-secondary" style="color:{{$service->color}};"><a href="{{route('event.category',$service->id)}}" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''">{{$service->name}}</a></h4> <!-- headline-text-color from DB for icon -->
                                         <p class="info-box-text">{!! \Str::words($service->content,'20',' ...') !!}</p>
                                     </div>
                                 </div>
