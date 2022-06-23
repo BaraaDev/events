@@ -125,12 +125,12 @@
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year" style="color: rgb(19, 221, 19);">Power of Negotiation</h6>
+                                            <h5 class="timeline-year" style="color: rgb(19, 221, 19);">Power of Negotiation</h5>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
                                             <p class="info-box-text" style="color: snow;">
-                                                Customer & Supplier are able tonegotiate in a reply section in the requested event 
-                                                (by the customer) and then both could make a deal together about the price for the 
-                                                satisfaction & the comfortability for both in the website. 
+                                                Customer & Supplier are able to negotiate in a reply section in the requested event 
+                                                (by the Customer) and then both could make a deal together about the budget for the 
+                                                satisfaction & the comfortability for both of them. 
                                             </p>
                                         </div>
 
@@ -149,7 +149,7 @@
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-orange">Good Managerial Quality</h6>
+                                            <h5 class="timeline-year c-orange">Good Managerial Quality</h5>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
                                             <p class="info-box-text" style="color: snow;">
                                                 Anything that happens in the website (including the pre-transaction process) must be confirmed 
@@ -175,12 +175,13 @@
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-red">Variety of Different Services' Categories</h6>
+                                            <h5 class="timeline-year c-red">Variety of Different Services' Categories</h5>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
                                             <p class="info-box-text" style="color: snow;">
-                                                Suppliers are having more opportunities to put their 
-                                                products/services on the website and increase their profitability and customers reach & loyalty. 
-                                                And Customers are having many choices for many different types of services in the website.
+                                                <u>Suppliers</u> are having more opportunities to put their products/services in the website 
+                                                and increase their profitability and also increase the Customers reach & loyalty. 
+                                                <u>Customers</u> are having many choices for many different types of services 
+                                                in the website.
                                             </p>
                                         </div>
 
@@ -192,16 +193,20 @@
 
                                         <div class="info-box-image bg-yellow">
                                             {{-- <img class="utouch-icon" src="{{asset('website/svg/rocket-launch.svg')}}" alt="rocket"> --}}
+                                            <img src="{{asset('website/svg/sack-dollar-solid.svg')}}" style='width:35px;'>
                                             <svg class="utouch-icon utouch-icon-dot-arrow time-line-arrow">
                                                 <use xlink:href="#utouch-icon-dot-arrow"></use>
                                             </svg>
                                         </div>
 
                                         <div class="info-box-content">
-                                            <h6 class="timeline-year c-yellow">xxxx</h6>
+                                            <h5 class="timeline-year c-yellow">Budget Agreement</h5>
                                             {{-- <a href="#" class="h6 info-box-title">Lorem</a> --}}
                                             <p class="info-box-text" style="color: snow;">
-                                                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                                                It's how both of them (Customer & Supplier) negotiate mainly about the budgets 
+                                                since the Customer put his/her required budget in the beggining when he/she was 
+                                                submitting the event request form, and also since the Supplier provided the offer 
+                                                after the Customer's event request was submitted and activated by the admins.
                                             </p>
                                         </div>
 
