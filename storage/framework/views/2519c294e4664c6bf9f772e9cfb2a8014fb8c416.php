@@ -167,8 +167,8 @@
                                     </a>
 
                                     <div class="info-box-content">
-                                        <h4 class="timeline-year c-secondary" style="color:<?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h5> <!-- headline-text-color from DB for icon -->
-                                        <p class="info-box-text"><?php echo \Str::words($service->content,'20',' ...'); ?></p>
+                                        <h4 class="timeline-year c-secondary" style="color:<?php echo e($service->color); ?>;"><a href="<?php echo e(route('event.category',$service->id)); ?>" onmouseover="this.style.color='grey'" onmouseout="this.style.color=''"><?php echo e($service->name); ?></a></h4> <!-- headline-text-color from DB for icon -->
+                                        <p class="info-box-text"><?php echo \Str::words($service->content,'30',' ...'); ?></p>
                                     </div>
                                 </div>
                             </div>
