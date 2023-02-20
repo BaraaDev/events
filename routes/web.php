@@ -36,7 +36,7 @@ use Illuminate\Support\Facades\Route;
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
-], function () {
+ ], function () {
     Auth::routes();
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); //home route
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); //home route

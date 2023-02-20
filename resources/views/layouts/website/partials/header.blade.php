@@ -146,7 +146,7 @@
                     <li><a href="https://events.dev/en#suppliers-services-home-page">{{__('website/home.categories')}}</a></li>
                     <li><a href="{{route('about-us')}}">{{__('website/home.about_us')}}</a></li>
                     <li><a href="{{route('contact-us')}}">{{__('website/home.contact_us')}}</a></li>
-                    @if(!auth()->user()) <!---------- = unregistered user ---------->
+                    @if(!auth()->user()) <!---------- = unregistered user (which means "guest") ---------->
                         <li>
                             <a href="javascript:void(0)">{{__('auth.register')}}</a>
                             <ul class="sub-menu">
@@ -154,7 +154,7 @@
                                 <li><a href="{{route('login')}}">{{__('auth.login')}}</a></li>
                             </ul>
                         </li>
-                    @else <!---------- = registered user ---------->
+                    @else <!---------- = registered user (any user type in the system) ---------->
                         <li><a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'">{{auth()->user()->name ?? ''}}</a>
                         @if(auth()->user()->user_type == 'dashboard') <!---------- dashboard (admin) ---------->
                             <label style="color:rgb(125, 125, 125);">{{__('admin/home.admin_title')}}</label>

@@ -146,7 +146,7 @@
                     <li><a href="https://events.dev/en#suppliers-services-home-page"><?php echo e(__('website/home.categories')); ?></a></li>
                     <li><a href="<?php echo e(route('about-us')); ?>"><?php echo e(__('website/home.about_us')); ?></a></li>
                     <li><a href="<?php echo e(route('contact-us')); ?>"><?php echo e(__('website/home.contact_us')); ?></a></li>
-                    <?php if(!auth()->user()): ?> <!---------- = unregistered user ---------->
+                    <?php if(!auth()->user()): ?> <!---------- = unregistered user (which means "guest") ---------->
                         <li>
                             <a href="javascript:void(0)"><?php echo e(__('auth.register')); ?></a>
                             <ul class="sub-menu">
@@ -154,7 +154,7 @@
                                 <li><a href="<?php echo e(route('login')); ?>"><?php echo e(__('auth.login')); ?></a></li>
                             </ul>
                         </li>
-                    <?php else: ?> <!---------- = registered user ---------->
+                    <?php else: ?> <!---------- = registered user (any user type in the system) ---------->
                         <li><a href="javascript:void(0)" style="color: #0083FF;" onMouseOver="this.style.color='#151414'" onMouseOut="this.style.color='#0083FF'"><?php echo e(auth()->user()->name ?? ''); ?></a>
                         <?php if(auth()->user()->user_type == 'dashboard'): ?> <!---------- dashboard (admin) ---------->
                             <label style="color:rgb(125, 125, 125);"><?php echo e(__('admin/home.admin_title')); ?></label>

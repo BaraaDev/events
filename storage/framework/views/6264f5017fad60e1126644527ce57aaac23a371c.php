@@ -13,7 +13,7 @@
         <section class="medium-padding100" style="background-color: rgb(225, 225, 225); border-top: 5px solid #607C9D;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" style="border: 3px solid black;">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number" style="text-align: center;">1.</h5>
                             <h3 class="h5 info-box-title" style="text-align: center;">Who We Are?</h3>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" style="border: 3px solid black;">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number" style="text-align: center;">2.</h5>
                             <h3 class="h5 info-box-title" style="text-align: center;">What We Do?</h3>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" style="border: 3px solid black; margin-left: 5px;">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
                         <div class="crumina-module crumina-info-box info-box--numbers">
                             <h5 class="order-number" style="text-align: center;">3.</h5>
                             <h3 class="h5 info-box-title" style="text-align: center;">How Things Are Done?</h3>

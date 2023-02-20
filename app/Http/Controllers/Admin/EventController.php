@@ -53,9 +53,7 @@ class EventController extends Controller
                 ->UsingFileName(Str::random(50))
                 ->toMediaCollection('images');
         }
-
         $events->tags()->sync($request->event_id);
-
         $events->save();
         return redirect()->route('events.index')
             ->with(['message' => __('admin/home.added_successfully')]);
